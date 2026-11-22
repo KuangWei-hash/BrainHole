@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-v9-q5-comparison--run-d496fcc09f6d",
+  "kind": "evaluation",
+  "name": "eval-v9-q5-comparison",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-v9-q5-comparison",
+  "started_at": "2026-11-21T17:54:44+08:00",
+  "finished_at": "2026-11-21T17:55:06+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/hybrid-v7-history2-q5/best.pt",
+    "Model/runs/simple-v9-q5/best.pt",
+    "--start-frame",
+    "720",
+    "--video",
+    "--out",
+    "Model/runs/eval-v9-q5-comparison"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "b48b96da08187db035bb85911179bb778464c550a23431834841661117c8593b",
+    "directory": "Model/experiments/source_snapshots/b48b96da08187db035bb85911179bb778464c550a23431834841661117c8593b",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "e6ba930c54962f05ba166be47ea49f7b8cca2971d5a8dde41c7221b792f95ca7",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "c937b892e0c9f30c72271053c1b38fcdee14d3f4496beca201675cd336944c02",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "7278b43e4036f1a60d4a9b25be75d3be698f3f4ed385f0a7ce997c4e5cbe3ceb",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "74cc399e4afb2e2caef985e29b7ad84b9ec79721ce0571af3a7b4400b2f26f05",
+      "作法.MD": "ce57a6130ab157eda9c95f745da5b72e68d7e7c45640ffb534f3e6418a333115",
+      "驗收標準.md": "6514f0eb672b51e035e05eebaed4418030774142d5c745fc2d3457444d9f5860"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T17:55:06+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/hybrid-v7-history2-q5/best.pt",
+        "bytes": 1413160,
+        "sha256": "8239fd41542877dfe813a9b8390111e5c5f7907a0d50b9e0f82cdc4b5a483729"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/best.pt",
+        "bytes": 13617,
+        "sha256": "7767f7629a2ecff2e280081a2ed43af8bde2cbbba0bd260b7b5f6558b7ad4ffd"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 5370,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 721,
+      "last_evaluated_frame": 899,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 19.283258706231358,
+          "psnr_raw": 18.483525007200484
+        },
+        "bilinear": {
+          "mae_8bit": 17.552325880860483,
+          "psnr_raw": 19.701981104448407
+        },
+        "hybrid-v7-history2-q5": {
+          "mae_8bit": 15.121942436495306,
+          "psnr_raw": 20.787026875976075
+        },
+        "simple-v9-q5": {
+          "mae_8bit": 16.654964119495627,
+          "psnr_raw": 20.00760731608683
+        }
+      },
+      "gates": {
+        "hybrid-v7-history2-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9996275605214152
+        },
+        "simple-v9-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9251396648044693
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "hybrid-v7-history2-q5",
+        "simple-v9-q5"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v7-history2-q5\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\simple-v9-q5\\best.pt"
+      ],
+      "input_contracts": {
+        "hybrid-v7-history2-q5": "encoded_and_decoded_raw_v1",
+        "simple-v9-q5": "decoded_raw_only_v1"
+      },
+      "video": {
+        "file": "comparison.mp4",
+        "frames": 179,
+        "fps": 30,
+        "panel_order": [
+          "target",
+          "bilinear",
+          "hybrid-v7-history2-q5",
+          "simple-v9-q5"
+        ],
+        "note": "Offline rendered; not a realtime benchmark.",
+        "temporal_error_change_mae_8bit": {
+          "bilinear": 15.184003804774767,
+          "hybrid-v7-history2-q5": 10.929151022836063,
+          "simple-v9-q5": 13.927007449342963
+        },
+        "temporal_metric_note": "Mean absolute change of prediction-minus-target error between consecutive frames; no optical-flow alignment. Diagnostic only, not a standalone flicker acceptance criterion."
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-v9-q5-comparison--run-d496fcc09f6d.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "5019b15820bb7fa3475484a1c9a94afd7a760b51461afc3d819d994ce408905b"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/bilinear.png",
+        "bytes": 221636,
+        "sha256": "10132f910d31334caac6204eb026ac2e860db3e8039238bb6ceda9a86e850433"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/blocks.jsonl",
+        "bytes": 920726,
+        "sha256": "5019b15820bb7fa3475484a1c9a94afd7a760b51461afc3d819d994ce408905b"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/comparison.mp4",
+        "bytes": 8351215,
+        "sha256": "9f51236cfdcc2b51da4bd8cd3c1a29a966b330f429825bc45efa85db3a61f198"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/comparison.png",
+        "bytes": 1340645,
+        "sha256": "0255f527d55835502a58698a03c9b775c9c428697015d22f429c04046f278cac"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/hybrid-v7-history2-q5.png",
+        "bytes": 306510,
+        "sha256": "5492f98d910473fe90bb6c7b276cbea0423724082dc737daed8ad2ea8aa6c38f"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/nearest.png",
+        "bytes": 99596,
+        "sha256": "8c07d5340c112ce047734bd318d271fd1e8e112d65f8d2062556075f162ec880"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/report.json",
+        "bytes": 2624,
+        "sha256": "8bed74a8e35f4c7afb7784c738d7f5dd8a2999eabe2cefa897bbfe1c5f6d317c"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/simple-v9-q5.png",
+        "bytes": 279511,
+        "sha256": "7d0ff27056b70c8bd4ffab14835d8d81a1cb86bc3ae596a18e8facd842b18bfb"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      },
+      {
+        "path": "Model/runs/eval-v9-q5-comparison/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

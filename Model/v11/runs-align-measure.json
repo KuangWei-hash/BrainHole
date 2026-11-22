@@ -1,0 +1,70 @@
+{
+  "db": "big-buck-bunny-30s-q4-shared-v4-raw8-fixed.sqlite",
+  "results": {
+    "T=1": {
+      "single_frame_mae": 3.962135434150696,
+      "naive_accum_mae": 3.962135434150696,
+      "aligned_accum_mae": 3.962135434150696,
+      "coverage_ratio": 0.0625,
+      "single_frame_mae_same_content": 3.962135434150696,
+      "naive_accum_mae_same_content": 3.962135434150696,
+      "aligned_accum_mae_same_content": 3.962135434150696,
+      "n_windows": 30
+    },
+    "T=2": {
+      "single_frame_mae": 4.798567692438762,
+      "naive_accum_mae": 4.798567692438762,
+      "aligned_accum_mae": 4.602656237284342,
+      "coverage_ratio": 0.124609375,
+      "single_frame_mae_same_content": 4.44375,
+      "naive_accum_mae_same_content": 4.44375,
+      "aligned_accum_mae_same_content": 4.44375,
+      "n_windows": 30
+    },
+    "T=4": {
+      "single_frame_mae": 6.070026024182638,
+      "naive_accum_mae": 6.070026024182638,
+      "aligned_accum_mae": 5.510440754890442,
+      "coverage_ratio": 0.2431076388888889,
+      "single_frame_mae_same_content": null,
+      "naive_accum_mae_same_content": null,
+      "aligned_accum_mae_same_content": null,
+      "n_windows": 30
+    },
+    "T=8": {
+      "single_frame_mae": 9.083997452259064,
+      "naive_accum_mae": 9.083997452259064,
+      "aligned_accum_mae": 8.036301362514497,
+      "coverage_ratio": 0.46962239583333326,
+      "single_frame_mae_same_content": null,
+      "naive_accum_mae_same_content": null,
+      "aligned_accum_mae_same_content": null,
+      "n_windows": 30
+    },
+    "T=16": {
+      "single_frame_mae": 14.782324234644571,
+      "naive_accum_mae": 14.782324234644571,
+      "aligned_accum_mae": 14.02688577969869,
+      "coverage_ratio": 0.8990798611111113,
+      "single_frame_mae_same_content": null,
+      "naive_accum_mae_same_content": null,
+      "aligned_accum_mae_same_content": null,
+      "n_windows": 30
+    },
+    "oracle_shift_histogram": {
+      "dy=0,dx=0": 111,
+      "dy=-4,dx=-12": 79,
+      "dy=-4,dx=0": 71,
+      "dy=-2,dx=0": 50,
+      "dy=4,dx=-12": 34,
+      "dy=4,dx=12": 21,
+      "dy=-4,dx=2": 16,
+      "dy=-4,dx=-2": 10,
+      "dy=-4,dx=-10": 6,
+      "dy=-2,dx=-12": 6,
+      "dy=-4,dx=12": 4,
+      "dy=0,dx=-2": 4
+    },
+    "oracle_shift_note": "以 raw_bayer_target 求得的整數偶數位移（oracle 上限），dy 限 ±4（條帶僅 16 列）"
+  }
+}

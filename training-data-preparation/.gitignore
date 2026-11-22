@@ -1,0 +1,8 @@
+/bin/
+/原始影片/*
+!/原始影片/.gitkeep
+/拆好的訓練資料/*
+!/拆好的訓練資料/.gitkeep
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

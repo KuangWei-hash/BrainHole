@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "id": "training--v10-single-noise-q5-flowcheck--run-b4e4b8a245b7",
+  "kind": "training",
+  "name": "v10-single-noise-q5-flowcheck",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v10-single-noise-q5-flowcheck",
+  "started_at": "2026-11-21T23:21:53+08:00",
+  "finished_at": "2026-11-21T23:21:57+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train_v10.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--mode",
+    "single_noise",
+    "--device",
+    "cpu",
+    "--epochs",
+    "1",
+    "--max-steps",
+    "1",
+    "--val-steps",
+    "1",
+    "--scale-steps",
+    "1",
+    "--validation-count",
+    "16",
+    "--sample-steps",
+    "4",
+    "--out",
+    "Model/runs/v10-single-noise-q5-flowcheck"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "880a889b10713eb048dfea08973a55a48eed1736867d7d770b1d34ba2635cf50",
+    "directory": "Model/experiments/source_snapshots/880a889b10713eb048dfea08973a55a48eed1736867d7d770b1d34ba2635cf50",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "faf94b1f9bcc4cf6331f807cf226e8ddea7d3557ebacba26d0d2b990506dfb79",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "096fddf68aedfa1be8700d5ecf239005a90523366996058d783c965e41a8489b",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "58d512fa40d91624052a131b3a55e6569bb4c621a59c2a87d7d3b68d243db92b",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "40760304633d7b29d24424bea251709c50297ba7d0348e01eb5cfd5e97e122f8",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "f67fbd12a5a657826e3ca952f6c8df8c179c7fd10f4f6113484a0795aafbaed9",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "6e700093ddc6ea26cabf87342224cd4b14cf2a82b08ec813caece24ab1f62768",
+      "v10/model.py": "1aceb62f2dea97df3f12f5ac19caf8ed099f90ecd97317abf4acb0a140d02bad",
+      "v10/README.md": "67b38d4d85b1f2ebe0fe7b25eb408f524640411b530bf6a5a8546029e32cb0a2",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T23:21:57+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+      "out": "Model\\runs\\v10-single-noise-q5-flowcheck",
+      "mode": "single_noise",
+      "condition": "both",
+      "channels": 48,
+      "epochs": 1,
+      "batch_size": 16,
+      "microbatch": 4,
+      "lr": 0.0001,
+      "low_frequency_weight": 0.0,
+      "timesteps": 1000,
+      "sample_steps": 4,
+      "validation_count": 16,
+      "max_steps": 1,
+      "val_steps": 1,
+      "scale_steps": 1,
+      "seed": 42,
+      "device": "cpu",
+      "architecture": "v10",
+      "history": 2,
+      "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720
+      },
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "train_samples": 21570,
+      "validation_samples": 16,
+      "validation_full_samples": 5370,
+      "validation_keys": [
+        [
+          721,
+          0
+        ],
+        [
+          722,
+          0
+        ],
+        [
+          723,
+          0
+        ],
+        [
+          724,
+          0
+        ],
+        [
+          725,
+          0
+        ],
+        [
+          726,
+          0
+        ],
+        [
+          727,
+          0
+        ],
+        [
+          728,
+          0
+        ],
+        [
+          729,
+          0
+        ],
+        [
+          730,
+          0
+        ],
+        [
+          731,
+          0
+        ],
+        [
+          732,
+          0
+        ],
+        [
+          733,
+          0
+        ],
+        [
+          734,
+          0
+        ],
+        [
+          735,
+          0
+        ],
+        [
+          736,
+          0
+        ]
+      ],
+      "device_used": "cpu",
+      "torch": "2.7.1+cu126",
+      "gammas": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+      "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+      "noise_schedule": "cosine_s0.008_beta_max0.999",
+      "sample_seed": 0,
+      "noise_policy": "per_frame",
+      "precision": "FP32",
+      "weight_decay": 0.0001,
+      "coverage": "flow_check",
+      "residual_statistics": {
+        "method": "population_std_train_only_floor_0.01",
+        "samples": 64,
+        "mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "std": [
+          0.01,
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      "parameters": 280340
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "objective": 0.05615530163049698,
+          "samples": 16,
+          "optimizer_steps": 1,
+          "seconds": 0.5021195000008447
+        },
+        "validation": {
+          "mae_8bit": 18.0853089094162,
+          "psnr_raw": 19.961310822580515,
+          "samples": 16,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 18.085342347621918,
+              "psnr_raw": 19.961235457597667,
+              "samples": 16
+            },
+            "0.25": {
+              "mae_8bit": 18.085333228111267,
+              "psnr_raw": 19.961254699596616,
+              "samples": 16
+            },
+            "0.5": {
+              "mae_8bit": 18.08532562851906,
+              "psnr_raw": 19.96127330027664,
+              "samples": 16
+            },
+            "0.75": {
+              "mae_8bit": 18.085316509008408,
+              "psnr_raw": 19.961292221739782,
+              "samples": 16
+            },
+            "1.0": {
+              "mae_8bit": 18.0853089094162,
+              "psnr_raw": 19.961310822580515,
+              "samples": 16
+            }
+          },
+          "seconds": 0.13019340000028023,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 1,
+    "best_validation": {
+      "mae_8bit": 18.0853089094162,
+      "psnr_raw": 19.961310822580515,
+      "samples": 16,
+      "gammas": {
+        "0.0": {
+          "mae_8bit": 18.085342347621918,
+          "psnr_raw": 19.961235457597667,
+          "samples": 16
+        },
+        "0.25": {
+          "mae_8bit": 18.085333228111267,
+          "psnr_raw": 19.961254699596616,
+          "samples": 16
+        },
+        "0.5": {
+          "mae_8bit": 18.08532562851906,
+          "psnr_raw": 19.96127330027664,
+          "samples": 16
+        },
+        "0.75": {
+          "mae_8bit": 18.085316509008408,
+          "psnr_raw": 19.961292221739782,
+          "samples": 16
+        },
+        "1.0": {
+          "mae_8bit": 18.0853089094162,
+          "psnr_raw": 19.961310822580515,
+          "samples": 16
+        }
+      },
+      "seconds": 0.13019340000028023,
+      "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/v10-single-noise-q5-flowcheck/best.pt",
+        "bytes": 3421823,
+        "sha256": "98b731c7072f45f1b1f49c73b601b68df17e634591e83c5ad034c26507ab4e21"
+      },
+      {
+        "path": "Model/runs/v10-single-noise-q5-flowcheck/config.json",
+        "bytes": 2407,
+        "sha256": "e970be826ea34276ac9654f40fe38698f42843ad7e7d4d1f2c307ee483d9a58b"
+      },
+      {
+        "path": "Model/runs/v10-single-noise-q5-flowcheck/epoch-001-target-base-generated.png",
+        "bytes": 30308,
+        "sha256": "d2e4a8c260cd2e06734bbb493d36d184b83881dcdbd0dd0623028d77bd52341f"
+      },
+      {
+        "path": "Model/runs/v10-single-noise-q5-flowcheck/epoch-001.pt",
+        "bytes": 3433035,
+        "sha256": "132e402203abbb2f16bc98ea47bb0958a577b92c04f8c17b4f165dd410c3997e"
+      },
+      {
+        "path": "Model/runs/v10-single-noise-q5-flowcheck/last.pt",
+        "bytes": 3421823,
+        "sha256": "1668d774013328a8acbe3bf50a1693c288532a8daa182740553c53d7983d892f"
+      },
+      {
+        "path": "Model/runs/v10-single-noise-q5-flowcheck/metrics.jsonl",
+        "bytes": 816,
+        "sha256": "a80132c06e411b1e8317227adb4f9390c6f580538e4c78d92cdd2ef0d4cf7e0d"
+      }
+    ]
+  }
+}

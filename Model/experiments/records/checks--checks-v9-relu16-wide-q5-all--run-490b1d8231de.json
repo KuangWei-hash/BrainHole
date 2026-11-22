@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "checks--checks-v9-relu16-wide-q5-all--run-490b1d8231de",
+  "kind": "checks",
+  "name": "checks-v9-relu16-wide-q5-all",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/checks-v9-relu16-wide-q5-all",
+  "started_at": "2026-11-21T19:36:14+08:00",
+  "finished_at": "2026-11-21T19:36:21+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/run_checks.py",
+    "--out",
+    "Model/runs/checks-v9-relu16-wide-q5-all"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "c63ed626ba9c5062106dbe65d9336323582698a8c234c16fb45af3abb7758a3b",
+    "directory": "Model/experiments/source_snapshots/c63ed626ba9c5062106dbe65d9336323582698a8c234c16fb45af3abb7758a3b",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "evaluate_fsr.py": "a23fb3d2a71e7c1db927954e566265b0df0245915837bc7e9b4ec1ca2436a2a9",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "4e045afd05052a7905b821c51454457be612de30a323b618ef33844f44234384",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "129c8716375f8be30f92ec22bc8303c7b07c3ce4bb933b6e8300cfc02a7a0788",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "bfed62150e7b97be5a372b16243ed1cdd4b8ce337f6a7bc17a33cac459dde94b",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "0e7c9ad9ae5d7ebac7c7c920306000c28f4416821bed4c5a1587f4131b12eb90",
+      "作法.MD": "0371dd5e1140df8bfa010824d7c074ae73fc56c0d6c43c8ce186db50e4bc2722",
+      "驗收標準.md": "1b177fc31ef169a3ba8897c54204e99b8fe079d778eb18d650c7fb9a761071fb"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T19:36:21+08:00",
+  "data_sources": {},
+  "result": {
+    "artifacts": [
+      {
+        "path": "Model/runs/checks-v9-relu16-wide-q5-all/tests.log",
+        "bytes": 4718,
+        "sha256": "f406aca12286b1ee996ac74d6d4c13a1081f5edd516fff5161a36b8c9b80356c"
+      }
+    ]
+  }
+}

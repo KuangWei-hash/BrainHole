@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--recording-evaluation-check",
+  "kind": "evaluation",
+  "name": "recording-evaluation-check",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/recording-evaluation-check",
+  "started_at": "2026-11-21T12:18:33+08:00",
+  "finished_at": "2026-11-21T12:18:35+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q6.npz",
+    "--checkpoint",
+    "Model/runs/hybrid-v4-history2/best.pt",
+    "--start-frame",
+    "749",
+    "--stop-frame",
+    "752",
+    "--preview-frame",
+    "750",
+    "--out",
+    "Model/runs/recording-evaluation-check"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "6dfa9699db116e1665a36927a360c536b70a225467e402275779b0b07a98288a",
+    "directory": "Model/experiments/source_snapshots/6dfa9699db116e1665a36927a360c536b70a225467e402275779b0b07a98288a",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "d1f3d029f4b90ea732c15b75d14beeb61445ab14a095ef477098d7bfe7b6bfe8",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "a16d07d9a0dd82f1ec0393b304441c70a66807dc7218d51d276d24fa43c1228d",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "5443db620d3ab1b69d0d3d726d6cc570750c6829c9ebfd316ae3da04d8d72743",
+      "test_record_experiment.py": "7936d985816fad2724804b0f847ddaef54edaa944193b0f59a0c05e70161c404",
+      "train.py": "9fc9b116abf08eab48d13e08bbac49f2233592926e6e38182bddccbbfba4493b",
+      "作法.MD": "050dab2cfd49c3c186160144fdbad18cf5259ecc63ba906bdd52e6144bc1b6ed",
+      "驗收標準.md": "ed8211fea5eb3ad6308721e3f681f4e1d6d775bfc8feb765ad65790c57c7971e"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T12:18:35+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q6.npz",
+        "bytes": 17714112,
+        "sha256": "6bad8a2a18c7d47c30d0ac0766f70a37b8f80d66b2d3141393da7f858975a70e"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/hybrid-v4-history2/best.pt",
+        "bytes": 660792,
+        "sha256": "d54f85d64d2bbee42015c8ec5f8c0539f4e903dd6ffe9944fca65cdbb8ff1a80"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 60,
+      "start_frame": 749,
+      "stop_frame": 752,
+      "first_evaluated_frame": 750,
+      "last_evaluated_frame": 751,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 31.017244768142703,
+          "psnr_raw": 16.367883384194297
+        },
+        "bilinear": {
+          "mae_8bit": 29.251495122909546,
+          "psnr_raw": 16.903092243856026
+        },
+        "hybrid-v4-history2": {
+          "mae_8bit": 18.624666762351993,
+          "psnr_raw": 20.035901511041057
+        }
+      },
+      "gates": {
+        "hybrid-v4-history2": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 1.0
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "hybrid-v4-history2"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564",
+        "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+        "decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064",
+        "samples": 27000,
+        "note": "Decoded only from codestream, not high-resolution labels."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v4-history2\\best.pt"
+      ],
+      "input_contracts": {
+        "hybrid-v4-history2": "encoded_and_decoded_raw_v1"
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--recording-evaluation-check.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "dc74580883f9336c8299487d6fff70f3b8011f9035efd5d6a24c7f0991faf018"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/recording-evaluation-check/bilinear.png",
+        "bytes": 182093,
+        "sha256": "5e24ab7aa1d814ee9181920b0af689e842295d9cd383a6def5efa325c62d4955"
+      },
+      {
+        "path": "Model/runs/recording-evaluation-check/blocks.jsonl",
+        "bytes": 7937,
+        "sha256": "dc74580883f9336c8299487d6fff70f3b8011f9035efd5d6a24c7f0991faf018"
+      },
+      {
+        "path": "Model/runs/recording-evaluation-check/comparison.png",
+        "bytes": 1020435,
+        "sha256": "a7a66a8fe240ac24c18543add43fb9b735e27af6280a0249014953973ff8bad3"
+      },
+      {
+        "path": "Model/runs/recording-evaluation-check/hybrid-v4-history2.png",
+        "bytes": 288653,
+        "sha256": "a43eb27befc961f68dbf854f40aa45c85c417e9afa49a5e13dc30c1457214e3c"
+      },
+      {
+        "path": "Model/runs/recording-evaluation-check/nearest.png",
+        "bytes": 79710,
+        "sha256": "bcd51115d5cff4dda25ce323bd3948bf60cb2899faa1165b3f81cefd48197fbb"
+      },
+      {
+        "path": "Model/runs/recording-evaluation-check/report.json",
+        "bytes": 1509,
+        "sha256": "b51fdf3a56c86445d96b42cc06f1913a0f97aa79895bc8fc7591f48e4a5784da"
+      },
+      {
+        "path": "Model/runs/recording-evaluation-check/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      }
+    ]
+  }
+}

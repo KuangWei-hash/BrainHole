@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--compare-v10-v12-overlap-20261122--run-cc1d9b016089",
+  "kind": "evaluation",
+  "name": "compare-v10-v12-overlap-20261122",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/compare-v10-v12-overlap-20261122",
+  "started_at": "2026-11-22T10:35:25+08:00",
+  "finished_at": "2026-11-22T10:35:33+08:00",
+  "cwd": "W:\\BrainHole",
+  "command_argv": [
+    "C:\\Python313\\python.exe",
+    "Model/compare_v10_v12_existing.py",
+    "--out",
+    "Model/runs/compare-v10-v12-overlap-20261122"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "c473c9d037ed2b901c30d993b26466ca2355ccf19df9c17948af265ea0b2ff25",
+    "directory": "Model/experiments/source_snapshots/c473c9d037ed2b901c30d993b26466ca2355ccf19df9c17948af265ea0b2ff25",
+    "sha256": {
+      "AGENTS.md": "83fb5fc172a1628ab8fc49781082cad2136317eb758945989da41e90be4ee070",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "compare_v10_v12_existing.py": "59e285b0531a42369449c567e423647cda309aee6b8c105a0ceaaa0a223afe56",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "026ac00d93572ad8357898ec742ce0ebbe8c08b372d95e5f22cea2f562b422dc",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "e5aec7c9e6a0d45d3388e79d2d4b76826b228912500afb6a474a5f2574f578b0",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "5496aaeddf4afb01fc8f2c5dccaa129b1e4d1b4b349de1a81bca01447e436dbb",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "79f0bea13705400dc63e23ccba531365eeef54ff9ad2d42bb0c9ab1763e80c6e",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "9279b91f5a2696cabddc5ed44e42e7e278b7d7282e8ddb3370cd525257f5aef8",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": null,
+      "numpy": null,
+      "Pillow": null
+    }
+  },
+  "recorded_at": "2026-11-22T10:35:33+08:00",
+  "data_sources": {},
+  "result": {
+    "report": {
+      "operation": "aggregate existing block metrics; extract existing H264 frames; no inference",
+      "samples": 450,
+      "first_frame": 736,
+      "last_frame": 750,
+      "metrics": {
+        "v10-gamma0.5": {
+          "raw_projection_mae": 12.674394080539544,
+          "rgb_reference_mae": 10.82597405947745
+        },
+        "v10-gamma1": {
+          "raw_projection_mae": 14.012039568896094,
+          "rgb_reference_mae": 11.637774033720294
+        },
+        "v10-B": {
+          "raw_projection_mae": 12.156851633886497,
+          "rgb_reference_mae": 10.518916355073452
+        },
+        "v12": {
+          "raw_projection_mae": 13.568030816564958,
+          "rgb_reference_mae": 11.156939994419615
+        }
+      },
+      "inputs": {
+        "v10": {
+          "W:\\BrainHole\\Model\\runs\\eval-v10-b-scene-detail-best-seed0-20261122\\blocks.jsonl": "c057fbf32d844ef4ceb7a18a62dfdc2441c29896536fb5975447399b5671789c",
+          "W:\\BrainHole\\Model\\runs\\eval-v10-b-scene-detail-best-seed0-20261122\\report.json": "66f737990d2a34a07f975dc27e32be0cfb8e27ac8dc50c7546ff60551976e055",
+          "W:\\BrainHole\\Model\\runs\\eval-v10-b-scene-detail-best-seed0-20261122\\generated.mp4": "df0a04280024a9a219d28951bdc9121754eff82b2ec174d500cb1c4224234a41"
+        },
+        "v12": {
+          "W:\\BrainHole\\Model\\runs\\v12-bbb-q5-phase-decay02-20261122\\blocks.jsonl": "8f73e87911ebfd1c9002c15d0e39c93d5e491f13eb8bc003201bcc95a1212fef",
+          "W:\\BrainHole\\Model\\runs\\v12-bbb-q5-phase-decay02-20261122\\report.json": "6a4d2901d17f237f941318a493b7e8b19db43bf57644ce42334067fc23c94075",
+          "W:\\BrainHole\\Model\\runs\\v12-bbb-q5-phase-decay02-20261122\\generated.mp4": "2f71156ba4c57922937e72cc023ab65c256599746e38b42010dab7c2cc5817e5"
+        }
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-n",
+          "-i",
+          "W:\\BrainHole\\Model\\runs\\eval-v10-b-scene-detail-best-seed0-20261122\\generated.mp4",
+          "-vf",
+          "select=eq(n\\,15)",
+          "-frames:v",
+          "1",
+          "Model\\runs\\compare-v10-v12-overlap-20261122\\v10-frame-736.png"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-n",
+          "-i",
+          "W:\\BrainHole\\Model\\runs\\eval-v10-b-scene-detail-best-seed0-20261122\\generated.mp4",
+          "-vf",
+          "select=eq(n\\,22)",
+          "-frames:v",
+          "1",
+          "Model\\runs\\compare-v10-v12-overlap-20261122\\v10-frame-743.png"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-n",
+          "-i",
+          "W:\\BrainHole\\Model\\runs\\eval-v10-b-scene-detail-best-seed0-20261122\\generated.mp4",
+          "-vf",
+          "select=eq(n\\,29)",
+          "-frames:v",
+          "1",
+          "Model\\runs\\compare-v10-v12-overlap-20261122\\v10-frame-750.png"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-n",
+          "-i",
+          "W:\\BrainHole\\Model\\runs\\v12-bbb-q5-phase-decay02-20261122\\generated.mp4",
+          "-vf",
+          "select=eq(n\\,15)",
+          "-frames:v",
+          "1",
+          "Model\\runs\\compare-v10-v12-overlap-20261122\\v12-frame-736.png"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-n",
+          "-i",
+          "W:\\BrainHole\\Model\\runs\\v12-bbb-q5-phase-decay02-20261122\\generated.mp4",
+          "-vf",
+          "select=eq(n\\,22)",
+          "-frames:v",
+          "1",
+          "Model\\runs\\compare-v10-v12-overlap-20261122\\v12-frame-743.png"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-n",
+          "-i",
+          "W:\\BrainHole\\Model\\runs\\v12-bbb-q5-phase-decay02-20261122\\generated.mp4",
+          "-vf",
+          "select=eq(n\\,29)",
+          "-frames:v",
+          "1",
+          "Model\\runs\\compare-v10-v12-overlap-20261122\\v12-frame-750.png"
+        ]
+      ],
+      "limitations": "15 frames of same-video scene only; v10 uses two frames and 60 epochs on 390 training strips, best epoch40 selected on 128 validation strips; v12 uses 16 frames and no training. RGB reference is demosaiced target RAW, not original RGB. Still frames do not establish motion quality.",
+      "outputs": {
+        "v10-frame-736.png": "9c71008ad97b8ac51eb07a8ec4d6a62b9e858a2dd2a0d61b61bd5c813e12ab7e",
+        "v10-frame-743.png": "4eefff28f6684a4f7597e1e478a1e510e6e095850f693cd96151ae55c711379e",
+        "v10-frame-750.png": "2e702d9c55fed443db028f7db176de93571ba684061cf3b6ae1f52d861b271a3",
+        "v12-frame-736.png": "a3401a3f04461f188ebcebdf686f988a8eb805e6da14130f043a34dc503e393c",
+        "v12-frame-743.png": "4ef7ef54873db9cf1604594778965238b6a34d759548fc5e72fb9e086efe21dd",
+        "v12-frame-750.png": "d24de398f02050ff740e6cfcd2b10779c2315345f61b43e28d42ba666d1b91e7"
+      }
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/compare-v10-v12-overlap-20261122/report.json",
+        "bytes": 4561,
+        "sha256": "b4e3b971c791decca520ff87599f020b7d54847245189a92c695e6d4e5ac5cb3"
+      },
+      {
+        "path": "Model/runs/compare-v10-v12-overlap-20261122/v10-frame-736.png",
+        "bytes": 293012,
+        "sha256": "9c71008ad97b8ac51eb07a8ec4d6a62b9e858a2dd2a0d61b61bd5c813e12ab7e"
+      },
+      {
+        "path": "Model/runs/compare-v10-v12-overlap-20261122/v10-frame-743.png",
+        "bytes": 305118,
+        "sha256": "4eefff28f6684a4f7597e1e478a1e510e6e095850f693cd96151ae55c711379e"
+      },
+      {
+        "path": "Model/runs/compare-v10-v12-overlap-20261122/v10-frame-750.png",
+        "bytes": 293694,
+        "sha256": "2e702d9c55fed443db028f7db176de93571ba684061cf3b6ae1f52d861b271a3"
+      },
+      {
+        "path": "Model/runs/compare-v10-v12-overlap-20261122/v12-frame-736.png",
+        "bytes": 443598,
+        "sha256": "a3401a3f04461f188ebcebdf686f988a8eb805e6da14130f043a34dc503e393c"
+      },
+      {
+        "path": "Model/runs/compare-v10-v12-overlap-20261122/v12-frame-743.png",
+        "bytes": 454549,
+        "sha256": "4ef7ef54873db9cf1604594778965238b6a34d759548fc5e72fb9e086efe21dd"
+      },
+      {
+        "path": "Model/runs/compare-v10-v12-overlap-20261122/v12-frame-750.png",
+        "bytes": 460600,
+        "sha256": "d24de398f02050ff740e6cfcd2b10779c2315345f61b43e28d42ba666d1b91e7"
+      }
+    ]
+  }
+}

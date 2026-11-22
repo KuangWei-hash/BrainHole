@@ -1,0 +1,16 @@
+{
+  "kind": "native",
+  "identity": "oxideav-jpegxs 0.0.9 @3484a041d6d8e893683c1920cb3f68fe6fd3b8b8 (Go port); RGGB deinterleave 80x2x4; Cpih=3; fixed Q=4; levels=1/0; Br=4 (ISO/IEC 21122-1 Table A.7 conformant)",
+  "quantization": 4,
+  "levels_x": 1,
+  "levels_y": 0,
+  "star_tetrix": true,
+  "cts": {
+    "e1": 0,
+    "e2": 0,
+    "cf": 0,
+    "ct": 0
+  },
+  "br": 4,
+  "max_bytes": 640
+}

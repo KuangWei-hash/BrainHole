@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "training--single-v1",
+  "kind": "training",
+  "name": "single-v1",
+  "status": "completed",
+  "output": "Model/runs/single-v1",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 1,
+      "decay": 0.2,
+      "epochs": 3,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\single-v1",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21600,
+      "validation_samples": 5400,
+      "parameters": 6632260
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 26.199552999167807,
+          "psnr_raw": 16.172316032828896,
+          "seconds": 32.17459350000013
+        },
+        "validation": {
+          "mae_8bit": 37.362827190011735,
+          "psnr_raw": 13.490498601642667,
+          "seconds": 1.9561687999998867
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 17.5779791882986,
+          "psnr_raw": 18.971251118567753,
+          "seconds": 25.34915789999991
+        },
+        "validation": {
+          "mae_8bit": 33.62824136945937,
+          "psnr_raw": 13.982678143115088,
+          "seconds": 1.9791537999999491
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 15.013977126125246,
+          "psnr_raw": 20.16563068725333,
+          "seconds": 25.434309799999937
+        },
+        "validation": {
+          "mae_8bit": 31.044523497339753,
+          "psnr_raw": 14.724124279686388,
+          "seconds": 2.1060079000001224
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 3,
+    "best_validation": {
+      "mae_8bit": 31.044523497339753,
+      "psnr_raw": 14.724124279686388,
+      "seconds": 2.1060079000001224
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/single-v1/best.pt",
+        "bytes": 79603003,
+        "sha256": "4a852a9f7207238413b4a544f9be38f23d6fb6da78115c426c3e83786c0286e6"
+      },
+      {
+        "path": "Model/runs/single-v1/config.json",
+        "bytes": 726,
+        "sha256": "ed59dcf727898ae858215952c96d3b5194b30d53e020093fe04f0b90d4dc78a6"
+      },
+      {
+        "path": "Model/runs/single-v1/epoch-001-raw.png",
+        "bytes": 17431,
+        "sha256": "dfecc340859a419338084a1ded3d30789b155f999938bc9dfaef595f83f6c58f"
+      },
+      {
+        "path": "Model/runs/single-v1/epoch-002-raw.png",
+        "bytes": 18048,
+        "sha256": "0bbd9531db72820fe4ee172bc62a69518d7f1826e4860c066bab2cc225339655"
+      },
+      {
+        "path": "Model/runs/single-v1/epoch-003-raw.png",
+        "bytes": 17661,
+        "sha256": "2024aa46cc5d81b9b4bf391d07aa2d6999f54a5bc31ea3f63ab9172c10eb9723"
+      },
+      {
+        "path": "Model/runs/single-v1/example-750-7.png",
+        "bytes": 15848,
+        "sha256": "b9421d315625b2e58a642c07cc13d8cd5eae84ef9e90477ff185fe94d4d3098b"
+      },
+      {
+        "path": "Model/runs/single-v1/example-750-7.raw",
+        "bytes": 10240,
+        "sha256": "32504863543d55409ff8d045b49bdc67cf17e1c5ebf0d476cec53aaf37c1ef2f"
+      },
+      {
+        "path": "Model/runs/single-v1/input-diagnostic.json",
+        "bytes": 121,
+        "sha256": "800455fdefbe4f55fa2b1e586e3d01bc77fada3d0f4923f3417d0b13746291a2"
+      },
+      {
+        "path": "Model/runs/single-v1/last.pt",
+        "bytes": 79603003,
+        "sha256": "f46cb30c698bd9347c9edf6f06e36c81d05ad0d4596f3b4b4a05b95aa77c1b9e"
+      },
+      {
+        "path": "Model/runs/single-v1/metrics.jsonl",
+        "bytes": 687,
+        "sha256": "749a09d0e6160ab97a412d0fc07b7f163e6d662be581bcf0e96b345d3ac76c79"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:06+08:00"
+}

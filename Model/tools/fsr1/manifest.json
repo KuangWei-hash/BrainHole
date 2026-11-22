@@ -1,0 +1,11 @@
+{
+  "project": "AMD GPUOpen FidelityFX CLI",
+  "version": "v1.0.3",
+  "release": "https://github.com/GPUOpen-Effects/FidelityFX-CLI/releases/tag/v1.0.3",
+  "download": "https://github.com/GPUOpen-Effects/FidelityFX-CLI/releases/download/v1.0.3/FidelityFX-CLI-v1.0.3.zip",
+  "archive_sha256": "d280f245730c6d163c0e072a881ed4933b32e67b9de5494650119afa9649ea11",
+  "executable_sha256": "0d0016683ab9331968b76963a8509b717d43652440f1adbf5a743aa2d950cbbd",
+  "license": "v1.0.3/license.txt",
+  "documentation": "v1.0.3/README.md",
+  "backend": "Official precompiled D3D11 shaders, not a Python EASU approximation"
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "training--single-v1-refined",
+  "kind": "training",
+  "name": "single-v1-refined",
+  "status": "completed",
+  "output": "Model/runs/single-v1-refined",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 1,
+      "architecture": "v1",
+      "decoded_cache": null,
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.1,
+      "warm_start": "Model\\runs\\single-v1\\best.pt",
+      "decay": 0.2,
+      "epochs": 3,
+      "batch_size": 8,
+      "lr": 0.0003,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\single-v1-refined",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21600,
+      "validation_samples": 5400,
+      "parameters": 6632260
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 13.283962763628612,
+          "psnr_raw": 21.026212202669882,
+          "seconds": 36.819709500000044
+        },
+        "validation": {
+          "mae_8bit": 30.607113411111964,
+          "psnr_raw": 14.620610054585839,
+          "seconds": 3.6319954999999027
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 12.80573305197888,
+          "psnr_raw": 21.304032214827053,
+          "seconds": 37.348510499999975
+        },
+        "validation": {
+          "mae_8bit": 30.511879487252898,
+          "psnr_raw": 14.594771595925664,
+          "seconds": 3.323531799999728
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 12.477253715569775,
+          "psnr_raw": 21.51171845304848,
+          "seconds": 32.6174460000002
+        },
+        "validation": {
+          "mae_8bit": 30.086178324951064,
+          "psnr_raw": 14.788383689917872,
+          "seconds": 2.3601824000002125
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 3,
+    "best_validation": {
+      "mae_8bit": 30.086178324951064,
+      "psnr_raw": 14.788383689917872,
+      "seconds": 2.3601824000002125
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/single-v1-refined/best.pt",
+        "bytes": 79603259,
+        "sha256": "41a2ba0ce4b160ac63e33830a2185ebca1b259abfa1ef158ed5b0967a3674de6"
+      },
+      {
+        "path": "Model/runs/single-v1-refined/config.json",
+        "bytes": 922,
+        "sha256": "41db11628990afcca6ec56fca3da8840a89d6ec14a77fbf937c27cc3f2e1c2c2"
+      },
+      {
+        "path": "Model/runs/single-v1-refined/epoch-001-raw.png",
+        "bytes": 17855,
+        "sha256": "7f1c2a170a4ac8a2e15ce290d175e3649cffa0d114d789a742f3bfdb582c4c72"
+      },
+      {
+        "path": "Model/runs/single-v1-refined/epoch-002-raw.png",
+        "bytes": 17848,
+        "sha256": "26d65f27a58e2776a909688ab79d87dc649b672b39db88e3d8fc49e747978f09"
+      },
+      {
+        "path": "Model/runs/single-v1-refined/epoch-003-raw.png",
+        "bytes": 17774,
+        "sha256": "9b4d7acd86ca3aba7821083f07c880b968a3105f537cb687180528c9c0203d65"
+      },
+      {
+        "path": "Model/runs/single-v1-refined/last.pt",
+        "bytes": 79603259,
+        "sha256": "5facf097b18f9738bb84d2e1bd203c3413eac393bf461099c5e65e2fd886f3b1"
+      },
+      {
+        "path": "Model/runs/single-v1-refined/metrics.jsonl",
+        "bytes": 688,
+        "sha256": "3df18f21b3fa2b3d1d9165215753f1c9a6ddeb49a8b0a38c458cca1d62849fe7"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:06+08:00"
+}

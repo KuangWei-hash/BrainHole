@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "checks--checks-v10-rtx5060-local-fsr-retry--run-e6a409c1d11a",
+  "kind": "checks",
+  "name": "checks-v10-rtx5060-local-fsr-retry",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/checks-v10-rtx5060-local-fsr-retry",
+  "started_at": "2026-11-22T00:23:16+08:00",
+  "finished_at": "2026-11-22T00:23:45+08:00",
+  "cwd": "Z:\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "runtime-checks-with-local-fsr-after-discovery",
+    "--out",
+    "Model/runs/checks-v10-rtx5060-local-fsr-retry"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "aace5fb716cd6df454493d8bf890c2bae5a54dda7a32bf7c68901b7a1aedc3ec",
+    "directory": "Model/experiments/source_snapshots/aace5fb716cd6df454493d8bf890c2bae5a54dda7a32bf7c68901b7a1aedc3ec",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "faf94b1f9bcc4cf6331f807cf226e8ddea7d3557ebacba26d0d2b990506dfb79",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "85e9c41928f68f796ae3b9acc9aeeb5c5dcf521cde7089e7cc1b48c94bce9ccc",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "58d512fa40d91624052a131b3a55e6569bb4c621a59c2a87d7d3b68d243db92b",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "dd1e9e32e2fc31c2429c0dca082bd807e086215e3ee1ed71e2394de87aa78b8b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "eef3982c15656334c4be0c08b5ff3592f003e95d7b4969abf05671918f95634a",
+      "v10/model.py": "d01d9cb412e99bbcb94daed6f47ee4f75b46cdf786dff31c5ba4205bbb4aff1c",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "a9fbd1a6d43e6981d5dc8986cb413a575b0890c92720695a6d1f1471bff7eaaa",
+      "v10/自動訓練計畫.md": "75e57eaed45e0447441829ef16842d359ccc62b7bad0bcd4142e6fb720fce14d",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T00:23:45+08:00",
+  "data_sources": {},
+  "result": {
+    "artifacts": [
+      {
+        "path": "Model/runs/checks-v10-rtx5060-local-fsr-retry/tests.log",
+        "bytes": 7503,
+        "sha256": "ad4bae5a762b11bdd9d34e68922d9dce7e12a53ae6badd19f9e1cff09dea0f0c"
+      }
+    ]
+  }
+}

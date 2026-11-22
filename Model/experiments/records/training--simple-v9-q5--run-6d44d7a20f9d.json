@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "id": "training--simple-v9-q5--run-6d44d7a20f9d",
+  "kind": "training",
+  "name": "simple-v9-q5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/simple-v9-q5",
+  "started_at": "2026-11-21T17:52:30+08:00",
+  "finished_at": "2026-11-21T17:54:13+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--architecture",
+    "v9",
+    "--history",
+    "1",
+    "--device",
+    "cuda",
+    "--epochs",
+    "5",
+    "--out",
+    "Model/runs/simple-v9-q5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "b48b96da08187db035bb85911179bb778464c550a23431834841661117c8593b",
+    "directory": "Model/experiments/source_snapshots/b48b96da08187db035bb85911179bb778464c550a23431834841661117c8593b",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "e6ba930c54962f05ba166be47ea49f7b8cca2971d5a8dde41c7221b792f95ca7",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "c937b892e0c9f30c72271053c1b38fcdee14d3f4496beca201675cd336944c02",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "7278b43e4036f1a60d4a9b25be75d3be698f3f4ed385f0a7ce997c4e5cbe3ceb",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "74cc399e4afb2e2caef985e29b7ad84b9ec79721ce0571af3a7b4400b2f26f05",
+      "作法.MD": "ce57a6130ab157eda9c95f745da5b72e68d7e7c45640ffb534f3e6418a333115",
+      "驗收標準.md": "6514f0eb672b51e035e05eebaed4418030774142d5c745fc2d3457444d9f5860"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T17:54:13+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "val_db": null,
+      "history": 1,
+      "architecture": "v9",
+      "v8_variant": "expand96_two_layer",
+      "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 1.0,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 5,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\simple-v9-q5",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "train_samples": 21600,
+      "validation_samples": 5400,
+      "parameters": 588,
+      "input_contract": "decoded_raw_only_v1",
+      "residual_blocks": 0,
+      "residual_expansion": 1,
+      "residual_layers": 2,
+      "byte_encoder": false,
+      "temporal_fusion": false,
+      "hidden_channels": 8,
+      "image_convolutions": 2
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 13.092667305190117,
+          "psnr_raw": 22.406687087140106,
+          "seconds": 16.1249381000016
+        },
+        "validation": {
+          "mae_8bit": 16.703684958815575,
+          "psnr_raw": 19.984637743507538,
+          "seconds": 3.026984399999492
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 12.94605630249199,
+          "psnr_raw": 22.475760687334,
+          "seconds": 17.065730400001485
+        },
+        "validation": {
+          "mae_8bit": 16.701954202353953,
+          "psnr_raw": 19.990227508809614,
+          "seconds": 2.889730499999132
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 12.91187947164807,
+          "psnr_raw": 22.494483372862618,
+          "seconds": 16.963621700000658
+        },
+        "validation": {
+          "mae_8bit": 16.713506236920754,
+          "psnr_raw": 20.005687504906806,
+          "seconds": 2.9865570000001753
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "mae_8bit": 12.895677715250187,
+          "psnr_raw": 22.50439704753697,
+          "seconds": 17.00599290000173
+        },
+        "validation": {
+          "mae_8bit": 16.646705273952747,
+          "psnr_raw": 20.014616154001665,
+          "seconds": 2.8866593000020657
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "mae_8bit": 12.877580879856316,
+          "psnr_raw": 22.51239850165748,
+          "seconds": 16.576057300000684
+        },
+        "validation": {
+          "mae_8bit": 16.689821763005522,
+          "psnr_raw": 20.00884041542147,
+          "seconds": 2.955482099998335
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 4,
+    "best_validation": {
+      "mae_8bit": 16.646705273952747,
+      "psnr_raw": 20.014616154001665,
+      "seconds": 2.8866593000020657
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/simple-v9-q5/best.pt",
+        "bytes": 13617,
+        "sha256": "7767f7629a2ecff2e280081a2ed43af8bde2cbbba0bd260b7b5f6558b7ad4ffd"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/config.json",
+        "bytes": 1180,
+        "sha256": "ba3d0e679e9829f755a434491d552e7ae58788fa8645918f22da77a973c8b2f0"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/epoch-001-raw.png",
+        "bytes": 17879,
+        "sha256": "c9e01c2fe8c22f71a2cc396bd0b21af0a726e0197ed5de94ab94da3e8ad7c61e"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/epoch-002-raw.png",
+        "bytes": 17747,
+        "sha256": "9969ec0fe17af35ecb61c1c99463e7ac4e68a816ad0354b8cd09d54c73ae6eb5"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/epoch-003-raw.png",
+        "bytes": 17743,
+        "sha256": "c8f91cbe16b3eb21cfa5e729f6dae8a4d26df4ba51c6a825755ac989d1896ce1"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/epoch-004-raw.png",
+        "bytes": 17776,
+        "sha256": "ed02efbdf6f629686241ac60159a9a200c4f5db38b8e8613a2af6702af344cfc"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/epoch-005-raw.png",
+        "bytes": 17717,
+        "sha256": "4922d366dd8492707ec55ffe136d865cfb748b1633e78831de2754565639b499"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/last.pt",
+        "bytes": 13617,
+        "sha256": "834a0deffd15c1ab4fe401ead2ef7684c27550aad33a0d1b5381a30abe8b1439"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/metrics.jsonl",
+        "bytes": 1141,
+        "sha256": "bf372fc48717a6ccc49130d297e22a98b279f8f309a5d14223b9bc0581e6a980"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "training--smoke-hybrid-history16",
+  "kind": "training",
+  "name": "smoke-hybrid-history16",
+  "status": "completed",
+  "output": "Model/runs/smoke-hybrid-history16",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 16,
+      "architecture": "v3",
+      "decoded_cache": "Model\\runs\\decoded-q6.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.5,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 1,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 2,
+      "val_steps": 2,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\smoke-hybrid-history16",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21150,
+      "validation_samples": 4950,
+      "parameters": 15996,
+      "input_contract": "encoded_and_decoded_raw_v1"
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 29.541855845600367,
+          "psnr_raw": 16.711923241632924,
+          "seconds": 0.44799310000053083
+        },
+        "validation": {
+          "mae_8bit": 29.450591392815113,
+          "psnr_raw": 16.81011999979014,
+          "seconds": 0.0232438999992155
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 1,
+    "best_validation": {
+      "mae_8bit": 29.450591392815113,
+      "psnr_raw": 16.81011999979014,
+      "seconds": 0.0232438999992155
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/smoke-hybrid-history16/best.pt",
+        "bytes": 208443,
+        "sha256": "e7001ff007d9d87eba2808663d05fe72e2f7d11aded2ed5ea434f11ffe34a8c3"
+      },
+      {
+        "path": "Model/runs/smoke-hybrid-history16/config.json",
+        "bytes": 972,
+        "sha256": "867e24c30d70732388a678da516fc809d7305392d41c7b14162f60bed0873ad6"
+      },
+      {
+        "path": "Model/runs/smoke-hybrid-history16/epoch-001-raw.png",
+        "bytes": 12601,
+        "sha256": "bae4a8d126269039fe250d887e4e8b483bdbe48ba1e028aaf0f7a7ee064d2b61"
+      },
+      {
+        "path": "Model/runs/smoke-hybrid-history16/last.pt",
+        "bytes": 208443,
+        "sha256": "4c8c69ee3bfc958f96b74f9f7899d297bdf55b82955505de79e1c9468cc25b19"
+      },
+      {
+        "path": "Model/runs/smoke-hybrid-history16/metrics.jsonl",
+        "bytes": 231,
+        "sha256": "637af7e72a5ecbd758e5e3e2fd5bb415b58a5dfc2a2eea79e62e43a55ac655da"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:07+08:00"
+}

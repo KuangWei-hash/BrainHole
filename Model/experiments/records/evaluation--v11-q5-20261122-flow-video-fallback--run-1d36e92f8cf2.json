@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v11-q5-20261122-flow-video-fallback--run-1d36e92f8cf2",
+  "kind": "evaluation",
+  "name": "v11-q5-20261122-flow-video-fallback",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v11-q5-20261122-flow-video-fallback",
+  "started_at": "2026-11-22T00:58:27+08:00",
+  "finished_at": "2026-11-22T00:58:30+08:00",
+  "cwd": "Z:\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "evaluate_v11.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs/v11-q5-20261122-scene-plan.json",
+    "--checkpoint",
+    "runs/v11-q5-20261122-flow-t1/best.pt",
+    "runs/v11-q5-20261122-flow-t4/best.pt",
+    "--out",
+    "runs/v11-q5-20261122-flow-video-fallback",
+    "--frame-range",
+    "721",
+    "724",
+    "--full-video",
+    "--device",
+    "cpu"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "2f8381b7f81a454b9ef20cf27312cf34cec3b91ff8eb2b1572f369896bc3df4e",
+    "directory": "Model/experiments/source_snapshots/2f8381b7f81a454b9ef20cf27312cf34cec3b91ff8eb2b1572f369896bc3df4e",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "14e6c579088de720723af0c7af7e61c5d83b7d7aca8088fabb86f5ad40041583",
+      "evaluate_v11.py": "d40374bbbda1f3ba53b79ef464a80b0646893a33d54d4aa5cc08b95928e57d52",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "85e9c41928f68f796ae3b9acc9aeeb5c5dcf521cde7089e7cc1b48c94bce9ccc",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "24a86aaf80312dc8d2660c17a7d60e2ce7b0d8aaa3e9bf4c0c75924f271b4fde",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "2d6313fea03f999769b8a7641ec20691d9df7efc7299a7e91d0e8e428c56c67b",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "dd1e9e32e2fc31c2429c0dca082bd807e086215e3ee1ed71e2394de87aa78b8b",
+      "train_v11.py": "4c04bc797dabeedabcfa28d4e63c1a6725e8bb42900f30156766784c62be8d5c",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "eef3982c15656334c4be0c08b5ff3592f003e95d7b4969abf05671918f95634a",
+      "v10/model.py": "d01d9cb412e99bbcb94daed6f47ee4f75b46cdf786dff31c5ba4205bbb4aff1c",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "5b9d9cbcece4240ff7939599dd86920a579ba6863747f2b4429d1ce62fdc90bf",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "ae787404ebece7d2a7c58bd8e106cbbb81f3f3426529d1dc5992e27053c62e78",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T00:58:30+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-t1/best.pt",
+        "bytes": 343203,
+        "sha256": "e0be3f4e0d1b29b6900e656f89a2fdd1ac1147647effa5b1fdf0869bb72797af"
+      },
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-t4/best.pt",
+        "bytes": 425380,
+        "sha256": "76b441f2d53959b944491064b0766d506caac409f8f552fa98a9e40985583694"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/v11-q5-20261122-scene-plan.json",
+        "bytes": 14443,
+        "sha256": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 30,
+      "start_frame": 721,
+      "stop_frame_inclusive": 724,
+      "first_evaluated_frame": 724,
+      "last_evaluated_frame": 724,
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "training_key_sha256": "8beaf320d8dba8dd9eaa12e0088bca17010fd8102885fb07a8f527447a6124e5",
+      "checkpoint_epochs": {
+        "v11-t1-phase": 1,
+        "v11-t4-phase": 1
+      },
+      "training_budget": {
+        "train_range": [
+          0,
+          719
+        ],
+        "validation_range": [
+          721,
+          899
+        ],
+        "cohort_frames": 4,
+        "channels": 16,
+        "blocks": 1,
+        "seed": 42,
+        "batch_size": 4,
+        "epochs": 5,
+        "max_steps": 20,
+        "lr": 0.0001,
+        "weight_decay": 0.0001,
+        "precision": "FP32"
+      },
+      "raw_projection_metrics": {
+        "v11-t1-phase": {
+          "mae_8bit": 15.777920722961426,
+          "psnr": 21.34549439850234
+        },
+        "v11-t4-phase": {
+          "mae_8bit": 15.778685951232909,
+          "psnr": 21.34498488514661
+        },
+        "bilinear": {
+          "mae_8bit": 15.705833625793458,
+          "psnr": 21.37511860253572
+        },
+        "nearest": {
+          "mae_8bit": 17.569016933441162,
+          "psnr": 20.25092503406738
+        }
+      },
+      "rgb_reference_metrics": {
+        "v11-t1-phase": {
+          "mae_8bit": 14.324245325724284,
+          "psnr": 22.357653296826626
+        },
+        "v11-t4-phase": {
+          "mae_8bit": 14.32521915435791,
+          "psnr": 22.356858234496173
+        },
+        "bilinear": {
+          "mae_8bit": 14.220028368631997,
+          "psnr": 22.411449234323445
+        },
+        "nearest": {
+          "mae_8bit": 15.678071403503418,
+          "psnr": 21.431050676782732
+        }
+      },
+      "region_raw_metrics": {
+        "static": {
+          "v11-t1-phase": {
+            "mae_8bit": 14.480617008756683,
+            "psnr": 22.170502666374205
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 14.481372969933336,
+            "psnr": 22.16979141927944
+          },
+          "bilinear": {
+            "mae_8bit": 14.38764804744678,
+            "psnr": 22.21955196457596
+          },
+          "nearest": {
+            "mae_8bit": 16.052975050764097,
+            "psnr": 21.041748913543188
+          }
+        },
+        "changed": {
+          "v11-t1-phase": {
+            "mae_8bit": 17.136260695529586,
+            "psnr": 20.62243821150272
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 17.137032308099972,
+            "psnr": 20.622077409003865
+          },
+          "bilinear": {
+            "mae_8bit": 17.08603452503415,
+            "psnr": 20.637877216821217
+          },
+          "nearest": {
+            "mae_8bit": 19.15638057057748,
+            "psnr": 19.553102145110437
+          }
+        },
+        "source-repeat": {},
+        "source-distinct": {
+          "v11-t1-phase": {
+            "mae_8bit": 15.777920722961426,
+            "psnr": 21.34549439850234
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 15.778685951232909,
+            "psnr": 21.34498488514661
+          },
+          "bilinear": {
+            "mae_8bit": 15.705833625793458,
+            "psnr": 21.37511860253572
+          },
+          "nearest": {
+            "mae_8bit": 17.569016933441162,
+            "psnr": 20.25092503406738
+          }
+        },
+        "measured": {
+          "v11-t1-phase": {
+            "mae_8bit": 11.179774284362793,
+            "psnr": 25.191217144872475
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 11.186414909362792,
+            "psnr": 25.18524718928862
+          },
+          "bilinear": {
+            "mae_8bit": 11.115727758407592,
+            "psnr": 25.250886751828197
+          },
+          "nearest": {
+            "mae_8bit": 11.115728569030761,
+            "psnr": 25.25088588456075
+          }
+        }
+      },
+      "region_raw_pixels": {
+        "static": 157130,
+        "changed": 150070,
+        "source-repeat": 0,
+        "source-distinct": 307200,
+        "measured": 19200
+      },
+      "measurement_reference_metrics": {
+        "decoded-to-target": {
+          "mae_8bit": 11.115728569030761,
+          "psnr": 25.25088588456075
+        },
+        "v11-t1-phase": {
+          "mae_8bit": 0.6910422176122665,
+          "psnr": 50.79880172747133
+        },
+        "v11-t4-phase": {
+          "mae_8bit": 0.7331316471099854,
+          "psnr": 50.33431644307444
+        },
+        "bilinear": {
+          "mae_8bit": 8.004010896911494e-06,
+          "psnr": 120.0
+        },
+        "nearest": {
+          "mae_8bit": 0.0,
+          "psnr": 120.0
+        }
+      },
+      "strip_seam_residual_mae": {
+        "v11-t1-phase": 20.904024913393215,
+        "v11-t4-phase": 20.902653003561085,
+        "bilinear": 20.85441812975653,
+        "nearest": 23.020418890591326
+      },
+      "consecutive_frame_residual_mae": {},
+      "coverage": {
+        "v11-t1-phase": {
+          "geometry": 0.0625,
+          "valid": 0.0625
+        },
+        "v11-t4-phase": {
+          "geometry": 0.25,
+          "valid": 0.25
+        }
+      },
+      "win_rate_vs_t1": {
+        "v11-t1-phase": 0.0,
+        "v11-t4-phase": 0.3333333333333333,
+        "bilinear": 0.9333333333333333,
+        "nearest": 0.0
+      },
+      "previews": [],
+      "full_video": {
+        "start": 721,
+        "stop": 725,
+        "method": "v11-t4-phase",
+        "fallback_strips": 90,
+        "frames": 4
+      },
+      "fsr_report": null,
+      "v9_reference": null,
+      "status": "flow_check"
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--v11-q5-20261122-flow-video-fallback--run-1d36e92f8cf2.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "098f07e890699c4d9d64bf5cae75ec4bb1b8359ecf6aa6aefe69d30d4a6d7f71"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-video-fallback/blocks.jsonl",
+        "bytes": 11337,
+        "sha256": "098f07e890699c4d9d64bf5cae75ec4bb1b8359ecf6aa6aefe69d30d4a6d7f71"
+      },
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-video-fallback/full-validation/generated-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-video-fallback/full-validation/generated.mp4",
+        "bytes": 70658,
+        "sha256": "462281a1fde8322cf20863abd3895053558e54915a6d63a5735a34bf3f9e8bb5"
+      },
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-video-fallback/report.json",
+        "bytes": 5023,
+        "sha256": "f9ab47b09188c3b817208d5a396de05bb97899400e055b903320475e37996392"
+      }
+    ]
+  }
+}

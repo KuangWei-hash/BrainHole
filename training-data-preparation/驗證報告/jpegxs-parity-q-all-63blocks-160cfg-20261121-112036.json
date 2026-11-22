@@ -1,0 +1,1581 @@
+{
+  "generated_at": "2026-11-21T11:20:33+08:00",
+  "host": "windows/amd64",
+  "go_version": "go1.24.0",
+  "bridge": ".\\bin\\brainhole-jpegxs.exe",
+  "bridge_sha256": "dcd7034f555ae2663489b20746f11c2cc0487947c10bd0e52419ccbdbeb0b95b",
+  "corpus_size": 63,
+  "corpus_kinds": {
+    "canonical": 8,
+    "production-db": 10,
+    "random-lcg": 12,
+    "random-xorshift": 12,
+    "structured": 12,
+    "video": 9
+  },
+  "config_count": 160,
+  "quantization_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "codestream_length_stats": [
+    {
+      "quantization": 0,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 952,
+      "mean_bytes": 654.1269841269841,
+      "median_bytes": 790
+    },
+    {
+      "quantization": 0,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 972,
+      "mean_bytes": 650.1269841269841,
+      "median_bytes": 799
+    },
+    {
+      "quantization": 0,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 963,
+      "mean_bytes": 638.952380952381,
+      "median_bytes": 796
+    },
+    {
+      "quantization": 0,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 983,
+      "mean_bytes": 647.7301587301587,
+      "median_bytes": 804
+    },
+    {
+      "quantization": 0,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 1010,
+      "mean_bytes": 662.4285714285714,
+      "median_bytes": 835
+    },
+    {
+      "quantization": 0,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 1010,
+      "mean_bytes": 662.4761904761905,
+      "median_bytes": 822
+    },
+    {
+      "quantization": 0,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 1048,
+      "mean_bytes": 686.1746031746031,
+      "median_bytes": 874
+    },
+    {
+      "quantization": 0,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 1031,
+      "mean_bytes": 676.952380952381,
+      "median_bytes": 842
+    },
+    {
+      "quantization": 0,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 1060,
+      "mean_bytes": 696.0793650793651,
+      "median_bytes": 887
+    },
+    {
+      "quantization": 0,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 1043,
+      "mean_bytes": 686.3333333333334,
+      "median_bytes": 852
+    },
+    {
+      "quantization": 1,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 909,
+      "mean_bytes": 616.9047619047619,
+      "median_bytes": 740
+    },
+    {
+      "quantization": 1,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 947,
+      "mean_bytes": 629.6825396825396,
+      "median_bytes": 774
+    },
+    {
+      "quantization": 1,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 943,
+      "mean_bytes": 620.7460317460317,
+      "median_bytes": 770
+    },
+    {
+      "quantization": 1,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 970,
+      "mean_bytes": 637.4444444444445,
+      "median_bytes": 791
+    },
+    {
+      "quantization": 1,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 998,
+      "mean_bytes": 651.2539682539683,
+      "median_bytes": 821
+    },
+    {
+      "quantization": 1,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 1003,
+      "mean_bytes": 656.047619047619,
+      "median_bytes": 814
+    },
+    {
+      "quantization": 1,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 1040,
+      "mean_bytes": 678.4603174603175,
+      "median_bytes": 864
+    },
+    {
+      "quantization": 1,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 1026,
+      "mean_bytes": 672.6666666666666,
+      "median_bytes": 837
+    },
+    {
+      "quantization": 1,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 1056,
+      "mean_bytes": 691.9206349206349,
+      "median_bytes": 882
+    },
+    {
+      "quantization": 1,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 1041,
+      "mean_bytes": 684.0793650793651,
+      "median_bytes": 850
+    },
+    {
+      "quantization": 2,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 809,
+      "mean_bytes": 542.968253968254,
+      "median_bytes": 640
+    },
+    {
+      "quantization": 2,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 876,
+      "mean_bytes": 575.6825396825396,
+      "median_bytes": 699
+    },
+    {
+      "quantization": 2,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 845,
+      "mean_bytes": 547.7777777777778,
+      "median_bytes": 670
+    },
+    {
+      "quantization": 2,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 899,
+      "mean_bytes": 583.8253968253969,
+      "median_bytes": 716
+    },
+    {
+      "quantization": 2,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 897,
+      "mean_bytes": 575.4761904761905,
+      "median_bytes": 715
+    },
+    {
+      "quantization": 2,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 929,
+      "mean_bytes": 600.6825396825396,
+      "median_bytes": 737
+    },
+    {
+      "quantization": 2,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 932,
+      "mean_bytes": 598.6190476190476,
+      "median_bytes": 753
+    },
+    {
+      "quantization": 2,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 949,
+      "mean_bytes": 615.5396825396825,
+      "median_bytes": 757
+    },
+    {
+      "quantization": 2,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 949,
+      "mean_bytes": 612.6666666666666,
+      "median_bytes": 773
+    },
+    {
+      "quantization": 2,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 965,
+      "mean_bytes": 627.015873015873,
+      "median_bytes": 770
+    },
+    {
+      "quantization": 3,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 709,
+      "mean_bytes": 474.5238095238095,
+      "median_bytes": 539
+    },
+    {
+      "quantization": 3,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 781,
+      "mean_bytes": 508.3015873015873,
+      "median_bytes": 598
+    },
+    {
+      "quantization": 3,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 745,
+      "mean_bytes": 479.8412698412698,
+      "median_bytes": 570
+    },
+    {
+      "quantization": 3,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 804,
+      "mean_bytes": 517,
+      "median_bytes": 615
+    },
+    {
+      "quantization": 3,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 792,
+      "mean_bytes": 504.6507936507937,
+      "median_bytes": 610
+    },
+    {
+      "quantization": 3,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 832,
+      "mean_bytes": 532.8095238095239,
+      "median_bytes": 633
+    },
+    {
+      "quantization": 3,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 822,
+      "mean_bytes": 524.6507936507936,
+      "median_bytes": 642
+    },
+    {
+      "quantization": 3,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 849,
+      "mean_bytes": 546.063492063492,
+      "median_bytes": 650
+    },
+    {
+      "quantization": 3,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 839,
+      "mean_bytes": 538.5714285714286,
+      "median_bytes": 662
+    },
+    {
+      "quantization": 3,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 865,
+      "mean_bytes": 557.2539682539683,
+      "median_bytes": 664
+    },
+    {
+      "quantization": 4,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 609,
+      "mean_bytes": 409.8095238095238,
+      "median_bytes": 436
+    },
+    {
+      "quantization": 4,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 682,
+      "mean_bytes": 443.58730158730157,
+      "median_bytes": 496
+    },
+    {
+      "quantization": 4,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 644,
+      "mean_bytes": 418.14285714285717,
+      "median_bytes": 467
+    },
+    {
+      "quantization": 4,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 705,
+      "mean_bytes": 453.968253968254,
+      "median_bytes": 513
+    },
+    {
+      "quantization": 4,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 686,
+      "mean_bytes": 440.57142857142856,
+      "median_bytes": 499
+    },
+    {
+      "quantization": 4,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 730,
+      "mean_bytes": 468.55555555555554,
+      "median_bytes": 530
+    },
+    {
+      "quantization": 4,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 712,
+      "mean_bytes": 458.2063492063492,
+      "median_bytes": 532
+    },
+    {
+      "quantization": 4,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 746,
+      "mean_bytes": 480.95238095238096,
+      "median_bytes": 547
+    },
+    {
+      "quantization": 4,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 728,
+      "mean_bytes": 472.1904761904762,
+      "median_bytes": 550
+    },
+    {
+      "quantization": 4,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 761,
+      "mean_bytes": 491.93650793650795,
+      "median_bytes": 559
+    },
+    {
+      "quantization": 5,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 508,
+      "mean_bytes": 345.6190476190476,
+      "median_bytes": 328
+    },
+    {
+      "quantization": 5,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 580,
+      "mean_bytes": 380.22222222222223,
+      "median_bytes": 392
+    },
+    {
+      "quantization": 5,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 544,
+      "mean_bytes": 355.95238095238096,
+      "median_bytes": 356
+    },
+    {
+      "quantization": 5,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 604,
+      "mean_bytes": 392.26984126984127,
+      "median_bytes": 411
+    },
+    {
+      "quantization": 5,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 580,
+      "mean_bytes": 377.3015873015873,
+      "median_bytes": 389
+    },
+    {
+      "quantization": 5,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 626,
+      "mean_bytes": 406.1587301587302,
+      "median_bytes": 429
+    },
+    {
+      "quantization": 5,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 601,
+      "mean_bytes": 393.031746031746,
+      "median_bytes": 413
+    },
+    {
+      "quantization": 5,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 643,
+      "mean_bytes": 418.25396825396825,
+      "median_bytes": 445
+    },
+    {
+      "quantization": 5,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 618,
+      "mean_bytes": 406.8095238095238,
+      "median_bytes": 429
+    },
+    {
+      "quantization": 5,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 655,
+      "mean_bytes": 428.85714285714283,
+      "median_bytes": 457
+    },
+    {
+      "quantization": 6,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 403,
+      "mean_bytes": 281.1111111111111,
+      "median_bytes": 238
+    },
+    {
+      "quantization": 6,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 475,
+      "mean_bytes": 317.2857142857143,
+      "median_bytes": 298
+    },
+    {
+      "quantization": 6,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 440,
+      "mean_bytes": 294.87301587301585,
+      "median_bytes": 266
+    },
+    {
+      "quantization": 6,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 504,
+      "mean_bytes": 332.41269841269843,
+      "median_bytes": 317
+    },
+    {
+      "quantization": 6,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 473,
+      "mean_bytes": 315.1746031746032,
+      "median_bytes": 284
+    },
+    {
+      "quantization": 6,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 523,
+      "mean_bytes": 346.4920634920635,
+      "median_bytes": 328
+    },
+    {
+      "quantization": 6,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 495,
+      "mean_bytes": 330.6190476190476,
+      "median_bytes": 304
+    },
+    {
+      "quantization": 6,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 539,
+      "mean_bytes": 358.2063492063492,
+      "median_bytes": 341
+    },
+    {
+      "quantization": 6,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 510,
+      "mean_bytes": 344.3809523809524,
+      "median_bytes": 322
+    },
+    {
+      "quantization": 6,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 551,
+      "mean_bytes": 368.6825396825397,
+      "median_bytes": 355
+    },
+    {
+      "quantization": 7,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 293,
+      "mean_bytes": 216.9047619047619,
+      "median_bytes": 191
+    },
+    {
+      "quantization": 7,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 371,
+      "mean_bytes": 257.8412698412698,
+      "median_bytes": 231
+    },
+    {
+      "quantization": 7,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 342,
+      "mean_bytes": 236.17460317460316,
+      "median_bytes": 206
+    },
+    {
+      "quantization": 7,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 397,
+      "mean_bytes": 274,
+      "median_bytes": 245
+    },
+    {
+      "quantization": 7,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 368,
+      "mean_bytes": 256.7936507936508,
+      "median_bytes": 224
+    },
+    {
+      "quantization": 7,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 417,
+      "mean_bytes": 287.87301587301585,
+      "median_bytes": 257
+    },
+    {
+      "quantization": 7,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 388,
+      "mean_bytes": 271.7142857142857,
+      "median_bytes": 237
+    },
+    {
+      "quantization": 7,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 429,
+      "mean_bytes": 298.55555555555554,
+      "median_bytes": 267
+    },
+    {
+      "quantization": 7,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 400,
+      "mean_bytes": 283.6507936507937,
+      "median_bytes": 252
+    },
+    {
+      "quantization": 7,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 438,
+      "mean_bytes": 308.23809523809524,
+      "median_bytes": 279
+    },
+    {
+      "quantization": 8,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 213,
+      "mean_bytes": 170.3015873015873,
+      "median_bytes": 153
+    },
+    {
+      "quantization": 8,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 282,
+      "mean_bytes": 207.1904761904762,
+      "median_bytes": 177
+    },
+    {
+      "quantization": 8,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 254,
+      "mean_bytes": 181.96825396825398,
+      "median_bytes": 153
+    },
+    {
+      "quantization": 8,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 292,
+      "mean_bytes": 219.53968253968253,
+      "median_bytes": 188
+    },
+    {
+      "quantization": 8,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 266,
+      "mean_bytes": 197.95238095238096,
+      "median_bytes": 167
+    },
+    {
+      "quantization": 8,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 308,
+      "mean_bytes": 230.6031746031746,
+      "median_bytes": 201
+    },
+    {
+      "quantization": 8,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 276,
+      "mean_bytes": 209.31746031746033,
+      "median_bytes": 183
+    },
+    {
+      "quantization": 8,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 317,
+      "mean_bytes": 239.8095238095238,
+      "median_bytes": 210
+    },
+    {
+      "quantization": 8,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 287,
+      "mean_bytes": 220.77777777777777,
+      "median_bytes": 195
+    },
+    {
+      "quantization": 8,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 327,
+      "mean_bytes": 249.88888888888889,
+      "median_bytes": 220
+    },
+    {
+      "quantization": 9,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 151,
+      "mean_bytes": 146.71428571428572,
+      "median_bytes": 146
+    },
+    {
+      "quantization": 9,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 225,
+      "mean_bytes": 173.84126984126985,
+      "median_bytes": 158
+    },
+    {
+      "quantization": 9,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 149,
+      "mean_bytes": 141.95238095238096,
+      "median_bytes": 140
+    },
+    {
+      "quantization": 9,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 234,
+      "mean_bytes": 182.84126984126985,
+      "median_bytes": 167
+    },
+    {
+      "quantization": 9,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 162,
+      "mean_bytes": 154.03174603174602,
+      "median_bytes": 152
+    },
+    {
+      "quantization": 9,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 244,
+      "mean_bytes": 192.84126984126985,
+      "median_bytes": 177
+    },
+    {
+      "quantization": 9,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 172,
+      "mean_bytes": 164.14285714285714,
+      "median_bytes": 162
+    },
+    {
+      "quantization": 9,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 253,
+      "mean_bytes": 201.87301587301587,
+      "median_bytes": 186
+    },
+    {
+      "quantization": 9,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 184,
+      "mean_bytes": 176.14285714285714,
+      "median_bytes": 174
+    },
+    {
+      "quantization": 9,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 263,
+      "mean_bytes": 211.87301587301587,
+      "median_bytes": 196
+    },
+    {
+      "quantization": 10,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 146,
+      "mean_bytes": 146,
+      "median_bytes": 146
+    },
+    {
+      "quantization": 10,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 176,
+      "mean_bytes": 156.52380952380952,
+      "median_bytes": 151
+    },
+    {
+      "quantization": 10,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 140,
+      "mean_bytes": 140,
+      "median_bytes": 140
+    },
+    {
+      "quantization": 10,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 185,
+      "mean_bytes": 165.52380952380952,
+      "median_bytes": 160
+    },
+    {
+      "quantization": 10,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 152,
+      "mean_bytes": 152,
+      "median_bytes": 152
+    },
+    {
+      "quantization": 10,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 195,
+      "mean_bytes": 175.52380952380952,
+      "median_bytes": 170
+    },
+    {
+      "quantization": 10,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 162,
+      "mean_bytes": 162,
+      "median_bytes": 162
+    },
+    {
+      "quantization": 10,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 204,
+      "mean_bytes": 184.52380952380952,
+      "median_bytes": 179
+    },
+    {
+      "quantization": 10,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 174,
+      "mean_bytes": 174,
+      "median_bytes": 174
+    },
+    {
+      "quantization": 10,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 214,
+      "mean_bytes": 194.52380952380952,
+      "median_bytes": 189
+    },
+    {
+      "quantization": 11,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 146,
+      "mean_bytes": 146,
+      "median_bytes": 146
+    },
+    {
+      "quantization": 11,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 151,
+      "mean_bytes": 151,
+      "median_bytes": 151
+    },
+    {
+      "quantization": 11,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 140,
+      "mean_bytes": 140,
+      "median_bytes": 140
+    },
+    {
+      "quantization": 11,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 160,
+      "mean_bytes": 160,
+      "median_bytes": 160
+    },
+    {
+      "quantization": 11,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 152,
+      "mean_bytes": 152,
+      "median_bytes": 152
+    },
+    {
+      "quantization": 11,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 170,
+      "mean_bytes": 170,
+      "median_bytes": 170
+    },
+    {
+      "quantization": 11,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 162,
+      "mean_bytes": 162,
+      "median_bytes": 162
+    },
+    {
+      "quantization": 11,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 179,
+      "mean_bytes": 179,
+      "median_bytes": 179
+    },
+    {
+      "quantization": 11,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 174,
+      "mean_bytes": 174,
+      "median_bytes": 174
+    },
+    {
+      "quantization": 11,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 189,
+      "mean_bytes": 189,
+      "median_bytes": 189
+    },
+    {
+      "quantization": 12,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 146,
+      "mean_bytes": 146,
+      "median_bytes": 146
+    },
+    {
+      "quantization": 12,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 151,
+      "mean_bytes": 151,
+      "median_bytes": 151
+    },
+    {
+      "quantization": 12,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 140,
+      "mean_bytes": 140,
+      "median_bytes": 140
+    },
+    {
+      "quantization": 12,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 160,
+      "mean_bytes": 160,
+      "median_bytes": 160
+    },
+    {
+      "quantization": 12,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 152,
+      "mean_bytes": 152,
+      "median_bytes": 152
+    },
+    {
+      "quantization": 12,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 170,
+      "mean_bytes": 170,
+      "median_bytes": 170
+    },
+    {
+      "quantization": 12,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 162,
+      "mean_bytes": 162,
+      "median_bytes": 162
+    },
+    {
+      "quantization": 12,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 179,
+      "mean_bytes": 179,
+      "median_bytes": 179
+    },
+    {
+      "quantization": 12,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 174,
+      "mean_bytes": 174,
+      "median_bytes": 174
+    },
+    {
+      "quantization": 12,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 189,
+      "mean_bytes": 189,
+      "median_bytes": 189
+    },
+    {
+      "quantization": 13,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 146,
+      "mean_bytes": 146,
+      "median_bytes": 146
+    },
+    {
+      "quantization": 13,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 151,
+      "mean_bytes": 151,
+      "median_bytes": 151
+    },
+    {
+      "quantization": 13,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 140,
+      "mean_bytes": 140,
+      "median_bytes": 140
+    },
+    {
+      "quantization": 13,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 160,
+      "mean_bytes": 160,
+      "median_bytes": 160
+    },
+    {
+      "quantization": 13,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 152,
+      "mean_bytes": 152,
+      "median_bytes": 152
+    },
+    {
+      "quantization": 13,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 170,
+      "mean_bytes": 170,
+      "median_bytes": 170
+    },
+    {
+      "quantization": 13,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 162,
+      "mean_bytes": 162,
+      "median_bytes": 162
+    },
+    {
+      "quantization": 13,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 179,
+      "mean_bytes": 179,
+      "median_bytes": 179
+    },
+    {
+      "quantization": 13,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 174,
+      "mean_bytes": 174,
+      "median_bytes": 174
+    },
+    {
+      "quantization": 13,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 189,
+      "mean_bytes": 189,
+      "median_bytes": 189
+    },
+    {
+      "quantization": 14,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 146,
+      "mean_bytes": 146,
+      "median_bytes": 146
+    },
+    {
+      "quantization": 14,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 151,
+      "mean_bytes": 151,
+      "median_bytes": 151
+    },
+    {
+      "quantization": 14,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 140,
+      "mean_bytes": 140,
+      "median_bytes": 140
+    },
+    {
+      "quantization": 14,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 160,
+      "mean_bytes": 160,
+      "median_bytes": 160
+    },
+    {
+      "quantization": 14,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 152,
+      "mean_bytes": 152,
+      "median_bytes": 152
+    },
+    {
+      "quantization": 14,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 170,
+      "mean_bytes": 170,
+      "median_bytes": 170
+    },
+    {
+      "quantization": 14,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 162,
+      "mean_bytes": 162,
+      "median_bytes": 162
+    },
+    {
+      "quantization": 14,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 179,
+      "mean_bytes": 179,
+      "median_bytes": 179
+    },
+    {
+      "quantization": 14,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 174,
+      "mean_bytes": 174,
+      "median_bytes": 174
+    },
+    {
+      "quantization": 14,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 189,
+      "mean_bytes": 189,
+      "median_bytes": 189
+    },
+    {
+      "quantization": 15,
+      "levels_x": 1,
+      "levels_y": 0,
+      "min_bytes": 146,
+      "max_bytes": 146,
+      "mean_bytes": 146,
+      "median_bytes": 146
+    },
+    {
+      "quantization": 15,
+      "levels_x": 1,
+      "levels_y": 1,
+      "min_bytes": 151,
+      "max_bytes": 151,
+      "mean_bytes": 151,
+      "median_bytes": 151
+    },
+    {
+      "quantization": 15,
+      "levels_x": 2,
+      "levels_y": 0,
+      "min_bytes": 140,
+      "max_bytes": 140,
+      "mean_bytes": 140,
+      "median_bytes": 140
+    },
+    {
+      "quantization": 15,
+      "levels_x": 2,
+      "levels_y": 1,
+      "min_bytes": 160,
+      "max_bytes": 160,
+      "mean_bytes": 160,
+      "median_bytes": 160
+    },
+    {
+      "quantization": 15,
+      "levels_x": 3,
+      "levels_y": 0,
+      "min_bytes": 152,
+      "max_bytes": 152,
+      "mean_bytes": 152,
+      "median_bytes": 152
+    },
+    {
+      "quantization": 15,
+      "levels_x": 3,
+      "levels_y": 1,
+      "min_bytes": 170,
+      "max_bytes": 170,
+      "mean_bytes": 170,
+      "median_bytes": 170
+    },
+    {
+      "quantization": 15,
+      "levels_x": 4,
+      "levels_y": 0,
+      "min_bytes": 162,
+      "max_bytes": 162,
+      "mean_bytes": 162,
+      "median_bytes": 162
+    },
+    {
+      "quantization": 15,
+      "levels_x": 4,
+      "levels_y": 1,
+      "min_bytes": 179,
+      "max_bytes": 179,
+      "mean_bytes": 179,
+      "median_bytes": 179
+    },
+    {
+      "quantization": 15,
+      "levels_x": 5,
+      "levels_y": 0,
+      "min_bytes": 174,
+      "max_bytes": 174,
+      "mean_bytes": 174,
+      "median_bytes": 174
+    },
+    {
+      "quantization": 15,
+      "levels_x": 5,
+      "levels_y": 1,
+      "min_bytes": 189,
+      "max_bytes": 189,
+      "mean_bytes": 189,
+      "median_bytes": 189
+    }
+  ],
+  "cases": 10080,
+  "identical": 10080,
+  "upstream_decoded": 10080,
+  "q0_cases": 630,
+  "q0_lossless": 630,
+  "rust_digest": "1a7dee5fa9d70526519f3c7bd128da2873ecf76a27bf2b4853da1c8f31e055ca",
+  "go_digest": "1a7dee5fa9d70526519f3c7bd128da2873ecf76a27bf2b4853da1c8f31e055ca",
+  "digest_match": true,
+  "wall_clock": "56.872s",
+  "case_latency_ms": {
+    "mean": 81.8721637896828,
+    "median": 80.171,
+    "min": 39.767,
+    "max": 501.994
+  },
+  "negative_controls": [
+    {
+      "name": "br-field-sensitivity",
+      "passed": true,
+      "description": "Br=4 與 Br=8 必須不同，證明比對會偵測到差異",
+      "detail": "differing byte offsets: [32]"
+    },
+    {
+      "name": "corruption-detection",
+      "passed": true,
+      "description": "參考碼流翻轉 1 byte 必須被偵測",
+      "detail": "corrupted byte 173, comparator reported a difference: true"
+    },
+    {
+      "name": "input-distinction",
+      "passed": true,
+      "description": "不同輸入必須產生不同碼流",
+      "detail": "rust(noise-lcg-7) vs go(gradient), comparator reported a difference: true"
+    },
+    {
+      "name": "config-distinction",
+      "passed": true,
+      "description": "不同 Q 必須產生不同碼流",
+      "detail": "Q=6 vs Q=7 on gradient, comparator reported a difference: true"
+    }
+  ],
+  "equivalent_input_groups": [
+    [
+      "zeros",
+      "alternating-01",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r00",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r01",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r02",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r03",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r04",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r05",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r06",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r07",
+      "big-buck-bunny-1080p-30sec.mp4-f000-p01-r08"
+    ],
+    [
+      "flat128",
+      "near-flat-126",
+      "db-f0040-b00-p09"
+    ],
+    [
+      "flat255",
+      "db-f0129-b01-p02",
+      "db-f0218-b02-p11"
+    ]
+  ],
+  "uniform_blocks": 12,
+  "varied_blocks": 51,
+  "third_party_checks": [
+    {
+      "checked": true,
+      "kind": "Cpih=0 64x32 Q=0 (Go Br=4)",
+      "decoder": "libsvtjpegxs",
+      "accepted": true,
+      "matches_source": true,
+      "detail": "decoded 6144 bytes, lossless match: true"
+    },
+    {
+      "checked": true,
+      "kind": "Cpih=0 64x32 Q=4 Br=8 (upstream 值)",
+      "decoder": "libsvtjpegxs",
+      "accepted": false,
+      "matches_source": false,
+      "detail": "第三方解碼器依預期拒收：Picture header invalid Br expected 4, read=8!。上游的 Br=8 違反 ISO/IEC 21122-1:2022 Table A.7（唯一合法值為 4），第三方解碼器因此拒收。"
+    },
+    {
+      "checked": true,
+      "kind": "Star-Tetrix 160x4 RGGB (80x2, 4 components) Q=6",
+      "decoder": "libsvtjpegxs",
+      "accepted": false,
+      "matches_source": false,
+      "detail": "第三方解碼器不支援此幾何：[libsvtjpegxs @ 000002a6e66c4e00] Unsupported pixel format.。libsvtjpegxs 只支援 1 或 3 元件影像；4 元件 Star-Tetrix (Cpih=3) CFA 幾何沒有本機可用的獨立解碼器可交叉驗證，只能以 Rust 上游解碼器驗證。"
+    }
+  ],
+  "production_checks": [
+    {
+      "database": "big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "samples_checked": 200,
+      "reproduced_exactly": 200,
+      "br_only_difference": 200,
+      "detail": "production settings: Q=6 levels=1/0 Br=4"
+    }
+  ],
+  "verdict": "PASS: 10080/10080 cases byte-identical"
+}

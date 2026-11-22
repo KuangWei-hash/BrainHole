@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "inference--live-example--run-2a6724ad3b00",
+  "kind": "inference",
+  "name": "live-example",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/hybrid-v7-history2-expand2/live-example",
+  "started_at": "2026-11-21T13:38:13+08:00",
+  "finished_at": "2026-11-21T13:38:14+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/predict.py",
+    "--checkpoint",
+    "Model/runs/hybrid-v7-history2-expand2/best.pt",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--frame",
+    "750",
+    "--block",
+    "7",
+    "--out",
+    "Model/runs/hybrid-v7-history2-expand2/live-example"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "b711ffdf5f77e6259e93d5aa6cd2aa12db8fdef109d941661ec2768a0fe97589",
+    "directory": "Model/experiments/source_snapshots/b711ffdf5f77e6259e93d5aa6cd2aa12db8fdef109d941661ec2768a0fe97589",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "95a3ceaa021a357a959bbf8a43cf8f91e2a80ec8c7f6ff2ee2a8cf9216e00d04",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "8aab0b68d877bcf0a235acf9bc309db64aecfa3de38b0b1c2f9539620808971c",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "e28c9bb9a0cbd097e6417dd4ae9fe3131f447606b3a7c0c9646fff010a329f34",
+      "test_record_experiment.py": "7936d985816fad2724804b0f847ddaef54edaa944193b0f59a0c05e70161c404",
+      "train.py": "a7c4c7000f362379db8f43f3a83a55b3658332e91f173e5012a1eb3be80974f7",
+      "作法.MD": "d186e9e62079e9baa465d2b56fac64e8c635b57219b9ad07b0b3394d5565fc3a",
+      "驗收標準.md": "42692fda91a3a4482c7001cea752cc9f5015dbea72f0f558d59fee1828d1c082"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T13:38:14+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/hybrid-v7-history2-expand2/best.pt",
+        "bytes": 1413096,
+        "sha256": "397d2ab01a2324ae464498c158da870b27aa747eef3300731f8b652c4c61cfc5"
+      }
+    ]
+  },
+  "result": {
+    "artifacts": [
+      {
+        "path": "Model/runs/hybrid-v7-history2-expand2/live-example.png",
+        "bytes": 15927,
+        "sha256": "89ba2d10f01be4a76bf8ce5c10154c90ae11229b0db9b1c45c742cd6ed11b354"
+      },
+      {
+        "path": "Model/runs/hybrid-v7-history2-expand2/live-example.raw",
+        "bytes": 10240,
+        "sha256": "be12f2d957eaceccb035bb43422126a8f5a5dece44e72512b5c077b39df86bd6"
+      }
+    ]
+  }
+}

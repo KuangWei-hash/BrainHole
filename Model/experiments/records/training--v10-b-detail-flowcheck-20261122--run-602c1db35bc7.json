@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "id": "training--v10-b-detail-flowcheck-20261122--run-602c1db35bc7",
+  "kind": "training",
+  "name": "v10-b-detail-flowcheck-20261122",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v10-b-detail-flowcheck-20261122",
+  "started_at": "2026-11-22T02:07:41+08:00",
+  "finished_at": "2026-11-22T02:08:05+08:00",
+  "cwd": "Z:\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "Model/train_v10.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+    "--anchor-checkpoint",
+    "Model/runs/v10-q5-b-20261122-002704/best.pt",
+    "--out",
+    "Model/runs/v10-b-detail-flowcheck-20261122",
+    "--train-start-frame",
+    "706",
+    "--val-stop-frame",
+    "751",
+    "--epochs",
+    "1",
+    "--validation-count",
+    "16",
+    "--max-steps",
+    "2",
+    "--scale-steps",
+    "1",
+    "--device",
+    "cuda",
+    "--prediction-type",
+    "v",
+    "--sample-steps",
+    "4"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "e918fe0a6e3b8967fc8817d90f8ef678c6bcaa5164a8c4ef63336c7efaf6c572",
+    "directory": "Model/experiments/source_snapshots/e918fe0a6e3b8967fc8817d90f8ef678c6bcaa5164a8c4ef63336c7efaf6c572",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "e9a4f6699107c461cd5178cf80ec76110db2313522c8f529ca386e1d2ab961c0",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "85e9c41928f68f796ae3b9acc9aeeb5c5dcf521cde7089e7cc1b48c94bce9ccc",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "8a3c2351d64be52940bc03df9938f8e3d3525963b9597c5ecf3d821b67bfba8d",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "9279b91f5a2696cabddc5ed44e42e7e278b7d7282e8ddb3370cd525257f5aef8",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T02:08:05+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "decoded_cache": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+      "out": "Model\\runs\\v10-b-detail-flowcheck-20261122",
+      "mode": "diffusion",
+      "condition": "both",
+      "prediction_type": "v",
+      "anchor_checkpoint": "Model\\runs\\v10-q5-b-20261122-002704\\best.pt",
+      "train_start_frame": 706,
+      "val_stop_frame": 751,
+      "channels": 48,
+      "epochs": 1,
+      "batch_size": 16,
+      "microbatch": 4,
+      "lr": 0.0001,
+      "low_frequency_weight": 0.0,
+      "timesteps": 1000,
+      "sample_steps": 4,
+      "validation_count": 16,
+      "max_steps": 2,
+      "val_steps": 0,
+      "scale_steps": 1,
+      "seed": 42,
+      "device": "cuda",
+      "architecture": "v10",
+      "history": 2,
+      "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "train_start_frame": 706,
+        "val_stop_frame": 751
+      },
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "train_samples": 390,
+      "validation_samples": 16,
+      "validation_full_samples": 900,
+      "validation_keys": [
+        [
+          721,
+          0
+        ],
+        [
+          722,
+          0
+        ],
+        [
+          723,
+          0
+        ],
+        [
+          724,
+          0
+        ],
+        [
+          725,
+          0
+        ],
+        [
+          726,
+          0
+        ],
+        [
+          727,
+          0
+        ],
+        [
+          728,
+          0
+        ],
+        [
+          729,
+          0
+        ],
+        [
+          730,
+          0
+        ],
+        [
+          731,
+          0
+        ],
+        [
+          732,
+          0
+        ],
+        [
+          733,
+          0
+        ],
+        [
+          734,
+          0
+        ],
+        [
+          735,
+          0
+        ],
+        [
+          736,
+          0
+        ]
+      ],
+      "device_used": "cuda",
+      "torch": "2.7.1+cu128",
+      "gammas": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+      "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+      "noise_schedule": "cosine_s0.008_beta_max0.999",
+      "sample_seed": 0,
+      "noise_policy": "per_frame",
+      "precision": "FP32",
+      "weight_decay": 0.0001,
+      "coverage": "flow_check",
+      "residual_target": "cfa_gaussian_highpass_target_minus_frozen_anchor",
+      "anchor_epoch": 17,
+      "anchor_sha256": "8fb3c484b43fc667f9c6ed808a3a2522f0a33d0bcacc2c7c3d391754412d7396",
+      "residual_statistics": {
+        "method": "population_std_train_only_floor_0.01",
+        "samples": 64,
+        "mean": [
+          1.0928039827096114e-05,
+          1.673484575510642e-05,
+          6.145249778866102e-06,
+          3.144660335063776e-05
+        ],
+        "std": [
+          0.03752256359453877,
+          0.04477368761732784,
+          0.04522830904002484,
+          0.03951470155650489
+        ]
+      },
+      "parameters": 280340
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "objective": 0.9634482339024544,
+          "samples": 32,
+          "optimizer_steps": 2,
+          "seconds": 0.4354462999908719
+        },
+        "validation": {
+          "mae_8bit": 15.12461569905281,
+          "psnr_raw": 21.163191589248008,
+          "samples": 16,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 13.756857812404633,
+              "psnr_raw": 21.609708811596697,
+              "samples": 16
+            },
+            "0.25": {
+              "mae_8bit": 13.85159432888031,
+              "psnr_raw": 21.57992061419567,
+              "samples": 16
+            },
+            "0.5": {
+              "mae_8bit": 14.125793695449829,
+              "psnr_raw": 21.49305615349855,
+              "samples": 16
+            },
+            "0.75": {
+              "mae_8bit": 14.557467252016068,
+              "psnr_raw": 21.352450992096507,
+              "samples": 16
+            },
+            "1.0": {
+              "mae_8bit": 15.12461569905281,
+              "psnr_raw": 21.163191589248008,
+              "samples": 16
+            }
+          },
+          "seconds": 0.05598350000218488,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 1,
+    "best_validation": {
+      "mae_8bit": 15.12461569905281,
+      "psnr_raw": 21.163191589248008,
+      "samples": 16,
+      "gammas": {
+        "0.0": {
+          "mae_8bit": 13.756857812404633,
+          "psnr_raw": 21.609708811596697,
+          "samples": 16
+        },
+        "0.25": {
+          "mae_8bit": 13.85159432888031,
+          "psnr_raw": 21.57992061419567,
+          "samples": 16
+        },
+        "0.5": {
+          "mae_8bit": 14.125793695449829,
+          "psnr_raw": 21.49305615349855,
+          "samples": 16
+        },
+        "0.75": {
+          "mae_8bit": 14.557467252016068,
+          "psnr_raw": 21.352450992096507,
+          "samples": 16
+        },
+        "1.0": {
+          "mae_8bit": 15.12461569905281,
+          "psnr_raw": 21.163191589248008,
+          "samples": 16
+        }
+      },
+      "seconds": 0.05598350000218488,
+      "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/v10-b-detail-flowcheck-20261122/best.pt",
+        "bytes": 4565804,
+        "sha256": "e0cbc1a3df432f9a71d502e302574b24ea5105316a9764a4271db34f77f5a8d2"
+      },
+      {
+        "path": "Model/runs/v10-b-detail-flowcheck-20261122/config.json",
+        "bytes": 2976,
+        "sha256": "8a0874cde326daddd82e618fd7273e576155cbc919736b0c1d1cd6e585e6d56e"
+      },
+      {
+        "path": "Model/runs/v10-b-detail-flowcheck-20261122/epoch-001-target-base-generated.png",
+        "bytes": 45827,
+        "sha256": "e0ebd9db94025fe7f108872b9f9d9f392f21f914fae88986451608a0c7bc76c9"
+      },
+      {
+        "path": "Model/runs/v10-b-detail-flowcheck-20261122/epoch-001.pt",
+        "bytes": 4580555,
+        "sha256": "4abc08393eb101bf79a0658caa68b715fd60a49ae9d864fb26b5ff827d209078"
+      },
+      {
+        "path": "Model/runs/v10-b-detail-flowcheck-20261122/last.pt",
+        "bytes": 4565804,
+        "sha256": "e52ffa444fd894b97736dce8d9a44b333694f984e2dec86e5d35c2c72fcbdbd4"
+      },
+      {
+        "path": "Model/runs/v10-b-detail-flowcheck-20261122/metrics.jsonl",
+        "bytes": 816,
+        "sha256": "9b87bab2db254e292a6c01b830c077a636f5f4517bdc082a75cf507a9d5912fe"
+      }
+    ]
+  }
+}

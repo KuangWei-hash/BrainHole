@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-hybrid-v4-history2",
+  "kind": "evaluation",
+  "name": "eval-hybrid-v4-history2",
+  "status": "completed",
+  "output": "Model/runs/eval-hybrid-v4-history2",
+  "result": {
+    "report": {
+      "samples": 4950,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 735,
+      "last_evaluated_frame": 899,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 30.409601237846143,
+          "psnr_raw": 15.961307306106038
+        },
+        "bilinear": {
+          "mae_8bit": 28.75982623100281,
+          "psnr_raw": 16.653214130774764
+        },
+        "hybrid-v4-res4": {
+          "mae_8bit": 21.234088769103543,
+          "psnr_raw": 18.47825112327569
+        },
+        "hybrid-v4-history2": {
+          "mae_8bit": 20.80827634782502,
+          "psnr_raw": 18.64953319456969
+        },
+        "hybrid-v4-history16": {
+          "mae_8bit": 20.70795768737793,
+          "psnr_raw": 18.869296777414746
+        }
+      },
+      "gates": {
+        "hybrid-v4-res4": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9848484848484849
+        },
+        "hybrid-v4-history2": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9743434343434343
+        },
+        "hybrid-v4-history16": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9672727272727273
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "hybrid-v4-res4",
+        "hybrid-v4-history2",
+        "hybrid-v4-history16"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564",
+        "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+        "decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064",
+        "samples": 27000,
+        "note": "Decoded only from codestream, not high-resolution labels."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v4-res4\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v4-history2\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v4-history16\\best.pt"
+      ],
+      "input_contracts": {
+        "hybrid-v4-res4": "encoded_and_decoded_raw_v1",
+        "hybrid-v4-history2": "encoded_and_decoded_raw_v1",
+        "hybrid-v4-history16": "encoded_and_decoded_raw_v1"
+      },
+      "video": {
+        "file": "comparison.mp4",
+        "frames": 165,
+        "fps": 30,
+        "panel_order": [
+          "target",
+          "bilinear",
+          "hybrid-v4-res4",
+          "hybrid-v4-history2",
+          "hybrid-v4-history16"
+        ],
+        "note": "Offline rendered; not a realtime benchmark.",
+        "temporal_error_change_mae_8bit": {
+          "bilinear": 16.873402221609908,
+          "hybrid-v4-res4": 14.86876647094401,
+          "hybrid-v4-history2": 13.40849792288571,
+          "hybrid-v4-history16": 11.841459330407584
+        },
+        "temporal_metric_note": "Mean absolute change of prediction-minus-target error between consecutive frames; no optical-flow alignment. Diagnostic only, not a standalone flicker acceptance criterion."
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-hybrid-v4-history2.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "ce3d6b64aa9c1b49f1481fe46e98866326cc0d0c60c2b120c9a8d536a95576da"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/bilinear.png",
+        "bytes": 182093,
+        "sha256": "5e24ab7aa1d814ee9181920b0af689e842295d9cd383a6def5efa325c62d4955"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/blocks.jsonl",
+        "bytes": 1052393,
+        "sha256": "ce3d6b64aa9c1b49f1481fe46e98866326cc0d0c60c2b120c9a8d536a95576da"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/comparison.mp4",
+        "bytes": 9557396,
+        "sha256": "7ab9971e04bc737fbd958c7d83874abcb96fa1bc0ca8e4bcdee29f1eee6cc239"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/comparison.png",
+        "bytes": 1610769,
+        "sha256": "afe1b43e4fa908a123a686b3597d7e59f65f6c3edb618b52136f0f03231a73b2"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/hybrid-v4-history16.png",
+        "bytes": 305170,
+        "sha256": "93ad4a738a6e5f59883b58d539967c80eebba8b7d483292f445734ffadf3fba8"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/hybrid-v4-history2.png",
+        "bytes": 288653,
+        "sha256": "a43eb27befc961f68dbf854f40aa45c85c417e9afa49a5e13dc30c1457214e3c"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/hybrid-v4-res4.png",
+        "bytes": 282941,
+        "sha256": "10c6c37088246891f6d58dc48cf9d1e00f67f32d7af0d16ca1018d8cda4f2370"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/nearest.png",
+        "bytes": 79710,
+        "sha256": "bcd51115d5cff4dda25ce323bd3948bf60cb2899faa1165b3f81cefd48197fbb"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/report.json",
+        "bytes": 3056,
+        "sha256": "17c6407600dd27933daf0da7b760299902b95fd7b41f9c1fa54eac05a37392e2"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v4-history2/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:05+08:00"
+}

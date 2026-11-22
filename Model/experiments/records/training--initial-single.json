@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "training--initial-single",
+  "kind": "training",
+  "name": "initial-single",
+  "status": "completed",
+  "output": "Model/runs/initial-single",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 1,
+      "decay": 0.2,
+      "epochs": 3,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 200,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\initial-single",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21600,
+      "validation_samples": 5400,
+      "parameters": 6632260
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 45.14481865223497,
+          "psnr_raw": 12.827856768468866,
+          "seconds": 2.844480499999918
+        },
+        "validation": {
+          "mae_8bit": 49.75162264092101,
+          "psnr_raw": 11.96295680130245,
+          "seconds": 2.898419200000035
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 33.09129237122834,
+          "psnr_raw": 14.847442665945144,
+          "seconds": 2.444439999999986
+        },
+        "validation": {
+          "mae_8bit": 50.76074489537213,
+          "psnr_raw": 11.738771286895545,
+          "seconds": 2.0425390000000334
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 30.193825188931076,
+          "psnr_raw": 15.36833378688553,
+          "seconds": 2.4072390999999698
+        },
+        "validation": {
+          "mae_8bit": 47.9663076006704,
+          "psnr_raw": 12.001168771623838,
+          "seconds": 2.065138299999944
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 3,
+    "best_validation": {
+      "mae_8bit": 47.9663076006704,
+      "psnr_raw": 12.001168771623838,
+      "seconds": 2.065138299999944
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/initial-single/best.pt",
+        "bytes": 79603003,
+        "sha256": "beec8c0c72c3d83a12e41cfae2bba712fbc540e7cbad8e1640b01927cb748d4d"
+      },
+      {
+        "path": "Model/runs/initial-single/config.json",
+        "bytes": 733,
+        "sha256": "21e1b5efa67bd5eee54fca7d00f35c94fa2a086e89c6f3ef1e52de1c053da4fb"
+      },
+      {
+        "path": "Model/runs/initial-single/epoch-001-raw.png",
+        "bytes": 15960,
+        "sha256": "2a5c0cd90236de009bb3465866842d52b32e298e95fd6d57d71d8aaf8ce6f1a7"
+      },
+      {
+        "path": "Model/runs/initial-single/epoch-002-raw.png",
+        "bytes": 16577,
+        "sha256": "6a2d6eccb2c1aed28c247e367632efde7c14267fb958bcacba880388e50500ea"
+      },
+      {
+        "path": "Model/runs/initial-single/epoch-003-raw.png",
+        "bytes": 16893,
+        "sha256": "a0caf5295815fd31b7433c183d9e192b3c61313db840afa2f4304d2ff03b57ee"
+      },
+      {
+        "path": "Model/runs/initial-single/last.pt",
+        "bytes": 79603003,
+        "sha256": "02727f7a49e3486ebbd6141ddc6ff172ae52ae1e6a14588a16dfbb01bd13fdc3"
+      },
+      {
+        "path": "Model/runs/initial-single/metrics.jsonl",
+        "bytes": 681,
+        "sha256": "3bfc16260d1fa792d983603579c6ed905ff47c912416399ab9aca513b1f276c9"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:06+08:00"
+}

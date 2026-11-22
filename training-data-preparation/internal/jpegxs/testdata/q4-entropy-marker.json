@@ -1,0 +1,29 @@
+{
+  "source_database": "big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+  "source_database_sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564",
+  "frame_index": 31,
+  "block_index": 25,
+  "phase_id": 16,
+  "sampling": "dataset.Downsample coordinate rule",
+  "reference": "Rust brainhole-jpegxs encode Q=4 levels=1/0 then decode; Go regression uses Br=4 and compares decoded mosaic",
+  "reference_encoder_decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064",
+  "started_at": null,
+  "note": "Fixture provenance recorded after creation; original fixture creation timestamps were not retained. Full subsequent Q4 corpus Go/Rust decode parity is independently archived in prepare-q4-fixed-report.",
+  "files": [
+    {
+      "path": "training-data-preparation\\internal\\jpegxs\\testdata\\q4-entropy-marker.rggb",
+      "bytes": 640,
+      "sha256": "e4cb5230e35149eecd55c8ea8abbeab2f8d3705c50afc1f79a7f44d4f0caeb9d"
+    },
+    {
+      "path": "training-data-preparation\\internal\\jpegxs\\testdata\\q4-entropy-marker-decoded.rggb",
+      "bytes": 640,
+      "sha256": "7688ae61adf38ccbe94ab75ff16af96c3a6d562438703ca7bc20cd591397c3be"
+    },
+    {
+      "path": "Model\\runs\\q4-entropy-marker-reference.jxs",
+      "bytes": 238,
+      "sha256": "5d23a076d587d2ee017259d91cea5d0c1b943a6d14abe207374b72c9d702722a"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "benchmark--res4-latency",
+  "kind": "benchmark",
+  "name": "res4-latency.json",
+  "status": "completed",
+  "output": "Model/runs/res4-latency.json",
+  "result": {
+    "report": {
+      "device": "NVIDIA GeForce GTX 1650",
+      "torch": "2.7.1+cu126",
+      "batch_size": 1,
+      "iterations": 200,
+      "warmup": 30,
+      "results": {
+        "hybrid-v3": {
+          "mean_ms": 1.7760335000139094,
+          "p50_ms": 1.7222500000571017,
+          "p95_ms": 2.0104899998841574,
+          "history": 1,
+          "parameters": 15996
+        },
+        "hybrid-v4-res4": {
+          "mean_ms": 2.4696860000130982,
+          "p50_ms": 2.4488999997629435,
+          "p95_ms": 2.6719399999365123,
+          "history": 1,
+          "parameters": 52452
+        }
+      },
+      "scope": "Prepared device tensors, model forward plus synchronization only; excludes JPEG XS decoding, data transfer, SQLite I/O, queueing and streaming scheduling."
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/res4-latency.json",
+        "bytes": 701,
+        "sha256": "eb6e25016083b1e157b29d42af3dbf2a7a557307baf3e5d2982a065019f4d3a6"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:07+08:00"
+}

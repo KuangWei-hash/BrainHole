@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v11-q5-20261122-flow-v9-reference--run-8b98d3b7146d",
+  "kind": "evaluation",
+  "name": "v11-q5-20261122-flow-v9-reference",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v11-q5-20261122-flow-v9-reference",
+  "started_at": "2026-11-22T00:52:55+08:00",
+  "finished_at": "2026-11-22T00:53:01+08:00",
+  "cwd": "Z:\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "evaluate_v11.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs/v11-q5-20261122-scene-plan.json",
+    "--checkpoint",
+    "runs/v11-q5-20261122-flow-t1/best.pt",
+    "runs/v11-q5-20261122-flow-t4/best.pt",
+    "--decoded-cache",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+    "--fsr-report",
+    "runs/eval-fsr1-v9-relu128-four-q5/report.json",
+    "--reference-checkpoint",
+    "runs/relu128-four-v9-q5/best.pt",
+    "--out",
+    "runs/v11-q5-20261122-flow-v9-reference",
+    "--frame-range",
+    "764",
+    "765",
+    "--device",
+    "cpu"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "1398b4b96ecb97ecb763416af1d3a2b2dd41bfd4594bf4c1023cefe9a4614909",
+    "directory": "Model/experiments/source_snapshots/1398b4b96ecb97ecb763416af1d3a2b2dd41bfd4594bf4c1023cefe9a4614909",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "c34c143a28c40e656ec6aa6b83b76bab199aa154051198c43e96067563a56afa",
+      "evaluate_v11.py": "b07e06cb0e64fcefa9f9ef4abd41b6ff4f58df2d8b90177817b547ff99e2f670",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "85e9c41928f68f796ae3b9acc9aeeb5c5dcf521cde7089e7cc1b48c94bce9ccc",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "24a86aaf80312dc8d2660c17a7d60e2ce7b0d8aaa3e9bf4c0c75924f271b4fde",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "2d6313fea03f999769b8a7641ec20691d9df7efc7299a7e91d0e8e428c56c67b",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "dd1e9e32e2fc31c2429c0dca082bd807e086215e3ee1ed71e2394de87aa78b8b",
+      "train_v11.py": "4c04bc797dabeedabcfa28d4e63c1a6725e8bb42900f30156766784c62be8d5c",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "eef3982c15656334c4be0c08b5ff3592f003e95d7b4969abf05671918f95634a",
+      "v10/model.py": "d01d9cb412e99bbcb94daed6f47ee4f75b46cdf786dff31c5ba4205bbb4aff1c",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "f3f980cecceb996176bc7a5bf228b629916207ed7824c606eaccd17d228535bf",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "ae787404ebece7d2a7c58bd8e106cbbb81f3f3426529d1dc5992e27053c62e78",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T00:53:01+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-t1/best.pt",
+        "bytes": 343203,
+        "sha256": "e0be3f4e0d1b29b6900e656f89a2fdd1ac1147647effa5b1fdf0869bb72797af"
+      },
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-t4/best.pt",
+        "bytes": 425380,
+        "sha256": "76b441f2d53959b944491064b0766d506caac409f8f552fa98a9e40985583694"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/v11-q5-20261122-scene-plan.json",
+        "bytes": 14443,
+        "sha256": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7"
+      }
+    ],
+    "--fsr-report": [
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-four-q5/report.json",
+        "bytes": 4822,
+        "sha256": "c6e4947e7744cdfe012e6738d31208e38fb6a6e6cd2fc12d053e6406b3a93df4"
+      }
+    ],
+    "--reference-checkpoint": [
+      {
+        "path": "Model/runs/relu128-four-v9-q5/best.pt",
+        "bytes": 3664593,
+        "sha256": "7edb6385c29f3eaa271e10029eebef6f9cd91d40a660b0df10c1fb789519e3e3"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 60,
+      "start_frame": 764,
+      "stop_frame_inclusive": 765,
+      "first_evaluated_frame": 764,
+      "last_evaluated_frame": 765,
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "training_key_sha256": "8beaf320d8dba8dd9eaa12e0088bca17010fd8102885fb07a8f527447a6124e5",
+      "checkpoint_epochs": {
+        "v11-t1-phase": 1,
+        "v11-t4-phase": 1
+      },
+      "training_budget": {
+        "train_range": [
+          0,
+          719
+        ],
+        "validation_range": [
+          721,
+          899
+        ],
+        "cohort_frames": 4,
+        "channels": 16,
+        "blocks": 1,
+        "seed": 42,
+        "batch_size": 4,
+        "epochs": 5,
+        "max_steps": 20,
+        "lr": 0.0001,
+        "weight_decay": 0.0001,
+        "precision": "FP32"
+      },
+      "raw_projection_metrics": {
+        "v11-t1-phase": {
+          "mae_8bit": 17.467946815490723,
+          "psnr": 20.32019758680669
+        },
+        "v11-t4-phase": {
+          "mae_8bit": 17.4604923248291,
+          "psnr": 20.322708536969873
+        },
+        "bilinear": {
+          "mae_8bit": 17.395444679260255,
+          "psnr": 20.349094583664744
+        },
+        "nearest": {
+          "mae_8bit": 19.21224412918091,
+          "psnr": 19.30826699093925
+        },
+        "fsr1-rcas0": {
+          "mae_8bit": 17.096946477890015,
+          "psnr": 20.485951878419154
+        },
+        "fsr1-easu": {
+          "mae_8bit": 16.95212459564209,
+          "psnr": 20.55367825250403
+        },
+        "v9-reference": {
+          "mae_8bit": 15.411145353317261,
+          "psnr": 21.161219293068896
+        }
+      },
+      "rgb_reference_metrics": {
+        "v11-t1-phase": {
+          "mae_8bit": 16.139408938090007,
+          "psnr": 21.13014976902238
+        },
+        "v11-t4-phase": {
+          "mae_8bit": 16.13004191716512,
+          "psnr": 21.133747143395063
+        },
+        "bilinear": {
+          "mae_8bit": 16.035492992401124,
+          "psnr": 21.17736150080704
+        },
+        "nearest": {
+          "mae_8bit": 17.434812863667805,
+          "psnr": 20.31852238343264
+        },
+        "fsr1-rcas0": {
+          "mae_8bit": 16.0939027150472,
+          "psnr": 21.12946688217971
+        },
+        "fsr1-easu": {
+          "mae_8bit": 15.929537518819172,
+          "psnr": 21.212773785030308
+        },
+        "v9-reference": {
+          "mae_8bit": 14.01028502782186,
+          "psnr": 22.02754542337893
+        }
+      },
+      "region_raw_metrics": {
+        "static": {
+          "v11-t1-phase": {
+            "mae_8bit": 16.349164509478033,
+            "psnr": 20.904839933321647
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 16.33814647346441,
+            "psnr": 20.909584287267005
+          },
+          "bilinear": {
+            "mae_8bit": 16.2233779595864,
+            "psnr": 20.970224503811217
+          },
+          "nearest": {
+            "mae_8bit": 17.758822287996566,
+            "psnr": 20.02579984337451
+          },
+          "fsr1-rcas0": {
+            "mae_8bit": 15.887838688004543,
+            "psnr": 21.149967151082876
+          },
+          "fsr1-easu": {
+            "mae_8bit": 15.790302065979994,
+            "psnr": 21.194037792895017
+          },
+          "v9-reference": {
+            "mae_8bit": 13.928196877149743,
+            "psnr": 22.09393374340324
+          }
+        },
+        "changed": {
+          "v11-t1-phase": {
+            "mae_8bit": 19.072131522610253,
+            "psnr": 19.599181689929264
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 19.0697866747231,
+            "psnr": 19.599322824156772
+          },
+          "bilinear": {
+            "mae_8bit": 19.076028093562826,
+            "psnr": 19.58967746855917
+          },
+          "nearest": {
+            "mae_8bit": 21.29625476339116,
+            "psnr": 18.450493175251694
+          },
+          "fsr1-rcas0": {
+            "mae_8bit": 18.83064375739043,
+            "psnr": 19.682235206797362
+          },
+          "fsr1-easu": {
+            "mae_8bit": 18.61802218437671,
+            "psnr": 19.774286974823777
+          },
+          "v9-reference": {
+            "mae_8bit": 17.53749319449231,
+            "psnr": 20.098894480849022
+          }
+        },
+        "source-repeat": {},
+        "source-distinct": {
+          "v11-t1-phase": {
+            "mae_8bit": 17.467946815490723,
+            "psnr": 20.32019758680669
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 17.4604923248291,
+            "psnr": 20.322708536969873
+          },
+          "bilinear": {
+            "mae_8bit": 17.395444679260255,
+            "psnr": 20.349094583664744
+          },
+          "nearest": {
+            "mae_8bit": 19.21224412918091,
+            "psnr": 19.30826699093925
+          },
+          "fsr1-rcas0": {
+            "mae_8bit": 17.096946477890015,
+            "psnr": 20.485951878419154
+          },
+          "fsr1-easu": {
+            "mae_8bit": 16.95212459564209,
+            "psnr": 20.55367825250403
+          },
+          "v9-reference": {
+            "mae_8bit": 15.411145353317261,
+            "psnr": 21.161219293068896
+          }
+        },
+        "measured": {
+          "v11-t1-phase": {
+            "mae_8bit": 11.440600395202637,
+            "psnr": 24.99497613470366
+          },
+          "v11-t4-phase": {
+            "mae_8bit": 11.44181957244873,
+            "psnr": 24.993450822979103
+          },
+          "bilinear": {
+            "mae_8bit": 11.382134604454041,
+            "psnr": 25.049327285916284
+          },
+          "nearest": {
+            "mae_8bit": 11.382135820388793,
+            "psnr": 25.049325906021977
+          },
+          "fsr1-rcas0": {
+            "mae_8bit": 11.492187237739563,
+            "psnr": 24.77405368476883
+          },
+          "fsr1-easu": {
+            "mae_8bit": 11.427864694595337,
+            "psnr": 24.80004379045843
+          },
+          "v9-reference": {
+            "mae_8bit": 9.942891001701355,
+            "psnr": 25.918331784149725
+          }
+        }
+      },
+      "region_raw_pixels": {
+        "static": 361962,
+        "changed": 252438,
+        "source-repeat": 0,
+        "source-distinct": 614400,
+        "measured": 38400
+      },
+      "measurement_reference_metrics": {
+        "decoded-to-target": {
+          "mae_8bit": 11.382135820388793,
+          "psnr": 25.049325906021977
+        },
+        "v11-t1-phase": {
+          "mae_8bit": 0.7096218779683113,
+          "psnr": 50.426342202901964
+        },
+        "v11-t4-phase": {
+          "mae_8bit": 0.7280481025576592,
+          "psnr": 50.23153691729409
+        },
+        "bilinear": {
+          "mae_8bit": 9.561633532939595e-06,
+          "psnr": 120.0
+        },
+        "nearest": {
+          "mae_8bit": 0.0,
+          "psnr": 120.0
+        },
+        "fsr1-rcas0": {
+          "mae_8bit": 5.231718969345093,
+          "psnr": 29.771534088019195
+        },
+        "fsr1-easu": {
+          "mae_8bit": 5.238697826862335,
+          "psnr": 29.616611401463672
+        },
+        "v9-reference": {
+          "mae_8bit": 7.360591721534729,
+          "psnr": 28.385238531092906
+        }
+      },
+      "strip_seam_residual_mae": {
+        "v11-t1-phase": 22.704118202472554,
+        "v11-t4-phase": 22.700872075968775,
+        "bilinear": 22.6358631725969,
+        "nearest": 24.7423367993585,
+        "fsr1-rcas0": 21.786868177611254,
+        "fsr1-easu": 21.463214857824916,
+        "v9-reference": 19.449148079444623
+      },
+      "consecutive_frame_residual_mae": {
+        "v11-t1-phase": 14.526944351196288,
+        "v11-t4-phase": 14.5257981300354,
+        "bilinear": 14.488997459411621,
+        "nearest": 18.436560440063477,
+        "fsr1-rcas0": 13.774759006500243,
+        "fsr1-easu": 13.258779525756836,
+        "v9-reference": 12.006815814971924
+      },
+      "coverage": {
+        "v11-t1-phase": {
+          "geometry": 0.0625,
+          "valid": 0.0625
+        },
+        "v11-t4-phase": {
+          "geometry": 0.25,
+          "valid": 0.25
+        }
+      },
+      "win_rate_vs_t1": {
+        "v11-t1-phase": 0.0,
+        "v11-t4-phase": 0.9833333333333333,
+        "bilinear": 0.7333333333333333,
+        "nearest": 0.0,
+        "fsr1-rcas0": 1.0,
+        "fsr1-easu": 1.0,
+        "v9-reference": 0.9833333333333333
+      },
+      "previews": [],
+      "fsr_report": "runs\\eval-fsr1-v9-relu128-four-q5\\report.json",
+      "v9_reference": {
+        "path": "runs\\relu128-four-v9-q5\\best.pt",
+        "best_epoch": 4,
+        "epochs": 5,
+        "train_samples": 21600,
+        "batch_size": 8,
+        "learning_rate": 0.001
+      },
+      "status": "flow_check"
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--v11-q5-20261122-flow-v9-reference--run-8b98d3b7146d.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "72f03a121c82ec68aa52ef55e94eb318250e499ccbc3bae7932ed5d3d09b3ccc"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-v9-reference/blocks.jsonl",
+        "bytes": 34904,
+        "sha256": "72f03a121c82ec68aa52ef55e94eb318250e499ccbc3bae7932ed5d3d09b3ccc"
+      },
+      {
+        "path": "Model/runs/v11-q5-20261122-flow-v9-reference/report.json",
+        "bytes": 7799,
+        "sha256": "3e0824136cedbe9c38cb8ca1695f3cadf36e75ad253773badb55df70450fcd83"
+      }
+    ]
+  }
+}

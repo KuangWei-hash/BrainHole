@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "checks--checks-v9-plain8-q5-all--run-7ef5ff330639",
+  "kind": "checks",
+  "name": "checks-v9-plain8-q5-all",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/checks-v9-plain8-q5-all",
+  "started_at": "2026-11-21T18:27:29+08:00",
+  "finished_at": "2026-11-21T18:27:35+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "-c"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "db9ff0fd8d05892744fbcfc7ee81120f8bb3f7364949d7669032cf856ebf4a2b",
+    "directory": "Model/experiments/source_snapshots/db9ff0fd8d05892744fbcfc7ee81120f8bb3f7364949d7669032cf856ebf4a2b",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "714da8c4ef223d12d424bf6cbd90b67b92147038490c190ccb95dc187699efba",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "c937b892e0c9f30c72271053c1b38fcdee14d3f4496beca201675cd336944c02",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "d19ec53629e8bf5ab3af3e49738231112fc67c3896c0784856e9639e83659e3b",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "c71ef47efdad04b5aa092e31cee1052e7461e854254e02aef0d6b87f4c3eb3da",
+      "作法.MD": "a67893b586d21773f8894cdab0be20e295e2e4c605db4eeb4839ee901e5b4f72",
+      "驗收標準.md": "6514f0eb672b51e035e05eebaed4418030774142d5c745fc2d3457444d9f5860"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T18:27:35+08:00",
+  "data_sources": {},
+  "exception": {
+    "type": "SystemExit",
+    "message": "0",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\dinos\\BrainHole\\Model\\record_experiment.py\", line 297, in run_logged\n    value = function()\n  File \"<string>\", line 1, in <lambda>\n    import sys, unittest; from pathlib import Path; sys.path.insert(0,'Model'); from record_experiment import run_logged; run_logged('checks',lambda:unittest.main(module=None,argv=['unittest','discover','-s','Model','-p','test_*.py']),Path('Model/runs/checks-v9-plain8-q5-all'))\n                                                                                                                                                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python313\\Lib\\unittest\\main.py\", line 104, in __init__\n    self.runTests()\n    ~~~~~~~~~~~~~^^\n  File \"C:\\Python313\\Lib\\unittest\\main.py\", line 275, in runTests\n    sys.exit(0)\n    ~~~~~~~~^^^\nSystemExit: 0\n"
+  },
+  "result": {
+    "artifacts": []
+  }
+}

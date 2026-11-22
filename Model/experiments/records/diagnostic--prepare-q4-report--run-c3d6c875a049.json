@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "id": "diagnostic--prepare-q4-report--run-c3d6c875a049",
+  "kind": "diagnostic",
+  "name": "prepare-q4-report.json",
+  "status": "failed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/prepare-q4-report.json",
+  "started_at": "2026-11-21T16:56:16+08:00",
+  "finished_at": "2026-11-21T16:57:48+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/prepare_dataset.py",
+    "--source",
+    "training-data-preparation/原始影片/big-buck-bunny-1080p-30sec.mp4",
+    "--reference",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--encoder-config",
+    "training-data-preparation/encoder.native.q4.json",
+    "--database",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q4-shared-v4-raw8.sqlite",
+    "--out",
+    "Model/runs/prepare-q4-report.json"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "d46dc917072a5bb3f3399f2bac18de2e25645f247db6fe55cf07ee1fbc6ecafd",
+    "directory": "Model/experiments/source_snapshots/d46dc917072a5bb3f3399f2bac18de2e25645f247db6fe55cf07ee1fbc6ecafd",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "71d891a75c07958f505202aaa826b4edce5035f748ae0472927b22f6ed01b555",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "7ee905bd4cbcd2cd96d2fbe888d46c753de2356a879dcc26a79b7eabbf1abbec",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "ab6688ad5c178be6e8b90308b8a8e5c574ef50f2b9359a5bd3d5d76428db8c52",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "4ffc1888b84dd0ac89af258ba0c339b935bba46e7f0100eba2ec7d252b1d8e56",
+      "作法.MD": "254b3cf1891b34b44a8d7298fac355fe9117f5c8e29a7bbed095d09f415a477b",
+      "驗收標準.md": "9125d861012b1206b0ab0276ca9f13c6a5a56edecfb93f3580fd747d856aa4dd"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T16:57:48+08:00",
+  "data_sources": {},
+  "exception": {
+    "type": "CalledProcessError",
+    "message": "Command '['Model\\\\runs\\\\prepare-q4-report\\\\video-to-dataset.exe', '-input', 'C:\\\\Users\\\\dinos\\\\BrainHole\\\\training-data-preparation\\\\原始影片\\\\big-buck-bunny-1080p-30sec.mp4', '-output', 'C:\\\\Users\\\\dinos\\\\BrainHole\\\\training-data-preparation\\\\拆好的訓練資料\\\\big-buck-bunny-30s-q4-shared-v4-raw8.sqlite', '-encoder-config', 'C:\\\\Users\\\\dinos\\\\BrainHole\\\\training-data-preparation\\\\encoder.native.q4.json']' returned non-zero exit status 1.",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\dinos\\BrainHole\\Model\\record_experiment.py\", line 297, in run_logged\n    value = function()\n  File \"C:\\Users\\dinos\\BrainHole\\Model\\prepare_dataset.py\", line 69, in main\n    command([generator, \"-input\", args.source.resolve(), \"-output\", args.database.resolve(),\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n             \"-encoder-config\", args.encoder_config.resolve()], \"generate\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\dinos\\BrainHole\\Model\\prepare_dataset.py\", line 60, in command\n    result.check_returncode()\n    ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Python313\\Lib\\subprocess.py\", line 508, in check_returncode\n    raise CalledProcessError(self.returncode, self.args, self.stdout,\n                             self.stderr)\nsubprocess.CalledProcessError: Command '['Model\\\\runs\\\\prepare-q4-report\\\\video-to-dataset.exe', '-input', 'C:\\\\Users\\\\dinos\\\\BrainHole\\\\training-data-preparation\\\\原始影片\\\\big-buck-bunny-1080p-30sec.mp4', '-output', 'C:\\\\Users\\\\dinos\\\\BrainHole\\\\training-data-preparation\\\\拆好的訓練資料\\\\big-buck-bunny-30s-q4-shared-v4-raw8.sqlite', '-encoder-config', 'C:\\\\Users\\\\dinos\\\\BrainHole\\\\training-data-preparation\\\\encoder.native.q4.json']' returned non-zero exit status 1.\n"
+  },
+  "result": {
+    "report": {
+      "status": "failed",
+      "started_at": "2026-11-21T16:56:16+08:00",
+      "commands": [
+        {
+          "argv": [
+            "go",
+            "test",
+            "-count=1",
+            "-timeout",
+            "150s",
+            "./..."
+          ],
+          "cwd": "C:\\Users\\dinos\\BrainHole\\training-data-preparation",
+          "started_at": "2026-11-21T16:56:17+08:00",
+          "log": "Model\\runs\\prepare-q4-report\\go-tests.log",
+          "finished_at": "2026-11-21T16:57:39+08:00",
+          "seconds": 81.77729109999927,
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "go",
+            "build",
+            "-o",
+            "C:\\Users\\dinos\\BrainHole\\Model\\runs\\prepare-q4-report\\video-to-dataset.exe",
+            "./cmd/video-to-dataset"
+          ],
+          "cwd": "C:\\Users\\dinos\\BrainHole\\training-data-preparation",
+          "started_at": "2026-11-21T16:57:39+08:00",
+          "log": "Model\\runs\\prepare-q4-report\\build-generator.log",
+          "finished_at": "2026-11-21T16:57:40+08:00",
+          "seconds": 1.343133400001534,
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "go",
+            "build",
+            "-o",
+            "C:\\Users\\dinos\\BrainHole\\Model\\runs\\prepare-q4-report\\dataset-export.exe",
+            "./cmd/dataset-export"
+          ],
+          "cwd": "C:\\Users\\dinos\\BrainHole\\training-data-preparation",
+          "started_at": "2026-11-21T16:57:40+08:00",
+          "log": "Model\\runs\\prepare-q4-report\\build-exporter.log",
+          "finished_at": "2026-11-21T16:57:42+08:00",
+          "seconds": 1.9821267999977863,
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "Model\\runs\\prepare-q4-report\\video-to-dataset.exe",
+            "-input",
+            "C:\\Users\\dinos\\BrainHole\\training-data-preparation\\原始影片\\big-buck-bunny-1080p-30sec.mp4",
+            "-output",
+            "C:\\Users\\dinos\\BrainHole\\training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q4-shared-v4-raw8.sqlite",
+            "-encoder-config",
+            "C:\\Users\\dinos\\BrainHole\\training-data-preparation\\encoder.native.q4.json"
+          ],
+          "cwd": "C:\\Users\\dinos\\BrainHole",
+          "started_at": "2026-11-21T16:57:42+08:00",
+          "log": "Model\\runs\\prepare-q4-report\\generate.log",
+          "finished_at": "2026-11-21T16:57:48+08:00",
+          "seconds": 5.6215095999978075,
+          "exit_code": 1
+        }
+      ],
+      "go_source_snapshot": {
+        "directory": "C:\\Users\\dinos\\BrainHole\\Model\\experiments\\source_snapshots\\1a2990063801c43674567d04ff18c6377c95e0ced142265f9544f9a20d748622",
+        "sha256": {
+          "training-data-preparation\\cmd\\dataset-convert-target\\main.go": "53a77ea2870de9f0825d051699ff52793643ea71ca47f899e3009c7021d7df0d",
+          "training-data-preparation\\cmd\\dataset-export\\main.go": "d9cff80b4d0e7d2f3628ced6d35a53de85cf0351d359620b01fb8ee8d3c05c9e",
+          "training-data-preparation\\cmd\\dataset-migrate\\main.go": "c5c60edd1ffbbc9208b387db4e97c37f44dbe63d1b0f73db74cfe24190e172f6",
+          "training-data-preparation\\cmd\\jpegxs-parity\\corpus.go": "ddafc3f0cb827147d968b176b493542e1641c199b101270c629d5011f7dc5b0f",
+          "training-data-preparation\\cmd\\jpegxs-parity\\main.go": "f454271f7f6c93171af6098ef8f038648fab51715c88fd876d67542ad69b88c5",
+          "training-data-preparation\\cmd\\jpegxs-parity\\sweep.go": "1936f94efe6e08ffa7f6e9e568046d3436174f966052614840104e6c547ae227",
+          "training-data-preparation\\cmd\\video-to-dataset\\main.go": "d13ed6b427b673d4c77cad0fc64af0af5c57b1f0ea25f6076617b5223755c9b4",
+          "training-data-preparation\\encoder.native.q4.json": "0d7c5f2f82ea11990888cd3d88024438e7d8a557787378322384a5644f5e62e6",
+          "training-data-preparation\\go.mod": "8a1966bbeea724103e126197e242dda7846de516899ab805dbae671031bc88f7",
+          "training-data-preparation\\go.sum": "77a0296459cd1f758d626c5bb1e6b9f0833890ee54297176db0e8719fd7301a7",
+          "training-data-preparation\\internal\\dataset\\convert.go": "e8574efca048a0db34539af305bf0c84643416816029d340b11c0e9ee5602500",
+          "training-data-preparation\\internal\\dataset\\convert_test.go": "1849870409137bff4b2022183c9714593a455f7e2488f7a93a1217a91765cafc",
+          "training-data-preparation\\internal\\dataset\\dataset_test.go": "45e2c3517bb20f79d0bf6be4b527cf703ebfba946f1d442e9785b0a47e0b92ff",
+          "training-data-preparation\\internal\\dataset\\decode.go": "6b1f9ef02badfa9a2b1aee5985793c14ebb317f2df2c03ca1c8dba4df473c14a",
+          "training-data-preparation\\internal\\dataset\\encoder.go": "97bd8b176520483bb1029c9c421ab10f457af5e0d31a3f6dcea78ab5cb8c9df1",
+          "training-data-preparation\\internal\\dataset\\encoder_bench_test.go": "0c50f6b40b3c178f9d3dd69b69563bf0578868aaf858f3b55eb7e80812618071",
+          "training-data-preparation\\internal\\dataset\\encoder_test.go": "8b53ad521a71d8649741bc79a728dcbd6598fd3fdd974cf6b808e7311ea2e57e",
+          "training-data-preparation\\internal\\dataset\\export.go": "07730ec7a01b4175149464cf683100fefee20fd3629e5b9bb9074e3470b9a071",
+          "training-data-preparation\\internal\\dataset\\image.go": "7512f07a01d40c614d0408934b6c8a00aa9fe9afa82561561566bad7cc958881",
+          "training-data-preparation\\internal\\dataset\\migrate.go": "012a539594bf0b7342574d3508a7871955fbfed40fde9267ed665f7d526bff39",
+          "training-data-preparation\\internal\\dataset\\migrate_test.go": "3ec5c06917c0a91d962d95d20230715af255a1600d47b70e89bde3fa837b48f3",
+          "training-data-preparation\\internal\\dataset\\packing.go": "5f0d21c27dbf6b5826b6af21994616ae9414f981462ce2fb2fa34f81f7562f99",
+          "training-data-preparation\\internal\\dataset\\packing_test.go": "b65195d0f7a3837d0758ed2472e830af9dc5b2ef435780a4abe8e50d365b891a",
+          "training-data-preparation\\internal\\dataset\\pipeline.go": "bdb13969771f715a7e764d5769b86ab4d06e02804b822860afef309b31454193",
+          "training-data-preparation\\internal\\dataset\\store.go": "af22b75b159ed852cc47399c8b586e4925492d0dcd9ad1c26e71e483f76e6d77",
+          "training-data-preparation\\internal\\dataset\\stream.go": "6d989f953a5cd60a5788b6e262f6f03c3cc3fee4d372a222b4c0dc59376e6ca5",
+          "training-data-preparation\\internal\\dataset\\video.go": "169f029128b18fc0fd43bd8b5df1ad96ae4195c0605585ce04a749f929037a5a",
+          "training-data-preparation\\internal\\jpegxs\\bits.go": "a1e1876c56c0b728b915a8d313fa39ef47fb60966e2863ee08eca15417b59aac",
+          "training-data-preparation\\internal\\jpegxs\\br_conformance_test.go": "1a0b266847081f7de1dd64d4655a8a8f487153bb412a2ea7a71518ce0c80a65b",
+          "training-data-preparation\\internal\\jpegxs\\cascade.go": "1d2c6e5357287ade99e9369309d309f42a99dca480abc56cbfc6e9ee6f068d4e",
+          "training-data-preparation\\internal\\jpegxs\\conformant_test.go": "2e359e553e332b37c9deb35d5283338f698457e933756d22ddaaa5542ee86c29",
+          "training-data-preparation\\internal\\jpegxs\\decoder.go": "ae14bd15639ed59eaba41143d7d08ccf47f8a52fa0537da0579cae29ef5d8a41",
+          "training-data-preparation\\internal\\jpegxs\\decoder_bits.go": "ccae957f02aa6fc2b9465232775c8d6963b8841adb1d0d355191431e0a7daa48",
+          "training-data-preparation\\internal\\jpegxs\\decoder_bits_test.go": "ea5f23d517d6147addf61f97d2c72a72680680c2d2b996e6f662501306885ea6",
+          "training-data-preparation\\internal\\jpegxs\\decoder_entropy.go": "7baa70cd00c60c25b1e4c3a8e0ce89a30fe97f6a87cd633ad8bea379434f131e",
+          "training-data-preparation\\internal\\jpegxs\\decoder_picture.go": "0727e25a11d31a3e0fc4ada264569563e67019bc61c1e52738c3e976634ed928",
+          "training-data-preparation\\internal\\jpegxs\\decoder_test.go": "7704fc20f7003a29d951041f047e13f04b3d7c3c2f0c616d0013496289c7d70d",
+          "training-data-preparation\\internal\\jpegxs\\decoder_transform.go": "86e7b659817742195e6a9b116eb45bfe791ef52edda6f9e5ef95e2264b23ae6a",
+          "training-data-preparation\\internal\\jpegxs\\dwt.go": "83a28acf1218ac520e4bd66f93862047fc966ad245a5a2a3f7162f0ccaf3c673",
+          "training-data-preparation\\internal\\jpegxs\\encoder.go": "7c0a231f4b3876c07a7d97a4969be64b2692982ba70f5e35301e7994f58c7d6e",
+          "training-data-preparation\\internal\\jpegxs\\encoder_bench_test.go": "09adfc8f6d2ac40a13edfa8a05a6355f3988a62d2a3117e4c03de3482c8a625f",
+          "training-data-preparation\\internal\\jpegxs\\golden_test.go": "a93063cc6e8b3c430ff7329925794fe44dec6e9b24c6758d0a99a9766d20d842",
+          "training-data-preparation\\internal\\jpegxs\\packet.go": "e7684f6942cdaf4cda9e20d57557ca4a6655ac802dda917584b4c81945494947",
+          "training-data-preparation\\internal\\jpegxs\\parity_test.go": "cc88676f89cf2b4328c0e5cc5cf329fc790a7d7d18b84fce41d35ab92b9ed355",
+          "training-data-preparation\\internal\\jpegxs\\rggb.go": "bbf045462db724a8e6ebdb8ec9f2212010e756966f269ac89081ec5477e3aa3b",
+          "training-data-preparation\\internal\\jpegxs\\slice.go": "99996a558d026084a8003ea6e4290518cce4be3227a476efbebee63095596612",
+          "training-data-preparation\\internal\\jpegxs\\startetrix.go": "5ff08ab7b877ab4b878b1165865d24d6031f184c6529f3d42590e98ecec2038c",
+          "training-data-preparation\\internal\\jpegxs\\thirdparty_test.go": "99570a25b6b98f36a9db92d8b2df3a293ccd0e0c389de8604496bda3ba1db769",
+          "training-data-preparation\\internal\\jpegxs\\wavelet_conformance_test.go": "5c44b54531d5417b036d0cd0e8e5cb8edf551767ad961158bad30d3e2f36dbf9"
+        }
+      },
+      "inputs": [
+        {
+          "path": "training-data-preparation/encoder.native.q4.json",
+          "bytes": 407,
+          "sha256": "0d7c5f2f82ea11990888cd3d88024438e7d8a557787378322384a5644f5e62e6"
+        },
+        {
+          "path": "training-data-preparation/原始影片/big-buck-bunny-1080p-30sec.mp4",
+          "bytes": 22718509,
+          "sha256": "07b756a4c7b481829776645c153167ca14c9df802ddbea7dffda3d817aa5261a"
+        },
+        {
+          "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+          "bytes": 332431360,
+          "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+        }
+      ],
+      "finished_at": "2026-11-21T16:57:48+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/prepare-q4-report.json",
+        "bytes": 9938,
+        "sha256": "d2210c9516d0ceab5021ba15453e47747fb02a1d7ea0c73681485aa6446dc790"
+      }
+    ]
+  }
+}

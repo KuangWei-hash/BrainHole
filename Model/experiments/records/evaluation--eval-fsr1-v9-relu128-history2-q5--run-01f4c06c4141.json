@@ -1,0 +1,1327 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-fsr1-v9-relu128-history2-q5--run-01f4c06c4141",
+  "kind": "evaluation",
+  "name": "eval-fsr1-v9-relu128-history2-q5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-fsr1-v9-relu128-history2-q5",
+  "started_at": "2026-11-21T21:55:38+08:00",
+  "finished_at": "2026-11-21T21:57:00+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate_fsr.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/relu128-four-v9-history2-q5/best.pt",
+    "--single-frame-reference",
+    "Model/runs/relu128-four-v9-q5/best.pt",
+    "--start-frame",
+    "720",
+    "--video",
+    "--out",
+    "Model/runs/eval-fsr1-v9-relu128-history2-q5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "ab8afa566aab380bca0348a42619c0ed507ff3221a7462e9d9bc853654ac44b0",
+    "directory": "Model/experiments/source_snapshots/ab8afa566aab380bca0348a42619c0ed507ff3221a7462e9d9bc853654ac44b0",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "evaluate_fsr.py": "072d3288c27b5d3e2286afd8aa6849fbd55ceefcd5da9cb08b8bd6ff8a6ec4fd",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "ba0eeb86dbcd8b825e5513ae6d47726d812aef709d4f1c25b3b1e980d6bd0397",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "129c8716375f8be30f92ec22bc8303c7b07c3ce4bb933b6e8300cfc02a7a0788",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "185527b2e7aba22460078432493848c6ad5c93a26676f99a630912ec94b44b39",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "d3d4173e493539a49d0651dd898e764fcf7ab03bd02725ef8c82fbdd039aa7f2",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "1b177fc31ef169a3ba8897c54204e99b8fe079d778eb18d650c7fb9a761071fb"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T21:57:00+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/relu128-four-v9-history2-q5/best.pt",
+        "bytes": 3719953,
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 5370,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 721,
+      "last_evaluated_frame": 899,
+      "raw_projection_metrics": {
+        "bilinear-raw": {
+          "mae_8bit": 17.552325840102895,
+          "psnr": 19.701981148556097
+        },
+        "v9-relu128-layers4-history2": {
+          "mae_8bit": 14.171116900310835,
+          "psnr": 21.282882036264503
+        },
+        "v9-single-frame-reference": {
+          "mae_8bit": 15.24122632415601,
+          "psnr": 20.54430793900969
+        },
+        "bilinear-rgb-input": {
+          "mae_8bit": 17.20863607182849,
+          "psnr": 19.914219079055353
+        },
+        "fsr1-easu-2x2x": {
+          "mae_8bit": 17.079363431877262,
+          "psnr": 19.89960289678235
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "mae_8bit": 17.213108719127803,
+          "psnr": 19.84217763988178
+        }
+      },
+      "rgb_reference_metrics": {
+        "bilinear-rgb-input": {
+          "mae_8bit": 16.131054157562538,
+          "psnr": 20.59035278112098
+        },
+        "fsr1-easu-2x2x": {
+          "mae_8bit": 16.06460380483162,
+          "psnr": 20.55747574505185
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "mae_8bit": 16.22315553775269,
+          "psnr": 20.485276641258846
+        },
+        "bilinear-raw": {
+          "mae_8bit": 16.16498386660102,
+          "psnr": 20.542705171620423
+        },
+        "v9-relu128-layers4-history2": {
+          "mae_8bit": 12.676014432427603,
+          "psnr": 22.26184620554497
+        },
+        "v9-single-frame-reference": {
+          "mae_8bit": 13.83835654232089,
+          "psnr": 21.407730827686727
+        }
+      },
+      "metric_note": "RAW metrics sample FSR RGB at RGGB positions. RGB target is demosaiced RAW, not original full RGB. Do not mix these metric spaces.",
+      "scope": "Same-video holdout, per-strip; no retraining. Unseen-video, full visual and streaming acceptance pending.",
+      "checkpoint": {
+        "path": "Model\\runs\\relu128-four-v9-history2-q5\\best.pt",
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0",
+        "config": {
+          "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "val_db": null,
+          "history": 2,
+          "architecture": "v9",
+          "v9_layers": 4,
+          "v9_variant": "relu128",
+          "v9_kernel_width": 3,
+          "v8_variant": "expand96_two_layer",
+          "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+          "val_decoded_cache": null,
+          "auxiliary_weight": 1.0,
+          "residual_scale": 1.0,
+          "warm_start": null,
+          "decay": 0.2,
+          "epochs": 5,
+          "batch_size": 8,
+          "lr": 0.001,
+          "max_steps": 0,
+          "val_steps": 0,
+          "device": "cuda",
+          "seed": 42,
+          "out": "Model\\runs\\relu128-four-v9-history2-q5",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720,
+            "note": "Same-video holdout does not establish unseen-video generalization."
+          },
+          "torch": "2.7.1+cu126",
+          "device_used": "cuda",
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "train_samples": 21570,
+          "validation_samples": 5370,
+          "parameters": 309124,
+          "input_contract": "decoded_raw_only_v1",
+          "residual_blocks": 0,
+          "residual_expansion": 1,
+          "residual_layers": 4,
+          "byte_encoder": false,
+          "temporal_fusion": "phase_aligned_channel_concat",
+          "hidden_channels": 128,
+          "activation": "relu",
+          "image_convolutions": 4,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "plane_receptive_field": [
+            9,
+            9
+          ]
+        }
+      },
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "fsr": {
+        "name": "AMD official FidelityFX CLI v1.0.3",
+        "executable": "Model\\tools\\fsr1\\v1.0.3\\FidelityFX_CLI.exe",
+        "sha256": "0d0016683ab9331968b76963a8509b717d43652440f1adbf5a743aa2d950cbbd",
+        "source": "https://github.com/GPUOpen-Effects/FidelityFX-CLI/releases/tag/v1.0.3",
+        "passes": [
+          "EASU 2x",
+          "EASU 2x",
+          "RCAS sharpness 0.0"
+        ],
+        "texture": "FP16",
+        "intermediate": "PNG8 display-encoded RGB",
+        "guard_input_pixels": 8,
+        "atlas_columns": 16,
+        "tiles_per_atlas": 128,
+        "note": "Two EASU passes reach 4x per side. This is not a single-pass 2x Performance preset. Input is phase-aware RGB reconstruction of decoded CFA; no full-frame or neighbouring strip context."
+      },
+      "video": {
+        "frames": 179,
+        "fps": 30,
+        "panel_order": [
+          "target-rgb-reference",
+          "bilinear-raw",
+          "bilinear-rgb-input",
+          "fsr1-easu-2x2x",
+          "fsr1-easu-2x2x-rcas0",
+          "v9-relu128-layers4-history2",
+          "v9-single-frame-reference"
+        ],
+        "note": "Offline, not a latency benchmark"
+      },
+      "single_frame_reference": {
+        "path": "Model\\runs\\relu128-four-v9-q5\\best.pt",
+        "sha256": "7edb6385c29f3eaa271e10029eebef6f9cd91d40a660b0df10c1fb789519e3e3",
+        "config": {
+          "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "val_db": null,
+          "history": 1,
+          "architecture": "v9",
+          "v9_layers": 4,
+          "v9_variant": "relu128",
+          "v9_kernel_width": 3,
+          "v8_variant": "expand96_two_layer",
+          "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+          "val_decoded_cache": null,
+          "auxiliary_weight": 1.0,
+          "residual_scale": 1.0,
+          "warm_start": null,
+          "decay": 0.2,
+          "epochs": 5,
+          "batch_size": 8,
+          "lr": 0.001,
+          "max_steps": 0,
+          "val_steps": 0,
+          "device": "cuda",
+          "seed": 42,
+          "out": "Model\\runs\\relu128-four-v9-q5",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720,
+            "note": "Same-video holdout does not establish unseen-video generalization."
+          },
+          "torch": "2.7.1+cu126",
+          "device_used": "cuda",
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "train_samples": 21600,
+          "validation_samples": 5400,
+          "parameters": 304516,
+          "input_contract": "decoded_raw_only_v1",
+          "residual_blocks": 0,
+          "residual_expansion": 1,
+          "residual_layers": 4,
+          "byte_encoder": false,
+          "temporal_fusion": false,
+          "hidden_channels": 128,
+          "activation": "relu",
+          "image_convolutions": 4,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "plane_receptive_field": [
+            9,
+            9
+          ]
+        }
+      },
+      "paired_comparison": {
+        "bilinear-raw": {
+          "worst_10_percent_mae": 26.22026186790213,
+          "model_win_rate": 0.9992551210428305
+        },
+        "v9-relu128-layers4-history2": {
+          "worst_10_percent_mae": 21.957132831507224,
+          "model_win_rate": 0.0
+        },
+        "v9-single-frame-reference": {
+          "worst_10_percent_mae": 23.8199601366117,
+          "model_win_rate": 0.9854748603351955
+        },
+        "bilinear-rgb-input": {
+          "worst_10_percent_mae": 26.693121645828533,
+          "model_win_rate": 0.9988826815642458
+        },
+        "fsr1-easu-2x2x": {
+          "worst_10_percent_mae": 25.814304070432758,
+          "model_win_rate": 0.9988826815642458
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "worst_10_percent_mae": 25.90368082590776,
+          "model_win_rate": 0.9990689013035382
+        }
+      },
+      "largest_regressions_vs_single_frame": [
+        {
+          "frame": 762,
+          "block": 10,
+          "model_mae": 16.683673560619354,
+          "reference_mae": 15.95531914383173,
+          "delta": 0.7283544167876244
+        },
+        {
+          "frame": 778,
+          "block": 28,
+          "model_mae": 11.786884870380163,
+          "reference_mae": 11.348823476582766,
+          "delta": 0.4380613937973976
+        },
+        {
+          "frame": 769,
+          "block": 22,
+          "model_mae": 14.114950597286224,
+          "reference_mae": 13.724614642560482,
+          "delta": 0.39033595472574234
+        },
+        {
+          "frame": 899,
+          "block": 19,
+          "model_mae": 13.838274143636227,
+          "reference_mae": 13.48086342215538,
+          "delta": 0.3574107214808464
+        },
+        {
+          "frame": 767,
+          "block": 28,
+          "model_mae": 12.397906333208084,
+          "reference_mae": 12.048977706581354,
+          "delta": 0.34892862662672997
+        },
+        {
+          "frame": 873,
+          "block": 28,
+          "model_mae": 11.08560400083661,
+          "reference_mae": 10.752300135791302,
+          "delta": 0.33330386504530907
+        },
+        {
+          "frame": 737,
+          "block": 29,
+          "model_mae": 12.793305516242981,
+          "reference_mae": 12.477920539677143,
+          "delta": 0.31538497656583786
+        },
+        {
+          "frame": 843,
+          "block": 22,
+          "model_mae": 14.416679106652737,
+          "reference_mae": 14.115188084542751,
+          "delta": 0.30149102210998535
+        },
+        {
+          "frame": 815,
+          "block": 22,
+          "model_mae": 15.368255395442247,
+          "reference_mae": 15.075177121907473,
+          "delta": 0.2930782735347748
+        },
+        {
+          "frame": 894,
+          "block": 22,
+          "model_mae": 15.294106174260378,
+          "reference_mae": 15.001764111220837,
+          "delta": 0.29234206303954124
+        }
+      ]
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-fsr1-v9-relu128-history2-q5--run-01f4c06c4141.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "1abf6f0f8dd5b2345f5902aa164fd15129e8f5a4a272ca86074833037b3e6631"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/bilinear-raw.png",
+        "bytes": 208093,
+        "sha256": "6d34c19ace78de2ff34e41960389a9a24e93cf80140164c9bdb5ef2d019b351a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/bilinear-rgb-input.png",
+        "bytes": 206554,
+        "sha256": "ce78e431630954315664b5349d046f2676067cafd18b25dcf9a18762ea7113ce"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/blocks.jsonl",
+        "bytes": 3180779,
+        "sha256": "1abf6f0f8dd5b2345f5902aa164fd15129e8f5a4a272ca86074833037b3e6631"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/comparison.mp4",
+        "bytes": 16283780,
+        "sha256": "4e2c4c6c1cbe1d61b68854024239cb9e6d810c8a22f7a9ea8bb7ff6318b0035e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/comparison.png",
+        "bytes": 2345398,
+        "sha256": "651e349bfece0775aa8b17ceae9868f014022295485eeb9de81daa6e2b9a1773"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/fsr1-easu-2x2x-rcas0.png",
+        "bytes": 451796,
+        "sha256": "d109ed3d36e023270918a3ef7f087599a43b2b0eecbcccb39d883e861751b32c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/fsr1-easu-2x2x.png",
+        "bytes": 284549,
+        "sha256": "31b4d709d3d5066ff0166a1d688a0bac754ad5f184d437cd218b5f57a8a72140"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-000.png",
+        "bytes": 818718,
+        "sha256": "bced0b1c9a6f1f257e83bc8db701af8513cad0a0c332cb0d7f13a7421c918ad8"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-001.png",
+        "bytes": 873202,
+        "sha256": "b605fde717906f9178511f4527de2f9b0c2f6ebdd9f1011a5a37e1efeee93bdd"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-002.png",
+        "bytes": 844443,
+        "sha256": "7aa6c96d045e20a3185d0aa6df2298b08eeb21459d59b19653679fefb2d4cd19"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-003.png",
+        "bytes": 789462,
+        "sha256": "2b4e6edba4d6083e9075ec1ae84c587983e74983b60898fed4613efc60198f1d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-004.png",
+        "bytes": 834134,
+        "sha256": "43e690c2bf2a26ef5a4e1eaa007a604aa9b9f1ec22f4b858f32978265eb90173"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-005.png",
+        "bytes": 881852,
+        "sha256": "5d9ba7eed6cb498bbbb4fc13badb7ddda2e89b288575d8d90ae0e1304a08c1a1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-006.png",
+        "bytes": 829599,
+        "sha256": "7eafe3f34d3ba1ab3d7814a515f9e9e6a35ff999c98db6c85468738ee1ccfdc5"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-007.png",
+        "bytes": 800357,
+        "sha256": "cfc74625ddb87797e1e7d10fb0dd9fb6980e7ec9e8b61af2560a60bd2ad10df0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-008.png",
+        "bytes": 874383,
+        "sha256": "3e61daaf2d2f83d3123098ed16d20f792f44e83a04ab7fbbe0703d52dbfff264"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-009.png",
+        "bytes": 912274,
+        "sha256": "f56c6b74d5e9c9523450a0a56dabfdf2129830b319d25d274837bb3e19ae0247"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-010.png",
+        "bytes": 828573,
+        "sha256": "e48c3e0edc6b21e664051b9bd121cb0495d4cad2088eea0a4464f9cc1719a926"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-011.png",
+        "bytes": 834350,
+        "sha256": "6e97f5eb58f00ec1c38baa66ad1eaee23c6e204ccb74137676b48d24370ed614"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-012.png",
+        "bytes": 936096,
+        "sha256": "9dc0fe2d8841fea9d8dd68c92f2c4b9f6371105e54f81c82b5e69f1527c33639"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-013.png",
+        "bytes": 919949,
+        "sha256": "9dad60a6ffe692a0512d8bc37df79d1c6882f261bc0deaaf0ec67c3eaa5e1606"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-014.png",
+        "bytes": 841325,
+        "sha256": "3cf4134e3bcf0c48dbf400f10c0ed5fbdec10f55bea785db44abb7965b09ca90"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-015.png",
+        "bytes": 870774,
+        "sha256": "d9699e95b644880215cd8c57f8939a0a350094d3d243c59469e56225864d8908"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-016.png",
+        "bytes": 941556,
+        "sha256": "4647aee4db249b18fbb83f99de68c01ea7f4d827f98681891e3f1bcba4927ae4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-017.png",
+        "bytes": 893587,
+        "sha256": "fdcbb2201ec09cd65aa438c9577d56854b00b69f16fcbb1359a1dfc3e1ee0ea4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-018.png",
+        "bytes": 840116,
+        "sha256": "15186b7f2139d76d123d069f9ecee5d3b3a9b5e9e3564b9c4ccf21e3f0ac885e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-019.png",
+        "bytes": 890196,
+        "sha256": "df90dba18b88140f290e56e4b605e33ca1126a02865d24733818cb261dbff0aa"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-020.png",
+        "bytes": 941807,
+        "sha256": "c048f5c58337973024cb7aebc952961020fb222440213c816629053229f3d985"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-021.png",
+        "bytes": 869678,
+        "sha256": "6bf733b7c1e1bad7e01775d900c0bfeaba42741c621aea646f139ffb3c7de928"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-022.png",
+        "bytes": 834932,
+        "sha256": "7de1ca4b72607a8288fd5c1224ed87af71e7e963a50359a180cfe6e4c5a27ef5"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-023.png",
+        "bytes": 914525,
+        "sha256": "94e319b5e58c4c1b2462abb4b8aff0a5278809e01b383d869688341a10bb3f7a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-024.png",
+        "bytes": 938680,
+        "sha256": "37180ee5e58edfcfa0eb014528750afba6c6df0bc5c66ca013ce256b8efe80aa"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-025.png",
+        "bytes": 849865,
+        "sha256": "e4f159174da3cab8d131af8953650402479c4b68ccd76fccd5fb251634cd19ed"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-026.png",
+        "bytes": 842671,
+        "sha256": "b05e4db186558cbb64852f4fe2c657c54fdf8e8f0893748851e2aa2e1b68d340"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-027.png",
+        "bytes": 939759,
+        "sha256": "a63e5462a21701604246a2cdfb826c00933763311ef84822e0b361686fd8976c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-028.png",
+        "bytes": 922548,
+        "sha256": "5c4482d32e9963503cbb791cf18a31dea3a145d76a84c0d61c2d6533633f75ca"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-029.png",
+        "bytes": 836142,
+        "sha256": "1baa9258476e17a59078b7cbb814807d28c4e7edb99a348dac5a0aa1c28ee8c0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-030.png",
+        "bytes": 868433,
+        "sha256": "62f2d08c6b2c8d64b1443e5425894310902e0b1aa722a99d40a79fa68c91240b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-031.png",
+        "bytes": 945473,
+        "sha256": "ec845918452331a9667958263ad1efd7092521b7421247c8300ae0ec1c9a6359"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-032.png",
+        "bytes": 895319,
+        "sha256": "f669805074e9f33c48957f06fb517500553b14f0ff37046f2301993730a181ab"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-033.png",
+        "bytes": 839811,
+        "sha256": "544114e7be8aeaced2eab55492a52196de345d68764b853c22e774067fff4e3d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-034.png",
+        "bytes": 889105,
+        "sha256": "7ab33e6e3bb9f0d12d024af9cbd629d1b3702fbc4b9281c1fefba8c69bb393a4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-035.png",
+        "bytes": 936677,
+        "sha256": "e3ef54e02f38018f91853a7e3c7571901b84a32f89d399a55e6a306c4083e66b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-036.png",
+        "bytes": 862040,
+        "sha256": "dca21c92465a95c8ebe31e05bc30d6e01b53db76832673479cd3aa8e2dc48b26"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-037.png",
+        "bytes": 826843,
+        "sha256": "6d40ee42886582b77246baae4ec16a9d296f8e4745aa2473dd85aec263ca1b91"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-038.png",
+        "bytes": 891624,
+        "sha256": "c067058c00b95c4b8568dfc35166db6fbde566553ed6ae0f2e76d4c9d1b1b0db"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-039.png",
+        "bytes": 904108,
+        "sha256": "e2540c00a7271dbe74ac57a2669f01a37ff3966adeb4ffd043ed31b377df9091"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-040.png",
+        "bytes": 808445,
+        "sha256": "c6f55fb50296e186a1fd97b78e7689917a329a06a8098139c20dc98765932b43"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2-041.png",
+        "bytes": 774599,
+        "sha256": "f53864e3de9af203659d47b0ecef93e72da6fd3f549a5dbf4f2961874d5aa8ed"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu2.log",
+        "bytes": 9030,
+        "sha256": "a666333a82f2d09992d0792f3d335e1ff37c3e5a0aa0ec075e298f24e72f64f5"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-000.png",
+        "bytes": 2828397,
+        "sha256": "2d848b69eb4e5fe5d43911a312ded9293c7b85ebe5e136dd1a69e0c46365a61b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-001.png",
+        "bytes": 2979924,
+        "sha256": "b012b7927dbf1741b11eade3ce6c26abf1308f4aa26d2510db45cd02dea579dc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-002.png",
+        "bytes": 2913630,
+        "sha256": "0c4fd72082635700aa70ac9d4ced518253e196fc676b8403d8fe239e5a33b73b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-003.png",
+        "bytes": 2746611,
+        "sha256": "30499e92958e956f141f3f7c53ae701325a223304a59ec0ec17064fca80d49e9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-004.png",
+        "bytes": 2868773,
+        "sha256": "54ea2320775c6bcb86ce46c92d717cdec167b854d66bc3927723100a59269881"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-005.png",
+        "bytes": 3015254,
+        "sha256": "e6b5bcc56b0c68fbbd32237567fb5b4a0d61cac21cd2c62c2dc9b7a3784e7c2b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-006.png",
+        "bytes": 2860772,
+        "sha256": "94f34484b35d3dff891257d48310a7af6c441eb1d33c645faacd8391c47450ac"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-007.png",
+        "bytes": 2778342,
+        "sha256": "d45acc6a23901b2b3aaa9c88dd3cf995ff5b8b9a49e3145a2ab89f570b1bab6d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-008.png",
+        "bytes": 3006126,
+        "sha256": "8abe0a5f302fd8935aba835ac21ed7215a1a127587b0e62b4907974d45f201cc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-009.png",
+        "bytes": 3126746,
+        "sha256": "2457705cd8b07ee3c73798c7fbbf9133d9739cd22a1dd8b38c702a531a4608f4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-010.png",
+        "bytes": 2900343,
+        "sha256": "c2ee7f20daf59c35cd6fa05f6f8674781a28ffb8bc55d4e7148603756821fd21"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-011.png",
+        "bytes": 2931537,
+        "sha256": "b258ec7729a4b560f1fd264d35c184ffe23ec3ce7cc0198103536e4b11016dde"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-012.png",
+        "bytes": 3239316,
+        "sha256": "5648d3241f6b73670f28bc97c8a0a22d54807bbfa9a67b6112c12e3eaa475267"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-013.png",
+        "bytes": 3199262,
+        "sha256": "93a9f4d85c50bf8d5961a05eea5bc6ba1b7f1d80c6b3b5cd76da15a9fea34f10"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-014.png",
+        "bytes": 2978740,
+        "sha256": "6ddc19161f71f364eeed0c1c1119ac0abe31291ef7da9d5b3fb899eeab0edcaf"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-015.png",
+        "bytes": 3057208,
+        "sha256": "045aedf58c9678ee0e1e3541d8eec67e23ed5d97bc745f251f7943463ce7c9c4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-016.png",
+        "bytes": 3267796,
+        "sha256": "dc719fa2ffc1091f0e34fd37106482b030d0310e955830c6fe5908966d763107"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-017.png",
+        "bytes": 3122855,
+        "sha256": "a049b784259c29393e181be7af177dd426dac0bec6a6d1495860ff0ddeabc722"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-018.png",
+        "bytes": 2972884,
+        "sha256": "39118504e1f35ed6ab94cfa1250fc3ca31d18657197d675a0ebff3304b4e81b4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-019.png",
+        "bytes": 3117119,
+        "sha256": "deb91e06ab0c02e059438caf6df41e5d557bb45146ca3bb24356f8578ba1db9a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-020.png",
+        "bytes": 3270076,
+        "sha256": "7d576c2950589428a880d8ae8b0d246841e38394a566e3731ecff5ade10774de"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-021.png",
+        "bytes": 3055336,
+        "sha256": "1f7ba79ff8da9eda2f339c76007e1bd210ac46d2e7a31030891bd7e8b4b2c66f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-022.png",
+        "bytes": 2956076,
+        "sha256": "823dd74bdb75e1c8225cd150a7dc439a45398e7d8dff5674f2554f58658033b6"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-023.png",
+        "bytes": 3185810,
+        "sha256": "8632797eb7df4c8d1f4cfa970288cebd4980b0fc2fce78343f4bceee11bae161"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-024.png",
+        "bytes": 3261834,
+        "sha256": "1a7b8d028876dd4e6c56c15ebb1f248cf1432e2c16d3c0bea4b5bce81f8f216e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-025.png",
+        "bytes": 2988997,
+        "sha256": "40483e192e8dec7ebd43d8b6a302af030a92baa479fbd88b25c76d506b408da5"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-026.png",
+        "bytes": 2976495,
+        "sha256": "e0af68bc5fe84401f73c0487ceb2eae9e2b6a7f9f2979aea59d75e369eb0f610"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-027.png",
+        "bytes": 3260826,
+        "sha256": "88c01c33834ee5132c9a3407fc63060a597536f7dbf70aca5e8aa25003c6649e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-028.png",
+        "bytes": 3212471,
+        "sha256": "143442aaeaf18c446305813af4753024cb8b6aacc1b6971951c9e21bb5ede54e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-029.png",
+        "bytes": 2959809,
+        "sha256": "01b806c1a75c42ade60af0724bfa3cefc4b31ec6c1285d040256653ef5d7a8b3"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-030.png",
+        "bytes": 3053736,
+        "sha256": "079f2bbd60d79bbb7ead1692374f527d94a9be78c145b15ac9ea762281338938"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-031.png",
+        "bytes": 3284405,
+        "sha256": "092c1460b663bad36c2e88335c35dd7e104720052fef4af7c2b780a4dd83b80f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-032.png",
+        "bytes": 3138549,
+        "sha256": "c1ea73009fc8d958edfe420db2bc663726e27e9d3de34b34ae2916a265ed0406"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-033.png",
+        "bytes": 2971563,
+        "sha256": "26aa3ac3df6ede833cd4e05bbbc797588bff54defcbf10ade804349003a4031a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-034.png",
+        "bytes": 3111693,
+        "sha256": "80bb6cb57b91e1f4077069350a624e112771e03e6c0b29a7271fbacf88927d80"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-035.png",
+        "bytes": 3250716,
+        "sha256": "305ce2de03ca23070b0fcffe133282b957d5eeac2cd34a40e2c3dfb16f4b00db"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-036.png",
+        "bytes": 3011552,
+        "sha256": "771f0a7130a0bd7ec22eb4ba005cf1907406f845c5ef49d947b207f35b9c5800"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-037.png",
+        "bytes": 2900543,
+        "sha256": "d5f740c53367a594b54c3460bbb13fcf1f5100e03ed0eedbeabb4bd3b7504f5f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-038.png",
+        "bytes": 3074493,
+        "sha256": "95da06c5ecb50b7be361172f4a24e2f3af06bf80be8e4badabccdb121dbf1c04"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-039.png",
+        "bytes": 3102588,
+        "sha256": "4b2d2444ee06bc45a16a3c881ab6644bc5b87550e0975e4140822c1f62695341"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-040.png",
+        "bytes": 2826852,
+        "sha256": "83833801317e0837faddc48e2b6bac1ff990788f448213aa260e9f8cddaef2be"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4-041.png",
+        "bytes": 2710610,
+        "sha256": "0727f3643106a1097b0b3c48320920dc49429d69d02b045e02534fb15bfb8027"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/easu4.log",
+        "bytes": 9072,
+        "sha256": "e31dbbf0712d4bcb297abf55bf860deeb31c38f0766f7a375798e64e0438cb69"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-000.png",
+        "bytes": 132872,
+        "sha256": "9d18dcc71c05cabcc9c3f93cc158d74e36346a3add9c72623b29756786f30c6d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-001.png",
+        "bytes": 154909,
+        "sha256": "68accaa63b24b5146534689f7701c466990be663e8960741c4c1b5bba048b73e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-002.png",
+        "bytes": 142335,
+        "sha256": "53fcbd420730225fd258120c9dfc1a35fca2e2efb30caf968a743d02297f06a4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-003.png",
+        "bytes": 123463,
+        "sha256": "5a893015098ec4149d73a84f05af7bca5e3c92f3278219be4205470566f7310c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-004.png",
+        "bytes": 140340,
+        "sha256": "872c7eb920b1f48b0eb0cdb99cd7c35f2b93fa32cfac7a25ed35ff4f2f2bfd9c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-005.png",
+        "bytes": 155909,
+        "sha256": "5c289c901f5086a6cccb600fccdd9b9f268a00d28dd09ec5a8cbe3c8a3a7e873"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-006.png",
+        "bytes": 134826,
+        "sha256": "5da35cc1aee8bd7289d9dca6500d09c0c97277f1a3c4a3d9bf31001f89f1c7a0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-007.png",
+        "bytes": 123922,
+        "sha256": "73548399e6ab0e3176bd151e0aacd80dd4d63253c00f3678fb1d30ce76d4f244"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-008.png",
+        "bytes": 150789,
+        "sha256": "1730b4e851a922738e8397f22ffa64ae7cb775f7276c8e9573f519d75029a7d9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-009.png",
+        "bytes": 159124,
+        "sha256": "54a1505867217194d6716ed4c91d041670524ab3162bcd07fd2f3e72c42b2d42"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-010.png",
+        "bytes": 129331,
+        "sha256": "86bf34951f2aa4bc63f0469db8e6ccf124d9e869896fefebd4dbf6b3fefbc150"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-011.png",
+        "bytes": 128422,
+        "sha256": "b552913371096c74de167e2d05dca951cafc1c16652eec26f8cab1b0092b300b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-012.png",
+        "bytes": 161581,
+        "sha256": "d7b0a96878a130dd10b507b7ff54e0ab4f002bd861d5e2deedcd09c8a0636591"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-013.png",
+        "bytes": 155642,
+        "sha256": "67a72f63289cbd305cbf3ea1a6d791c23e1832dd924c07db49513cfc15e48241"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-014.png",
+        "bytes": 128154,
+        "sha256": "987a9723a029ad4f08450ea136b47f4967eb999743c69231b376ba168e35a47e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-015.png",
+        "bytes": 138002,
+        "sha256": "04622e34f4ec436ca614b40e2a44ffbc9347225dc4d5a3fc1a434d72446a0029"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-016.png",
+        "bytes": 161510,
+        "sha256": "74ee5237e1907b5f0a67d6d83a0ed11d72e1fd5f7295b716bb54560f0c4c9357"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-017.png",
+        "bytes": 147269,
+        "sha256": "8cb016b739b6a99aeecdc9ac8f5134c721d81f4e2c98633d7106530eaa74478b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-018.png",
+        "bytes": 127806,
+        "sha256": "8ac461d0de29dc297aaa54ae1deecbb9d39ebbf2c25fd2aa255251e7bb3bd214"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-019.png",
+        "bytes": 145997,
+        "sha256": "abc855deb0379f491faa9a602bea23903daa7bb0c05804a0be137777c1c28ae3"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-020.png",
+        "bytes": 161454,
+        "sha256": "bfffafd2ea9f01f00946e3327c971dd35825572dd25bdfdace8b8729322ada0b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-021.png",
+        "bytes": 139257,
+        "sha256": "073099ece3d5f06ef6031c0fdae0d0213ce74cf4ae66c3b89744276022799419"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-022.png",
+        "bytes": 127330,
+        "sha256": "56266db98ff588fe9cea1df9284a4fb7aece75590424bfdeb1dba62762631a1b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-023.png",
+        "bytes": 154146,
+        "sha256": "cf2ef27a6694742daec65a3f3a98630f2e70ef89e565dfdf667166dfc6f8096f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-024.png",
+        "bytes": 160953,
+        "sha256": "41efba4ccf03a587be9f5534175ad3c28ecbdd4caaccbcfabad03ae702b56788"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-025.png",
+        "bytes": 131202,
+        "sha256": "8d43f4ea1a004596751bd4dfad4eaa7ee602867da4d730b2e43e2e8be28609e0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-026.png",
+        "bytes": 128963,
+        "sha256": "73bf05af14c5838c954aab9f1dc6dc61631ece07c59e7e9e157c0cbdcc3b018b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-027.png",
+        "bytes": 161448,
+        "sha256": "93081450f24acef9113b31270da1d51f621daba1b79a7187972a843962d825be"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-028.png",
+        "bytes": 155624,
+        "sha256": "b4cd1e358be8b53454b4750e232c5797917324f1a5369e42d6546fde82755de9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-029.png",
+        "bytes": 127558,
+        "sha256": "2c0bf5321864b2be9b9fea43ea8d6be886a1de10e52fa660e16bd29f4f712a55"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-030.png",
+        "bytes": 137934,
+        "sha256": "6fe5ad60cadd7dd2b82b62280736e49438ec786304009247c7eac0af390182d8"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-031.png",
+        "bytes": 162374,
+        "sha256": "07128c4868e0902d4a87d31af8728eca1900a482908e4cc5f86e4e344edaa685"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-032.png",
+        "bytes": 147543,
+        "sha256": "100fb022fc0ade540c17b5bd41d5cb13c06de24ec004aedf1ea0f0af4c4169d4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-033.png",
+        "bytes": 127844,
+        "sha256": "3de4778e1c4bf4355970efe841cb6d0e7e62a8dcd9cf04377bf3a601d16c14f3"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-034.png",
+        "bytes": 146389,
+        "sha256": "5a59d3faeafa6527f7873d7d92394cdf7027e18f20852e18d1e28c2418060724"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-035.png",
+        "bytes": 161532,
+        "sha256": "37b4ef78c4eef9d1f5162d8efa2becb82f7744dd35ce485139dfece156da1d76"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-036.png",
+        "bytes": 138683,
+        "sha256": "dbab66454b738b11e9339024cd36e46e21c2dc8199ccf98ae598c3376ae21f5b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-037.png",
+        "bytes": 126529,
+        "sha256": "41bc28641fc7899d1d7a0be2eb4bc8fc42e7fb5d6450ccd4d631fd6bc88e3677"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-038.png",
+        "bytes": 152679,
+        "sha256": "1b3ed57f081bf056db486d3009b76a64f84c760b6c52a2dab864c01c425fdbd3"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-039.png",
+        "bytes": 157956,
+        "sha256": "1380b4b05811cef763704c9dfb02eabb4a5a77aca3cb6c839bde37eff4bbd004"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-040.png",
+        "bytes": 127767,
+        "sha256": "f5b4939275fab4f070ded5c881c701862ed97698fc0c4bbed37a737f63016201"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/input-041.png",
+        "bytes": 118434,
+        "sha256": "936e3224532fa52b0ce56028c93da77e99807b9ec59f6adf2064478fd546d810"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-000.png",
+        "bytes": 4342403,
+        "sha256": "a99ed81bbc10f4196825a40262652ec9ea90d5ec4256f455b1d6d8929011840d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-001.png",
+        "bytes": 4598659,
+        "sha256": "82c6fe2c93fa9c68405a35caa06eb83bd70face680d0c974d848f8816c7268b4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-002.png",
+        "bytes": 4467045,
+        "sha256": "764ad6e346d00036938225a43139ccf40e6e4c49dc6b5b527dd4a7e45742dc71"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-003.png",
+        "bytes": 4221389,
+        "sha256": "9880419854bafa6ca748440900864a1e917d0fd7a7e7e349307d530fa83dcab1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-004.png",
+        "bytes": 4413676,
+        "sha256": "882d40984bc156fa37a69f4c8f20f150ee9561d0f80f68b2370b5dc631e79b32"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-005.png",
+        "bytes": 4639713,
+        "sha256": "f6481c08aa633973c3e6c75440adf21ba0ed59b1c2a357aeeab52ce47de6484a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-006.png",
+        "bytes": 4382737,
+        "sha256": "9368f4fc9064b7d8f971e267d14131491ac31e277fe7537f101e2719096306d4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-007.png",
+        "bytes": 4256655,
+        "sha256": "3918acae7f6124785215d21a4c1b3d2c8a7b7f0b0de83a2aa0523876925e5e3a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-008.png",
+        "bytes": 4613685,
+        "sha256": "e41db65cd695dfa4af2feb8550c7195fa5f964f08cf79e1b0740cfc4fcea68dc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-009.png",
+        "bytes": 4759977,
+        "sha256": "ce9607548bab5a898cb92765fc657f6a359e6a60de1bae0fa37015d65e9ec82b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-010.png",
+        "bytes": 4385390,
+        "sha256": "4a8aa45af414d935e67eba78da0c660eddd6ce0c9f2bdd1c96cc55f886fcc141"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-011.png",
+        "bytes": 4409902,
+        "sha256": "eb6eb52184c4acac9951cf4af6cd8153ddc70460bc22d9157110de6bc26070f7"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-012.png",
+        "bytes": 4850453,
+        "sha256": "8648f3d647f035ea6d9cb115c625c58659992c0b9aec8faa9a46ffabd053b56a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-013.png",
+        "bytes": 4754118,
+        "sha256": "07c952b6d565e9505c3a92c4c910e9c32cdbfed6e90f17fd1e2ed0994cfb55b0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-014.png",
+        "bytes": 4407530,
+        "sha256": "3dd2f9140f048b42f68819eaa3e6e5f783f0644160507b0b42416ca96e6dd3ee"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-015.png",
+        "bytes": 4505714,
+        "sha256": "c2f310342cd36ff86c16105df5aee395dd4c2fe28069b2a24f0e5e1ced11561a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-016.png",
+        "bytes": 4795760,
+        "sha256": "7955bf76952addb423f077aa43171174833943e5315db19466c7590137b59245"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-017.png",
+        "bytes": 4604669,
+        "sha256": "7b333ced55967e69765e28f0c6beeb0d24d9667793b886417b0be559f3938222"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-018.png",
+        "bytes": 4390331,
+        "sha256": "7659cc8ba49a48038f1668cf861560089aec24956f8060a514e2479d99c3d356"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-019.png",
+        "bytes": 4591766,
+        "sha256": "9c184033a9f27b3d39032c80c2d226d0b9cd38a24f0250d548d378b999ec503f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-020.png",
+        "bytes": 4794075,
+        "sha256": "347676d487285a5f8e27d01584afbb86622539bc3e44a07802efc57140a0893b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-021.png",
+        "bytes": 4504786,
+        "sha256": "fe985e6319fa44c8edb9d0937fe947ce99a9df842ea869dc940bd487b2fb64b3"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-022.png",
+        "bytes": 4366216,
+        "sha256": "5fd01ae6ec90e5bcbc91ba5ce0276366769e8f9bc9ccb1b12d1cd03660a93b91"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-023.png",
+        "bytes": 4686255,
+        "sha256": "3bcb9168c11b0fd41b1c0094f5571f82ed516ab3e91dbf0c15548da891052071"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-024.png",
+        "bytes": 4782277,
+        "sha256": "86ea059dc043e0133d4b81a4eb1ca5b02dff17dfe92e9a5fb189aa1b43cbfa1d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-025.png",
+        "bytes": 4415756,
+        "sha256": "c42a114a2eca028470943de617ac8e0443469a710c920cc51c5c377374f2a38a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-026.png",
+        "bytes": 4378741,
+        "sha256": "c40c6f89ccc96f53c504dd018ccc603b80f0cefca41a31738fdc32d34f214b04"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-027.png",
+        "bytes": 4781274,
+        "sha256": "8794c3b7945b35b4a1b3ca5b159d0ecb35424284822c6aacf78688be25b25d3a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-028.png",
+        "bytes": 4717443,
+        "sha256": "5218db321d712c59b6678da89cf8ab53098169f29562624c2aa370bc4a29450e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-029.png",
+        "bytes": 4369910,
+        "sha256": "7d0c24dadbb6fb00b0d55830b7f476d03872baff0fe7d08fa6f09e2c894eb26c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-030.png",
+        "bytes": 4494161,
+        "sha256": "3c0ae1f3cf80d21e6983381d75fad2aae53503a980de7d761d6d3eb342106a3f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-031.png",
+        "bytes": 4817544,
+        "sha256": "65fdd83997e528312b9a7bea7c783cdfd0613ecd0ab4b79e35b7d778ec5432ea"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-032.png",
+        "bytes": 4633207,
+        "sha256": "c36588f04b9176b7d8faeb2329079c0c3a98d100de453e57a2ebe34ba9a60617"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-033.png",
+        "bytes": 4405939,
+        "sha256": "b5446a3d127b1d7894d2f6bb864459a6f27b9efc63caa573e1872d69befddee1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-034.png",
+        "bytes": 4640268,
+        "sha256": "90cdbbdc986b15a16158f16533456e7a9da5c2a2b332c506d5ef484a1d5dca36"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-035.png",
+        "bytes": 4849292,
+        "sha256": "ef745c14e0281b7429557061d9c1e6a0e81cec30aa9f7ae473f0c33252567634"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-036.png",
+        "bytes": 4536342,
+        "sha256": "7d0f6dd28f27a92128345a13ee23c82eae16a679fc6b143246e699c2e2a8a55c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-037.png",
+        "bytes": 4371154,
+        "sha256": "b5797c251c179b2bb36fc71efdbec9d9753df32a556897a571422bcaa7b5a55d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-038.png",
+        "bytes": 4667281,
+        "sha256": "f1d56b4c3de2d9aead110d51bce8dc4f2f3707b8123b675f893647298650243a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-039.png",
+        "bytes": 4723201,
+        "sha256": "2e3418ca20f3c56c58de9d5692a95a2bf58ebc9e4ba1896bd2bb7741127bd563"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-040.png",
+        "bytes": 4326996,
+        "sha256": "50b54ced2986fb81946a2f210dc94deb43595bb95e300b98038410cdcaf05b1b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas-041.png",
+        "bytes": 4124468,
+        "sha256": "78edb6a27273cb1cfd56b97f2b33dffb85d69cea265d203548248268ca8b12cc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/official-cli/rcas.log",
+        "bytes": 8148,
+        "sha256": "266fa75c2a2df4ce4e2fac36acefd4c21d9b1ef331b225834359bb3f92aa5624"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/report.json",
+        "bytes": 9553,
+        "sha256": "1cfbd764ee4be289805ebfeefaa609ecd264b3aa3fc973fa76db7a914f71ba17"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/target-rgb-reference.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/v9-relu128-layers4-history2.png",
+        "bytes": 308322,
+        "sha256": "3c8f7ab795d55c8373069dd5dd6a26420f3a23df7f11208ba88a68d854c1bbc4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/v9-single-frame-reference.png",
+        "bytes": 299628,
+        "sha256": "0577cb1b44a9a1b1cb94a1b9bf36d8043ed606fb861a8efe19523b76f226aeeb"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu128-history2-q5/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

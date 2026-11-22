@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "diagnostic--input-diagnostic",
+  "kind": "diagnostic",
+  "name": "input-diagnostic.json",
+  "status": "completed",
+  "output": "Model/runs/single-v1/input-diagnostic.json",
+  "result": {
+    "report": {
+      "samples": 128,
+      "correct_input_mae_8bit": 31.01815927773714,
+      "mismatched_input_mae_8bit": 52.21827618777752
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/single-v1/input-diagnostic.json",
+        "bytes": 121,
+        "sha256": "800455fdefbe4f55fa2b1e586e3d01bc77fada3d0f4923f3417d0b13746291a2"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:07+08:00"
+}

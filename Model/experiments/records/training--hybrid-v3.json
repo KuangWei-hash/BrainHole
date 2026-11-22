@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "id": "training--hybrid-v3",
+  "kind": "training",
+  "name": "hybrid-v3",
+  "status": "completed",
+  "output": "Model/runs/hybrid-v3",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 1,
+      "architecture": "v3",
+      "decoded_cache": "Model\\runs\\decoded-q6.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.5,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 3,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\hybrid-v3",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21600,
+      "validation_samples": 5400,
+      "parameters": 15996,
+      "input_contract": "encoded_and_decoded_raw_v1"
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 22.318006413657635,
+          "psnr_raw": 18.269332723186988,
+          "seconds": 23.099393399999826
+        },
+        "validation": {
+          "mae_8bit": 22.217016198734445,
+          "psnr_raw": 18.268556306839294,
+          "seconds": 3.100936300000285
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 20.0841354071887,
+          "psnr_raw": 18.93090584218982,
+          "seconds": 23.326216500000555
+        },
+        "validation": {
+          "mae_8bit": 22.58036974784401,
+          "psnr_raw": 18.220246555570352,
+          "seconds": 3.198480699999891
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 19.4399609654107,
+          "psnr_raw": 19.13522290073476,
+          "seconds": 24.14766679999957
+        },
+        "validation": {
+          "mae_8bit": 22.142574266592664,
+          "psnr_raw": 18.249214708366047,
+          "seconds": 3.540774799999781
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 3,
+    "best_validation": {
+      "mae_8bit": 22.142574266592664,
+      "psnr_raw": 18.249214708366047,
+      "seconds": 3.540774799999781
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/hybrid-v3/best.pt",
+        "bytes": 208443,
+        "sha256": "7150a856e732d35442b37a16c70e95fcd2ab6dbaa34c27e9ab67012f02a6b044"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/cached-example.png",
+        "bytes": 14849,
+        "sha256": "45ed2acf7df9f3a62346bb3094cfad987b3b74ec86b80ae3a53a859c895ff144"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/cached-example.raw",
+        "bytes": 10240,
+        "sha256": "d2d911cf7b720d920ce2aa90d605878a8eb3a4c067f35ba7d7638caae88a2250"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/config.json",
+        "bytes": 958,
+        "sha256": "d5d494647fb27dccf29d2c178da86cd52267b7542e496bf09dc4c31cfc6f77ae"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/epoch-001-raw.png",
+        "bytes": 16820,
+        "sha256": "380baeb9bb7ed2b7021e43632e8798349be2641d6032d5581365e9da02bb340a"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/epoch-002-raw.png",
+        "bytes": 16984,
+        "sha256": "e717fdd7ca3d321ef490a798d8f32460b3c0f51ca449a6bb1fcc03c419fa9e1e"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/epoch-003-raw.png",
+        "bytes": 16981,
+        "sha256": "fdf934d905900084790e7733ef9a47f06ff14967b1940df7c5680456d94fe77a"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/last.pt",
+        "bytes": 208443,
+        "sha256": "4393cdb8f706bce7b6bcf75fb6e82bb462f793d71530cfad6590b70af46bbed9"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/live-example.png",
+        "bytes": 14849,
+        "sha256": "45ed2acf7df9f3a62346bb3094cfad987b3b74ec86b80ae3a53a859c895ff144"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/live-example.raw",
+        "bytes": 10240,
+        "sha256": "d2d911cf7b720d920ce2aa90d605878a8eb3a4c067f35ba7d7638caae88a2250"
+      },
+      {
+        "path": "Model/runs/hybrid-v3/metrics.jsonl",
+        "bytes": 682,
+        "sha256": "60b8d3e4eb152398d91fb4c74e276ed925b8caed048d4e3c2693f512917447ce"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:05+08:00"
+}

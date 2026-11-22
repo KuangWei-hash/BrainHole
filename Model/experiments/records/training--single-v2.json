@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "id": "training--single-v2",
+  "kind": "training",
+  "name": "single-v2",
+  "status": "completed",
+  "output": "Model/runs/single-v2",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 1,
+      "architecture": "v2",
+      "decoded_cache": "Model\\runs\\decoded-q6.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "decay": 0.2,
+      "epochs": 8,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\single-v2",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21600,
+      "validation_samples": 5400,
+      "parameters": 1659028
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 28.056445111065276,
+          "psnr_raw": 16.24749838358096,
+          "seconds": 68.03118989999984
+        },
+        "validation": {
+          "mae_8bit": 39.33394047617912,
+          "psnr_raw": 13.510565052503347,
+          "seconds": 9.657214899999872
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 21.731914048662613,
+          "psnr_raw": 18.097029330421194,
+          "seconds": 69.26231640000015
+        },
+        "validation": {
+          "mae_8bit": 36.13162174705002,
+          "psnr_raw": 13.971734735429013,
+          "seconds": 11.080720299999939
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 19.89955941951937,
+          "psnr_raw": 18.77114553267538,
+          "seconds": 69.29357750000008
+        },
+        "validation": {
+          "mae_8bit": 34.39956755373213,
+          "psnr_raw": 14.350383849250337,
+          "seconds": 10.496583999999984
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "mae_8bit": 19.01381746040036,
+          "psnr_raw": 19.12102263407689,
+          "seconds": 49.22183010000026
+        },
+        "validation": {
+          "mae_8bit": 33.20191512099571,
+          "psnr_raw": 14.485634402378391,
+          "seconds": 12.145554100000027
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "mae_8bit": 18.45316598707189,
+          "psnr_raw": 19.351543936217414,
+          "seconds": 29.872491399999944
+        },
+        "validation": {
+          "mae_8bit": 33.401645585315094,
+          "psnr_raw": 14.409157821515212,
+          "seconds": 2.9899199999999837
+        }
+      },
+      {
+        "epoch": 6,
+        "train": {
+          "mae_8bit": 18.066146015541424,
+          "psnr_raw": 19.513849277103436,
+          "seconds": 25.54860839999992
+        },
+        "validation": {
+          "mae_8bit": 33.77782517729534,
+          "psnr_raw": 14.318061712720754,
+          "seconds": 2.9786526000002596
+        }
+      },
+      {
+        "epoch": 7,
+        "train": {
+          "mae_8bit": 17.793890486036737,
+          "psnr_raw": 19.639995892277952,
+          "seconds": 25.347406500000034
+        },
+        "validation": {
+          "mae_8bit": 33.00199637396468,
+          "psnr_raw": 14.447329127805524,
+          "seconds": 2.9043910999998843
+        }
+      },
+      {
+        "epoch": 8,
+        "train": {
+          "mae_8bit": 17.57329190214061,
+          "psnr_raw": 19.734987973699244,
+          "seconds": 25.390463600000203
+        },
+        "validation": {
+          "mae_8bit": 33.123647216376334,
+          "psnr_raw": 14.441327605121241,
+          "seconds": 3.0045156999999563
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 7,
+    "best_validation": {
+      "mae_8bit": 33.00199637396468,
+      "psnr_raw": 14.447329127805524,
+      "seconds": 2.9043910999998843
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/single-v2/best.pt",
+        "bytes": 19924475,
+        "sha256": "f885effd01c554d82f3f8292e7e241070be2782b92b5dfd0ef4b478353f86e52"
+      },
+      {
+        "path": "Model/runs/single-v2/config.json",
+        "bytes": 860,
+        "sha256": "fab2d908ceedf976dc979208db09d4cbce83369206f39783e934fc183813c52f"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-001-raw.png",
+        "bytes": 17090,
+        "sha256": "26da8b9ab153a37d44db7b495671b1e0670dd7f8b213b9c19d335eace9bc8437"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-002-raw.png",
+        "bytes": 18048,
+        "sha256": "dac5463ea76c60c331b6d167acfcb37c703f4e039c7f9fefc052b9f0ba9cea2f"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-003-raw.png",
+        "bytes": 17255,
+        "sha256": "15f9c51afe584169e5d35d9f5852c7029e835eccee0b34b720549909e2e4db24"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-004-raw.png",
+        "bytes": 16975,
+        "sha256": "3902e83fdfea23808eecb7bb0338ce1bf392a072c847d07497ea147483fdaff4"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-005-raw.png",
+        "bytes": 17131,
+        "sha256": "d4559f899df1dc08dacdb172cf32961ea02488d4e79327227868565cf68c367b"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-006-raw.png",
+        "bytes": 17508,
+        "sha256": "2261cd35e0aa67ed43d22be921117ae93a31107fb307f06fb1df9662a4664f71"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-007-raw.png",
+        "bytes": 17341,
+        "sha256": "befbdcadf04389e958e3bb92e59633f3c4a73188f300c4d11af4ff67fa65b014"
+      },
+      {
+        "path": "Model/runs/single-v2/epoch-008-raw.png",
+        "bytes": 17102,
+        "sha256": "ab569a15b98020b80a3a622a562a34b7aa6fbd208abfadf87361cd777ac52168"
+      },
+      {
+        "path": "Model/runs/single-v2/last.pt",
+        "bytes": 19924475,
+        "sha256": "7c7cc23957f34925db12e7b862cf6d6a43667a59b6499bbf008e2109d463cc14"
+      },
+      {
+        "path": "Model/runs/single-v2/metrics.jsonl",
+        "bytes": 1829,
+        "sha256": "a16816310c4b918941b85db448b8a0e982689745de2dca7e7a662e8a342b3b0e"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:06+08:00"
+}

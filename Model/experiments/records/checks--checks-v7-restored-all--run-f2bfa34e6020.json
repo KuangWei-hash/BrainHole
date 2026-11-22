@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "checks--checks-v7-restored-all--run-f2bfa34e6020",
+  "kind": "checks",
+  "name": "checks-v7-restored-all",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/checks-v7-restored-all",
+  "started_at": "2026-11-21T16:33:11+08:00",
+  "finished_at": "2026-11-21T16:33:15+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "-c"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "9e732fd733bac9d6131c321e30a0f88d3de2c115701732d6c0a42bd77ffa86c2",
+    "directory": "Model/experiments/source_snapshots/9e732fd733bac9d6131c321e30a0f88d3de2c115701732d6c0a42bd77ffa86c2",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "4b4b0dee14f249e69e168eb683d9f2b4b9fd3ae6907cac7855a821c69cad3b58",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "39a5962137c82855eab9c57721eca9899aeccb90097d7973684621a76723ccaa",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "2fd559969568c7e200605cb2e4a4f2ff3a9d2238e0724b6f79ba873d733fa70b",
+      "作法.MD": "0791bdbc434cb6ea3c80afcb71dce13036897f3cb6a1bd5dc560695b77e14a7f",
+      "驗收標準.md": "9125d861012b1206b0ab0276ca9f13c6a5a56edecfb93f3580fd747d856aa4dd"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T16:33:15+08:00",
+  "data_sources": {},
+  "exception": {
+    "type": "SystemExit",
+    "message": "0",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\dinos\\BrainHole\\Model\\record_experiment.py\", line 297, in run_logged\n    value = function()\n  File \"<string>\", line 1, in <lambda>\n    import sys, unittest; from pathlib import Path; sys.path.insert(0, 'Model'); from record_experiment import run_logged; run_logged('checks', lambda: unittest.main(module=None, argv=['unittest', 'discover', '-s', 'Model', '-p', 'test_*.py']), Path('Model/runs/checks-v7-restored-all'))\n                                                                                                                                                        ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python313\\Lib\\unittest\\main.py\", line 104, in __init__\n    self.runTests()\n    ~~~~~~~~~~~~~^^\n  File \"C:\\Python313\\Lib\\unittest\\main.py\", line 275, in runTests\n    sys.exit(0)\n    ~~~~~~~~^^^\nSystemExit: 0\n"
+  },
+  "result": {
+    "artifacts": []
+  }
+}

@@ -1,0 +1,1177 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-fsr1-v9-relu24-four-q5--run-0a71d409aef1",
+  "kind": "evaluation",
+  "name": "eval-fsr1-v9-relu24-four-q5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-fsr1-v9-relu24-four-q5",
+  "started_at": "2026-11-21T20:13:52+08:00",
+  "finished_at": "2026-11-21T20:15:08+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate_fsr.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/relu24-four-v9-q5/best.pt",
+    "--start-frame",
+    "720",
+    "--video",
+    "--out",
+    "Model/runs/eval-fsr1-v9-relu24-four-q5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "8b7171f923b59c373a07831d8246582a021b2fcf85956a70e3b128dc458c3e00",
+    "directory": "Model/experiments/source_snapshots/8b7171f923b59c373a07831d8246582a021b2fcf85956a70e3b128dc458c3e00",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "evaluate_fsr.py": "96043f78c44882d7f4c5da6148048da2f2f9494a0a38ed169783489c2374b35d",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "2d817cc98e7d30bcb9e3ecadafe062662526e8c420cb767ab402475d94074336",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "129c8716375f8be30f92ec22bc8303c7b07c3ce4bb933b6e8300cfc02a7a0788",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "cb104ce2d1f213dbe8078950467247946aad84d15b425c6c3f95e972fa27c61b",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "99d5ffc814227096232fd0027e93fe51ee460b6abef34754f0968660e061f1c7",
+      "作法.MD": "69f4cb825b186fb04a13a982fa65bbf0479618b9b3ba574bc7d083a4a847bffd",
+      "驗收標準.md": "1b177fc31ef169a3ba8897c54204e99b8fe079d778eb18d650c7fb9a761071fb"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T20:15:09+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/relu24-four-v9-q5/best.pt",
+        "bytes": 156753,
+        "sha256": "b8a2b23e6191ca31138e91c945bbe9382c1143b72fb8b6869fdf35594a33ea54"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 5400,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 720,
+      "last_evaluated_frame": 899,
+      "raw_projection_metrics": {
+        "bilinear-raw": {
+          "mae_8bit": 17.54458384142982,
+          "psnr": 19.708694638075617
+        },
+        "v9-relu24-layers4": {
+          "mae_8bit": 15.875730559560987,
+          "psnr": 20.355058455672367
+        },
+        "bilinear-rgb-input": {
+          "mae_8bit": 17.19947130415175,
+          "psnr": 19.921409921063862
+        },
+        "fsr1-easu-2x2x": {
+          "mae_8bit": 17.071351073847875,
+          "psnr": 19.906588307992443
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "mae_8bit": 17.20523487991757,
+          "psnr": 19.849064839014645
+        }
+      },
+      "rgb_reference_metrics": {
+        "bilinear-rgb-input": {
+          "mae_8bit": 16.12158072259691,
+          "psnr": 20.59810547144343
+        },
+        "fsr1-easu-2x2x": {
+          "mae_8bit": 16.056116506788467,
+          "psnr": 20.565028955368106
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "mae_8bit": 16.21478051220929,
+          "psnr": 20.4927161022201
+        },
+        "bilinear-raw": {
+          "mae_8bit": 16.15648785555804,
+          "psnr": 20.55009716092308
+        },
+        "v9-relu24-layers4": {
+          "mae_8bit": 14.553716286200064,
+          "psnr": 21.175977214572917
+        }
+      },
+      "metric_note": "RAW metrics sample FSR RGB at RGGB positions. RGB target is demosaiced RAW, not original full RGB. Do not mix these metric spaces.",
+      "scope": "Same-video holdout, per-strip; no retraining. Unseen-video, full visual and streaming acceptance pending.",
+      "checkpoint": {
+        "path": "Model\\runs\\relu24-four-v9-q5\\best.pt",
+        "sha256": "b8a2b23e6191ca31138e91c945bbe9382c1143b72fb8b6869fdf35594a33ea54",
+        "config": {
+          "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "val_db": null,
+          "history": 1,
+          "architecture": "v9",
+          "v9_layers": 4,
+          "v9_variant": "relu24",
+          "v9_kernel_width": 3,
+          "v8_variant": "expand96_two_layer",
+          "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+          "val_decoded_cache": null,
+          "auxiliary_weight": 1.0,
+          "residual_scale": 1.0,
+          "warm_start": null,
+          "decay": 0.2,
+          "epochs": 5,
+          "batch_size": 8,
+          "lr": 0.001,
+          "max_steps": 0,
+          "val_steps": 0,
+          "device": "cuda",
+          "seed": 42,
+          "out": "Model\\runs\\relu24-four-v9-q5",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720,
+            "note": "Same-video holdout does not establish unseen-video generalization."
+          },
+          "torch": "2.7.1+cu126",
+          "device_used": "cuda",
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "train_samples": 21600,
+          "validation_samples": 5400,
+          "parameters": 12172,
+          "input_contract": "decoded_raw_only_v1",
+          "residual_blocks": 0,
+          "residual_expansion": 1,
+          "residual_layers": 4,
+          "byte_encoder": false,
+          "temporal_fusion": false,
+          "hidden_channels": 24,
+          "activation": "relu",
+          "image_convolutions": 4,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "plane_receptive_field": [
+            9,
+            9
+          ]
+        }
+      },
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "fsr": {
+        "name": "AMD official FidelityFX CLI v1.0.3",
+        "executable": "Model\\tools\\fsr1\\v1.0.3\\FidelityFX_CLI.exe",
+        "sha256": "0d0016683ab9331968b76963a8509b717d43652440f1adbf5a743aa2d950cbbd",
+        "source": "https://github.com/GPUOpen-Effects/FidelityFX-CLI/releases/tag/v1.0.3",
+        "passes": [
+          "EASU 2x",
+          "EASU 2x",
+          "RCAS sharpness 0.0"
+        ],
+        "texture": "FP16",
+        "intermediate": "PNG8 display-encoded RGB",
+        "guard_input_pixels": 8,
+        "atlas_columns": 16,
+        "tiles_per_atlas": 128,
+        "note": "Two EASU passes reach 4x per side. This is not a single-pass 2x Performance preset. Input is phase-aware RGB reconstruction of decoded CFA; no full-frame or neighbouring strip context."
+      },
+      "video": {
+        "frames": 180,
+        "fps": 30,
+        "panel_order": [
+          "target-rgb-reference",
+          "bilinear-raw",
+          "bilinear-rgb-input",
+          "fsr1-easu-2x2x",
+          "fsr1-easu-2x2x-rcas0",
+          "v9-relu24-layers4"
+        ],
+        "note": "Offline, not a latency benchmark"
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-fsr1-v9-relu24-four-q5--run-0a71d409aef1.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "798d8941ca03f91f0dce2f15ecdc14e4ee4d98c69488f83e0894d961f8f30228"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/bilinear-raw.png",
+        "bytes": 208093,
+        "sha256": "6d34c19ace78de2ff34e41960389a9a24e93cf80140164c9bdb5ef2d019b351a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/bilinear-rgb-input.png",
+        "bytes": 206554,
+        "sha256": "ce78e431630954315664b5349d046f2676067cafd18b25dcf9a18762ea7113ce"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/blocks.jsonl",
+        "bytes": 2564503,
+        "sha256": "798d8941ca03f91f0dce2f15ecdc14e4ee4d98c69488f83e0894d961f8f30228"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/comparison.mp4",
+        "bytes": 14139863,
+        "sha256": "5dcdf86e98c9708dc769bc7285895417988704d78e61440ab3cd5e163d3a9a4b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/comparison.png",
+        "bytes": 2016842,
+        "sha256": "980abf7d62343970585aaeea918df5d1c0ebd502f5cd2de948fc105b3dbf46ac"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/fsr1-easu-2x2x-rcas0.png",
+        "bytes": 451796,
+        "sha256": "d109ed3d36e023270918a3ef7f087599a43b2b0eecbcccb39d883e861751b32c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/fsr1-easu-2x2x.png",
+        "bytes": 284549,
+        "sha256": "31b4d709d3d5066ff0166a1d688a0bac754ad5f184d437cd218b5f57a8a72140"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-000.png",
+        "bytes": 797126,
+        "sha256": "baeca94a0a2e3b3dac4f0531c29307f53687cabc41f55ffb6b538022ef778f3a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-001.png",
+        "bytes": 873446,
+        "sha256": "ee45cd451bd73fa6fca9fa825f5b3e2a44648dfedec911a64353589d72cdf8f2"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-002.png",
+        "bytes": 864737,
+        "sha256": "a926e3c0fc863ac4a17d48dbbfab2edbe40d8981dc80bd3a24542f835f12e805"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-003.png",
+        "bytes": 789894,
+        "sha256": "9e72e193cf6291ce6e88dae05776dddcfe706c1a46d23483d6b627bcf0bf7db9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-004.png",
+        "bytes": 814349,
+        "sha256": "0e7fbcb7a69f237c7bec837d848cda0128206cbe0c157c14c3123c84d521e890"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-005.png",
+        "bytes": 880800,
+        "sha256": "2846e5e2068c1b057f65158ad5c265680e5bdaa1a180a1b9af9bb73b58fc2a98"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-006.png",
+        "bytes": 846055,
+        "sha256": "998bc9aa261218025f1c6e1ebbe751cb87990d1a2741e303d8a354d2769da147"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-007.png",
+        "bytes": 796076,
+        "sha256": "a5fc6365c6155ed0142355200caa273edf8e8be8a40d581156238083434df503"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-008.png",
+        "bytes": 852538,
+        "sha256": "b5c9c3275bd59cbba6fb22917c46fec53dfde71acb0588a573dd9c687b2f293d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-009.png",
+        "bytes": 907838,
+        "sha256": "33f1305d0b822fb6050d85f387d041f956b12b653a2c0b3ff93ed5694edccf17"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-010.png",
+        "bytes": 847456,
+        "sha256": "6ca48a4afd8446c242137e285e2dac27265a08ca3fe4cb721474bfbe58b3ecaa"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-011.png",
+        "bytes": 824182,
+        "sha256": "93a9485994cfd273ea0e5b0fddaaa39a3b47736a00b076a6bea522bb7c1a6773"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-012.png",
+        "bytes": 915384,
+        "sha256": "d11387bc948db5aeab87ac7000bb081429f4305d6898890210ade07aecf46609"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-013.png",
+        "bytes": 935416,
+        "sha256": "c04038ac19be32616f70db814dc09dce9341f484908629c6023da9e1880ef6de"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-014.png",
+        "bytes": 846701,
+        "sha256": "3a08962f5447a8934aae965236535e688af64c51de1524090e03aaa3df9e5700"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-015.png",
+        "bytes": 848780,
+        "sha256": "ebd1e5c890ac87e050daa33f67656a985891b8aee056199b50ecf2f7e5359d12"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-016.png",
+        "bytes": 941394,
+        "sha256": "9a621a7e4f19683386a0b1a2e9a5721d626bd44be7d6b3769919044bfc9b4cfe"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-017.png",
+        "bytes": 916271,
+        "sha256": "682c4c07f1f8e2d9e4b3e1c5f81129d785cb7a2e077721de3754b52899f89c5a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-018.png",
+        "bytes": 838494,
+        "sha256": "5c5d721d40808df9344b6fb65408a22558a4ec92ea923d200901a4859042380b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-019.png",
+        "bytes": 869085,
+        "sha256": "f486cb4b2b59332f1544d752a749ed36474cda32f5597bb8e970ca8fd243c036"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-020.png",
+        "bytes": 939675,
+        "sha256": "258ac410c2386b66513a2274877ac0b9a578b0be420c7da61db1394440928658"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-021.png",
+        "bytes": 892942,
+        "sha256": "29096b08e9f704e9f270130c5b4cefe03bf4a57021728293ba0cbb74fd87b8ee"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-022.png",
+        "bytes": 833487,
+        "sha256": "b8b3c04132e0e66202360064bded220249ecbb13a08b14157cdaf23761367866"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-023.png",
+        "bytes": 892579,
+        "sha256": "74246f0d83b28cb2e48982efa715f0a041ff26afbbd75fe6bebb541c4ab34deb"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-024.png",
+        "bytes": 938747,
+        "sha256": "f2a6112da90acb179ff791d31b5d32f3d9caadf07d84266ab60c11dc0a2601cc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-025.png",
+        "bytes": 870375,
+        "sha256": "ced900fe439724ce92fc977d03880aec5f38fa1cb000253086ff96f8b6b7089d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-026.png",
+        "bytes": 835348,
+        "sha256": "e9e44f9ec0f8fe5cf24c14ed956789078328bdb38094a057c516a2d466c4f99f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-027.png",
+        "bytes": 919801,
+        "sha256": "8864100c9ae382384986e659caa4a2986f1c2db40600f0bfd77f94414d0ef773"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-028.png",
+        "bytes": 937567,
+        "sha256": "75ca50c57ef32dc51350d5770c6790068e1e3fe6eaed2a0073ab3028c8dad36b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-029.png",
+        "bytes": 843244,
+        "sha256": "33b22b1693656d132e2f55be54fb6ec7e931213539bbab6f7a58b95279302e61"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-030.png",
+        "bytes": 846100,
+        "sha256": "06ff6df0571f628405b6f3135ccb9d42cca97fa0049eea63013cf7d36154acc9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-031.png",
+        "bytes": 945185,
+        "sha256": "31a325e2ec27d499448061489dbf57c97f6ef6088228505a578a9f6614572844"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-032.png",
+        "bytes": 918213,
+        "sha256": "68bef48a31c4ccb7e4ffdde2543f30d79c62181c2231257085e2db9436b3929c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-033.png",
+        "bytes": 838153,
+        "sha256": "38f7fe11754a5d66c7b864cb3c1fb341229b4d6f1245fe4669130ea55f3001c5"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-034.png",
+        "bytes": 870740,
+        "sha256": "b42f622812ca45b874e665e3c385e1f3513a5fb147a20c4e8ec18cc54ad9e242"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-035.png",
+        "bytes": 937816,
+        "sha256": "25a1a062f7dd02ff96b15162cfb220f9ebf54e205f248ad017b9aeaef0fe57c8"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-036.png",
+        "bytes": 884433,
+        "sha256": "b6e722026298e69c89caa227ac366b4ae90a675dde09112e28ae854755843888"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-037.png",
+        "bytes": 824260,
+        "sha256": "5069944f58f1c78289ad4ad108d8a26a69e82e829c11c96293106b5216ed3257"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-038.png",
+        "bytes": 872251,
+        "sha256": "d568f7d344aae14ccdb88fbbbee131a46ec2eca0f0cc8ee73a775eac0ceb7778"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-039.png",
+        "bytes": 907400,
+        "sha256": "1a8867468116796b223c49f66078dac3537712014abec4c922a9ef830943e620"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-040.png",
+        "bytes": 836756,
+        "sha256": "b5d0b3f960aa294d781fa157fb01d5307e921553f724a496ec4dadec54edc33b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-041.png",
+        "bytes": 804988,
+        "sha256": "a98bbef1a330080622162a7e0e9774a5eee2ee314c3f60fa955149dbb7ebb1ff"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2-042.png",
+        "bytes": 133748,
+        "sha256": "82c3cb1637a50d20ce5113244e42ad4d855ec03da84bb8f7699788cfba839c08"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu2.log",
+        "bytes": 8813,
+        "sha256": "ba7cb8520cfd8fe8eda186814563c7af82339b618e5d99ab5097450c4e628789"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-000.png",
+        "bytes": 2772049,
+        "sha256": "0c492536695ddba518560d6ddc9bf21900f8297803fe9e713cc71cd7a0de60e1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-001.png",
+        "bytes": 2983520,
+        "sha256": "918f08becb43650590087a6730eba77de58b61d61eefab2602a36a39f795d0ed"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-002.png",
+        "bytes": 2964808,
+        "sha256": "972f0c74c5e8010885bb705a7a825ecc9135c91a3fa4c425b2a27dda86e569a6"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-003.png",
+        "bytes": 2747731,
+        "sha256": "a41b48cd28e54e4f8a5d39df587d33d325abe072652d438c17debc07481afce9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-004.png",
+        "bytes": 2813002,
+        "sha256": "60c95f431bbe2a04896fdd9b3cf79364c028f01f08990a35fc2b361af246a55a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-005.png",
+        "bytes": 3008592,
+        "sha256": "ad3bcef981b5ce028e8be3dee80dcd0e8f5db5e4c2f869d83c670d3650284147"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-006.png",
+        "bytes": 2918024,
+        "sha256": "a6697367ca89f37fd62b766cacd2163c2ad1524dc41499bc33a4eb186fbfecdd"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-007.png",
+        "bytes": 2765033,
+        "sha256": "600c7c15306425bd9c50d2c448b4f9edd1af3e42eacd5b3667d5d9157f6deca1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-008.png",
+        "bytes": 2940418,
+        "sha256": "b4cb145c33c830c59e016c851f792bbfa407ba1ef668cd1e2731e9ffc7c47def"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-009.png",
+        "bytes": 3108696,
+        "sha256": "dd31dff321b4a64568038b787dd7cfb1cbc54034e202d8f168314bf0e13123e9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-010.png",
+        "bytes": 2955719,
+        "sha256": "4e9449626d3a2f5d80120f9b18bca9ca04326997aee77ec6ff76be67f13ffd1a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-011.png",
+        "bytes": 2896915,
+        "sha256": "44ffa2a130eebfca48354850ebd057afcaead677e5dfbe205b1cc1608209157a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-012.png",
+        "bytes": 3186228,
+        "sha256": "257773e734811bc537c67c8489afe981ac3a9c3d94d92af8c4fda489e458f20b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-013.png",
+        "bytes": 3250735,
+        "sha256": "3048763bcb1302566568103e3561dd9ff6c12773e229b7a0b117c56f57f2cf9e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-014.png",
+        "bytes": 2986662,
+        "sha256": "9cf0aeb0c379e8eda2788546d356559be5cce93307a715cc2571979cd6ba1d27"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-015.png",
+        "bytes": 2994452,
+        "sha256": "a0b0979682d16944582d968cf2d8a3898c69fcc63a304c774f1b1e319d86dffb"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-016.png",
+        "bytes": 3270548,
+        "sha256": "c66959bf8cdea8f6acbac2e026d217f8d79a46e4b7042faf61c84c4c2a090bcc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-017.png",
+        "bytes": 3190936,
+        "sha256": "f73631bf8d3578ea219fd30784690d9e20c1cc15ba0e3e20d999c4729f37af28"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-018.png",
+        "bytes": 2967364,
+        "sha256": "a11135c7245e39baf50c3c9c4358684baafa92d763fb9d0022848ee8068f16b1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-019.png",
+        "bytes": 3054343,
+        "sha256": "8306f1fc37942a76379c2d0bb0bb999f6f9aa445af188e27667d8cb2c6a69dcb"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-020.png",
+        "bytes": 3269756,
+        "sha256": "132d246bb40c86c0b771fa667e4266c84e985a93eae1a91edef2bdb2b27c8d84"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-021.png",
+        "bytes": 3122547,
+        "sha256": "9cf4654691ba2661884b940a0aec04afb8485c39caec7608a28445c6e37ab889"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-022.png",
+        "bytes": 2951807,
+        "sha256": "c79cb23dcbc032b11028e70872ab60db09197c7bc8c6c924c441458f5bc7a609"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-023.png",
+        "bytes": 3124953,
+        "sha256": "fa6663190355301179067acacaa646da0626b1ed959d60e728f3ba9f430889c4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-024.png",
+        "bytes": 3257971,
+        "sha256": "cc9f628fb092df402f1eab06a09523bbeb59c7dad0637c3867a965a66d3e1aef"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-025.png",
+        "bytes": 3060296,
+        "sha256": "f4f46ca3b7bb9e43b8fb8203f5785f95c1439123ba6ce1b7bec6572befc0180b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-026.png",
+        "bytes": 2950705,
+        "sha256": "d4e163fc55ba9c7479145b2c2dcf01b47012759801e6466c83d5cb64dee05b77"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-027.png",
+        "bytes": 3213081,
+        "sha256": "14907bc8bfd17a475b244a00e6beead3eeef16c9da01fd97f76993ee501bb47c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-028.png",
+        "bytes": 3257471,
+        "sha256": "69866d7c8f7e6bc1c6b234c24314804023ddbcd6cff8e798fd6524694c1cf595"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-029.png",
+        "bytes": 2980543,
+        "sha256": "8ac12585f051556b975dab3066da4bb85fff223881f0d16ec208e97cb4d9fefc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-030.png",
+        "bytes": 2982804,
+        "sha256": "0a6a8a17eff18a723b864ad951146274fb8e5484cc6cba9bdfc630e02c7e873a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-031.png",
+        "bytes": 3282555,
+        "sha256": "350f45d8bf9a0a416984912937fbbde7c39e9f4923c5fcc3c735ec8221461968"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-032.png",
+        "bytes": 3200108,
+        "sha256": "fd9dbc38ca6cad1d94b8ed1274acdc3b9592d04a0400e799cb70da079c03337e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-033.png",
+        "bytes": 2966205,
+        "sha256": "649d2318a123d7512ef59a5697201647fe02f82c358da328a0c167ce622f3735"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-034.png",
+        "bytes": 3050434,
+        "sha256": "a9f03a7c2e536e21b67b506db5a706e642ff96c165eca5dd7c51625b6ffea0ef"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-035.png",
+        "bytes": 3259537,
+        "sha256": "5cc4d2ec5825a742a9701b6179a088a07b3d75c50cd1375bd13f88764c11647c"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-036.png",
+        "bytes": 3082268,
+        "sha256": "b14ec691d635e2e160f4399726bc83f93354e956a54538c549b3269dd048f227"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-037.png",
+        "bytes": 2898695,
+        "sha256": "8ae90003ddaaa494297d99d65b6996fae03d8f6c1d7b9fd936fb54640f7fcae4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-038.png",
+        "bytes": 3025778,
+        "sha256": "4c1a8626715537b948239a5b7f072531437aaebaf64e8d0bc56767fbcd1bf6ae"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-039.png",
+        "bytes": 3114498,
+        "sha256": "ce6a185c46f35adc581ee707df89eba4113010250bf918e2135423419be64b4f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-040.png",
+        "bytes": 2894663,
+        "sha256": "ce2ef9aad7532810680fa72b3bbc9a8c6a00719820390d2f5323e98d6e20dcc7"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-041.png",
+        "bytes": 2787449,
+        "sha256": "2a6bc6ab018199070c6c5236e5642ceab352ddd8450cab9bcc5ee709f469cd2e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4-042.png",
+        "bytes": 458901,
+        "sha256": "d03c727d997da0e0c53b460c965d246381e51ce4ce348baa3b72466c2a6a2b0f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/easu4.log",
+        "bytes": 8857,
+        "sha256": "9810b9325d538304a0dde61b0700e55ac71a895744f58be21d1fde4279da215b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-000.png",
+        "bytes": 125313,
+        "sha256": "036009e4b0690a295ebb35695865ce110f9112099909f1e255dd24843519cfd0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-001.png",
+        "bytes": 155147,
+        "sha256": "7111ee7a85bfad2548636a39a1c13f61a60b618937f8c108073918d034314c45"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-002.png",
+        "bytes": 149398,
+        "sha256": "6f13ce518e56212ac755132b57872282d8126876a5a4fb9a7a2a50d778ce8ffa"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-003.png",
+        "bytes": 123584,
+        "sha256": "45f0ed8573e965c5d1360b92509ec02528496ca3cb7a64133559ee56fd0f5787"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-004.png",
+        "bytes": 132729,
+        "sha256": "65248182c68bb42cbc3ad6376a61ef86d4211c71866a2125379e69b240e34ce0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-005.png",
+        "bytes": 156089,
+        "sha256": "34bfb21358c005c844c209b8495a5778eb6df73e42bda7316707b79f51c8a854"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-006.png",
+        "bytes": 142113,
+        "sha256": "eaf1dfaf519b00628c55666caaaea90889d1f8c6809673cdadb1fbb62aae59c5"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-007.png",
+        "bytes": 123882,
+        "sha256": "f1e1369fe5699135e1775280bf1940c10cff5ef8876817f2084944262f4ce407"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-008.png",
+        "bytes": 142869,
+        "sha256": "b6adcd2c2139ef63e0036fb13043c12840c2244e7815a026bd2600fe8ebf324b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-009.png",
+        "bytes": 158928,
+        "sha256": "469349ab15b1b75f107d342c3df6d1de14a0244b8e3cd6f6f2bb762033ed5b3f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-010.png",
+        "bytes": 136757,
+        "sha256": "57ad20be6d99f92bb7b358b37db99ec772e6c017ebd5156c17e03869132ee709"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-011.png",
+        "bytes": 126745,
+        "sha256": "5869acdeab5254c10e7c8046d78af927f5f7887012780d967583748c73878b72"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-012.png",
+        "bytes": 155343,
+        "sha256": "569443280ca853b881a1f947f3afa6296767b2d40ba7f20e0ca402011cd905ff"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-013.png",
+        "bytes": 161290,
+        "sha256": "5f01b203dd985db1dedb48d43a0007f42b7d63457455b69ab767e7fe93eb6fa1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-014.png",
+        "bytes": 130288,
+        "sha256": "fd9b222123236e9fd2b42fe85511375992ecfa756e668ae74f537a66149cc7a1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-015.png",
+        "bytes": 130067,
+        "sha256": "d28cc27f8b9c08562c6caf2763a1acf14baebe6501bd9ecfd74476132d8cb877"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-016.png",
+        "bytes": 161991,
+        "sha256": "20328bf80c5e01c63105b3eecac16f4655b7a0f426dc5aed17269d5cbbfa4418"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-017.png",
+        "bytes": 154583,
+        "sha256": "9b5fec22cbf3cc8577e61a3c4c0378d5ca59a9b4ab61e708560a4502330eb983"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-018.png",
+        "bytes": 127975,
+        "sha256": "697cf776c8de02ef53c23d57787dfaba3054785f562a177a250f8510c183de75"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-019.png",
+        "bytes": 138251,
+        "sha256": "be27ba54556a1a7f5d7dc5ea902ae89db9475392538f0d2d9810c46c60c283c1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-020.png",
+        "bytes": 161523,
+        "sha256": "4bec2b89ced0729f0cc860170ed9e5dee29dfbe98e1754f1922624833a324055"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-021.png",
+        "bytes": 146963,
+        "sha256": "7ad5202af0b37dcc1a406130d7589e12016f8daac945b508c79dd047a9ba7919"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-022.png",
+        "bytes": 127512,
+        "sha256": "541019de08933b5291d14b088920b0b44c4c8e093fb878743e4acc0f803670b2"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-023.png",
+        "bytes": 146477,
+        "sha256": "90b12a51f0edc4e2a4c4240dd7e8b5cd3df2eae2ff43e8800bf84a81f668d947"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-024.png",
+        "bytes": 160975,
+        "sha256": "3b09e71788603b1d86d23cc3a399695640d0161ce422ef8a51a4140a67502b49"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-025.png",
+        "bytes": 138966,
+        "sha256": "0214926dcacacdee43f1deaaf418076482bfd24d96b8482406a696bae860d592"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-026.png",
+        "bytes": 127462,
+        "sha256": "234b8ed1c28889701c1210621be4c7d018ed08cebe77cb9e43a2bff5cc14e087"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-027.png",
+        "bytes": 155335,
+        "sha256": "fbecbc3e79e7c40b91f97b109e051d273b2dcf75babc3011be1dd929d5525121"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-028.png",
+        "bytes": 161012,
+        "sha256": "0355401990dfdcbe9a80f3cdacc5dd711900d7d8a6a40621f174dba0f9cd9859"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-029.png",
+        "bytes": 130000,
+        "sha256": "6c708e97037c4879d80d92273c5dd66865aba736bd03c4bcc74d14aa44b02b97"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-030.png",
+        "bytes": 129780,
+        "sha256": "a93450e7cda9191d14aa93fb3a7dc2629b5881ccb71c6cdcaacf083189c2ef99"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-031.png",
+        "bytes": 162482,
+        "sha256": "18e510fb57acf9001f689724520e250821e766f387e257f51a890079a7170ec4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-032.png",
+        "bytes": 155043,
+        "sha256": "da13b525445e50bed9ae22ef01c52c05390ba56004d26d81219a18f333f4da22"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-033.png",
+        "bytes": 128100,
+        "sha256": "0954aa3d247b9e482698ee1d4f72ab93e706179dc0a4558ecbb1238237e78f5e"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-034.png",
+        "bytes": 138316,
+        "sha256": "7972fe6565aa5696a48780ec164199ab6a0239b2ff89950e26bc2e2753e003e2"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-035.png",
+        "bytes": 162053,
+        "sha256": "f33609a8619623058fd2aabc0f34b7d89096868b4d162bff0e5819db6a1c9037"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-036.png",
+        "bytes": 146488,
+        "sha256": "6bfd1a9cea8a9b2626631c136983fd355e5e9f60ee0868b2c3020d31e0a2fc19"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-037.png",
+        "bytes": 126550,
+        "sha256": "663c5eef3a1deb16dcb61aa1fe4dd251d8a23bd0f8e8097b2b52098bc81d3b0b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-038.png",
+        "bytes": 144960,
+        "sha256": "68db7208b139f6fd5dbc061a4c46a1a5bc192a17e082b643bb533581bb23c704"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-039.png",
+        "bytes": 158685,
+        "sha256": "bc6719ad2da2790c1fe4af3bd0a80efe7cab6b495d131f1f9410fa17c56503eb"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-040.png",
+        "bytes": 135241,
+        "sha256": "67d640befff83c0b646871ccb30cba34ee4c64e3034de953592f0649391a635d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-041.png",
+        "bytes": 124147,
+        "sha256": "44804609f19129b3632b6bd59479e3f057b2b276f232a12a16077a19889b8faa"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/input-042.png",
+        "bytes": 23664,
+        "sha256": "3f98ce146afb9e54e4344b9478489b0f9d39e60e89efe6e84b9270a304646496"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-000.png",
+        "bytes": 4247438,
+        "sha256": "995d077b0bed7c2432149ae01b166db8385861b7f3e55acbfdb8425c1bb3f1c3"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-001.png",
+        "bytes": 4605896,
+        "sha256": "b3af781f0d5d898dd3e17b3a3d78c190c0fdf969b75d13a0f9a55cd05e2901ed"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-002.png",
+        "bytes": 4550665,
+        "sha256": "95a5d8cf86c37171c52ccf27b1a6761dd886ea77bd8f4f1d601be69414255431"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-003.png",
+        "bytes": 4220771,
+        "sha256": "efa271f99b83b0224812c554cf3e17f5c05a1445235aaac2fa4a60cf3521f4cc"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-004.png",
+        "bytes": 4320336,
+        "sha256": "53244224f0fcc1c041540532c933399cbe0d9174f444469e4fae53db2146e8ea"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-005.png",
+        "bytes": 4632699,
+        "sha256": "35dde23682fbcfa1ed8cd25b6e0111be8c10e6b7e3519de83ad33cfe0a1e4279"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-006.png",
+        "bytes": 4473247,
+        "sha256": "c771b23fd9d1b575a868d30110fbb4774df527c762e3c4ada8fa337a33c17cef"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-007.png",
+        "bytes": 4247494,
+        "sha256": "4d2fe6985e7314e7f61179de4bf7a0a3fb1d24223786f238695532f37d270f05"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-008.png",
+        "bytes": 4514459,
+        "sha256": "a318d10a44395c2daff93fe8f34600fd8183d39fb1c4e17dc6d02deee5c04054"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-009.png",
+        "bytes": 4749541,
+        "sha256": "2eccc9198be2dd8f6466c5a2bb49640a12c6afae662d439d6f2f1b79644af12f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-010.png",
+        "bytes": 4479302,
+        "sha256": "7063a1e1e27fd27835a1ce81af2ad876f990fbeccc7b582a0048f45bd1e14e98"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-011.png",
+        "bytes": 4368694,
+        "sha256": "6e89dc0e0f10e303b8d489c7d5ce5c0fca58594770545679ed465553b2ca0a0f"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-012.png",
+        "bytes": 4771300,
+        "sha256": "9fa122d27fad85e2d50de2f3a20ca065f163afc053eac74adbf95d28ed1cc5f4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-013.png",
+        "bytes": 4831656,
+        "sha256": "3183887c89541180959c19ac94f55c67fa21c191ba999f1e3e90b2d14c47d8cd"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-014.png",
+        "bytes": 4425721,
+        "sha256": "38235011d2c5bf30b934aea6676a196bfac368be19bc95e1d6211d31a0cc53c6"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-015.png",
+        "bytes": 4412810,
+        "sha256": "67e940ae1d80863c4c5f31db642f51f7d4742c8026aafa3926dc710e743e81e8"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-016.png",
+        "bytes": 4803097,
+        "sha256": "a2f76c1756bb23fee6fc5a10da658e1621e030418443cb6cc7964a5dedc8d468"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-017.png",
+        "bytes": 4697727,
+        "sha256": "5a679fda298f770b81d9c8a379c20d44dc39a5bedf0ee788802318b5fca59501"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-018.png",
+        "bytes": 4382228,
+        "sha256": "f44a7fff0e9ef28b30079fb484cb6c40258b2311dcf4028d53adc4c7d5dba894"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-019.png",
+        "bytes": 4500386,
+        "sha256": "aa50332d1349dc0348202112175c78138e5d578ef1878c4d1fdbed89cb7d82f1"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-020.png",
+        "bytes": 4796246,
+        "sha256": "ec0ad5a7dfb93b58d5104b882ce57bb31d060ce639bb75612f2254e18cdd1842"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-021.png",
+        "bytes": 4601571,
+        "sha256": "c1a325a489b22fb016d0732a7af3a0b46c2120582f16377afa97a61e740edde5"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-022.png",
+        "bytes": 4359054,
+        "sha256": "46a00ab37b6d3a300e284ced45105b95e05638e45eb78ac8cbd8323e701da1ec"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-023.png",
+        "bytes": 4596342,
+        "sha256": "bf6f265a4c3b953f35a9860f357b2c39c6ca1dd70e5def2e07c48bb36913c5aa"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-024.png",
+        "bytes": 4781964,
+        "sha256": "1c8eef29670bdb2302a33f0bc7822d78386f58bad58b1737b4b6b659558b59a9"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-025.png",
+        "bytes": 4514838,
+        "sha256": "ea7dcbcb41c9f8e33f9515330994fdcba8ac6ca0a8098ce1851bf38158d36b0b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-026.png",
+        "bytes": 4353834,
+        "sha256": "24d5aebbaa63e0f32cdb9e7464fe9bfecde70dca890ec240ca95e7bf7e52c57b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-027.png",
+        "bytes": 4706382,
+        "sha256": "5273541992ea9deef65c4d34effca9bef80a34d0186a7484fc2aaede41d0febd"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-028.png",
+        "bytes": 4783492,
+        "sha256": "2721b6a8377f874e0379d7659f2bb86c4061d19d69062f6e955e379a82ae1516"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-029.png",
+        "bytes": 4403495,
+        "sha256": "0963669ec5951de16d78591a92227df42c6d284a6b78c80136237c13d2360847"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-030.png",
+        "bytes": 4389665,
+        "sha256": "89e02a0984b4fd18f0b5781abb856a2a4b176a29af599a094842cf1e5324cd8b"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-031.png",
+        "bytes": 4814573,
+        "sha256": "5cfcd795cf2cfb9c8d0529a28090ab73b3d5573bebed8474a0016b3eb3861a99"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-032.png",
+        "bytes": 4723522,
+        "sha256": "974a61e2a257759b971184180e366b1d63a134caf2e4d9d35fdf8e09822d6168"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-033.png",
+        "bytes": 4401372,
+        "sha256": "849feaaa59e5128779fc5a7a79e3f9126a789c746c647fee127b5fdd0ba811b4"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-034.png",
+        "bytes": 4535504,
+        "sha256": "ef2753949e3a458fc7c694caa08d8b65e408436956a8bfc958ca985d0be33cf2"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-035.png",
+        "bytes": 4856772,
+        "sha256": "72e847f6e4d1c62db762ee0955bb9d444159e0bd27d6d1f14e0b7d4ccf5c9fe0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-036.png",
+        "bytes": 4642406,
+        "sha256": "3109a56a8adbbfe8412c7f1fd4992283e6b14001ed5d7f3a6757daf0374fe7ec"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-037.png",
+        "bytes": 4366188,
+        "sha256": "8cab2524a96f2cfa13badc2eaea97815ac44f646e14734873453844d35dfb405"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-038.png",
+        "bytes": 4583478,
+        "sha256": "828a5d07b0ee82af9ec490e809a060ff8e639e9560ebbeff385581025da04502"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-039.png",
+        "bytes": 4739577,
+        "sha256": "83d93ebbadb440e3292e9564bbff86a54018eb031678aa9811b94534cec7837d"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-040.png",
+        "bytes": 4420607,
+        "sha256": "88fea72ed1097daa5dca5ee6f525f041337a101bb1d197bd877455448df7e545"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-041.png",
+        "bytes": 4264093,
+        "sha256": "b0e9d32d3f166eeea16f63b854d4d2a025499316d40a849a8a934e7c8c14930a"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas-042.png",
+        "bytes": 699553,
+        "sha256": "5e89b29932c2d943fbfaeaa851c2b16abb5447e18a6bf0c786303735314bbf00"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/official-cli/rcas.log",
+        "bytes": 7912,
+        "sha256": "01ed47b5e3e3461cceee685daff47d22aef5c2f2cded6b23520f8170ac5fd948"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/report.json",
+        "bytes": 4816,
+        "sha256": "46a1d45851f75a2e8fcae2c9302b45d69937f8d13b0c7571a5994962a409d036"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/target-rgb-reference.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/v9-relu24-layers4.png",
+        "bytes": 297078,
+        "sha256": "1dd53f63decfc2366422daf09338c9f03f42f0224d3b324d505ef17c48695d86"
+      },
+      {
+        "path": "Model/runs/eval-fsr1-v9-relu24-four-q5/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

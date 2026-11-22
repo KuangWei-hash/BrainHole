@@ -1,0 +1,1100 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-v10-q5-flowcheck-metrics--run-beeabab6c73f",
+  "kind": "evaluation",
+  "name": "eval-v10-q5-flowcheck-metrics",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-v10-q5-flowcheck-metrics",
+  "started_at": "2026-11-21T23:16:12+08:00",
+  "finished_at": "2026-11-21T23:16:18+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate_v10.py",
+    "--checkpoint",
+    "Model/runs/v10-diffusion-q5-flowcheck/best.pt",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--reference-checkpoint",
+    "Model/runs/relu128-four-v9-history2-q5/best.pt",
+    "--control-checkpoint",
+    "Model/runs/v10-deterministic-q5-flowcheck/best.pt",
+    "--fsr-report",
+    "Model/runs/eval-echosr-lite-q5-20261121/report.json",
+    "--device",
+    "cpu",
+    "--steps",
+    "4",
+    "--start-frame",
+    "720",
+    "--stop-frame",
+    "722",
+    "--preview-frame",
+    "721",
+    "--video",
+    "--out",
+    "Model/runs/eval-v10-q5-flowcheck-metrics"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "41e068877ef7e3e722d2bb6e602bb461bc02af2460819259488e67a27559d528",
+    "directory": "Model/experiments/source_snapshots/41e068877ef7e3e722d2bb6e602bb461bc02af2460819259488e67a27559d528",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "faf94b1f9bcc4cf6331f807cf226e8ddea7d3557ebacba26d0d2b990506dfb79",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "096fddf68aedfa1be8700d5ecf239005a90523366996058d783c965e41a8489b",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "ec31c11af5f3b75dd9f8b30e7aaf529fe02cd29f5010539ed0c91c73f933c635",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "40760304633d7b29d24424bea251709c50297ba7d0348e01eb5cfd5e97e122f8",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "f67fbd12a5a657826e3ca952f6c8df8c179c7fd10f4f6113484a0795aafbaed9",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "6e700093ddc6ea26cabf87342224cd4b14cf2a82b08ec813caece24ab1f62768",
+      "v10/model.py": "1aceb62f2dea97df3f12f5ac19caf8ed099f90ecd97317abf4acb0a140d02bad",
+      "v10/README.md": "5f0aa8b586a36619e9c10e755d26a38bb4caee8eaa73613b1ed79760106cd52a",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "7a2d6bebce82f64b9d344e708b671d417c75b0e19a4a3de9d6da7ba073720576",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T23:16:18+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v10-diffusion-q5-flowcheck/best.pt",
+        "bytes": 3424506,
+        "sha256": "6cbbac32363a126fb2eb524d832fc9902a47d334a95906865267e093acd2f905"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 30,
+      "start_frame": 720,
+      "stop_frame": 722,
+      "first_evaluated_frame": 721,
+      "last_evaluated_frame": 721,
+      "scope": "Same-video holdout. Main seed/gamma fixed, not a perceptual or deployment acceptance.",
+      "checkpoint": {
+        "path": "Model\\runs\\v10-diffusion-q5-flowcheck\\best.pt",
+        "sha256": "6cbbac32363a126fb2eb524d832fc9902a47d334a95906865267e093acd2f905",
+        "config": {
+          "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+          "out": "Model\\runs\\v10-diffusion-q5-flowcheck",
+          "mode": "diffusion",
+          "condition": "both",
+          "channels": 48,
+          "epochs": 1,
+          "batch_size": 16,
+          "microbatch": 4,
+          "lr": 0.0001,
+          "low_frequency_weight": 0.0,
+          "timesteps": 1000,
+          "sample_steps": 4,
+          "validation_count": 16,
+          "max_steps": 2,
+          "val_steps": 1,
+          "scale_steps": 2,
+          "seed": 42,
+          "device": "auto",
+          "architecture": "v10",
+          "history": 2,
+          "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720
+          },
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+          "train_samples": 21570,
+          "validation_samples": 16,
+          "validation_full_samples": 5370,
+          "validation_keys": [
+            [
+              721,
+              0
+            ],
+            [
+              722,
+              0
+            ],
+            [
+              723,
+              0
+            ],
+            [
+              724,
+              0
+            ],
+            [
+              725,
+              0
+            ],
+            [
+              726,
+              0
+            ],
+            [
+              727,
+              0
+            ],
+            [
+              728,
+              0
+            ],
+            [
+              729,
+              0
+            ],
+            [
+              730,
+              0
+            ],
+            [
+              731,
+              0
+            ],
+            [
+              732,
+              0
+            ],
+            [
+              733,
+              0
+            ],
+            [
+              734,
+              0
+            ],
+            [
+              735,
+              0
+            ],
+            [
+              736,
+              0
+            ]
+          ],
+          "device_used": "cuda",
+          "torch": "2.7.1+cu126",
+          "gammas": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+          "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+          "noise_schedule": "cosine_s0.008_beta_max0.999",
+          "sample_seed": 0,
+          "noise_policy": "per_frame",
+          "precision": "FP32",
+          "weight_decay": 0.0001,
+          "coverage": "flow_check",
+          "residual_statistics": {
+            "method": "population_std_train_only_floor_0.01",
+            "samples": 128,
+            "mean": [
+              -2.2690721549452228e-05,
+              2.7394014235991196e-05,
+              1.2996883795546608e-05,
+              -2.4653419182155725e-05
+            ],
+            "std": [
+              0.01,
+              0.01,
+              0.01,
+              0.01
+            ]
+          },
+          "parameters": 280340
+        },
+        "epoch": 1
+      },
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "steps": 4,
+      "seed": 0,
+      "noise_policy": "per_frame",
+      "raw_projection_metrics": {
+        "bilinear": {
+          "mae_8bit": 16.304261994361877,
+          "psnr": 21.034202796411
+        },
+        "v10-gamma0.25": {
+          "mae_8bit": 34.20994815826416,
+          "psnr": 15.87052242204788
+        },
+        "v10-gamma0.5": {
+          "mae_8bit": 64.02306814193726,
+          "psnr": 10.838124437932139
+        },
+        "v10-gamma0.75": {
+          "mae_8bit": 95.59007349014283,
+          "psnr": 7.505762418617977
+        },
+        "v10-gamma1": {
+          "mae_8bit": 127.39655151367188,
+          "psnr": 5.06810797305813
+        },
+        "bilinear-sharpen": {
+          "mae_8bit": 16.502285480499268,
+          "psnr": 20.930953993350904
+        },
+        "bilinear-highpass-noise": {
+          "mae_8bit": 68.07843751907347,
+          "psnr": 9.683455145676435
+        },
+        "v9-reference": {
+          "mae_8bit": 13.377510690689085,
+          "psnr": 22.48535724944197
+        },
+        "v10-deterministic-control": {
+          "mae_8bit": 16.30258096456528,
+          "psnr": 21.03487575701966
+        },
+        "official-fsr1-rcas0": {
+          "mae_8bit": 15.905458903312685,
+          "psnr": 21.245121670843893
+        }
+      },
+      "rgb_reference_metrics": {
+        "bilinear": {
+          "mae_8bit": 14.75410663286845,
+          "psnr": 22.0623064258613
+        },
+        "v10-gamma0.25": {
+          "mae_8bit": 26.68895018895467,
+          "psnr": 17.669953825426838
+        },
+        "v10-gamma0.5": {
+          "mae_8bit": 47.10660069783528,
+          "psnr": 12.917920957480307
+        },
+        "v10-gamma0.75": {
+          "mae_8bit": 69.03296089172363,
+          "psnr": 9.65999514127477
+        },
+        "v10-gamma1": {
+          "mae_8bit": 91.31460100809734,
+          "psnr": 7.251356977102464
+        },
+        "bilinear-sharpen": {
+          "mae_8bit": 14.922400919596354,
+          "psnr": 21.960939713043935
+        },
+        "bilinear-highpass-noise": {
+          "mae_8bit": 44.5035146077474,
+          "psnr": 12.909380761274798
+        },
+        "v9-reference": {
+          "mae_8bit": 11.809294239679973,
+          "psnr": 23.64856864487093
+        },
+        "v10-deterministic-control": {
+          "mae_8bit": 14.752447827657065,
+          "psnr": 22.062890291783805
+        },
+        "official-fsr1-rcas0": {
+          "mae_8bit": 14.815146017074584,
+          "psnr": 22.019666563529398
+        }
+      },
+      "primary": "v10-gamma1",
+      "paired_comparison": {
+        "bilinear": {
+          "worst_10_percent_mae": 21.589615009725094,
+          "primary_win_rate": 0.0
+        },
+        "v10-gamma0.25": {
+          "worst_10_percent_mae": 36.71727903187275,
+          "primary_win_rate": 0.0
+        },
+        "v10-gamma0.5": {
+          "worst_10_percent_mae": 64.99516785144806,
+          "primary_win_rate": 0.0
+        },
+        "v10-gamma0.75": {
+          "worst_10_percent_mae": 96.60082563757896,
+          "primary_win_rate": 0.0
+        },
+        "v10-gamma1": {
+          "worst_10_percent_mae": 128.70315730571747,
+          "primary_win_rate": 0.0
+        },
+        "bilinear-sharpen": {
+          "worst_10_percent_mae": 21.887551322579384,
+          "primary_win_rate": 0.0
+        },
+        "bilinear-highpass-noise": {
+          "worst_10_percent_mae": 70.90048670768738,
+          "primary_win_rate": 0.0
+        },
+        "v9-reference": {
+          "worst_10_percent_mae": 18.024081401526928,
+          "primary_win_rate": 0.0
+        },
+        "v10-deterministic-control": {
+          "worst_10_percent_mae": 21.589052006602287,
+          "primary_win_rate": 0.0
+        },
+        "official-fsr1-rcas0": {
+          "worst_10_percent_mae": 21.080110482871532,
+          "primary_win_rate": 0.0
+        }
+      },
+      "largest_regressions_vs_bilinear": [
+        {
+          "frame": 721,
+          "block": 3,
+          "delta_vs_bilinear": 114.98472556471825
+        },
+        {
+          "frame": 721,
+          "block": 29,
+          "delta_vs_bilinear": 113.19937331601977
+        },
+        {
+          "frame": 721,
+          "block": 4,
+          "delta_vs_bilinear": 113.05277433246374
+        },
+        {
+          "frame": 721,
+          "block": 11,
+          "delta_vs_bilinear": 113.00274906679988
+        },
+        {
+          "frame": 721,
+          "block": 12,
+          "delta_vs_bilinear": 112.90296642109752
+        },
+        {
+          "frame": 721,
+          "block": 8,
+          "delta_vs_bilinear": 112.8818623535335
+        },
+        {
+          "frame": 721,
+          "block": 28,
+          "delta_vs_bilinear": 112.62757999822497
+        },
+        {
+          "frame": 721,
+          "block": 5,
+          "delta_vs_bilinear": 112.4587626568973
+        },
+        {
+          "frame": 721,
+          "block": 25,
+          "delta_vs_bilinear": 112.39072920754552
+        },
+        {
+          "frame": 721,
+          "block": 7,
+          "delta_vs_bilinear": 112.06532226875424
+        }
+      ],
+      "frequency_errors": {
+        "bilinear": {
+          "low_frequency_mae": 12.95153044462204,
+          "high_frequency_mae": 7.147620242834091
+        },
+        "v10-gamma0.25": {
+          "low_frequency_mae": 19.382141828536987,
+          "high_frequency_mae": 26.29025626182556
+        },
+        "v10-gamma0.5": {
+          "low_frequency_mae": 32.43021850585937,
+          "high_frequency_mae": 51.616705894470215
+        },
+        "v10-gamma0.75": {
+          "low_frequency_mae": 46.79790215492249,
+          "high_frequency_mae": 77.26788549423217
+        },
+        "v10-gamma1": {
+          "low_frequency_mae": 61.627653980255126,
+          "high_frequency_mae": 102.97606811523438
+        },
+        "bilinear-sharpen": {
+          "low_frequency_mae": 13.122344350814819,
+          "high_frequency_mae": 7.194392490386964
+        },
+        "bilinear-highpass-noise": {
+          "low_frequency_mae": 21.467963194847105,
+          "high_frequency_mae": 61.869080257415774
+        },
+        "v9-reference": {
+          "low_frequency_mae": 9.60131344795227,
+          "high_frequency_mae": 7.0521689593791965
+        },
+        "v10-deterministic-control": {
+          "low_frequency_mae": 12.948247218132018,
+          "high_frequency_mae": 7.147622066736221
+        },
+        "official-fsr1-rcas0": {
+          "low_frequency_mae": 12.408687520027161,
+          "high_frequency_mae": 7.317002284526825
+        }
+      },
+      "noise_control": {
+        "keys": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            11,
+            0
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            13,
+            0
+          ],
+          [
+            14,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            240,
+            20
+          ],
+          [
+            241,
+            0
+          ],
+          [
+            242,
+            0
+          ],
+          [
+            243,
+            0
+          ],
+          [
+            244,
+            0
+          ],
+          [
+            245,
+            0
+          ],
+          [
+            246,
+            0
+          ],
+          [
+            247,
+            0
+          ],
+          [
+            248,
+            0
+          ],
+          [
+            249,
+            0
+          ],
+          [
+            250,
+            0
+          ],
+          [
+            251,
+            0
+          ],
+          [
+            252,
+            0
+          ],
+          [
+            253,
+            0
+          ],
+          [
+            254,
+            0
+          ],
+          [
+            255,
+            0
+          ],
+          [
+            465,
+            29
+          ],
+          [
+            466,
+            29
+          ],
+          [
+            467,
+            29
+          ],
+          [
+            468,
+            29
+          ],
+          [
+            469,
+            29
+          ],
+          [
+            470,
+            29
+          ],
+          [
+            471,
+            29
+          ],
+          [
+            472,
+            29
+          ],
+          [
+            473,
+            29
+          ],
+          [
+            474,
+            29
+          ],
+          [
+            475,
+            29
+          ],
+          [
+            476,
+            29
+          ],
+          [
+            477,
+            29
+          ],
+          [
+            478,
+            29
+          ],
+          [
+            479,
+            29
+          ],
+          [
+            480,
+            9
+          ],
+          [
+            704,
+            29
+          ],
+          [
+            705,
+            29
+          ],
+          [
+            706,
+            29
+          ],
+          [
+            707,
+            29
+          ],
+          [
+            708,
+            29
+          ],
+          [
+            709,
+            29
+          ],
+          [
+            710,
+            29
+          ],
+          [
+            711,
+            29
+          ],
+          [
+            712,
+            29
+          ],
+          [
+            713,
+            29
+          ],
+          [
+            714,
+            29
+          ],
+          [
+            715,
+            29
+          ],
+          [
+            716,
+            29
+          ],
+          [
+            717,
+            29
+          ],
+          [
+            718,
+            29
+          ],
+          [
+            719,
+            29
+          ]
+        ],
+        "amplitude": [
+          0.498310387134552,
+          0.4987560510635376,
+          0.5001315474510193,
+          0.49803251028060913
+        ],
+        "source": "64 fixed train keys; matches generated gamma1 highpass residual energy, no target reads"
+      },
+      "sharpen_control": "fixed CFA-plane unsharp alpha0.5, Gaussian5 sigma1",
+      "known_sample_mae": {
+        "bilinear": 11.303384792804719,
+        "v10-gamma0.25": 32.260037088394164,
+        "v10-gamma0.5": 63.517933177947995,
+        "v10-gamma0.75": 95.28120985031128,
+        "v10-gamma1": 127.0620656967163,
+        "bilinear-sharpen": 11.913242948055268,
+        "bilinear-highpass-noise": 65.05976114273072,
+        "v9-reference": 9.276598477363587,
+        "v10-deterministic-control": 11.300906312465669,
+        "official-fsr1-rcas0": 11.226666605472564
+      },
+      "seam_diagnostics": {
+        "bilinear": {
+          "cfa_error_jump_at_strip_boundaries": 21.54562252965467,
+          "cfa_error_jump_inside_strips": 10.7977173941476
+        },
+        "v10-gamma0.25": {
+          "cfa_error_jump_at_strip_boundaries": 40.78106965689824,
+          "cfa_error_jump_inside_strips": 37.3711177280971
+        },
+        "v10-gamma0.5": {
+          "cfa_error_jump_at_strip_boundaries": 70.7327459927263,
+          "cfa_error_jump_inside_strips": 69.19493451799666
+        },
+        "v10-gamma0.75": {
+          "cfa_error_jump_at_strip_boundaries": 101.44729140709187,
+          "cfa_error_jump_inside_strips": 101.16024998256138
+        },
+        "v10-gamma1": {
+          "cfa_error_jump_at_strip_boundaries": 133.22120613887392,
+          "cfa_error_jump_inside_strips": 133.17322823660714
+        },
+        "bilinear-sharpen": {
+          "cfa_error_jump_at_strip_boundaries": 22.08438225450187,
+          "cfa_error_jump_inside_strips": 10.889105660574776
+        },
+        "bilinear-highpass-noise": {
+          "cfa_error_jump_at_strip_boundaries": 86.12387032344424,
+          "cfa_error_jump_inside_strips": 98.30897609165737
+        },
+        "v9-reference": {
+          "cfa_error_jump_at_strip_boundaries": 17.524571583188813,
+          "cfa_error_jump_inside_strips": 10.684767477852958
+        },
+        "v10-deterministic-control": {
+          "cfa_error_jump_at_strip_boundaries": 21.546234689909838,
+          "cfa_error_jump_inside_strips": 10.797743334089006
+        },
+        "official-fsr1-rcas0": {
+          "cfa_error_jump_at_strip_boundaries": 20.653770446777344,
+          "cfa_error_jump_inside_strips": 10.990990339006697
+        }
+      },
+      "phase_metrics": {
+        "1": {
+          "bilinear": 16.30426214635372,
+          "v10-gamma0.25": 34.20994823426008,
+          "v10-gamma0.5": 64.0230717137456,
+          "v10-gamma0.75": 95.59007480740547,
+          "v10-gamma1": 127.396553337574,
+          "bilinear-sharpen": 16.502285163849592,
+          "bilinear-highpass-noise": 68.07843665778637,
+          "v9-reference": 13.377510868012905,
+          "v10-deterministic-control": 16.302580926567316,
+          "official-fsr1-rcas0": 15.905458979308605
+        }
+      },
+      "metric_note": "RGB reference is demosaiced target RAW, not original full RGB. No LPIPS or FID measured.",
+      "numerical_fsr_passed": false,
+      "fsr_reference": {
+        "path": "Model\\runs\\eval-echosr-lite-q5-20261121\\report.json",
+        "sha256": "15961dd375621c3173ba7f51b65a248b19caee989d1d9234564e3a7869a652aa",
+        "reused_official_outputs": true
+      },
+      "v9_reference": {
+        "path": "Model\\runs\\relu128-four-v9-history2-q5\\best.pt",
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0"
+      },
+      "deterministic_control": {
+        "path": "Model\\runs\\v10-deterministic-q5-flowcheck\\best.pt",
+        "sha256": "2aceae2c21017b5dccfa1692a959feae80897ff4e9dda9dde6b4587813aa4572",
+        "config": {
+          "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+          "out": "Model\\runs\\v10-deterministic-q5-flowcheck",
+          "mode": "deterministic",
+          "condition": "both",
+          "channels": 48,
+          "epochs": 1,
+          "batch_size": 16,
+          "microbatch": 4,
+          "lr": 0.0001,
+          "low_frequency_weight": 0.0,
+          "timesteps": 1000,
+          "sample_steps": 4,
+          "validation_count": 16,
+          "max_steps": 2,
+          "val_steps": 1,
+          "scale_steps": 2,
+          "seed": 42,
+          "device": "auto",
+          "architecture": "v10",
+          "history": 2,
+          "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720
+          },
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+          "train_samples": 21570,
+          "validation_samples": 16,
+          "validation_full_samples": 5370,
+          "validation_keys": [
+            [
+              721,
+              0
+            ],
+            [
+              722,
+              0
+            ],
+            [
+              723,
+              0
+            ],
+            [
+              724,
+              0
+            ],
+            [
+              725,
+              0
+            ],
+            [
+              726,
+              0
+            ],
+            [
+              727,
+              0
+            ],
+            [
+              728,
+              0
+            ],
+            [
+              729,
+              0
+            ],
+            [
+              730,
+              0
+            ],
+            [
+              731,
+              0
+            ],
+            [
+              732,
+              0
+            ],
+            [
+              733,
+              0
+            ],
+            [
+              734,
+              0
+            ],
+            [
+              735,
+              0
+            ],
+            [
+              736,
+              0
+            ]
+          ],
+          "device_used": "cuda",
+          "torch": "2.7.1+cu126",
+          "gammas": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+          "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+          "noise_schedule": "cosine_s0.008_beta_max0.999",
+          "sample_seed": 0,
+          "noise_policy": "per_frame",
+          "precision": "FP32",
+          "weight_decay": 0.0001,
+          "coverage": "flow_check",
+          "residual_statistics": {
+            "method": "population_std_train_only_floor_0.01",
+            "samples": 128,
+            "mean": [
+              -2.2690721549452228e-05,
+              2.7394014235991196e-05,
+              1.2996883795546608e-05,
+              -2.4653419182155725e-05
+            ],
+            "std": [
+              0.01,
+              0.01,
+              0.01,
+              0.01
+            ]
+          },
+          "parameters": 280340
+        }
+      },
+      "video": {
+        "frames": 1,
+        "fps": 30,
+        "panel_order": [
+          "target",
+          "bilinear",
+          "v10-gamma0.25",
+          "v10-gamma0.5",
+          "v10-gamma0.75",
+          "v10-gamma1",
+          "bilinear-sharpen",
+          "bilinear-highpass-noise",
+          "v9-reference",
+          "v10-deterministic-control",
+          "official-fsr1-rcas0"
+        ],
+        "single_video": "generated.mp4",
+        "single_method": "v10-gamma1"
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-v10-q5-flowcheck-metrics--run-beeabab6c73f.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "e9ca0f95e6e96694e2a991eabdfc1ae6e6c4e62ba7852a5cce3bb47169c70328"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/bilinear-highpass-noise.png",
+        "bytes": 832157,
+        "sha256": "77a5172fa2ef948043f2a23189d5c556a0132ef2d65f356d659b418b72d84a62"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/bilinear-sharpen.png",
+        "bytes": 248846,
+        "sha256": "ab929c3e4d5ff6801499be2ecd44110fb2de9e7656271fba4a41d6c1582aaf90"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/bilinear.png",
+        "bytes": 208044,
+        "sha256": "1861b7ce44df6420a2e7e1bc7be01c07d99e34bb1c7878a6bca4320abdd52664"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/blocks.jsonl",
+        "bytes": 25745,
+        "sha256": "e9ca0f95e6e96694e2a991eabdfc1ae6e6c4e62ba7852a5cce3bb47169c70328"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/comparison.mp4",
+        "bytes": 672434,
+        "sha256": "e56c8ac54b0001564cb3fe5a0e5d5d541d60e52aceefb36d4a68c19bdf732517"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/comparison.png",
+        "bytes": 5091362,
+        "sha256": "00a4c5204bc86ee464c4f35020c8e7fbc5a5cc42d28cce623564d192174c3dba"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/generated-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/generated.mp4",
+        "bytes": 160314,
+        "sha256": "e5760f765e20ebf9bb5c33f24658e3119db3fb0937fab3172a441c7c9f9f109a"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/official-fsr1-rcas0.png",
+        "bytes": 451158,
+        "sha256": "16e45b0dec3d9a2fcfc7a2593142af1da9ddbcbf832656f18fa11475e5e01627"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/report.json",
+        "bytes": 19686,
+        "sha256": "b7d0d5fd06bc8ae36c48aab88ad4103dac8a4ef442d9df5b861b1c387f49ce50"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/target.png",
+        "bytes": 506168,
+        "sha256": "04f8c2eeb97a593356e51043b5754d9be1f1e77b269ac3edcf303ef9ee71a842"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/v10-deterministic-control.png",
+        "bytes": 205153,
+        "sha256": "4af24c1225770ccb2b557671203ada8027be75969e6e322208eb2736ceb92728"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/v10-gamma0.25.png",
+        "bytes": 590204,
+        "sha256": "54258527dc954f99fdbddf9c2af00e0e8bb58188c48e70ec907624756b438164"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/v10-gamma0.5.png",
+        "bytes": 580012,
+        "sha256": "e242bf4322aafde4390ed3ce43d5458bb96a2f999f8b4f67b9451162c7066747"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/v10-gamma0.75.png",
+        "bytes": 523536,
+        "sha256": "bcf3c5a8ed8deeff5ded487dd5278e99a95305c1957785dc6882b6ecc80952fe"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/v10-gamma1.png",
+        "bytes": 374031,
+        "sha256": "c9dcada6172b8312167ce08414457a5f611a5279d5fad0703120c77152bccec0"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/v9-reference.png",
+        "bytes": 306680,
+        "sha256": "d51e82e60bd0d23c6e896201431e7e9521cdd855f119c549db6f4f8b6e6fb930"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-flowcheck-metrics/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "id": "training--recording-smoke-history2",
+  "kind": "training",
+  "name": "recording-smoke-history2",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/recording-smoke-history2",
+  "started_at": "2026-11-21T12:17:31+08:00",
+  "finished_at": "2026-11-21T12:17:35+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--architecture",
+    "v4",
+    "--decoded-cache",
+    "Model/runs/decoded-q6.npz",
+    "--history",
+    "2",
+    "--device",
+    "cuda",
+    "--epochs",
+    "1",
+    "--max-steps",
+    "1",
+    "--val-steps",
+    "1",
+    "--out",
+    "Model/runs/recording-smoke-history2"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "3562f0922c5f0e3f0fa89292652327a5d426d15fac867db8393e6325e7ca4168",
+    "directory": "Model/experiments/source_snapshots/3562f0922c5f0e3f0fa89292652327a5d426d15fac867db8393e6325e7ca4168",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "d1f3d029f4b90ea732c15b75d14beeb61445ab14a095ef477098d7bfe7b6bfe8",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "3b1ecd0372438aff2322309544ffe60ddd11d2065d575e6092680142342a9840",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "5443db620d3ab1b69d0d3d726d6cc570750c6829c9ebfd316ae3da04d8d72743",
+      "test_record_experiment.py": "7936d985816fad2724804b0f847ddaef54edaa944193b0f59a0c05e70161c404",
+      "train.py": "9fc9b116abf08eab48d13e08bbac49f2233592926e6e38182bddccbbfba4493b",
+      "作法.MD": "050dab2cfd49c3c186160144fdbad18cf5259ecc63ba906bdd52e6144bc1b6ed",
+      "驗收標準.md": "ed8211fea5eb3ad6308721e3f681f4e1d6d775bfc8feb765ad65790c57c7971e"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T12:17:35+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q6.npz",
+        "bytes": 17714112,
+        "sha256": "6bad8a2a18c7d47c30d0ac0766f70a37b8f80d66b2d3141393da7f858975a70e"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 2,
+      "architecture": "v4",
+      "decoded_cache": "Model\\runs\\decoded-q6.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.5,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 1,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 1,
+      "val_steps": 1,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\recording-smoke-history2",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21570,
+      "validation_samples": 5370,
+      "parameters": 52452,
+      "input_contract": "encoded_and_decoded_raw_v1",
+      "residual_blocks": 4
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 23.012832440435886,
+          "psnr_raw": 18.68443393310212,
+          "seconds": 0.46110070000031556
+        },
+        "validation": {
+          "mae_8bit": 27.60487463325262,
+          "psnr_raw": 17.288819798712996,
+          "seconds": 0.01065180000023247
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 1,
+    "best_validation": {
+      "mae_8bit": 27.60487463325262,
+      "psnr_raw": 17.288819798712996,
+      "seconds": 0.01065180000023247
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/recording-smoke-history2/best.pt",
+        "bytes": 660792,
+        "sha256": "23a5e190ae0d654338fd65ab3c5b64acac06644adab7293fa8049ee0d1c7599e"
+      },
+      {
+        "path": "Model/runs/recording-smoke-history2/config.json",
+        "bytes": 998,
+        "sha256": "85597eaee92ad68ba54b8abec7021feea0b5dbec9982d3449e27df8e12b8d361"
+      },
+      {
+        "path": "Model/runs/recording-smoke-history2/epoch-001-raw.png",
+        "bytes": 15486,
+        "sha256": "c2f692cb7590f5ce7ce16d8ff940daa96ed0e0ae2f66379964d1c387776d22b0"
+      },
+      {
+        "path": "Model/runs/recording-smoke-history2/last.pt",
+        "bytes": 660792,
+        "sha256": "727382722bbe4429a368fb2ef2cdee5f4275c4be6780d44605120c7dc2920e82"
+      },
+      {
+        "path": "Model/runs/recording-smoke-history2/metrics.jsonl",
+        "bytes": 231,
+        "sha256": "a365f7b1a050623c188c9abc04a54aeac691bd07e6532a19c1f4a16516df70b9"
+      }
+    ]
+  }
+}

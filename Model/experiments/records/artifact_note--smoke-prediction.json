@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "artifact_note--smoke-prediction",
+  "kind": "artifact_note",
+  "name": "smoke-prediction.raw",
+  "status": "artifact_only",
+  "output": "Model/runs/smoke-prediction.raw",
+  "result": {
+    "artifacts": [
+      {
+        "path": "Model/runs/smoke-prediction.png",
+        "bytes": 14361,
+        "sha256": "da33675784acd8c9871301bfcaab989277c637ce1d84db6a5e9943d8d5dd0e13"
+      },
+      {
+        "path": "Model/runs/smoke-prediction.raw",
+        "bytes": 10240,
+        "sha256": "76ab7a6ec89be93cc8be019e1825d3a838f368429fdfc660576389347d9f5a47"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Standalone historical inference artifacts; exact invocation not retained.",
+  "recorded_at": "2026-11-21T12:17:07+08:00"
+}

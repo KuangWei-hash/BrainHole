@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "decoding--decoded-q6",
+  "kind": "decoding",
+  "name": "decoded-q6.npz",
+  "status": "completed",
+  "output": "Model/runs/decoded-q6.npz",
+  "result": {
+    "metadata": {
+      "database_sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064",
+      "samples": 27000,
+      "note": "Decoded only from codestream, not high-resolution labels."
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/decoded-q6.npz",
+        "bytes": 17714112,
+        "sha256": "6bad8a2a18c7d47c30d0ac0766f70a37b8f80d66b2d3141393da7f858975a70e"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:07+08:00"
+}

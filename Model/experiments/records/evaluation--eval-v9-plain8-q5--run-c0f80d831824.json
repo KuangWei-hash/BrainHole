@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-v9-plain8-q5--run-c0f80d831824",
+  "kind": "evaluation",
+  "name": "eval-v9-plain8-q5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-v9-plain8-q5",
+  "started_at": "2026-11-21T18:29:40+08:00",
+  "finished_at": "2026-11-21T18:30:05+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/plain4-v9-q5/best.pt",
+    "Model/runs/plain8-v9-q5/best.pt",
+    "Model/runs/simple-v9-q5/best.pt",
+    "--start-frame",
+    "720",
+    "--video",
+    "--out",
+    "Model/runs/eval-v9-plain8-q5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "c27c2a1db9ce6da4ea10742b20b8bc800fbad30b31455df57e2a66d2b29c32d0",
+    "directory": "Model/experiments/source_snapshots/c27c2a1db9ce6da4ea10742b20b8bc800fbad30b31455df57e2a66d2b29c32d0",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "714da8c4ef223d12d424bf6cbd90b67b92147038490c190ccb95dc187699efba",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "c937b892e0c9f30c72271053c1b38fcdee14d3f4496beca201675cd336944c02",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "d19ec53629e8bf5ab3af3e49738231112fc67c3896c0784856e9639e83659e3b",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "c71ef47efdad04b5aa092e31cee1052e7461e854254e02aef0d6b87f4c3eb3da",
+      "作法.MD": "754adc0d5749478153793597af029084acddc1c2733da217c8d117a32453b187",
+      "驗收標準.md": "6514f0eb672b51e035e05eebaed4418030774142d5c745fc2d3457444d9f5860"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T18:30:05+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/plain4-v9-q5/best.pt",
+        "bytes": 10225,
+        "sha256": "17b31da7587f25dd39139e6186cb3346a95a7a61f913e593195986b96c0537ac"
+      },
+      {
+        "path": "Model/runs/plain8-v9-q5/best.pt",
+        "bytes": 13681,
+        "sha256": "c3dd22642da2d9d04d0729def3d69ff3f63bde64bbb1e77efe9e772380a7b1fc"
+      },
+      {
+        "path": "Model/runs/simple-v9-q5/best.pt",
+        "bytes": 13617,
+        "sha256": "7767f7629a2ecff2e280081a2ed43af8bde2cbbba0bd260b7b5f6558b7ad4ffd"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 5400,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 720,
+      "last_evaluated_frame": 899,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 19.27616504907608,
+          "psnr_raw": 18.490833634588423
+        },
+        "bilinear": {
+          "mae_8bit": 17.544583733346727,
+          "psnr_raw": 19.708694636282537
+        },
+        "plain4-v9-q5": {
+          "mae_8bit": 16.80669879462984,
+          "psnr_raw": 19.995102839023712
+        },
+        "plain8-v9-q5": {
+          "mae_8bit": 16.743010113769106,
+          "psnr_raw": 19.998957273720016
+        },
+        "simple-v9-q5": {
+          "mae_8bit": 16.646705005433827,
+          "psnr_raw": 20.014616236190115
+        }
+      },
+      "gates": {
+        "plain4-v9-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9977777777777778
+        },
+        "plain8-v9-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9951851851851852
+        },
+        "simple-v9-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9255555555555556
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "plain4-v9-q5",
+        "plain8-v9-q5",
+        "simple-v9-q5"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\plain4-v9-q5\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\plain8-v9-q5\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\simple-v9-q5\\best.pt"
+      ],
+      "input_contracts": {
+        "plain4-v9-q5": "decoded_raw_only_v1",
+        "plain8-v9-q5": "decoded_raw_only_v1",
+        "simple-v9-q5": "decoded_raw_only_v1"
+      },
+      "video": {
+        "file": "comparison.mp4",
+        "frames": 180,
+        "fps": 30,
+        "panel_order": [
+          "target",
+          "bilinear",
+          "plain4-v9-q5",
+          "plain8-v9-q5",
+          "simple-v9-q5"
+        ],
+        "note": "Offline rendered; not a realtime benchmark.",
+        "temporal_error_change_mae_8bit": {
+          "bilinear": 15.175698907415294,
+          "plain4-v9-q5": 13.959414693896331,
+          "plain8-v9-q5": 13.990067584820967,
+          "simple-v9-q5": 13.919200375892597
+        },
+        "temporal_metric_note": "Mean absolute change of prediction-minus-target error between consecutive frames; no optical-flow alignment. Diagnostic only, not a standalone flicker acceptance criterion."
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-v9-plain8-q5--run-c0f80d831824.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "f9115fdbc812023a63759fd52bc8c14264140f5a942d3e43da0c058b8876b28f"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/bilinear.png",
+        "bytes": 221636,
+        "sha256": "10132f910d31334caac6204eb026ac2e860db3e8039238bb6ceda9a86e850433"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/blocks.jsonl",
+        "bytes": 1069876,
+        "sha256": "f9115fdbc812023a63759fd52bc8c14264140f5a942d3e43da0c058b8876b28f"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/comparison.mp4",
+        "bytes": 11298387,
+        "sha256": "d0356df4ddbf4f50c91fd87657a22a9e1f31178353f5c37730d4ad8a1de12ba1"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/comparison.png",
+        "bytes": 1610992,
+        "sha256": "8bb15b0331fc30a3dcee7edb5ce53008c8fa753ca31fa924e6e8c632b348bb15"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/nearest.png",
+        "bytes": 99596,
+        "sha256": "8c07d5340c112ce047734bd318d271fd1e8e112d65f8d2062556075f162ec880"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/plain4-v9-q5.png",
+        "bytes": 281118,
+        "sha256": "9835acc305dfa3595d8a0e2c91a79f5c29194a587918d7bca4d879e6590d1da0"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/plain8-v9-q5.png",
+        "bytes": 284082,
+        "sha256": "47ac957b110240f450e426bc032c472797494e86d19c0326d7f2aa1c9da42d2e"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/report.json",
+        "bytes": 2992,
+        "sha256": "4b3fd71959487d5749d4bccea78a138c39b8c65b99c9c71c26cb3c903eb81c23"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/simple-v9-q5.png",
+        "bytes": 279511,
+        "sha256": "7d0ff27056b70c8bd4ffab14835d8d81a1cb86bc3ae596a18e8facd842b18bfb"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      },
+      {
+        "path": "Model/runs/eval-v9-plain8-q5/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

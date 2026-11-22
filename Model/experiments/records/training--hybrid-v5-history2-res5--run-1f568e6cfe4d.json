@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "id": "training--hybrid-v5-history2-res5--run-1f568e6cfe4d",
+  "kind": "training",
+  "name": "hybrid-v5-history2-res5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/hybrid-v5-history2-res5",
+  "started_at": "2026-11-21T12:23:08+08:00",
+  "finished_at": "2026-11-21T12:28:08+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--architecture",
+    "v5",
+    "--decoded-cache",
+    "Model/runs/decoded-q6.npz",
+    "--history",
+    "2",
+    "--device",
+    "cuda",
+    "--epochs",
+    "5",
+    "--out",
+    "Model/runs/hybrid-v5-history2-res5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "bd4af869debe3c180bf7ad44b6d95db37eb5a42ac5e74967d0db6d254d4f6736",
+    "directory": "Model/experiments/source_snapshots/bd4af869debe3c180bf7ad44b6d95db37eb5a42ac5e74967d0db6d254d4f6736",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "ecaea59590a66ec0be3b0a571da87d837629d5115ae3f8cf0fa0aaad4588492f",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "8aab0b68d877bcf0a235acf9bc309db64aecfa3de38b0b1c2f9539620808971c",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "21ce1b382bd9fead72a0562bd52f86c2f58d36a2896b3a6393e5f1d9ffe6e781",
+      "test_record_experiment.py": "7936d985816fad2724804b0f847ddaef54edaa944193b0f59a0c05e70161c404",
+      "train.py": "9c205cd3ae9bb42ac7f1e704935ebb8d5b46336c26c205007d3ce484491c0e01",
+      "作法.MD": "59971af4bf64de751d8bb093d4f7cf268430cec2f1056bebf7106f77c63a873a",
+      "驗收標準.md": "ed8211fea5eb3ad6308721e3f681f4e1d6d775bfc8feb765ad65790c57c7971e"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T12:28:08+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q6.npz",
+        "bytes": 17714112,
+        "sha256": "6bad8a2a18c7d47c30d0ac0766f70a37b8f80d66b2d3141393da7f858975a70e"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 2,
+      "architecture": "v5",
+      "decoded_cache": "Model\\runs\\decoded-q6.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.5,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 5,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\hybrid-v5-history2-res5",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21570,
+      "validation_samples": 5370,
+      "parameters": 62868,
+      "input_contract": "encoded_and_decoded_raw_v1",
+      "residual_blocks": 5
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 22.59189263651451,
+          "psnr_raw": 18.220567295273547,
+          "seconds": 53.58994249999978
+        },
+        "validation": {
+          "mae_8bit": 24.982531554081255,
+          "psnr_raw": 17.664392890267603,
+          "seconds": 5.718260600000576
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 19.597387386291636,
+          "psnr_raw": 19.134554984558203,
+          "seconds": 54.092392599999584
+        },
+        "validation": {
+          "mae_8bit": 22.21726211988726,
+          "psnr_raw": 18.432619042975116,
+          "seconds": 5.713270799999918
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 18.550013761806802,
+          "psnr_raw": 19.554282957653268,
+          "seconds": 53.41476109999985
+        },
+        "validation": {
+          "mae_8bit": 20.93395520759195,
+          "psnr_raw": 18.734083331443834,
+          "seconds": 5.790312099999937
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "mae_8bit": 17.80434666389032,
+          "psnr_raw": 19.882040567436807,
+          "seconds": 53.27943839999989
+        },
+        "validation": {
+          "mae_8bit": 20.75298544610512,
+          "psnr_raw": 18.794769602172487,
+          "seconds": 5.677293200000349
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "mae_8bit": 17.186257525345876,
+          "psnr_raw": 20.159827652236928,
+          "seconds": 53.18953020000026
+        },
+        "validation": {
+          "mae_8bit": 20.499324402745874,
+          "psnr_raw": 18.82002901088621,
+          "seconds": 5.65436740000041
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 5,
+    "best_validation": {
+      "mae_8bit": 20.499324402745874,
+      "psnr_raw": 18.82002901088621,
+      "seconds": 5.65436740000041
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/best.pt",
+        "bytes": 789992,
+        "sha256": "d4d6ec0ebef0a6c78d7f87c3ee944714c9d95e74427ce5c349027ae8e986e5bd"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/config.json",
+        "bytes": 997,
+        "sha256": "5bebb9b0ec3ec5359640efe9c4b3f4d59ea9ebc383caef7a7e4e607cd21c9c57"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/epoch-001-raw.png",
+        "bytes": 17302,
+        "sha256": "017fcc4ec4324076f642ec02a69d6f02641a1786848334d01ff4c77ee7828b6b"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/epoch-002-raw.png",
+        "bytes": 17784,
+        "sha256": "71be08153d8995d450d0c68b8b555d205d651f0c6fa561a2e933e5f38fdbd14a"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/epoch-003-raw.png",
+        "bytes": 17808,
+        "sha256": "c0fe195c57bac6d5230863f3ed3125c483715e7f9b7c08e4ed454fb88abb86af"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/epoch-004-raw.png",
+        "bytes": 18155,
+        "sha256": "4652eee393950a646bdc257907ac29503a4d490536c4fe55d11b2ad3cb16b0e5"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/epoch-005-raw.png",
+        "bytes": 18090,
+        "sha256": "152ad24a70445849740d40e098df42c0be9698277698f91a17403697d089dc6f"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/last.pt",
+        "bytes": 789992,
+        "sha256": "91c342f02e05fcecaa9e31b6ab32d1e75b84af1836d77eabbb80bfa0db8565e7"
+      },
+      {
+        "path": "Model/runs/hybrid-v5-history2-res5/metrics.jsonl",
+        "bytes": 1139,
+        "sha256": "fc2aa35b2411eafd5673301ad11b25b93b704cf904c41659fdce6f32dae31ade"
+      }
+    ]
+  }
+}

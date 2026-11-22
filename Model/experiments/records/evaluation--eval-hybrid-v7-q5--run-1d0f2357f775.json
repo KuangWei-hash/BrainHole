@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-hybrid-v7-q5--run-1d0f2357f775",
+  "kind": "evaluation",
+  "name": "eval-hybrid-v7-q5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-hybrid-v7-q5",
+  "started_at": "2026-11-21T17:43:28+08:00",
+  "finished_at": "2026-11-21T17:43:47+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/hybrid-v7-history2-q5/best.pt",
+    "--start-frame",
+    "720",
+    "--video",
+    "--out",
+    "Model/runs/eval-hybrid-v7-q5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "93abdc2d6c5d00bc8ed1313ed85f9bcfa5b666079a9cf68f64223321bc233a24",
+    "directory": "Model/experiments/source_snapshots/93abdc2d6c5d00bc8ed1313ed85f9bcfa5b666079a9cf68f64223321bc233a24",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "71d891a75c07958f505202aaa826b4edce5035f748ae0472927b22f6ed01b555",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "c937b892e0c9f30c72271053c1b38fcdee14d3f4496beca201675cd336944c02",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "333c08600f5de8c7f0d245151f79c0c937c486c15340d66c900f49a73edea6c6",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "e048ed6892bbd88888b98f5881eb46ac1f5a026e314aa57947e1299b7b5dcfa4",
+      "作法.MD": "97d4f84b263e2adbb71099e3d3be5b8201324b8513bc5f1cb09e956b324c27d6",
+      "驗收標準.md": "9125d861012b1206b0ab0276ca9f13c6a5a56edecfb93f3580fd747d856aa4dd"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T17:43:47+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/hybrid-v7-history2-q5/best.pt",
+        "bytes": 1413160,
+        "sha256": "8239fd41542877dfe813a9b8390111e5c5f7907a0d50b9e0f82cdc4b5a483729"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 5370,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 721,
+      "last_evaluated_frame": 899,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 19.283258706231358,
+          "psnr_raw": 18.483525007200484
+        },
+        "bilinear": {
+          "mae_8bit": 17.552325880860483,
+          "psnr_raw": 19.701981104448407
+        },
+        "hybrid-v7-history2-q5": {
+          "mae_8bit": 15.121942436495306,
+          "psnr_raw": 20.787026875976075
+        }
+      },
+      "gates": {
+        "hybrid-v7-history2-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9996275605214152
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "hybrid-v7-history2-q5"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v7-history2-q5\\best.pt"
+      ],
+      "input_contracts": {
+        "hybrid-v7-history2-q5": "encoded_and_decoded_raw_v1"
+      },
+      "video": {
+        "file": "comparison.mp4",
+        "frames": 179,
+        "fps": 30,
+        "panel_order": [
+          "target",
+          "bilinear",
+          "hybrid-v7-history2-q5"
+        ],
+        "note": "Offline rendered; not a realtime benchmark.",
+        "temporal_error_change_mae_8bit": {
+          "bilinear": 15.184003804774767,
+          "hybrid-v7-history2-q5": 10.929151022836063
+        },
+        "temporal_metric_note": "Mean absolute change of prediction-minus-target error between consecutive frames; no optical-flow alignment. Diagnostic only, not a standalone flicker acceptance criterion."
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-hybrid-v7-q5--run-1d0f2357f775.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "4b584066f5579a6f8a5801796e6e6d0901376ac7da84b265c308e61700235ecd"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/bilinear.png",
+        "bytes": 221636,
+        "sha256": "10132f910d31334caac6204eb026ac2e860db3e8039238bb6ceda9a86e850433"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/blocks.jsonl",
+        "bytes": 728958,
+        "sha256": "4b584066f5579a6f8a5801796e6e6d0901376ac7da84b265c308e61700235ecd"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/comparison.mp4",
+        "bytes": 5815860,
+        "sha256": "644aa224bdf6577e661865af64857410e3e0a6d81c62e6ea2748d5cf767476cd"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/comparison.png",
+        "bytes": 1080115,
+        "sha256": "cb29c36447febc5d46b193aa44a57b079eac7963624693cc104aa74cc0a93cf7"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/hybrid-v7-history2-q5.png",
+        "bytes": 306510,
+        "sha256": "5492f98d910473fe90bb6c7b276cbea0423724082dc737daed8ad2ea8aa6c38f"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/nearest.png",
+        "bytes": 99596,
+        "sha256": "8c07d5340c112ce047734bd318d271fd1e8e112d65f8d2062556075f162ec880"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/report.json",
+        "bytes": 2186,
+        "sha256": "d264eab4e91f8efa1a3f90338b63d80345dab00b1aaaca07d6ba9f05316bb711"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-q5/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

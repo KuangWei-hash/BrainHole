@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "training--smoke-history16",
+  "kind": "training",
+  "name": "smoke-history16",
+  "status": "completed",
+  "output": "Model/runs/smoke-history16",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 16,
+      "decay": 0.2,
+      "epochs": 1,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 5,
+      "val_steps": 2,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\smoke-history16",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21150,
+      "validation_samples": 4950,
+      "parameters": 6632260
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 57.75513844192028,
+          "psnr_raw": 11.597485400237336,
+          "seconds": 0.6382367999999587
+        },
+        "validation": {
+          "mae_8bit": 65.62305629253387,
+          "psnr_raw": 11.215205039569822,
+          "seconds": 0.01508830000011585
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 1,
+    "best_validation": {
+      "mae_8bit": 65.62305629253387,
+      "psnr_raw": 11.215205039569822,
+      "seconds": 0.01508830000011585
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/smoke-history16/best.pt",
+        "bytes": 79603003,
+        "sha256": "26c85af77f7c4b93c9646f0a629a1df9658de10663ab8248ec4e60ba9d202d43"
+      },
+      {
+        "path": "Model/runs/smoke-history16/config.json",
+        "bytes": 733,
+        "sha256": "e1c28e3ebcb174fbaf94f17c316d643b5df15d5a858ca42b7bda47ca6c890459"
+      },
+      {
+        "path": "Model/runs/smoke-history16/epoch-001-raw.png",
+        "bytes": 11214,
+        "sha256": "fe8cef74700db45620ac8f7a00ce541682272822a489d2f5bfb96433a01fcad3"
+      },
+      {
+        "path": "Model/runs/smoke-history16/last.pt",
+        "bytes": 79603003,
+        "sha256": "55856c80b18e11bbaf125c3b17f177a71c0a4ae0de51ab1dbee60cb6bee97cef"
+      },
+      {
+        "path": "Model/runs/smoke-history16/metrics.jsonl",
+        "bytes": 230,
+        "sha256": "48feca89e3029305c3459e698eaf5533161026b034e519ceeb5226929f22a11c"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:07+08:00"
+}

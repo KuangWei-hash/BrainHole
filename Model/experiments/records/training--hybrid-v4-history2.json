@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "id": "training--hybrid-v4-history2",
+  "kind": "training",
+  "name": "hybrid-v4-history2",
+  "status": "completed",
+  "output": "Model/runs/hybrid-v4-history2",
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 2,
+      "architecture": "v4",
+      "decoded_cache": "Model\\runs\\decoded-q6.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.5,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 5,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\hybrid-v4-history2",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21570,
+      "validation_samples": 5370,
+      "parameters": 52452,
+      "input_contract": "encoded_and_decoded_raw_v1",
+      "residual_blocks": 4
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 22.82154654141034,
+          "psnr_raw": 18.17352808817213,
+          "seconds": 45.9127153999998
+        },
+        "validation": {
+          "mae_8bit": 27.08969324639889,
+          "psnr_raw": 17.19904038419456,
+          "seconds": 4.879725900000267
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 20.457366398824522,
+          "psnr_raw": 18.83100086313171,
+          "seconds": 45.323913600000196
+        },
+        "validation": {
+          "mae_8bit": 22.314241046762334,
+          "psnr_raw": 18.374096473271557,
+          "seconds": 4.9011835999999676
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 18.963379340197097,
+          "psnr_raw": 19.389687578914984,
+          "seconds": 45.47255650000079
+        },
+        "validation": {
+          "mae_8bit": 21.4337540008752,
+          "psnr_raw": 18.548839631149917,
+          "seconds": 4.9190411999998105
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "mae_8bit": 18.194107638120194,
+          "psnr_raw": 19.70178530359189,
+          "seconds": 45.598668599999655
+        },
+        "validation": {
+          "mae_8bit": 21.391467448428024,
+          "psnr_raw": 18.5589220217561,
+          "seconds": 5.095781399999396
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "mae_8bit": 17.498844461803102,
+          "psnr_raw": 20.01354784981234,
+          "seconds": 45.92605749999984
+        },
+        "validation": {
+          "mae_8bit": 20.598919343473856,
+          "psnr_raw": 18.752814363721008,
+          "seconds": 4.988812300000063
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 5,
+    "best_validation": {
+      "mae_8bit": 20.598919343473856,
+      "psnr_raw": 18.752814363721008,
+      "seconds": 4.988812300000063
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/hybrid-v4-history2/best.pt",
+        "bytes": 660792,
+        "sha256": "d54f85d64d2bbee42015c8ec5f8c0539f4e903dd6ffe9944fca65cdbb8ff1a80"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/cached-example.png",
+        "bytes": 15459,
+        "sha256": "837bcc2266fa275208228d9b87aad12b72df47f1632ea55eb1fcfae3371de91d"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/cached-example.raw",
+        "bytes": 10240,
+        "sha256": "11bb20e953af3c0744b670686156c17c367a4ddd81f1cd6f9c25d1d986dd806a"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/config.json",
+        "bytes": 992,
+        "sha256": "1dda426016fff28b7d286cd03de2e36c725f77d7b451b038914a94b6b968cc73"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/epoch-001-raw.png",
+        "bytes": 17320,
+        "sha256": "fe97a48d161b8ddca55b2d489cfcb907711f064e6a18bf2af7af1634da16f56a"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/epoch-002-raw.png",
+        "bytes": 17579,
+        "sha256": "c41755ec2072ab6f3b3014190b04f1d39d713a5df102e90f4def979aeebcc991"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/epoch-003-raw.png",
+        "bytes": 17676,
+        "sha256": "118204f6e4cf71e8f557a5659ca0a55e32996cee97a74da8dcb6c53be547fc4c"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/epoch-004-raw.png",
+        "bytes": 17955,
+        "sha256": "8be91f7510967042a28b9a509a0d0e0169e5011b45e993988d23d8012bbd710c"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/epoch-005-raw.png",
+        "bytes": 17793,
+        "sha256": "dfd213f4c893d4b08dfe53b0145fd0fd4d6a12a7128574a5e8406543c1aec237"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/last.pt",
+        "bytes": 660792,
+        "sha256": "cfa3c03a6295ba9c5b1a9e0bd7ef4a0e7ff380466311ae63f51baa808ed76f64"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/live-example.png",
+        "bytes": 15459,
+        "sha256": "837bcc2266fa275208228d9b87aad12b72df47f1632ea55eb1fcfae3371de91d"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/live-example.raw",
+        "bytes": 10240,
+        "sha256": "11bb20e953af3c0744b670686156c17c367a4ddd81f1cd6f9c25d1d986dd806a"
+      },
+      {
+        "path": "Model/runs/hybrid-v4-history2/metrics.jsonl",
+        "bytes": 1137,
+        "sha256": "8beb8b43c50fa572ff9efe8aec1053a7bd1b582dc6658c22955070eb62ab23c6"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:05+08:00"
+}

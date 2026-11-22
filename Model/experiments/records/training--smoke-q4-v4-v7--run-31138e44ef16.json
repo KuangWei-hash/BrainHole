@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "id": "training--smoke-q4-v4-v7--run-31138e44ef16",
+  "kind": "training",
+  "name": "smoke-q4-v4-v7",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/smoke-q4-v4-v7",
+  "started_at": "2026-11-21T17:01:00+08:00",
+  "finished_at": "2026-11-21T17:01:04+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q4-shared-v4-raw8-fixed.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q4-v4.npz",
+    "--architecture",
+    "v7",
+    "--history",
+    "2",
+    "--device",
+    "cuda",
+    "--epochs",
+    "1",
+    "--max-steps",
+    "2",
+    "--val-steps",
+    "2",
+    "--out",
+    "Model/runs/smoke-q4-v4-v7"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "a9ca2eed4ece90b534a99cf633d494df341f1cab67b4b8d7db4b194071bf59cf",
+    "directory": "Model/experiments/source_snapshots/a9ca2eed4ece90b534a99cf633d494df341f1cab67b4b8d7db4b194071bf59cf",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "71d891a75c07958f505202aaa826b4edce5035f748ae0472927b22f6ed01b555",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "7ee905bd4cbcd2cd96d2fbe888d46c753de2356a879dcc26a79b7eabbf1abbec",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "333c08600f5de8c7f0d245151f79c0c937c486c15340d66c900f49a73edea6c6",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "4ffc1888b84dd0ac89af258ba0c339b935bba46e7f0100eba2ec7d252b1d8e56",
+      "作法.MD": "254b3cf1891b34b44a8d7298fac355fe9117f5c8e29a7bbed095d09f415a477b",
+      "驗收標準.md": "9125d861012b1206b0ab0276ca9f13c6a5a56edecfb93f3580fd747d856aa4dd"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T17:01:04+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q4-shared-v4-raw8-fixed.sqlite",
+        "bytes": 332431360,
+        "sha256": "033f850f92e65b87eea6d00f28e6c46af9f18d07b44f25182c90fe01e0ca970d"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q4-v4.npz",
+        "bytes": 17714320,
+        "sha256": "5f946d1c33517f17f338595f7ec9dd0b611b62296092f288a4bebbbc5ff6da93"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q4-shared-v4-raw8-fixed.sqlite",
+      "val_db": null,
+      "history": 2,
+      "architecture": "v7",
+      "v8_variant": "expand96_two_layer",
+      "decoded_cache": "Model\\runs\\decoded-q4-v4.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.5,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 1,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 2,
+      "val_steps": 2,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\smoke-q4-v4-v7",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "834b4d34abc6e29f7afbc1e6861ec055f9292dbe4a4a862c23bedb8ebf44dd7c",
+      "train_samples": 21570,
+      "validation_samples": 5370,
+      "parameters": 114828,
+      "input_contract": "encoded_and_decoded_raw_v1",
+      "residual_blocks": 5,
+      "residual_expansion": 2,
+      "residual_layers": 2
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 11.910266624763608,
+          "psnr_raw": 22.66911866650814,
+          "seconds": 0.45457860000169603
+        },
+        "validation": {
+          "mae_8bit": 12.81968797557056,
+          "psnr_raw": 22.24210560328097,
+          "seconds": 0.018698399999266258
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 1,
+    "best_validation": {
+      "mae_8bit": 12.81968797557056,
+      "psnr_raw": 22.24210560328097,
+      "seconds": 0.018698399999266258
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/smoke-q4-v4-v7/best.pt",
+        "bytes": 1413160,
+        "sha256": "b4a99374fd2c76fd69a7a6b2ee2f0a490adc9d9ad52f42f99dbf487bca431d11"
+      },
+      {
+        "path": "Model/runs/smoke-q4-v4-v7/config.json",
+        "bytes": 1090,
+        "sha256": "e29ec82324c882e93c29e9f1734eb9c3b8a0da91ab28bd4d5a07d10508526e75"
+      },
+      {
+        "path": "Model/runs/smoke-q4-v4-v7/epoch-001-raw.png",
+        "bytes": 15703,
+        "sha256": "0d7717c2230ad23011f98a35ca5c4309d547704286b05f7f829deb6868f0df0d"
+      },
+      {
+        "path": "Model/runs/smoke-q4-v4-v7/last.pt",
+        "bytes": 1413160,
+        "sha256": "18b29085ad789d44bdba4a39a8e935732dfc5a3fd1b4c8b4dd68dfd6913c2996"
+      },
+      {
+        "path": "Model/runs/smoke-q4-v4-v7/metrics.jsonl",
+        "bytes": 231,
+        "sha256": "8fe607317c17ad03a168d126107a3eb3574f2522569492fbe3d3f654527bf848"
+      }
+    ]
+  }
+}

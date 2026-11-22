@@ -1,0 +1,22 @@
+{
+  "executable": "./bin/brainhole-jpegxs.exe",
+  "identity": "oxideav-jpegxs 0.0.9 @3484a041d6d8e893683c1920cb3f68fe6fd3b8b8; brainhole bridge 0.1.0; RGGB deinterleave 80x2x4; Cpih=3; fixed Q=4; levels=1/0",
+  "timeout_seconds": 30,
+  "args": [
+    "encode",
+    "--input",
+    "{input}",
+    "--output",
+    "{output}",
+    "--target-bytes",
+    "80",
+    "--max-bytes",
+    "{max_bytes}",
+    "--levels-x",
+    "1",
+    "--levels-y",
+    "0",
+    "--quantization",
+    "4"
+  ]
+}

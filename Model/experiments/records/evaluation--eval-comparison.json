@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-comparison",
+  "kind": "evaluation",
+  "name": "eval-comparison",
+  "status": "completed",
+  "output": "Model/runs/eval-comparison",
+  "result": {
+    "report": {
+      "samples": 5400,
+      "start_frame": 720,
+      "stop_frame": null,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 30.41993428495195,
+          "psnr_raw": 16.000400344595302
+        },
+        "bilinear": {
+          "mae_8bit": 28.756980578899384,
+          "psnr_raw": 16.68257174262571
+        },
+        "single-v1": {
+          "mae_8bit": 31.04452300336626,
+          "psnr_raw": 14.724124327130127
+        },
+        "single-v1-refined": {
+          "mae_8bit": 30.086177720361288,
+          "psnr_raw": 14.788383748355944
+        },
+        "single-v2": {
+          "mae_8bit": 33.00199586338467,
+          "psnr_raw": 14.447329222890575
+        },
+        "single-v2-tuned": {
+          "mae_8bit": 32.203553307321336,
+          "psnr_raw": 14.662697891285998
+        }
+      },
+      "gates": {
+        "single-v1": {
+          "numerical_screen_passed": false,
+          "block_win_rate_against_both": 0.5425925925925926
+        },
+        "single-v1-refined": {
+          "numerical_screen_passed": false,
+          "block_win_rate_against_both": 0.5942592592592593
+        },
+        "single-v2": {
+          "numerical_screen_passed": false,
+          "block_win_rate_against_both": 0.495
+        },
+        "single-v2-tuned": {
+          "numerical_screen_passed": false,
+          "block_win_rate_against_both": 0.5262962962962963
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {
+        "single-v2": 36.43347958909141,
+        "single-v2-tuned": 37.93246705611547
+      },
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "single-v1",
+        "single-v1-refined",
+        "single-v2",
+        "single-v2-tuned"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564",
+        "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+        "decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064",
+        "samples": 27000,
+        "note": "Decoded only from codestream, not high-resolution labels."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\single-v1\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\single-v1-refined\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\single-v2\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\single-v2-tuned\\best.pt"
+      ]
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-comparison.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "03fdd35108d8491f22068df284299d1edd29742d92db37567f1eb685d6c7a6d6"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-comparison/bilinear.png",
+        "bytes": 182093,
+        "sha256": "5e24ab7aa1d814ee9181920b0af689e842295d9cd383a6def5efa325c62d4955"
+      },
+      {
+        "path": "Model/runs/eval-comparison/blocks.jsonl",
+        "bytes": 1266923,
+        "sha256": "03fdd35108d8491f22068df284299d1edd29742d92db37567f1eb685d6c7a6d6"
+      },
+      {
+        "path": "Model/runs/eval-comparison/comparison.png",
+        "bytes": 1608718,
+        "sha256": "67a9729c974cc54ae9e227c2a8dd5225aa9bd698ba3a282bf81184d6af12c118"
+      },
+      {
+        "path": "Model/runs/eval-comparison/nearest.png",
+        "bytes": 79710,
+        "sha256": "bcd51115d5cff4dda25ce323bd3948bf60cb2899faa1165b3f81cefd48197fbb"
+      },
+      {
+        "path": "Model/runs/eval-comparison/report.json",
+        "bytes": 2417,
+        "sha256": "c9597e60c882b38db77c5932af113214cd0417c0c55c266220cf1b1b55edc8fd"
+      },
+      {
+        "path": "Model/runs/eval-comparison/single-v1-refined.png",
+        "bytes": 239602,
+        "sha256": "62e494e85aceaaa8a0ce5fbb6f2f9b39fda8b7b826278198ea968b7b4ae3fbf9"
+      },
+      {
+        "path": "Model/runs/eval-comparison/single-v1.png",
+        "bytes": 236031,
+        "sha256": "5206c202395f678178d828205a976e6815d391fc234821fe6d57b42cf2a77978"
+      },
+      {
+        "path": "Model/runs/eval-comparison/single-v2-tuned.png",
+        "bytes": 198576,
+        "sha256": "7c62a9acb2b545ed8c91aa0ad7c98ffda81e630ad1fbbcc61c09299e5152cdc3"
+      },
+      {
+        "path": "Model/runs/eval-comparison/single-v2.png",
+        "bytes": 220501,
+        "sha256": "ee58d0616111c57575a225fe72dfc127710d7f67d20aed0580d1dd9b71768473"
+      },
+      {
+        "path": "Model/runs/eval-comparison/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:04+08:00"
+}

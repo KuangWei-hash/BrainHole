@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "dbsr-official",
+    "title": "Learning a Mixture of Deep Networks for Single Image Super-Resolution",
+    "pdf_url": "https://arxiv.org/pdf/1701.00823v1",
+    "source": "arxiv",
+    "local_path": "refs/papers/dbsr-official.pdf",
+    "downloaded_at": "2026-11-21T23:40:35",
+    "arxiv_id": "1701.00823v1",
+    "title_similarity": 0.655,
+    "requested_title": "Learning a Deep Single Image Super-Resolution Network for Burst Images",
+    "status": "downloaded",
+    "bytes": 5409796,
+    "sha256": "375899e4f9b55ff4c8857e700a7fa4ecfa2c42f3eb7c932b1919e6e1706ab766"
+  },
+  {
+    "slug": "cycled-shift",
+    "requested_title": "Learning to Super-Resolve Burst Photos",
+    "status": "unresolved",
+    "arxiv_candidates": []
+  },
+  {
+    "slug": "realvsr",
+    "title": "Real-RawVSR: Real-World Raw Video Super-Resolution with a Benchmark Dataset",
+    "pdf_url": "https://arxiv.org/pdf/2209.12475v1",
+    "source": "arxiv",
+    "local_path": "refs/papers/realvsr.pdf",
+    "downloaded_at": "2026-11-21T23:41:27",
+    "arxiv_id": "2209.12475v1",
+    "title_similarity": 0.634,
+    "requested_title": "Real-World Video Super-Resolution: A Benchmark Dataset and a Decomposition-based Learning Scheme",
+    "status": "downloaded",
+    "bytes": 1135835,
+    "sha256": "e4d1a0caf5173b901a18330f5dda8989ca4449150eccd3612364a669ce3179f8"
+  },
+  {
+    "slug": "flashvsr",
+    "title": "FlashVSR: Towards Real-Time Diffusion-Based Streaming Video Super-Resolution",
+    "pdf_url": "https://arxiv.org/pdf/2510.12747v1",
+    "source": "arxiv",
+    "local_path": "refs/papers/flashvsr.pdf",
+    "downloaded_at": "2026-11-21T23:41:38",
+    "arxiv_id": "2510.12747v1",
+    "title_similarity": 0.789,
+    "requested_title": "FlashVSR: Towards Real-time Video Super-Resolution",
+    "status": "downloaded",
+    "bytes": 41940643,
+    "sha256": "076da513813a65e71208fb4d2f1ae3c6fbf5bb8787190d355638aa3fb3479db2"
+  },
+  {
+    "slug": "frvsr",
+    "title": "Frame-Recurrent Video Super-Resolution",
+    "pdf_url": "https://arxiv.org/pdf/1801.04590v4",
+    "source": "arxiv",
+    "local_path": "refs/papers/frvsr.pdf",
+    "downloaded_at": "2026-11-21T23:41:56",
+    "arxiv_id": "1801.04590v4",
+    "title_similarity": 0.921,
+    "requested_title": "Frame-Recurrent Super-Resolution",
+    "status": "downloaded",
+    "bytes": 924591,
+    "sha256": "2d92741a76e68126a954900fff46785c22bf95644776cb68c2dad857a82175cb"
+  },
+  {
+    "slug": "tecogan",
+    "requested_title": "Temporal GAN for Real-Time Video Super-Resolution",
+    "status": "unresolved",
+    "arxiv_candidates": []
+  },
+  {
+    "slug": "motnet",
+    "title": "Learning for Unconstrained Space-Time Video Super-Resolution",
+    "pdf_url": "https://arxiv.org/pdf/2102.13011v2",
+    "source": "arxiv",
+    "local_path": "refs/papers/motnet.pdf",
+    "downloaded_at": "2026-11-21T23:42:48",
+    "arxiv_id": "2102.13011v2",
+    "title_similarity": 0.643,
+    "requested_title": "Learning Space-Time Video Super-Resolution with a Heterogeneous Network",
+    "status": "downloaded",
+    "bytes": 14763917,
+    "sha256": "d60c3fd7eff4151e9614b514aedb1ecc66767b3bea68d1bb07168e297c2d79c2"
+  }
+]

@@ -1,0 +1,1925 @@
+{
+  "schema_version": 1,
+  "id": "training--v10-diffusion-q5-20epochs--run-a9ba394bb992",
+  "kind": "training",
+  "name": "v10-diffusion-q5-20epochs",
+  "status": "running",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v10-diffusion-q5-20epochs",
+  "started_at": "2026-11-21T23:14:20+08:00",
+  "finished_at": null,
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train_v10.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--mode",
+    "diffusion",
+    "--condition",
+    "both",
+    "--epochs",
+    "20",
+    "--batch-size",
+    "16",
+    "--microbatch",
+    "4",
+    "--sample-steps",
+    "32",
+    "--validation-count",
+    "256",
+    "--out",
+    "Model/runs/v10-diffusion-q5-20epochs"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "81e317582911c34978e6b6ffd457803142e0f846f381ccd82352919611f27c62",
+    "directory": "Model/experiments/source_snapshots/81e317582911c34978e6b6ffd457803142e0f846f381ccd82352919611f27c62",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "728caa4c94a4a3fbcfeac0572076fc732991db6d2d0ab13ace3b00de365fbb98",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "096fddf68aedfa1be8700d5ecf239005a90523366996058d783c965e41a8489b",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "ec31c11af5f3b75dd9f8b30e7aaf529fe02cd29f5010539ed0c91c73f933c635",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "40760304633d7b29d24424bea251709c50297ba7d0348e01eb5cfd5e97e122f8",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "f67fbd12a5a657826e3ca952f6c8df8c179c7fd10f4f6113484a0795aafbaed9",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "6f96cb90ec7e70f1a1286a9d6d31dd630f733f8f37d3721be136a93ff5d480c6",
+      "v10/diffusion.py": "6e700093ddc6ea26cabf87342224cd4b14cf2a82b08ec813caece24ab1f62768",
+      "v10/model.py": "1aceb62f2dea97df3f12f5ac19caf8ed099f90ecd97317abf4acb0a140d02bad",
+      "v10/README.md": "5f0aa8b586a36619e9c10e755d26a38bb4caee8eaa73613b1ed79760106cd52a",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "7a2d6bebce82f64b9d344e708b671d417c75b0e19a4a3de9d6da7ba073720576",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T23:50:17+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+      "out": "Model\\runs\\v10-diffusion-q5-20epochs",
+      "mode": "diffusion",
+      "condition": "both",
+      "channels": 48,
+      "epochs": 20,
+      "batch_size": 16,
+      "microbatch": 4,
+      "lr": 0.0001,
+      "low_frequency_weight": 0.0,
+      "timesteps": 1000,
+      "sample_steps": 32,
+      "validation_count": 256,
+      "max_steps": 0,
+      "val_steps": 0,
+      "scale_steps": 0,
+      "seed": 42,
+      "device": "auto",
+      "architecture": "v10",
+      "history": 2,
+      "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720
+      },
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "train_samples": 21570,
+      "validation_samples": 256,
+      "validation_full_samples": 5370,
+      "validation_keys": [
+        [
+          721,
+          0
+        ],
+        [
+          721,
+          24
+        ],
+        [
+          722,
+          0
+        ],
+        [
+          722,
+          24
+        ],
+        [
+          723,
+          0
+        ],
+        [
+          723,
+          24
+        ],
+        [
+          724,
+          0
+        ],
+        [
+          724,
+          22
+        ],
+        [
+          725,
+          0
+        ],
+        [
+          725,
+          22
+        ],
+        [
+          726,
+          0
+        ],
+        [
+          726,
+          22
+        ],
+        [
+          727,
+          0
+        ],
+        [
+          727,
+          22
+        ],
+        [
+          728,
+          0
+        ],
+        [
+          728,
+          22
+        ],
+        [
+          729,
+          0
+        ],
+        [
+          729,
+          22
+        ],
+        [
+          730,
+          0
+        ],
+        [
+          730,
+          22
+        ],
+        [
+          731,
+          0
+        ],
+        [
+          731,
+          22
+        ],
+        [
+          732,
+          0
+        ],
+        [
+          732,
+          22
+        ],
+        [
+          733,
+          0
+        ],
+        [
+          733,
+          22
+        ],
+        [
+          734,
+          0
+        ],
+        [
+          734,
+          22
+        ],
+        [
+          735,
+          0
+        ],
+        [
+          735,
+          22
+        ],
+        [
+          736,
+          0
+        ],
+        [
+          736,
+          22
+        ],
+        [
+          737,
+          18
+        ],
+        [
+          738,
+          18
+        ],
+        [
+          739,
+          18
+        ],
+        [
+          740,
+          14
+        ],
+        [
+          741,
+          14
+        ],
+        [
+          742,
+          14
+        ],
+        [
+          743,
+          14
+        ],
+        [
+          744,
+          14
+        ],
+        [
+          745,
+          14
+        ],
+        [
+          746,
+          14
+        ],
+        [
+          747,
+          14
+        ],
+        [
+          748,
+          14
+        ],
+        [
+          749,
+          14
+        ],
+        [
+          750,
+          14
+        ],
+        [
+          751,
+          14
+        ],
+        [
+          752,
+          14
+        ],
+        [
+          753,
+          12
+        ],
+        [
+          754,
+          12
+        ],
+        [
+          755,
+          12
+        ],
+        [
+          756,
+          6
+        ],
+        [
+          756,
+          28
+        ],
+        [
+          757,
+          6
+        ],
+        [
+          757,
+          28
+        ],
+        [
+          758,
+          6
+        ],
+        [
+          758,
+          28
+        ],
+        [
+          759,
+          6
+        ],
+        [
+          759,
+          28
+        ],
+        [
+          760,
+          6
+        ],
+        [
+          760,
+          28
+        ],
+        [
+          761,
+          6
+        ],
+        [
+          761,
+          28
+        ],
+        [
+          762,
+          6
+        ],
+        [
+          762,
+          28
+        ],
+        [
+          763,
+          6
+        ],
+        [
+          763,
+          28
+        ],
+        [
+          764,
+          6
+        ],
+        [
+          764,
+          28
+        ],
+        [
+          765,
+          6
+        ],
+        [
+          765,
+          28
+        ],
+        [
+          766,
+          6
+        ],
+        [
+          766,
+          28
+        ],
+        [
+          767,
+          6
+        ],
+        [
+          767,
+          28
+        ],
+        [
+          768,
+          6
+        ],
+        [
+          768,
+          28
+        ],
+        [
+          769,
+          6
+        ],
+        [
+          770,
+          6
+        ],
+        [
+          771,
+          6
+        ],
+        [
+          772,
+          20
+        ],
+        [
+          773,
+          20
+        ],
+        [
+          774,
+          20
+        ],
+        [
+          775,
+          20
+        ],
+        [
+          776,
+          20
+        ],
+        [
+          777,
+          20
+        ],
+        [
+          778,
+          20
+        ],
+        [
+          779,
+          20
+        ],
+        [
+          780,
+          20
+        ],
+        [
+          781,
+          20
+        ],
+        [
+          782,
+          20
+        ],
+        [
+          783,
+          20
+        ],
+        [
+          784,
+          20
+        ],
+        [
+          785,
+          0
+        ],
+        [
+          785,
+          24
+        ],
+        [
+          786,
+          0
+        ],
+        [
+          786,
+          24
+        ],
+        [
+          787,
+          0
+        ],
+        [
+          787,
+          24
+        ],
+        [
+          788,
+          12
+        ],
+        [
+          789,
+          12
+        ],
+        [
+          790,
+          12
+        ],
+        [
+          791,
+          12
+        ],
+        [
+          792,
+          12
+        ],
+        [
+          793,
+          12
+        ],
+        [
+          794,
+          12
+        ],
+        [
+          795,
+          12
+        ],
+        [
+          796,
+          12
+        ],
+        [
+          797,
+          12
+        ],
+        [
+          798,
+          12
+        ],
+        [
+          799,
+          12
+        ],
+        [
+          800,
+          12
+        ],
+        [
+          801,
+          18
+        ],
+        [
+          802,
+          18
+        ],
+        [
+          803,
+          18
+        ],
+        [
+          804,
+          4
+        ],
+        [
+          804,
+          25
+        ],
+        [
+          805,
+          4
+        ],
+        [
+          805,
+          25
+        ],
+        [
+          806,
+          4
+        ],
+        [
+          806,
+          25
+        ],
+        [
+          807,
+          4
+        ],
+        [
+          807,
+          25
+        ],
+        [
+          808,
+          4
+        ],
+        [
+          808,
+          25
+        ],
+        [
+          809,
+          4
+        ],
+        [
+          809,
+          25
+        ],
+        [
+          810,
+          4
+        ],
+        [
+          810,
+          25
+        ],
+        [
+          811,
+          4
+        ],
+        [
+          811,
+          25
+        ],
+        [
+          812,
+          4
+        ],
+        [
+          812,
+          25
+        ],
+        [
+          813,
+          4
+        ],
+        [
+          813,
+          25
+        ],
+        [
+          814,
+          4
+        ],
+        [
+          814,
+          25
+        ],
+        [
+          815,
+          4
+        ],
+        [
+          815,
+          25
+        ],
+        [
+          816,
+          4
+        ],
+        [
+          816,
+          25
+        ],
+        [
+          817,
+          11
+        ],
+        [
+          818,
+          11
+        ],
+        [
+          819,
+          11
+        ],
+        [
+          820,
+          17
+        ],
+        [
+          821,
+          17
+        ],
+        [
+          822,
+          17
+        ],
+        [
+          823,
+          17
+        ],
+        [
+          824,
+          17
+        ],
+        [
+          825,
+          17
+        ],
+        [
+          826,
+          17
+        ],
+        [
+          827,
+          17
+        ],
+        [
+          828,
+          17
+        ],
+        [
+          829,
+          17
+        ],
+        [
+          830,
+          17
+        ],
+        [
+          831,
+          17
+        ],
+        [
+          832,
+          17
+        ],
+        [
+          833,
+          5
+        ],
+        [
+          833,
+          29
+        ],
+        [
+          834,
+          5
+        ],
+        [
+          834,
+          29
+        ],
+        [
+          835,
+          5
+        ],
+        [
+          835,
+          29
+        ],
+        [
+          836,
+          9
+        ],
+        [
+          837,
+          9
+        ],
+        [
+          838,
+          9
+        ],
+        [
+          839,
+          9
+        ],
+        [
+          840,
+          9
+        ],
+        [
+          841,
+          9
+        ],
+        [
+          842,
+          9
+        ],
+        [
+          843,
+          9
+        ],
+        [
+          844,
+          9
+        ],
+        [
+          845,
+          9
+        ],
+        [
+          846,
+          9
+        ],
+        [
+          847,
+          9
+        ],
+        [
+          848,
+          9
+        ],
+        [
+          849,
+          23
+        ],
+        [
+          850,
+          23
+        ],
+        [
+          851,
+          23
+        ],
+        [
+          852,
+          1
+        ],
+        [
+          852,
+          23
+        ],
+        [
+          853,
+          1
+        ],
+        [
+          853,
+          23
+        ],
+        [
+          854,
+          1
+        ],
+        [
+          854,
+          23
+        ],
+        [
+          855,
+          1
+        ],
+        [
+          855,
+          23
+        ],
+        [
+          856,
+          1
+        ],
+        [
+          856,
+          23
+        ],
+        [
+          857,
+          1
+        ],
+        [
+          857,
+          23
+        ],
+        [
+          858,
+          1
+        ],
+        [
+          858,
+          23
+        ],
+        [
+          859,
+          1
+        ],
+        [
+          859,
+          23
+        ],
+        [
+          860,
+          1
+        ],
+        [
+          860,
+          23
+        ],
+        [
+          861,
+          1
+        ],
+        [
+          861,
+          23
+        ],
+        [
+          862,
+          1
+        ],
+        [
+          862,
+          23
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          863,
+          23
+        ],
+        [
+          864,
+          1
+        ],
+        [
+          864,
+          23
+        ],
+        [
+          865,
+          17
+        ],
+        [
+          866,
+          17
+        ],
+        [
+          867,
+          17
+        ],
+        [
+          868,
+          15
+        ],
+        [
+          869,
+          15
+        ],
+        [
+          870,
+          15
+        ],
+        [
+          871,
+          15
+        ],
+        [
+          872,
+          15
+        ],
+        [
+          873,
+          15
+        ],
+        [
+          874,
+          15
+        ],
+        [
+          875,
+          15
+        ],
+        [
+          876,
+          15
+        ],
+        [
+          877,
+          15
+        ],
+        [
+          878,
+          15
+        ],
+        [
+          879,
+          15
+        ],
+        [
+          880,
+          15
+        ],
+        [
+          881,
+          11
+        ],
+        [
+          882,
+          11
+        ],
+        [
+          883,
+          11
+        ],
+        [
+          884,
+          7
+        ],
+        [
+          884,
+          29
+        ],
+        [
+          885,
+          7
+        ],
+        [
+          885,
+          29
+        ],
+        [
+          886,
+          7
+        ],
+        [
+          886,
+          29
+        ],
+        [
+          887,
+          7
+        ],
+        [
+          887,
+          29
+        ],
+        [
+          888,
+          7
+        ],
+        [
+          888,
+          29
+        ],
+        [
+          889,
+          7
+        ],
+        [
+          889,
+          29
+        ],
+        [
+          890,
+          7
+        ],
+        [
+          890,
+          29
+        ],
+        [
+          891,
+          7
+        ],
+        [
+          891,
+          29
+        ],
+        [
+          892,
+          7
+        ],
+        [
+          892,
+          29
+        ],
+        [
+          893,
+          7
+        ],
+        [
+          893,
+          29
+        ],
+        [
+          894,
+          7
+        ],
+        [
+          894,
+          29
+        ],
+        [
+          895,
+          7
+        ],
+        [
+          895,
+          29
+        ],
+        [
+          896,
+          7
+        ],
+        [
+          896,
+          29
+        ],
+        [
+          897,
+          5
+        ],
+        [
+          897,
+          29
+        ],
+        [
+          898,
+          5
+        ],
+        [
+          898,
+          29
+        ],
+        [
+          899,
+          5
+        ],
+        [
+          899,
+          29
+        ]
+      ],
+      "device_used": "cuda",
+      "torch": "2.7.1+cu126",
+      "gammas": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+      "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+      "noise_schedule": "cosine_s0.008_beta_max0.999",
+      "sample_seed": 0,
+      "noise_policy": "per_frame",
+      "precision": "FP32",
+      "weight_decay": 0.0001,
+      "coverage": "full_training_fixed_subset_validation",
+      "residual_statistics": {
+        "method": "population_std_train_only_floor_0.01",
+        "samples": 21570,
+        "mean": [
+          -0.004730205343787168,
+          0.002227697577441214,
+          0.0028698916385016334,
+          0.0011661499426800467
+        ],
+        "std": [
+          0.07923414477171138,
+          0.07745912812870434,
+          0.07813729346561686,
+          0.07847540133816912
+        ]
+      },
+      "parameters": 280340
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "objective": 0.3083514776897751,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.44166229999973
+        },
+        "validation": {
+          "mae_8bit": 77.3052402511239,
+          "psnr_raw": 8.457421380330349,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 24.62169099971652,
+              "psnr_raw": 17.954091905991824,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 40.399354096502066,
+              "psnr_raw": 13.954451815944841,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 58.4615957736969,
+              "psnr_raw": 10.838630607919095,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 77.3052402511239,
+              "psnr_raw": 8.457421380330349,
+              "samples": 256
+            }
+          },
+          "seconds": 7.941736100001435,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "objective": 0.2096332607978215,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.28747500000463
+        },
+        "validation": {
+          "mae_8bit": 79.65543238073587,
+          "psnr_raw": 8.289343176295294,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 25.515576409175992,
+              "psnr_raw": 17.877805375991166,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 41.92211630567908,
+              "psnr_raw": 13.81460016168415,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 60.394533433020115,
+              "psnr_raw": 10.678406972131638,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 79.65543238073587,
+              "psnr_raw": 8.289343176295294,
+              "samples": 256
+            }
+          },
+          "seconds": 8.018594699999085,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "objective": 0.19692869721620404,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 146.8053196999972
+        },
+        "validation": {
+          "mae_8bit": 77.02560033649206,
+          "psnr_raw": 8.51843102609526,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 24.783812530338764,
+              "psnr_raw": 18.01221486360331,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 40.470703057944775,
+              "psnr_raw": 14.021416359751907,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 58.34568451344967,
+              "psnr_raw": 10.902732455375737,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 77.02560033649206,
+              "psnr_raw": 8.51843102609526,
+              "samples": 256
+            }
+          },
+          "seconds": 8.042555699998047,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "objective": 0.18855747000336315,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.77417309999873
+        },
+        "validation": {
+          "mae_8bit": 95.1970502436161,
+          "psnr_raw": 7.1701979462387015,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 29.805681198835373,
+              "psnr_raw": 16.944320686755294,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 50.41876494884491,
+              "psnr_raw": 12.674224864043335,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 72.51739570498466,
+              "psnr_raw": 9.537434488442461,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 95.1970502436161,
+              "psnr_raw": 7.1701979462387015,
+              "samples": 256
+            }
+          },
+          "seconds": 7.983689799999411,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "objective": 0.18306561434588806,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.06525699999474
+        },
+        "validation": {
+          "mae_8bit": 60.84587815403938,
+          "psnr_raw": 10.388833128288464,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 22.1181496437639,
+              "psnr_raw": 18.900320944233112,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 33.36979001015425,
+              "psnr_raw": 15.604393629785152,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 46.662199314683676,
+              "psnr_raw": 12.700320408386187,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 60.84587815403938,
+              "psnr_raw": 10.388833128288464,
+              "samples": 256
+            }
+          },
+          "seconds": 7.987954500000342,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 6,
+        "train": {
+          "objective": 0.1809431014775083,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.02450030000182
+        },
+        "validation": {
+          "mae_8bit": 65.00478310883045,
+          "psnr_raw": 9.823812224673311,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 21.78018551878631,
+              "psnr_raw": 18.873493839275053,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 34.26090831309557,
+              "psnr_raw": 15.266844340862365,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 49.184010945260525,
+              "psnr_raw": 12.20899870615389,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 65.00478310883045,
+              "psnr_raw": 9.823812224673311,
+              "samples": 256
+            }
+          },
+          "seconds": 7.997388200004934,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 7,
+        "train": {
+          "objective": 0.1781392564298477,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.2987720999954
+        },
+        "validation": {
+          "mae_8bit": 73.04310927540064,
+          "psnr_raw": 9.094931843787293,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 25.058482786640525,
+              "psnr_raw": 18.08009009942666,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 39.62678050249815,
+              "psnr_raw": 14.392097526813837,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 55.95753014087677,
+              "psnr_raw": 11.411962337574275,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 73.04310927540064,
+              "psnr_raw": 9.094931843787293,
+              "samples": 256
+            }
+          },
+          "seconds": 7.971918600000208,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 8,
+        "train": {
+          "objective": 0.1741755781739287,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.40279030000238
+        },
+        "validation": {
+          "mae_8bit": 67.11833609640598,
+          "psnr_raw": 9.615528374982965,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 22.78130592405796,
+              "psnr_raw": 18.642187608188692,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 35.78278763964772,
+              "psnr_raw": 15.011886702111518,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 51.011046577245,
+              "psnr_raw": 11.979219451504866,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 67.11833609640598,
+              "psnr_raw": 9.615528374982965,
+              "samples": 256
+            }
+          },
+          "seconds": 8.023622300002899,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 9,
+        "train": {
+          "objective": 0.1740771064167781,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 143.64630300000135
+        },
+        "validation": {
+          "mae_8bit": 73.10325130820274,
+          "psnr_raw": 8.973519819649693,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 24.34142430871725,
+              "psnr_raw": 18.202660338025996,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 38.97330562770367,
+              "psnr_raw": 14.391539708086379,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 55.632457204163074,
+              "psnr_raw": 11.3337410970294,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 73.10325130820274,
+              "psnr_raw": 8.973519819649693,
+              "samples": 256
+            }
+          },
+          "seconds": 8.006578200001968,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 10,
+        "train": {
+          "objective": 0.17402394800880855,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 144.53964699999779
+        },
+        "validation": {
+          "mae_8bit": 73.871187441051,
+          "psnr_raw": 9.052429674584282,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 24.91664912737906,
+              "psnr_raw": 18.116317015081755,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 39.77023762464523,
+              "psnr_raw": 14.388570402667778,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 56.44553719460964,
+              "psnr_raw": 11.383417060276294,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 73.871187441051,
+              "psnr_raw": 9.052429674584282,
+              "samples": 256
+            }
+          },
+          "seconds": 8.031917500004056,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 11,
+        "train": {
+          "objective": 0.17059624424712852,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 144.9512281999996
+        },
+        "validation": {
+          "mae_8bit": 74.70868948101997,
+          "psnr_raw": 8.851708735602937,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 24.740516513586044,
+              "psnr_raw": 18.104261264732816,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 39.793777361512184,
+              "psnr_raw": 14.266494408506814,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 56.856299713253975,
+              "psnr_raw": 11.208730575768712,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 74.70868948101997,
+              "psnr_raw": 8.851708735602937,
+              "samples": 256
+            }
+          },
+          "seconds": 8.04380300000048,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 12,
+        "train": {
+          "objective": 0.17067788828718727,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 153.24788850000186
+        },
+        "validation": {
+          "mae_8bit": 57.07733765244484,
+          "psnr_raw": 10.77055190386406,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 20.925035325810313,
+              "psnr_raw": 19.12235974864029,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 31.084426771849394,
+              "psnr_raw": 15.955746846073042,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 43.59553549066186,
+              "psnr_raw": 13.079432565393152,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 57.07733765244484,
+              "psnr_raw": 10.77055190386406,
+              "samples": 256
+            }
+          },
+          "seconds": 8.127571799996076,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 13,
+        "train": {
+          "objective": 0.1662556545911672,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 148.1607748000024
+        },
+        "validation": {
+          "mae_8bit": 73.77302502840757,
+          "psnr_raw": 9.019362094786525,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 24.898843947798014,
+              "psnr_raw": 18.091453255183964,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 39.71288787201047,
+              "psnr_raw": 14.355700367955302,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 56.36439596861601,
+              "psnr_raw": 11.349868658433289,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 73.77302502840757,
+              "psnr_raw": 9.019362094786525,
+              "samples": 256
+            }
+          },
+          "seconds": 8.177957699997933,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 14,
+        "train": {
+          "objective": 0.16512498149029153,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 149.62304969999968
+        },
+        "validation": {
+          "mae_8bit": 56.68550058826804,
+          "psnr_raw": 10.962085620339776,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 21.812347562983632,
+              "psnr_raw": 18.91215183242332,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 31.873597115278244,
+              "psnr_raw": 15.920437210981849,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 43.84824435040355,
+              "psnr_raw": 13.186602702015398,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 56.68550058826804,
+              "psnr_raw": 10.962085620339776,
+              "samples": 256
+            }
+          },
+          "seconds": 8.18111950000457,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 14,
+    "best_validation": {
+      "mae_8bit": 56.68550058826804,
+      "psnr_raw": 10.962085620339776,
+      "samples": 256,
+      "gammas": {
+        "0.0": {
+          "mae_8bit": 17.271230522543192,
+          "psnr_raw": 20.08750072693569,
+          "samples": 256
+        },
+        "0.25": {
+          "mae_8bit": 21.812347562983632,
+          "psnr_raw": 18.91215183242332,
+          "samples": 256
+        },
+        "0.5": {
+          "mae_8bit": 31.873597115278244,
+          "psnr_raw": 15.920437210981849,
+          "samples": 256
+        },
+        "0.75": {
+          "mae_8bit": 43.84824435040355,
+          "psnr_raw": 13.186602702015398,
+          "samples": 256
+        },
+        "1.0": {
+          "mae_8bit": 56.68550058826804,
+          "psnr_raw": 10.962085620339776,
+          "samples": 256
+        }
+      },
+      "seconds": 8.18111950000457,
+      "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+    },
+    "coverage": "full_epochs",
+    "artifacts": [
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/best.pt",
+        "bytes": 3427642
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/config.json",
+        "bytes": 11370
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-001-target-base-generated.png",
+        "bytes": 52086
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-002-target-base-generated.png",
+        "bytes": 50888
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-003-target-base-generated.png",
+        "bytes": 51092
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-004-target-base-generated.png",
+        "bytes": 47863
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-005-target-base-generated.png",
+        "bytes": 47600
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-005.pt",
+        "bytes": 3438795
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-006-target-base-generated.png",
+        "bytes": 49023
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-007-target-base-generated.png",
+        "bytes": 47992
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-008-target-base-generated.png",
+        "bytes": 49741
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-009-target-base-generated.png",
+        "bytes": 49527
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-010-target-base-generated.png",
+        "bytes": 49012
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-010.pt",
+        "bytes": 3438795
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-011-target-base-generated.png",
+        "bytes": 48496
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-012-target-base-generated.png",
+        "bytes": 50070
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-013-target-base-generated.png",
+        "bytes": 49385
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/epoch-014-target-base-generated.png",
+        "bytes": 47780
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/last.pt",
+        "bytes": 3427642
+      },
+      {
+        "path": "Model/runs/v10-diffusion-q5-20epochs/metrics.jsonl",
+        "bytes": 11529
+      }
+    ]
+  }
+}

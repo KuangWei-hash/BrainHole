@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "id": "training--hybrid-v8-history2-expand4layer--run-0b0d583f22c7",
+  "kind": "training",
+  "name": "hybrid-v8-history2-expand4layer",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/hybrid-v8-history2-expand4layer",
+  "started_at": "2026-11-21T13:54:41+08:00",
+  "finished_at": "2026-11-21T14:10:16+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--architecture",
+    "v8",
+    "--decoded-cache",
+    "Model/runs/decoded-q6.npz",
+    "--history",
+    "2",
+    "--device",
+    "cuda",
+    "--epochs",
+    "5",
+    "--out",
+    "Model/runs/hybrid-v8-history2-expand4layer"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "92f3f87d4c9d7db3a9c99bef9a153230a37fdfa4c169987819c7e157faa74462",
+    "directory": "Model/experiments/source_snapshots/92f3f87d4c9d7db3a9c99bef9a153230a37fdfa4c169987819c7e157faa74462",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "e1f850fa4f9517bf67718f3cbc1e33c06201d3b5cdb071a79f1ec9faa1adb591",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "8aab0b68d877bcf0a235acf9bc309db64aecfa3de38b0b1c2f9539620808971c",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "12cbf1d088b779d2222172d85a7ae051ebd2ae04f9e1331cdead82d5658bafd4",
+      "test_record_experiment.py": "7936d985816fad2724804b0f847ddaef54edaa944193b0f59a0c05e70161c404",
+      "train.py": "312e3982cc52eb587e24fbf3be1dd05fbb024d5f51fe4883e5e052cb6fea5257",
+      "作法.MD": "d186e9e62079e9baa465d2b56fac64e8c635b57219b9ad07b0b3394d5565fc3a",
+      "驗收標準.md": "42692fda91a3a4482c7001cea752cc9f5015dbea72f0f558d59fee1828d1c082"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T14:10:16+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q6.npz",
+        "bytes": 17714112,
+        "sha256": "6bad8a2a18c7d47c30d0ac0766f70a37b8f80d66b2d3141393da7f858975a70e"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+      "val_db": null,
+      "history": 2,
+      "architecture": "v8",
+      "decoded_cache": "Model\\runs\\decoded-q6.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 0.5,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 5,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\hybrid-v8-history2-expand4layer",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+      "train_samples": 21570,
+      "validation_samples": 5370,
+      "parameters": 530268,
+      "input_contract": "encoded_and_decoded_raw_v1",
+      "residual_blocks": 5,
+      "residual_expansion": 2,
+      "residual_layers": 4
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 23.00422564594487,
+          "psnr_raw": 18.136850799792125,
+          "seconds": 171.60702750000019
+        },
+        "validation": {
+          "mae_8bit": 24.905215946530827,
+          "psnr_raw": 17.678737275002124,
+          "seconds": 13.53931510000075
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 20.41017750435106,
+          "psnr_raw": 18.891505572173987,
+          "seconds": 172.60387210000044
+        },
+        "validation": {
+          "mae_8bit": 22.701568446054473,
+          "psnr_raw": 18.149527644652267,
+          "seconds": 13.625207999999475
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 19.439476335216547,
+          "psnr_raw": 19.228935939451006,
+          "seconds": 173.37213059999885
+        },
+        "validation": {
+          "mae_8bit": 21.57185045134422,
+          "psnr_raw": 18.476171289174825,
+          "seconds": 13.679584800000157
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "mae_8bit": 18.22540204793795,
+          "psnr_raw": 19.66306329622621,
+          "seconds": 172.83654800000113
+        },
+        "validation": {
+          "mae_8bit": 20.940801806165187,
+          "psnr_raw": 18.562145583799293,
+          "seconds": 13.599703199999567
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "mae_8bit": 17.361855775812156,
+          "psnr_raw": 20.07911203128913,
+          "seconds": 173.38878300000033
+        },
+        "validation": {
+          "mae_8bit": 22.39160502493881,
+          "psnr_raw": 18.072066968658728,
+          "seconds": 13.579375999999684
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 4,
+    "best_validation": {
+      "mae_8bit": 20.940801806165187,
+      "psnr_raw": 18.562145583799293,
+      "seconds": 13.599703199999567
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/best.pt",
+        "bytes": 6418328,
+        "sha256": "575b1f48ac97024bbf94df12727889072f29021ad224c8385fb3b5ffc0ed7b28"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/config.json",
+        "bytes": 1059,
+        "sha256": "8984c23d187c9123a420d1820d85aac0d6c9d464275531f2a2297c322ddbbe81"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/epoch-001-raw.png",
+        "bytes": 16673,
+        "sha256": "4741dd419ec5634d8433382975c52ea9b260e3925f89a6eb0f2d8789e704c889"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/epoch-002-raw.png",
+        "bytes": 17533,
+        "sha256": "4ffff0184bbadd336008890bf28e4860569816ef2add1b77cd84e00910db1144"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/epoch-003-raw.png",
+        "bytes": 17758,
+        "sha256": "c2f2e68eee379945a2ec4c11907c8ab21b9c834c7e2a57820cc2f2231207bb44"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/epoch-004-raw.png",
+        "bytes": 17832,
+        "sha256": "22b5e9255fab0a15a79c72f2c15a3d681b7361c59ad50631a8a1919735b7e8a4"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/epoch-005-raw.png",
+        "bytes": 17983,
+        "sha256": "878a343f6d38876aae8a7d2091d212e505d79af228d37e40071cd4cc0449e4fd"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/last.pt",
+        "bytes": 6418328,
+        "sha256": "3b79cbca4a9a45013fd37a71e11410da8221e580689484576d4a3c2a49a771c9"
+      },
+      {
+        "path": "Model/runs/hybrid-v8-history2-expand4layer/metrics.jsonl",
+        "bytes": 1147,
+        "sha256": "6775dd4b84b5ec9a8401546fdb23ea6953e8e97c9ac9d234f83da1876d8b1825"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "T=2": {
+    "single_frame_mae": 4.571593742370606,
+    "naive_accum_mae": 4.571593742370606,
+    "aligned_accum_mae": 4.336499996185303,
+    "shift_search_saturation_rate": 0.2,
+    "saturate_dy_rate": 0.2,
+    "saturate_dx_rate": 0.2,
+    "n_shift_estimates": 25,
+    "n_windows": 25
+  },
+  "T=4": {
+    "single_frame_mae": 5.881343736648559,
+    "naive_accum_mae": 5.881343736648559,
+    "aligned_accum_mae": 5.192279939651489,
+    "shift_search_saturation_rate": 0.4666666666666667,
+    "saturate_dy_rate": 0.4666666666666667,
+    "saturate_dx_rate": 0.30666666666666664,
+    "n_shift_estimates": 75,
+    "n_windows": 25
+  },
+  "T=8": {
+    "single_frame_mae": 9.014023489952088,
+    "naive_accum_mae": 9.014023489952088,
+    "aligned_accum_mae": 7.534578838348389,
+    "shift_search_saturation_rate": 0.5428571428571428,
+    "saturate_dy_rate": 0.5371428571428571,
+    "saturate_dx_rate": 0.29714285714285715,
+    "n_shift_estimates": 175,
+    "n_windows": 25
+  },
+  "T=16": {
+    "single_frame_mae": 15.020999965667725,
+    "naive_accum_mae": 15.020999965667725,
+    "aligned_accum_mae": 14.094206790924073,
+    "shift_search_saturation_rate": 0.6933333333333334,
+    "saturate_dy_rate": 0.672,
+    "saturate_dx_rate": 0.37333333333333335,
+    "n_shift_estimates": 375,
+    "n_windows": 25
+  },
+  "search_range": {
+    "dy": [
+      -4,
+      -2,
+      0,
+      2,
+      4
+    ],
+    "dx": [
+      -24,
+      -22,
+      -20,
+      -18,
+      -16,
+      -14,
+      -12,
+      -10,
+      -8,
+      -6,
+      -4,
+      -2,
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24
+    ]
+  },
+  "note": "dy 受條帶僅 16 列限制（±4 已用掉一半重疊視窗）；dx 擴到 ±24。飽和率 = 最佳位移落在搜尋邊界的比例。"
+}

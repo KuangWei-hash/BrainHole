@@ -1,0 +1,3691 @@
+{
+  "schema_version": 1,
+  "id": "training--v10-b-scene-detail-20261122--run-2955f37d8969",
+  "kind": "training",
+  "name": "v10-b-scene-detail-20261122",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v10-b-scene-detail-20261122",
+  "started_at": "2026-11-22T02:09:47+08:00",
+  "finished_at": "2026-11-22T02:15:11+08:00",
+  "cwd": "Z:\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "Model/train_v10.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+    "--anchor-checkpoint",
+    "Model/runs/v10-q5-b-20261122-002704/best.pt",
+    "--out",
+    "Model/runs/v10-b-scene-detail-20261122",
+    "--train-start-frame",
+    "706",
+    "--val-stop-frame",
+    "751",
+    "--epochs",
+    "60",
+    "--validation-count",
+    "128",
+    "--device",
+    "cuda",
+    "--prediction-type",
+    "v",
+    "--sample-steps",
+    "32"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "b899a4f8c892c2aa8b0de830be893244b6e77e5987410c3f9c577128ea44f67b",
+    "directory": "Model/experiments/source_snapshots/b899a4f8c892c2aa8b0de830be893244b6e77e5987410c3f9c577128ea44f67b",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "41aa4bbe0fc5fa3a2725a1318be75b4dc43974934982ccedf52cd25ecd39341d",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "5496aaeddf4afb01fc8f2c5dccaa129b1e4d1b4b349de1a81bca01447e436dbb",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "79f0bea13705400dc63e23ccba531365eeef54ff9ad2d42bb0c9ab1763e80c6e",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "9279b91f5a2696cabddc5ed44e42e7e278b7d7282e8ddb3370cd525257f5aef8",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T02:15:12+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--anchor-checkpoint": [
+      {
+        "path": "Model/runs/v10-q5-b-20261122-002704/best.pt",
+        "bytes": 3427770,
+        "sha256": "8fb3c484b43fc667f9c6ed808a3a2522f0a33d0bcacc2c7c3d391754412d7396"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "decoded_cache": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+      "out": "Model\\runs\\v10-b-scene-detail-20261122",
+      "mode": "diffusion",
+      "condition": "both",
+      "prediction_type": "v",
+      "anchor_checkpoint": "Model\\runs\\v10-q5-b-20261122-002704\\best.pt",
+      "train_start_frame": 706,
+      "val_stop_frame": 751,
+      "channels": 48,
+      "epochs": 60,
+      "batch_size": 16,
+      "microbatch": 4,
+      "lr": 0.0001,
+      "low_frequency_weight": 0.0,
+      "timesteps": 1000,
+      "sample_steps": 32,
+      "validation_count": 128,
+      "max_steps": 0,
+      "val_steps": 0,
+      "scale_steps": 0,
+      "seed": 42,
+      "device": "cuda",
+      "architecture": "v10",
+      "history": 2,
+      "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "train_start_frame": 706,
+        "val_stop_frame": 751
+      },
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "train_samples": 390,
+      "validation_samples": 128,
+      "validation_full_samples": 900,
+      "validation_keys": [
+        [
+          721,
+          0
+        ],
+        [
+          721,
+          8
+        ],
+        [
+          721,
+          17
+        ],
+        [
+          721,
+          25
+        ],
+        [
+          722,
+          0
+        ],
+        [
+          722,
+          8
+        ],
+        [
+          722,
+          17
+        ],
+        [
+          722,
+          25
+        ],
+        [
+          723,
+          0
+        ],
+        [
+          723,
+          8
+        ],
+        [
+          723,
+          17
+        ],
+        [
+          723,
+          25
+        ],
+        [
+          724,
+          0
+        ],
+        [
+          724,
+          8
+        ],
+        [
+          724,
+          17
+        ],
+        [
+          724,
+          25
+        ],
+        [
+          725,
+          0
+        ],
+        [
+          725,
+          8
+        ],
+        [
+          725,
+          17
+        ],
+        [
+          725,
+          25
+        ],
+        [
+          726,
+          0
+        ],
+        [
+          726,
+          8
+        ],
+        [
+          726,
+          17
+        ],
+        [
+          726,
+          25
+        ],
+        [
+          727,
+          0
+        ],
+        [
+          727,
+          8
+        ],
+        [
+          727,
+          17
+        ],
+        [
+          727,
+          25
+        ],
+        [
+          728,
+          0
+        ],
+        [
+          728,
+          8
+        ],
+        [
+          728,
+          17
+        ],
+        [
+          728,
+          25
+        ],
+        [
+          729,
+          0
+        ],
+        [
+          729,
+          8
+        ],
+        [
+          729,
+          17
+        ],
+        [
+          729,
+          25
+        ],
+        [
+          730,
+          0
+        ],
+        [
+          730,
+          8
+        ],
+        [
+          730,
+          17
+        ],
+        [
+          730,
+          25
+        ],
+        [
+          731,
+          0
+        ],
+        [
+          731,
+          8
+        ],
+        [
+          731,
+          17
+        ],
+        [
+          731,
+          25
+        ],
+        [
+          732,
+          0
+        ],
+        [
+          732,
+          8
+        ],
+        [
+          732,
+          17
+        ],
+        [
+          732,
+          25
+        ],
+        [
+          733,
+          0
+        ],
+        [
+          733,
+          8
+        ],
+        [
+          733,
+          17
+        ],
+        [
+          733,
+          25
+        ],
+        [
+          734,
+          0
+        ],
+        [
+          734,
+          8
+        ],
+        [
+          734,
+          17
+        ],
+        [
+          734,
+          25
+        ],
+        [
+          735,
+          0
+        ],
+        [
+          735,
+          4
+        ],
+        [
+          735,
+          8
+        ],
+        [
+          735,
+          12
+        ],
+        [
+          735,
+          17
+        ],
+        [
+          735,
+          21
+        ],
+        [
+          735,
+          25
+        ],
+        [
+          735,
+          29
+        ],
+        [
+          736,
+          0
+        ],
+        [
+          736,
+          4
+        ],
+        [
+          736,
+          8
+        ],
+        [
+          736,
+          12
+        ],
+        [
+          736,
+          17
+        ],
+        [
+          736,
+          21
+        ],
+        [
+          736,
+          25
+        ],
+        [
+          736,
+          29
+        ],
+        [
+          737,
+          4
+        ],
+        [
+          737,
+          12
+        ],
+        [
+          737,
+          21
+        ],
+        [
+          737,
+          29
+        ],
+        [
+          738,
+          4
+        ],
+        [
+          738,
+          12
+        ],
+        [
+          738,
+          21
+        ],
+        [
+          738,
+          29
+        ],
+        [
+          739,
+          4
+        ],
+        [
+          739,
+          12
+        ],
+        [
+          739,
+          21
+        ],
+        [
+          739,
+          29
+        ],
+        [
+          740,
+          4
+        ],
+        [
+          740,
+          12
+        ],
+        [
+          740,
+          21
+        ],
+        [
+          740,
+          29
+        ],
+        [
+          741,
+          4
+        ],
+        [
+          741,
+          12
+        ],
+        [
+          741,
+          21
+        ],
+        [
+          741,
+          29
+        ],
+        [
+          742,
+          4
+        ],
+        [
+          742,
+          12
+        ],
+        [
+          742,
+          21
+        ],
+        [
+          742,
+          29
+        ],
+        [
+          743,
+          4
+        ],
+        [
+          743,
+          12
+        ],
+        [
+          743,
+          21
+        ],
+        [
+          743,
+          29
+        ],
+        [
+          744,
+          4
+        ],
+        [
+          744,
+          12
+        ],
+        [
+          744,
+          21
+        ],
+        [
+          744,
+          29
+        ],
+        [
+          745,
+          4
+        ],
+        [
+          745,
+          12
+        ],
+        [
+          745,
+          21
+        ],
+        [
+          745,
+          29
+        ],
+        [
+          746,
+          4
+        ],
+        [
+          746,
+          12
+        ],
+        [
+          746,
+          21
+        ],
+        [
+          746,
+          29
+        ],
+        [
+          747,
+          4
+        ],
+        [
+          747,
+          12
+        ],
+        [
+          747,
+          21
+        ],
+        [
+          747,
+          29
+        ],
+        [
+          748,
+          4
+        ],
+        [
+          748,
+          12
+        ],
+        [
+          748,
+          21
+        ],
+        [
+          748,
+          29
+        ],
+        [
+          749,
+          4
+        ],
+        [
+          749,
+          12
+        ],
+        [
+          749,
+          21
+        ],
+        [
+          749,
+          29
+        ],
+        [
+          750,
+          4
+        ],
+        [
+          750,
+          12
+        ],
+        [
+          750,
+          21
+        ],
+        [
+          750,
+          29
+        ]
+      ],
+      "device_used": "cuda",
+      "torch": "2.7.1+cu128",
+      "gammas": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+      "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+      "noise_schedule": "cosine_s0.008_beta_max0.999",
+      "sample_seed": 0,
+      "noise_policy": "per_frame",
+      "precision": "FP32",
+      "weight_decay": 0.0001,
+      "coverage": "full_training_fixed_subset_validation",
+      "residual_target": "cfa_gaussian_highpass_target_minus_frozen_anchor",
+      "anchor_epoch": 17,
+      "anchor_sha256": "8fb3c484b43fc667f9c6ed808a3a2522f0a33d0bcacc2c7c3d391754412d7396",
+      "residual_statistics": {
+        "method": "population_std_train_only_floor_0.01",
+        "samples": 390,
+        "mean": [
+          1.9569094983232012e-05,
+          2.1943308476069527e-05,
+          4.107913567558614e-06,
+          1.834338804406034e-05
+        ],
+        "std": [
+          0.03724671966261697,
+          0.044780979276643866,
+          0.04458498942522639,
+          0.039269846068645184
+        ]
+      },
+      "parameters": 280340
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "objective": 0.9867714212490962,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.4273000999965006
+        },
+        "validation": {
+          "mae_8bit": 15.675480879843235,
+          "psnr_raw": 21.506022744629085,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.698470585048199,
+              "psnr_raw": 22.766559877100974,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.375519964843988,
+              "psnr_raw": 22.484069612346083,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.398151490837336,
+              "psnr_raw": 22.049722369558346,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.675480879843235,
+              "psnr_raw": 21.506022744629085,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3020384999981616,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "objective": 0.9472360812700712,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.375442499993369
+        },
+        "validation": {
+          "mae_8bit": 15.849727369844913,
+          "psnr_raw": 21.412992991495052,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.71567957662046,
+              "psnr_raw": 22.756990096176956,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.433719541877508,
+              "psnr_raw": 22.452584051781738,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.511203404515982,
+              "psnr_raw": 21.988742796736123,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.849727369844913,
+              "psnr_raw": 21.412992991495052,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3969619999988936,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "objective": 0.9420857756565779,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.601919900000212
+        },
+        "validation": {
+          "mae_8bit": 15.91799146682024,
+          "psnr_raw": 21.384320151494652,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.722824523225427,
+              "psnr_raw": 22.754465682330483,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.457096932455897,
+              "psnr_raw": 22.44336345615612,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.555893756449223,
+              "psnr_raw": 21.970243475629335,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.91799146682024,
+              "psnr_raw": 21.384320151494652,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2582857999950647,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "objective": 0.9197215352302942,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.549803800007794
+        },
+        "validation": {
+          "mae_8bit": 15.986440233886242,
+          "psnr_raw": 21.35051747060961,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.728832380846143,
+              "psnr_raw": 22.75162478774765,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.478739431127906,
+              "psnr_raw": 22.432631770276327,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.598967865109444,
+              "psnr_raw": 21.94850744597108,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.986440233886242,
+              "psnr_raw": 21.35051747060961,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2581945999991149,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "objective": 0.9065341206697317,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.672589199995855
+        },
+        "validation": {
+          "mae_8bit": 15.976566653698683,
+          "psnr_raw": 21.33879169015429,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.728406993672252,
+              "psnr_raw": 22.750458570726156,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.476050790399313,
+              "psnr_raw": 22.428677959719035,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.592506881803274,
+              "psnr_raw": 21.940807223289337,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.976566653698683,
+              "psnr_raw": 21.33879169015429,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3837260000000242,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 6,
+        "train": {
+          "objective": 0.8913610299428304,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.5627967000036733
+        },
+        "validation": {
+          "mae_8bit": 15.920968037098646,
+          "psnr_raw": 21.363660111021723,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.72335335984826,
+              "psnr_raw": 22.753211211443485,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.458654183894396,
+              "psnr_raw": 22.437405586843788,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.557412344962358,
+              "psnr_raw": 21.95736493569075,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.920968037098646,
+              "psnr_raw": 21.363660111021723,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2986570000066422,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 7,
+        "train": {
+          "objective": 0.8930321421378699,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.5534619000100065
+        },
+        "validation": {
+          "mae_8bit": 16.05131282284856,
+          "psnr_raw": 21.284105636892406,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.735984737053514,
+              "psnr_raw": 22.745907769242685,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.501929016783834,
+              "psnr_raw": 22.411287268350453,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.641749769449234,
+              "psnr_raw": 21.905564939676303,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 16.05131282284856,
+              "psnr_raw": 21.284105636892406,
+              "samples": 128
+            }
+          },
+          "seconds": 1.280546099995263,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 8,
+        "train": {
+          "objective": 0.881365245122176,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6050503000005847
+        },
+        "validation": {
+          "mae_8bit": 15.772692203521729,
+          "psnr_raw": 21.437471079935428,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.711371462792158,
+              "psnr_raw": 22.75904657462473,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.413031361997128,
+              "psnr_raw": 22.460314936030453,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.46453506872058,
+              "psnr_raw": 22.004428374284323,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.772692203521729,
+              "psnr_raw": 21.437471079935428,
+              "samples": 128
+            }
+          },
+          "seconds": 1.4266513000038685,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 9,
+        "train": {
+          "objective": 0.8811647375424703,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.994132299994817
+        },
+        "validation": {
+          "mae_8bit": 15.858335237950087,
+          "psnr_raw": 21.38009264442701,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.719554703682661,
+              "psnr_raw": 22.754411686333114,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.44176523014903,
+              "psnr_raw": 22.442396769371232,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.520322155207396,
+              "psnr_raw": 21.967778734200518,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.858335237950087,
+              "psnr_raw": 21.38009264442701,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3772796999983257,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 10,
+        "train": {
+          "objective": 0.8790389675360459,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.694615900007193
+        },
+        "validation": {
+          "mae_8bit": 15.799403250217438,
+          "psnr_raw": 21.396724357533262,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.714386506006122,
+              "psnr_raw": 22.75573047128081,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.422694433480501,
+              "psnr_raw": 22.447569606705603,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.48256453126669,
+              "psnr_raw": 21.978394501791403,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.799403250217438,
+              "psnr_raw": 21.396724357533262,
+              "samples": 128
+            }
+          },
+          "seconds": 1.4675122000044212,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 11,
+        "train": {
+          "objective": 0.8647757780857576,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.983576999991783
+        },
+        "validation": {
+          "mae_8bit": 15.680609464645386,
+          "psnr_raw": 21.443048758274674,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.704697405919433,
+              "psnr_raw": 22.75894938662516,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.385868329554796,
+              "psnr_raw": 22.461369882435772,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.407952304929495,
+              "psnr_raw": 22.007523367394892,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.680609464645386,
+              "psnr_raw": 21.443048758274674,
+              "samples": 128
+            }
+          },
+          "seconds": 1.5032801000052132,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 12,
+        "train": {
+          "objective": 0.852983213082338,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.735379000005196
+        },
+        "validation": {
+          "mae_8bit": 15.428986016660929,
+          "psnr_raw": 21.563396456608718,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.682423666119576,
+              "psnr_raw": 22.769680640258116,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.306053517386317,
+              "psnr_raw": 22.49989463162993,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.248313751071692,
+              "psnr_raw": 22.08480721234908,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.428986016660929,
+              "psnr_raw": 21.563396456608718,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3589553000056185,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 13,
+        "train": {
+          "objective": 0.8432379144888658,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.0543138999928487
+        },
+        "validation": {
+          "mae_8bit": 15.355727847665548,
+          "psnr_raw": 21.581676733474534,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.676619097590446,
+              "psnr_raw": 22.77129671961974,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.283558344468474,
+              "psnr_raw": 22.50569518337235,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.202643241733313,
+              "psnr_raw": 22.096487595391675,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.355727847665548,
+              "psnr_raw": 21.581676733474534,
+              "samples": 128
+            }
+          },
+          "seconds": 1.4107408999989275,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 14,
+        "train": {
+          "objective": 0.8313912214376987,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.736688299992238
+        },
+        "validation": {
+          "mae_8bit": 15.18246816471219,
+          "psnr_raw": 21.652104191399797,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.661781938746572,
+              "psnr_raw": 22.77721946986791,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.229978654533625,
+              "psnr_raw": 22.52757739815675,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.093796752393246,
+              "psnr_raw": 22.141108557053307,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.18246816471219,
+              "psnr_raw": 21.652104191399797,
+              "samples": 128
+            }
+          },
+          "seconds": 1.7521523000032175,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 15,
+        "train": {
+          "objective": 0.8159380692702073,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.810453600002802
+        },
+        "validation": {
+          "mae_8bit": 14.932623591274023,
+          "psnr_raw": 21.774441673881366,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.640310905873775,
+              "psnr_raw": 22.78752998295547,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.152624115347862,
+              "psnr_raw": 22.565300162513925,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.937032174319029,
+              "psnr_raw": 22.21818738704306,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.932623591274023,
+              "psnr_raw": 21.774441673881366,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3538702000078047,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 16,
+        "train": {
+          "objective": 0.8104394279993498,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6402562000002945
+        },
+        "validation": {
+          "mae_8bit": 15.361923415213823,
+          "psnr_raw": 21.50824508181989,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.68110190704465,
+              "psnr_raw": 22.76469970201181,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.29305412992835,
+              "psnr_raw": 22.482209332208573,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.213037014007568,
+              "psnr_raw": 22.049403812292994,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.361923415213823,
+              "psnr_raw": 21.50824508181989,
+              "samples": 128
+            }
+          },
+          "seconds": 1.4373956000054022,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 17,
+        "train": {
+          "objective": 0.8022012206224295,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.600294300005771
+        },
+        "validation": {
+          "mae_8bit": 15.266591850668192,
+          "psnr_raw": 21.550707842161977,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.67446480318904,
+              "psnr_raw": 22.768183364185116,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.266292355954647,
+              "psnr_raw": 22.495392904155402,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.155378717929125,
+              "psnr_raw": 22.076372413051875,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.266591850668192,
+              "psnr_raw": 21.550707842161977,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2191456999862567,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 18,
+        "train": {
+          "objective": 0.7898494818271735,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.610635099990759
+        },
+        "validation": {
+          "mae_8bit": 15.008547127246857,
+          "psnr_raw": 21.68207247412537,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.651308370754123,
+              "psnr_raw": 22.779248657949562,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.183611357584596,
+              "psnr_raw": 22.536229339895883,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.99084659665823,
+              "psnr_raw": 22.15961270192055,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.008547127246857,
+              "psnr_raw": 21.68207247412537,
+              "samples": 128
+            }
+          },
+          "seconds": 1.242544299995643,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 19,
+        "train": {
+          "objective": 0.7827707886695862,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.566536400001496
+        },
+        "validation": {
+          "mae_8bit": 15.024777386337519,
+          "psnr_raw": 21.64769236008088,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.653755249455571,
+              "psnr_raw": 22.77551094507331,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.190476639196277,
+              "psnr_raw": 22.524527052530622,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.002578467130661,
+              "psnr_raw": 22.137164210237895,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.024777386337519,
+              "psnr_raw": 21.64769236008088,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2208847000001697,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 20,
+        "train": {
+          "objective": 0.7860570932045962,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.706800600004499
+        },
+        "validation": {
+          "mae_8bit": 15.066827829927206,
+          "psnr_raw": 21.629107612734906,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.658947765827179,
+              "psnr_raw": 22.7739162028957,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.206693978980184,
+              "psnr_raw": 22.518725365437597,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 14.0316083393991,
+              "psnr_raw": 22.125380198540846,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 15.066827829927206,
+              "psnr_raw": 21.629107612734906,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3015709000028437,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 21,
+        "train": {
+          "objective": 0.769006103124374,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.670525900000939
+        },
+        "validation": {
+          "mae_8bit": 14.850404743105173,
+          "psnr_raw": 21.73282316541174,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.63954876177013,
+              "psnr_raw": 22.78198334793583,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.137999840080738,
+              "psnr_raw": 22.54993427160524,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.894430570304394,
+              "psnr_raw": 22.190250362945175,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.850404743105173,
+              "psnr_raw": 21.73282316541174,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2983841999957804,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 22,
+        "train": {
+          "objective": 0.7663002439034291,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.592839399992954
+        },
+        "validation": {
+          "mae_8bit": 14.858131438493729,
+          "psnr_raw": 21.714055670701917,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.641888961195946,
+              "psnr_raw": 22.780811598420705,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.143436968326569,
+              "psnr_raw": 22.544672653526415,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.901646383106709,
+              "psnr_raw": 22.17879432800138,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.858131438493729,
+              "psnr_raw": 21.714055670701917,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3510902000125498,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 23,
+        "train": {
+          "objective": 0.7554621656735738,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.532229099990218
+        },
+        "validation": {
+          "mae_8bit": 14.879785906523466,
+          "psnr_raw": 21.716830823420633,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.641070675104856,
+              "psnr_raw": 22.782122269062576,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.145826280117035,
+              "psnr_raw": 22.546887891710988,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.911953330039978,
+              "psnr_raw": 22.181479939379795,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.879785906523466,
+              "psnr_raw": 21.716830823420633,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2441090000065742,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 24,
+        "train": {
+          "objective": 0.7768614481656979,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.8516101999994135
+        },
+        "validation": {
+          "mae_8bit": 14.54902771487832,
+          "psnr_raw": 21.880474903527848,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.612859848886728,
+              "psnr_raw": 22.79466872772895,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.043104017153382,
+              "psnr_raw": 22.59538541912177,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.703751862049103,
+              "psnr_raw": 22.282933117787387,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.54902771487832,
+              "psnr_raw": 21.880474903527848,
+              "samples": 128
+            }
+          },
+          "seconds": 1.444475299998885,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 25,
+        "train": {
+          "objective": 0.759529534364358,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6336433999967994
+        },
+        "validation": {
+          "mae_8bit": 14.874458022415638,
+          "psnr_raw": 21.686584007683265,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.643825812265277,
+              "psnr_raw": 22.778761701316217,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.149539820849895,
+              "psnr_raw": 22.536529907486788,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.912724308669567,
+              "psnr_raw": 22.161707374781052,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.874458022415638,
+              "psnr_raw": 21.686584007683265,
+              "samples": 128
+            }
+          },
+          "seconds": 1.421636800005217,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 26,
+        "train": {
+          "objective": 0.7553870525115576,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.8133479000098305
+        },
+        "validation": {
+          "mae_8bit": 14.73846958950162,
+          "psnr_raw": 21.757638346151285,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.630287993699312,
+              "psnr_raw": 22.784845828637827,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.103912059217691,
+              "psnr_raw": 22.55853745080907,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.824395768344402,
+              "psnr_raw": 22.206524443162262,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.73846958950162,
+              "psnr_raw": 21.757638346151285,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3560665999975754,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 27,
+        "train": {
+          "objective": 0.7660924804516328,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.818331799993757
+        },
+        "validation": {
+          "mae_8bit": 14.71434373408556,
+          "psnr_raw": 21.761978319215647,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.628325589001179,
+              "psnr_raw": 22.784562747976832,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.097076131030917,
+              "psnr_raw": 22.559048631785995,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.809817090630531,
+              "psnr_raw": 22.20868215867132,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.71434373408556,
+              "psnr_raw": 21.761978319215647,
+              "samples": 128
+            }
+          },
+          "seconds": 1.493921399989631,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 28,
+        "train": {
+          "objective": 0.7412492107122373,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.7774791000119876
+        },
+        "validation": {
+          "mae_8bit": 14.659146375954151,
+          "psnr_raw": 21.77228902765102,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.625247469171882,
+              "psnr_raw": 22.785384393307154,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.081960447132587,
+              "psnr_raw": 22.562152040153713,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.77654778584838,
+              "psnr_raw": 22.215113919626468,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.659146375954151,
+              "psnr_raw": 21.77228902765102,
+              "samples": 128
+            }
+          },
+          "seconds": 1.5830997000011848,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 29,
+        "train": {
+          "objective": 0.7536599040031433,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.9548994000069797
+        },
+        "validation": {
+          "mae_8bit": 14.829957280308008,
+          "psnr_raw": 21.693065973297312,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.639592744410038,
+              "psnr_raw": 22.77888303270181,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.134215528145432,
+              "psnr_raw": 22.537996161752947,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.883221361786127,
+              "psnr_raw": 22.165427285621632,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.829957280308008,
+              "psnr_raw": 21.693065973297312,
+              "samples": 128
+            }
+          },
+          "seconds": 1.5350438000023132,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 30,
+        "train": {
+          "objective": 0.7534142662317325,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.7797721000097226
+        },
+        "validation": {
+          "mae_8bit": 14.917243536561728,
+          "psnr_raw": 21.627033501073498,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.648587906733155,
+              "psnr_raw": 22.773905745869637,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.164996821433306,
+              "psnr_raw": 22.518287995169686,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.941441077739,
+              "psnr_raw": 22.124208326528688,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.917243536561728,
+              "psnr_raw": 21.627033501073498,
+              "samples": 128
+            }
+          },
+          "seconds": 1.4538534000021173,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 31,
+        "train": {
+          "objective": 0.7624384458248432,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.597268500001519
+        },
+        "validation": {
+          "mae_8bit": 14.514888636767864,
+          "psnr_raw": 21.872257999908374,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.610509674996138,
+              "psnr_raw": 22.79338943295481,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.03358324803412,
+              "psnr_raw": 22.59214110719963,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.683273715898395,
+              "psnr_raw": 22.277288033731683,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.514888636767864,
+              "psnr_raw": 21.872257999908374,
+              "samples": 128
+            }
+          },
+          "seconds": 1.237046599999303,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 32,
+        "train": {
+          "objective": 0.743228337703607,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.58569360000547
+        },
+        "validation": {
+          "mae_8bit": 14.63192330673337,
+          "psnr_raw": 21.778224614992652,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.623272525146604,
+              "psnr_raw": 22.78542095545172,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.074538875371218,
+              "psnr_raw": 22.563384223055948,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.760345455259085,
+              "psnr_raw": 22.21843106916388,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.63192330673337,
+              "psnr_raw": 21.778224614992652,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2324213999963831,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 33,
+        "train": {
+          "objective": 0.7492556892908536,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.5677495000127237
+        },
+        "validation": {
+          "mae_8bit": 14.857411187142134,
+          "psnr_raw": 21.66682651097712,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.642944544553757,
+              "psnr_raw": 22.776461571339887,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.144748847931623,
+              "psnr_raw": 22.529620480877895,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.902006603777409,
+              "psnr_raw": 22.148685175098958,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.857411187142134,
+              "psnr_raw": 21.66682651097712,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3452782000094885,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 34,
+        "train": {
+          "objective": 0.7484223384123582,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6050630000099773
+        },
+        "validation": {
+          "mae_8bit": 14.584934078156948,
+          "psnr_raw": 21.814148500546324,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.618346374481916,
+              "psnr_raw": 22.789740680359102,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.059172689914703,
+              "psnr_raw": 22.576016664185758,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.730641309171915,
+              "psnr_raw": 22.242080660689517,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.584934078156948,
+              "psnr_raw": 21.814148500546324,
+              "samples": 128
+            }
+          },
+          "seconds": 1.321962900008657,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 35,
+        "train": {
+          "objective": 0.7412711054850847,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.5556713999976637
+        },
+        "validation": {
+          "mae_8bit": 14.626691557466984,
+          "psnr_raw": 21.77594869561745,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.62189994379878,
+              "psnr_raw": 22.786719149462158,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.07162044197321,
+              "psnr_raw": 22.564574231084084,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.756184488534927,
+              "psnr_raw": 22.218310641975364,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.626691557466984,
+              "psnr_raw": 21.77594869561745,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2311531000013929,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 36,
+        "train": {
+          "objective": 0.7407272042372288,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6072054999967804
+        },
+        "validation": {
+          "mae_8bit": 14.38545922189951,
+          "psnr_raw": 21.934694476697537,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.600783431902528,
+              "psnr_raw": 22.798886249517953,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 12.996168840676546,
+              "psnr_raw": 22.61137079182799,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.604553245007992,
+              "psnr_raw": 22.316365662640383,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.38545922189951,
+              "psnr_raw": 21.934694476697537,
+              "samples": 128
+            }
+          },
+          "seconds": 1.349730100002489,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 37,
+        "train": {
+          "objective": 0.7270450463661781,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.5767454000015277
+        },
+        "validation": {
+          "mae_8bit": 14.361969452351332,
+          "psnr_raw": 21.928835090151715,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.599078178405762,
+              "psnr_raw": 22.798895148810743,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 12.989663684740663,
+              "psnr_raw": 22.610240229210522,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.590939905494452,
+              "psnr_raw": 22.31317389327994,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.361969452351332,
+              "psnr_raw": 21.928835090151715,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3638037000055192,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 38,
+        "train": {
+          "objective": 0.7360307843257219,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.5801200000132667
+        },
+        "validation": {
+          "mae_8bit": 14.596680957823992,
+          "psnr_raw": 21.796066658793052,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.619587482884526,
+              "psnr_raw": 22.78829043059182,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.062946552410722,
+              "psnr_raw": 22.570579755068557,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.738037042319775,
+              "psnr_raw": 22.230818680866715,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.596680957823992,
+              "psnr_raw": 21.796066658793052,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2464085000101477,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 39,
+        "train": {
+          "objective": 0.7485517929761838,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.9267569000076037
+        },
+        "validation": {
+          "mae_8bit": 14.533260270953178,
+          "psnr_raw": 21.821445465280803,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.61443723924458,
+              "psnr_raw": 22.790959564478307,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.044379703700542,
+              "psnr_raw": 22.57901275938569,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.699379626661539,
+              "psnr_raw": 22.24718087509948,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.533260270953178,
+              "psnr_raw": 21.821445465280803,
+              "samples": 128
+            }
+          },
+          "seconds": 1.8452561000012793,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 40,
+        "train": {
+          "objective": 0.7317553718884786,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.7053421000018716
+        },
+        "validation": {
+          "mae_8bit": 14.320196203887463,
+          "psnr_raw": 21.938651786236825,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.59669884108007,
+              "psnr_raw": 22.79752148337327,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 12.978404603898525,
+              "psnr_raw": 22.61039825786131,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.565968310460448,
+              "psnr_raw": 22.317303731098754,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.320196203887463,
+              "psnr_raw": 21.938651786236825,
+              "samples": 128
+            }
+          },
+          "seconds": 1.8892336999997497,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 41,
+        "train": {
+          "objective": 0.7391533799660511,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.432496200010064
+        },
+        "validation": {
+          "mae_8bit": 14.68264089524746,
+          "psnr_raw": 21.72877393650666,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.627502743154764,
+              "psnr_raw": 22.783293297469534,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.091109311208129,
+              "psnr_raw": 22.5507749569387,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.793346494436264,
+              "psnr_raw": 22.18914301380528,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.68264089524746,
+              "psnr_raw": 21.72877393650666,
+              "samples": 128
+            }
+          },
+          "seconds": 1.897633600005065,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 42,
+        "train": {
+          "objective": 0.7203016385053977,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.578841199996532
+        },
+        "validation": {
+          "mae_8bit": 14.575574990361929,
+          "psnr_raw": 21.778037251977878,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.619283879175782,
+              "psnr_raw": 22.78588430744665,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.058972915634513,
+              "psnr_raw": 22.56393393076715,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.727304803207517,
+              "psnr_raw": 22.218734359593224,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.575574990361929,
+              "psnr_raw": 21.778037251977878,
+              "samples": 128
+            }
+          },
+          "seconds": 2.025643399989349,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 43,
+        "train": {
+          "objective": 0.737446827460558,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.7495434999873396
+        },
+        "validation": {
+          "mae_8bit": 14.353133596479893,
+          "psnr_raw": 21.910611559665007,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.599826738238335,
+              "psnr_raw": 22.797158321599547,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 12.98992957547307,
+              "psnr_raw": 22.604465616298576,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.587771255522966,
+              "psnr_raw": 22.30166004280822,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.353133596479893,
+              "psnr_raw": 21.910611559665007,
+              "samples": 128
+            }
+          },
+          "seconds": 2.0163620000093943,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 44,
+        "train": {
+          "objective": 0.7194294064472884,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.420708999998169
+        },
+        "validation": {
+          "mae_8bit": 14.599223591387272,
+          "psnr_raw": 21.774623830280856,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.621009461581707,
+              "psnr_raw": 22.78642853263159,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.06608803384006,
+              "psnr_raw": 22.563941157023937,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.741950452327728,
+              "psnr_raw": 22.217322240592242,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.599223591387272,
+              "psnr_raw": 21.774623830280856,
+              "samples": 128
+            }
+          },
+          "seconds": 1.8497856999892974,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 45,
+        "train": {
+          "objective": 0.7141456594833961,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.343978100005188
+        },
+        "validation": {
+          "mae_8bit": 14.536078199744225,
+          "psnr_raw": 21.8102842626678,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.614878870546818,
+              "psnr_raw": 22.789407345269783,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.045121423900127,
+              "psnr_raw": 22.57482574897871,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.701063696295023,
+              "psnr_raw": 22.23965432296993,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.536078199744225,
+              "psnr_raw": 21.8102842626678,
+              "samples": 128
+            }
+          },
+          "seconds": 1.9241429999965476,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 46,
+        "train": {
+          "objective": 0.7279705793429644,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.587628399996902
+        },
+        "validation": {
+          "mae_8bit": 14.489977363497019,
+          "psnr_raw": 21.836475408679654,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.611939443275332,
+              "psnr_raw": 22.789252315304157,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.03156565129757,
+              "psnr_raw": 22.579821657027857,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.67249245941639,
+              "psnr_raw": 22.253954164428826,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.489977363497019,
+              "psnr_raw": 21.836475408679654,
+              "samples": 128
+            }
+          },
+          "seconds": 1.9329851000074996,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 47,
+        "train": {
+          "objective": 0.7242046270615016,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.5209158999932697
+        },
+        "validation": {
+          "mae_8bit": 14.758886083960533,
+          "psnr_raw": 21.68869416143722,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.634260965511203,
+              "psnr_raw": 22.78005460715018,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.114893754944205,
+              "psnr_raw": 22.538588309980618,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.841384561732411,
+              "psnr_raw": 22.16400652792522,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.758886083960533,
+              "psnr_raw": 21.68869416143722,
+              "samples": 128
+            }
+          },
+          "seconds": 1.6146273000049405,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 48,
+        "train": {
+          "objective": 0.7214214792618385,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.362990900001023
+        },
+        "validation": {
+          "mae_8bit": 14.590933956205845,
+          "psnr_raw": 21.777994554320333,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.619763033464551,
+              "psnr_raw": 22.785833030568284,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.061664026230574,
+              "psnr_raw": 22.56386042801004,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.73495027795434,
+              "psnr_raw": 22.21866549550446,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.590933956205845,
+              "psnr_raw": 21.777994554320333,
+              "samples": 128
+            }
+          },
+          "seconds": 1.6425539999909233,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 49,
+        "train": {
+          "objective": 0.7156941413879394,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.614001999987522
+        },
+        "validation": {
+          "mae_8bit": 14.692480277270079,
+          "psnr_raw": 21.70321199113903,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.628732832148671,
+              "psnr_raw": 22.781145962577032,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.094539482146502,
+              "psnr_raw": 22.54290438516231,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.800005922093987,
+              "psnr_raw": 22.173047620067088,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.692480277270079,
+              "psnr_raw": 21.70321199113903,
+              "samples": 128
+            }
+          },
+          "seconds": 1.6217719999986002,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 50,
+        "train": {
+          "objective": 0.7212316378568991,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.051939199998742
+        },
+        "validation": {
+          "mae_8bit": 14.674241065979004,
+          "psnr_raw": 21.708478730310837,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.627776803448796,
+              "psnr_raw": 22.782006066225,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.090480349957943,
+              "psnr_raw": 22.545054693481745,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.790016068145633,
+              "psnr_raw": 22.176729189156713,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.674241065979004,
+              "psnr_raw": 21.708478730310837,
+              "samples": 128
+            }
+          },
+          "seconds": 1.5628861999866785,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 51,
+        "train": {
+          "objective": 0.7271162072817484,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.8611457999941194
+        },
+        "validation": {
+          "mae_8bit": 14.525791391730309,
+          "psnr_raw": 21.80782555552146,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.614870890974998,
+              "psnr_raw": 22.787898719447746,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.043370477855206,
+              "psnr_raw": 22.5724226646588,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.695779699832201,
+              "psnr_raw": 22.2369681500555,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.525791391730309,
+              "psnr_raw": 21.80782555552146,
+              "samples": 128
+            }
+          },
+          "seconds": 1.4158127999980934,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 52,
+        "train": {
+          "objective": 0.7191399409220769,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.899908499995945
+        },
+        "validation": {
+          "mae_8bit": 14.526316903531551,
+          "psnr_raw": 21.80291133304019,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.615135071799159,
+              "psnr_raw": 22.78861910630553,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.044185059145093,
+              "psnr_raw": 22.572359512835753,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.696853712201118,
+              "psnr_raw": 22.23488934534648,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.526316903531551,
+              "psnr_raw": 21.80291133304019,
+              "samples": 128
+            }
+          },
+          "seconds": 1.7069943999958923,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 53,
+        "train": {
+          "objective": 0.7197301280804169,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 3.1535692000034032
+        },
+        "validation": {
+          "mae_8bit": 14.388866119086742,
+          "psnr_raw": 21.88597574667481,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.601125603541732,
+              "psnr_raw": 22.796828575448856,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 12.9980773832649,
+              "psnr_raw": 22.599217177312532,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.607679907232523,
+              "psnr_raw": 22.287870861071262,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.388866119086742,
+              "psnr_raw": 21.88597574667481,
+              "samples": 128
+            }
+          },
+          "seconds": 1.5589599999948405,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 54,
+        "train": {
+          "objective": 0.7186172641240633,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.8830177999916486
+        },
+        "validation": {
+          "mae_8bit": 14.740297861397266,
+          "psnr_raw": 21.662108209561993,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.633988520130515,
+              "psnr_raw": 22.777429771532873,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.111392242833972,
+              "psnr_raw": 22.529880107145956,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.83182056993246,
+              "psnr_raw": 22.146885870125995,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.740297861397266,
+              "psnr_raw": 21.662108209561993,
+              "samples": 128
+            }
+          },
+          "seconds": 1.5313709999900311,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 55,
+        "train": {
+          "objective": 0.723266707933866,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6486597000039183
+        },
+        "validation": {
+          "mae_8bit": 14.571996912360191,
+          "psnr_raw": 21.783419999914933,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.61823114566505,
+              "psnr_raw": 22.788060272475825,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.0574733261019,
+              "psnr_raw": 22.567765971756124,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.724885093048215,
+              "psnr_raw": 22.223622892244332,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.571996912360191,
+              "psnr_raw": 21.783419999914933,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2529747000080533,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 56,
+        "train": {
+          "objective": 0.7481403341660133,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.69221340000513
+        },
+        "validation": {
+          "mae_8bit": 14.691805243492126,
+          "psnr_raw": 21.710164810643423,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.628677925094962,
+              "psnr_raw": 22.781331936203706,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.094358991831541,
+              "psnr_raw": 22.544544248555745,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.79953370243311,
+              "psnr_raw": 22.177081829727943,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.691805243492126,
+              "psnr_raw": 21.710164810643423,
+              "samples": 128
+            }
+          },
+          "seconds": 1.301172299994505,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 57,
+        "train": {
+          "objective": 0.7251854743712988,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6657109999941895
+        },
+        "validation": {
+          "mae_8bit": 14.604578644037247,
+          "psnr_raw": 21.75929152753284,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.622000543400645,
+              "psnr_raw": 22.785505141728027,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.06890064291656,
+              "psnr_raw": 22.559703416270555,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.746104009449482,
+              "psnr_raw": 22.208018157884798,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.604578644037247,
+              "psnr_raw": 21.75929152753284,
+              "samples": 128
+            }
+          },
+          "seconds": 1.3048554999986663,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 58,
+        "train": {
+          "objective": 0.711337220057463,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6908748999994714
+        },
+        "validation": {
+          "mae_8bit": 14.649503823369741,
+          "psnr_raw": 21.730796331758462,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.624726897105575,
+              "psnr_raw": 22.784057034899398,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.080883964896202,
+              "psnr_raw": 22.552147755461363,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.772548500448465,
+              "psnr_raw": 22.19093362356064,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.649503823369741,
+              "psnr_raw": 21.730796331758462,
+              "samples": 128
+            }
+          },
+          "seconds": 1.384945300000254,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 59,
+        "train": {
+          "objective": 0.7062922768103771,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.692177000004449
+        },
+        "validation": {
+          "mae_8bit": 14.613686945289373,
+          "psnr_raw": 21.739644065797023,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.62305555678904,
+              "psnr_raw": 22.784434653513724,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.072365961968899,
+              "psnr_raw": 22.554405229736606,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.752638898789883,
+              "psnr_raw": 22.196179240215596,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.613686945289373,
+              "psnr_raw": 21.739644065797023,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2509684999968158,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 60,
+        "train": {
+          "objective": 0.706765915797307,
+          "samples": 390,
+          "optimizer_steps": 25,
+          "seconds": 2.6418160000030184
+        },
+        "validation": {
+          "mae_8bit": 14.787797782570124,
+          "psnr_raw": 21.66637499586858,
+          "samples": 128,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 12.46005323342979,
+              "psnr_raw": 22.86389140753552,
+              "samples": 128
+            },
+            "0.25": {
+              "mae_8bit": 12.636245978996158,
+              "psnr_raw": 22.77834661562143,
+              "samples": 128
+            },
+            "0.5": {
+              "mae_8bit": 13.122915029525757,
+              "psnr_raw": 22.531903152694408,
+              "samples": 128
+            },
+            "0.75": {
+              "mae_8bit": 13.858635731041431,
+              "psnr_raw": 22.15006400038359,
+              "samples": 128
+            },
+            "1.0": {
+              "mae_8bit": 14.787797782570124,
+              "psnr_raw": 21.66637499586858,
+              "samples": 128
+            }
+          },
+          "seconds": 1.2646715000009863,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 40,
+    "best_validation": {
+      "mae_8bit": 14.320196203887463,
+      "psnr_raw": 21.938651786236825,
+      "samples": 128,
+      "gammas": {
+        "0.0": {
+          "mae_8bit": 12.46005323342979,
+          "psnr_raw": 22.86389140753552,
+          "samples": 128
+        },
+        "0.25": {
+          "mae_8bit": 12.59669884108007,
+          "psnr_raw": 22.79752148337327,
+          "samples": 128
+        },
+        "0.5": {
+          "mae_8bit": 12.978404603898525,
+          "psnr_raw": 22.61039825786131,
+          "samples": 128
+        },
+        "0.75": {
+          "mae_8bit": 13.565968310460448,
+          "psnr_raw": 22.317303731098754,
+          "samples": 128
+        },
+        "1.0": {
+          "mae_8bit": 14.320196203887463,
+          "psnr_raw": 21.938651786236825,
+          "samples": 128
+        }
+      },
+      "seconds": 1.8892336999997497,
+      "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/best.pt",
+        "bytes": 4567276,
+        "sha256": "dbca6e959bf322aa502dca472554da51af6e308190ad6ed27e97d56cfc692c69"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/config.json",
+        "bytes": 7119,
+        "sha256": "850d03b0700d0ecb86bdf672dcfdf14e04278b5fc69ac027146a417ab150a0d3"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-001-target-base-generated.png",
+        "bytes": 47261,
+        "sha256": "c0b306d01bf429ba4d9076b28d002f28b89b4601b6b9149bcd15db66af02a33f"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-002-target-base-generated.png",
+        "bytes": 47373,
+        "sha256": "3582a991507724472ed6d102bf62314ba413566514827f7f990b2fd3632262df"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-003-target-base-generated.png",
+        "bytes": 47444,
+        "sha256": "ab74abc531d5db97c93b8a018ece786cde3921e36a77e7437033e49c0a8099da"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-004-target-base-generated.png",
+        "bytes": 47487,
+        "sha256": "ae67125becf991f5fa2da1180ce88a5c67ce48f5a8bb160202ad1427be9e6bae"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-005-target-base-generated.png",
+        "bytes": 47560,
+        "sha256": "92595a0f4981d0e8de6f8aadf5d2705b72435bc069bcc6c946ab8da19918171e"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-005.pt",
+        "bytes": 4582027,
+        "sha256": "2f22733c436a59b381c3a579dfece5ea3768b2eb1fa7017424b05138da2c6d83"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-006-target-base-generated.png",
+        "bytes": 47572,
+        "sha256": "1f1d3a0e0ca06e8102b4f149a880b35708f529efcc677b9ac590c5b2d500d089"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-007-target-base-generated.png",
+        "bytes": 47685,
+        "sha256": "a13fdb502d5906698d191c18a486f81d767a9d567c9ea11fe233ee52bccd5a33"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-008-target-base-generated.png",
+        "bytes": 47605,
+        "sha256": "62c464642fc8360f019b13d45e289ebb3869920148fe56e56b64fe3d8890125f"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-009-target-base-generated.png",
+        "bytes": 47693,
+        "sha256": "c9ec4d1d2f186463d310666cf0fd15544062d936fb6a98d46bd414cea0db0081"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-010-target-base-generated.png",
+        "bytes": 47683,
+        "sha256": "257f917646b979b799df10ac7fd2fb643fad168b404a737aabee2072eee45d70"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-010.pt",
+        "bytes": 4582027,
+        "sha256": "f73714f403eb686b438fef578e39275753ce169b69439a809a3c2aca93a17fdc"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-011-target-base-generated.png",
+        "bytes": 47629,
+        "sha256": "75f2c75c7d2281067d20a6c45da72a2daab06bcca8858edccc6c59b0027a7e83"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-012-target-base-generated.png",
+        "bytes": 47442,
+        "sha256": "01aad9c1bf058c772503f47b33f224df2aad0bce23bf21c4a8857dd68126fd74"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-013-target-base-generated.png",
+        "bytes": 47367,
+        "sha256": "3a375a1ede47c2d97439e7242ea5fbdddba8a196baef7f58112be75de5d4d49c"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-014-target-base-generated.png",
+        "bytes": 47239,
+        "sha256": "cd724bcd2723b8372100d7f0cb9334b251fda6b854274e69ad5d46cd7bf86d3c"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-015-target-base-generated.png",
+        "bytes": 47122,
+        "sha256": "d6bfd85556ebb15205314e94da395c52fc15498520c45cbae7b5e8e526941fbd"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-016-target-base-generated.png",
+        "bytes": 47364,
+        "sha256": "e3b197c4493ac3f5a500e68dd9906c1844b8eda4f87f73010a014d4716527757"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-017-target-base-generated.png",
+        "bytes": 47316,
+        "sha256": "c40be5b7e4220bced0d70aa2953627e2cfbf173a771cacf86c2345aaa36a9ee9"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-018-target-base-generated.png",
+        "bytes": 47161,
+        "sha256": "f2eba8ab27b6517a504ef3681d19fe320d94854b446d398f81f66e8f79bbde3a"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-019-target-base-generated.png",
+        "bytes": 47133,
+        "sha256": "a73459a400f44a8894f73415ef4d8f26111cdc84c14aafa70e50adfcecf2542a"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-020-target-base-generated.png",
+        "bytes": 47323,
+        "sha256": "dd2e6a7e3e683abe9a47170d0a4ae7ddfcf883e93509ef7187e54d7a2246a692"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-020.pt",
+        "bytes": 4582027,
+        "sha256": "32ced014cf451e0acdbecb9d672d285a25dbc1a93fb31b9bab51718804d89de2"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-021-target-base-generated.png",
+        "bytes": 47090,
+        "sha256": "99216053a750a4e6dff0ab48651f7c6b215a2f669a40ac990902eca5add429cd"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-022-target-base-generated.png",
+        "bytes": 47079,
+        "sha256": "ff56965bdf4de10dc218f4e58b5d9f72e484e6c97ce22f3b9bae4ffe029a4819"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-023-target-base-generated.png",
+        "bytes": 47003,
+        "sha256": "4585f630d2cb74ef0a24a6d1e5d7a86bfab9d4191e2f7cb9a6866ca13086b5f5"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-024-target-base-generated.png",
+        "bytes": 46666,
+        "sha256": "e571f5e2967a8e21c0479aa5035f85f22352f0b4dcd4bafc04df76c25988b632"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-025-target-base-generated.png",
+        "bytes": 46915,
+        "sha256": "7f4d506f37ee8700a8457e926b3d924a7c0e786edc8fa4e57f370988b25fd683"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-026-target-base-generated.png",
+        "bytes": 46872,
+        "sha256": "c42fea8d31cba391ddcf433f59b386defb9e116497c7bf807e82a173b135934d"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-027-target-base-generated.png",
+        "bytes": 46687,
+        "sha256": "ff4223503aabbc0c114714b34ebd3bc7d72db3affa7d82906f506a7852651992"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-028-target-base-generated.png",
+        "bytes": 46747,
+        "sha256": "c09e523bac2dfa1db7908640e42c7b3d9953884c0e48c5a978f9358452254a8c"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-029-target-base-generated.png",
+        "bytes": 46873,
+        "sha256": "0994e59cb1eb59dc78427ed36f6eca1fbaf24fded200a99fcb71e07cc799d68d"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-030-target-base-generated.png",
+        "bytes": 46876,
+        "sha256": "57240fe3a8ddaaef15b900160577fc9759d61b07a76a9daa2c119e7b6f916a5e"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-031-target-base-generated.png",
+        "bytes": 46623,
+        "sha256": "0a3c5ba5970253a9ed27fc56af2ffb5f5bfe1d072bd0150e87641a8a3652fda7"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-032-target-base-generated.png",
+        "bytes": 46580,
+        "sha256": "2b212ac93f712e0e49be413fe8a790044bd93fd1d52e0a27d7580473bfaac376"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-033-target-base-generated.png",
+        "bytes": 46911,
+        "sha256": "d5bcb135773966c39a62732200275e906eb2f07f8c6565e5130a2bfbc4edfc62"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-034-target-base-generated.png",
+        "bytes": 46533,
+        "sha256": "5033c4bc61f7f2903c1870a01044d89180b8272d455f5399c68d7e386603bf12"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-035-target-base-generated.png",
+        "bytes": 46618,
+        "sha256": "7946cd500188d544abe64e9ec78e79ae81189515ceebde5c4cc9e300802eaf96"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-036-target-base-generated.png",
+        "bytes": 46411,
+        "sha256": "8395f76ac0ce0d7d64792c7c543c3bbcde2e6f5047203f73403b3ee3df38ec9e"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-037-target-base-generated.png",
+        "bytes": 46105,
+        "sha256": "93d6ab548f08c83d2f37de989b0238666bdb6c331b32880630df27c0d0e09abc"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-038-target-base-generated.png",
+        "bytes": 46354,
+        "sha256": "b140042dcd0c7eb4947cc3771c2c9d11361429e4e2e25df520a64ba00b90042b"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-039-target-base-generated.png",
+        "bytes": 46165,
+        "sha256": "51756c43dbf5011fce3bddb0c6447345be6c098d65bd51a180663e36c22c4036"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-040-target-base-generated.png",
+        "bytes": 46016,
+        "sha256": "74ee596a2630f8f7ba695bcd4138f82d128e126aabab77760d446a3eeb743287"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-041-target-base-generated.png",
+        "bytes": 46368,
+        "sha256": "a6cbb398c627eb5e7f42e35eaf53f830a0deb903f7667dd282675d414b4ef516"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-042-target-base-generated.png",
+        "bytes": 46179,
+        "sha256": "7750ffb821ab316815fb622cf4cb1e3b15315e56c3aa89c767a4a8339f633ef0"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-043-target-base-generated.png",
+        "bytes": 46026,
+        "sha256": "110637efeda63f5b8aa410b2eeb016b27f3a872eadbefd82e8edb9cf22fb3402"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-044-target-base-generated.png",
+        "bytes": 46284,
+        "sha256": "0f44bffae72f972e329bc0df67f2cbd0a71fda16274dbad97144f43141aa9f41"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-045-target-base-generated.png",
+        "bytes": 46148,
+        "sha256": "bcd94986cf7c867c0c475ee3dc216eeb0f1174d997e9c93072f565b47d830e73"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-046-target-base-generated.png",
+        "bytes": 46398,
+        "sha256": "2c0228c963dbd4f3cf322658c00fc43f8fac4ba52a15c5f735b3474a133d5f4f"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-047-target-base-generated.png",
+        "bytes": 46563,
+        "sha256": "9032d1ddfdfdbd2ceb9f9b7d851371ddefae2e5a27c8239b58bbec41a7ee274e"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-048-target-base-generated.png",
+        "bytes": 46266,
+        "sha256": "61c23e11a1c9e35f49211ad4010fa86c76468d31a7c7b8eda200c7d1d194d54f"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-049-target-base-generated.png",
+        "bytes": 46155,
+        "sha256": "3f6537c558a57bb3ed7315398f010f55a83fddc7107031e34725fec8f413f6df"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-050-target-base-generated.png",
+        "bytes": 46191,
+        "sha256": "3b29074365fe3d80e06521b09c30e8e4357a292daa8e240dcccc6542b9e9d3f0"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-051-target-base-generated.png",
+        "bytes": 46069,
+        "sha256": "034cdbf93fea6c1df5a42ff4d22b4f08fec97854a8f0eef0e911ee259afa853f"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-052-target-base-generated.png",
+        "bytes": 46019,
+        "sha256": "bf886894ba4750da8a27c7bde271a3b0238309b83f25a7b3fe4414f947ed2252"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-053-target-base-generated.png",
+        "bytes": 46019,
+        "sha256": "bf7ec4ff3c16fb1536f730291655f18a36c83afeaaff37b2199701bf46dac811"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-054-target-base-generated.png",
+        "bytes": 46137,
+        "sha256": "77225db2c29e1473d4b8ab4d18dba5c7d77e08cd902856c2b1a01a5eb06d6a48"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-055-target-base-generated.png",
+        "bytes": 46273,
+        "sha256": "369e04b1b3520c4eb292f8d78548bbe20f67974e8308dc431ce9c01bda89908d"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-056-target-base-generated.png",
+        "bytes": 46138,
+        "sha256": "2f9e348c0662763f245766a5eabb1392bd56acf99dd06191da7cc3683fa3b022"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-057-target-base-generated.png",
+        "bytes": 46274,
+        "sha256": "da47cfcd34a49fd4bc5d580e0aa91d9a96c801e50eb2ff8aea6345750380a5f8"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-058-target-base-generated.png",
+        "bytes": 46287,
+        "sha256": "37be9765add2aa3e7f979111e62f5d0317999d184fe34ef08beca21821f03226"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-059-target-base-generated.png",
+        "bytes": 46161,
+        "sha256": "55815460b8b6f47bc52e5363d11fcf7bc781262619501fb749ffc051e7d692be"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-060-target-base-generated.png",
+        "bytes": 46520,
+        "sha256": "723e65b93182799d783c79a291d335c9b2a6ef9a45d7553c0a81f82341be2b20"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/epoch-060.pt",
+        "bytes": 4582027,
+        "sha256": "40b6b7bcafe323c28a5f9eafb32dabe23d36469fb5a7fde33ae923088cb576ed"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/last.pt",
+        "bytes": 4567276,
+        "sha256": "b82fabf4b4445e8515768ad51529d879a5d4efa722e9614c14ac74ddc867f19a"
+      },
+      {
+        "path": "Model/runs/v10-b-scene-detail-20261122/metrics.jsonl",
+        "bytes": 49399,
+        "sha256": "74ace46ae86f5a1c4d213fbaf0603ba5d1b9233ab3d9e1f43963193bcd2af7fb"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1329 @@
+{
+  "schema_version": 1,
+  "id": "training--v10-rtx5060-cuda-flowcheck-local-data--run-bd3362143773",
+  "kind": "training",
+  "name": "v10-rtx5060-cuda-flowcheck-local-data",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v10-rtx5060-cuda-flowcheck-local-data",
+  "started_at": "2026-11-22T00:18:38+08:00",
+  "finished_at": "2026-11-22T00:18:59+08:00",
+  "cwd": "Z:\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "Model/train_v10.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+    "--out",
+    "Model/runs/v10-rtx5060-cuda-flowcheck-local-data",
+    "--device",
+    "cuda",
+    "--mode",
+    "diffusion",
+    "--prediction-type",
+    "v",
+    "--condition",
+    "both",
+    "--epochs",
+    "1",
+    "--max-steps",
+    "128",
+    "--scale-steps",
+    "2",
+    "--batch-size",
+    "16",
+    "--microbatch",
+    "4",
+    "--sample-steps",
+    "32",
+    "--validation-count",
+    "256"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "8c2f5c36de6f8ddbe6cb0b052171b6cf72cb1e456a40c167fe7e73f63876b021",
+    "directory": "Model/experiments/source_snapshots/8c2f5c36de6f8ddbe6cb0b052171b6cf72cb1e456a40c167fe7e73f63876b021",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "faf94b1f9bcc4cf6331f807cf226e8ddea7d3557ebacba26d0d2b990506dfb79",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "096fddf68aedfa1be8700d5ecf239005a90523366996058d783c965e41a8489b",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "58d512fa40d91624052a131b3a55e6569bb4c621a59c2a87d7d3b68d243db92b",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "dd1e9e32e2fc31c2429c0dca082bd807e086215e3ee1ed71e2394de87aa78b8b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "eef3982c15656334c4be0c08b5ff3592f003e95d7b4969abf05671918f95634a",
+      "v10/model.py": "d01d9cb412e99bbcb94daed6f47ee4f75b46cdf786dff31c5ba4205bbb4aff1c",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "a9fbd1a6d43e6981d5dc8986cb413a575b0890c92720695a6d1f1471bff7eaaa",
+      "v10/自動訓練計畫.md": "75e57eaed45e0447441829ef16842d359ccc62b7bad0bcd4142e6fb720fce14d",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T00:18:59+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "decoded_cache": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+      "out": "Model\\runs\\v10-rtx5060-cuda-flowcheck-local-data",
+      "mode": "diffusion",
+      "condition": "both",
+      "prediction_type": "v",
+      "channels": 48,
+      "epochs": 1,
+      "batch_size": 16,
+      "microbatch": 4,
+      "lr": 0.0001,
+      "low_frequency_weight": 0.0,
+      "timesteps": 1000,
+      "sample_steps": 32,
+      "validation_count": 256,
+      "max_steps": 128,
+      "val_steps": 0,
+      "scale_steps": 2,
+      "seed": 42,
+      "device": "cuda",
+      "architecture": "v10",
+      "history": 2,
+      "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720
+      },
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "train_samples": 21570,
+      "validation_samples": 256,
+      "validation_full_samples": 5370,
+      "validation_keys": [
+        [
+          721,
+          0
+        ],
+        [
+          721,
+          24
+        ],
+        [
+          722,
+          0
+        ],
+        [
+          722,
+          24
+        ],
+        [
+          723,
+          0
+        ],
+        [
+          723,
+          24
+        ],
+        [
+          724,
+          0
+        ],
+        [
+          724,
+          22
+        ],
+        [
+          725,
+          0
+        ],
+        [
+          725,
+          22
+        ],
+        [
+          726,
+          0
+        ],
+        [
+          726,
+          22
+        ],
+        [
+          727,
+          0
+        ],
+        [
+          727,
+          22
+        ],
+        [
+          728,
+          0
+        ],
+        [
+          728,
+          22
+        ],
+        [
+          729,
+          0
+        ],
+        [
+          729,
+          22
+        ],
+        [
+          730,
+          0
+        ],
+        [
+          730,
+          22
+        ],
+        [
+          731,
+          0
+        ],
+        [
+          731,
+          22
+        ],
+        [
+          732,
+          0
+        ],
+        [
+          732,
+          22
+        ],
+        [
+          733,
+          0
+        ],
+        [
+          733,
+          22
+        ],
+        [
+          734,
+          0
+        ],
+        [
+          734,
+          22
+        ],
+        [
+          735,
+          0
+        ],
+        [
+          735,
+          22
+        ],
+        [
+          736,
+          0
+        ],
+        [
+          736,
+          22
+        ],
+        [
+          737,
+          18
+        ],
+        [
+          738,
+          18
+        ],
+        [
+          739,
+          18
+        ],
+        [
+          740,
+          14
+        ],
+        [
+          741,
+          14
+        ],
+        [
+          742,
+          14
+        ],
+        [
+          743,
+          14
+        ],
+        [
+          744,
+          14
+        ],
+        [
+          745,
+          14
+        ],
+        [
+          746,
+          14
+        ],
+        [
+          747,
+          14
+        ],
+        [
+          748,
+          14
+        ],
+        [
+          749,
+          14
+        ],
+        [
+          750,
+          14
+        ],
+        [
+          751,
+          14
+        ],
+        [
+          752,
+          14
+        ],
+        [
+          753,
+          12
+        ],
+        [
+          754,
+          12
+        ],
+        [
+          755,
+          12
+        ],
+        [
+          756,
+          6
+        ],
+        [
+          756,
+          28
+        ],
+        [
+          757,
+          6
+        ],
+        [
+          757,
+          28
+        ],
+        [
+          758,
+          6
+        ],
+        [
+          758,
+          28
+        ],
+        [
+          759,
+          6
+        ],
+        [
+          759,
+          28
+        ],
+        [
+          760,
+          6
+        ],
+        [
+          760,
+          28
+        ],
+        [
+          761,
+          6
+        ],
+        [
+          761,
+          28
+        ],
+        [
+          762,
+          6
+        ],
+        [
+          762,
+          28
+        ],
+        [
+          763,
+          6
+        ],
+        [
+          763,
+          28
+        ],
+        [
+          764,
+          6
+        ],
+        [
+          764,
+          28
+        ],
+        [
+          765,
+          6
+        ],
+        [
+          765,
+          28
+        ],
+        [
+          766,
+          6
+        ],
+        [
+          766,
+          28
+        ],
+        [
+          767,
+          6
+        ],
+        [
+          767,
+          28
+        ],
+        [
+          768,
+          6
+        ],
+        [
+          768,
+          28
+        ],
+        [
+          769,
+          6
+        ],
+        [
+          770,
+          6
+        ],
+        [
+          771,
+          6
+        ],
+        [
+          772,
+          20
+        ],
+        [
+          773,
+          20
+        ],
+        [
+          774,
+          20
+        ],
+        [
+          775,
+          20
+        ],
+        [
+          776,
+          20
+        ],
+        [
+          777,
+          20
+        ],
+        [
+          778,
+          20
+        ],
+        [
+          779,
+          20
+        ],
+        [
+          780,
+          20
+        ],
+        [
+          781,
+          20
+        ],
+        [
+          782,
+          20
+        ],
+        [
+          783,
+          20
+        ],
+        [
+          784,
+          20
+        ],
+        [
+          785,
+          0
+        ],
+        [
+          785,
+          24
+        ],
+        [
+          786,
+          0
+        ],
+        [
+          786,
+          24
+        ],
+        [
+          787,
+          0
+        ],
+        [
+          787,
+          24
+        ],
+        [
+          788,
+          12
+        ],
+        [
+          789,
+          12
+        ],
+        [
+          790,
+          12
+        ],
+        [
+          791,
+          12
+        ],
+        [
+          792,
+          12
+        ],
+        [
+          793,
+          12
+        ],
+        [
+          794,
+          12
+        ],
+        [
+          795,
+          12
+        ],
+        [
+          796,
+          12
+        ],
+        [
+          797,
+          12
+        ],
+        [
+          798,
+          12
+        ],
+        [
+          799,
+          12
+        ],
+        [
+          800,
+          12
+        ],
+        [
+          801,
+          18
+        ],
+        [
+          802,
+          18
+        ],
+        [
+          803,
+          18
+        ],
+        [
+          804,
+          4
+        ],
+        [
+          804,
+          25
+        ],
+        [
+          805,
+          4
+        ],
+        [
+          805,
+          25
+        ],
+        [
+          806,
+          4
+        ],
+        [
+          806,
+          25
+        ],
+        [
+          807,
+          4
+        ],
+        [
+          807,
+          25
+        ],
+        [
+          808,
+          4
+        ],
+        [
+          808,
+          25
+        ],
+        [
+          809,
+          4
+        ],
+        [
+          809,
+          25
+        ],
+        [
+          810,
+          4
+        ],
+        [
+          810,
+          25
+        ],
+        [
+          811,
+          4
+        ],
+        [
+          811,
+          25
+        ],
+        [
+          812,
+          4
+        ],
+        [
+          812,
+          25
+        ],
+        [
+          813,
+          4
+        ],
+        [
+          813,
+          25
+        ],
+        [
+          814,
+          4
+        ],
+        [
+          814,
+          25
+        ],
+        [
+          815,
+          4
+        ],
+        [
+          815,
+          25
+        ],
+        [
+          816,
+          4
+        ],
+        [
+          816,
+          25
+        ],
+        [
+          817,
+          11
+        ],
+        [
+          818,
+          11
+        ],
+        [
+          819,
+          11
+        ],
+        [
+          820,
+          17
+        ],
+        [
+          821,
+          17
+        ],
+        [
+          822,
+          17
+        ],
+        [
+          823,
+          17
+        ],
+        [
+          824,
+          17
+        ],
+        [
+          825,
+          17
+        ],
+        [
+          826,
+          17
+        ],
+        [
+          827,
+          17
+        ],
+        [
+          828,
+          17
+        ],
+        [
+          829,
+          17
+        ],
+        [
+          830,
+          17
+        ],
+        [
+          831,
+          17
+        ],
+        [
+          832,
+          17
+        ],
+        [
+          833,
+          5
+        ],
+        [
+          833,
+          29
+        ],
+        [
+          834,
+          5
+        ],
+        [
+          834,
+          29
+        ],
+        [
+          835,
+          5
+        ],
+        [
+          835,
+          29
+        ],
+        [
+          836,
+          9
+        ],
+        [
+          837,
+          9
+        ],
+        [
+          838,
+          9
+        ],
+        [
+          839,
+          9
+        ],
+        [
+          840,
+          9
+        ],
+        [
+          841,
+          9
+        ],
+        [
+          842,
+          9
+        ],
+        [
+          843,
+          9
+        ],
+        [
+          844,
+          9
+        ],
+        [
+          845,
+          9
+        ],
+        [
+          846,
+          9
+        ],
+        [
+          847,
+          9
+        ],
+        [
+          848,
+          9
+        ],
+        [
+          849,
+          23
+        ],
+        [
+          850,
+          23
+        ],
+        [
+          851,
+          23
+        ],
+        [
+          852,
+          1
+        ],
+        [
+          852,
+          23
+        ],
+        [
+          853,
+          1
+        ],
+        [
+          853,
+          23
+        ],
+        [
+          854,
+          1
+        ],
+        [
+          854,
+          23
+        ],
+        [
+          855,
+          1
+        ],
+        [
+          855,
+          23
+        ],
+        [
+          856,
+          1
+        ],
+        [
+          856,
+          23
+        ],
+        [
+          857,
+          1
+        ],
+        [
+          857,
+          23
+        ],
+        [
+          858,
+          1
+        ],
+        [
+          858,
+          23
+        ],
+        [
+          859,
+          1
+        ],
+        [
+          859,
+          23
+        ],
+        [
+          860,
+          1
+        ],
+        [
+          860,
+          23
+        ],
+        [
+          861,
+          1
+        ],
+        [
+          861,
+          23
+        ],
+        [
+          862,
+          1
+        ],
+        [
+          862,
+          23
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          863,
+          23
+        ],
+        [
+          864,
+          1
+        ],
+        [
+          864,
+          23
+        ],
+        [
+          865,
+          17
+        ],
+        [
+          866,
+          17
+        ],
+        [
+          867,
+          17
+        ],
+        [
+          868,
+          15
+        ],
+        [
+          869,
+          15
+        ],
+        [
+          870,
+          15
+        ],
+        [
+          871,
+          15
+        ],
+        [
+          872,
+          15
+        ],
+        [
+          873,
+          15
+        ],
+        [
+          874,
+          15
+        ],
+        [
+          875,
+          15
+        ],
+        [
+          876,
+          15
+        ],
+        [
+          877,
+          15
+        ],
+        [
+          878,
+          15
+        ],
+        [
+          879,
+          15
+        ],
+        [
+          880,
+          15
+        ],
+        [
+          881,
+          11
+        ],
+        [
+          882,
+          11
+        ],
+        [
+          883,
+          11
+        ],
+        [
+          884,
+          7
+        ],
+        [
+          884,
+          29
+        ],
+        [
+          885,
+          7
+        ],
+        [
+          885,
+          29
+        ],
+        [
+          886,
+          7
+        ],
+        [
+          886,
+          29
+        ],
+        [
+          887,
+          7
+        ],
+        [
+          887,
+          29
+        ],
+        [
+          888,
+          7
+        ],
+        [
+          888,
+          29
+        ],
+        [
+          889,
+          7
+        ],
+        [
+          889,
+          29
+        ],
+        [
+          890,
+          7
+        ],
+        [
+          890,
+          29
+        ],
+        [
+          891,
+          7
+        ],
+        [
+          891,
+          29
+        ],
+        [
+          892,
+          7
+        ],
+        [
+          892,
+          29
+        ],
+        [
+          893,
+          7
+        ],
+        [
+          893,
+          29
+        ],
+        [
+          894,
+          7
+        ],
+        [
+          894,
+          29
+        ],
+        [
+          895,
+          7
+        ],
+        [
+          895,
+          29
+        ],
+        [
+          896,
+          7
+        ],
+        [
+          896,
+          29
+        ],
+        [
+          897,
+          5
+        ],
+        [
+          897,
+          29
+        ],
+        [
+          898,
+          5
+        ],
+        [
+          898,
+          29
+        ],
+        [
+          899,
+          5
+        ],
+        [
+          899,
+          29
+        ]
+      ],
+      "device_used": "cuda",
+      "torch": "2.7.1+cu128",
+      "gammas": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+      "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+      "noise_schedule": "cosine_s0.008_beta_max0.999",
+      "sample_seed": 0,
+      "noise_policy": "per_frame",
+      "precision": "FP32",
+      "weight_decay": 0.0001,
+      "coverage": "flow_check",
+      "residual_statistics": {
+        "method": "population_std_train_only_floor_0.01",
+        "samples": 128,
+        "mean": [
+          -2.2690721549452228e-05,
+          2.7394014235991196e-05,
+          1.2996883795546608e-05,
+          -2.4653419182155725e-05
+        ],
+        "std": [
+          0.01,
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      "parameters": 280340
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "objective": 21.653947306331247,
+          "samples": 2048,
+          "optimizer_steps": 128,
+          "seconds": 9.58485379999911
+        },
+        "validation": {
+          "mae_8bit": 22.17346973530948,
+          "psnr_raw": 18.52758892230956,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 17.56626360118389,
+              "psnr_raw": 20.00988730548829,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 18.59989781677723,
+              "psnr_raw": 19.689122340853945,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 20.18941541388631,
+              "psnr_raw": 19.17395777993191,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 22.17346973530948,
+              "psnr_raw": 18.52758892230956,
+              "samples": 256
+            }
+          },
+          "seconds": 2.438976899997215,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 1,
+    "best_validation": {
+      "mae_8bit": 22.17346973530948,
+      "psnr_raw": 18.52758892230956,
+      "samples": 256,
+      "gammas": {
+        "0.0": {
+          "mae_8bit": 17.271230522543192,
+          "psnr_raw": 20.08750072693569,
+          "samples": 256
+        },
+        "0.25": {
+          "mae_8bit": 17.56626360118389,
+          "psnr_raw": 20.00988730548829,
+          "samples": 256
+        },
+        "0.5": {
+          "mae_8bit": 18.59989781677723,
+          "psnr_raw": 19.689122340853945,
+          "samples": 256
+        },
+        "0.75": {
+          "mae_8bit": 20.18941541388631,
+          "psnr_raw": 19.17395777993191,
+          "samples": 256
+        },
+        "1.0": {
+          "mae_8bit": 22.17346973530948,
+          "psnr_raw": 18.52758892230956,
+          "samples": 256
+        }
+      },
+      "seconds": 2.438976899997215,
+      "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+    },
+    "coverage": "partial_steps",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/v10-rtx5060-cuda-flowcheck-local-data/best.pt",
+        "bytes": 3427706,
+        "sha256": "343a9d352e6f43332c4f69826f8686fc69094be61ee6e53b9b123157a5f545a9"
+      },
+      {
+        "path": "Model/runs/v10-rtx5060-cuda-flowcheck-local-data/config.json",
+        "bytes": 11366,
+        "sha256": "9f4cd19884af38f4c3e7b0fd0bbc54d929cb8ff2a9678b3f88dedd49e20f1309"
+      },
+      {
+        "path": "Model/runs/v10-rtx5060-cuda-flowcheck-local-data/epoch-001-target-base-generated.png",
+        "bytes": 40957,
+        "sha256": "970d6a508dd66f4dd551a247fafe58bf94d6ac421d5b0df601099734423fedb6"
+      },
+      {
+        "path": "Model/runs/v10-rtx5060-cuda-flowcheck-local-data/epoch-001.pt",
+        "bytes": 3438859,
+        "sha256": "3dca0e516059a0167701339f6517b992c6a95024de026b6ccf0291e77bc90187"
+      },
+      {
+        "path": "Model/runs/v10-rtx5060-cuda-flowcheck-local-data/last.pt",
+        "bytes": 3427706,
+        "sha256": "87db12229d5cc03c2195e17f944cddbb514250f6e4da9a2f4d0f10fcf1375d4e"
+      },
+      {
+        "path": "Model/runs/v10-rtx5060-cuda-flowcheck-local-data/metrics.jsonl",
+        "bytes": 817,
+        "sha256": "70c5cbd0bb7c9f5297ae861bce9492d3ac07694aa506dc0b598ea1714e67837d"
+      }
+    ]
+  }
+}

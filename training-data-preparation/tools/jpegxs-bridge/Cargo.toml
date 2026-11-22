@@ -1,0 +1,9 @@
+[package]
+name = "brainhole-jpegxs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+
+[dependencies]
+oxideav-jpegxs = { git = "https://github.com/OxideAV/oxideav-jpegxs", rev = "3484a041d6d8e893683c1920cb3f68fe6fd3b8b8", default-features = false }

@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-hybrid-v7-restored--run-172b00ed2f51",
+  "kind": "evaluation",
+  "name": "eval-hybrid-v7-restored",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-hybrid-v7-restored",
+  "started_at": "2026-11-21T16:33:20+08:00",
+  "finished_at": "2026-11-21T16:33:26+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q6.npz",
+    "--checkpoint",
+    "Model/runs/hybrid-v7-history2-expand2/best.pt",
+    "--start-frame",
+    "720",
+    "--out",
+    "Model/runs/eval-hybrid-v7-restored"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "9e732fd733bac9d6131c321e30a0f88d3de2c115701732d6c0a42bd77ffa86c2",
+    "directory": "Model/experiments/source_snapshots/9e732fd733bac9d6131c321e30a0f88d3de2c115701732d6c0a42bd77ffa86c2",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "4b4b0dee14f249e69e168eb683d9f2b4b9fd3ae6907cac7855a821c69cad3b58",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "39a5962137c82855eab9c57721eca9899aeccb90097d7973684621a76723ccaa",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "2fd559969568c7e200605cb2e4a4f2ff3a9d2238e0724b6f79ba873d733fa70b",
+      "作法.MD": "0791bdbc434cb6ea3c80afcb71dce13036897f3cb6a1bd5dc560695b77e14a7f",
+      "驗收標準.md": "9125d861012b1206b0ab0276ca9f13c6a5a56edecfb93f3580fd747d856aa4dd"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T16:33:26+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q6.npz",
+        "bytes": 17714112,
+        "sha256": "6bad8a2a18c7d47c30d0ac0766f70a37b8f80d66b2d3141393da7f858975a70e"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/hybrid-v7-history2-expand2/best.pt",
+        "bytes": 1413096,
+        "sha256": "397d2ab01a2324ae464498c158da870b27aa747eef3300731f8b652c4c61cfc5"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 5370,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 721,
+      "last_evaluated_frame": 899,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 30.42062018783399,
+          "psnr_raw": 15.997703606112331
+        },
+        "bilinear": {
+          "mae_8bit": 28.75872772339336,
+          "psnr_raw": 16.680341443870983
+        },
+        "hybrid-v7-history2-expand2": {
+          "mae_8bit": 19.865019045728545,
+          "psnr_raw": 18.985719750942607
+        }
+      },
+      "gates": {
+        "hybrid-v7-history2-expand2": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9960893854748604
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "hybrid-v7-history2-expand2"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564",
+        "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+        "decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064",
+        "samples": 27000,
+        "note": "Decoded only from codestream, not high-resolution labels."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v7-history2-expand2\\best.pt"
+      ],
+      "input_contracts": {
+        "hybrid-v7-history2-expand2": "encoded_and_decoded_raw_v1"
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-hybrid-v7-restored--run-172b00ed2f51.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "9d3b26063d16849f0d57589e7b44387e98359bda69b19d24dbe698f406c88e59"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-hybrid-v7-restored/bilinear.png",
+        "bytes": 182093,
+        "sha256": "5e24ab7aa1d814ee9181920b0af689e842295d9cd383a6def5efa325c62d4955"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-restored/blocks.jsonl",
+        "bytes": 753998,
+        "sha256": "9d3b26063d16849f0d57589e7b44387e98359bda69b19d24dbe698f406c88e59"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-restored/comparison.png",
+        "bytes": 1030633,
+        "sha256": "ae1d05294fdf094f3d357b3cb0ffe838402cc2dca1fff675d278ef835d436003"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-restored/hybrid-v7-history2-expand2.png",
+        "bytes": 297861,
+        "sha256": "3f9147a7f811005d4110f885063e5d7404f29ab8330ad18daec8c0a41dd0d689"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-restored/nearest.png",
+        "bytes": 79710,
+        "sha256": "bcd51115d5cff4dda25ce323bd3948bf60cb2899faa1165b3f81cefd48197fbb"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-restored/report.json",
+        "bytes": 1565,
+        "sha256": "89fb7b4dea03d408f3d1d3fa788334dead536a3535f64f76846b54ed5c1b11c0"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v7-restored/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      }
+    ]
+  }
+}

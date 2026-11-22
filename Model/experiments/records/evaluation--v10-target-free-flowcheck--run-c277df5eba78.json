@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v10-target-free-flowcheck--run-c277df5eba78",
+  "kind": "evaluation",
+  "name": "v10-target-free-flowcheck",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v10-target-free-flowcheck",
+  "started_at": "2026-11-21T23:13:22+08:00",
+  "finished_at": "2026-11-21T23:13:23+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/predict_v10.py",
+    "--checkpoint",
+    "Model/runs/v10-diffusion-q5-flowcheck/best.pt",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--frame",
+    "750",
+    "--block",
+    "10",
+    "--steps",
+    "4",
+    "--out",
+    "Model/runs/v10-target-free-flowcheck"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "81e317582911c34978e6b6ffd457803142e0f846f381ccd82352919611f27c62",
+    "directory": "Model/experiments/source_snapshots/81e317582911c34978e6b6ffd457803142e0f846f381ccd82352919611f27c62",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "728caa4c94a4a3fbcfeac0572076fc732991db6d2d0ab13ace3b00de365fbb98",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "096fddf68aedfa1be8700d5ecf239005a90523366996058d783c965e41a8489b",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "ec31c11af5f3b75dd9f8b30e7aaf529fe02cd29f5010539ed0c91c73f933c635",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "40760304633d7b29d24424bea251709c50297ba7d0348e01eb5cfd5e97e122f8",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "f67fbd12a5a657826e3ca952f6c8df8c179c7fd10f4f6113484a0795aafbaed9",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "6f96cb90ec7e70f1a1286a9d6d31dd630f733f8f37d3721be136a93ff5d480c6",
+      "v10/diffusion.py": "6e700093ddc6ea26cabf87342224cd4b14cf2a82b08ec813caece24ab1f62768",
+      "v10/model.py": "1aceb62f2dea97df3f12f5ac19caf8ed099f90ecd97317abf4acb0a140d02bad",
+      "v10/README.md": "5f0aa8b586a36619e9c10e755d26a38bb4caee8eaa73613b1ed79760106cd52a",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "7a2d6bebce82f64b9d344e708b671d417c75b0e19a4a3de9d6da7ba073720576",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T23:13:23+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v10-diffusion-q5-flowcheck/best.pt",
+        "bytes": 3424506,
+        "sha256": "6cbbac32363a126fb2eb524d832fc9902a47d334a95906865267e093acd2f905"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "frame": 750,
+      "block": 10,
+      "steps": 4,
+      "gamma": 1.0,
+      "seed": 0,
+      "noise_policy": "per_frame",
+      "mode": "diffusion",
+      "target_read": false,
+      "checkpoint": "Model\\runs\\v10-diffusion-q5-flowcheck\\best.pt",
+      "checkpoint_sha256": "6cbbac32363a126fb2eb524d832fc9902a47d334a95906865267e093acd2f905",
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "scope": "single strip inference, no quality scoring"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v10-target-free-flowcheck/generated.png",
+        "bytes": 13056,
+        "sha256": "2b2e7532212295917ffce3e48e58adcf923d623a97c8712f182bf53562268834"
+      },
+      {
+        "path": "Model/runs/v10-target-free-flowcheck/generated.raw",
+        "bytes": 10240,
+        "sha256": "4688b5ad663089e69f16ddb2a45a230011320d3f53640b011e9d8398690996d6"
+      },
+      {
+        "path": "Model/runs/v10-target-free-flowcheck/report.json",
+        "bytes": 832,
+        "sha256": "202182fc8f383d9854aea6405d63e4069da87b20f0dc7ce8c76d1722bc4bddc1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "db": "big-buck-bunny-30s-q4-shared-v4-raw8-fixed.sqlite",
+  "blocks": {},
+  "duplication": {
+    "frame_count": 900,
+    "source_delta_histogram": {
+      "0": 180,
+      "1": 719
+    },
+    "identical_content_ratio": 0.20022246941045607,
+    "note": "source_frame_index 差 0 代表該影格內容與前一幀完全相同（24->30fps 重複幀）"
+  },
+  "phase_geometry": {
+    "checked_samples": 300,
+    "mae_mean": 4.227223955715696,
+    "mae_max": 9.082812309265137,
+    "note": "由 phase 反推的取樣位置與 decoded 的一致性（差值即 JPEG XS 有損誤差）"
+  },
+  "motion": {
+    "same_source": {
+      "count": 900,
+      "mae_mean": 0.0,
+      "mae_median": 0.0,
+      "mae_p90": 0.0,
+      "shift_histogram_top": null
+    },
+    "distinct_source": {
+      "count": 3595,
+      "mae_mean": 3.3139030763169917,
+      "mae_median": 2.03125,
+      "mae_p90": 7.334679889678954,
+      "shift_histogram_top": [
+        [
+          "dy=6,dx=0",
+          814
+        ],
+        [
+          "dy=0,dx=0",
+          591
+        ],
+        [
+          "dy=6,dx=6",
+          550
+        ],
+        [
+          "dy=0,dx=6",
+          403
+        ],
+        [
+          "dy=2,dx=0",
+          235
+        ],
+        [
+          "dy=4,dx=0",
+          231
+        ],
+        [
+          "dy=4,dx=6",
+          179
+        ],
+        [
+          "dy=2,dx=6",
+          120
+        ]
+      ]
+    }
+  },
+  "phase_coverage": {
+    "T=1": {
+      "coverage_ratio": 0.0625,
+      "measured_pixel_mae_mean": 3.5340625047683716,
+      "note": "以 T 幀各自的 phase 把 decoded 放回高解析網格後，實測到的像素比例與其誤差"
+    },
+    "T=2": {
+      "coverage_ratio": 0.125,
+      "measured_pixel_mae_mean": 3.9958593606948853,
+      "note": "以 T 幀各自的 phase 把 decoded 放回高解析網格後，實測到的像素比例與其誤差"
+    },
+    "T=4": {
+      "coverage_ratio": 0.25,
+      "measured_pixel_mae_mean": 4.996796870231629,
+      "note": "以 T 幀各自的 phase 把 decoded 放回高解析網格後，實測到的像素比例與其誤差"
+    },
+    "T=8": {
+      "coverage_ratio": 0.5,
+      "measured_pixel_mae_mean": 7.690683650970459,
+      "note": "以 T 幀各自的 phase 把 decoded 放回高解析網格後，實測到的像素比例與其誤差"
+    },
+    "T=16": {
+      "coverage_ratio": 1.0,
+      "measured_pixel_mae_mean": 13.384882640838622,
+      "note": "以 T 幀各自的 phase 把 decoded 放回高解析網格後，實測到的像素比例與其誤差"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "id": "training--relu128-four-v9-q5--run-94afa632311c",
+  "kind": "training",
+  "name": "relu128-four-v9-q5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/relu128-four-v9-q5",
+  "started_at": "2026-11-21T20:34:42+08:00",
+  "finished_at": "2026-11-21T20:38:51+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/train.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--architecture",
+    "v9",
+    "--v9-layers",
+    "4",
+    "--v9-variant",
+    "relu128",
+    "--v9-kernel-width",
+    "3",
+    "--history",
+    "1",
+    "--device",
+    "cuda",
+    "--epochs",
+    "5",
+    "--out",
+    "Model/runs/relu128-four-v9-q5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "2e3a8e889fe7220a66fa40291abeda402eedacf7e4ba65e8f326235532ec3f81",
+    "directory": "Model/experiments/source_snapshots/2e3a8e889fe7220a66fa40291abeda402eedacf7e4ba65e8f326235532ec3f81",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "evaluate_fsr.py": "96043f78c44882d7f4c5da6148048da2f2f9494a0a38ed169783489c2374b35d",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "9463473b6aa5d0fd56e52de8c658e10bc65af1f21692080e8856d2dcc52adecb",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "129c8716375f8be30f92ec22bc8303c7b07c3ce4bb933b6e8300cfc02a7a0788",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "317bdb11c4a4a21f186e880ffde982bfb489f999fd9e2076b1a26c349bb01f97",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "e2920bddffab9719108e908a47f2d0b3dd5fd23ad9a6b1d85bf49b5560cc7720",
+      "作法.MD": "5b8e8c37dea00035c2670c7fb716492e40bbe1ec1af7c35240f5d0bc833d15c5",
+      "驗收標準.md": "1b177fc31ef169a3ba8897c54204e99b8fe079d778eb18d650c7fb9a761071fb"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T20:38:51+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "val_db": null,
+      "history": 1,
+      "architecture": "v9",
+      "v9_layers": 4,
+      "v9_variant": "relu128",
+      "v9_kernel_width": 3,
+      "v8_variant": "expand96_two_layer",
+      "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+      "val_decoded_cache": null,
+      "auxiliary_weight": 1.0,
+      "residual_scale": 1.0,
+      "warm_start": null,
+      "decay": 0.2,
+      "epochs": 5,
+      "batch_size": 8,
+      "lr": 0.001,
+      "max_steps": 0,
+      "val_steps": 0,
+      "device": "cuda",
+      "seed": 42,
+      "out": "Model\\runs\\relu128-four-v9-q5",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720,
+        "note": "Same-video holdout does not establish unseen-video generalization."
+      },
+      "torch": "2.7.1+cu126",
+      "device_used": "cuda",
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "train_samples": 21600,
+      "validation_samples": 5400,
+      "parameters": 304516,
+      "input_contract": "decoded_raw_only_v1",
+      "residual_blocks": 0,
+      "residual_expansion": 1,
+      "residual_layers": 4,
+      "byte_encoder": false,
+      "temporal_fusion": false,
+      "hidden_channels": 128,
+      "activation": "relu",
+      "image_convolutions": 4,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "plane_receptive_field": [
+        9,
+        9
+      ]
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "mae_8bit": 12.567209034454493,
+          "psnr_raw": 22.634812120393782,
+          "seconds": 43.9770783999993
+        },
+        "validation": {
+          "mae_8bit": 16.111446227298842,
+          "psnr_raw": 20.274428863499153,
+          "seconds": 4.954663199998322
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "mae_8bit": 11.962682395811296,
+          "psnr_raw": 22.947065257985088,
+          "seconds": 44.000074499999755
+        },
+        "validation": {
+          "mae_8bit": 15.560370059311389,
+          "psnr_raw": 20.42350626793398,
+          "seconds": 4.939373199995316
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "mae_8bit": 11.733474635167255,
+          "psnr_raw": 23.08127405471837,
+          "seconds": 44.04412389999925
+        },
+        "validation": {
+          "mae_8bit": 15.589980855666928,
+          "psnr_raw": 20.458651843672314,
+          "seconds": 4.966203300005873
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "mae_8bit": 11.622786603143645,
+          "psnr_raw": 23.151904783946264,
+          "seconds": 43.93646279999666
+        },
+        "validation": {
+          "mae_8bit": 15.234079459640714,
+          "psnr_raw": 20.551496326459695,
+          "seconds": 4.885548300000664
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "mae_8bit": 11.568947046912378,
+          "psnr_raw": 23.191781105283397,
+          "seconds": 43.92475039999408
+        },
+        "validation": {
+          "mae_8bit": 15.360551519940296,
+          "psnr_raw": 20.49899577473561,
+          "seconds": 4.922630200002459
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 4,
+    "best_validation": {
+      "mae_8bit": 15.234079459640714,
+      "psnr_raw": 20.551496326459695,
+      "seconds": 4.885548300000664
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/relu128-four-v9-q5/best.pt",
+        "bytes": 3664593,
+        "sha256": "7edb6385c29f3eaa271e10029eebef6f9cd91d40a660b0df10c1fb789519e3e3"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/config.json",
+        "bytes": 1380,
+        "sha256": "0ea9cd24aea9a5595e58d6dfe2f88eee655be415a60f5de37c90c4c4a484c48a"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/epoch-001-raw.png",
+        "bytes": 17894,
+        "sha256": "24bf1e01082e4690a221562e90797afdff2c1564c82b1791126ba30beaf85c2c"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/epoch-002-raw.png",
+        "bytes": 17887,
+        "sha256": "6c96498b7f14f5dfd1ddd49826ecbab655e0c23b0e0f2a40b91e3e928f53cc94"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/epoch-003-raw.png",
+        "bytes": 17859,
+        "sha256": "7716cb35282a1f2699026668bb1c3982a3b107f821d88b338e551ec0a310c001"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/epoch-004-raw.png",
+        "bytes": 17983,
+        "sha256": "577852dfefac61735e1368a064a3196159e388032005fb947a3c33f13133e930"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/epoch-005-raw.png",
+        "bytes": 17951,
+        "sha256": "25cb115eb0a7aca6e4ec605c12b826729c6538fdde3c445808e03def3f1bec1c"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/last.pt",
+        "bytes": 3664593,
+        "sha256": "46918ff6e244304ac4e7bf03839073a0c0c6c1730ee2d702dc43cbaf366da9db"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-q5/metrics.jsonl",
+        "bytes": 1142,
+        "sha256": "d0f6af7153d04fdd0e01d0e3f8b769e9e1eca3da2a435e68806c4e38092995d0"
+      }
+    ]
+  }
+}

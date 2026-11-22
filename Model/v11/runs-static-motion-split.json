@@ -1,0 +1,74 @@
+{
+  "BBB": {
+    "db": "big-buck-bunny-30s-q4-shared-v4-raw8-fixed.sqlite",
+    "static_threshold": 2.0,
+    "results": {
+      "T=1": {
+        "static_accum_mae": 3.708687524795532,
+        "moving_accum_mae": null,
+        "static_pixel_share": 1.0,
+        "n_groups": 25
+      },
+      "T=2": {
+        "static_accum_mae": 3.658749213218689,
+        "moving_accum_mae": 12.26493860880534,
+        "static_pixel_share": 0.8985,
+        "n_groups": 50
+      },
+      "T=4": {
+        "static_accum_mae": 3.6638334380819444,
+        "moving_accum_mae": 12.691465455835516,
+        "static_pixel_share": 0.7306875,
+        "n_groups": 94
+      },
+      "T=8": {
+        "static_accum_mae": 4.0542600911524564,
+        "moving_accum_mae": 15.295158858168614,
+        "static_pixel_share": 0.5962109375,
+        "n_groups": 180
+      },
+      "T=16": {
+        "static_accum_mae": 4.482494999103871,
+        "moving_accum_mae": 20.82157915313809,
+        "static_pixel_share": 0.43498828125,
+        "n_groups": 323
+      }
+    }
+  },
+  "ToS": {
+    "db": "tears-of-steel-q4-shared-v4-raw8.sqlite",
+    "static_threshold": 2.0,
+    "results": {
+      "T=1": {
+        "static_accum_mae": 4.630468686421712,
+        "moving_accum_mae": null,
+        "static_pixel_share": 1.0,
+        "n_groups": 12
+      },
+      "T=2": {
+        "static_accum_mae": 4.657101720571518,
+        "moving_accum_mae": 10.962520897388458,
+        "static_pixel_share": 0.7860026041666667,
+        "n_groups": 24
+      },
+      "T=4": {
+        "static_accum_mae": 4.679104556639989,
+        "moving_accum_mae": 10.965912850697835,
+        "static_pixel_share": 0.62958984375,
+        "n_groups": 48
+      },
+      "T=8": {
+        "static_accum_mae": 4.625324756868424,
+        "moving_accum_mae": 13.138888687700838,
+        "static_pixel_share": 0.4837239583333333,
+        "n_groups": 93
+      },
+      "T=16": {
+        "static_accum_mae": 4.592938273041336,
+        "moving_accum_mae": 17.86610171235638,
+        "static_pixel_share": 0.40196126302083335,
+        "n_groups": 189
+      }
+    }
+  }
+}

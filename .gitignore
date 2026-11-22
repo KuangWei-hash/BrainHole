@@ -1,0 +1,119 @@
+# Local environments and caches (including portable toolchains under .cache).
+.cache/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Training/evaluation artifacts: weights, decoded arrays, previews and videos.
+/Model/runs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Local databases and SQLite transaction files. Dataset folders are also
+# excluded by training-data-preparation/.gitignore, with .gitkeep preserved.
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+
+# Downloaded dependencies and reference material. Keep source manifests,
+# paper catalogs and our own tools (especially tools/jpegxs-bridge) in Git.
+/Model/tools/EchoSR/
+/Model/tools/fsr1/*
+!/Model/tools/fsr1/manifest.json
+/Model/v11/third_party/
+/Model/v11/refs/papers/*.pdf
+
+# Compiled executables/libraries; Rust target/ and dataset bin/ also have
+# their own scoped rules in the existing nested .gitignore files.
+*.exe
+*.dll
+*.pyd
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.pdb
+
+# Local secrets, editor recovery files and OS metadata.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Git stores code, documentation and compact textual experiment summaries.
+# Detailed numeric dumps and repeated immutable snapshots remain on disk.
+/Model/experiments/details/
+/Model/experiments/source_snapshots/
+
+# Binary images, videos, audio, arrays, raw data and downloaded archives.
+# Regression fixtures use small text .hex vectors instead of RAW binaries.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tif
+*.tiff
+*.ico
+*.avif
+*.heic
+*.exr
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+*.m4v
+*.yuv
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.pdf
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.bin
+*.raw
+*.rggb
+*.rggb8
+*.jxs
+*.zip
+*.7z
+*.tar
+*.gz
+*.bz2
+*.xz
+*.rar
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Keep source manifests, lockfiles, reports, SVG/code-native visuals and
+# Model/experiments/records/*.json versionable. Do not ignore all tools/.

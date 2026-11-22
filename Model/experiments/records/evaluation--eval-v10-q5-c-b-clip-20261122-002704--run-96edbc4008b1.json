@@ -1,0 +1,3279 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-v10-q5-c-b-clip-20261122-002704--run-96edbc4008b1",
+  "kind": "evaluation",
+  "name": "eval-v10-q5-c-b-clip-20261122-002704",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704",
+  "started_at": "2026-11-22T01:44:33+08:00",
+  "finished_at": "2026-11-22T01:45:05+08:00",
+  "cwd": "Z:\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "Model/evaluate_v10.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+    "--out",
+    "Z:\\BrainHole\\Model\\runs\\eval-v10-q5-c-b-clip-20261122-002704",
+    "--device",
+    "cuda",
+    "--checkpoint",
+    "Z:\\BrainHole\\Model\\runs\\v10-q5-v-prediction-20261122-002704\\best.pt",
+    "--control-checkpoint",
+    "Z:\\BrainHole\\Model\\runs\\v10-q5-b-20261122-002704\\best.pt",
+    "--start-frame",
+    "720",
+    "--stop-frame",
+    "751",
+    "--preview-frame",
+    "721",
+    "--steps",
+    "32",
+    "--reference-checkpoint",
+    "Z:\\BrainHole\\Model\\runs\\relu128-four-v9-history2-q5\\best.pt",
+    "--fsr-report",
+    "Z:\\BrainHole\\Model\\runs\\eval-echosr-lite-q5-20261121\\report.json",
+    "--video"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "7d2c739d32f41be2a29730b753ae14bfdc7ca3f4aeb6b2f8ae187a0618bb058e",
+    "directory": "Model/experiments/source_snapshots/7d2c739d32f41be2a29730b753ae14bfdc7ca3f4aeb6b2f8ae187a0618bb058e",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "14e6c579088de720723af0c7af7e61c5d83b7d7aca8088fabb86f5ad40041583",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "85e9c41928f68f796ae3b9acc9aeeb5c5dcf521cde7089e7cc1b48c94bce9ccc",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "bbeddf2c2cd5a84be6ea34dc75dc0867af8d86b13269e29920a0e2e5c19a489f",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "dd1e9e32e2fc31c2429c0dca082bd807e086215e3ee1ed71e2394de87aa78b8b",
+      "train_v11.py": "9279b91f5a2696cabddc5ed44e42e7e278b7d7282e8ddb3370cd525257f5aef8",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "eef3982c15656334c4be0c08b5ff3592f003e95d7b4969abf05671918f95634a",
+      "v10/model.py": "d01d9cb412e99bbcb94daed6f47ee4f75b46cdf786dff31c5ba4205bbb4aff1c",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "ef0d8977f30bd5c3007a6428ccb6770881ef13a1077902471d41f5e8e90a32cf",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T01:45:05+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/best.pt",
+        "bytes": 3427770,
+        "sha256": "7361e1af102dd4fd16a9b0455f5103bc331a28ef6af4aa645ed56e88e3bece70"
+      }
+    ],
+    "--fsr-report": [
+      {
+        "path": "Model/runs/eval-echosr-lite-q5-20261121/report.json",
+        "bytes": 14173,
+        "sha256": "15961dd375621c3173ba7f51b65a248b19caee989d1d9234564e3a7869a652aa"
+      }
+    ],
+    "--reference-checkpoint": [
+      {
+        "path": "Model/runs/relu128-four-v9-history2-q5/best.pt",
+        "bytes": 3719953,
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 900,
+      "start_frame": 720,
+      "stop_frame": 751,
+      "first_evaluated_frame": 721,
+      "last_evaluated_frame": 750,
+      "scope": "Same-video holdout. Main seed/gamma fixed, not a perceptual or deployment acceptance.",
+      "checkpoint": {
+        "path": "Z:\\BrainHole\\Model\\runs\\v10-q5-v-prediction-20261122-002704\\best.pt",
+        "sha256": "7361e1af102dd4fd16a9b0455f5103bc331a28ef6af4aa645ed56e88e3bece70",
+        "config": {
+          "db": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "decoded_cache": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+          "out": "Model\\runs\\v10-q5-v-prediction-20261122-002704",
+          "mode": "diffusion",
+          "condition": "both",
+          "prediction_type": "v",
+          "channels": 48,
+          "epochs": 20,
+          "batch_size": 16,
+          "microbatch": 4,
+          "lr": 0.0001,
+          "low_frequency_weight": 0.0,
+          "timesteps": 1000,
+          "sample_steps": 32,
+          "validation_count": 256,
+          "max_steps": 0,
+          "val_steps": 0,
+          "scale_steps": 0,
+          "seed": 42,
+          "device": "cuda",
+          "architecture": "v10",
+          "history": 2,
+          "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720
+          },
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+          "train_samples": 21570,
+          "validation_samples": 256,
+          "validation_full_samples": 5370,
+          "validation_keys": [
+            [
+              721,
+              0
+            ],
+            [
+              721,
+              24
+            ],
+            [
+              722,
+              0
+            ],
+            [
+              722,
+              24
+            ],
+            [
+              723,
+              0
+            ],
+            [
+              723,
+              24
+            ],
+            [
+              724,
+              0
+            ],
+            [
+              724,
+              22
+            ],
+            [
+              725,
+              0
+            ],
+            [
+              725,
+              22
+            ],
+            [
+              726,
+              0
+            ],
+            [
+              726,
+              22
+            ],
+            [
+              727,
+              0
+            ],
+            [
+              727,
+              22
+            ],
+            [
+              728,
+              0
+            ],
+            [
+              728,
+              22
+            ],
+            [
+              729,
+              0
+            ],
+            [
+              729,
+              22
+            ],
+            [
+              730,
+              0
+            ],
+            [
+              730,
+              22
+            ],
+            [
+              731,
+              0
+            ],
+            [
+              731,
+              22
+            ],
+            [
+              732,
+              0
+            ],
+            [
+              732,
+              22
+            ],
+            [
+              733,
+              0
+            ],
+            [
+              733,
+              22
+            ],
+            [
+              734,
+              0
+            ],
+            [
+              734,
+              22
+            ],
+            [
+              735,
+              0
+            ],
+            [
+              735,
+              22
+            ],
+            [
+              736,
+              0
+            ],
+            [
+              736,
+              22
+            ],
+            [
+              737,
+              18
+            ],
+            [
+              738,
+              18
+            ],
+            [
+              739,
+              18
+            ],
+            [
+              740,
+              14
+            ],
+            [
+              741,
+              14
+            ],
+            [
+              742,
+              14
+            ],
+            [
+              743,
+              14
+            ],
+            [
+              744,
+              14
+            ],
+            [
+              745,
+              14
+            ],
+            [
+              746,
+              14
+            ],
+            [
+              747,
+              14
+            ],
+            [
+              748,
+              14
+            ],
+            [
+              749,
+              14
+            ],
+            [
+              750,
+              14
+            ],
+            [
+              751,
+              14
+            ],
+            [
+              752,
+              14
+            ],
+            [
+              753,
+              12
+            ],
+            [
+              754,
+              12
+            ],
+            [
+              755,
+              12
+            ],
+            [
+              756,
+              6
+            ],
+            [
+              756,
+              28
+            ],
+            [
+              757,
+              6
+            ],
+            [
+              757,
+              28
+            ],
+            [
+              758,
+              6
+            ],
+            [
+              758,
+              28
+            ],
+            [
+              759,
+              6
+            ],
+            [
+              759,
+              28
+            ],
+            [
+              760,
+              6
+            ],
+            [
+              760,
+              28
+            ],
+            [
+              761,
+              6
+            ],
+            [
+              761,
+              28
+            ],
+            [
+              762,
+              6
+            ],
+            [
+              762,
+              28
+            ],
+            [
+              763,
+              6
+            ],
+            [
+              763,
+              28
+            ],
+            [
+              764,
+              6
+            ],
+            [
+              764,
+              28
+            ],
+            [
+              765,
+              6
+            ],
+            [
+              765,
+              28
+            ],
+            [
+              766,
+              6
+            ],
+            [
+              766,
+              28
+            ],
+            [
+              767,
+              6
+            ],
+            [
+              767,
+              28
+            ],
+            [
+              768,
+              6
+            ],
+            [
+              768,
+              28
+            ],
+            [
+              769,
+              6
+            ],
+            [
+              770,
+              6
+            ],
+            [
+              771,
+              6
+            ],
+            [
+              772,
+              20
+            ],
+            [
+              773,
+              20
+            ],
+            [
+              774,
+              20
+            ],
+            [
+              775,
+              20
+            ],
+            [
+              776,
+              20
+            ],
+            [
+              777,
+              20
+            ],
+            [
+              778,
+              20
+            ],
+            [
+              779,
+              20
+            ],
+            [
+              780,
+              20
+            ],
+            [
+              781,
+              20
+            ],
+            [
+              782,
+              20
+            ],
+            [
+              783,
+              20
+            ],
+            [
+              784,
+              20
+            ],
+            [
+              785,
+              0
+            ],
+            [
+              785,
+              24
+            ],
+            [
+              786,
+              0
+            ],
+            [
+              786,
+              24
+            ],
+            [
+              787,
+              0
+            ],
+            [
+              787,
+              24
+            ],
+            [
+              788,
+              12
+            ],
+            [
+              789,
+              12
+            ],
+            [
+              790,
+              12
+            ],
+            [
+              791,
+              12
+            ],
+            [
+              792,
+              12
+            ],
+            [
+              793,
+              12
+            ],
+            [
+              794,
+              12
+            ],
+            [
+              795,
+              12
+            ],
+            [
+              796,
+              12
+            ],
+            [
+              797,
+              12
+            ],
+            [
+              798,
+              12
+            ],
+            [
+              799,
+              12
+            ],
+            [
+              800,
+              12
+            ],
+            [
+              801,
+              18
+            ],
+            [
+              802,
+              18
+            ],
+            [
+              803,
+              18
+            ],
+            [
+              804,
+              4
+            ],
+            [
+              804,
+              25
+            ],
+            [
+              805,
+              4
+            ],
+            [
+              805,
+              25
+            ],
+            [
+              806,
+              4
+            ],
+            [
+              806,
+              25
+            ],
+            [
+              807,
+              4
+            ],
+            [
+              807,
+              25
+            ],
+            [
+              808,
+              4
+            ],
+            [
+              808,
+              25
+            ],
+            [
+              809,
+              4
+            ],
+            [
+              809,
+              25
+            ],
+            [
+              810,
+              4
+            ],
+            [
+              810,
+              25
+            ],
+            [
+              811,
+              4
+            ],
+            [
+              811,
+              25
+            ],
+            [
+              812,
+              4
+            ],
+            [
+              812,
+              25
+            ],
+            [
+              813,
+              4
+            ],
+            [
+              813,
+              25
+            ],
+            [
+              814,
+              4
+            ],
+            [
+              814,
+              25
+            ],
+            [
+              815,
+              4
+            ],
+            [
+              815,
+              25
+            ],
+            [
+              816,
+              4
+            ],
+            [
+              816,
+              25
+            ],
+            [
+              817,
+              11
+            ],
+            [
+              818,
+              11
+            ],
+            [
+              819,
+              11
+            ],
+            [
+              820,
+              17
+            ],
+            [
+              821,
+              17
+            ],
+            [
+              822,
+              17
+            ],
+            [
+              823,
+              17
+            ],
+            [
+              824,
+              17
+            ],
+            [
+              825,
+              17
+            ],
+            [
+              826,
+              17
+            ],
+            [
+              827,
+              17
+            ],
+            [
+              828,
+              17
+            ],
+            [
+              829,
+              17
+            ],
+            [
+              830,
+              17
+            ],
+            [
+              831,
+              17
+            ],
+            [
+              832,
+              17
+            ],
+            [
+              833,
+              5
+            ],
+            [
+              833,
+              29
+            ],
+            [
+              834,
+              5
+            ],
+            [
+              834,
+              29
+            ],
+            [
+              835,
+              5
+            ],
+            [
+              835,
+              29
+            ],
+            [
+              836,
+              9
+            ],
+            [
+              837,
+              9
+            ],
+            [
+              838,
+              9
+            ],
+            [
+              839,
+              9
+            ],
+            [
+              840,
+              9
+            ],
+            [
+              841,
+              9
+            ],
+            [
+              842,
+              9
+            ],
+            [
+              843,
+              9
+            ],
+            [
+              844,
+              9
+            ],
+            [
+              845,
+              9
+            ],
+            [
+              846,
+              9
+            ],
+            [
+              847,
+              9
+            ],
+            [
+              848,
+              9
+            ],
+            [
+              849,
+              23
+            ],
+            [
+              850,
+              23
+            ],
+            [
+              851,
+              23
+            ],
+            [
+              852,
+              1
+            ],
+            [
+              852,
+              23
+            ],
+            [
+              853,
+              1
+            ],
+            [
+              853,
+              23
+            ],
+            [
+              854,
+              1
+            ],
+            [
+              854,
+              23
+            ],
+            [
+              855,
+              1
+            ],
+            [
+              855,
+              23
+            ],
+            [
+              856,
+              1
+            ],
+            [
+              856,
+              23
+            ],
+            [
+              857,
+              1
+            ],
+            [
+              857,
+              23
+            ],
+            [
+              858,
+              1
+            ],
+            [
+              858,
+              23
+            ],
+            [
+              859,
+              1
+            ],
+            [
+              859,
+              23
+            ],
+            [
+              860,
+              1
+            ],
+            [
+              860,
+              23
+            ],
+            [
+              861,
+              1
+            ],
+            [
+              861,
+              23
+            ],
+            [
+              862,
+              1
+            ],
+            [
+              862,
+              23
+            ],
+            [
+              863,
+              1
+            ],
+            [
+              863,
+              23
+            ],
+            [
+              864,
+              1
+            ],
+            [
+              864,
+              23
+            ],
+            [
+              865,
+              17
+            ],
+            [
+              866,
+              17
+            ],
+            [
+              867,
+              17
+            ],
+            [
+              868,
+              15
+            ],
+            [
+              869,
+              15
+            ],
+            [
+              870,
+              15
+            ],
+            [
+              871,
+              15
+            ],
+            [
+              872,
+              15
+            ],
+            [
+              873,
+              15
+            ],
+            [
+              874,
+              15
+            ],
+            [
+              875,
+              15
+            ],
+            [
+              876,
+              15
+            ],
+            [
+              877,
+              15
+            ],
+            [
+              878,
+              15
+            ],
+            [
+              879,
+              15
+            ],
+            [
+              880,
+              15
+            ],
+            [
+              881,
+              11
+            ],
+            [
+              882,
+              11
+            ],
+            [
+              883,
+              11
+            ],
+            [
+              884,
+              7
+            ],
+            [
+              884,
+              29
+            ],
+            [
+              885,
+              7
+            ],
+            [
+              885,
+              29
+            ],
+            [
+              886,
+              7
+            ],
+            [
+              886,
+              29
+            ],
+            [
+              887,
+              7
+            ],
+            [
+              887,
+              29
+            ],
+            [
+              888,
+              7
+            ],
+            [
+              888,
+              29
+            ],
+            [
+              889,
+              7
+            ],
+            [
+              889,
+              29
+            ],
+            [
+              890,
+              7
+            ],
+            [
+              890,
+              29
+            ],
+            [
+              891,
+              7
+            ],
+            [
+              891,
+              29
+            ],
+            [
+              892,
+              7
+            ],
+            [
+              892,
+              29
+            ],
+            [
+              893,
+              7
+            ],
+            [
+              893,
+              29
+            ],
+            [
+              894,
+              7
+            ],
+            [
+              894,
+              29
+            ],
+            [
+              895,
+              7
+            ],
+            [
+              895,
+              29
+            ],
+            [
+              896,
+              7
+            ],
+            [
+              896,
+              29
+            ],
+            [
+              897,
+              5
+            ],
+            [
+              897,
+              29
+            ],
+            [
+              898,
+              5
+            ],
+            [
+              898,
+              29
+            ],
+            [
+              899,
+              5
+            ],
+            [
+              899,
+              29
+            ]
+          ],
+          "device_used": "cuda",
+          "torch": "2.7.1+cu128",
+          "gammas": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+          "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+          "noise_schedule": "cosine_s0.008_beta_max0.999",
+          "sample_seed": 0,
+          "noise_policy": "per_frame",
+          "precision": "FP32",
+          "weight_decay": 0.0001,
+          "coverage": "full_training_fixed_subset_validation",
+          "residual_statistics": {
+            "method": "population_std_train_only_floor_0.01",
+            "samples": 21570,
+            "mean": [
+              -0.004730205343787168,
+              0.002227697577441214,
+              0.0028698916385016334,
+              0.0011661499426800467
+            ],
+            "std": [
+              0.07923414477171138,
+              0.07745912812870434,
+              0.07813729346561686,
+              0.07847540133816912
+            ]
+          },
+          "parameters": 280340
+        },
+        "epoch": 12
+      },
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "steps": 32,
+      "seed": 0,
+      "noise_policy": "per_frame",
+      "raw_projection_metrics": {
+        "bilinear": {
+          "mae_8bit": 16.127501586278278,
+          "psnr": 21.15585138261336
+        },
+        "v10-gamma0.25": {
+          "mae_8bit": 14.935583854516347,
+          "psnr": 21.724769392579514
+        },
+        "v10-gamma0.5": {
+          "mae_8bit": 14.50664026737213,
+          "psnr": 21.91182960607845
+        },
+        "v10-gamma0.75": {
+          "mae_8bit": 14.896003827253976,
+          "psnr": 21.666564328938968
+        },
+        "v10-gamma1": {
+          "mae_8bit": 16.051992544730506,
+          "psnr": 21.054244669057095
+        },
+        "bilinear-sharpen": {
+          "mae_8bit": 16.325235301653542,
+          "psnr": 21.053836641102418
+        },
+        "bilinear-highpass-noise": {
+          "mae_8bit": 16.643624878327053,
+          "psnr": 20.95793102929241
+        },
+        "v9-reference": {
+          "mae_8bit": 13.022988282044729,
+          "psnr": 22.75737584771816
+        },
+        "v10-deterministic-control": {
+          "mae_8bit": 12.196155280868213,
+          "psnr": 23.066342143165933
+        },
+        "official-fsr1-rcas0": {
+          "mae_8bit": 15.811095915238063,
+          "psnr": 21.32095630046736
+        }
+      },
+      "rgb_reference_metrics": {
+        "bilinear": {
+          "mae_8bit": 14.706887558566198,
+          "psnr": 22.12560842579624
+        },
+        "v10-gamma0.25": {
+          "mae_8bit": 13.4341993882921,
+          "psnr": 22.80072403204139
+        },
+        "v10-gamma0.5": {
+          "mae_8bit": 12.90464006000095,
+          "psnr": 23.049394654766807
+        },
+        "v10-gamma0.75": {
+          "mae_8bit": 13.216657609409756,
+          "psnr": 22.795365975779504
+        },
+        "v10-gamma1": {
+          "mae_8bit": 14.33771132575141,
+          "psnr": 22.116439108264707
+        },
+        "bilinear-sharpen": {
+          "mae_8bit": 14.871953227784898,
+          "psnr": 22.027295251058348
+        },
+        "bilinear-highpass-noise": {
+          "mae_8bit": 14.920699453088972,
+          "psnr": 22.02517197454693
+        },
+        "v9-reference": {
+          "mae_8bit": 11.498551710446675,
+          "psnr": 23.941892259133436
+        },
+        "v10-deterministic-control": {
+          "mae_8bit": 10.55007824367947,
+          "psnr": 24.382121940097523
+        },
+        "official-fsr1-rcas0": {
+          "mae_8bit": 14.79039212544759,
+          "psnr": 22.07235590132389
+        }
+      },
+      "primary": "v10-gamma1",
+      "paired_comparison": {
+        "bilinear": {
+          "worst_10_percent_mae": 21.213769281903904,
+          "primary_win_rate": 0.5433333333333333
+        },
+        "v10-gamma0.25": {
+          "worst_10_percent_mae": 20.154458028574783,
+          "primary_win_rate": 0.11222222222222222
+        },
+        "v10-gamma0.5": {
+          "worst_10_percent_mae": 20.004632574816544,
+          "primary_win_rate": 0.0033333333333333335
+        },
+        "v10-gamma0.75": {
+          "worst_10_percent_mae": 20.75174139191707,
+          "primary_win_rate": 0.0
+        },
+        "v10-gamma1": {
+          "worst_10_percent_mae": 22.3037274107337,
+          "primary_win_rate": 0.0
+        },
+        "bilinear-sharpen": {
+          "worst_10_percent_mae": 21.499181276808184,
+          "primary_win_rate": 0.6033333333333334
+        },
+        "bilinear-highpass-noise": {
+          "worst_10_percent_mae": 21.647505663335323,
+          "primary_win_rate": 0.7155555555555555
+        },
+        "v9-reference": {
+          "worst_10_percent_mae": 17.818231405690312,
+          "primary_win_rate": 0.0
+        },
+        "v10-deterministic-control": {
+          "worst_10_percent_mae": 17.360972323144477,
+          "primary_win_rate": 0.0
+        },
+        "official-fsr1-rcas0": {
+          "worst_10_percent_mae": 20.73244961599509,
+          "primary_win_rate": 0.43666666666666665
+        }
+      },
+      "largest_regressions_vs_bilinear": [
+        {
+          "frame": 737,
+          "block": 20,
+          "delta_vs_bilinear": 3.378526009619236
+        },
+        {
+          "frame": 741,
+          "block": 14,
+          "delta_vs_bilinear": 3.320819456130266
+        },
+        {
+          "frame": 736,
+          "block": 20,
+          "delta_vs_bilinear": 3.298713192343712
+        },
+        {
+          "frame": 737,
+          "block": 21,
+          "delta_vs_bilinear": 3.2159802317619324
+        },
+        {
+          "frame": 740,
+          "block": 20,
+          "delta_vs_bilinear": 2.8705673664808273
+        },
+        {
+          "frame": 735,
+          "block": 17,
+          "delta_vs_bilinear": 2.72871907800436
+        },
+        {
+          "frame": 742,
+          "block": 16,
+          "delta_vs_bilinear": 2.6940877363085747
+        },
+        {
+          "frame": 741,
+          "block": 18,
+          "delta_vs_bilinear": 2.6625342294573784
+        },
+        {
+          "frame": 724,
+          "block": 17,
+          "delta_vs_bilinear": 2.6316171884536743
+        },
+        {
+          "frame": 724,
+          "block": 18,
+          "delta_vs_bilinear": 2.6116302609443665
+        }
+      ],
+      "frequency_errors": {
+        "bilinear": {
+          "low_frequency_mae": 12.828968193531036,
+          "high_frequency_mae": 7.075744671026865
+        },
+        "v10-gamma0.25": {
+          "low_frequency_mae": 11.396114361683527,
+          "high_frequency_mae": 7.145962569117546
+        },
+        "v10-gamma0.5": {
+          "low_frequency_mae": 10.632444057265918,
+          "high_frequency_mae": 7.409501986006895
+        },
+        "v10-gamma0.75": {
+          "low_frequency_mae": 10.694531482656796,
+          "high_frequency_mae": 7.8238059534629185
+        },
+        "v10-gamma1": {
+          "low_frequency_mae": 11.590383585095406,
+          "high_frequency_mae": 8.35377738793691
+        },
+        "bilinear-sharpen": {
+          "low_frequency_mae": 12.997141933838526,
+          "high_frequency_mae": 7.123348097801208
+        },
+        "bilinear-highpass-noise": {
+          "low_frequency_mae": 12.838420870304107,
+          "high_frequency_mae": 8.12484028061231
+        },
+        "v9-reference": {
+          "low_frequency_mae": 9.273484225273132,
+          "high_frequency_mae": 6.962823553085327
+        },
+        "v10-deterministic-control": {
+          "low_frequency_mae": 8.304491195281345,
+          "high_frequency_mae": 6.943259483774503
+        },
+        "official-fsr1-rcas0": {
+          "low_frequency_mae": 12.376278413931528,
+          "high_frequency_mae": 7.256897839307785
+        }
+      },
+      "noise_control": {
+        "keys": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            11,
+            0
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            13,
+            0
+          ],
+          [
+            14,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            240,
+            20
+          ],
+          [
+            241,
+            0
+          ],
+          [
+            242,
+            0
+          ],
+          [
+            243,
+            0
+          ],
+          [
+            244,
+            0
+          ],
+          [
+            245,
+            0
+          ],
+          [
+            246,
+            0
+          ],
+          [
+            247,
+            0
+          ],
+          [
+            248,
+            0
+          ],
+          [
+            249,
+            0
+          ],
+          [
+            250,
+            0
+          ],
+          [
+            251,
+            0
+          ],
+          [
+            252,
+            0
+          ],
+          [
+            253,
+            0
+          ],
+          [
+            254,
+            0
+          ],
+          [
+            255,
+            0
+          ],
+          [
+            465,
+            29
+          ],
+          [
+            466,
+            29
+          ],
+          [
+            467,
+            29
+          ],
+          [
+            468,
+            29
+          ],
+          [
+            469,
+            29
+          ],
+          [
+            470,
+            29
+          ],
+          [
+            471,
+            29
+          ],
+          [
+            472,
+            29
+          ],
+          [
+            473,
+            29
+          ],
+          [
+            474,
+            29
+          ],
+          [
+            475,
+            29
+          ],
+          [
+            476,
+            29
+          ],
+          [
+            477,
+            29
+          ],
+          [
+            478,
+            29
+          ],
+          [
+            479,
+            29
+          ],
+          [
+            480,
+            9
+          ],
+          [
+            704,
+            29
+          ],
+          [
+            705,
+            29
+          ],
+          [
+            706,
+            29
+          ],
+          [
+            707,
+            29
+          ],
+          [
+            708,
+            29
+          ],
+          [
+            709,
+            29
+          ],
+          [
+            710,
+            29
+          ],
+          [
+            711,
+            29
+          ],
+          [
+            712,
+            29
+          ],
+          [
+            713,
+            29
+          ],
+          [
+            714,
+            29
+          ],
+          [
+            715,
+            29
+          ],
+          [
+            716,
+            29
+          ],
+          [
+            717,
+            29
+          ],
+          [
+            718,
+            29
+          ],
+          [
+            719,
+            29
+          ]
+        ],
+        "amplitude": [
+          0.022006073966622353,
+          0.023072078824043274,
+          0.023289676755666733,
+          0.021053988486528397
+        ],
+        "source": "64 fixed train keys; matches generated gamma1 highpass residual energy, no target reads"
+      },
+      "sharpen_control": "fixed CFA-plane unsharp alpha0.5, Gaussian5 sigma1",
+      "known_sample_mae": {
+        "bilinear": 11.312582072615625,
+        "v10-gamma0.25": 10.249419070680936,
+        "v10-gamma0.5": 10.247765679756801,
+        "v10-gamma0.75": 11.264641788005829,
+        "v10-gamma1": 13.101218362649282,
+        "bilinear-sharpen": 11.920480708479882,
+        "bilinear-highpass-noise": 11.939539968967438,
+        "v9-reference": 9.300097939769426,
+        "v10-deterministic-control": 8.466747406721115,
+        "official-fsr1-rcas0": 11.28860777080059
+      },
+      "seam_diagnostics": {
+        "bilinear": {
+          "cfa_error_jump_at_strip_boundaries": 21.26774314354206,
+          "cfa_error_jump_inside_strips": 10.690004690261114
+        },
+        "v10-gamma0.25": {
+          "cfa_error_jump_at_strip_boundaries": 19.781129629858608,
+          "cfa_error_jump_inside_strips": 10.77647057487851
+        },
+        "v10-gamma0.5": {
+          "cfa_error_jump_at_strip_boundaries": 19.549030103354617,
+          "cfa_error_jump_inside_strips": 11.208682434445336
+        },
+        "v10-gamma0.75": {
+          "cfa_error_jump_at_strip_boundaries": 20.53349012506419,
+          "cfa_error_jump_inside_strips": 11.900121238345191
+        },
+        "v10-gamma1": {
+          "cfa_error_jump_at_strip_boundaries": 22.57144155173466,
+          "cfa_error_jump_inside_strips": 12.785043841770717
+        },
+        "bilinear-sharpen": {
+          "cfa_error_jump_at_strip_boundaries": 21.706076217519826,
+          "cfa_error_jump_inside_strips": 10.782586502801804
+        },
+        "bilinear-highpass-noise": {
+          "cfa_error_jump_at_strip_boundaries": 21.963565635681153,
+          "cfa_error_jump_inside_strips": 12.658497196379162
+        },
+        "v9-reference": {
+          "cfa_error_jump_at_strip_boundaries": 16.880373543706433,
+          "cfa_error_jump_inside_strips": 10.521562599908737
+        },
+        "v10-deterministic-control": {
+          "cfa_error_jump_at_strip_boundaries": 15.688166624924232,
+          "cfa_error_jump_inside_strips": 10.387927525838217
+        },
+        "official-fsr1-rcas0": {
+          "cfa_error_jump_at_strip_boundaries": 20.616946184224098,
+          "cfa_error_jump_inside_strips": 10.906631209963843
+        }
+      },
+      "temporal_diagnostics": {
+        "bilinear": {
+          "raw_error_change_mae_8bit": 14.101831674575806,
+          "frame_pairs": 29
+        },
+        "v10-gamma0.25": {
+          "raw_error_change_mae_8bit": 12.414819367178556,
+          "frame_pairs": 29
+        },
+        "v10-gamma0.5": {
+          "raw_error_change_mae_8bit": 12.11692097104829,
+          "frame_pairs": 29
+        },
+        "v10-gamma0.75": {
+          "raw_error_change_mae_8bit": 13.185351378342201,
+          "frame_pairs": 29
+        },
+        "v10-gamma1": {
+          "raw_error_change_mae_8bit": 15.394525761439883,
+          "frame_pairs": 29
+        },
+        "bilinear-sharpen": {
+          "raw_error_change_mae_8bit": 14.63886345830457,
+          "frame_pairs": 29
+        },
+        "bilinear-highpass-noise": {
+          "raw_error_change_mae_8bit": 15.436155286328546,
+          "frame_pairs": 29
+        },
+        "v9-reference": {
+          "raw_error_change_mae_8bit": 8.376650686921744,
+          "frame_pairs": 29
+        },
+        "v10-deterministic-control": {
+          "raw_error_change_mae_8bit": 7.68122553989805,
+          "frame_pairs": 29
+        },
+        "official-fsr1-rcas0": {
+          "raw_error_change_mae_8bit": 13.493091075173739,
+          "frame_pairs": 29
+        }
+      },
+      "temporal_metric_note": "Adjacent-frame change of prediction error in fixed raw coordinates, without motion compensation.",
+      "phase_metrics": {
+        "0": {
+          "bilinear": 16.317680018022656,
+          "v10-gamma0.25": 15.05997958406806,
+          "v10-gamma0.5": 14.573206957429647,
+          "v10-gamma0.75": 14.917024383321404,
+          "v10-gamma1": 16.050480699166656,
+          "bilinear-sharpen": 16.51440496183932,
+          "bilinear-highpass-noise": 16.82423165999353,
+          "v9-reference": 13.049184704199433,
+          "v10-deterministic-control": 12.387290241196752,
+          "official-fsr1-rcas0": 15.947673162445426
+        },
+        "1": {
+          "bilinear": 16.236445855349302,
+          "v10-gamma0.25": 15.096653933636844,
+          "v10-gamma0.5": 14.698814458213747,
+          "v10-gamma0.75": 15.111725239083171,
+          "v10-gamma1": 16.2848647730425,
+          "bilinear-sharpen": 16.434151051566005,
+          "bilinear-highpass-noise": 16.75302243605256,
+          "v9-reference": 13.34361038543284,
+          "v10-deterministic-control": 12.424538993276656,
+          "official-fsr1-rcas0": 15.848729052580893
+        },
+        "2": {
+          "bilinear": 16.256626746617258,
+          "v10-gamma0.25": 15.085675784386694,
+          "v10-gamma0.5": 14.68324555363506,
+          "v10-gamma0.75": 15.095694310963154,
+          "v10-gamma1": 16.27274462673813,
+          "bilinear-sharpen": 16.4606045037508,
+          "bilinear-highpass-noise": 16.770363945513964,
+          "v9-reference": 13.370189626701176,
+          "v10-deterministic-control": 12.5547169521451,
+          "official-fsr1-rcas0": 15.883726061321795
+        },
+        "3": {
+          "bilinear": 16.251982398331165,
+          "v10-gamma0.25": 15.060910629108548,
+          "v10-gamma0.5": 14.640480210073292,
+          "v10-gamma0.75": 15.04308586474508,
+          "v10-gamma1": 16.219526724889874,
+          "bilinear-sharpen": 16.4515014430508,
+          "bilinear-highpass-noise": 16.76309020165354,
+          "v9-reference": 13.34809906873852,
+          "v10-deterministic-control": 12.4404308013618,
+          "official-fsr1-rcas0": 15.875565302558243
+        },
+        "4": {
+          "bilinear": 15.829761277884245,
+          "v10-gamma0.25": 14.681044806726277,
+          "v10-gamma0.5": 14.331272229552269,
+          "v10-gamma0.75": 14.817275872454047,
+          "v10-gamma1": 16.071851623244584,
+          "bilinear-sharpen": 16.025262164883316,
+          "bilinear-highpass-noise": 16.364422449842095,
+          "v9-reference": 12.792121515609324,
+          "v10-deterministic-control": 11.996363133192062,
+          "official-fsr1-rcas0": 15.49594138469547
+        },
+        "5": {
+          "bilinear": 15.871180907823145,
+          "v10-gamma0.25": 14.749197363853455,
+          "v10-gamma0.5": 14.433247500099242,
+          "v10-gamma0.75": 14.949265605770051,
+          "v10-gamma1": 16.223269793204963,
+          "bilinear-sharpen": 16.064526930451393,
+          "bilinear-highpass-noise": 16.396700625307858,
+          "v9-reference": 12.805433087982237,
+          "v10-deterministic-control": 11.994453703984618,
+          "official-fsr1-rcas0": 15.541297714225948
+        },
+        "6": {
+          "bilinear": 15.874424112960696,
+          "v10-gamma0.25": 14.737362566404045,
+          "v10-gamma0.5": 14.375917284749448,
+          "v10-gamma0.75": 14.842762244865298,
+          "v10-gamma1": 16.0643404237926,
+          "bilinear-sharpen": 16.07030190806836,
+          "bilinear-highpass-noise": 16.394790404476225,
+          "v9-reference": 12.782830871641636,
+          "v10-deterministic-control": 12.036355037242174,
+          "official-fsr1-rcas0": 15.537178196944296
+        },
+        "7": {
+          "bilinear": 15.918151723220944,
+          "v10-gamma0.25": 14.72730246372521,
+          "v10-gamma0.5": 14.27576292399317,
+          "v10-gamma0.75": 14.616609542630613,
+          "v10-gamma1": 15.714276212267578,
+          "bilinear-sharpen": 16.119929968379438,
+          "bilinear-highpass-noise": 16.435430047102273,
+          "v9-reference": 12.752831940539181,
+          "v10-deterministic-control": 11.992017148062587,
+          "official-fsr1-rcas0": 15.589765965938568
+        },
+        "8": {
+          "bilinear": 16.025843755342066,
+          "v10-gamma0.25": 14.769865373149514,
+          "v10-gamma0.5": 14.223908309824765,
+          "v10-gamma0.75": 14.457327061332762,
+          "v10-gamma1": 15.438047722913325,
+          "bilinear-sharpen": 16.218307892791927,
+          "bilinear-highpass-noise": 16.5397729864344,
+          "v9-reference": 12.494106879457831,
+          "v10-deterministic-control": 11.805469498969615,
+          "official-fsr1-rcas0": 15.72271703183651
+        },
+        "9": {
+          "bilinear": 15.932116892188787,
+          "v10-gamma0.25": 14.697389170527458,
+          "v10-gamma0.5": 14.20200144033879,
+          "v10-gamma0.75": 14.532462123781443,
+          "v10-gamma1": 15.649943131022155,
+          "bilinear-sharpen": 16.129797057248652,
+          "bilinear-highpass-noise": 16.451143549755216,
+          "v9-reference": 12.870876833796501,
+          "v10-deterministic-control": 12.014370129443705,
+          "official-fsr1-rcas0": 15.641095828264952
+        },
+        "10": {
+          "bilinear": 15.909900988452137,
+          "v10-gamma0.25": 14.687628475949168,
+          "v10-gamma0.5": 14.18929373472929,
+          "v10-gamma0.75": 14.482567016966641,
+          "v10-gamma1": 15.526602984406054,
+          "bilinear-sharpen": 16.10738130006939,
+          "bilinear-highpass-noise": 16.429969945922494,
+          "v9-reference": 12.834466015920043,
+          "v10-deterministic-control": 12.070644967257977,
+          "official-fsr1-rcas0": 15.64120660815388
+        },
+        "11": {
+          "bilinear": 16.070460232906044,
+          "v10-gamma0.25": 14.866013719700277,
+          "v10-gamma0.5": 14.406512562185526,
+          "v10-gamma0.75": 14.744841483421624,
+          "v10-gamma1": 15.843684965744615,
+          "bilinear-sharpen": 16.266546446830034,
+          "bilinear-highpass-noise": 16.585773333907127,
+          "v9-reference": 12.833271597512066,
+          "v10-deterministic-control": 12.059069585055113,
+          "official-fsr1-rcas0": 15.802046404220164
+        },
+        "12": {
+          "bilinear": 16.395642983727157,
+          "v10-gamma0.25": 15.112578736618161,
+          "v10-gamma0.5": 14.582725225016475,
+          "v10-gamma0.75": 14.878476702608168,
+          "v10-gamma1": 15.952060454525054,
+          "bilinear-sharpen": 16.595312690362334,
+          "bilinear-highpass-noise": 16.904311017133296,
+          "v9-reference": 12.92852393630892,
+          "v10-deterministic-control": 12.102318927645683,
+          "official-fsr1-rcas0": 16.132508765906096
+        },
+        "13": {
+          "bilinear": 16.387989941053092,
+          "v10-gamma0.25": 15.181876140646636,
+          "v10-gamma0.5": 14.758447951637208,
+          "v10-gamma0.75": 15.17748040985316,
+          "v10-gamma1": 16.377093772403896,
+          "bilinear-sharpen": 16.589096018113196,
+          "bilinear-highpass-noise": 16.901201200671494,
+          "v9-reference": 13.415007224306464,
+          "v10-deterministic-control": 12.459169432520866,
+          "official-fsr1-rcas0": 16.095277223736048
+        },
+        "14": {
+          "bilinear": 16.531373616307974,
+          "v10-gamma0.25": 15.368606084957719,
+          "v10-gamma0.5": 15.001262268982828,
+          "v10-gamma0.75": 15.475332098081708,
+          "v10-gamma1": 16.726405735127628,
+          "bilinear-sharpen": 16.72905740700662,
+          "bilinear-highpass-noise": 17.03858286049217,
+          "v9-reference": 13.486073449254036,
+          "v10-deterministic-control": 12.539788598194718,
+          "official-fsr1-rcas0": 16.246950391680002
+        },
+        "15": {
+          "bilinear": 16.52357209660113,
+          "v10-gamma0.25": 15.363332537934184,
+          "v10-gamma0.5": 15.020225895568728,
+          "v10-gamma0.75": 15.513285474851727,
+          "v10-gamma1": 16.77987489849329,
+          "bilinear-sharpen": 16.719112802296877,
+          "bilinear-highpass-noise": 17.02737401612103,
+          "v9-reference": 13.525587433949113,
+          "v10-deterministic-control": 12.517960036173463,
+          "official-fsr1-rcas0": 16.277191322296858
+        }
+      },
+      "metric_note": "RGB reference is demosaiced target RAW, not original full RGB. No LPIPS or FID measured.",
+      "numerical_fsr_passed": false,
+      "fsr_reference": {
+        "path": "Z:\\BrainHole\\Model\\runs\\eval-echosr-lite-q5-20261121\\report.json",
+        "sha256": "15961dd375621c3173ba7f51b65a248b19caee989d1d9234564e3a7869a652aa",
+        "reused_official_outputs": true
+      },
+      "v9_reference": {
+        "path": "Z:\\BrainHole\\Model\\runs\\relu128-four-v9-history2-q5\\best.pt",
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0"
+      },
+      "deterministic_control": {
+        "path": "Z:\\BrainHole\\Model\\runs\\v10-q5-b-20261122-002704\\best.pt",
+        "sha256": "8fb3c484b43fc667f9c6ed808a3a2522f0a33d0bcacc2c7c3d391754412d7396",
+        "config": {
+          "db": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "decoded_cache": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+          "out": "Z:\\BrainHole\\Model\\runs\\v10-q5-b-20261122-002704",
+          "mode": "deterministic",
+          "condition": "both",
+          "prediction_type": "epsilon",
+          "channels": 48,
+          "epochs": 20,
+          "batch_size": 16,
+          "microbatch": 4,
+          "lr": 0.0001,
+          "low_frequency_weight": 0.0,
+          "timesteps": 1000,
+          "sample_steps": 32,
+          "validation_count": 256,
+          "max_steps": 0,
+          "val_steps": 0,
+          "scale_steps": 0,
+          "seed": 42,
+          "device": "cuda",
+          "architecture": "v10",
+          "history": 2,
+          "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720
+          },
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+          "train_samples": 21570,
+          "validation_samples": 256,
+          "validation_full_samples": 5370,
+          "validation_keys": [
+            [
+              721,
+              0
+            ],
+            [
+              721,
+              24
+            ],
+            [
+              722,
+              0
+            ],
+            [
+              722,
+              24
+            ],
+            [
+              723,
+              0
+            ],
+            [
+              723,
+              24
+            ],
+            [
+              724,
+              0
+            ],
+            [
+              724,
+              22
+            ],
+            [
+              725,
+              0
+            ],
+            [
+              725,
+              22
+            ],
+            [
+              726,
+              0
+            ],
+            [
+              726,
+              22
+            ],
+            [
+              727,
+              0
+            ],
+            [
+              727,
+              22
+            ],
+            [
+              728,
+              0
+            ],
+            [
+              728,
+              22
+            ],
+            [
+              729,
+              0
+            ],
+            [
+              729,
+              22
+            ],
+            [
+              730,
+              0
+            ],
+            [
+              730,
+              22
+            ],
+            [
+              731,
+              0
+            ],
+            [
+              731,
+              22
+            ],
+            [
+              732,
+              0
+            ],
+            [
+              732,
+              22
+            ],
+            [
+              733,
+              0
+            ],
+            [
+              733,
+              22
+            ],
+            [
+              734,
+              0
+            ],
+            [
+              734,
+              22
+            ],
+            [
+              735,
+              0
+            ],
+            [
+              735,
+              22
+            ],
+            [
+              736,
+              0
+            ],
+            [
+              736,
+              22
+            ],
+            [
+              737,
+              18
+            ],
+            [
+              738,
+              18
+            ],
+            [
+              739,
+              18
+            ],
+            [
+              740,
+              14
+            ],
+            [
+              741,
+              14
+            ],
+            [
+              742,
+              14
+            ],
+            [
+              743,
+              14
+            ],
+            [
+              744,
+              14
+            ],
+            [
+              745,
+              14
+            ],
+            [
+              746,
+              14
+            ],
+            [
+              747,
+              14
+            ],
+            [
+              748,
+              14
+            ],
+            [
+              749,
+              14
+            ],
+            [
+              750,
+              14
+            ],
+            [
+              751,
+              14
+            ],
+            [
+              752,
+              14
+            ],
+            [
+              753,
+              12
+            ],
+            [
+              754,
+              12
+            ],
+            [
+              755,
+              12
+            ],
+            [
+              756,
+              6
+            ],
+            [
+              756,
+              28
+            ],
+            [
+              757,
+              6
+            ],
+            [
+              757,
+              28
+            ],
+            [
+              758,
+              6
+            ],
+            [
+              758,
+              28
+            ],
+            [
+              759,
+              6
+            ],
+            [
+              759,
+              28
+            ],
+            [
+              760,
+              6
+            ],
+            [
+              760,
+              28
+            ],
+            [
+              761,
+              6
+            ],
+            [
+              761,
+              28
+            ],
+            [
+              762,
+              6
+            ],
+            [
+              762,
+              28
+            ],
+            [
+              763,
+              6
+            ],
+            [
+              763,
+              28
+            ],
+            [
+              764,
+              6
+            ],
+            [
+              764,
+              28
+            ],
+            [
+              765,
+              6
+            ],
+            [
+              765,
+              28
+            ],
+            [
+              766,
+              6
+            ],
+            [
+              766,
+              28
+            ],
+            [
+              767,
+              6
+            ],
+            [
+              767,
+              28
+            ],
+            [
+              768,
+              6
+            ],
+            [
+              768,
+              28
+            ],
+            [
+              769,
+              6
+            ],
+            [
+              770,
+              6
+            ],
+            [
+              771,
+              6
+            ],
+            [
+              772,
+              20
+            ],
+            [
+              773,
+              20
+            ],
+            [
+              774,
+              20
+            ],
+            [
+              775,
+              20
+            ],
+            [
+              776,
+              20
+            ],
+            [
+              777,
+              20
+            ],
+            [
+              778,
+              20
+            ],
+            [
+              779,
+              20
+            ],
+            [
+              780,
+              20
+            ],
+            [
+              781,
+              20
+            ],
+            [
+              782,
+              20
+            ],
+            [
+              783,
+              20
+            ],
+            [
+              784,
+              20
+            ],
+            [
+              785,
+              0
+            ],
+            [
+              785,
+              24
+            ],
+            [
+              786,
+              0
+            ],
+            [
+              786,
+              24
+            ],
+            [
+              787,
+              0
+            ],
+            [
+              787,
+              24
+            ],
+            [
+              788,
+              12
+            ],
+            [
+              789,
+              12
+            ],
+            [
+              790,
+              12
+            ],
+            [
+              791,
+              12
+            ],
+            [
+              792,
+              12
+            ],
+            [
+              793,
+              12
+            ],
+            [
+              794,
+              12
+            ],
+            [
+              795,
+              12
+            ],
+            [
+              796,
+              12
+            ],
+            [
+              797,
+              12
+            ],
+            [
+              798,
+              12
+            ],
+            [
+              799,
+              12
+            ],
+            [
+              800,
+              12
+            ],
+            [
+              801,
+              18
+            ],
+            [
+              802,
+              18
+            ],
+            [
+              803,
+              18
+            ],
+            [
+              804,
+              4
+            ],
+            [
+              804,
+              25
+            ],
+            [
+              805,
+              4
+            ],
+            [
+              805,
+              25
+            ],
+            [
+              806,
+              4
+            ],
+            [
+              806,
+              25
+            ],
+            [
+              807,
+              4
+            ],
+            [
+              807,
+              25
+            ],
+            [
+              808,
+              4
+            ],
+            [
+              808,
+              25
+            ],
+            [
+              809,
+              4
+            ],
+            [
+              809,
+              25
+            ],
+            [
+              810,
+              4
+            ],
+            [
+              810,
+              25
+            ],
+            [
+              811,
+              4
+            ],
+            [
+              811,
+              25
+            ],
+            [
+              812,
+              4
+            ],
+            [
+              812,
+              25
+            ],
+            [
+              813,
+              4
+            ],
+            [
+              813,
+              25
+            ],
+            [
+              814,
+              4
+            ],
+            [
+              814,
+              25
+            ],
+            [
+              815,
+              4
+            ],
+            [
+              815,
+              25
+            ],
+            [
+              816,
+              4
+            ],
+            [
+              816,
+              25
+            ],
+            [
+              817,
+              11
+            ],
+            [
+              818,
+              11
+            ],
+            [
+              819,
+              11
+            ],
+            [
+              820,
+              17
+            ],
+            [
+              821,
+              17
+            ],
+            [
+              822,
+              17
+            ],
+            [
+              823,
+              17
+            ],
+            [
+              824,
+              17
+            ],
+            [
+              825,
+              17
+            ],
+            [
+              826,
+              17
+            ],
+            [
+              827,
+              17
+            ],
+            [
+              828,
+              17
+            ],
+            [
+              829,
+              17
+            ],
+            [
+              830,
+              17
+            ],
+            [
+              831,
+              17
+            ],
+            [
+              832,
+              17
+            ],
+            [
+              833,
+              5
+            ],
+            [
+              833,
+              29
+            ],
+            [
+              834,
+              5
+            ],
+            [
+              834,
+              29
+            ],
+            [
+              835,
+              5
+            ],
+            [
+              835,
+              29
+            ],
+            [
+              836,
+              9
+            ],
+            [
+              837,
+              9
+            ],
+            [
+              838,
+              9
+            ],
+            [
+              839,
+              9
+            ],
+            [
+              840,
+              9
+            ],
+            [
+              841,
+              9
+            ],
+            [
+              842,
+              9
+            ],
+            [
+              843,
+              9
+            ],
+            [
+              844,
+              9
+            ],
+            [
+              845,
+              9
+            ],
+            [
+              846,
+              9
+            ],
+            [
+              847,
+              9
+            ],
+            [
+              848,
+              9
+            ],
+            [
+              849,
+              23
+            ],
+            [
+              850,
+              23
+            ],
+            [
+              851,
+              23
+            ],
+            [
+              852,
+              1
+            ],
+            [
+              852,
+              23
+            ],
+            [
+              853,
+              1
+            ],
+            [
+              853,
+              23
+            ],
+            [
+              854,
+              1
+            ],
+            [
+              854,
+              23
+            ],
+            [
+              855,
+              1
+            ],
+            [
+              855,
+              23
+            ],
+            [
+              856,
+              1
+            ],
+            [
+              856,
+              23
+            ],
+            [
+              857,
+              1
+            ],
+            [
+              857,
+              23
+            ],
+            [
+              858,
+              1
+            ],
+            [
+              858,
+              23
+            ],
+            [
+              859,
+              1
+            ],
+            [
+              859,
+              23
+            ],
+            [
+              860,
+              1
+            ],
+            [
+              860,
+              23
+            ],
+            [
+              861,
+              1
+            ],
+            [
+              861,
+              23
+            ],
+            [
+              862,
+              1
+            ],
+            [
+              862,
+              23
+            ],
+            [
+              863,
+              1
+            ],
+            [
+              863,
+              23
+            ],
+            [
+              864,
+              1
+            ],
+            [
+              864,
+              23
+            ],
+            [
+              865,
+              17
+            ],
+            [
+              866,
+              17
+            ],
+            [
+              867,
+              17
+            ],
+            [
+              868,
+              15
+            ],
+            [
+              869,
+              15
+            ],
+            [
+              870,
+              15
+            ],
+            [
+              871,
+              15
+            ],
+            [
+              872,
+              15
+            ],
+            [
+              873,
+              15
+            ],
+            [
+              874,
+              15
+            ],
+            [
+              875,
+              15
+            ],
+            [
+              876,
+              15
+            ],
+            [
+              877,
+              15
+            ],
+            [
+              878,
+              15
+            ],
+            [
+              879,
+              15
+            ],
+            [
+              880,
+              15
+            ],
+            [
+              881,
+              11
+            ],
+            [
+              882,
+              11
+            ],
+            [
+              883,
+              11
+            ],
+            [
+              884,
+              7
+            ],
+            [
+              884,
+              29
+            ],
+            [
+              885,
+              7
+            ],
+            [
+              885,
+              29
+            ],
+            [
+              886,
+              7
+            ],
+            [
+              886,
+              29
+            ],
+            [
+              887,
+              7
+            ],
+            [
+              887,
+              29
+            ],
+            [
+              888,
+              7
+            ],
+            [
+              888,
+              29
+            ],
+            [
+              889,
+              7
+            ],
+            [
+              889,
+              29
+            ],
+            [
+              890,
+              7
+            ],
+            [
+              890,
+              29
+            ],
+            [
+              891,
+              7
+            ],
+            [
+              891,
+              29
+            ],
+            [
+              892,
+              7
+            ],
+            [
+              892,
+              29
+            ],
+            [
+              893,
+              7
+            ],
+            [
+              893,
+              29
+            ],
+            [
+              894,
+              7
+            ],
+            [
+              894,
+              29
+            ],
+            [
+              895,
+              7
+            ],
+            [
+              895,
+              29
+            ],
+            [
+              896,
+              7
+            ],
+            [
+              896,
+              29
+            ],
+            [
+              897,
+              5
+            ],
+            [
+              897,
+              29
+            ],
+            [
+              898,
+              5
+            ],
+            [
+              898,
+              29
+            ],
+            [
+              899,
+              5
+            ],
+            [
+              899,
+              29
+            ]
+          ],
+          "device_used": "cuda",
+          "torch": "2.7.1+cu128",
+          "gammas": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+          "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+          "noise_schedule": "cosine_s0.008_beta_max0.999",
+          "sample_seed": 0,
+          "noise_policy": "per_frame",
+          "precision": "FP32",
+          "weight_decay": 0.0001,
+          "coverage": "full_training_fixed_subset_validation",
+          "residual_statistics": {
+            "method": "population_std_train_only_floor_0.01",
+            "samples": 21570,
+            "mean": [
+              -0.004730205343787168,
+              0.002227697577441214,
+              0.0028698916385016334,
+              0.0011661499426800467
+            ],
+            "std": [
+              0.07923414477171138,
+              0.07745912812870434,
+              0.07813729346561686,
+              0.07847540133816912
+            ]
+          },
+          "parameters": 280340
+        }
+      },
+      "video": {
+        "frames": 30,
+        "fps": 30,
+        "panel_order": [
+          "target",
+          "bilinear",
+          "v10-gamma0.25",
+          "v10-gamma0.5",
+          "v10-gamma0.75",
+          "v10-gamma1",
+          "bilinear-sharpen",
+          "bilinear-highpass-noise",
+          "v9-reference",
+          "v10-deterministic-control",
+          "official-fsr1-rcas0"
+        ],
+        "single_video": "generated.mp4",
+        "single_method": "v10-gamma1"
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-v10-q5-c-b-clip-20261122-002704--run-96edbc4008b1.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "b9448ae18c8591a03803d83e6669ab04437f2b47b865dfefff9567f64ecd155e"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/bilinear-highpass-noise.png",
+        "bytes": 458869,
+        "sha256": "dd0d8e38a5ceeec3ad8633f470596b68528a337aa92a478ca9973bfae25c1cd4"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/bilinear-sharpen.png",
+        "bytes": 248903,
+        "sha256": "7c396cc2c8fd67e6fd3e9a6dc5f836f2d3465d5d30177feef69531d825b2277b"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/bilinear.png",
+        "bytes": 207442,
+        "sha256": "f744e4ab2b15d8348c7e47a1aae7e6d19483e0e5d59da7e18952421fc1cb1f80"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/blocks.jsonl",
+        "bytes": 778053,
+        "sha256": "b9448ae18c8591a03803d83e6669ab04437f2b47b865dfefff9567f64ecd155e"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/comparison.mp4",
+        "bytes": 4957524,
+        "sha256": "5279b5fbf6f5ba897a28490fa42ec5f8fe0e42cb859f8760eb4b85d73a681514"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/comparison.png",
+        "bytes": 4051178,
+        "sha256": "e495e4bd6a0e6d84d3a52cdb7156950bad22be07909fd26147c69b4c4a63127a"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/generated-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/generated.mp4",
+        "bytes": 846953,
+        "sha256": "b55985d79321edc686833d5b231f34d93ce1f5f3e3f20abeb5a8d9989f30f21d"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/official-fsr1-rcas0.png",
+        "bytes": 451158,
+        "sha256": "16e45b0dec3d9a2fcfc7a2593142af1da9ddbcbf832656f18fa11475e5e01627"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/report.json",
+        "bytes": 53978,
+        "sha256": "23771aac04f8f9da23aaa08f8cb900becc7fdc1826f2a4fdd005e7917cde09bd"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/target.png",
+        "bytes": 506168,
+        "sha256": "04f8c2eeb97a593356e51043b5754d9be1f1e77b269ac3edcf303ef9ee71a842"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/v10-deterministic-control.png",
+        "bytes": 272855,
+        "sha256": "925b218fa1a11feb3a387cac8c16f8a4d7ad785397cf5394fc5cb5f41dd50a4a"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/v10-gamma0.25.png",
+        "bytes": 316282,
+        "sha256": "d600a4d8783ed8f4907d4c4775f07b865376cc9acdf53004ebe6de0dbceb30d7"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/v10-gamma0.5.png",
+        "bytes": 364278,
+        "sha256": "91aa75d76b34f6098aae034659743c08dd32da8faeed87ef38b1e8a01b2373d9"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/v10-gamma0.75.png",
+        "bytes": 402762,
+        "sha256": "dcea2507e7d31e8fa46922ee9debfabd81ff165fa01919c7174e811250e61ef1"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/v10-gamma1.png",
+        "bytes": 434777,
+        "sha256": "0907a56e72a11b0184601182929685e0f71aeebd6f49920c3e2bd0a8dd578ced"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/v9-reference.png",
+        "bytes": 306657,
+        "sha256": "f7036db7012c1c438c81307d98887c3cf67e2ddbeebfc4cf3a54485bb40d1346"
+      },
+      {
+        "path": "Model/runs/eval-v10-q5-c-b-clip-20261122-002704/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

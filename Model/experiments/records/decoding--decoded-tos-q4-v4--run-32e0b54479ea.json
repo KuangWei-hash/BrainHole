@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "decoding--decoded-tos-q4-v4--run-32e0b54479ea",
+  "kind": "decoding",
+  "name": "decoded-tos-q4-v4.npz",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/decoded-tos-q4-v4.npz",
+  "started_at": "2026-11-21T18:43:54+08:00",
+  "finished_at": "2026-11-21T18:44:18+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "baseline.py",
+    "--db",
+    "C:\\Users\\dinos\\BrainHole\\training-data-preparation\\拆好的訓練資料\\tears-of-steel-q4-shared-v4-raw8.sqlite",
+    "--out",
+    "C:\\Users\\dinos\\BrainHole\\Model\\runs\\decoded-tos-q4-v4.npz"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "339b9f5756689419421cda861ca6f8950ece4558755163874acefe736a94c010",
+    "directory": "Model/experiments/source_snapshots/339b9f5756689419421cda861ca6f8950ece4558755163874acefe736a94c010",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "network.py": "94d4f5c6b8b060fc5da1518b1072d5aabd8a93a1ee31d9c6bff8d1d3bfe2f2ae",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "1cc51c351f1df6503f7956e6f8ae5af038841d852cacf5ddbe32f1b27256cb44",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "37a84a0b383f4fd8c8df3f160a77f51004cc4588a9beeda0aec9b37fb7b943dd",
+      "作法.MD": "e6af5c3d2e9a8e91bb84d68569937ab8f64dc07fd4f96b5169ecd388f43821fb",
+      "驗收標準.md": "6514f0eb672b51e035e05eebaed4418030774142d5c745fc2d3457444d9f5860"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T18:44:19+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/tears-of-steel-q4-shared-v4-raw8.sqlite",
+        "bytes": 8135503872,
+        "sha256": "d1d6deeb2c61fbc45c0899c8805b433ea2c0895a195518bf090816157d9586cb"
+      }
+    ]
+  },
+  "result": {
+    "metadata": {
+      "database_sha256": "d1d6deeb2c61fbc45c0899c8805b433ea2c0895a195518bf090816157d9586cb",
+      "header_id": "834b4d34abc6e29f7afbc1e6861ec055f9292dbe4a4a862c23bedb8ebf44dd7c",
+      "samples": 660720,
+      "schema_version": 4,
+      "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+      "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/decoded-tos-q4-v4.npz",
+        "bytes": 433434644,
+        "sha256": "cee704b83bc40d9e8732b42f84c05bf8b67bcc135f000ff165dbf65a2c9c7290"
+      }
+    ]
+  }
+}

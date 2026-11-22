@@ -1,0 +1,135 @@
+{
+  "status": "completed",
+  "started_at": "2026-11-21T17:32:17+08:00",
+  "finished_at": "2026-11-21T17:33:01+08:00",
+  "requested_quantization": 5,
+  "schema": 4,
+  "integrity": "ok",
+  "dataset_config": {
+    "schema_version": 4,
+    "Source": "C:\\Users\\dinos\\BrainHole\\training-data-preparation\\原始影片\\big-buck-bunny-1080p-30sec.mp4",
+    "Hash": "07b756a4c7b481829776645c153167ca14c9df802ddbea7dffda3d817aa5261a",
+    "Split": "train",
+    "Group": "07b756a4c7b481829776645c153167ca14c9df802ddbea7dffda3d817aa5261a",
+    "FFmpeg": "ffmpeg version 2026-06-29-git-de6bcf5c05-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers\r",
+    "Width": 640,
+    "Height": 480,
+    "FPS": 30,
+    "Phases": 16,
+    "MaxEncoded": 640,
+    "Resize": "bilinear stretch; ffmpeg default color conversion",
+    "Bayer": "RGGB direct RGB8 channel selection, no linearization",
+    "Timing": "nearest source PTS on offline output n/30 timeline; ties choose earlier",
+    "Target": "RAW8 Bayer RGGB row-major [16,640], 10240 bytes; shared-header-v1 payload padded to 640; schema v4 also stores the 640-byte low-resolution decoded mosaic",
+    "Encoder": {
+      "kind": "native",
+      "identity": "oxideav-jpegxs 0.0.9 @3484a041d6d8e893683c1920cb3f68fe6fd3b8b8 (Go port); RGGB deinterleave 80x2x4; Cpih=3; fixed Q=5; levels=1/0; Br=4 (ISO/IEC 21122-1 Table A.7 conformant)",
+      "quantization": 5,
+      "levels_x": 1,
+      "levels_y": 0,
+      "star_tetrix": true,
+      "cts": {
+        "e1": 0,
+        "e2": 0,
+        "cf": 0,
+        "ct": 0
+      },
+      "br": 4,
+      "max_bytes": 640
+    }
+  },
+  "dataset_status": "complete",
+  "errors": 0,
+  "samples": 27000,
+  "frames": 900,
+  "phases": 16,
+  "invalid_frames": 0,
+  "invalid_samples": 0,
+  "reference_samples": 27000,
+  "identical_targets_and_pairing": 27000,
+  "changed_payloads": 27000,
+  "payload_bytes": {
+    "min": 44,
+    "mean": 167.25366666666667,
+    "max": 306,
+    "total": 4515849
+  },
+  "max_codestream_bytes": 408,
+  "decoded_all_128": 155,
+  "go_rust_decode_parity": {
+    "samples": 27000,
+    "go_sha256": "3a011817a4fe0cccdc3fa06639c0664309db73f57fb1226183fa430c395fc5f6",
+    "rust_sha256": "3a011817a4fe0cccdc3fa06639c0664309db73f57fb1226183fa430c395fc5f6",
+    "reference_decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064"
+  },
+  "bhxs_body_bps": 1219586.4,
+  "outputs": [
+    {
+      "path": "Model/runs/prepare-q5-report/build-exporter.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/build-generator.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/dataset-export.exe",
+      "bytes": 10258944,
+      "sha256": "ba6de51c44782858a963396e7adc418620d5239a23bf36ac7f557c9a5b09a16f"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/export.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/generate.log",
+      "bytes": 64279,
+      "sha256": "06afa05607da304b0952ad1367e5dadbc8d29d575abd2925befe75b76da98e52"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/go-decoded.raw",
+      "bytes": 17280000,
+      "sha256": "3a011817a4fe0cccdc3fa06639c0664309db73f57fb1226183fa430c395fc5f6"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/go-tests.log",
+      "bytes": 695,
+      "sha256": "47ff12998017d0d07e467139cb14a2ff3bef8dc0d444d66e94db16903b41698c"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/reference-decode.batch",
+      "bytes": 7377849,
+      "sha256": "a76e66f4e2485366e2133b368d5c296990d2a39447f1140d47f419e192c22083"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/reference-decode.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/rust-decoded.raw",
+      "bytes": 17280000,
+      "sha256": "3a011817a4fe0cccdc3fa06639c0664309db73f57fb1226183fa430c395fc5f6"
+    },
+    {
+      "path": "Model/runs/prepare-q5-report/video-to-dataset.exe",
+      "bytes": 10982912,
+      "sha256": "8d49a46f042cbf7584813c1ce2022ae1638ab5123663c1044a3455d55acf8ed9"
+    },
+    {
+      "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.bhxs",
+      "bytes": 4577668,
+      "sha256": "201880da3627b7bcf2c8af2f42fc1db332405656fd72b8bc4e05a998fc6d75a6"
+    },
+    {
+      "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "bytes": 332431360,
+      "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+    }
+  ],
+  "validation_report": "Model/runs/prepare-q5-report.json",
+  "cache": "Model/runs/decoded-q5-v4.npz"
+}

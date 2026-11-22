@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "dbsr-official",
+    "requested_title": "Learning a Deep Single Image Super-Resolution Network for Burst Images",
+    "status": "search_failed",
+    "error": "GET https://api.semanticscholar.org/graph/v1/paper/search?query=Learning%20a%20Deep%20Single%20Image%20Super-Resolution%20Network%20for%20Burst%20Images&limit=5&fields=title,year,venue,externalIds,openAccessPdf failed: HTTP Error 429: "
+  },
+  {
+    "slug": "cycled-shift",
+    "requested_title": "Learning to Super-Resolve Burst Photos",
+    "status": "search_failed",
+    "error": "GET https://api.semanticscholar.org/graph/v1/paper/search?query=Learning%20to%20Super-Resolve%20Burst%20Photos&limit=5&fields=title,year,venue,externalIds,openAccessPdf failed: HTTP Error 429: "
+  },
+  {
+    "slug": "realvsr",
+    "requested_title": "Real-World Video Super-Resolution: A Benchmark Dataset and a Decomposition-based Learning Scheme",
+    "status": "search_failed",
+    "error": "GET https://api.semanticscholar.org/graph/v1/paper/search?query=Real-World%20Video%20Super-Resolution%3A%20A%20Benchmark%20Dataset%20and%20a%20Decomposition-based%20Learning%20Scheme&limit=5&fields=title,year,venue,externalIds,openAccessPdf failed: HTTP Error 429: "
+  },
+  {
+    "slug": "stablevsr",
+    "title": "Enhancing Perceptual Quality in Video Super-Resolution through Temporally-Consistent Detail Synthesis using Diffusion Models",
+    "pdf_url": "https://arxiv.org/pdf/2311.15908",
+    "local_path": "refs/papers/stablevsr.pdf",
+    "downloaded_at": "2026-11-21T23:32:43",
+    "status": "cached",
+    "bytes": 5559774,
+    "sha256": "3f962dddef96736266c09113ac0d68bd1f9c609b38e61089fc00410d7f9516c8",
+    "arxiv_id": "2311.15908",
+    "title_similarity": 0.684,
+    "requested_title": "StableVSR: Scaling up Video Super-Resolution with Temporally Consistent Detail Synthesis"
+  },
+  {
+    "slug": "flashvsr",
+    "requested_title": "FlashVSR: Towards Real-time Video Super-Resolution",
+    "status": "search_failed",
+    "error": "GET https://api.semanticscholar.org/graph/v1/paper/search?query=FlashVSR%3A%20Towards%20Real-time%20Video%20Super-Resolution&limit=5&fields=title,year,venue,externalIds,openAccessPdf failed: HTTP Error 429: "
+  },
+  {
+    "slug": "frvsr",
+    "requested_title": "Frame-Recurrent Super-Resolution",
+    "status": "search_failed",
+    "error": "GET https://api.semanticscholar.org/graph/v1/paper/search?query=Frame-Recurrent%20Super-Resolution&limit=5&fields=title,year,venue,externalIds,openAccessPdf failed: HTTP Error 429: "
+  },
+  {
+    "slug": "tecogan",
+    "requested_title": "Temporal GAN for Real-Time Video Super-Resolution",
+    "status": "search_failed",
+    "error": "GET https://api.semanticscholar.org/graph/v1/paper/search?query=Temporal%20GAN%20for%20Real-Time%20Video%20Super-Resolution&limit=5&fields=title,year,venue,externalIds,openAccessPdf failed: HTTP Error 429: "
+  },
+  {
+    "slug": "motnet",
+    "requested_title": "Learning Space-Time Video Super-Resolution with a Heterogeneous Network",
+    "status": "search_failed",
+    "error": "GET https://api.semanticscholar.org/graph/v1/paper/search?query=Learning%20Space-Time%20Video%20Super-Resolution%20with%20a%20Heterogeneous%20Network&limit=5&fields=title,year,venue,externalIds,openAccessPdf failed: HTTP Error 429: "
+  }
+]

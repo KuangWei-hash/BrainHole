@@ -1,0 +1,70 @@
+{
+  "db": "tears-of-steel-q4-shared-v4-raw8.sqlite",
+  "results": {
+    "T=1": {
+      "single_frame_mae": 4.630468686421712,
+      "naive_accum_mae": 4.630468686421712,
+      "aligned_accum_mae": 4.630468686421712,
+      "coverage_ratio": 0.0625,
+      "single_frame_mae_same_content": 4.630468686421712,
+      "naive_accum_mae_same_content": 4.630468686421712,
+      "aligned_accum_mae_same_content": 4.630468686421712,
+      "n_windows": 12
+    },
+    "T=2": {
+      "single_frame_mae": 5.912760416666667,
+      "naive_accum_mae": 5.912760416666667,
+      "aligned_accum_mae": 5.555081407229106,
+      "coverage_ratio": 0.12319878472222223,
+      "single_frame_mae_same_content": 4.940104166666667,
+      "naive_accum_mae_same_content": 4.940104166666667,
+      "aligned_accum_mae_same_content": 4.940104166666667,
+      "n_windows": 12
+    },
+    "T=4": {
+      "single_frame_mae": 7.176334579785665,
+      "naive_accum_mae": 7.176334579785665,
+      "aligned_accum_mae": 6.275107065836589,
+      "coverage_ratio": 0.2418402777777778,
+      "single_frame_mae_same_content": null,
+      "naive_accum_mae_same_content": null,
+      "aligned_accum_mae_same_content": null,
+      "n_windows": 12
+    },
+    "T=8": {
+      "single_frame_mae": 9.287809371948242,
+      "naive_accum_mae": 9.287809371948242,
+      "aligned_accum_mae": 7.607955098152161,
+      "coverage_ratio": 0.4764973958333334,
+      "single_frame_mae_same_content": null,
+      "naive_accum_mae_same_content": null,
+      "aligned_accum_mae_same_content": null,
+      "n_windows": 12
+    },
+    "T=16": {
+      "single_frame_mae": 13.549617449442545,
+      "naive_accum_mae": 13.549617449442545,
+      "aligned_accum_mae": 11.752758701642355,
+      "coverage_ratio": 0.8950086805555555,
+      "single_frame_mae_same_content": null,
+      "naive_accum_mae_same_content": null,
+      "aligned_accum_mae_same_content": null,
+      "n_windows": 12
+    },
+    "oracle_shift_histogram": {
+      "dy=-4,dx=-12": 37,
+      "dy=0,dx=2": 24,
+      "dy=0,dx=0": 17,
+      "dy=-2,dx=-12": 15,
+      "dy=2,dx=0": 10,
+      "dy=-2,dx=-2": 10,
+      "dy=-4,dx=12": 9,
+      "dy=-2,dx=2": 8,
+      "dy=2,dx=-2": 7,
+      "dy=0,dx=-2": 6,
+      "dy=-4,dx=0": 5,
+      "dy=-4,dx=8": 4
+    },
+    "oracle_shift_note": "以 raw_bayer_target 求得的整數偶數位移（oracle 上限），dy 限 ±4（條帶僅 16 列）"
+  }
+}

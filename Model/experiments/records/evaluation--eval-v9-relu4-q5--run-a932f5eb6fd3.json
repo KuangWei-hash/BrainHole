@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-v9-relu4-q5--run-a932f5eb6fd3",
+  "kind": "evaluation",
+  "name": "eval-v9-relu4-q5",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/eval-v9-relu4-q5",
+  "started_at": "2026-11-21T18:24:03+08:00",
+  "finished_at": "2026-11-21T18:24:21+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/plain4-v9-q5/best.pt",
+    "Model/runs/relu4-v9-q5/best.pt",
+    "--start-frame",
+    "720",
+    "--video",
+    "--out",
+    "Model/runs/eval-v9-relu4-q5"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "e3d22aa6d5c856b94b60dae56ed06226f4651be80cc151a21a0f5b405e9d4d74",
+    "directory": "Model/experiments/source_snapshots/e3d22aa6d5c856b94b60dae56ed06226f4651be80cc151a21a0f5b405e9d4d74",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "92ed48469d001dde7ea61bfb21ed4d17732f8fc528591bbab5de4096f64566df",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "5d4c7c393f293137a3eb2e1bd1f9edbd39a00400cc91a4752738c29e4921c26b",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "prepare_dataset.py": "c937b892e0c9f30c72271053c1b38fcdee14d3f4496beca201675cd336944c02",
+      "record_experiment.py": "95fd7bc0cd25a6804f28501181bef3e6cbe2c5431a40b63cdffe8fe040d59457",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "5d984584f53e72d2b889e3f8c7b1b898f0aee21582ccbf3917a715d90c75d5c6",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "81a3215f9a028384d76d5e7df3fc99f204e54315ad1f0c5072174370e4073734",
+      "作法.MD": "f76816b407e293c706d3ab8de0b017000e2496ac08bd31caa8f1e80cb6ddb4cc",
+      "驗收標準.md": "6514f0eb672b51e035e05eebaed4418030774142d5c745fc2d3457444d9f5860"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T18:24:22+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/plain4-v9-q5/best.pt",
+        "bytes": 10225,
+        "sha256": "17b31da7587f25dd39139e6186cb3346a95a7a61f913e593195986b96c0537ac"
+      },
+      {
+        "path": "Model/runs/relu4-v9-q5/best.pt",
+        "bytes": 10225,
+        "sha256": "edfae92f785fef6be8b165efbc07be26b0bb4d5bc4402fd0fc2a057ead5214b0"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 5400,
+      "start_frame": 720,
+      "stop_frame": null,
+      "first_evaluated_frame": 720,
+      "last_evaluated_frame": 899,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 19.27616504907608,
+          "psnr_raw": 18.490833634588423
+        },
+        "bilinear": {
+          "mae_8bit": 17.544583733346727,
+          "psnr_raw": 19.708694636282537
+        },
+        "plain4-v9-q5": {
+          "mae_8bit": 16.80669879462984,
+          "psnr_raw": 19.995102839023712
+        },
+        "relu4-v9-q5": {
+          "mae_8bit": 17.290877683824963,
+          "psnr_raw": 19.851339254067526
+        }
+      },
+      "gates": {
+        "plain4-v9-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9977777777777778
+        },
+        "relu4-v9-q5": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.8644444444444445
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "plain4-v9-q5",
+        "relu4-v9-q5"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\plain4-v9-q5\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\relu4-v9-q5\\best.pt"
+      ],
+      "input_contracts": {
+        "plain4-v9-q5": "decoded_raw_only_v1",
+        "relu4-v9-q5": "decoded_raw_only_v1"
+      },
+      "video": {
+        "file": "comparison.mp4",
+        "frames": 180,
+        "fps": 30,
+        "panel_order": [
+          "target",
+          "bilinear",
+          "plain4-v9-q5",
+          "relu4-v9-q5"
+        ],
+        "note": "Offline rendered; not a realtime benchmark.",
+        "temporal_error_change_mae_8bit": {
+          "bilinear": 15.175698907415294,
+          "plain4-v9-q5": 13.959414693896331,
+          "relu4-v9-q5": 14.590014044532563
+        },
+        "temporal_metric_note": "Mean absolute change of prediction-minus-target error between consecutive frames; no optical-flow alignment. Diagnostic only, not a standalone flicker acceptance criterion."
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-v9-relu4-q5--run-a932f5eb6fd3.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "193375633a0ab00007b9637a89ad3f28fcc88a2b439e9facd4715d7d7788e176"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/bilinear.png",
+        "bytes": 221636,
+        "sha256": "10132f910d31334caac6204eb026ac2e860db3e8039238bb6ceda9a86e850433"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/blocks.jsonl",
+        "bytes": 871634,
+        "sha256": "193375633a0ab00007b9637a89ad3f28fcc88a2b439e9facd4715d7d7788e176"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/comparison.mp4",
+        "bytes": 8555591,
+        "sha256": "7206716eca6dd22c7f809bc0467a09ccb4f94029daad98025ae639a531e96e02"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/comparison.png",
+        "bytes": 1301501,
+        "sha256": "4ad929ec7ced3a2d3ed972f0c92672ead2f31ff276a7120021a1fe7370f50bb0"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/nearest.png",
+        "bytes": 99596,
+        "sha256": "8c07d5340c112ce047734bd318d271fd1e8e112d65f8d2062556075f162ec880"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/plain4-v9-q5.png",
+        "bytes": 281118,
+        "sha256": "9835acc305dfa3595d8a0e2c91a79f5c29194a587918d7bca4d879e6590d1da0"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/relu4-v9-q5.png",
+        "bytes": 271525,
+        "sha256": "323d04598866adb1b74f5bf0cef52fa34f6b97f7ddd7ca1dc8b1380206f8d758"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/report.json",
+        "bytes": 2546,
+        "sha256": "e625b6fd0b8be3a7386c253562d4de91feab13d05e133baa22ebbc0d0e99b3c5"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      },
+      {
+        "path": "Model/runs/eval-v9-relu4-q5/video-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2253 @@
+{
+  "schema_version": 1,
+  "id": "training--v10-q5-v-prediction-20261122-002704--run-98924cf3e4a8",
+  "kind": "training",
+  "name": "v10-q5-v-prediction-20261122-002704",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v10-q5-v-prediction-20261122-002704",
+  "started_at": "2026-11-22T00:27:09+08:00",
+  "finished_at": "2026-11-22T01:04:57+08:00",
+  "cwd": "Z:\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "Model/train_v10.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+    "--out",
+    "Model/runs/v10-q5-v-prediction-20261122-002704",
+    "--device",
+    "cuda",
+    "--mode",
+    "diffusion",
+    "--prediction-type",
+    "v",
+    "--condition",
+    "both",
+    "--channels",
+    "48",
+    "--epochs",
+    "20",
+    "--batch-size",
+    "16",
+    "--microbatch",
+    "4",
+    "--lr",
+    "0.0001",
+    "--sample-steps",
+    "32",
+    "--validation-count",
+    "256",
+    "--seed",
+    "42"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "aace5fb716cd6df454493d8bf890c2bae5a54dda7a32bf7c68901b7a1aedc3ec",
+    "directory": "Model/experiments/source_snapshots/aace5fb716cd6df454493d8bf890c2bae5a54dda7a32bf7c68901b7a1aedc3ec",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "708c46e320d6ff9eded80d99e69cbd7776220e4f128990f6c880d2dfa19113e8",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "faf94b1f9bcc4cf6331f807cf226e8ddea7d3557ebacba26d0d2b990506dfb79",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "85e9c41928f68f796ae3b9acc9aeeb5c5dcf521cde7089e7cc1b48c94bce9ccc",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "58d512fa40d91624052a131b3a55e6569bb4c621a59c2a87d7d3b68d243db92b",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "dd1e9e32e2fc31c2429c0dca082bd807e086215e3ee1ed71e2394de87aa78b8b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "b25b703719882bf2363176eb18da544b84145aef39216c1bee9b89fb2f3daf5d",
+      "v10/diffusion.py": "eef3982c15656334c4be0c08b5ff3592f003e95d7b4969abf05671918f95634a",
+      "v10/model.py": "d01d9cb412e99bbcb94daed6f47ee4f75b46cdf786dff31c5ba4205bbb4aff1c",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "e05f330899f5276551f8b61bb4bbede337301bd79950d3fb969a2b4554f2163d",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "a9fbd1a6d43e6981d5dc8986cb413a575b0890c92720695a6d1f1471bff7eaaa",
+      "v10/自動訓練計畫.md": "75e57eaed45e0447441829ef16842d359ccc62b7bad0bcd4142e6fb720fce14d",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T01:04:58+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "db": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+      "decoded_cache": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\decoded-q5-v4.npz",
+      "out": "Model\\runs\\v10-q5-v-prediction-20261122-002704",
+      "mode": "diffusion",
+      "condition": "both",
+      "prediction_type": "v",
+      "channels": 48,
+      "epochs": 20,
+      "batch_size": 16,
+      "microbatch": 4,
+      "lr": 0.0001,
+      "low_frequency_weight": 0.0,
+      "timesteps": 1000,
+      "sample_steps": 32,
+      "validation_count": 256,
+      "max_steps": 0,
+      "val_steps": 0,
+      "scale_steps": 0,
+      "seed": 42,
+      "device": "cuda",
+      "architecture": "v10",
+      "history": 2,
+      "input_contract": "decoded_and_phase_aligned_bilinear_v1",
+      "split": {
+        "kind": "temporal_smoke_only",
+        "boundary": 720
+      },
+      "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+      "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+      "train_samples": 21570,
+      "validation_samples": 256,
+      "validation_full_samples": 5370,
+      "validation_keys": [
+        [
+          721,
+          0
+        ],
+        [
+          721,
+          24
+        ],
+        [
+          722,
+          0
+        ],
+        [
+          722,
+          24
+        ],
+        [
+          723,
+          0
+        ],
+        [
+          723,
+          24
+        ],
+        [
+          724,
+          0
+        ],
+        [
+          724,
+          22
+        ],
+        [
+          725,
+          0
+        ],
+        [
+          725,
+          22
+        ],
+        [
+          726,
+          0
+        ],
+        [
+          726,
+          22
+        ],
+        [
+          727,
+          0
+        ],
+        [
+          727,
+          22
+        ],
+        [
+          728,
+          0
+        ],
+        [
+          728,
+          22
+        ],
+        [
+          729,
+          0
+        ],
+        [
+          729,
+          22
+        ],
+        [
+          730,
+          0
+        ],
+        [
+          730,
+          22
+        ],
+        [
+          731,
+          0
+        ],
+        [
+          731,
+          22
+        ],
+        [
+          732,
+          0
+        ],
+        [
+          732,
+          22
+        ],
+        [
+          733,
+          0
+        ],
+        [
+          733,
+          22
+        ],
+        [
+          734,
+          0
+        ],
+        [
+          734,
+          22
+        ],
+        [
+          735,
+          0
+        ],
+        [
+          735,
+          22
+        ],
+        [
+          736,
+          0
+        ],
+        [
+          736,
+          22
+        ],
+        [
+          737,
+          18
+        ],
+        [
+          738,
+          18
+        ],
+        [
+          739,
+          18
+        ],
+        [
+          740,
+          14
+        ],
+        [
+          741,
+          14
+        ],
+        [
+          742,
+          14
+        ],
+        [
+          743,
+          14
+        ],
+        [
+          744,
+          14
+        ],
+        [
+          745,
+          14
+        ],
+        [
+          746,
+          14
+        ],
+        [
+          747,
+          14
+        ],
+        [
+          748,
+          14
+        ],
+        [
+          749,
+          14
+        ],
+        [
+          750,
+          14
+        ],
+        [
+          751,
+          14
+        ],
+        [
+          752,
+          14
+        ],
+        [
+          753,
+          12
+        ],
+        [
+          754,
+          12
+        ],
+        [
+          755,
+          12
+        ],
+        [
+          756,
+          6
+        ],
+        [
+          756,
+          28
+        ],
+        [
+          757,
+          6
+        ],
+        [
+          757,
+          28
+        ],
+        [
+          758,
+          6
+        ],
+        [
+          758,
+          28
+        ],
+        [
+          759,
+          6
+        ],
+        [
+          759,
+          28
+        ],
+        [
+          760,
+          6
+        ],
+        [
+          760,
+          28
+        ],
+        [
+          761,
+          6
+        ],
+        [
+          761,
+          28
+        ],
+        [
+          762,
+          6
+        ],
+        [
+          762,
+          28
+        ],
+        [
+          763,
+          6
+        ],
+        [
+          763,
+          28
+        ],
+        [
+          764,
+          6
+        ],
+        [
+          764,
+          28
+        ],
+        [
+          765,
+          6
+        ],
+        [
+          765,
+          28
+        ],
+        [
+          766,
+          6
+        ],
+        [
+          766,
+          28
+        ],
+        [
+          767,
+          6
+        ],
+        [
+          767,
+          28
+        ],
+        [
+          768,
+          6
+        ],
+        [
+          768,
+          28
+        ],
+        [
+          769,
+          6
+        ],
+        [
+          770,
+          6
+        ],
+        [
+          771,
+          6
+        ],
+        [
+          772,
+          20
+        ],
+        [
+          773,
+          20
+        ],
+        [
+          774,
+          20
+        ],
+        [
+          775,
+          20
+        ],
+        [
+          776,
+          20
+        ],
+        [
+          777,
+          20
+        ],
+        [
+          778,
+          20
+        ],
+        [
+          779,
+          20
+        ],
+        [
+          780,
+          20
+        ],
+        [
+          781,
+          20
+        ],
+        [
+          782,
+          20
+        ],
+        [
+          783,
+          20
+        ],
+        [
+          784,
+          20
+        ],
+        [
+          785,
+          0
+        ],
+        [
+          785,
+          24
+        ],
+        [
+          786,
+          0
+        ],
+        [
+          786,
+          24
+        ],
+        [
+          787,
+          0
+        ],
+        [
+          787,
+          24
+        ],
+        [
+          788,
+          12
+        ],
+        [
+          789,
+          12
+        ],
+        [
+          790,
+          12
+        ],
+        [
+          791,
+          12
+        ],
+        [
+          792,
+          12
+        ],
+        [
+          793,
+          12
+        ],
+        [
+          794,
+          12
+        ],
+        [
+          795,
+          12
+        ],
+        [
+          796,
+          12
+        ],
+        [
+          797,
+          12
+        ],
+        [
+          798,
+          12
+        ],
+        [
+          799,
+          12
+        ],
+        [
+          800,
+          12
+        ],
+        [
+          801,
+          18
+        ],
+        [
+          802,
+          18
+        ],
+        [
+          803,
+          18
+        ],
+        [
+          804,
+          4
+        ],
+        [
+          804,
+          25
+        ],
+        [
+          805,
+          4
+        ],
+        [
+          805,
+          25
+        ],
+        [
+          806,
+          4
+        ],
+        [
+          806,
+          25
+        ],
+        [
+          807,
+          4
+        ],
+        [
+          807,
+          25
+        ],
+        [
+          808,
+          4
+        ],
+        [
+          808,
+          25
+        ],
+        [
+          809,
+          4
+        ],
+        [
+          809,
+          25
+        ],
+        [
+          810,
+          4
+        ],
+        [
+          810,
+          25
+        ],
+        [
+          811,
+          4
+        ],
+        [
+          811,
+          25
+        ],
+        [
+          812,
+          4
+        ],
+        [
+          812,
+          25
+        ],
+        [
+          813,
+          4
+        ],
+        [
+          813,
+          25
+        ],
+        [
+          814,
+          4
+        ],
+        [
+          814,
+          25
+        ],
+        [
+          815,
+          4
+        ],
+        [
+          815,
+          25
+        ],
+        [
+          816,
+          4
+        ],
+        [
+          816,
+          25
+        ],
+        [
+          817,
+          11
+        ],
+        [
+          818,
+          11
+        ],
+        [
+          819,
+          11
+        ],
+        [
+          820,
+          17
+        ],
+        [
+          821,
+          17
+        ],
+        [
+          822,
+          17
+        ],
+        [
+          823,
+          17
+        ],
+        [
+          824,
+          17
+        ],
+        [
+          825,
+          17
+        ],
+        [
+          826,
+          17
+        ],
+        [
+          827,
+          17
+        ],
+        [
+          828,
+          17
+        ],
+        [
+          829,
+          17
+        ],
+        [
+          830,
+          17
+        ],
+        [
+          831,
+          17
+        ],
+        [
+          832,
+          17
+        ],
+        [
+          833,
+          5
+        ],
+        [
+          833,
+          29
+        ],
+        [
+          834,
+          5
+        ],
+        [
+          834,
+          29
+        ],
+        [
+          835,
+          5
+        ],
+        [
+          835,
+          29
+        ],
+        [
+          836,
+          9
+        ],
+        [
+          837,
+          9
+        ],
+        [
+          838,
+          9
+        ],
+        [
+          839,
+          9
+        ],
+        [
+          840,
+          9
+        ],
+        [
+          841,
+          9
+        ],
+        [
+          842,
+          9
+        ],
+        [
+          843,
+          9
+        ],
+        [
+          844,
+          9
+        ],
+        [
+          845,
+          9
+        ],
+        [
+          846,
+          9
+        ],
+        [
+          847,
+          9
+        ],
+        [
+          848,
+          9
+        ],
+        [
+          849,
+          23
+        ],
+        [
+          850,
+          23
+        ],
+        [
+          851,
+          23
+        ],
+        [
+          852,
+          1
+        ],
+        [
+          852,
+          23
+        ],
+        [
+          853,
+          1
+        ],
+        [
+          853,
+          23
+        ],
+        [
+          854,
+          1
+        ],
+        [
+          854,
+          23
+        ],
+        [
+          855,
+          1
+        ],
+        [
+          855,
+          23
+        ],
+        [
+          856,
+          1
+        ],
+        [
+          856,
+          23
+        ],
+        [
+          857,
+          1
+        ],
+        [
+          857,
+          23
+        ],
+        [
+          858,
+          1
+        ],
+        [
+          858,
+          23
+        ],
+        [
+          859,
+          1
+        ],
+        [
+          859,
+          23
+        ],
+        [
+          860,
+          1
+        ],
+        [
+          860,
+          23
+        ],
+        [
+          861,
+          1
+        ],
+        [
+          861,
+          23
+        ],
+        [
+          862,
+          1
+        ],
+        [
+          862,
+          23
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          863,
+          23
+        ],
+        [
+          864,
+          1
+        ],
+        [
+          864,
+          23
+        ],
+        [
+          865,
+          17
+        ],
+        [
+          866,
+          17
+        ],
+        [
+          867,
+          17
+        ],
+        [
+          868,
+          15
+        ],
+        [
+          869,
+          15
+        ],
+        [
+          870,
+          15
+        ],
+        [
+          871,
+          15
+        ],
+        [
+          872,
+          15
+        ],
+        [
+          873,
+          15
+        ],
+        [
+          874,
+          15
+        ],
+        [
+          875,
+          15
+        ],
+        [
+          876,
+          15
+        ],
+        [
+          877,
+          15
+        ],
+        [
+          878,
+          15
+        ],
+        [
+          879,
+          15
+        ],
+        [
+          880,
+          15
+        ],
+        [
+          881,
+          11
+        ],
+        [
+          882,
+          11
+        ],
+        [
+          883,
+          11
+        ],
+        [
+          884,
+          7
+        ],
+        [
+          884,
+          29
+        ],
+        [
+          885,
+          7
+        ],
+        [
+          885,
+          29
+        ],
+        [
+          886,
+          7
+        ],
+        [
+          886,
+          29
+        ],
+        [
+          887,
+          7
+        ],
+        [
+          887,
+          29
+        ],
+        [
+          888,
+          7
+        ],
+        [
+          888,
+          29
+        ],
+        [
+          889,
+          7
+        ],
+        [
+          889,
+          29
+        ],
+        [
+          890,
+          7
+        ],
+        [
+          890,
+          29
+        ],
+        [
+          891,
+          7
+        ],
+        [
+          891,
+          29
+        ],
+        [
+          892,
+          7
+        ],
+        [
+          892,
+          29
+        ],
+        [
+          893,
+          7
+        ],
+        [
+          893,
+          29
+        ],
+        [
+          894,
+          7
+        ],
+        [
+          894,
+          29
+        ],
+        [
+          895,
+          7
+        ],
+        [
+          895,
+          29
+        ],
+        [
+          896,
+          7
+        ],
+        [
+          896,
+          29
+        ],
+        [
+          897,
+          5
+        ],
+        [
+          897,
+          29
+        ],
+        [
+          898,
+          5
+        ],
+        [
+          898,
+          29
+        ],
+        [
+          899,
+          5
+        ],
+        [
+          899,
+          29
+        ]
+      ],
+      "device_used": "cuda",
+      "torch": "2.7.1+cu128",
+      "gammas": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "selection": "provisional generated RAW MAE at gamma1 seed0 on fixed subset; no perceptual acceptance",
+      "sampler": "DDIM eta0; x0 clipped to physical RAW bounds; corrected epsilon",
+      "noise_schedule": "cosine_s0.008_beta_max0.999",
+      "sample_seed": 0,
+      "noise_policy": "per_frame",
+      "precision": "FP32",
+      "weight_decay": 0.0001,
+      "coverage": "full_training_fixed_subset_validation",
+      "residual_statistics": {
+        "method": "population_std_train_only_floor_0.01",
+        "samples": 21570,
+        "mean": [
+          -0.004730205343787168,
+          0.002227697577441214,
+          0.0028698916385016334,
+          0.0011661499426800467
+        ],
+        "std": [
+          0.07923414477171138,
+          0.07745912812870434,
+          0.07813729346561686,
+          0.07847540133816912
+        ]
+      },
+      "parameters": 280340
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "objective": 0.7052709463187595,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 94.82707450000453
+        },
+        "validation": {
+          "mae_8bit": 23.045712266117334,
+          "psnr_raw": 18.255452955728803,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 17.424995636567473,
+              "psnr_raw": 20.119482311464058,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 18.612441513687372,
+              "psnr_raw": 19.762605478513677,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 20.56194048933685,
+              "psnr_raw": 19.10089475467434,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 23.045712266117334,
+              "psnr_raw": 18.255452955728803,
+              "samples": 256
+            }
+          },
+          "seconds": 2.519202800001949,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "objective": 0.4766581083537806,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 95.3293898999982
+        },
+        "validation": {
+          "mae_8bit": 19.959401786327362,
+          "psnr_raw": 19.191487071106188,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.98264094814658,
+              "psnr_raw": 20.26861327895616,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 17.410012375563383,
+              "psnr_raw": 20.158742158646113,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 18.441649893298745,
+              "psnr_raw": 19.778570419655246,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 19.959401786327362,
+              "psnr_raw": 19.191487071106188,
+              "samples": 256
+            }
+          },
+          "seconds": 2.427575900001102,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "objective": 0.43069390368008426,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 93.49078089999966
+        },
+        "validation": {
+          "mae_8bit": 20.05235106870532,
+          "psnr_raw": 19.10504820977329,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.78302806429565,
+              "psnr_raw": 20.365351322699542,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 17.17252350412309,
+              "psnr_raw": 20.266252777619602,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 18.309158412739635,
+              "psnr_raw": 19.81420581392326,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 20.05235106870532,
+              "psnr_raw": 19.10504820977329,
+              "samples": 256
+            }
+          },
+          "seconds": 2.3725388000020757,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "objective": 0.4054010076894769,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 93.10260379999818
+        },
+        "validation": {
+          "mae_8bit": 19.827402664348483,
+          "psnr_raw": 19.165446944159342,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.486072098836303,
+              "psnr_raw": 20.46554440282263,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.728597600013018,
+              "psnr_raw": 20.41077423075015,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 17.89924106374383,
+              "psnr_raw": 19.938519668181566,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 19.827402664348483,
+              "psnr_raw": 19.165446944159342,
+              "samples": 256
+            }
+          },
+          "seconds": 2.596790700001293,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "objective": 0.3896028230622183,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 110.4627873999998
+        },
+        "validation": {
+          "mae_8bit": 20.35736839659512,
+          "psnr_raw": 18.970492308559674,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.571842901408672,
+              "psnr_raw": 20.453556414230647,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.951719062402844,
+              "psnr_raw": 20.351111607139813,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 18.27571916207671,
+              "psnr_raw": 19.81066459692976,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 20.35736839659512,
+              "psnr_raw": 18.970492308559674,
+              "samples": 256
+            }
+          },
+          "seconds": 2.535828699998092,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 6,
+        "train": {
+          "objective": 0.38186309437716953,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 119.38279400000465
+        },
+        "validation": {
+          "mae_8bit": 19.28457072749734,
+          "psnr_raw": 19.40750427120173,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.472833514213562,
+              "psnr_raw": 20.489139116083738,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.60101612098515,
+              "psnr_raw": 20.494833931635913,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 17.583326110616326,
+              "psnr_raw": 20.10309366808964,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 19.28457072749734,
+              "psnr_raw": 19.40750427120173,
+              "samples": 256
+            }
+          },
+          "seconds": 2.652251500010607,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 7,
+        "train": {
+          "objective": 0.37423058239174045,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 109.30160209999303
+        },
+        "validation": {
+          "mae_8bit": 18.87244066223502,
+          "psnr_raw": 19.503179653979913,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.380172921344638,
+              "psnr_raw": 20.51762507640422,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.393043495714664,
+              "psnr_raw": 20.55339195026597,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 17.262056104838848,
+              "psnr_raw": 20.185379263722236,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 18.87244066223502,
+              "psnr_raw": 19.503179653979913,
+              "samples": 256
+            }
+          },
+          "seconds": 2.3967738000064855,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 8,
+        "train": {
+          "objective": 0.36580642927947504,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 95.34532260001288
+        },
+        "validation": {
+          "mae_8bit": 17.811066510155797,
+          "psnr_raw": 19.92753619611424,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.248503241688013,
+              "psnr_raw": 20.570740552243237,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.014154141768813,
+              "psnr_raw": 20.713077037158886,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.5576352737844,
+              "psnr_raw": 20.480619414540232,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 17.811066510155797,
+              "psnr_raw": 19.92753619611424,
+              "samples": 256
+            }
+          },
+          "seconds": 2.416454200007138,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 9,
+        "train": {
+          "objective": 0.36382260122921495,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 95.99295310000889
+        },
+        "validation": {
+          "mae_8bit": 19.134208045899868,
+          "psnr_raw": 19.369011597357588,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.30684977583587,
+              "psnr_raw": 20.537641965583614,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.351476956158876,
+              "psnr_raw": 20.551317421236284,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 17.34117165952921,
+              "psnr_raw": 20.12458736843195,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 19.134208045899868,
+              "psnr_raw": 19.369011597357588,
+              "samples": 256
+            }
+          },
+          "seconds": 2.502418399992166,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 10,
+        "train": {
+          "objective": 0.3609065348751356,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 96.0113749000011
+        },
+        "validation": {
+          "mae_8bit": 19.171877894550562,
+          "psnr_raw": 19.455766173439798,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.374553497880697,
+              "psnr_raw": 20.525041428418994,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.457293678075075,
+              "psnr_raw": 20.553234493419694,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 17.437614569440484,
+              "psnr_raw": 20.164403487822856,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 19.171877894550562,
+              "psnr_raw": 19.455766173439798,
+              "samples": 256
+            }
+          },
+          "seconds": 2.7327430000004824,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 11,
+        "train": {
+          "objective": 0.3584606959227616,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 123.98819459999504
+        },
+        "validation": {
+          "mae_8bit": 18.75735452771187,
+          "psnr_raw": 19.515142712594105,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.233159380033612,
+              "psnr_raw": 20.566390938622586,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.16999384947121,
+              "psnr_raw": 20.621653474435085,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 17.052997877821326,
+              "psnr_raw": 20.237603016404407,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 18.75735452771187,
+              "psnr_raw": 19.515142712594105,
+              "samples": 256
+            }
+          },
+          "seconds": 2.649157499996363,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 12,
+        "train": {
+          "objective": 0.3523969123491436,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 98.04189680000127
+        },
+        "validation": {
+          "mae_8bit": 17.38829255104065,
+          "psnr_raw": 20.047448125497567,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.10247004777193,
+              "psnr_raw": 20.610130232817312,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 15.727746030315757,
+              "psnr_raw": 20.7914235857045,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.173064654693007,
+              "psnr_raw": 20.587497496634086,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 17.38829255104065,
+              "psnr_raw": 20.047448125497567,
+              "samples": 256
+            }
+          },
+          "seconds": 2.4321308999933535,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 13,
+        "train": {
+          "objective": 0.350340239166191,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 105.78880540000682
+        },
+        "validation": {
+          "mae_8bit": 18.54030181467533,
+          "psnr_raw": 19.599536834979038,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.228004006668925,
+              "psnr_raw": 20.58411749105904,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.11519043520093,
+              "psnr_raw": 20.663717827788286,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.920949453487992,
+              "psnr_raw": 20.30385953155175,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 18.54030181467533,
+              "psnr_raw": 19.599536834979038,
+              "samples": 256
+            }
+          },
+          "seconds": 2.8047765999945113,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 14,
+        "train": {
+          "objective": 0.34477090140356476,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 108.09359330000007
+        },
+        "validation": {
+          "mae_8bit": 17.939797142520547,
+          "psnr_raw": 19.89083936183586,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.243512684479356,
+              "psnr_raw": 20.58226071692677,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.034453697502613,
+              "psnr_raw": 20.72157642476629,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.62471734918654,
+              "psnr_raw": 20.47097005607189,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 17.939797142520547,
+              "psnr_raw": 19.89083936183586,
+              "samples": 256
+            }
+          },
+          "seconds": 3.330766900005983,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 15,
+        "train": {
+          "objective": 0.3447046473083476,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 107.04087129999243
+        },
+        "validation": {
+          "mae_8bit": 18.530594190582633,
+          "psnr_raw": 19.661058649136272,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.304450584575534,
+              "psnr_raw": 20.561806197485314,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.2230655066669,
+              "psnr_raw": 20.646384585913214,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.99753348901868,
+              "psnr_raw": 20.318836701820153,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 18.530594190582633,
+              "psnr_raw": 19.661058649136272,
+              "samples": 256
+            }
+          },
+          "seconds": 3.099273499989067,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 16,
+        "train": {
+          "objective": 0.3417936444158183,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 105.02079330000561
+        },
+        "validation": {
+          "mae_8bit": 17.705374041572213,
+          "psnr_raw": 19.961461646671214,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.13044699653983,
+              "psnr_raw": 20.629398405827416,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 15.83156899921596,
+              "psnr_raw": 20.80098253194906,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.37962024100125,
+              "psnr_raw": 20.55755531947306,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 17.705374041572213,
+              "psnr_raw": 19.961461646671214,
+              "samples": 256
+            }
+          },
+          "seconds": 2.8450487999944016,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 17,
+        "train": {
+          "objective": 0.3387493532992067,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 109.95659100000921
+        },
+        "validation": {
+          "mae_8bit": 18.658313412219286,
+          "psnr_raw": 19.518198027468664,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.17190552689135,
+              "psnr_raw": 20.619573868106897,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.075947280973196,
+              "psnr_raw": 20.69429515887983,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.94402039051056,
+              "psnr_raw": 20.288710723106135,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 18.658313412219286,
+              "psnr_raw": 19.518198027468664,
+              "samples": 256
+            }
+          },
+          "seconds": 2.8218824000068707,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 18,
+        "train": {
+          "objective": 0.3386746191348419,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 124.12678209999285
+        },
+        "validation": {
+          "mae_8bit": 17.91378658823669,
+          "psnr_raw": 19.868861732299024,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.177375903353095,
+              "psnr_raw": 20.614628374809456,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 15.941651277244091,
+              "psnr_raw": 20.761713011732276,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.54496399872005,
+              "psnr_raw": 20.489851387487622,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 17.91378658823669,
+              "psnr_raw": 19.868861732299024,
+              "samples": 256
+            }
+          },
+          "seconds": 3.906931799996528,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 19,
+        "train": {
+          "objective": 0.3345270719380914,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 147.42143889999716
+        },
+        "validation": {
+          "mae_8bit": 17.984800312668085,
+          "psnr_raw": 19.851821071777856,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.13329921849072,
+              "psnr_raw": 20.629747840336556,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 15.894524401053786,
+              "psnr_raw": 20.779070028936047,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 16.539970686659217,
+              "psnr_raw": 20.49467058344745,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 17.984800312668085,
+              "psnr_raw": 19.851821071777856,
+              "samples": 256
+            }
+          },
+          "seconds": 3.6639185000094585,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      },
+      {
+        "epoch": 20,
+        "train": {
+          "objective": 0.3343986333708383,
+          "samples": 21570,
+          "optimizer_steps": 1349,
+          "seconds": 135.67483670001093
+        },
+        "validation": {
+          "mae_8bit": 18.811865167692304,
+          "psnr_raw": 19.505645227927456,
+          "samples": 256,
+          "gammas": {
+            "0.0": {
+              "mae_8bit": 17.271230522543192,
+              "psnr_raw": 20.08750072693569,
+              "samples": 256
+            },
+            "0.25": {
+              "mae_8bit": 16.216488724574447,
+              "psnr_raw": 20.60607308307469,
+              "samples": 256
+            },
+            "0.5": {
+              "mae_8bit": 16.173291217535734,
+              "psnr_raw": 20.673257444251753,
+              "samples": 256
+            },
+            "0.75": {
+              "mae_8bit": 17.078840766102076,
+              "psnr_raw": 20.268721117881473,
+              "samples": 256
+            },
+            "1.0": {
+              "mae_8bit": 18.811865167692304,
+              "psnr_raw": 19.505645227927456,
+              "samples": 256
+            }
+          },
+          "seconds": 3.913648000001558,
+          "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+        }
+      }
+    ],
+    "best_epoch_by_validation_mae": 12,
+    "best_validation": {
+      "mae_8bit": 17.38829255104065,
+      "psnr_raw": 20.047448125497567,
+      "samples": 256,
+      "gammas": {
+        "0.0": {
+          "mae_8bit": 17.271230522543192,
+          "psnr_raw": 20.08750072693569,
+          "samples": 256
+        },
+        "0.25": {
+          "mae_8bit": 16.10247004777193,
+          "psnr_raw": 20.610130232817312,
+          "samples": 256
+        },
+        "0.5": {
+          "mae_8bit": 15.727746030315757,
+          "psnr_raw": 20.7914235857045,
+          "samples": 256
+        },
+        "0.75": {
+          "mae_8bit": 16.173064654693007,
+          "psnr_raw": 20.587497496634086,
+          "samples": 256
+        },
+        "1.0": {
+          "mae_8bit": 17.38829255104065,
+          "psnr_raw": 20.047448125497567,
+          "samples": 256
+        }
+      },
+      "seconds": 2.4321308999933535,
+      "note": "Generated output at seed0, gamma1. Fixed validation subset; not full holdout or perceptual acceptance."
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/best.pt",
+        "bytes": 3427770,
+        "sha256": "7361e1af102dd4fd16a9b0455f5103bc331a28ef6af4aa645ed56e88e3bece70"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/config.json",
+        "bytes": 11445,
+        "sha256": "6875064360dec165d50a91125b9bd191ac53195e7c390c18734442f1318e858c"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-001-target-base-generated.png",
+        "bytes": 44603,
+        "sha256": "80c347a3901021bd3310c6fb7af3fd0aef81e07d3e805fd6417ae25e3b773424"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-002-target-base-generated.png",
+        "bytes": 42771,
+        "sha256": "082df9293e3f8060ad4614024fc8d88c851d7bfb3fb1c795351ea608a0ca5d7c"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-003-target-base-generated.png",
+        "bytes": 43064,
+        "sha256": "ff875ce6588041d88c5058cd6c815c76ddddc425b2f714e90e7758724c52f580"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-004-target-base-generated.png",
+        "bytes": 44084,
+        "sha256": "5ba8a5924f45dd0a8f9928d752c9a0db2dda881f4aa8fedee811b16961e5fd2b"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-005-target-base-generated.png",
+        "bytes": 45155,
+        "sha256": "27b4519359ad9c57cfdc8d534894580856fe027631a4f90622bed6a3c66d25ec"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-005.pt",
+        "bytes": 3438923,
+        "sha256": "846eb0d07f45bf2e9d9de53a5144a5a02c5c26eac6bd90076de5ce3c1dde037c"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-006-target-base-generated.png",
+        "bytes": 44454,
+        "sha256": "e1d0b938e7acd2174271b066f342eca49125babce1253719b49fcac8776654fa"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-007-target-base-generated.png",
+        "bytes": 44415,
+        "sha256": "5b369c4268b3d867f16aae1c950b9040c5ba960d72afcf749ce87aec55505f31"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-008-target-base-generated.png",
+        "bytes": 43825,
+        "sha256": "a96eab351c7f6074fab1b49ad79d30cee0f42d5e7a60bd7dd814cac54a188922"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-009-target-base-generated.png",
+        "bytes": 44845,
+        "sha256": "660e65e8fbdc8298c3a6ac461d22b21cdb40998ecb67492296b4b2f7227be24b"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-010-target-base-generated.png",
+        "bytes": 44920,
+        "sha256": "1a519e20abff53ff72412ef31027754a54b3d9af698e8ac16a7682fd30bb45ea"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-010.pt",
+        "bytes": 3438923,
+        "sha256": "fc29c0b94dabe767367e09eacec87b3579ddf6cd596cda4414e204540b47c2b5"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-011-target-base-generated.png",
+        "bytes": 44248,
+        "sha256": "58dc5586dca48d7bdbc50ae7e03f4329f243a0ce67288ee81d7efaee905253ea"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-012-target-base-generated.png",
+        "bytes": 43071,
+        "sha256": "f81d8ecaac401ccc1328f2f832752d9eb627e44b41b45fbe71514f49275b0b14"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-013-target-base-generated.png",
+        "bytes": 44137,
+        "sha256": "36b10caf820fe1238e60d394a44075eacf758699b04797dd51197068ecffd9ca"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-014-target-base-generated.png",
+        "bytes": 43910,
+        "sha256": "c562a64a55877af50734cd4e7dba39234b2a8277fa1287d6300cdf04fd7dc4cc"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-015-target-base-generated.png",
+        "bytes": 44108,
+        "sha256": "6ae20bb7894405dedb316957282b42bac80bae2f74bceb62cce52be0b853723d"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-016-target-base-generated.png",
+        "bytes": 43536,
+        "sha256": "72f88fd073d7b920cec5063f2416a6e40c0fefe6a5814b760874e304d9dfb8ae"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-017-target-base-generated.png",
+        "bytes": 44505,
+        "sha256": "8652d73cfc5750f8855a765df48c97e5bd0ac64660392f522bc9cc9377f119b9"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-018-target-base-generated.png",
+        "bytes": 43906,
+        "sha256": "7e66aaf664e29ccf77cbdc386334f222e64e7a3b8fe07bfc0f1239ed9f6b4907"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-019-target-base-generated.png",
+        "bytes": 44589,
+        "sha256": "a1cec37a0ea7de6cb31d05b9f6aa29a30e1689eb4d877437036d50df3cf12ed2"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-020-target-base-generated.png",
+        "bytes": 44776,
+        "sha256": "483a186b4629472e45a3cb71182d9486b127f2715be52a7a4bcd84be7eac02e4"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/epoch-020.pt",
+        "bytes": 3438923,
+        "sha256": "fb82669c97ca8d54c56120178ba00d3b92b8809460be0809a79511eeb6aea6b8"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/last.pt",
+        "bytes": 3427770,
+        "sha256": "cad9c344e2c738f9ac45154b6d9e7039d251e0bed18a3c15b8f75831d6ac27d3"
+      },
+      {
+        "path": "Model/runs/v10-q5-v-prediction-20261122-002704/metrics.jsonl",
+        "bytes": 16542,
+        "sha256": "a22e459174fec6abf95b6988dfe9dea5235a4046f133244a07e58c50789bb5c5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "executable": "REPLACE_WITH_RGGB_JPEG_XS_ENCODER",
+  "identity": "REPLACE_WITH_ENCODER_NAME_VERSION_AND_PROFILE",
+  "timeout_seconds": 30,
+  "args": [
+    "REPLACE_WITH_ENCODER_SPECIFIC_OPTIONS",
+    "{input}",
+    "{output}"
+  ]
+}

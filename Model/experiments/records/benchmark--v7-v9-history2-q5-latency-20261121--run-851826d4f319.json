@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "benchmark--v7-v9-history2-q5-latency-20261121--run-851826d4f319",
+  "kind": "benchmark",
+  "name": "v7-v9-history2-q5-latency-20261121.json",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v7-v9-history2-q5-latency-20261121.json",
+  "started_at": "2026-11-21T22:23:09+08:00",
+  "finished_at": "2026-11-21T22:23:12+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/benchmark.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/hybrid-v7-history2-q5-retrain-20261121/best.pt",
+    "Model/runs/relu128-four-v9-history2-q5/best.pt",
+    "--warmup",
+    "30",
+    "--iterations",
+    "200",
+    "--out",
+    "Model/runs/v7-v9-history2-q5-latency-20261121.json"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "9311dfe6d35415d532a365e3ae2a1de509b937c2dcdc3b3191307d0b93d00de4",
+    "directory": "Model/experiments/source_snapshots/9311dfe6d35415d532a365e3ae2a1de509b937c2dcdc3b3191307d0b93d00de4",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "5de2ef22fa2d8d1bbf7774c267f2fe44fe102c328efdaed4f88a855af9c83a33",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "129c8716375f8be30f92ec22bc8303c7b07c3ce4bb933b6e8300cfc02a7a0788",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "1b177fc31ef169a3ba8897c54204e99b8fe079d778eb18d650c7fb9a761071fb"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T22:23:12+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/hybrid-v7-history2-q5-retrain-20261121/best.pt",
+        "bytes": 1413288,
+        "sha256": "b3785a294f7524cb40783bb87710f546d564bbb5445bcbc5c46e9e77a00ac5d2"
+      },
+      {
+        "path": "Model/runs/relu128-four-v9-history2-q5/best.pt",
+        "bytes": 3719953,
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "device": "NVIDIA GeForce GTX 1650",
+      "torch": "2.7.1+cu126",
+      "batch_size": 1,
+      "iterations": 200,
+      "warmup": 30,
+      "results": {
+        "hybrid-v7-history2-q5-retrain-20261121": {
+          "mean_ms": 2.7842050000617746,
+          "p50_ms": 2.5979500023822766,
+          "p95_ms": 4.012179997880594,
+          "history": 2,
+          "parameters": 114828
+        },
+        "relu128-four-v9-history2-q5": {
+          "mean_ms": 1.8952270002046134,
+          "p50_ms": 1.873050001449883,
+          "p95_ms": 2.0847999985562637,
+          "history": 2,
+          "parameters": 309124
+        }
+      },
+      "scope": "Prepared device tensors, model forward plus synchronization only; excludes JPEG XS decoding, data transfer, SQLite I/O, queueing and streaming scheduling."
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v7-v9-history2-q5-latency-20261121.json",
+        "bytes": 743,
+        "sha256": "4a74e6bed457a7a28c102aa2cf7cf3f704caf7c96bfe9fb0d646371455eedf20"
+      }
+    ]
+  }
+}

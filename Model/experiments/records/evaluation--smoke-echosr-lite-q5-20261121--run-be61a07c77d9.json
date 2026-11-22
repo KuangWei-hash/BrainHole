@@ -1,0 +1,651 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--smoke-echosr-lite-q5-20261121--run-be61a07c77d9",
+  "kind": "evaluation",
+  "name": "smoke-echosr-lite-q5-20261121",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/smoke-echosr-lite-q5-20261121",
+  "started_at": "2026-11-21T22:27:59+08:00",
+  "finished_at": "2026-11-21T22:28:03+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/evaluate_fsr.py",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q5-v4.npz",
+    "--checkpoint",
+    "Model/runs/relu128-four-v9-history2-q5/best.pt",
+    "--single-frame-reference",
+    "Model/runs/relu128-four-v9-q5/best.pt",
+    "--echosr-lite",
+    "--start-frame",
+    "720",
+    "--stop-frame",
+    "722",
+    "--preview-frame",
+    "721",
+    "--out",
+    "Model/runs/smoke-echosr-lite-q5-20261121"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "a0b7b958fc53770ae12bd19cb12c6efaa0e310b8543624e8e43affe2ed38c09f",
+    "directory": "Model/experiments/source_snapshots/a0b7b958fc53770ae12bd19cb12c6efaa0e310b8543624e8e43affe2ed38c09f",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "129c8716375f8be30f92ec22bc8303c7b07c3ce4bb933b6e8300cfc02a7a0788",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "618afe725b245f0a8e21e09048cc78b9388404261d3e4adc588fef02b848157f",
+      "test_fsr.py": "ceaef81a338580921a8946742df1a980de2b49bb9311090a560eec34881bd3e6",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "1b177fc31ef169a3ba8897c54204e99b8fe079d778eb18d650c7fb9a761071fb"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T22:28:03+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q5-v4.npz",
+        "bytes": 17714320,
+        "sha256": "1bfee926a2d6428a5acbfb89643e26d161c44b1f2e952481a3c1f49aa17f31ae"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/relu128-four-v9-history2-q5/best.pt",
+        "bytes": 3719953,
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "samples": 30,
+      "start_frame": 720,
+      "stop_frame": 722,
+      "first_evaluated_frame": 721,
+      "last_evaluated_frame": 721,
+      "raw_projection_metrics": {
+        "bilinear-raw": {
+          "mae_8bit": 16.30426158905029,
+          "psnr": 21.034202905898226
+        },
+        "v9-relu128-layers4-history2": {
+          "mae_8bit": 13.377509880065919,
+          "psnr": 22.485357784679994
+        },
+        "v9-single-frame-reference": {
+          "mae_8bit": 14.062956619262696,
+          "psnr": 22.052820557233183
+        },
+        "bilinear-rgb-input": {
+          "mae_8bit": 15.681263637542724,
+          "psnr": 21.390267797468585
+        },
+        "fsr1-easu-2x2x": {
+          "mae_8bit": 15.762515640258789,
+          "psnr": 21.32249843862825
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "mae_8bit": 15.905459308624268,
+          "psnr": 21.245121613375993
+        },
+        "EchoSR-Lite-x4-DF2K-pretrained": {
+          "mae_8bit": 15.926708984374999,
+          "psnr": 21.228324777595653
+        }
+      },
+      "rgb_reference_metrics": {
+        "bilinear-rgb-input": {
+          "mae_8bit": 14.528382937113443,
+          "psnr": 22.20944824893648
+        },
+        "fsr1-easu-2x2x": {
+          "mae_8bit": 14.643572489420574,
+          "psnr": 22.11924837790136
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "mae_8bit": 14.815146827697754,
+          "psnr": 22.01966647194562
+        },
+        "EchoSR-Lite-x4-DF2K-pretrained": {
+          "mae_8bit": 14.840727933247884,
+          "psnr": 21.996008265686584
+        },
+        "bilinear-raw": {
+          "mae_8bit": 14.75410582224528,
+          "psnr": 22.062306610836096
+        },
+        "v9-relu128-layers4-history2": {
+          "mae_8bit": 11.809293429056803,
+          "psnr": 23.648569511078882
+        },
+        "v9-single-frame-reference": {
+          "mae_8bit": 12.536918512980144,
+          "psnr": 23.145563271068355
+        }
+      },
+      "metric_note": "RAW metrics sample FSR RGB at RGGB positions. RGB target is demosaiced RAW, not original full RGB. Do not mix these metric spaces.",
+      "scope": "Same-video holdout, per-strip; no retraining. Unseen-video, full visual and streaming acceptance pending.",
+      "checkpoint": {
+        "path": "Model\\runs\\relu128-four-v9-history2-q5\\best.pt",
+        "sha256": "b78f4c611e8d9aa70943233eb1c7f6a17dd646a9dd4964f7bc0378f6492a90a0",
+        "config": {
+          "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "val_db": null,
+          "history": 2,
+          "architecture": "v9",
+          "v9_layers": 4,
+          "v9_variant": "relu128",
+          "v9_kernel_width": 3,
+          "v8_variant": "expand96_two_layer",
+          "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+          "val_decoded_cache": null,
+          "auxiliary_weight": 1.0,
+          "residual_scale": 1.0,
+          "warm_start": null,
+          "decay": 0.2,
+          "epochs": 5,
+          "batch_size": 8,
+          "lr": 0.001,
+          "max_steps": 0,
+          "val_steps": 0,
+          "device": "cuda",
+          "seed": 42,
+          "out": "Model\\runs\\relu128-four-v9-history2-q5",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720,
+            "note": "Same-video holdout does not establish unseen-video generalization."
+          },
+          "torch": "2.7.1+cu126",
+          "device_used": "cuda",
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "train_samples": 21570,
+          "validation_samples": 5370,
+          "parameters": 309124,
+          "input_contract": "decoded_raw_only_v1",
+          "residual_blocks": 0,
+          "residual_expansion": 1,
+          "residual_layers": 4,
+          "byte_encoder": false,
+          "temporal_fusion": "phase_aligned_channel_concat",
+          "hidden_channels": 128,
+          "activation": "relu",
+          "image_convolutions": 4,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "plane_receptive_field": [
+            9,
+            9
+          ]
+        }
+      },
+      "decoded_cache": {
+        "database_sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+        "samples": 27000,
+        "schema_version": 4,
+        "decoder_source": "SQLite decoded column, produced by native Go JPEG XS decoder",
+        "note": "Actual codestream reconstructions stored during dataset preparation; no RAW-target sampling."
+      },
+      "fsr": {
+        "name": "AMD official FidelityFX CLI v1.0.3",
+        "executable": "Model\\tools\\fsr1\\v1.0.3\\FidelityFX_CLI.exe",
+        "sha256": "0d0016683ab9331968b76963a8509b717d43652440f1adbf5a743aa2d950cbbd",
+        "source": "https://github.com/GPUOpen-Effects/FidelityFX-CLI/releases/tag/v1.0.3",
+        "passes": [
+          "EASU 2x",
+          "EASU 2x",
+          "RCAS sharpness 0.0"
+        ],
+        "texture": "FP16",
+        "intermediate": "PNG8 display-encoded RGB",
+        "guard_input_pixels": 8,
+        "atlas_columns": 16,
+        "tiles_per_atlas": 128,
+        "note": "Two EASU passes reach 4x per side. This is not a single-pass 2x Performance preset. Input is phase-aware RGB reconstruction of decoded CFA; no full-frame or neighbouring strip context."
+      },
+      "echosr_lite": {
+        "repository": "https://github.com/funnyWang-Echoes/EchoSR",
+        "commit": "09999643d2088ddbf39539244b046b9e4a951c3a",
+        "architecture": "Model\\tools\\EchoSR\\basicsr\\archs\\EchoSR_arch.py",
+        "architecture_sha256": "8dcaadc6c2b461ea8cfa4afb7687e4a7f3cdbfa5c32dad395a23b6d1f022093b",
+        "weights": "Model\\tools\\EchoSR\\experiments\\EchoSR_x4_lite_DF2K\\models\\EchoSR_x4_lite_DF2K.pth",
+        "weights_sha256": "fc5a0b7c68d2431749ddd6b8833d8a090d7d3d8315aa2e92cd67faebf7a7e272",
+        "state_key": "params",
+        "parameters": 258646,
+        "configuration": "official EchoSR_lite_SRx4_DF2K; embed_dim36 depths[2,3,2,3] mlp_ratio1.5",
+        "training": "upstream DF2K pretrained; no project training or fine-tuning",
+        "input": "phase-aware current-strip RGB, PNG8-equivalent quantization, replicated guard8 on all sides",
+        "output": "RGB x4, crop guards, clamp [0,1]; RAW metrics use RGGB projection",
+        "dependency_adapter": "registry/tqdm imports omitted; eval DropPath identity; torch.nn.init.trunc_normal_; no architecture/weight changes"
+      },
+      "echosr_paired_comparison": {
+        "bilinear-raw": {
+          "worst_10_percent_mae": 21.589614376425743,
+          "echosr_win_rate": 1.0
+        },
+        "v9-relu128-layers4-history2": {
+          "worst_10_percent_mae": 18.024080134928226,
+          "echosr_win_rate": 0.0
+        },
+        "v9-single-frame-reference": {
+          "worst_10_percent_mae": 19.562855064868927,
+          "echosr_win_rate": 0.0
+        },
+        "bilinear-rgb-input": {
+          "worst_10_percent_mae": 20.787501484155655,
+          "echosr_win_rate": 0.0
+        },
+        "fsr1-easu-2x2x": {
+          "worst_10_percent_mae": 20.89964359998703,
+          "echosr_win_rate": 0.03333333333333333
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "worst_10_percent_mae": 21.080111116170883,
+          "echosr_win_rate": 0.43333333333333335
+        },
+        "EchoSR-Lite-x4-DF2K-pretrained": {
+          "worst_10_percent_mae": 21.064267233014107,
+          "echosr_win_rate": 0.0
+        }
+      },
+      "echosr_largest_regressions_vs_fsr": [
+        {
+          "frame": 721,
+          "block": 9,
+          "echosr_mae": 16.657804548740387,
+          "fsr_mae": 16.42021469771862,
+          "delta": 0.23758985102176666
+        },
+        {
+          "frame": 721,
+          "block": 15,
+          "echosr_mae": 20.10613091289997,
+          "fsr_mae": 19.901660084724426,
+          "delta": 0.20447082817554474
+        },
+        {
+          "frame": 721,
+          "block": 2,
+          "echosr_mae": 15.243899468332529,
+          "fsr_mae": 15.088476408272982,
+          "delta": 0.15542306005954742
+        },
+        {
+          "frame": 721,
+          "block": 6,
+          "echosr_mae": 15.200450699776411,
+          "fsr_mae": 15.05322190001607,
+          "delta": 0.14722879976034164
+        },
+        {
+          "frame": 721,
+          "block": 24,
+          "echosr_mae": 16.616179682314396,
+          "fsr_mae": 16.479592211544514,
+          "delta": 0.1365874707698822
+        },
+        {
+          "frame": 721,
+          "block": 18,
+          "echosr_mae": 16.402665339410305,
+          "fsr_mae": 16.277636848390102,
+          "delta": 0.12502849102020264
+        },
+        {
+          "frame": 721,
+          "block": 7,
+          "echosr_mae": 15.11202659457922,
+          "fsr_mae": 15.00693278387189,
+          "delta": 0.1050938107073307
+        },
+        {
+          "frame": 721,
+          "block": 10,
+          "echosr_mae": 15.37806361913681,
+          "fsr_mae": 15.306445062160492,
+          "delta": 0.07161855697631836
+        },
+        {
+          "frame": 721,
+          "block": 11,
+          "echosr_mae": 13.637026492506266,
+          "fsr_mae": 13.583399020135403,
+          "delta": 0.05362747237086296
+        },
+        {
+          "frame": 721,
+          "block": 3,
+          "echosr_mae": 13.274544943124056,
+          "fsr_mae": 13.235352896153927,
+          "delta": 0.03919204697012901
+        }
+      ],
+      "reference_checkpoint": {
+        "path": "Model\\runs\\relu128-four-v9-q5\\best.pt",
+        "sha256": "7edb6385c29f3eaa271e10029eebef6f9cd91d40a660b0df10c1fb789519e3e3",
+        "config": {
+          "db": "training-data-preparation\\拆好的訓練資料\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+          "val_db": null,
+          "history": 1,
+          "architecture": "v9",
+          "v9_layers": 4,
+          "v9_variant": "relu128",
+          "v9_kernel_width": 3,
+          "v8_variant": "expand96_two_layer",
+          "decoded_cache": "Model\\runs\\decoded-q5-v4.npz",
+          "val_decoded_cache": null,
+          "auxiliary_weight": 1.0,
+          "residual_scale": 1.0,
+          "warm_start": null,
+          "decay": 0.2,
+          "epochs": 5,
+          "batch_size": 8,
+          "lr": 0.001,
+          "max_steps": 0,
+          "val_steps": 0,
+          "device": "cuda",
+          "seed": 42,
+          "out": "Model\\runs\\relu128-four-v9-q5",
+          "split": {
+            "kind": "temporal_smoke_only",
+            "boundary": 720,
+            "note": "Same-video holdout does not establish unseen-video generalization."
+          },
+          "torch": "2.7.1+cu126",
+          "device_used": "cuda",
+          "header_id": "ca3ede31b7eefd3fe6fd379b324b3d256c52af307ae9f2601a32c7e07b4dbc53",
+          "train_samples": 21600,
+          "validation_samples": 5400,
+          "parameters": 304516,
+          "input_contract": "decoded_raw_only_v1",
+          "residual_blocks": 0,
+          "residual_expansion": 1,
+          "residual_layers": 4,
+          "byte_encoder": false,
+          "temporal_fusion": false,
+          "hidden_channels": 128,
+          "activation": "relu",
+          "image_convolutions": 4,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "plane_receptive_field": [
+            9,
+            9
+          ]
+        }
+      },
+      "paired_comparison": {
+        "bilinear-raw": {
+          "worst_10_percent_mae": 21.589614376425743,
+          "model_win_rate": 1.0
+        },
+        "v9-relu128-layers4-history2": {
+          "worst_10_percent_mae": 18.024080134928226,
+          "model_win_rate": 0.0
+        },
+        "v9-single-frame-reference": {
+          "worst_10_percent_mae": 19.562855064868927,
+          "model_win_rate": 1.0
+        },
+        "bilinear-rgb-input": {
+          "worst_10_percent_mae": 20.787501484155655,
+          "model_win_rate": 1.0
+        },
+        "fsr1-easu-2x2x": {
+          "worst_10_percent_mae": 20.89964359998703,
+          "model_win_rate": 1.0
+        },
+        "fsr1-easu-2x2x-rcas0": {
+          "worst_10_percent_mae": 21.080111116170883,
+          "model_win_rate": 1.0
+        },
+        "EchoSR-Lite-x4-DF2K-pretrained": {
+          "worst_10_percent_mae": 21.064267233014107,
+          "model_win_rate": 1.0
+        }
+      },
+      "largest_regressions_vs_reference": [
+        {
+          "frame": 721,
+          "block": 20,
+          "model_mae": 16.426497660577297,
+          "reference_mae": 16.460977010428905,
+          "delta": -0.034479349851608276
+        },
+        {
+          "frame": 721,
+          "block": 0,
+          "model_mae": 15.50805939361453,
+          "reference_mae": 15.583969820290804,
+          "delta": -0.07591042667627335
+        },
+        {
+          "frame": 721,
+          "block": 8,
+          "model_mae": 11.932953782379627,
+          "reference_mae": 12.226305641233921,
+          "delta": -0.2933518588542938
+        },
+        {
+          "frame": 721,
+          "block": 22,
+          "model_mae": 14.087154138833284,
+          "reference_mae": 14.406420607119799,
+          "delta": -0.3192664682865143
+        },
+        {
+          "frame": 721,
+          "block": 11,
+          "model_mae": 11.9002166390419,
+          "reference_mae": 12.246061731129885,
+          "delta": -0.3458450920879841
+        },
+        {
+          "frame": 721,
+          "block": 3,
+          "model_mae": 11.003913134336472,
+          "reference_mae": 11.416260357946157,
+          "delta": -0.4123472236096859
+        },
+        {
+          "frame": 721,
+          "block": 13,
+          "model_mae": 12.711196672171354,
+          "reference_mae": 13.132831547409296,
+          "delta": -0.42163487523794174
+        },
+        {
+          "frame": 721,
+          "block": 21,
+          "model_mae": 16.384185031056404,
+          "reference_mae": 16.823390163481236,
+          "delta": -0.4392051324248314
+        },
+        {
+          "frame": 721,
+          "block": 29,
+          "model_mae": 11.404080111533403,
+          "reference_mae": 11.843982506543398,
+          "delta": -0.4399023950099945
+        },
+        {
+          "frame": 721,
+          "block": 27,
+          "model_mae": 12.495685536414385,
+          "reference_mae": 12.950882110744715,
+          "delta": -0.4551965743303299
+        }
+      ],
+      "upper_boundary_comparison": {
+        "first_strip": {
+          "samples": 1,
+          "model_mae": 15.50805939361453,
+          "reference_mae": 15.583969820290804,
+          "win_rate": 1.0
+        },
+        "remaining_strips": {
+          "samples": 29,
+          "model_mae": 13.304043415420015,
+          "reference_mae": 14.010509139504926,
+          "win_rate": 1.0
+        }
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--smoke-echosr-lite-q5-20261121--run-be61a07c77d9.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "ade5913d48258e3dd247eba4859bb0e4c753a1b363d9a59bf371960519480616"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/bilinear-raw.png",
+        "bytes": 207442,
+        "sha256": "f744e4ab2b15d8348c7e47a1aae7e6d19483e0e5d59da7e18952421fc1cb1f80"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/bilinear-rgb-input.png",
+        "bytes": 205386,
+        "sha256": "779d3d668edcdb8758a0651c1827a7dd77436f5c0220870673c664bc2744dbdf"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/blocks.jsonl",
+        "bytes": 21000,
+        "sha256": "ade5913d48258e3dd247eba4859bb0e4c753a1b363d9a59bf371960519480616"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/comparison.png",
+        "bytes": 2562595,
+        "sha256": "b1781c1da3f947cbb40d201553d1bd0ff75f90b9a08708ffde5b01ec7008026d"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/EchoSR-Lite-x4-DF2K-pretrained.png",
+        "bytes": 228408,
+        "sha256": "9d77b8e224a4dc257ead4f8348a3d223ffda98d6f16b44dc6a38f3eeab56308a"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/echosr-source/EchoSR_arch.py",
+        "bytes": 24331,
+        "sha256": "8dcaadc6c2b461ea8cfa4afb7687e4a7f3cdbfa5c32dad395a23b6d1f022093b"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/echosr-source/LICENSE",
+        "bytes": 11528,
+        "sha256": "a1ff5dbc7f8eacad240c0da90f36fbe27c7fd0ca75406d35e578ff71253f719f"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/echosr-source/test_EchoSR_lite_SRx4_DF2K.yml",
+        "bytes": 2386,
+        "sha256": "2fd870d026ad7e3d374fe8828f02005a73a5a5f9ac9e8a3a7b585c0d64ed71e3"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/fsr1-easu-2x2x-rcas0.png",
+        "bytes": 451158,
+        "sha256": "16e45b0dec3d9a2fcfc7a2593142af1da9ddbcbf832656f18fa11475e5e01627"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/fsr1-easu-2x2x.png",
+        "bytes": 283347,
+        "sha256": "2f82c4816bf36f312f8e26b2c09396dba56ef8210823524ebf0dd405a6c819a3"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/official-cli/easu2-000.png",
+        "bytes": 160448,
+        "sha256": "a54c370ba62b2c03afee68a4c3ec3bb918e31ce8c92369ff7a3cba465f64d331"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/official-cli/easu2.log",
+        "bytes": 207,
+        "sha256": "b04b67dbfa6864b249491c8d5011b4e8eee62d4a98db508b116e549eb51c4b1d"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/official-cli/easu4-000.png",
+        "bytes": 538867,
+        "sha256": "f0f73ca9a7f7625b0ba23b172b9e1a86cb296458fcc3be0027f9ff26b94bba19"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/official-cli/easu4.log",
+        "bytes": 209,
+        "sha256": "c9d8d648224fe9f095ed53bf356d8127cae24832b80b08c153a4b096031d794b"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/official-cli/input-000.png",
+        "bytes": 29031,
+        "sha256": "0411197fbc132178c8be268943cd7d85c19b8c4efec35fcb21706e16819da793"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/official-cli/rcas-000.png",
+        "bytes": 836307,
+        "sha256": "525866a6f15f25a51c77e8c828e12487091adc83742cb433ab17b6879e750ea7"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/official-cli/rcas.log",
+        "bytes": 188,
+        "sha256": "5d2e7e5bfb2a774ffa1d4ba70b8c67cd7a80f531fc8523bfb0d332cef0c7420e"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/report.json",
+        "bytes": 13622,
+        "sha256": "882afcec767af70a62d0a187735a01883e22828a2f9e4283741ce6dbcebe8b6c"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/target-rgb-reference.png",
+        "bytes": 506168,
+        "sha256": "04f8c2eeb97a593356e51043b5754d9be1f1e77b269ac3edcf303ef9ee71a842"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/v9-relu128-layers4-history2.png",
+        "bytes": 306684,
+        "sha256": "6d43e54135a29885d88b3f154e444ed1d89c91abfce0618f89dad759e7af3f36"
+      },
+      {
+        "path": "Model/runs/smoke-echosr-lite-q5-20261121/v9-single-frame-reference.png",
+        "bytes": 297592,
+        "sha256": "6d8bcc4d04bd82ce11f48d77a51bf84fadb5444e1d60ff652d968aada0560dab"
+      }
+    ]
+  }
+}

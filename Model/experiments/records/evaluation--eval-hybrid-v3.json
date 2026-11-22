@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--eval-hybrid-v3",
+  "kind": "evaluation",
+  "name": "eval-hybrid-v3",
+  "status": "completed",
+  "output": "Model/runs/eval-hybrid-v3",
+  "result": {
+    "report": {
+      "samples": 5400,
+      "start_frame": 720,
+      "stop_frame": null,
+      "metrics": {
+        "nearest": {
+          "mae_8bit": 30.41993428495195,
+          "psnr_raw": 16.000400344595302
+        },
+        "bilinear": {
+          "mae_8bit": 28.756980578899384,
+          "psnr_raw": 16.68257174262571
+        },
+        "single-v1-refined": {
+          "mae_8bit": 30.086177720361288,
+          "psnr_raw": 14.788383748355944
+        },
+        "hybrid-v3": {
+          "mae_8bit": 22.142573870288,
+          "psnr_raw": 18.24921479445365
+        }
+      },
+      "gates": {
+        "single-v1-refined": {
+          "numerical_screen_passed": false,
+          "block_win_rate_against_both": 0.5942592592592593
+        },
+        "hybrid-v3": {
+          "numerical_screen_passed": true,
+          "block_win_rate_against_both": 0.9803703703703703
+        }
+      },
+      "learned_low_vs_decoded_mae_8bit": {},
+      "scope": "Same-video holdout only; visual, unseen-video and streaming gates pending.",
+      "preview_order": [
+        "target",
+        "nearest",
+        "bilinear",
+        "single-v1-refined",
+        "hybrid-v3"
+      ],
+      "baseline": "Phase-aligned RGGB planes, border padding; nearest and bilinear",
+      "decoded_cache": {
+        "database_sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564",
+        "header_id": "144d00bb7b789b32d7757932c8b951b567c3c7fb1a49a57cdaf1433858a55a6b",
+        "decoder_sha256": "520c53f2bd9a6834dda8a17c7682bebd1b732ee5a1dcd97f229851a4bbaaa064",
+        "samples": 27000,
+        "note": "Decoded only from codestream, not high-resolution labels."
+      },
+      "checkpoints": [
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\single-v1-refined\\best.pt",
+        "C:\\Users\\dinos\\BrainHole\\Model\\runs\\hybrid-v3\\best.pt"
+      ],
+      "input_contracts": {
+        "single-v1-refined": "encoded_only_legacy",
+        "hybrid-v3": "encoded_and_decoded_raw_v1"
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--eval-hybrid-v3.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "fdc8829253e8de867eb361def15bc956d4d2d6b618c4f3f609fcf3d5161c9f7f"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/eval-hybrid-v3/bilinear.png",
+        "bytes": 182093,
+        "sha256": "5e24ab7aa1d814ee9181920b0af689e842295d9cd383a6def5efa325c62d4955"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v3/blocks.jsonl",
+        "bytes": 884794,
+        "sha256": "fdc8829253e8de867eb361def15bc956d4d2d6b618c4f3f609fcf3d5161c9f7f"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v3/comparison.png",
+        "bytes": 1224470,
+        "sha256": "4d55dd37b5e6066a5d51ff7a5a55c1cd121a51eaa882f56fbe03b077dda2d79c"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v3/hybrid-v3.png",
+        "bytes": 263766,
+        "sha256": "91f36e2cebb016f14fb54db12beafea384283a889e8012710874036571ed7b95"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v3/nearest.png",
+        "bytes": 79710,
+        "sha256": "bcd51115d5cff4dda25ce323bd3948bf60cb2899faa1165b3f81cefd48197fbb"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v3/report.json",
+        "bytes": 1810,
+        "sha256": "45d0a405bbf66d66a9e5a598a6ef06d3970b8946c0b73c2338da94b1ed6c472b"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v3/single-v1-refined.png",
+        "bytes": 239602,
+        "sha256": "62e494e85aceaaa8a0ce5fbb6f2f9b39fda8b7b826278198ea968b7b4ae3fbf9"
+      },
+      {
+        "path": "Model/runs/eval-hybrid-v3/target.png",
+        "bytes": 504195,
+        "sha256": "25f160e35795f863733928618d8c7724d8e24b6e1c43b8bc0a02f0f0f2a7501c"
+      }
+    ]
+  },
+  "provenance": "historical_artifact_backfill",
+  "started_at": null,
+  "finished_at": null,
+  "command_argv": null,
+  "source_snapshot": null,
+  "note": "Original command, timestamps and original source snapshot were not retained; only existing artifacts are archived. Unknown details are not reconstructed.",
+  "recorded_at": "2026-11-21T12:17:05+08:00"
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "inference--cached-example--run-c4684adda553",
+  "kind": "inference",
+  "name": "cached-example",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/hybrid-v6-history2-res6/cached-example",
+  "started_at": "2026-11-21T12:50:15+08:00",
+  "finished_at": "2026-11-21T12:50:16+08:00",
+  "cwd": "C:\\Users\\dinos\\BrainHole",
+  "command_argv": [
+    "C:\\Users\\dinos\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "Model/predict.py",
+    "--checkpoint",
+    "Model/runs/hybrid-v6-history2-res6/best.pt",
+    "--db",
+    "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+    "--decoded-cache",
+    "Model/runs/decoded-q6.npz",
+    "--frame",
+    "750",
+    "--block",
+    "7",
+    "--out",
+    "Model/runs/hybrid-v6-history2-res6/cached-example"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "2e801e34a06a0ae9725c1590ab86133dd679249c34a2963d584386de8886be18",
+    "directory": "Model/experiments/source_snapshots/2e801e34a06a0ae9725c1590ab86133dd679249c34a2963d584386de8886be18",
+    "sha256": {
+      "AGENTS.md": "b732d29d425427d56b2869269fc6862a992740dea239c92f2593b38c21bc2b70",
+      "baseline.py": "1e15e49be86e24ed030d7fb1bc187e076e406632e4b7c96f8f68df1ceb962f7e",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "data.py": "1e9fd8d35aadc0d3fb207f4a189bbca263f6e7a85be6ad13ab25eadfd387f82f",
+      "evaluate.py": "4702b2822a0688e9b9223c8262bb01f5e52c3dd2e97147f4f730d6747f8c008e",
+      "network.py": "c46fc59f916454cdf6511d7e39d55f46167f86486a3588c0f86674dec6381d6d",
+      "predict.py": "9efdd98ef12f628a86eaff01dd71ea13400c0b1ad5e68345f3bdd6c89c07e63c",
+      "record_experiment.py": "8aab0b68d877bcf0a235acf9bc309db64aecfa3de38b0b1c2f9539620808971c",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "test_model.py": "c5b00dd8c45bd913b9e4aa685ad58619557f1c1dcba1dd2ca69a24b80de78a4b",
+      "test_record_experiment.py": "7936d985816fad2724804b0f847ddaef54edaa944193b0f59a0c05e70161c404",
+      "train.py": "4baead785ff21f407eae3b6cb3a520b95f10758fa616b0eae66970f39c0aac1c",
+      "作法.MD": "f27381dc6b9af13713d18dcc9d73290e1d6b93d1b15d642761b11d28b532e01c",
+      "驗收標準.md": "5cefd9658f76954b407b037d5e851a28972376a016afd54603b6e06608da51d3"
+    }
+  },
+  "environment": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce GTX 1650"
+  },
+  "recorded_at": "2026-11-21T12:50:16+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/big-buck-bunny-30s-q6-shared-v3-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "596c2ba24477098fc92583761e7401d06671e3db8d205f6b19d31d450ab9a564"
+      }
+    ],
+    "--decoded-cache": [
+      {
+        "path": "Model/runs/decoded-q6.npz",
+        "bytes": 17714112,
+        "sha256": "6bad8a2a18c7d47c30d0ac0766f70a37b8f80d66b2d3141393da7f858975a70e"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/hybrid-v6-history2-res6/best.pt",
+        "bytes": 919192,
+        "sha256": "73093ffcd9e8153f004433a4876497fba463aeeb2b6518661856e5f2e299e923"
+      }
+    ]
+  },
+  "result": {
+    "artifacts": [
+      {
+        "path": "Model/runs/hybrid-v6-history2-res6/cached-example.png",
+        "bytes": 15733,
+        "sha256": "4009e19d4865780f4278e57d486b0947992e3364659df51534c1339569a82ae3"
+      },
+      {
+        "path": "Model/runs/hybrid-v6-history2-res6/cached-example.raw",
+        "bytes": 10240,
+        "sha256": "49e6e79e73cccbd89a1c801007e14de93f9437b8356793596e57b7d337e4532c"
+      }
+    ]
+  }
+}
