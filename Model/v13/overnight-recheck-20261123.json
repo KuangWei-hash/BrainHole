@@ -1,0 +1,38 @@
+{
+    "kind":  "historical-recheck",
+    "frozen_at":  "2026-11-23T06:19:22.8892835+08:00",
+    "ensemble_mode":  "equal-weight-model-average",
+    "checkpoints":  [
+                        "runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+                        "runs/v13-overnight-search-20261122-230255-847/final-refinement-weights/best-mae.pt"
+                    ],
+    "checkpoint_sha256s":  [
+                               "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+                               "4e5c2f95358aedb9e2662a18a05e72746210fe26fb5b949e4e40f86c5b0bb725"
+                           ],
+    "strengths":  [
+                      1,
+                      1
+                  ],
+    "weights":  [
+                    0.5,
+                    0.5
+                ],
+    "quantization":  "round-ties-to-even-raw8",
+    "roi_sha256":  "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+    "development_report":  "runs/v13-S2-ensemble-final-dev-20261123-055346-029/report.json",
+    "development_report_sha256":  "2ed1a3822ea7640e5bdac8f6a4c20fc1f765f35eb9139dbedb81d4b85409498b",
+    "development_scored":  [
+                               736,
+                               779
+                           ],
+    "recheck_source":  [
+                           780,
+                           899
+                       ],
+    "recheck_scored":  [
+                           795,
+                           899
+                       ],
+    "rationale":  "Lowest RAW MAE among completed development comparisons, reduced visible stripes, and stable target-referenced errors relative to the older alpha 0.5 variant. The historical segment was excluded from all overnight selection and tuning."
+}

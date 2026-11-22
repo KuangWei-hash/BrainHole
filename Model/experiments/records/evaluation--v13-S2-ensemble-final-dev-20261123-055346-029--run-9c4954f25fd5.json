@@ -1,0 +1,1570 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v13-S2-ensemble-final-dev-20261123-055346-029--run-9c4954f25fd5",
+  "kind": "evaluation",
+  "name": "v13-S2-ensemble-final-dev-20261123-055346-029",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029",
+  "started_at": "2026-11-23T05:53:50+08:00",
+  "finished_at": "2026-11-23T05:55:03+08:00",
+  "cwd": "Z:\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "evaluate_v13.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs/v11-q5-20261122-scene-plan.json",
+    "--cache",
+    "runs/v13-S2-cache-20261122-214759-647",
+    "--split",
+    "S2-dev",
+    "--device",
+    "cpu",
+    "--checkpoint",
+    "runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+    "runs/v13-overnight-search-20261122-230255-847/final-refinement-weights/best-mae.pt",
+    "--alpha",
+    "1",
+    "--band-ensemble",
+    "runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+    "runs/v13-overnight-search-20261122-230255-847/final-refinement-weights/best-mae.pt",
+    "--out",
+    "runs/v13-S2-ensemble-final-dev-20261123-055346-029"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "4ba56cb6e2c7221139dc770679c0e9667443ed05055d87adb1cf49bbb5784c46",
+    "directory": "Model/experiments/source_snapshots/4ba56cb6e2c7221139dc770679c0e9667443ed05055d87adb1cf49bbb5784c46",
+    "sha256": {
+      "AGENTS.md": "587c9c84434625f399fe8a8f079e4d1bd89bbaffd6e8cdb47ff29b77a8fbc4d9",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "build_v13_fades.py": "b89aa8dd577e1a27f162acb9e0448ca532469ace212962683d1bd9ab93ee964a",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "check_v13.py": "b6e8fb4ce6c07d6467eae39c14288b5793bc2854a898ddf5189e6d97c986b3e4",
+      "compare_v10_v12_existing.py": "59e285b0531a42369449c567e423647cda309aee6b8c105a0ceaaa0a223afe56",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "026ac00d93572ad8357898ec742ce0ebbe8c08b372d95e5f22cea2f562b422dc",
+      "diagnose_v13_correction.py": "b13c4c984b691864525889b76ac1e5a733a7ebf7418a0d8dc7c54c4f6922533f",
+      "diagnose_v13_history.py": "51a8d56f1b7c0230cf7ffb4822bf991c284281fc0bb3dfb0773b95a31e61a70b",
+      "diagnose_v13_weights.py": "82353004fae24b1e8751cc67cb898b6f6e498a4a03bd76700224bea27c511e74",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "da8316cac3c2cd6d1e31fcd87289ff0e30c07209a5d39b68b0a6b87042004892",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "evaluate_v13.py": "0804f5cd64b32f817ce7ffcd66e54c6e8097b47b2a2f96537494d8b1303d769b",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "5496aaeddf4afb01fc8f2c5dccaa129b1e4d1b4b349de1a81bca01447e436dbb",
+      "predict_v13.py": "bfce98ea707ce23a72dc2ec738a1ae58c67622121baebe38ca7dcf22edb4df35",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "35d738f3ddf5f17e54d5e49a0f89bb8a3deacd8a168d2dac915c501f49647100",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "run_v13_search.py": "252a910c92dd044c21f66ab8becb031effe11b82d17593ce3130f2ba444b26d0",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "test_v13.py": "951d5b4f7f33df09ecc8731a392a41f08e4551d2310b3d6f94b24af31aaef500",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "ccd7ff38c910054d52cc9d1c76846443560c98459a135f169f6abe656e2d0f70",
+      "train_v13.py": "833e66b8cc7758db6da876393015bcfbc9f93fb2b3d34bcffe336862027ccfd0",
+      "train_v13_gate.py": "302fccc006ec53182695ba816420e43369b11b5dc2f6cecf7317a1681f910603",
+      "train_v13_samples.py": "e296d1e8cc645a1dc48649197f393f7c33e7ab8e7ded63f7600773255018fa6b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "bf475e02c2d7f4de39c83ebe55a87ba30f9a5b91e21d6f02ccbe766b3f3949a0",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+      "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+      "v13/ensemble.py": "70d30ae6634482893b00e13ec40cb4a595d0c855f0e1e2dcc842a6db41a230cb",
+      "v13/fusion.py": "e977b995782678cd5cb6e86fabcab5c1ba14fe1efd7507e084481d8190458f4f",
+      "v13/model.py": "0cfb7aaee54b753aeb7031ac844bcadd32b51fc722d99f9268bbb04263678f40",
+      "v13/native.py": "9b94a88c44eff3e2afeea2349269ffac88571a87b21553d1efe9e64b29e75f7c",
+      "v13/pairs.py": "20abeea0a22925ac483b1c4f179ce864060810f8c639cf95232e22a70f82486a",
+      "v13/README.md": "409362237a05f556c0703255f352a78fa7a2d8350b315e4a2baf6e2d35735bb4",
+      "v13/roi-bbb-q5.json": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "v13/s2-bbb-q5-audit-freeze.json": "4265a9f3e5a9bc2e02445f675ebd7f6daeebeab44c7b56598d5c2f0b2f3ba3da",
+      "v13/執行前檢查.md": "1670dc9ce111c5d0b6a2fb0df506a94b18f16497bc8a01c4df459f91fd82bb75",
+      "v13/實作清單.md": "b90f07ce145b19a81803733eff76c0bb75855e0d67717e44a268d150e6f4c888",
+      "v13/實驗與驗收計畫.md": "a64d1dd6ae3e6147ed27fbd622831d06dc49de9d4297abc5e134047181c5136d",
+      "v13/文獻對照.md": "864c005922841e0d430d16c391c81fd1d856dd70dc9e7298b80248fbf9763f1c",
+      "v13/設計決策.md": "f82174edda7bcf76377993997bff0e2881ae5424da188e9c0f43ef94d2d19d17",
+      "v13/設計規格.md": "f9f0dd8860436074e9a2e013c8e5c1774aad2d7f1f5566795e2383584746170e",
+      "v13/逐幀融合試驗.md": "8520068d7c8472494bf98741eaefcafc84b64bc4c082a1f0df893c0d46f38035",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-23T05:55:04+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+        "bytes": 480089,
+        "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/final-refinement-weights/best-mae.pt",
+        "bytes": 1372437,
+        "sha256": "4e5c2f95358aedb9e2662a18a05e72746210fe26fb5b949e4e40f86c5b0bb725"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/v11-q5-20261122-scene-plan.json",
+        "bytes": 14443,
+        "sha256": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7"
+      }
+    ],
+    "--band-ensemble": [
+      {
+        "path": "Model/runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+        "bytes": 480089,
+        "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/final-refinement-weights/best-mae.pt",
+        "bytes": 1372437,
+        "sha256": "4e5c2f95358aedb9e2662a18a05e72746210fe26fb5b949e4e40f86c5b0bb725"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "split": "S2-dev",
+      "source_range": [
+        721,
+        779
+      ],
+      "scored_range": [
+        736,
+        779
+      ],
+      "samples": 1320,
+      "start_frame": 736,
+      "scored_strips": 1320,
+      "warmup_strips": 450,
+      "provenance": {
+        "db": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "scene": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7",
+        "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+        "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+        "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+        "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d"
+      },
+      "roi_sha256": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "audit_freeze_sha256": null,
+      "recheck_kind": null,
+      "seam_cfa_rows": [
+        7,
+        15,
+        23,
+        31,
+        39,
+        47,
+        55,
+        63,
+        71,
+        79,
+        87,
+        95,
+        103,
+        111,
+        119,
+        127,
+        135,
+        143,
+        151,
+        159,
+        167,
+        175,
+        183,
+        191,
+        199,
+        207,
+        215,
+        223,
+        231
+      ],
+      "methods": {
+        "v12": {
+          "raw": {
+            "mae_8bit": 15.197977694598112,
+            "psnr": 21.65039812130614
+          },
+          "rgb": {
+            "mae_8bit": 12.843082630273067,
+            "psnr": 23.067337452936414
+          },
+          "exact_raw_fraction": 0.02415919490158558,
+          "pairs": 43,
+          "temporal": 3.90689754486084,
+          "gradient_x_mae": 15.471430778503418,
+          "gradient_y_mae": 15.929133415222168,
+          "low_frequency_mae": 9.116943729285039,
+          "high_frequency_mae": 11.70705196496212,
+          "boundary_mae": 16.31626319885254,
+          "inside_mae": 15.875672340393066,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 15.825976371765137,
+              "rgb_mae": 13.301733434200287,
+              "temporal": 5.219916343688965,
+              "gradient_mae": 17.04049301147461
+            },
+            "grass-sunlight": {
+              "raw_mae": 15.73558235168457,
+              "rgb_mae": 13.308794405311346,
+              "temporal": 6.169086933135986,
+              "gradient_mae": 15.185301780700684
+            },
+            "root-and-hole": {
+              "raw_mae": 16.906497955322266,
+              "rgb_mae": 14.531309455633163,
+              "temporal": 4.02274227142334,
+              "gradient_mae": 16.528024673461914
+            },
+            "root-strip-boundary": {
+              "raw_mae": 21.136024475097656,
+              "rgb_mae": 18.736969381570816,
+              "temporal": 5.339873313903809,
+              "gradient_mae": 20.060028076171875
+            },
+            "canopy": {
+              "raw_mae": 17.382762908935547,
+              "rgb_mae": 15.055174995213747,
+              "temporal": 4.250828266143799,
+              "gradient_mae": 16.700153350830078
+            },
+            "title-when-visible": {
+              "raw_mae": 23.158384323120117,
+              "rgb_mae": 20.761502645909786,
+              "temporal": 5.570156574249268,
+              "gradient_mae": 19.58187484741211
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 1,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 2,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 3,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 4,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 5,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 6,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 7,
+              "delta_mae_8bit": 0.0
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                736,
+                737
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                738,
+                739
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                739,
+                740
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                740,
+                741
+              ],
+              "delta": 0.0
+            }
+          ]
+        },
+        "unsharp": {
+          "raw": {
+            "mae_8bit": 17.918686311895197,
+            "psnr": 20.31299922576602
+          },
+          "rgb": {
+            "mae_8bit": 14.284823787573611,
+            "psnr": 22.16429712363506
+          },
+          "exact_raw_fraction": 0.02038862742483616,
+          "pairs": 43,
+          "temporal": 4.692089080810547,
+          "gradient_x_mae": 20.17768096923828,
+          "gradient_y_mae": 21.078601837158203,
+          "low_frequency_mae": 9.219909150094697,
+          "high_frequency_mae": 15.033787582859848,
+          "boundary_mae": 20.1198673248291,
+          "inside_mae": 21.210996627807617,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 19.259689331054688,
+              "rgb_mae": 15.272492934018373,
+              "temporal": 5.855269432067871,
+              "gradient_mae": 22.926246643066406
+            },
+            "grass-sunlight": {
+              "raw_mae": 18.229705810546875,
+              "rgb_mae": 14.671931359916925,
+              "temporal": 6.81959342956543,
+              "gradient_mae": 19.60755157470703
+            },
+            "root-and-hole": {
+              "raw_mae": 19.715835571289062,
+              "rgb_mae": 15.87883684784174,
+              "temporal": 5.18060827255249,
+              "gradient_mae": 22.039875030517578
+            },
+            "root-strip-boundary": {
+              "raw_mae": 24.229101181030273,
+              "rgb_mae": 20.11049497872591,
+              "temporal": 6.9131293296813965,
+              "gradient_mae": 26.600757598876953
+            },
+            "canopy": {
+              "raw_mae": 20.241064071655273,
+              "rgb_mae": 16.546301431953907,
+              "temporal": 5.320375442504883,
+              "gradient_mae": 22.135929107666016
+            },
+            "title-when-visible": {
+              "raw_mae": 26.057836532592773,
+              "rgb_mae": 22.04549554735422,
+              "temporal": 7.287142753601074,
+              "gradient_mae": 25.966541290283203
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 737,
+              "block": 16,
+              "delta_mae_8bit": 3.714649323374033
+            },
+            {
+              "frame": 737,
+              "block": 0,
+              "delta_mae_8bit": 3.709571845829487
+            },
+            {
+              "frame": 736,
+              "block": 16,
+              "delta_mae_8bit": 3.6693358048796654
+            },
+            {
+              "frame": 753,
+              "block": 16,
+              "delta_mae_8bit": 3.6596672236919403
+            },
+            {
+              "frame": 754,
+              "block": 16,
+              "delta_mae_8bit": 3.652341216802597
+            },
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 3.64550918340683
+            },
+            {
+              "frame": 738,
+              "block": 16,
+              "delta_mae_8bit": 3.6405276507139206
+            },
+            {
+              "frame": 738,
+              "block": 0,
+              "delta_mae_8bit": 3.64033006131649
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 1.0123047828674316
+            },
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 0.9788153171539307
+            },
+            {
+              "frames": [
+                777,
+                778
+              ],
+              "delta": 0.9769270420074463
+            },
+            {
+              "frames": [
+                774,
+                775
+              ],
+              "delta": 0.9764776229858398
+            },
+            {
+              "frames": [
+                773,
+                774
+              ],
+              "delta": 0.9499316215515137
+            }
+          ]
+        },
+        "v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+          "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+          "epoch": 16,
+          "variant": "R2-frames-trend",
+          "alpha": 1.0,
+          "band_alpha": null,
+          "clipped": 0.0015742631392045455,
+          "delta_rms": 15.540697522133033,
+          "delta_max": 155.0450897216797,
+          "raw": {
+            "mae_8bit": 10.894310535084118,
+            "psnr": 24.492082341588024
+          },
+          "rgb": {
+            "mae_8bit": 9.451607143517696,
+            "psnr": 25.803662180012363
+          },
+          "exact_raw_fraction": 0.033907581120729446,
+          "pairs": 43,
+          "temporal": 3.2868666648864746,
+          "gradient_x_mae": 10.907569885253906,
+          "gradient_y_mae": 9.993494033813477,
+          "low_frequency_mae": 6.233035407788826,
+          "high_frequency_mae": 8.343321940104167,
+          "boundary_mae": 12.715210914611816,
+          "inside_mae": 9.617637634277344,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.099653244018555,
+              "rgb_mae": 8.865130450576544,
+              "temporal": 4.592901229858398,
+              "gradient_mae": 9.562324523925781
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.690997123718262,
+              "rgb_mae": 10.406244155019522,
+              "temporal": 5.577642917633057,
+              "gradient_mae": 9.619110107421875
+            },
+            "root-and-hole": {
+              "raw_mae": 11.993827819824219,
+              "rgb_mae": 10.610475596040487,
+              "temporal": 3.056028366088867,
+              "gradient_mae": 10.955022811889648
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.012642860412598,
+              "rgb_mae": 13.567685913294554,
+              "temporal": 3.898765802383423,
+              "gradient_mae": 13.439217567443848
+            },
+            "canopy": {
+              "raw_mae": 10.943778038024902,
+              "rgb_mae": 9.555123075842857,
+              "temporal": 3.2647342681884766,
+              "gradient_mae": 10.127099990844727
+            },
+            "title-when-visible": {
+              "raw_mae": 13.855355262756348,
+              "rgb_mae": 12.332578338682652,
+              "temporal": 3.867439031600952,
+              "gradient_mae": 11.871919631958008
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.7605443894863129
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.8838838711380959
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.9809572622179985
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.9883782640099525
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.99101722240448
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -1.2581058405339718
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.2809568643569946
+            },
+            {
+              "frame": 759,
+              "block": 16,
+              "delta_mae_8bit": -1.3669918477535248
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.07654619216918945
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.08872723579406738
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.11214184761047363
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.12334954738616943
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.15369129180908203
+            }
+          ]
+        },
+        "final-refinement-weights-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\final-refinement-weights\\best-mae.pt",
+          "sha256": "4e5c2f95358aedb9e2662a18a05e72746210fe26fb5b949e4e40f86c5b0bb725",
+          "epoch": 14,
+          "variant": "R2-frames-clean",
+          "alpha": 1.0,
+          "band_alpha": null,
+          "clipped": 0.0010225793087121212,
+          "delta_rms": 15.229247549128685,
+          "delta_max": 147.8134307861328,
+          "raw": {
+            "mae_8bit": 10.642155586589467,
+            "psnr": 24.6643371936458
+          },
+          "rgb": {
+            "mae_8bit": 9.25372204058098,
+            "psnr": 25.941957620955044
+          },
+          "exact_raw_fraction": 0.03480735048651695,
+          "pairs": 43,
+          "temporal": 3.5817835330963135,
+          "gradient_x_mae": 10.569482803344727,
+          "gradient_y_mae": 9.777934074401855,
+          "low_frequency_mae": 6.229021772904829,
+          "high_frequency_mae": 8.011321910511363,
+          "boundary_mae": 12.352059364318848,
+          "inside_mae": 9.42245864868164,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 9.516484260559082,
+              "rgb_mae": 8.254759702831507,
+              "temporal": 4.640829086303711,
+              "gradient_mae": 9.198263168334961
+            },
+            "grass-sunlight": {
+              "raw_mae": 10.796131134033203,
+              "rgb_mae": 9.633179437369108,
+              "temporal": 5.675860404968262,
+              "gradient_mae": 9.13998794555664
+            },
+            "root-and-hole": {
+              "raw_mae": 11.68427562713623,
+              "rgb_mae": 10.411633215844631,
+              "temporal": 3.5329012870788574,
+              "gradient_mae": 10.479238510131836
+            },
+            "root-strip-boundary": {
+              "raw_mae": 14.502120018005371,
+              "rgb_mae": 13.268002644181252,
+              "temporal": 4.519322395324707,
+              "gradient_mae": 12.740589141845703
+            },
+            "canopy": {
+              "raw_mae": 10.631542205810547,
+              "rgb_mae": 9.46087958291173,
+              "temporal": 3.6098310947418213,
+              "gradient_mae": 9.69296646118164
+            },
+            "title-when-visible": {
+              "raw_mae": 13.882458686828613,
+              "rgb_mae": 12.596042901277542,
+              "temporal": 4.683892250061035,
+              "gradient_mae": 11.440649032592773
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.5656261891126633
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.572462022304535
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.6878893785178661
+            },
+            {
+              "frame": 744,
+              "block": 18,
+              "delta_mae_8bit": -1.6991215758025646
+            },
+            {
+              "frame": 743,
+              "block": 18,
+              "delta_mae_8bit": -1.7064437828958035
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.728905327618122
+            },
+            {
+              "frame": 764,
+              "block": 16,
+              "delta_mae_8bit": -1.8446281179785728
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.845898199826479
+            }
+          ],
+          "temporal_pairs_better_than_v12": 37,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.5299315452575684
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.20581698417663574
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.17443037033081055
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": 0.1447916030883789
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 0.09183263778686523
+            }
+          ]
+        },
+        "trend-low-spatial-high": {
+          "low_model": {
+            "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+            "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+            "epoch": 16,
+            "variant": "R2-frames-trend"
+          },
+          "high_model": {
+            "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\final-refinement-weights\\best-mae.pt",
+            "sha256": "4e5c2f95358aedb9e2662a18a05e72746210fe26fb5b949e4e40f86c5b0bb725",
+            "epoch": 14,
+            "variant": "R2-frames-clean"
+          },
+          "clipped": 0.0015336470678448677,
+          "raw": {
+            "mae_8bit": 10.575697677785701,
+            "psnr": 24.754985852146127
+          },
+          "rgb": {
+            "mae_8bit": 9.194331856929894,
+            "psnr": 26.06327284626233
+          },
+          "exact_raw_fraction": 0.03490286320447922,
+          "pairs": 43,
+          "temporal": 3.3778462409973145,
+          "gradient_x_mae": 10.561487197875977,
+          "gradient_y_mae": 9.762348175048828,
+          "low_frequency_mae": 6.1679626094933715,
+          "high_frequency_mae": 8.014016631155304,
+          "boundary_mae": 12.28624153137207,
+          "inside_mae": 9.413810729980469,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 9.79455280303955,
+              "rgb_mae": 8.601974621415138,
+              "temporal": 4.587965965270996,
+              "gradient_mae": 9.233692169189453
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.3383207321167,
+              "rgb_mae": 10.106521937996149,
+              "temporal": 5.555291175842285,
+              "gradient_mae": 9.223251342773438
+            },
+            "root-and-hole": {
+              "raw_mae": 11.403179168701172,
+              "rgb_mae": 10.157891381531954,
+              "temporal": 3.2742018699645996,
+              "gradient_mae": 10.448324203491211
+            },
+            "root-strip-boundary": {
+              "raw_mae": 14.051183700561523,
+              "rgb_mae": 12.802376579493284,
+              "temporal": 4.23448371887207,
+              "gradient_mae": 12.74704360961914
+            },
+            "canopy": {
+              "raw_mae": 10.392030715942383,
+              "rgb_mae": 9.131422061473131,
+              "temporal": 3.403247356414795,
+              "gradient_mae": 9.670503616333008
+            },
+            "title-when-visible": {
+              "raw_mae": 13.142051696777344,
+              "rgb_mae": 11.777673214673996,
+              "temporal": 4.1400861740112305,
+              "gradient_mae": 11.370689392089844
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.6077165305614471
+            },
+            {
+              "frame": 758,
+              "block": 17,
+              "delta_mae_8bit": -1.6736334934830666
+            },
+            {
+              "frame": 743,
+              "block": 17,
+              "delta_mae_8bit": -1.751756351441145
+            },
+            {
+              "frame": 755,
+              "block": 17,
+              "delta_mae_8bit": -1.7523443698883057
+            },
+            {
+              "frame": 759,
+              "block": 17,
+              "delta_mae_8bit": -1.773243248462677
+            },
+            {
+              "frame": 754,
+              "block": 17,
+              "delta_mae_8bit": -1.7780262418091297
+            },
+            {
+              "frame": 739,
+              "block": 17,
+              "delta_mae_8bit": -1.7913074791431427
+            },
+            {
+              "frame": 744,
+              "block": 18,
+              "delta_mae_8bit": -1.7973634041845798
+            }
+          ],
+          "temporal_pairs_better_than_v12": 41,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.22335600852966309
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.001474618911743164
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.0009961128234863281
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.028118371963500977
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.030498027801513672
+            }
+          ]
+        },
+        "spatial-low-trend-high": {
+          "low_model": {
+            "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\final-refinement-weights\\best-mae.pt",
+            "sha256": "4e5c2f95358aedb9e2662a18a05e72746210fe26fb5b949e4e40f86c5b0bb725",
+            "epoch": 14,
+            "variant": "R2-frames-clean"
+          },
+          "high_model": {
+            "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+            "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+            "epoch": 16,
+            "variant": "R2-frames-trend"
+          },
+          "clipped": 0.000977006391622126,
+          "raw": {
+            "mae_8bit": 10.883297113938765,
+            "psnr": 24.4805481442407
+          },
+          "rgb": {
+            "mae_8bit": 9.419769992250385,
+            "psnr": 25.788988697605674
+          },
+          "exact_raw_fraction": 0.03399081155657768,
+          "pairs": 43,
+          "temporal": 3.44185471534729,
+          "gradient_x_mae": 10.941911697387695,
+          "gradient_y_mae": 9.969576835632324,
+          "low_frequency_mae": 6.201105143229166,
+          "high_frequency_mae": 8.374126124526516,
+          "boundary_mae": 12.538850784301758,
+          "inside_mae": 9.61477279663086,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 9.772687911987305,
+              "rgb_mae": 8.463144320994616,
+              "temporal": 4.621315002441406,
+              "gradient_mae": 9.513792037963867
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.082100868225098,
+              "rgb_mae": 9.847914464771748,
+              "temporal": 5.670026779174805,
+              "gradient_mae": 9.529487609863281
+            },
+            "root-and-hole": {
+              "raw_mae": 12.161380767822266,
+              "rgb_mae": 10.739318132400513,
+              "temporal": 3.2359209060668945,
+              "gradient_mae": 10.99685287475586
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.349234580993652,
+              "rgb_mae": 13.906371239572763,
+              "temporal": 4.091628551483154,
+              "gradient_mae": 13.460840225219727
+            },
+            "canopy": {
+              "raw_mae": 11.128584861755371,
+              "rgb_mae": 9.812734052538872,
+              "temporal": 3.4191336631774902,
+              "gradient_mae": 10.162036895751953
+            },
+            "title-when-visible": {
+              "raw_mae": 14.468230247497559,
+              "rgb_mae": 13.009210880845785,
+              "temporal": 4.3301873207092285,
+              "gradient_mae": 11.950393676757812
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.0210945084691048
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.2114262953400612
+            },
+            {
+              "frame": 764,
+              "block": 16,
+              "delta_mae_8bit": -1.2843728810548782
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.4233418740332127
+            },
+            {
+              "frame": 763,
+              "block": 16,
+              "delta_mae_8bit": -1.4300760626792908
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -1.4555679447948933
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -1.4582999981939793
+            },
+            {
+              "frame": 747,
+              "block": 16,
+              "delta_mae_8bit": -1.4778319001197815
+            }
+          ],
+          "temporal_pairs_better_than_v12": 41,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.3193032741546631
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.05005216598510742
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.0010187625885009766
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.0019659996032714844
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.0888509750366211
+            }
+          ]
+        },
+        "equal-weight-model-average": {
+          "models": [
+            {
+              "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+              "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+              "epoch": 16,
+              "variant": "R2-frames-trend"
+            },
+            {
+              "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\final-refinement-weights\\best-mae.pt",
+              "sha256": "4e5c2f95358aedb9e2662a18a05e72746210fe26fb5b949e4e40f86c5b0bb725",
+              "epoch": 14,
+              "variant": "R2-frames-clean"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "clipped": 0.0010056374594569206,
+          "raw": {
+            "mae_8bit": 10.518164140527897,
+            "psnr": 24.780969283277447
+          },
+          "rgb": {
+            "mae_8bit": 9.107027152090362,
+            "psnr": 26.112282380316074
+          },
+          "exact_raw_fraction": 0.035207148641347885,
+          "pairs": 43,
+          "temporal": 3.3070168495178223,
+          "gradient_x_mae": 10.604281425476074,
+          "gradient_y_mae": 9.722603797912598,
+          "low_frequency_mae": 5.992175736860795,
+          "high_frequency_mae": 8.069134410511364,
+          "boundary_mae": 12.140568733215332,
+          "inside_mae": 9.388694763183594,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 9.654882431030273,
+              "rgb_mae": 8.405255377292633,
+              "temporal": 4.5581135749816895,
+              "gradient_mae": 9.286903381347656
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.022188186645508,
+              "rgb_mae": 9.785571210086346,
+              "temporal": 5.551804065704346,
+              "gradient_mae": 9.249637603759766
+            },
+            "root-and-hole": {
+              "raw_mae": 11.462530136108398,
+              "rgb_mae": 10.149237345904112,
+              "temporal": 3.093997001647949,
+              "gradient_mae": 10.47606086730957
+            },
+            "root-strip-boundary": {
+              "raw_mae": 14.246272087097168,
+              "rgb_mae": 12.923625223338604,
+              "temporal": 3.9650301933288574,
+              "gradient_mae": 12.763593673706055
+            },
+            "canopy": {
+              "raw_mae": 10.458334922790527,
+              "rgb_mae": 9.20469542965293,
+              "temporal": 3.284611225128174,
+              "gradient_mae": 9.716806411743164
+            },
+            "title-when-visible": {
+              "raw_mae": 13.345564842224121,
+              "rgb_mae": 11.972343418747187,
+              "temporal": 4.0436015129089355,
+              "gradient_mae": 11.374532699584961
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.8169941008090973
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.8188474513590336
+            },
+            {
+              "frame": 744,
+              "block": 18,
+              "delta_mae_8bit": -1.8544923886656761
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.8814443424344063
+            },
+            {
+              "frame": 743,
+              "block": 18,
+              "delta_mae_8bit": -1.8832017481327057
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.8886725045740604
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -1.9324214570224285
+            },
+            {
+              "frame": 748,
+              "block": 18,
+              "delta_mae_8bit": -1.9768543727695942
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.12295889854431152
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.09563159942626953
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.12678706645965576
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.13625335693359375
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.19437813758850098
+            }
+          ]
+        }
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--v13-S2-ensemble-final-dev-20261123-055346-029--run-9c4954f25fd5.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "1630fd274cc6ddb495ec9b836a30a6a35734f0c2f23e814aa0967bb377af3935"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/blocks.jsonl",
+        "bytes": 611672,
+        "sha256": "1630fd274cc6ddb495ec9b836a30a6a35734f0c2f23e814aa0967bb377af3935"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/equal-weight-model-average-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/equal-weight-model-average-frame-736.png",
+        "bytes": 399591,
+        "sha256": "8ea2fab4a27ca72283f66d600d6753c3f75c9f48f315b13d046a59237c4c5b20"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/equal-weight-model-average-frame-750.png",
+        "bytes": 399246,
+        "sha256": "b95f62c492b34565f329926f4f870bac2ab8354c5c83fb4609d8ffb2cab641f9"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/equal-weight-model-average-frame-779.png",
+        "bytes": 408927,
+        "sha256": "82434bd91d8342b7a3b38c8546177783a627a7f26f3a3cd79f2253281df3c09f"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/equal-weight-model-average-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/equal-weight-model-average-valid.mp4",
+        "bytes": 364057,
+        "sha256": "4925976dc0f785b1f02248d5380354f1790f50f11ed4422bf0f580299b10cc7b"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/equal-weight-model-average.mp4",
+        "bytes": 687070,
+        "sha256": "daeda24ad72ffd7ef4c965216d48b691b002e11cdffba688928465e24af245da"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/final-refinement-weights-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/final-refinement-weights-best-mae-alpha1-frame-736.png",
+        "bytes": 398981,
+        "sha256": "ba63547e3a597cde5cafb77451ced96e966bfa69c31e31efbc0adbdf96b7b311"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/final-refinement-weights-best-mae-alpha1-frame-750.png",
+        "bytes": 397534,
+        "sha256": "cf62e128410d39b21e2c15aa630a94ed1bea661f6cfe8ca8a2fdf786cee0d7db"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/final-refinement-weights-best-mae-alpha1-frame-779.png",
+        "bytes": 411000,
+        "sha256": "aa3aac201e5c15c4c79cd100a320f5fdd823ae6724cc4dcd7c03e59c215d4e43"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/final-refinement-weights-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/final-refinement-weights-best-mae-alpha1-valid.mp4",
+        "bytes": 395258,
+        "sha256": "3261789d79c62ebfc8628f1e119e0bfb8a9ef0ad0e3d7d4ec10a93ffaf10df26"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/final-refinement-weights-best-mae-alpha1.mp4",
+        "bytes": 720524,
+        "sha256": "e6ac5f84b23968c92daee04ca9588feb20d6c42cc2a7f0bb1e967dba1adfc968"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/report.json",
+        "bytes": 29993,
+        "sha256": "2ed1a3822ea7640e5bdac8f6a4c20fc1f765f35eb9139dbedb81d4b85409498b"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/spatial-low-trend-high-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/spatial-low-trend-high-frame-736.png",
+        "bytes": 409761,
+        "sha256": "6b7903be8cf40809b0bcb28cad0ae78440dae41d1d826536648bcb778fb58509"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/spatial-low-trend-high-frame-750.png",
+        "bytes": 409542,
+        "sha256": "f201fefaa674a600cbf23b6fa1c41c5bd08ebc756b29947dc3a19192ba7af69f"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/spatial-low-trend-high-frame-779.png",
+        "bytes": 417947,
+        "sha256": "8ea819797d0dd9abccf075fba4a5c0b816868fc3422f4f7e1b5ab34215caa5c1"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/spatial-low-trend-high-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/spatial-low-trend-high-valid.mp4",
+        "bytes": 371365,
+        "sha256": "b2befd2a66b2d17f983758bb5f3a6bbf384c86b1f1dc8f5067576ffd88d4a9b9"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/spatial-low-trend-high.mp4",
+        "bytes": 693211,
+        "sha256": "e66e88894eb14b69e478b45cb259436decfca739189df2406bb438c9e2c2d261"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/trend-low-spatial-high-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/trend-low-spatial-high-frame-736.png",
+        "bytes": 398957,
+        "sha256": "8f80819193b2357cb6a953b1a2ba188ebbf72f9b0962d777edd0c3789337a839"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/trend-low-spatial-high-frame-750.png",
+        "bytes": 397556,
+        "sha256": "42f2034ea52706413e11526fea291140532616e91e13eacbc215aed6f83d11f3"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/trend-low-spatial-high-frame-779.png",
+        "bytes": 410448,
+        "sha256": "204be98ab58091f290a991587db2f1f189b8d80baba7e2d69a08c05608d22819"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/trend-low-spatial-high-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/trend-low-spatial-high-valid.mp4",
+        "bytes": 380533,
+        "sha256": "88afa092e052b6d98ccc84b6ded68a869cc809f4ffc31b23118e67c1db25a29c"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/trend-low-spatial-high.mp4",
+        "bytes": 704793,
+        "sha256": "5eb7487eb8b2bd7ad231771cf15120e9630129162f226f8fde3d376e1c287255"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-736.png",
+        "bytes": 408957,
+        "sha256": "560f024e80f3be253c5d0a4bdb39f0d7d6f1d69edb81eb8326f4d1e1aa01c097"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-750.png",
+        "bytes": 408978,
+        "sha256": "6164424e430508ec23899b9d5799367de1ffbced9760ca1a51ef36334866339a"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-779.png",
+        "bytes": 416329,
+        "sha256": "0c092685c2e774a30b5e3e6f975c19737e70fd2479b42e54bbcbe8fbab03ef2e"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-valid.mp4",
+        "bytes": 387653,
+        "sha256": "20f4598c79e32142666a96d8f27d0bcd3489429cfa94ac238fa40de4d1db0f3b"
+      },
+      {
+        "path": "Model/runs/v13-S2-ensemble-final-dev-20261123-055346-029/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1.mp4",
+        "bytes": 711724,
+        "sha256": "60302d26769802e170874e8df2bd100b8793944d7bc9cd631a70c24ea86499f8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2461 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v13-S2-deage-review-20261123-040131-762--run-d8b621d5d2de",
+  "kind": "evaluation",
+  "name": "v13-S2-deage-review-20261123-040131-762",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v13-S2-deage-review-20261123-040131-762",
+  "started_at": "2026-11-23T04:01:36+08:00",
+  "finished_at": "2026-11-23T04:02:26+08:00",
+  "cwd": "Z:\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "evaluate_v13.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs/v11-q5-20261122-scene-plan.json",
+    "--cache",
+    "runs/v13-S2-cache-20261122-214759-647",
+    "--split",
+    "S2-dev",
+    "--checkpoint",
+    "runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+    "runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+    "runs/v13-S2-R2-frames-deage-20261123-032010-923/epoch-5.pt",
+    "runs/v13-S2-R2-frames-deage-20261123-032010-923/epoch-10.pt",
+    "runs/v13-S2-R2-frames-deage-20261123-032010-923/epoch-20.pt",
+    "--alpha",
+    "0.5",
+    "1",
+    "--out",
+    "runs/v13-S2-deage-review-20261123-040131-762"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "67d00acbc647adf7fd3506ed3040df00030898e750f72c9c73b0eac52ed6cdf5",
+    "directory": "Model/experiments/source_snapshots/67d00acbc647adf7fd3506ed3040df00030898e750f72c9c73b0eac52ed6cdf5",
+    "sha256": {
+      "AGENTS.md": "587c9c84434625f399fe8a8f079e4d1bd89bbaffd6e8cdb47ff29b77a8fbc4d9",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "build_v13_fades.py": "b89aa8dd577e1a27f162acb9e0448ca532469ace212962683d1bd9ab93ee964a",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "check_v13.py": "b6e8fb4ce6c07d6467eae39c14288b5793bc2854a898ddf5189e6d97c986b3e4",
+      "compare_v10_v12_existing.py": "59e285b0531a42369449c567e423647cda309aee6b8c105a0ceaaa0a223afe56",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "026ac00d93572ad8357898ec742ce0ebbe8c08b372d95e5f22cea2f562b422dc",
+      "diagnose_v13_correction.py": "b13c4c984b691864525889b76ac1e5a733a7ebf7418a0d8dc7c54c4f6922533f",
+      "diagnose_v13_history.py": "51a8d56f1b7c0230cf7ffb4822bf991c284281fc0bb3dfb0773b95a31e61a70b",
+      "diagnose_v13_weights.py": "82353004fae24b1e8751cc67cb898b6f6e498a4a03bd76700224bea27c511e74",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "da8316cac3c2cd6d1e31fcd87289ff0e30c07209a5d39b68b0a6b87042004892",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "evaluate_v13.py": "640b9e826e6c658cf6f42f91447ea5e18cc6ddd531b96ccb90b55ff2a17bb2fe",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "5496aaeddf4afb01fc8f2c5dccaa129b1e4d1b4b349de1a81bca01447e436dbb",
+      "predict_v13.py": "bfce98ea707ce23a72dc2ec738a1ae58c67622121baebe38ca7dcf22edb4df35",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "0583c182cb87a461ff3b69336a4e0550af1d54bd9142bf5fa114ae6d4ff6ba26",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "run_v13_search.py": "252a910c92dd044c21f66ab8becb031effe11b82d17593ce3130f2ba444b26d0",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "test_v13.py": "7a1b8d4df6f215fbcbef3608633b0d791070b4cc383f0518911179915b8a2007",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "ccd7ff38c910054d52cc9d1c76846443560c98459a135f169f6abe656e2d0f70",
+      "train_v13.py": "22fbfbcbb0960fdb78c0b246e7631acc574fa5eadd51636e319f64653e4b6894",
+      "train_v13_samples.py": "e296d1e8cc645a1dc48649197f393f7c33e7ab8e7ded63f7600773255018fa6b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "bf475e02c2d7f4de39c83ebe55a87ba30f9a5b91e21d6f02ccbe766b3f3949a0",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+      "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+      "v13/fusion.py": "e977b995782678cd5cb6e86fabcab5c1ba14fe1efd7507e084481d8190458f4f",
+      "v13/model.py": "0cfb7aaee54b753aeb7031ac844bcadd32b51fc722d99f9268bbb04263678f40",
+      "v13/native.py": "9b94a88c44eff3e2afeea2349269ffac88571a87b21553d1efe9e64b29e75f7c",
+      "v13/pairs.py": "20abeea0a22925ac483b1c4f179ce864060810f8c639cf95232e22a70f82486a",
+      "v13/README.md": "409362237a05f556c0703255f352a78fa7a2d8350b315e4a2baf6e2d35735bb4",
+      "v13/roi-bbb-q5.json": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "v13/s2-bbb-q5-audit-freeze.json": "4265a9f3e5a9bc2e02445f675ebd7f6daeebeab44c7b56598d5c2f0b2f3ba3da",
+      "v13/執行前檢查.md": "1670dc9ce111c5d0b6a2fb0df506a94b18f16497bc8a01c4df459f91fd82bb75",
+      "v13/實作清單.md": "b90f07ce145b19a81803733eff76c0bb75855e0d67717e44a268d150e6f4c888",
+      "v13/實驗與驗收計畫.md": "a64d1dd6ae3e6147ed27fbd622831d06dc49de9d4297abc5e134047181c5136d",
+      "v13/文獻對照.md": "864c005922841e0d430d16c391c81fd1d856dd70dc9e7298b80248fbf9763f1c",
+      "v13/設計決策.md": "f82174edda7bcf76377993997bff0e2881ae5424da188e9c0f43ef94d2d19d17",
+      "v13/設計規格.md": "f9f0dd8860436074e9a2e013c8e5c1774aad2d7f1f5566795e2383584746170e",
+      "v13/逐幀融合試驗.md": "77c4b5c14ebc39cae43ca9deddaa8b3ddaa94395f44abeddd6cf2731be988134",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-23T04:02:28+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+        "bytes": 322217,
+        "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03"
+      },
+      {
+        "path": "Model/runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+        "bytes": 480089,
+        "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f"
+      },
+      {
+        "path": "Model/runs/v13-S2-R2-frames-deage-20261123-032010-923/epoch-5.pt",
+        "bytes": 480103,
+        "sha256": "ed6a0526933a753aa1da3b451240db1d88c7900e1c651594b9964d25e28cbcbb"
+      },
+      {
+        "path": "Model/runs/v13-S2-R2-frames-deage-20261123-032010-923/epoch-10.pt",
+        "bytes": 480153,
+        "sha256": "72dac6a75a6ac77e7cf895c14003b617c7fe22c79bc7a93704ead0377f466d62"
+      },
+      {
+        "path": "Model/runs/v13-S2-R2-frames-deage-20261123-032010-923/epoch-20.pt",
+        "bytes": 480153,
+        "sha256": "1cf4fd69e0e41a7152f1514a49b2c2c1570ae17f6233d644b9eab298c861c0a8"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/v11-q5-20261122-scene-plan.json",
+        "bytes": 14443,
+        "sha256": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "split": "S2-dev",
+      "source_range": [
+        721,
+        779
+      ],
+      "scored_range": [
+        736,
+        779
+      ],
+      "samples": 1320,
+      "start_frame": 736,
+      "scored_strips": 1320,
+      "warmup_strips": 450,
+      "provenance": {
+        "db": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "scene": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7",
+        "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+        "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+        "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+        "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d"
+      },
+      "roi_sha256": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "audit_freeze_sha256": null,
+      "seam_cfa_rows": [
+        7,
+        15,
+        23,
+        31,
+        39,
+        47,
+        55,
+        63,
+        71,
+        79,
+        87,
+        95,
+        103,
+        111,
+        119,
+        127,
+        135,
+        143,
+        151,
+        159,
+        167,
+        175,
+        183,
+        191,
+        199,
+        207,
+        215,
+        223,
+        231
+      ],
+      "methods": {
+        "v12": {
+          "raw": {
+            "mae_8bit": 15.197977694598112,
+            "psnr": 21.65039812130614
+          },
+          "rgb": {
+            "mae_8bit": 12.843082630273067,
+            "psnr": 23.067337452936414
+          },
+          "exact_raw_fraction": 0.02415919490158558,
+          "pairs": 43,
+          "temporal": 3.90689754486084,
+          "gradient_x_mae": 15.471430778503418,
+          "gradient_y_mae": 15.929133415222168,
+          "low_frequency_mae": 9.116943729285039,
+          "high_frequency_mae": 11.70705196496212,
+          "boundary_mae": 16.31626319885254,
+          "inside_mae": 15.875672340393066,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 15.825976371765137,
+              "rgb_mae": 13.301733434200287,
+              "temporal": 5.219916343688965,
+              "gradient_mae": 17.04049301147461
+            },
+            "grass-sunlight": {
+              "raw_mae": 15.73558235168457,
+              "rgb_mae": 13.308794405311346,
+              "temporal": 6.169086933135986,
+              "gradient_mae": 15.185301780700684
+            },
+            "root-and-hole": {
+              "raw_mae": 16.906497955322266,
+              "rgb_mae": 14.531309455633163,
+              "temporal": 4.02274227142334,
+              "gradient_mae": 16.528024673461914
+            },
+            "root-strip-boundary": {
+              "raw_mae": 21.136024475097656,
+              "rgb_mae": 18.736969381570816,
+              "temporal": 5.339873313903809,
+              "gradient_mae": 20.060028076171875
+            },
+            "canopy": {
+              "raw_mae": 17.382762908935547,
+              "rgb_mae": 15.055174995213747,
+              "temporal": 4.250828266143799,
+              "gradient_mae": 16.700153350830078
+            },
+            "title-when-visible": {
+              "raw_mae": 23.158384323120117,
+              "rgb_mae": 20.761502645909786,
+              "temporal": 5.570156574249268,
+              "gradient_mae": 19.58187484741211
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 1,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 2,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 3,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 4,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 5,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 6,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 7,
+              "delta_mae_8bit": 0.0
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                736,
+                737
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                738,
+                739
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                739,
+                740
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                740,
+                741
+              ],
+              "delta": 0.0
+            }
+          ]
+        },
+        "unsharp": {
+          "raw": {
+            "mae_8bit": 17.918686311895197,
+            "psnr": 20.31299922576602
+          },
+          "rgb": {
+            "mae_8bit": 14.284823787573611,
+            "psnr": 22.16429712363506
+          },
+          "exact_raw_fraction": 0.02038862742483616,
+          "pairs": 43,
+          "temporal": 4.692089080810547,
+          "gradient_x_mae": 20.17768096923828,
+          "gradient_y_mae": 21.078601837158203,
+          "low_frequency_mae": 9.219909150094697,
+          "high_frequency_mae": 15.033787582859848,
+          "boundary_mae": 20.1198673248291,
+          "inside_mae": 21.210996627807617,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 19.259689331054688,
+              "rgb_mae": 15.272492934018373,
+              "temporal": 5.855269432067871,
+              "gradient_mae": 22.926246643066406
+            },
+            "grass-sunlight": {
+              "raw_mae": 18.229705810546875,
+              "rgb_mae": 14.671931359916925,
+              "temporal": 6.81959342956543,
+              "gradient_mae": 19.60755157470703
+            },
+            "root-and-hole": {
+              "raw_mae": 19.715835571289062,
+              "rgb_mae": 15.87883684784174,
+              "temporal": 5.18060827255249,
+              "gradient_mae": 22.039875030517578
+            },
+            "root-strip-boundary": {
+              "raw_mae": 24.229101181030273,
+              "rgb_mae": 20.11049497872591,
+              "temporal": 6.9131293296813965,
+              "gradient_mae": 26.600757598876953
+            },
+            "canopy": {
+              "raw_mae": 20.241064071655273,
+              "rgb_mae": 16.546301431953907,
+              "temporal": 5.320375442504883,
+              "gradient_mae": 22.135929107666016
+            },
+            "title-when-visible": {
+              "raw_mae": 26.057836532592773,
+              "rgb_mae": 22.04549554735422,
+              "temporal": 7.287142753601074,
+              "gradient_mae": 25.966541290283203
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 737,
+              "block": 16,
+              "delta_mae_8bit": 3.714649323374033
+            },
+            {
+              "frame": 737,
+              "block": 0,
+              "delta_mae_8bit": 3.709571845829487
+            },
+            {
+              "frame": 736,
+              "block": 16,
+              "delta_mae_8bit": 3.6693358048796654
+            },
+            {
+              "frame": 753,
+              "block": 16,
+              "delta_mae_8bit": 3.6596672236919403
+            },
+            {
+              "frame": 754,
+              "block": 16,
+              "delta_mae_8bit": 3.652341216802597
+            },
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 3.64550918340683
+            },
+            {
+              "frame": 738,
+              "block": 16,
+              "delta_mae_8bit": 3.6405276507139206
+            },
+            {
+              "frame": 738,
+              "block": 0,
+              "delta_mae_8bit": 3.64033006131649
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 1.0123047828674316
+            },
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 0.9788153171539307
+            },
+            {
+              "frames": [
+                777,
+                778
+              ],
+              "delta": 0.9769270420074463
+            },
+            {
+              "frames": [
+                774,
+                775
+              ],
+              "delta": 0.9764776229858398
+            },
+            {
+              "frames": [
+                773,
+                774
+              ],
+              "delta": 0.9499316215515137
+            }
+          ]
+        },
+        "v13-S2-R2-20261122-215155-129-best-mae-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-20261122-215155-129\\best-mae.pt",
+          "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03",
+          "epoch": 17,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2",
+          "clipped": 8.766867897727272e-05,
+          "delta_rms": 7.055612311808877,
+          "delta_max": 72.1871337890625,
+          "raw": {
+            "mae_8bit": 12.606480715491553,
+            "psnr": 23.369401184427137
+          },
+          "rgb": {
+            "mae_8bit": 10.937549862717137,
+            "psnr": 24.654527406097067
+          },
+          "exact_raw_fraction": 0.028526796028017998,
+          "pairs": 43,
+          "temporal": 3.5485641956329346,
+          "gradient_x_mae": 12.337528228759766,
+          "gradient_y_mae": 12.039663314819336,
+          "low_frequency_mae": 7.722907492897727,
+          "high_frequency_mae": 9.352623401988636,
+          "boundary_mae": 13.795369148254395,
+          "inside_mae": 11.797208786010742,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.628332138061523,
+              "rgb_mae": 10.989533755928278,
+              "temporal": 4.882623672485352,
+              "gradient_mae": 12.588508605957031
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.480131149291992,
+              "rgb_mae": 11.79841535165906,
+              "temporal": 5.823015213012695,
+              "gradient_mae": 11.828113555908203
+            },
+            "root-and-hole": {
+              "raw_mae": 13.858467102050781,
+              "rgb_mae": 12.211183402687311,
+              "temporal": 3.3632547855377197,
+              "gradient_mae": 12.563054084777832
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.64837646484375,
+              "rgb_mae": 15.97921036183834,
+              "temporal": 4.33995246887207,
+              "gradient_mae": 15.307003021240234
+            },
+            "canopy": {
+              "raw_mae": 13.921438217163086,
+              "rgb_mae": 12.21103236079216,
+              "temporal": 3.689504623413086,
+              "gradient_mae": 12.554203033447266
+            },
+            "title-when-visible": {
+              "raw_mae": 18.3331356048584,
+              "rgb_mae": 16.45404428243637,
+              "temporal": 4.5655035972595215,
+              "gradient_mae": 14.50545883178711
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.3068372756242752
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.4886746183037758
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.5406244806945324
+            },
+            {
+              "frame": 777,
+              "block": 11,
+              "delta_mae_8bit": -1.5532255545258522
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.562989130616188
+            },
+            {
+              "frame": 745,
+              "block": 11,
+              "delta_mae_8bit": -1.5660156682133675
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.569237895309925
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.5696283243596554
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 0.2475261688232422
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.005618572235107422
+            },
+            {
+              "frames": [
+                759,
+                760
+              ],
+              "delta": -0.020104408264160156
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.03758120536804199
+            },
+            {
+              "frames": [
+                742,
+                743
+              ],
+              "delta": -0.04193687438964844
+            }
+          ]
+        },
+        "v13-S2-R2-20261122-215155-129-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-20261122-215155-129\\best-mae.pt",
+          "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03",
+          "epoch": 17,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2",
+          "clipped": 0.0004639411695075758,
+          "delta_rms": 14.111224634103309,
+          "delta_max": 144.37425231933594,
+          "raw": {
+            "mae_8bit": 11.626037740707398,
+            "psnr": 24.092244443723896
+          },
+          "rgb": {
+            "mae_8bit": 10.253519306760847,
+            "psnr": 25.293089625655792
+          },
+          "exact_raw_fraction": 0.030652521178126335,
+          "pairs": 43,
+          "temporal": 3.6659536361694336,
+          "gradient_x_mae": 10.975489616394043,
+          "gradient_y_mae": 10.176642417907715,
+          "low_frequency_mae": 7.201336447975852,
+          "high_frequency_mae": 8.408583762428977,
+          "boundary_mae": 13.049668312072754,
+          "inside_mae": 9.779890060424805,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 11.1231107711792,
+              "rgb_mae": 10.043131839483976,
+              "temporal": 4.807122230529785,
+              "gradient_mae": 9.866353988647461
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.281593322753906,
+              "rgb_mae": 10.97615847364068,
+              "temporal": 5.689014434814453,
+              "gradient_mae": 9.777751922607422
+            },
+            "root-and-hole": {
+              "raw_mae": 12.718964576721191,
+              "rgb_mae": 11.271374132484198,
+              "temporal": 3.4331247806549072,
+              "gradient_mae": 11.055267333984375
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.11907196044922,
+              "rgb_mae": 14.586350452154875,
+              "temporal": 4.289073467254639,
+              "gradient_mae": 13.462841033935547
+            },
+            "canopy": {
+              "raw_mae": 12.095107078552246,
+              "rgb_mae": 10.728708151727915,
+              "temporal": 3.830192804336548,
+              "gradient_mae": 10.256204605102539
+            },
+            "title-when-visible": {
+              "raw_mae": 15.447449684143066,
+              "rgb_mae": 13.71602425351739,
+              "temporal": 4.926239967346191,
+              "gradient_mae": 11.997476577758789
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.04365205764770508
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.4687485471367836
+            },
+            {
+              "frame": 777,
+              "block": 16,
+              "delta_mae_8bit": -0.896972268819809
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.046874225139618
+            },
+            {
+              "frame": 747,
+              "block": 16,
+              "delta_mae_8bit": -1.1283200047910213
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -1.1602525413036346
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -1.1778322979807854
+            },
+            {
+              "frame": 765,
+              "block": 16,
+              "delta_mae_8bit": -1.2094732001423836
+            }
+          ],
+          "temporal_pairs_better_than_v12": 36,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 1.0509116649627686
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": 0.43346357345581055
+            },
+            {
+              "frames": [
+                742,
+                743
+              ],
+              "delta": 0.38666653633117676
+            },
+            {
+              "frames": [
+                759,
+                760
+              ],
+              "delta": 0.3826007843017578
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.32245445251464844
+            }
+          ]
+        },
+        "v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+          "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+          "epoch": 16,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.0003306255918560606,
+          "delta_rms": 7.770349315668623,
+          "delta_max": 77.5225830078125,
+          "raw": {
+            "mae_8bit": 12.147230633822355,
+            "psnr": 23.69624941102366
+          },
+          "rgb": {
+            "mae_8bit": 10.434705179387873,
+            "psnr": 25.07084586347532
+          },
+          "exact_raw_fraction": 0.029777536168694496,
+          "pairs": 43,
+          "temporal": 3.3424110412597656,
+          "gradient_x_mae": 12.265519142150879,
+          "gradient_y_mae": 11.903535842895508,
+          "low_frequency_mae": 7.101502426609849,
+          "high_frequency_mae": 9.277038056344697,
+          "boundary_mae": 13.439371109008789,
+          "inside_mae": 11.691444396972656,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.165223121643066,
+              "rgb_mae": 10.496768597513437,
+              "temporal": 4.741049766540527,
+              "gradient_mae": 12.36778450012207
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.898690223693848,
+              "rgb_mae": 11.241850666701794,
+              "temporal": 5.71245813369751,
+              "gradient_mae": 11.699838638305664
+            },
+            "root-and-hole": {
+              "raw_mae": 13.283007621765137,
+              "rgb_mae": 11.643095836043358,
+              "temporal": 3.104597806930542,
+              "gradient_mae": 12.430184364318848
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.776952743530273,
+              "rgb_mae": 15.116585399955511,
+              "temporal": 4.060154438018799,
+              "gradient_mae": 15.15772819519043
+            },
+            "canopy": {
+              "raw_mae": 13.142477035522461,
+              "rgb_mae": 11.38119013980031,
+              "temporal": 3.4223313331604004,
+              "gradient_mae": 12.438858032226562
+            },
+            "title-when-visible": {
+              "raw_mae": 17.123510360717773,
+              "rgb_mae": 15.276287030428648,
+              "temporal": 4.131453990936279,
+              "gradient_mae": 14.324447631835938
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.6109368577599525
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.6626976802945137
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.6777344234287739
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.6830085404217243
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.686230767518282
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.6889647208154202
+            },
+            {
+              "frame": 746,
+              "block": 13,
+              "delta_mae_8bit": -1.7049789614975452
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.7155271954834461
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.2571256160736084
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.3026660680770874
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.30410802364349365
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.3471028804779053
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.37993478775024414
+            }
+          ]
+        },
+        "v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+          "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+          "epoch": 16,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.0015742631392045455,
+          "delta_rms": 15.54069868846364,
+          "delta_max": 155.04518127441406,
+          "raw": {
+            "mae_8bit": 10.894310387698086,
+            "psnr": 24.492082363655804
+          },
+          "rgb": {
+            "mae_8bit": 9.451607094389018,
+            "psnr": 25.803662259607293
+          },
+          "exact_raw_fraction": 0.033907804638147354,
+          "pairs": 43,
+          "temporal": 3.286867618560791,
+          "gradient_x_mae": 10.907569885253906,
+          "gradient_y_mae": 9.993494033813477,
+          "low_frequency_mae": 6.23303603663589,
+          "high_frequency_mae": 8.343322310014205,
+          "boundary_mae": 12.715211868286133,
+          "inside_mae": 9.617637634277344,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.099658012390137,
+              "rgb_mae": 8.865134250372648,
+              "temporal": 4.592904567718506,
+              "gradient_mae": 9.562328338623047
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.691000938415527,
+              "rgb_mae": 10.406244155019522,
+              "temporal": 5.577648639678955,
+              "gradient_mae": 9.619121551513672
+            },
+            "root-and-hole": {
+              "raw_mae": 11.99382495880127,
+              "rgb_mae": 10.610474646091461,
+              "temporal": 3.0560314655303955,
+              "gradient_mae": 10.955013275146484
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.012642860412598,
+              "rgb_mae": 13.567685913294554,
+              "temporal": 3.898765802383423,
+              "gradient_mae": 13.439213752746582
+            },
+            "canopy": {
+              "raw_mae": 10.943778038024902,
+              "rgb_mae": 9.555124025791883,
+              "temporal": 3.264732837677002,
+              "gradient_mae": 10.127103805541992
+            },
+            "title-when-visible": {
+              "raw_mae": 13.855350494384766,
+              "rgb_mae": 12.332574538886547,
+              "temporal": 3.867436647415161,
+              "gradient_mae": 11.87191390991211
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.7605443894863129
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.8838838711380959
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.9809572622179985
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.9884770587086678
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.99101722240448
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -1.2581058405339718
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.2809568643569946
+            },
+            {
+              "frame": 759,
+              "block": 16,
+              "delta_mae_8bit": -1.3669918477535248
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.07654619216918945
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.08873367309570312
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.11213207244873047
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.12334954738616943
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.15369462966918945
+            }
+          ]
+        },
+        "v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-deage-20261123-032010-923\\epoch-5.pt",
+          "sha256": "ed6a0526933a753aa1da3b451240db1d88c7900e1c651594b9964d25e28cbcbb",
+          "epoch": 5,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-deage",
+          "clipped": 0.00024732185132575756,
+          "delta_rms": 7.052423860904935,
+          "delta_max": 65.81224822998047,
+          "raw": {
+            "mae_8bit": 12.636583943800494,
+            "psnr": 23.399270233831796
+          },
+          "rgb": {
+            "mae_8bit": 10.812910212892476,
+            "psnr": 24.80895449444196
+          },
+          "exact_raw_fraction": 0.028314320370554924,
+          "pairs": 43,
+          "temporal": 3.401477575302124,
+          "gradient_x_mae": 12.861059188842773,
+          "gradient_y_mae": 12.522637367248535,
+          "low_frequency_mae": 7.362542243726326,
+          "high_frequency_mae": 9.632137932054924,
+          "boundary_mae": 14.065164566040039,
+          "inside_mae": 12.30962085723877,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.725987434387207,
+              "rgb_mae": 10.934681799262762,
+              "temporal": 4.808964729309082,
+              "gradient_mae": 13.212015151977539
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.894716262817383,
+              "rgb_mae": 11.147484630346298,
+              "temporal": 5.72831916809082,
+              "gradient_mae": 11.91787338256836
+            },
+            "root-and-hole": {
+              "raw_mae": 13.660872459411621,
+              "rgb_mae": 11.818784158676863,
+              "temporal": 3.163018226623535,
+              "gradient_mae": 13.038653373718262
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.013883590698242,
+              "rgb_mae": 15.067878663539886,
+              "temporal": 4.086960315704346,
+              "gradient_mae": 15.784893035888672
+            },
+            "canopy": {
+              "raw_mae": 13.796716690063477,
+              "rgb_mae": 11.868507340550423,
+              "temporal": 3.4616358280181885,
+              "gradient_mae": 13.1700439453125
+            },
+            "title-when-visible": {
+              "raw_mae": 17.971864700317383,
+              "rgb_mae": 15.940435342490673,
+              "temporal": 4.127297401428223,
+              "gradient_mae": 14.957710266113281
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.2618163414299488
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.2747080996632576
+            },
+            {
+              "frame": 741,
+              "block": 13,
+              "delta_mae_8bit": -1.3206058368086815
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.3227546215057373
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.3268555514514446
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.3291021808981895
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.3341796584427357
+            },
+            {
+              "frame": 740,
+              "block": 13,
+              "delta_mae_8bit": -1.344432458281517
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.17802727222442627
+            },
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.21446609497070312
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.2564811706542969
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.27283191680908203
+            },
+            {
+              "frames": [
+                736,
+                737
+              ],
+              "delta": -0.3260676860809326
+            }
+          ]
+        },
+        "v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-deage-20261123-032010-923\\epoch-5.pt",
+          "sha256": "ed6a0526933a753aa1da3b451240db1d88c7900e1c651594b9964d25e28cbcbb",
+          "epoch": 5,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-deage",
+          "clipped": 0.0015703420928030302,
+          "delta_rms": 14.104847643132656,
+          "delta_max": 131.62448120117188,
+          "raw": {
+            "mae_8bit": 11.49735064940019,
+            "psnr": 24.165831128790902
+          },
+          "rgb": {
+            "mae_8bit": 9.95826833898371,
+            "psnr": 25.494909751471116
+          },
+          "exact_raw_fraction": 0.03123372420668602,
+          "pairs": 43,
+          "temporal": 3.484285831451416,
+          "gradient_x_mae": 11.571742057800293,
+          "gradient_y_mae": 10.756105422973633,
+          "low_frequency_mae": 6.623571962298769,
+          "high_frequency_mae": 8.719166074810605,
+          "boundary_mae": 13.47948932647705,
+          "inside_mae": 10.380017280578613,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.915042877197266,
+              "rgb_mae": 9.571237061172724,
+              "temporal": 4.800826549530029,
+              "gradient_mae": 10.722223281860352
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.71993637084961,
+              "rgb_mae": 10.476650577038527,
+              "temporal": 5.684968948364258,
+              "gradient_mae": 10.045894622802734
+            },
+            "root-and-hole": {
+              "raw_mae": 12.297676086425781,
+              "rgb_mae": 10.673785898834467,
+              "temporal": 3.284954786300659,
+              "gradient_mae": 11.574348449707031
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.08889389038086,
+              "rgb_mae": 13.254991192370653,
+              "temporal": 4.070237159729004,
+              "gradient_mae": 14.10255241394043
+            },
+            "canopy": {
+              "raw_mae": 11.69780445098877,
+              "rgb_mae": 10.050755180418491,
+              "temporal": 3.3932979106903076,
+              "gradient_mae": 11.131501197814941
+            },
+            "title-when-visible": {
+              "raw_mae": 14.796229362487793,
+              "rgb_mae": 12.99132714048028,
+              "temporal": 3.8344759941101074,
+              "gradient_mae": 12.558255195617676
+            }
+          },
+          "wins_vs_v12": 1319,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": 0.14804765582084656
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.22812455892562866
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.39296921342611313
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -0.4532244801521301
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.5525397509336472
+            },
+            {
+              "frame": 739,
+              "block": 17,
+              "delta_mae_8bit": -0.5728515610098839
+            },
+            {
+              "frame": 751,
+              "block": 17,
+              "delta_mae_8bit": -0.5832991003990173
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.6353525072336197
+            }
+          ],
+          "temporal_pairs_better_than_v12": 37,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.2901334762573242
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.26015305519104004
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.12177729606628418
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.09721684455871582
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 0.0949869155883789
+            }
+          ]
+        },
+        "v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-deage-20261123-032010-923\\epoch-10.pt",
+          "sha256": "72dac6a75a6ac77e7cf895c14003b617c7fe22c79bc7a93704ead0377f466d62",
+          "epoch": 10,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-deage",
+          "clipped": 0.0006098336884469697,
+          "delta_rms": 7.488325205912232,
+          "delta_max": 71.90876007080078,
+          "raw": {
+            "mae_8bit": 12.372500822760841,
+            "psnr": 23.55361096971391
+          },
+          "rgb": {
+            "mae_8bit": 10.67040265979189,
+            "psnr": 24.896496578837844
+          },
+          "exact_raw_fraction": 0.02907433733344078,
+          "pairs": 43,
+          "temporal": 3.3555943965911865,
+          "gradient_x_mae": 12.376432418823242,
+          "gradient_y_mae": 12.019740104675293,
+          "low_frequency_mae": 7.3171239864464965,
+          "high_frequency_mae": 9.343594341856061,
+          "boundary_mae": 13.649161338806152,
+          "inside_mae": 11.79472541809082,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.380436897277832,
+              "rgb_mae": 10.743652749806643,
+              "temporal": 4.7605977058410645,
+              "gradient_mae": 12.546831130981445
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.876805305480957,
+              "rgb_mae": 11.232850849628448,
+              "temporal": 5.694064140319824,
+              "gradient_mae": 11.651226997375488
+            },
+            "root-and-hole": {
+              "raw_mae": 13.442261695861816,
+              "rgb_mae": 11.740639451891184,
+              "temporal": 3.1050474643707275,
+              "gradient_mae": 12.547318458557129
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.928752899169922,
+              "rgb_mae": 15.17158079892397,
+              "temporal": 4.013675212860107,
+              "gradient_mae": 15.258272171020508
+            },
+            "canopy": {
+              "raw_mae": 13.54654312133789,
+              "rgb_mae": 11.764965746551752,
+              "temporal": 3.408912181854248,
+              "gradient_mae": 12.569549560546875
+            },
+            "title-when-visible": {
+              "raw_mae": 17.714725494384766,
+              "rgb_mae": 15.8478675596416,
+              "temporal": 4.084756374359131,
+              "gradient_mae": 14.44145393371582
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.5410149097442627
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.5589850954711437
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.593164261430502
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.5942386537790298
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.5971673466265202
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.6019531898200512
+            },
+            {
+              "frame": 741,
+              "block": 13,
+              "delta_mae_8bit": -1.6081060096621513
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.6166004538536072
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.21852529048919678
+            },
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.2519497871398926
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.3059505224227905
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.3412889242172241
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.35894203186035156
+            }
+          ]
+        },
+        "v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-deage-20261123-032010-923\\epoch-10.pt",
+          "sha256": "72dac6a75a6ac77e7cf895c14003b617c7fe22c79bc7a93704ead0377f466d62",
+          "epoch": 10,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-deage",
+          "clipped": 0.0024314926609848484,
+          "delta_rms": 14.976650327847468,
+          "delta_max": 143.81753540039062,
+          "raw": {
+            "mae_8bit": 11.230339778553356,
+            "psnr": 24.310463755835066
+          },
+          "rgb": {
+            "mae_8bit": 9.811843412572687,
+            "psnr": 25.57853190344392
+          },
+          "exact_raw_fraction": 0.03242624178528786,
+          "pairs": 43,
+          "temporal": 3.380510091781616,
+          "gradient_x_mae": 11.009587287902832,
+          "gradient_y_mae": 10.118457794189453,
+          "low_frequency_mae": 6.593461544152462,
+          "high_frequency_mae": 8.415660067471592,
+          "boundary_mae": 12.986366271972656,
+          "inside_mae": 9.722413063049316,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.535855293273926,
+              "rgb_mae": 9.379443302750587,
+              "temporal": 4.6996636390686035,
+              "gradient_mae": 9.78961181640625
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.859284400939941,
+              "rgb_mae": 10.707325749099255,
+              "temporal": 5.571887493133545,
+              "gradient_mae": 9.603516578674316
+            },
+            "root-and-hole": {
+              "raw_mae": 12.10279655456543,
+              "rgb_mae": 10.60344122350216,
+              "temporal": 3.1240885257720947,
+              "gradient_mae": 11.058670043945312
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.08249282836914,
+              "rgb_mae": 13.452526442706585,
+              "temporal": 3.8425912857055664,
+              "gradient_mae": 13.5496244430542
+            },
+            "canopy": {
+              "raw_mae": 11.447223663330078,
+              "rgb_mae": 9.986094050109386,
+              "temporal": 3.2707159519195557,
+              "gradient_mae": 10.273780822753906
+            },
+            "title-when-visible": {
+              "raw_mae": 14.547663688659668,
+              "rgb_mae": 12.926332578063011,
+              "temporal": 3.735543966293335,
+              "gradient_mae": 11.908464431762695
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.3914055973291397
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.6658173725008965
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.7674809172749519
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.7942371815443039
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -0.8415047451853752
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.9299810975790024
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.0110345482826233
+            },
+            {
+              "frame": 739,
+              "block": 17,
+              "delta_mae_8bit": -1.074608936905861
+            }
+          ],
+          "temporal_pairs_better_than_v12": 39,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.19333648681640625
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.16411471366882324
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.0025975704193115234
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 0.0017774105072021484
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.04266929626464844
+            }
+          ]
+        },
+        "v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-deage-20261123-032010-923\\epoch-20.pt",
+          "sha256": "1cf4fd69e0e41a7152f1514a49b2c2c1570ae17f6233d644b9eab298c861c0a8",
+          "epoch": 20,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-deage",
+          "clipped": 7.020892518939394e-05,
+          "delta_rms": 7.554640812389032,
+          "delta_max": 72.4919204711914,
+          "raw": {
+            "mae_8bit": 12.26288717876781,
+            "psnr": 23.61279592075443
+          },
+          "rgb": {
+            "mae_8bit": 10.550775510614569,
+            "psnr": 24.97207928032295
+          },
+          "exact_raw_fraction": 0.029510164633393288,
+          "pairs": 43,
+          "temporal": 3.371828317642212,
+          "gradient_x_mae": 12.270517349243164,
+          "gradient_y_mae": 11.921353340148926,
+          "low_frequency_mae": 7.255566998106061,
+          "high_frequency_mae": 9.285218320904356,
+          "boundary_mae": 13.462468147277832,
+          "inside_mae": 11.70853042602539,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.285433769226074,
+              "rgb_mae": 10.645611360669136,
+              "temporal": 4.756280899047852,
+              "gradient_mae": 12.433194160461426
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.84425163269043,
+              "rgb_mae": 11.21335694566369,
+              "temporal": 5.700712203979492,
+              "gradient_mae": 11.637557983398438
+            },
+            "root-and-hole": {
+              "raw_mae": 13.424266815185547,
+              "rgb_mae": 11.732343547046185,
+              "temporal": 3.1579387187957764,
+              "gradient_mae": 12.456701278686523
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.031631469726562,
+              "rgb_mae": 15.287212394177914,
+              "temporal": 4.139542102813721,
+              "gradient_mae": 15.213094711303711
+            },
+            "canopy": {
+              "raw_mae": 13.378621101379395,
+              "rgb_mae": 11.610261797904968,
+              "temporal": 3.4678478240966797,
+              "gradient_mae": 12.457021713256836
+            },
+            "title-when-visible": {
+              "raw_mae": 17.648954391479492,
+              "rgb_mae": 15.731327813118696,
+              "temporal": 4.2115888595581055,
+              "gradient_mae": 14.36857795715332
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 746,
+              "block": 13,
+              "delta_mae_8bit": -1.5715804696083069
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.5768555365502834
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.6083016991615295
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.6443361155688763
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.6587895900011063
+            },
+            {
+              "frame": 748,
+              "block": 11,
+              "delta_mae_8bit": -1.6800779476761818
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.6855477541685104
+            },
+            {
+              "frame": 741,
+              "block": 13,
+              "delta_mae_8bit": -1.6909187659621239
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.23348641395568848
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.2535579204559326
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.2849544286727905
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.33411455154418945
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.3574477434158325
+            }
+          ]
+        },
+        "v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-deage-20261123-032010-923\\epoch-20.pt",
+          "sha256": "1cf4fd69e0e41a7152f1514a49b2c2c1570ae17f6233d644b9eab298c861c0a8",
+          "epoch": 20,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-deage",
+          "clipped": 0.0006289950284090909,
+          "delta_rms": 15.109281585606377,
+          "delta_max": 144.98382568359375,
+          "raw": {
+            "mae_8bit": 10.977454974434592,
+            "psnr": 24.412987869341567
+          },
+          "rgb": {
+            "mae_8bit": 9.532728709596576,
+            "psnr": 25.70698836530753
+          },
+          "exact_raw_fraction": 0.03357443958520889,
+          "pairs": 43,
+          "temporal": 3.352348804473877,
+          "gradient_x_mae": 10.885130882263184,
+          "gradient_y_mae": 9.957919120788574,
+          "low_frequency_mae": 6.392103382457386,
+          "high_frequency_mae": 8.322188609730114,
+          "boundary_mae": 12.634439468383789,
+          "inside_mae": 9.588303565979004,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.255796432495117,
+              "rgb_mae": 9.073128439486027,
+              "temporal": 4.622503280639648,
+              "gradient_mae": 9.594783782958984
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.572333335876465,
+              "rgb_mae": 10.396384634077549,
+              "temporal": 5.558922290802002,
+              "gradient_mae": 9.523829460144043
+            },
+            "root-and-hole": {
+              "raw_mae": 12.046629905700684,
+              "rgb_mae": 10.58959761634469,
+              "temporal": 3.164867401123047,
+              "gradient_mae": 10.920127868652344
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.246586799621582,
+              "rgb_mae": 13.68380293250084,
+              "temporal": 4.09622859954834,
+              "gradient_mae": 13.458834648132324
+            },
+            "canopy": {
+              "raw_mae": 11.114609718322754,
+              "rgb_mae": 9.697225950658321,
+              "temporal": 3.373293161392212,
+              "gradient_mae": 10.11316204071045
+            },
+            "title-when-visible": {
+              "raw_mae": 14.374312400817871,
+              "rgb_mae": 12.742289453744888,
+              "temporal": 4.039846420288086,
+              "gradient_mae": 11.858037948608398
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.716797336935997
+            },
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.7766593247652054
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.9100568667054176
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.9779307246208191
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -1.141016073524952
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -1.219630055129528
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.305274609476328
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -1.3970700837671757
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.13916349411010742
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.017220020294189453
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.048597097396850586
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.07819008827209473
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.1199347972869873
+            }
+          ]
+        }
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--v13-S2-deage-review-20261123-040131-762--run-d8b621d5d2de.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "cf6ac95abc7bf1a06197a0b393c1d503c7c1ee471ede84430ecc6baa511f143a"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/blocks.jsonl",
+        "bytes": 1289216,
+        "sha256": "cf6ac95abc7bf1a06197a0b393c1d503c7c1ee471ede84430ecc6baa511f143a"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/report.json",
+        "bytes": 50103,
+        "sha256": "788e1f741b7cff00868141b388a3713f0e786d7cc779989159dbc7a553bfc801"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 492735,
+        "sha256": "1546f2ab4c6db7676dcc19b6e28382fda41a3e7ed8ed5cf6674ffaca7af62ab2"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 494439,
+        "sha256": "d453ba502a3cd3d093d77ad48012b05c2b58aa5648c2c1c4cabe6f44ed77f28a"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 499602,
+        "sha256": "dc1ed64e1c01b05f9be0259d32590529d3953f2f6e2e708704695370397e5b79"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 453288,
+        "sha256": "7adfd255bc719f75e8e0f668f373f57ff5ce4b628d21cf34fdc07251010826e4"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha0.5.mp4",
+        "bytes": 772522,
+        "sha256": "bbd0c64e66ba4692214648c1786e7949c8e1a3e4f2861992fe86b7182bda1a25"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1-frame-736.png",
+        "bytes": 417159,
+        "sha256": "86168a7971d2d3f98c101647cc2e509916216d30277fb105649cd0aa18b219db"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1-frame-750.png",
+        "bytes": 416972,
+        "sha256": "0a23481250471da65f82fe99857bd86e33c316fde5c3822cd46e710f0301859a"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1-frame-779.png",
+        "bytes": 424701,
+        "sha256": "9392988a17a05718425c41e934fdc5d7f1bcb9e5be515c06ef6f1eb019548dde"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1-valid.mp4",
+        "bytes": 408296,
+        "sha256": "0a5bc7742533961e2afd7447810b0133e6c787ae465a3cbfbe4e3c43861429f7"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-10-alpha1.mp4",
+        "bytes": 732769,
+        "sha256": "09f77a0b69b70c6d225d8ba96836a4c0d1d90666a8df53e422cc6666eeeab8cb"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 490936,
+        "sha256": "35ed836e705481cbe66d69cf12f3abb8ac77564f807722ac21b7b008909c618c"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 492442,
+        "sha256": "7cb78118c5f7a6d2625abafd1b6b4ae1675509d7c1fc6b7846cee57e0cbcbac6"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 497893,
+        "sha256": "304e931c25900bfd9ecb49f6d43d74cb43868a13b7b37bc90a0f63442285830b"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 453923,
+        "sha256": "4ac230c44a767f281a8c2676fb26e44006af1d3f6afc08cb1e936f5f81328992"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha0.5.mp4",
+        "bytes": 772150,
+        "sha256": "bbebb586bb9df404b0ebbcaeb2288373b3e354c41f2ccc5a1df80c106e7ba173"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1-frame-736.png",
+        "bytes": 411208,
+        "sha256": "e4dff922c2607f7c7d1c12265be06538a6eaaa06304dfe2846f6382102d89872"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1-frame-750.png",
+        "bytes": 410916,
+        "sha256": "860c74619e2797951ac88ec9bd1632cee428b04d642b720ca509cc40ed01bd77"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1-frame-779.png",
+        "bytes": 418166,
+        "sha256": "aa67502ca93b74d0ce6ee074d7b05e0eaa467a1e610a5ba8f20785edd710e70c"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1-valid.mp4",
+        "bytes": 401688,
+        "sha256": "9ee3eb46746035d3cd3657952b8c0d1cc7aa04e03f31860c9c9401435f2f2a63"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-20-alpha1.mp4",
+        "bytes": 724286,
+        "sha256": "1955577480795a730c4629aed014a22dc55de937b4bea47cf84ba88e7a8a65b7"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 504211,
+        "sha256": "6bd2d295ca8fa3dca90b29a99601c61197e99fff48097d9c9ad212ba4eea6cae"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 505361,
+        "sha256": "2312bb9085aedd4b128c40e078c984fece36c0c94c20522dd2523fd485b83cc3"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 510074,
+        "sha256": "bf48cfde2d1336155b8d7ccb4af3a80bfb0a8d5e9231e1d8db42e382e17bb6df"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 470906,
+        "sha256": "6ccc560a993b0c205eb4a565797034dcd2b5f0295ce9da7307491a4e36386289"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha0.5.mp4",
+        "bytes": 788485,
+        "sha256": "826d9e5c1ff39bb20b3919424a3564553ffcb4d7e78ae1d01378dd8698f16796"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1-frame-736.png",
+        "bytes": 452632,
+        "sha256": "f97b749b875e0ec507d0a5ea0fc0a7c49e15cd5798c011b100f8cb9f6c50c51b"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1-frame-750.png",
+        "bytes": 452645,
+        "sha256": "1d5a3e88853c1578be527efde780887bbe8341a761420791508c6d9c855d565a"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1-frame-779.png",
+        "bytes": 458358,
+        "sha256": "ddebd79f533482cf364a2dc5a088522e7c0642c90f37ebae878662fa9f6f669d"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1-valid.mp4",
+        "bytes": 438646,
+        "sha256": "e855b42aa03d1ec5211c222b975b0d237825d5ff955d0c59b78177c3ded980dd"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-deage-20261123-032010-923-epoch-5-alpha1.mp4",
+        "bytes": 762832,
+        "sha256": "fd0d5c9885646d1b312dd0cd522fe9976d2cbcb7499d726f8ecf0290c75aeba2"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-frame-736.png",
+        "bytes": 490143,
+        "sha256": "beb7b59272767b20c00c4c9725b78dd110748ee3b04a88cafd465a1ad97b6ac3"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-frame-750.png",
+        "bytes": 491556,
+        "sha256": "94c3b110f2f9f04d09a3378cfd8ce8dc615808c58ff35666b13cd874ff3689bf"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-frame-779.png",
+        "bytes": 497232,
+        "sha256": "4bc3f77655c3e55837d1c2a2b5ead6961b2b2a80139c27b6f2ff666a7544688e"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-valid.mp4",
+        "bytes": 448129,
+        "sha256": "0c674a2b392d5030b211d333d855fce1dfcaf0274342c964cfa880ee1e312176"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5.mp4",
+        "bytes": 765832,
+        "sha256": "f75f228088dc1a96152c6a0cbccebd5e321454a660f469fd0850291544716343"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-736.png",
+        "bytes": 408956,
+        "sha256": "1fe9aed8062c6c73fda5eec26a4cae46bfddb2bf47237c3b020168f94419c130"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-750.png",
+        "bytes": 408979,
+        "sha256": "a322a3fb643938673ccec396e5be46ebaee5c1dc7a8ec62bade488395e9d808a"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-779.png",
+        "bytes": 416332,
+        "sha256": "cc28b37c01e7d932b0c771dadd6eb3bad4d4d8907629df345f81307f13531823"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-valid.mp4",
+        "bytes": 387598,
+        "sha256": "98cef5ce0130c017faa46c2b1e2e0ebbb598b5a8b49162892120621cacc194da"
+      },
+      {
+        "path": "Model/runs/v13-S2-deage-review-20261123-040131-762/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1.mp4",
+        "bytes": 711923,
+        "sha256": "0096e53a56ef8ba423a5e991f29104a7ec2351d0a3956874a402c377ed378a0c"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v13-S2-ensemble-final-dev-20261123-053308-106--run-74c3c1a3a0e8",
+  "kind": "evaluation",
+  "name": "v13-S2-ensemble-final-dev-20261123-053308-106",
+  "status": "failed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v13-S2-ensemble-final-dev-20261123-053308-106",
+  "started_at": "2026-11-23T05:33:13+08:00",
+  "finished_at": "2026-11-23T05:33:13+08:00",
+  "cwd": "Z:\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "evaluate_v13.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs/v11-q5-20261122-scene-plan.json",
+    "--cache",
+    "runs/v13-S2-cache-20261122-214759-647",
+    "--split",
+    "S2-dev",
+    "--device",
+    "cpu",
+    "--checkpoint",
+    "runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+    "runs/v13-overnight-search-20261122-230255-847/final-refinement-weights/best-mae.pt",
+    "--alpha",
+    "1",
+    "--band-ensemble",
+    "runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+    "runs/v13-overnight-search-20261122-230255-847/final-refinement-weights/best-mae.pt",
+    "--out",
+    "runs/v13-S2-ensemble-final-dev-20261123-053308-106"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": null,
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-23T05:33:13+08:00",
+  "exception": {
+    "type": "PermissionError",
+    "message": "[WinError 5] 存取被拒。: '\\\\\\\\192.168.1.192\\\\share\\\\BrainHole\\\\Model\\\\experiments\\\\source_snapshots\\\\22a3c27cdfe0e3a8d2660326522cb696281d7124b6b46099daf0e722b43125fe\\\\baseline.py.8e78bad7eac846b09ad2871402a05765.tmp' -> '\\\\\\\\192.168.1.192\\\\share\\\\BrainHole\\\\Model\\\\experiments\\\\source_snapshots\\\\22a3c27cdfe0e3a8d2660326522cb696281d7124b6b46099daf0e722b43125fe\\\\baseline.py'",
+    "traceback": "Traceback (most recent call last):\n  File \"Z:\\BrainHole\\Model\\record_experiment.py\", line 333, in run_logged\n    record[\"source_snapshot\"] = source_snapshot(registry)\n                                ~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"Z:\\BrainHole\\Model\\record_experiment.py\", line 104, in source_snapshot\n    temporary.rename(target)\n    ~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\python\\cpython-3.13.9-windows-x86_64-none\\Lib\\pathlib\\_local.py\", line 767, in rename\n    os.rename(self, target)\n    ~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] 存取被拒。: '\\\\\\\\192.168.1.192\\\\share\\\\BrainHole\\\\Model\\\\experiments\\\\source_snapshots\\\\22a3c27cdfe0e3a8d2660326522cb696281d7124b6b46099daf0e722b43125fe\\\\baseline.py.8e78bad7eac846b09ad2871402a05765.tmp' -> '\\\\\\\\192.168.1.192\\\\share\\\\BrainHole\\\\Model\\\\experiments\\\\source_snapshots\\\\22a3c27cdfe0e3a8d2660326522cb696281d7124b6b46099daf0e722b43125fe\\\\baseline.py'\n"
+  },
+  "result": {
+    "artifacts": []
+  }
+}

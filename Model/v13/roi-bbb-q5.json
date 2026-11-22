@@ -1,0 +1,16 @@
+{
+  "coordinate_order": "x0, y0, x1, y1; zero-based, end exclusive",
+  "resolution": [640, 480],
+  "discovery_frames": [736, 743, 750],
+  "discovery_run": "runs/v13-S1-baseline-20261122-214047-719",
+  "frames": {"S1-dev": [736, 743, 750], "S2-dev": [736, 750, 779], "S2-audit": [795, 844, 874, 899]},
+  "full_frame_review": ["shape and color", "fixed stripes and noise", "ghosting and temporal variation"],
+  "regions": {
+    "grass-shadow": [18, 392, 206, 468],
+    "grass-sunlight": [397, 395, 601, 477],
+    "root-and-hole": [252, 196, 379, 369],
+    "root-strip-boundary": [245, 232, 386, 278],
+    "canopy": [192, 35, 454, 158],
+    "title-when-visible": [171, 100, 473, 233]
+  }
+}

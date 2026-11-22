@@ -1,0 +1,2450 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--phase-review--run-b8a7713c6e0f",
+  "kind": "evaluation",
+  "name": "phase-review",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review",
+  "started_at": "2026-11-22T23:19:01+08:00",
+  "finished_at": "2026-11-22T23:19:35+08:00",
+  "cwd": "\\\\192.168.1.192\\share\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "evaluate_v13.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs\\v11-q5-20261122-scene-plan.json",
+    "--cache",
+    "runs\\v13-S2-cache-20261122-214759-647",
+    "--split",
+    "S2-dev",
+    "--out",
+    "runs\\v13-overnight-search-20261122-230255-847\\phase-review",
+    "--checkpoint",
+    "runs\\v13-S2-R2-20261122-215155-129\\best-mae.pt",
+    "runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-5.pt",
+    "runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-10.pt",
+    "runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-20.pt",
+    "runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\best-mae.pt",
+    "--alpha",
+    "0.5",
+    "1"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "58f0d50f025f4be70d08a94b38faa3d7fd09342e15c62912ccb67bd0f7615e35",
+    "directory": "Model/experiments/source_snapshots/58f0d50f025f4be70d08a94b38faa3d7fd09342e15c62912ccb67bd0f7615e35",
+    "sha256": {
+      "AGENTS.md": "587c9c84434625f399fe8a8f079e4d1bd89bbaffd6e8cdb47ff29b77a8fbc4d9",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "build_v13_fades.py": "b89aa8dd577e1a27f162acb9e0448ca532469ace212962683d1bd9ab93ee964a",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "check_v13.py": "b6e8fb4ce6c07d6467eae39c14288b5793bc2854a898ddf5189e6d97c986b3e4",
+      "compare_v10_v12_existing.py": "59e285b0531a42369449c567e423647cda309aee6b8c105a0ceaaa0a223afe56",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "026ac00d93572ad8357898ec742ce0ebbe8c08b372d95e5f22cea2f562b422dc",
+      "diagnose_v13_correction.py": "b13c4c984b691864525889b76ac1e5a733a7ebf7418a0d8dc7c54c4f6922533f",
+      "diagnose_v13_history.py": "51a8d56f1b7c0230cf7ffb4822bf991c284281fc0bb3dfb0773b95a31e61a70b",
+      "diagnose_v13_weights.py": "f155464cb631c0beeb6daf7b2fc20cd80408ee682613443f4a3e4df7c3478ecb",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "da8316cac3c2cd6d1e31fcd87289ff0e30c07209a5d39b68b0a6b87042004892",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "evaluate_v13.py": "838e55f782bb1624f527a54a70fc902c2ed5f9cecdcdd2abb63f6b9f92c5277d",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "5496aaeddf4afb01fc8f2c5dccaa129b1e4d1b4b349de1a81bca01447e436dbb",
+      "predict_v13.py": "d68a071bba4cbe03f6fc6803300c7023cf54fb8ccc2abf4ad686146bdbf92f75",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "0583c182cb87a461ff3b69336a4e0550af1d54bd9142bf5fa114ae6d4ff6ba26",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "run_v13_search.py": "a458b1272f91d7a75ffbea751f8c0fb8ec685a2a1ab9cc4fbd715d33a3bf6dc3",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "test_v13.py": "73c6d4af9cbbb7a50045c67972d78d357aaf3d60683098dee6c143255ee0401d",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "ccd7ff38c910054d52cc9d1c76846443560c98459a135f169f6abe656e2d0f70",
+      "train_v13.py": "206ddbfae558f286a8300d86fb1be982e957d400a83b81f30f1e380945c392be",
+      "train_v13_samples.py": "e296d1e8cc645a1dc48649197f393f7c33e7ab8e7ded63f7600773255018fa6b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "bf475e02c2d7f4de39c83ebe55a87ba30f9a5b91e21d6f02ccbe766b3f3949a0",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+      "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+      "v13/fusion.py": "b8cdb10631f6058c298ec1719283a03a9c79a9dfd50f54e8851dcbec18164e3f",
+      "v13/model.py": "deb70c18663363b9b5d7879410e17bc59447ea2e191a9c1e6d31d1aea1a20e34",
+      "v13/native.py": "129c86af6a2394dd7c047e558d940dbeb8d1acbb2af9e17f3b3eea6b9575a1c0",
+      "v13/README.md": "409362237a05f556c0703255f352a78fa7a2d8350b315e4a2baf6e2d35735bb4",
+      "v13/roi-bbb-q5.json": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "v13/s2-bbb-q5-audit-freeze.json": "4265a9f3e5a9bc2e02445f675ebd7f6daeebeab44c7b56598d5c2f0b2f3ba3da",
+      "v13/執行前檢查.md": "1670dc9ce111c5d0b6a2fb0df506a94b18f16497bc8a01c4df459f91fd82bb75",
+      "v13/實作清單.md": "b90f07ce145b19a81803733eff76c0bb75855e0d67717e44a268d150e6f4c888",
+      "v13/實驗與驗收計畫.md": "a64d1dd6ae3e6147ed27fbd622831d06dc49de9d4297abc5e134047181c5136d",
+      "v13/文獻對照.md": "864c005922841e0d430d16c391c81fd1d856dd70dc9e7298b80248fbf9763f1c",
+      "v13/設計決策.md": "f82174edda7bcf76377993997bff0e2881ae5424da188e9c0f43ef94d2d19d17",
+      "v13/設計規格.md": "f9f0dd8860436074e9a2e013c8e5c1774aad2d7f1f5566795e2383584746170e",
+      "v13/逐幀融合試驗.md": "537b5b45ad96bc6a251a5fbfe809cdad6dd292d50c6482a8203cbe8ed2e52d0f",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-22T23:19:37+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+        "bytes": 322217,
+        "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-weights/epoch-5.pt",
+        "bytes": 329941,
+        "sha256": "64fb207f83adc8e3fdd0f8ce9b160ffb8eb00c6564b5bb3d573bb3d5b642ce09"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-weights/epoch-10.pt",
+        "bytes": 329973,
+        "sha256": "9020cab3db5593627cb135492909f885aa3805e4e57c869bca2c4e133abe2826"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-weights/epoch-20.pt",
+        "bytes": 329973,
+        "sha256": "d1f8eeed94256b71cfef1ac1bb7283bdd11fd7d207abe53dc743721271db4da0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-weights/best-mae.pt",
+        "bytes": 329973,
+        "sha256": "312e92025403a8860d3e72810ccfecd54596463019db29a6f90fe4fc253c023f"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/v11-q5-20261122-scene-plan.json",
+        "bytes": 14443,
+        "sha256": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "split": "S2-dev",
+      "source_range": [
+        721,
+        779
+      ],
+      "scored_range": [
+        736,
+        779
+      ],
+      "samples": 1320,
+      "start_frame": 736,
+      "scored_strips": 1320,
+      "warmup_strips": 450,
+      "provenance": {
+        "db": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "scene": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7",
+        "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+        "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+        "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+        "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d"
+      },
+      "roi_sha256": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "audit_freeze_sha256": null,
+      "seam_cfa_rows": [
+        7,
+        15,
+        23,
+        31,
+        39,
+        47,
+        55,
+        63,
+        71,
+        79,
+        87,
+        95,
+        103,
+        111,
+        119,
+        127,
+        135,
+        143,
+        151,
+        159,
+        167,
+        175,
+        183,
+        191,
+        199,
+        207,
+        215,
+        223,
+        231
+      ],
+      "methods": {
+        "v12": {
+          "raw": {
+            "mae_8bit": 15.197977694598112,
+            "psnr": 21.65039812130614
+          },
+          "rgb": {
+            "mae_8bit": 12.843082630273067,
+            "psnr": 23.067337452936414
+          },
+          "exact_raw_fraction": 0.02415919490158558,
+          "pairs": 43,
+          "temporal": 3.90689754486084,
+          "gradient_x_mae": 15.471430778503418,
+          "gradient_y_mae": 15.929133415222168,
+          "low_frequency_mae": 9.116943729285039,
+          "high_frequency_mae": 11.70705196496212,
+          "boundary_mae": 16.31626319885254,
+          "inside_mae": 15.875672340393066,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 15.825976371765137,
+              "rgb_mae": 13.301733434200287,
+              "temporal": 5.219916343688965,
+              "gradient_mae": 17.04049301147461
+            },
+            "grass-sunlight": {
+              "raw_mae": 15.73558235168457,
+              "rgb_mae": 13.308794405311346,
+              "temporal": 6.169086933135986,
+              "gradient_mae": 15.185301780700684
+            },
+            "root-and-hole": {
+              "raw_mae": 16.906497955322266,
+              "rgb_mae": 14.531309455633163,
+              "temporal": 4.02274227142334,
+              "gradient_mae": 16.528024673461914
+            },
+            "root-strip-boundary": {
+              "raw_mae": 21.136024475097656,
+              "rgb_mae": 18.736969381570816,
+              "temporal": 5.339873313903809,
+              "gradient_mae": 20.060028076171875
+            },
+            "canopy": {
+              "raw_mae": 17.382762908935547,
+              "rgb_mae": 15.055174995213747,
+              "temporal": 4.250828266143799,
+              "gradient_mae": 16.700153350830078
+            },
+            "title-when-visible": {
+              "raw_mae": 23.158384323120117,
+              "rgb_mae": 20.761502645909786,
+              "temporal": 5.570156574249268,
+              "gradient_mae": 19.58187484741211
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 1,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 2,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 3,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 4,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 5,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 6,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 7,
+              "delta_mae_8bit": 0.0
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                736,
+                737
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                738,
+                739
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                739,
+                740
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                740,
+                741
+              ],
+              "delta": 0.0
+            }
+          ]
+        },
+        "unsharp": {
+          "raw": {
+            "mae_8bit": 17.918686311895197,
+            "psnr": 20.31299922576602
+          },
+          "rgb": {
+            "mae_8bit": 14.284823787573611,
+            "psnr": 22.16429712363506
+          },
+          "exact_raw_fraction": 0.02038862742483616,
+          "pairs": 43,
+          "temporal": 4.692089080810547,
+          "gradient_x_mae": 20.17768096923828,
+          "gradient_y_mae": 21.078601837158203,
+          "low_frequency_mae": 9.219909150094697,
+          "high_frequency_mae": 15.033787582859848,
+          "boundary_mae": 20.1198673248291,
+          "inside_mae": 21.210996627807617,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 19.259689331054688,
+              "rgb_mae": 15.272492934018373,
+              "temporal": 5.855269432067871,
+              "gradient_mae": 22.926246643066406
+            },
+            "grass-sunlight": {
+              "raw_mae": 18.229705810546875,
+              "rgb_mae": 14.671931359916925,
+              "temporal": 6.81959342956543,
+              "gradient_mae": 19.60755157470703
+            },
+            "root-and-hole": {
+              "raw_mae": 19.715835571289062,
+              "rgb_mae": 15.87883684784174,
+              "temporal": 5.18060827255249,
+              "gradient_mae": 22.039875030517578
+            },
+            "root-strip-boundary": {
+              "raw_mae": 24.229101181030273,
+              "rgb_mae": 20.11049497872591,
+              "temporal": 6.9131293296813965,
+              "gradient_mae": 26.600757598876953
+            },
+            "canopy": {
+              "raw_mae": 20.241064071655273,
+              "rgb_mae": 16.546301431953907,
+              "temporal": 5.320375442504883,
+              "gradient_mae": 22.135929107666016
+            },
+            "title-when-visible": {
+              "raw_mae": 26.057836532592773,
+              "rgb_mae": 22.04549554735422,
+              "temporal": 7.287142753601074,
+              "gradient_mae": 25.966541290283203
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 737,
+              "block": 16,
+              "delta_mae_8bit": 3.714649323374033
+            },
+            {
+              "frame": 737,
+              "block": 0,
+              "delta_mae_8bit": 3.709571845829487
+            },
+            {
+              "frame": 736,
+              "block": 16,
+              "delta_mae_8bit": 3.6693358048796654
+            },
+            {
+              "frame": 753,
+              "block": 16,
+              "delta_mae_8bit": 3.6596672236919403
+            },
+            {
+              "frame": 754,
+              "block": 16,
+              "delta_mae_8bit": 3.652341216802597
+            },
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 3.64550918340683
+            },
+            {
+              "frame": 738,
+              "block": 16,
+              "delta_mae_8bit": 3.6405276507139206
+            },
+            {
+              "frame": 738,
+              "block": 0,
+              "delta_mae_8bit": 3.64033006131649
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 1.0123047828674316
+            },
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 0.9788153171539307
+            },
+            {
+              "frames": [
+                777,
+                778
+              ],
+              "delta": 0.9769270420074463
+            },
+            {
+              "frames": [
+                774,
+                775
+              ],
+              "delta": 0.9764776229858398
+            },
+            {
+              "frames": [
+                773,
+                774
+              ],
+              "delta": 0.9499316215515137
+            }
+          ]
+        },
+        "v13-S2-R2-20261122-215155-129-best-mae-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-20261122-215155-129\\best-mae.pt",
+          "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03",
+          "epoch": 17,
+          "alpha": 0.5,
+          "variant": "R2",
+          "clipped": 8.766867897727272e-05,
+          "delta_rms": 7.055612311808877,
+          "delta_max": 72.1871337890625,
+          "raw": {
+            "mae_8bit": 12.606480715491553,
+            "psnr": 23.369401184427137
+          },
+          "rgb": {
+            "mae_8bit": 10.937549862717137,
+            "psnr": 24.654527406097067
+          },
+          "exact_raw_fraction": 0.028526796028017998,
+          "pairs": 43,
+          "temporal": 3.5485641956329346,
+          "gradient_x_mae": 12.337528228759766,
+          "gradient_y_mae": 12.039663314819336,
+          "low_frequency_mae": 7.722907492897727,
+          "high_frequency_mae": 9.352623401988636,
+          "boundary_mae": 13.795369148254395,
+          "inside_mae": 11.797208786010742,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.628332138061523,
+              "rgb_mae": 10.989533755928278,
+              "temporal": 4.882623672485352,
+              "gradient_mae": 12.588508605957031
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.480131149291992,
+              "rgb_mae": 11.79841535165906,
+              "temporal": 5.823015213012695,
+              "gradient_mae": 11.828113555908203
+            },
+            "root-and-hole": {
+              "raw_mae": 13.858467102050781,
+              "rgb_mae": 12.211183402687311,
+              "temporal": 3.3632547855377197,
+              "gradient_mae": 12.563054084777832
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.64837646484375,
+              "rgb_mae": 15.97921036183834,
+              "temporal": 4.33995246887207,
+              "gradient_mae": 15.307003021240234
+            },
+            "canopy": {
+              "raw_mae": 13.921438217163086,
+              "rgb_mae": 12.21103236079216,
+              "temporal": 3.689504623413086,
+              "gradient_mae": 12.554203033447266
+            },
+            "title-when-visible": {
+              "raw_mae": 18.3331356048584,
+              "rgb_mae": 16.45404428243637,
+              "temporal": 4.5655035972595215,
+              "gradient_mae": 14.50545883178711
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.3068372756242752
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.4886746183037758
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.5406244806945324
+            },
+            {
+              "frame": 777,
+              "block": 11,
+              "delta_mae_8bit": -1.5532255545258522
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.562989130616188
+            },
+            {
+              "frame": 745,
+              "block": 11,
+              "delta_mae_8bit": -1.5660156682133675
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.569237895309925
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.5696283243596554
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 0.2475261688232422
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.005618572235107422
+            },
+            {
+              "frames": [
+                759,
+                760
+              ],
+              "delta": -0.020104408264160156
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.03758120536804199
+            },
+            {
+              "frames": [
+                742,
+                743
+              ],
+              "delta": -0.04193687438964844
+            }
+          ]
+        },
+        "v13-S2-R2-20261122-215155-129-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-20261122-215155-129\\best-mae.pt",
+          "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03",
+          "epoch": 17,
+          "alpha": 1.0,
+          "variant": "R2",
+          "clipped": 0.0004639411695075758,
+          "delta_rms": 14.111224634103309,
+          "delta_max": 144.37425231933594,
+          "raw": {
+            "mae_8bit": 11.626037740707398,
+            "psnr": 24.092244443723896
+          },
+          "rgb": {
+            "mae_8bit": 10.253519306760847,
+            "psnr": 25.293089625655792
+          },
+          "exact_raw_fraction": 0.030652521178126335,
+          "pairs": 43,
+          "temporal": 3.6659536361694336,
+          "gradient_x_mae": 10.975489616394043,
+          "gradient_y_mae": 10.176642417907715,
+          "low_frequency_mae": 7.201336447975852,
+          "high_frequency_mae": 8.408583762428977,
+          "boundary_mae": 13.049668312072754,
+          "inside_mae": 9.779890060424805,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 11.1231107711792,
+              "rgb_mae": 10.043131839483976,
+              "temporal": 4.807122230529785,
+              "gradient_mae": 9.866353988647461
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.281593322753906,
+              "rgb_mae": 10.97615847364068,
+              "temporal": 5.689014434814453,
+              "gradient_mae": 9.777751922607422
+            },
+            "root-and-hole": {
+              "raw_mae": 12.718964576721191,
+              "rgb_mae": 11.271374132484198,
+              "temporal": 3.4331247806549072,
+              "gradient_mae": 11.055267333984375
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.11907196044922,
+              "rgb_mae": 14.586350452154875,
+              "temporal": 4.289073467254639,
+              "gradient_mae": 13.462841033935547
+            },
+            "canopy": {
+              "raw_mae": 12.095107078552246,
+              "rgb_mae": 10.728708151727915,
+              "temporal": 3.830192804336548,
+              "gradient_mae": 10.256204605102539
+            },
+            "title-when-visible": {
+              "raw_mae": 15.447449684143066,
+              "rgb_mae": 13.71602425351739,
+              "temporal": 4.926239967346191,
+              "gradient_mae": 11.997476577758789
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.04365205764770508
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.4687485471367836
+            },
+            {
+              "frame": 777,
+              "block": 16,
+              "delta_mae_8bit": -0.896972268819809
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.046874225139618
+            },
+            {
+              "frame": 747,
+              "block": 16,
+              "delta_mae_8bit": -1.1283200047910213
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -1.1602525413036346
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -1.1778322979807854
+            },
+            {
+              "frame": 765,
+              "block": 16,
+              "delta_mae_8bit": -1.2094732001423836
+            }
+          ],
+          "temporal_pairs_better_than_v12": 36,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 1.0509116649627686
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": 0.43346357345581055
+            },
+            {
+              "frames": [
+                742,
+                743
+              ],
+              "delta": 0.38666653633117676
+            },
+            {
+              "frames": [
+                759,
+                760
+              ],
+              "delta": 0.3826007843017578
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.32245445251464844
+            }
+          ]
+        },
+        "phase-weights-epoch-5-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-5.pt",
+          "sha256": "64fb207f83adc8e3fdd0f8ce9b160ffb8eb00c6564b5bb3d573bb3d5b642ce09",
+          "epoch": 5,
+          "alpha": 0.5,
+          "variant": "R2-frames-phase",
+          "clipped": 0.0016178385416666667,
+          "delta_rms": 6.778109449093781,
+          "delta_max": 70.32178497314453,
+          "raw": {
+            "mae_8bit": 12.90720547762784,
+            "psnr": 23.213051024893836
+          },
+          "rgb": {
+            "mae_8bit": 11.010020851366447,
+            "psnr": 24.62042277760534
+          },
+          "exact_raw_fraction": 0.027845053002238274,
+          "pairs": 43,
+          "temporal": 3.648185968399048,
+          "gradient_x_mae": 13.015579223632812,
+          "gradient_y_mae": 12.872806549072266,
+          "low_frequency_mae": 7.650122958096591,
+          "high_frequency_mae": 9.814104595762311,
+          "boundary_mae": 14.69364070892334,
+          "inside_mae": 12.621359825134277,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 13.207356452941895,
+              "rgb_mae": 11.368020046502352,
+              "temporal": 5.001453399658203,
+              "gradient_mae": 13.578969955444336
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.286458969116211,
+              "rgb_mae": 11.465999688953161,
+              "temporal": 5.8924336433410645,
+              "gradient_mae": 12.243744850158691
+            },
+            "root-and-hole": {
+              "raw_mae": 13.99402904510498,
+              "rgb_mae": 12.1006178855896,
+              "temporal": 3.507370710372925,
+              "gradient_mae": 13.39015007019043
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.507572174072266,
+              "rgb_mae": 15.51131771877408,
+              "temporal": 4.548426151275635,
+              "gradient_mae": 16.289342880249023
+            },
+            "canopy": {
+              "raw_mae": 14.25252628326416,
+              "rgb_mae": 12.252933662384748,
+              "temporal": 3.7697620391845703,
+              "gradient_mae": 13.469039916992188
+            },
+            "title-when-visible": {
+              "raw_mae": 18.311506271362305,
+              "rgb_mae": 16.23559210449457,
+              "temporal": 4.59507942199707,
+              "gradient_mae": 15.382757186889648
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.9712886810302734
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.090234648436308
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.0903305932879448
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.1620118468999863
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.1703125014901161
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.1925783567130566
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.2261714041233063
+            },
+            {
+              "frame": 740,
+              "block": 11,
+              "delta_mae_8bit": -1.2373057566583157
+            }
+          ],
+          "temporal_pairs_better_than_v12": 39,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.1988053321838379
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.12608075141906738
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.07103514671325684
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.017145395278930664
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.057607412338256836
+            }
+          ]
+        },
+        "phase-weights-epoch-5-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-5.pt",
+          "sha256": "64fb207f83adc8e3fdd0f8ce9b160ffb8eb00c6564b5bb3d573bb3d5b642ce09",
+          "epoch": 5,
+          "alpha": 1.0,
+          "variant": "R2-frames-phase",
+          "clipped": 0.004035052675189394,
+          "delta_rms": 13.556218876357875,
+          "delta_max": 140.64356994628906,
+          "raw": {
+            "mae_8bit": 11.90226031216708,
+            "psnr": 23.862545461647645
+          },
+          "rgb": {
+            "mae_8bit": 10.260426209189676,
+            "psnr": 25.215740280189753
+          },
+          "exact_raw_fraction": 0.030119111761450768,
+          "pairs": 43,
+          "temporal": 3.8829891681671143,
+          "gradient_x_mae": 11.838700294494629,
+          "gradient_y_mae": 11.316900253295898,
+          "low_frequency_mae": 7.0654122647372155,
+          "high_frequency_mae": 8.988434318773674,
+          "boundary_mae": 14.520941734313965,
+          "inside_mae": 10.874438285827637,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 11.68789005279541,
+              "rgb_mae": 10.33488493412733,
+              "temporal": 5.088351726531982,
+              "gradient_mae": 11.28604507446289
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.372421264648438,
+              "rgb_mae": 11.075332202017307,
+              "temporal": 5.867300987243652,
+              "gradient_mae": 10.392040252685547
+            },
+            "root-and-hole": {
+              "raw_mae": 12.830052375793457,
+              "rgb_mae": 11.140294466167688,
+              "temporal": 3.85746431350708,
+              "gradient_mae": 12.16162109375
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.004249572753906,
+              "rgb_mae": 14.152122102677822,
+              "temporal": 4.899880886077881,
+              "gradient_mae": 14.87857437133789
+            },
+            "canopy": {
+              "raw_mae": 12.418216705322266,
+              "rgb_mae": 10.628911256790161,
+              "temporal": 3.935760259628296,
+              "gradient_mae": 11.665557861328125
+            },
+            "title-when-visible": {
+              "raw_mae": 15.237835884094238,
+              "rgb_mae": 13.323661107569933,
+              "temporal": 4.784367084503174,
+              "gradient_mae": 13.321053504943848
+            }
+          },
+          "wins_vs_v12": 1319,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": 0.25976546108722687
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.16503844410181046
+            },
+            {
+              "frame": 771,
+              "block": 16,
+              "delta_mae_8bit": -0.5272483080625534
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.6521485559642315
+            },
+            {
+              "frame": 739,
+              "block": 16,
+              "delta_mae_8bit": -0.7621080055832863
+            },
+            {
+              "frame": 750,
+              "block": 16,
+              "delta_mae_8bit": -0.7808580994606018
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -0.7933594286441803
+            },
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.7946285605430603
+            }
+          ],
+          "temporal_pairs_better_than_v12": 29,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.9561946392059326
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.6837174892425537
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.6010351181030273
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.48761415481567383
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 0.3987271785736084
+            }
+          ]
+        },
+        "phase-weights-epoch-10-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-10.pt",
+          "sha256": "9020cab3db5593627cb135492909f885aa3805e4e57c869bca2c4e133abe2826",
+          "epoch": 10,
+          "alpha": 0.5,
+          "variant": "R2-frames-phase",
+          "clipped": 0.0006681315104166667,
+          "delta_rms": 7.383471513897221,
+          "delta_max": 70.75115966796875,
+          "raw": {
+            "mae_8bit": 12.597098931399259,
+            "psnr": 23.420312439963126
+          },
+          "rgb": {
+            "mae_8bit": 10.858494354016853,
+            "psnr": 24.76316805414841
+          },
+          "exact_raw_fraction": 0.028555575758218765,
+          "pairs": 43,
+          "temporal": 3.601438283920288,
+          "gradient_x_mae": 12.548202514648438,
+          "gradient_y_mae": 12.309366226196289,
+          "low_frequency_mae": 7.589625651041667,
+          "high_frequency_mae": 9.474637266216856,
+          "boundary_mae": 14.220112800598145,
+          "inside_mae": 12.045501708984375,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.861106872558594,
+              "rgb_mae": 11.195568200200796,
+              "temporal": 4.94812536239624,
+              "gradient_mae": 12.89944076538086
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.185139656066895,
+              "rgb_mae": 11.460927911102772,
+              "temporal": 5.847574710845947,
+              "gradient_mae": 11.908498764038086
+            },
+            "root-and-hole": {
+              "raw_mae": 13.570405960083008,
+              "rgb_mae": 11.829674374312162,
+              "temporal": 3.4394724369049072,
+              "gradient_mae": 12.83630084991455
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.048847198486328,
+              "rgb_mae": 15.229491591453552,
+              "temporal": 4.463588714599609,
+              "gradient_mae": 15.653945922851562
+            },
+            "canopy": {
+              "raw_mae": 13.695931434631348,
+              "rgb_mae": 11.864101476967335,
+              "temporal": 3.7008323669433594,
+              "gradient_mae": 12.820426940917969
+            },
+            "title-when-visible": {
+              "raw_mae": 17.54591941833496,
+              "rgb_mae": 15.59935424476862,
+              "temporal": 4.500586032867432,
+              "gradient_mae": 14.739814758300781
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.3032208196818829
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.3079126179218292
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.3148443959653378
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.3714841566979885
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.3742181099951267
+            },
+            {
+              "frame": 738,
+              "block": 12,
+              "delta_mae_8bit": -1.434862855821848
+            },
+            {
+              "frame": 740,
+              "block": 11,
+              "delta_mae_8bit": -1.437208279967308
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.4558605290949345
+            }
+          ],
+          "temporal_pairs_better_than_v12": 40,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.17779946327209473
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.10845375061035156
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.03942370414733887
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.02476215362548828
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.07640624046325684
+            }
+          ]
+        },
+        "phase-weights-epoch-10-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-10.pt",
+          "sha256": "9020cab3db5593627cb135492909f885aa3805e4e57c869bca2c4e133abe2826",
+          "epoch": 10,
+          "alpha": 1.0,
+          "variant": "R2-frames-phase",
+          "clipped": 0.0022946999289772726,
+          "delta_rms": 14.76694304783434,
+          "delta_max": 141.50233459472656,
+          "raw": {
+            "mae_8bit": 11.554187640276822,
+            "psnr": 24.05184407084752
+          },
+          "rgb": {
+            "mae_8bit": 10.095230345292524,
+            "psnr": 25.316976427572783
+          },
+          "exact_raw_fraction": 0.03134358674287796,
+          "pairs": 43,
+          "temporal": 3.836573839187622,
+          "gradient_x_mae": 11.27155876159668,
+          "gradient_y_mae": 10.592146873474121,
+          "low_frequency_mae": 7.000598551432292,
+          "high_frequency_mae": 8.613857865767045,
+          "boundary_mae": 14.020062446594238,
+          "inside_mae": 10.118766784667969,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 11.295852661132812,
+              "rgb_mae": 10.17124766483903,
+              "temporal": 4.995987892150879,
+              "gradient_mae": 10.260587692260742
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.948250770568848,
+              "rgb_mae": 10.595612693578005,
+              "temporal": 5.770393371582031,
+              "gradient_mae": 9.8768310546875
+            },
+            "root-and-hole": {
+              "raw_mae": 12.374818801879883,
+              "rgb_mae": 10.859349891543388,
+              "temporal": 3.7734382152557373,
+              "gradient_mae": 11.547778129577637
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.398490905761719,
+              "rgb_mae": 13.731079045683146,
+              "temporal": 4.787481307983398,
+              "gradient_mae": 14.174030303955078
+            },
+            "canopy": {
+              "raw_mae": 11.665456771850586,
+              "rgb_mae": 10.131946373730898,
+              "temporal": 3.8746144771575928,
+              "gradient_mae": 10.742403030395508
+            },
+            "title-when-visible": {
+              "raw_mae": 14.275866508483887,
+              "rgb_mae": 12.563975472003222,
+              "temporal": 4.732795715332031,
+              "gradient_mae": 12.551874160766602
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.08486464619636536
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.5438477173447609
+            },
+            {
+              "frame": 771,
+              "block": 16,
+              "delta_mae_8bit": -0.5449211597442627
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.6541016511619091
+            },
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.8849611133337021
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -0.8885747194290161
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.9119149670004845
+            },
+            {
+              "frame": 749,
+              "block": 16,
+              "delta_mae_8bit": -0.9135745279490948
+            }
+          ],
+          "temporal_pairs_better_than_v12": 30,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.942997932434082
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.6777279376983643
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.5713996887207031
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.4377474784851074
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 0.4095020294189453
+            }
+          ]
+        },
+        "phase-weights-epoch-20-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-20.pt",
+          "sha256": "d1f8eeed94256b71cfef1ac1bb7283bdd11fd7d207abe53dc743721271db4da0",
+          "epoch": 20,
+          "alpha": 0.5,
+          "variant": "R2-frames-phase",
+          "clipped": 0.0004668264678030303,
+          "delta_rms": 7.677761331128049,
+          "delta_max": 75.75074005126953,
+          "raw": {
+            "mae_8bit": 12.3731238972057,
+            "psnr": 23.558947964201916
+          },
+          "rgb": {
+            "mae_8bit": 10.718826831470837,
+            "psnr": 24.87685872713066
+          },
+          "exact_raw_fraction": 0.029062796384096146,
+          "pairs": 43,
+          "temporal": 3.557893991470337,
+          "gradient_x_mae": 12.32490348815918,
+          "gradient_y_mae": 12.033263206481934,
+          "low_frequency_mae": 7.384821999289772,
+          "high_frequency_mae": 9.327891290838068,
+          "boundary_mae": 13.813014030456543,
+          "inside_mae": 11.78748893737793,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.60447883605957,
+              "rgb_mae": 11.007294952869415,
+              "temporal": 4.888063430786133,
+              "gradient_mae": 12.57938289642334
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.09488296508789,
+              "rgb_mae": 11.402764432132244,
+              "temporal": 5.826579570770264,
+              "gradient_mae": 11.766660690307617
+            },
+            "root-and-hole": {
+              "raw_mae": 13.312727928161621,
+              "rgb_mae": 11.610148753970861,
+              "temporal": 3.375211238861084,
+              "gradient_mae": 12.536941528320312
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.791547775268555,
+              "rgb_mae": 15.023118015378714,
+              "temporal": 4.415273666381836,
+              "gradient_mae": 15.297412872314453
+            },
+            "canopy": {
+              "raw_mae": 13.299028396606445,
+              "rgb_mae": 11.604327466338873,
+              "temporal": 3.64090895652771,
+              "gradient_mae": 12.522643089294434
+            },
+            "title-when-visible": {
+              "raw_mae": 17.145488739013672,
+              "rgb_mae": 15.23075882345438,
+              "temporal": 4.446776866912842,
+              "gradient_mae": 14.416793823242188
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.5552736446261406
+            },
+            {
+              "frame": 744,
+              "block": 11,
+              "delta_mae_8bit": -1.5818370692431927
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.5859379991889
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.5917963348329067
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.5960939042270184
+            },
+            {
+              "frame": 740,
+              "block": 11,
+              "delta_mae_8bit": -1.6067390330135822
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.6070325672626495
+            },
+            {
+              "frame": 741,
+              "block": 13,
+              "delta_mae_8bit": -1.6188480332493782
+            }
+          ],
+          "temporal_pairs_better_than_v12": 41,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.1378319263458252
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.026647090911865234
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.031266212463378906
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.08352851867675781
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.12197256088256836
+            }
+          ]
+        },
+        "phase-weights-epoch-20-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\epoch-20.pt",
+          "sha256": "d1f8eeed94256b71cfef1ac1bb7283bdd11fd7d207abe53dc743721271db4da0",
+          "epoch": 20,
+          "alpha": 1.0,
+          "variant": "R2-frames-phase",
+          "clipped": 0.0016630415482954545,
+          "delta_rms": 15.355522695981687,
+          "delta_max": 151.50146484375,
+          "raw": {
+            "mae_8bit": 11.31296328197826,
+            "psnr": 24.219323907428375
+          },
+          "rgb": {
+            "mae_8bit": 9.970583620938386,
+            "psnr": 25.425281850454592
+          },
+          "exact_raw_fraction": 0.03206617012619972,
+          "pairs": 43,
+          "temporal": 3.7509052753448486,
+          "gradient_x_mae": 11.010187149047852,
+          "gradient_y_mae": 10.220574378967285,
+          "low_frequency_mae": 6.751639811197917,
+          "high_frequency_mae": 8.428085715553978,
+          "boundary_mae": 13.424845695495605,
+          "inside_mae": 9.778079986572266,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.742912292480469,
+              "rgb_mae": 9.638049826025963,
+              "temporal": 4.82138204574585,
+              "gradient_mae": 9.779083251953125
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.964439392089844,
+              "rgb_mae": 10.715885739773512,
+              "temporal": 5.75463342666626,
+              "gradient_mae": 9.69056510925293
+            },
+            "root-and-hole": {
+              "raw_mae": 12.008872985839844,
+              "rgb_mae": 10.533499326556921,
+              "temporal": 3.6214449405670166,
+              "gradient_mae": 11.155826568603516
+            },
+            "root-strip-boundary": {
+              "raw_mae": 14.988334655761719,
+              "rgb_mae": 13.363975994288921,
+              "temporal": 4.710241794586182,
+              "gradient_mae": 13.731009483337402
+            },
+            "canopy": {
+              "raw_mae": 11.11780834197998,
+              "rgb_mae": 9.810650814324617,
+              "temporal": 3.7501533031463623,
+              "gradient_mae": 10.29278564453125
+            },
+            "title-when-visible": {
+              "raw_mae": 13.787421226501465,
+              "rgb_mae": 12.208127416670322,
+              "temporal": 4.66085147857666,
+              "gradient_mae": 12.128824234008789
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.29130756855010986
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.6484390050172806
+            },
+            {
+              "frame": 771,
+              "block": 16,
+              "delta_mae_8bit": -0.8975593373179436
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.89921984821558
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -0.9183584712445736
+            },
+            {
+              "frame": 740,
+              "block": 16,
+              "delta_mae_8bit": -1.046875175088644
+            },
+            {
+              "frame": 739,
+              "block": 17,
+              "delta_mae_8bit": -1.0852521657943726
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -1.099118571728468
+            }
+          ],
+          "temporal_pairs_better_than_v12": 34,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.8695604801177979
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.5123112201690674
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.42771482467651367
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 0.3355860710144043
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.3149220943450928
+            }
+          ]
+        },
+        "phase-weights-best-mae-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\best-mae.pt",
+          "sha256": "312e92025403a8860d3e72810ccfecd54596463019db29a6f90fe4fc253c023f",
+          "epoch": 16,
+          "alpha": 0.5,
+          "variant": "R2-frames-phase",
+          "clipped": 0.0006067264441287879,
+          "delta_rms": 7.55042016201666,
+          "delta_max": 72.54103088378906,
+          "raw": {
+            "mae_8bit": 12.402934711629694,
+            "psnr": 23.516479090518047
+          },
+          "rgb": {
+            "mae_8bit": 10.717631235989657,
+            "psnr": 24.84021038714754
+          },
+          "exact_raw_fraction": 0.029093941673636436,
+          "pairs": 43,
+          "temporal": 3.5802719593048096,
+          "gradient_x_mae": 12.377339363098145,
+          "gradient_y_mae": 12.090862274169922,
+          "low_frequency_mae": 7.409444617069129,
+          "high_frequency_mae": 9.360381821141099,
+          "boundary_mae": 13.915596008300781,
+          "inside_mae": 11.838875770568848,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.514853477478027,
+              "rgb_mae": 10.859945509582758,
+              "temporal": 4.910549640655518,
+              "gradient_mae": 12.645084381103516
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.20633602142334,
+              "rgb_mae": 11.515720020979643,
+              "temporal": 5.830833911895752,
+              "gradient_mae": 11.794607162475586
+            },
+            "root-and-hole": {
+              "raw_mae": 13.469385147094727,
+              "rgb_mae": 11.782789640128613,
+              "temporal": 3.3982787132263184,
+              "gradient_mae": 12.610737800598145
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.03264808654785,
+              "rgb_mae": 15.298763774335384,
+              "temporal": 4.429267883300781,
+              "gradient_mae": 15.388623237609863
+            },
+            "canopy": {
+              "raw_mae": 13.424718856811523,
+              "rgb_mae": 11.697302777320147,
+              "temporal": 3.66278338432312,
+              "gradient_mae": 12.584565162658691
+            },
+            "title-when-visible": {
+              "raw_mae": 17.40916633605957,
+              "rgb_mae": 15.522767454385757,
+              "temporal": 4.47037935256958,
+              "gradient_mae": 14.495670318603516
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.4160168170928955
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.5167959593236446
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.548632550984621
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.5681644529104233
+            },
+            {
+              "frame": 740,
+              "block": 11,
+              "delta_mae_8bit": -1.6117205657064915
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.6195300966501236
+            },
+            {
+              "frame": 744,
+              "block": 11,
+              "delta_mae_8bit": -1.6204116493463516
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.6310558281838894
+            }
+          ],
+          "temporal_pairs_better_than_v12": 40,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.16091465950012207
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.07265305519104004
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.009270906448364258
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.048596858978271484
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.09899401664733887
+            }
+          ]
+        },
+        "phase-weights-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-overnight-search-20261122-230255-847\\phase-weights\\best-mae.pt",
+          "sha256": "312e92025403a8860d3e72810ccfecd54596463019db29a6f90fe4fc253c023f",
+          "epoch": 16,
+          "alpha": 1.0,
+          "variant": "R2-frames-phase",
+          "clipped": 0.0018107096354166667,
+          "delta_rms": 15.100840270142141,
+          "delta_max": 145.0820770263672,
+          "raw": {
+            "mae_8bit": 11.303471032055942,
+            "psnr": 24.189083627933883
+          },
+          "rgb": {
+            "mae_8bit": 9.909217776674213,
+            "psnr": 25.429502558557946
+          },
+          "exact_raw_fraction": 0.03222641348838806,
+          "pairs": 43,
+          "temporal": 3.8090121746063232,
+          "gradient_x_mae": 11.075855255126953,
+          "gradient_y_mae": 10.31410026550293,
+          "low_frequency_mae": 6.730283536044034,
+          "high_frequency_mae": 8.485794566761363,
+          "boundary_mae": 13.591935157775879,
+          "inside_mae": 9.861446380615234,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.693849563598633,
+              "rgb_mae": 9.55221338197589,
+              "temporal": 4.897876739501953,
+              "gradient_mae": 9.884786605834961
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.008962631225586,
+              "rgb_mae": 10.674713999032974,
+              "temporal": 5.748584747314453,
+              "gradient_mae": 9.729433059692383
+            },
+            "root-and-hole": {
+              "raw_mae": 12.213361740112305,
+              "rgb_mae": 10.744340512901545,
+              "temporal": 3.6746695041656494,
+              "gradient_mae": 11.25823974609375
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.275961875915527,
+              "rgb_mae": 13.685556538403034,
+              "temporal": 4.717050552368164,
+              "gradient_mae": 13.842273712158203
+            },
+            "canopy": {
+              "raw_mae": 11.256902694702148,
+              "rgb_mae": 9.894712753593922,
+              "temporal": 3.805933713912964,
+              "gradient_mae": 10.393091201782227
+            },
+            "title-when-visible": {
+              "raw_mae": 14.06151294708252,
+              "rgb_mae": 12.442086562514305,
+              "temporal": 4.701857566833496,
+              "gradient_mae": 12.241982460021973
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.0772460550069809
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.6251956522464752
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.6839841976761818
+            },
+            {
+              "frame": 771,
+              "block": 16,
+              "delta_mae_8bit": -0.8077150583267212
+            },
+            {
+              "frame": 749,
+              "block": 16,
+              "delta_mae_8bit": -0.8773425221443176
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -0.8924790099263191
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -0.961228720843792
+            },
+            {
+              "frame": 740,
+              "block": 16,
+              "delta_mae_8bit": -0.9662121534347534
+            }
+          ],
+          "temporal_pairs_better_than_v12": 31,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.924687385559082
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.6226954460144043
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.5270442962646484
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.4027540683746338
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 0.391357421875
+            }
+          ]
+        }
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--phase-review--run-b8a7713c6e0f.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "e9d2b9d3c4b6e1a7e18fe2a4a344c4d0dda565727e22fd99140e2683f8554ae3"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/blocks.jsonl",
+        "bytes": 983481,
+        "sha256": "e9d2b9d3c4b6e1a7e18fe2a4a344c4d0dda565727e22fd99140e2683f8554ae3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha0.5-frame-736.png",
+        "bytes": 493007,
+        "sha256": "a516dee0a8075c05360fa095b3b06d2b6e08cf09363f33c0944b71c1ea4ba4d6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha0.5-frame-750.png",
+        "bytes": 494304,
+        "sha256": "ba1f1f39909324303e41231a79be6f1a0ee209513091733fe18c4fd1e5e863a1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha0.5-frame-779.png",
+        "bytes": 499858,
+        "sha256": "7a45b2577a40f99399abf1958a10d5ca548cf43df99990b38b23ec8498309f6b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha0.5-valid.mp4",
+        "bytes": 480288,
+        "sha256": "7b1ef4bbee192ae955eb739fb1bbf93e5af42001b3b93d211841e392fff5f3bb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha0.5.mp4",
+        "bytes": 798926,
+        "sha256": "4850aa85d022ef0dfe48c01a4c16e729b2f638ca97d9298edb2697bd3f686417"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha1-frame-736.png",
+        "bytes": 419600,
+        "sha256": "b3069d6349785053287990af63344e004f75200ad35a7181d9d0783c04098de4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha1-frame-750.png",
+        "bytes": 418957,
+        "sha256": "96574b9264f4c4ed2494acf7102a59ff8e13dcea87e9daaa42595543afdfa3e1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha1-frame-779.png",
+        "bytes": 427327,
+        "sha256": "4f064023bfa944be377016f1123e7aef2972baaa7714f877e5dad6f0fd9c95bc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha1-valid.mp4",
+        "bytes": 420801,
+        "sha256": "dfbad108e86f36f6deca8f75c67873c45071d0b3a9743eb2749dd1dd008a05c2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-best-mae-alpha1.mp4",
+        "bytes": 744055,
+        "sha256": "deb07a63bf58616569570fd1f8709a3d82001e58341c022d9fde577299717778"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 496721,
+        "sha256": "693c00443b3f47ddf1f0def5aae89424641f12166b44e574dd2305442ec7e0c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 498031,
+        "sha256": "f40663c197dd9332c6d9a45e04761df5c34b698cc7ce3debcf14cec22121ba35"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 503230,
+        "sha256": "36eceb7c541c4495f42cc49ab6db7bc157ecc4360a8db4a48a92796fe58c190d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 485197,
+        "sha256": "534b46538472d4974086ac9a93c5b3ab2601f6937855b9873aebd1f63170c276"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 803645,
+        "sha256": "307d74bdd6a6079faa4cf2034169efa7edebde08c1d7d0db843903582e21d005"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 432247,
+        "sha256": "354ee4afcd6efc070ec34e0e2cb8bcfe5acfaf6b2408f058904e88fad5886b91"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 431899,
+        "sha256": "2d5658acdba070d3c592cdf30deb65fd768e08613550d0dbd8d8feacba8a4263"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 439561,
+        "sha256": "abbad373e48e050e9014f14f0a4a360c4624e15811aae87443196a3afbcf4101"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 424609,
+        "sha256": "64c348d82458e9220b1158e0cb2039607c1fa804491c66ddde3389572f6a0473"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-10-alpha1.mp4",
+        "bytes": 750059,
+        "sha256": "a4ea1473876507c955aacc060c97f8ee008d1d393401bec8ac88fdee660b5160"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 492134,
+        "sha256": "43bc13098bb1a18e2996dc6a9c0c5622b3154a9ffd86a2f4ad718e016911b446"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 493250,
+        "sha256": "45215ab8db76427b78cc37200473b23353aabcc32d364b681aeaa7d41db62e84"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 499043,
+        "sha256": "aca39af903e4b6867011aa6a623e75d6a577879ef23b09cd417d7c9ed2ce1362"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 476267,
+        "sha256": "c210292ee815e29a8b2e68be588adfd0893e3b3f24a8f19a4914985d685c753c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 794155,
+        "sha256": "2b154323ac16c982b129626afc6dc0be615b70434486b0cdbf00e35ed233cac8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 415447,
+        "sha256": "17ac4be0a6df6e1a39e6a2d060b9f6d09b7b57bea186072fd131c74041a31380"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 414997,
+        "sha256": "250b5882ead9cc501e1ce6131d16a7c7b106f2f636db0955ff433a29c72b572b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 423604,
+        "sha256": "b003047393a767276bda7d32b7f8b21db0044f7cab0721e6760aa2dac7095cb3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 404731,
+        "sha256": "47f1085c7a3384a2af575340369d8a93089314bc9c52913035e7176e184ce9cb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-20-alpha1.mp4",
+        "bytes": 729988,
+        "sha256": "9645da17dbf3b74c7e0410a33104ce1f5a5a8f120b8661abf48c0888004069c5"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 507675,
+        "sha256": "176604c89d2967d8df6ffa0a4271d0491ff52939869a72695a893e54bc73fc4d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 508650,
+        "sha256": "64b700d11f676f26b4a0693cd9b1044a6d0dab908d1a15b1862492cc7cadb05b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 513103,
+        "sha256": "8f7d1b48708395cc414ef7ecec424a091ca2b5733ade135ccca9d9386d991782"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 506078,
+        "sha256": "7ddaee0e8211528e5f08db9af8939866d3dbefe4f32b3eb640a5a54cd8519c07"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 823515,
+        "sha256": "a8aea283f657da627be5aaf90421f7293d56177865b5fcd2bc16a807f96a5a30"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 462508,
+        "sha256": "eb89a6ef91f072c236008060a858abb9887144521a56c9bb7edf07581d5960ae"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 462499,
+        "sha256": "0f1ab6ced3cb922f710220c2107cacd395f16ed669f9478d84c788cbc89a11c1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 468424,
+        "sha256": "618181034613a242325a5179fe070c4f2b271f84a9c18989011f1616f3561e3c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 453513,
+        "sha256": "cade444f8d1c9b6bf206cf81293f56cb88cfa274015de5d5d67a515513a392a3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/phase-weights-epoch-5-alpha1.mp4",
+        "bytes": 776659,
+        "sha256": "52d6750942e809ceddd73c9eae8368b02c1dafebd2267042f53cad59a6a4f059"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/report.json",
+        "bytes": 49665,
+        "sha256": "acfb95aa984492a7b21c8cbaad98c2bc5c210ee66f3ef123de1ed95383ed4451"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-search-20261122-230255-847/phase-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      }
+    ]
+  }
+}

@@ -40,21 +40,24 @@ def digest(path):
     return value.hexdigest()
 
 
+def atomic_replace(temporary, path):
+    # Windows can deny replacement while another process reads a shared file.
+    for attempt in range(20):
+        try:
+            temporary.replace(path)
+            return
+        except PermissionError:
+            if attempt == 19:
+                raise
+            time.sleep(0.1)
+
+
 def atomic_text(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name+"."+uuid.uuid4().hex+".tmp")
     try:
         temporary.write_text(text, encoding="utf-8")
-        # Windows can briefly deny replacement while another experiment reads
-        # the shared index. Keep the atomic write and retry only sharing errors.
-        for attempt in range(10):
-            try:
-                temporary.replace(path)
-                break
-            except PermissionError:
-                if attempt == 9:
-                    raise
-                time.sleep(0.05)
+        atomic_replace(temporary, path)
     finally:
         temporary.unlink(missing_ok=True)
 
@@ -82,6 +85,7 @@ def source_snapshot(registry):
                     *(MODEL/"v10").rglob("*.py"), *(MODEL/"v10").glob("*.md"),
                     *(MODEL/"v11").glob("*.py"), *(MODEL/"v11").glob("*.md"),
                     *(MODEL/"v12").glob("*.py"), *(MODEL/"v12").glob("*.md"),
+                    *(MODEL/"v13").rglob("*.py"), *(MODEL/"v13").rglob("*.md"), *(MODEL/"v13").glob("*.json"),
                     MODEL/"AGENTS.md", MODEL/"作法.MD", MODEL/"驗收標準.md"])
     hashes = {path.relative_to(MODEL).as_posix(): digest(path) for path in files}
     identifier = hashlib.sha256(json.dumps(hashes, sort_keys=True).encode()).hexdigest()
@@ -91,7 +95,20 @@ def source_snapshot(registry):
         target = destination/path.relative_to(MODEL)
         if not target.exists():
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(path, target)
+            temporary = target.with_name(target.name+"."+uuid.uuid4().hex+".tmp")
+            try:
+                shutil.copy2(path, temporary)
+                if digest(temporary) != hashes[path.relative_to(MODEL).as_posix()]:
+                    raise RuntimeError(f"source changed during capture: {path}")
+                try:
+                    temporary.rename(target)
+                except FileExistsError:
+                    pass
+                except PermissionError:
+                    if not target.exists():
+                        atomic_replace(temporary, target)
+            finally:
+                temporary.unlink(missing_ok=True)
     return {"id": identifier, "directory": relative(destination), "sha256": hashes}
 
 
@@ -108,13 +125,14 @@ def data_sources(args):
     sources = {}
     for name in ("--db", "--val-db", "--decoded-cache", "--val-decoded-cache", "--checkpoint", "--warm-start",
                  "--scene-plan", "--source-video", "--fsr-report", "--fsr-cli", "--reference-checkpoint",
-                 "--candidate-video", "--anchor-checkpoint", "--control-checkpoint"):
+                 "--candidate-video", "--anchor-checkpoint", "--control-checkpoint", "--audit-freeze",
+                 "--native-checkpoint", "--initial-review", "--fade-cache", "--band-ensemble", "--gated-ensemble"):
         value = argument_value(args, name)
         if value is None:
             continue
         # Some options accept a sequence of files.
         values = [value]
-        if name in ("--checkpoint", "--candidate-video") and name in args:
+        if name in ("--checkpoint", "--candidate-video", "--band-ensemble") and name in args:
             values = []
             for item in args[args.index(name)+1:]:
                 if item.startswith("--"):
@@ -163,12 +181,18 @@ def collect_result(kind, output, registry, identifier, final=True):
             result["best_epoch_by_validation_mae"] = best["epoch"]
             result["best_validation"] = best["validation"]
         config = result.get("config", {})
+        budget_status = output/"budget_status.json"
+        if budget_status.exists():
+            result["budget_status"] = read_json(budget_status)
         result["coverage"] = ("unknown" if not config else
+                              "partial_epochs" if budget_status.exists() else
                               "partial_steps" if config.get("max_steps") or config.get("val_steps")
                               else "full_epochs")
         if final:
             result["missing_expected_artifacts"] = [name for name in
-                ("config.json", "metrics.jsonl", "best.pt", "last.pt") if not (output/name).exists()]
+                ("config.json", "metrics.jsonl", "last.pt") if not (output/name).exists()]
+            if not any((output/name).exists() for name in ("best.pt", "best-mae.pt")):
+                result["missing_expected_artifacts"].append("best.pt")
     elif kind == "evaluation" and (output/"report.json").exists():
         result["report"] = read_json(output/"report.json")
         blocks = output/"blocks.jsonl"
@@ -201,10 +225,11 @@ def collect_result(kind, output, registry, identifier, final=True):
     return result
 
 
-def save_record(registry, record):
+def save_record(registry, record, *, index=True):
     record["recorded_at"] = now()
     write_json(registry/"records"/(record["id"]+".json"), record)
-    refresh_index(registry)
+    if index:
+        refresh_index(registry)
 
 
 def refresh_index(registry):
@@ -228,7 +253,9 @@ def refresh_index(registry):
             for path, record in subset:
                 data = record.get("result", {})
                 config, best = data.get("config", {}), data.get("best_validation", {})
-                score = (f"{best['mae_8bit']:.3f} / {best['psnr_raw']:.3f} dB" if best else "—")
+                score = f"{best['mae_8bit']:.3f}" if best else "—"
+                if best and "psnr_raw" in best:
+                    score += f" / {best['psnr_raw']:.3f} dB"
                 available = config.get("validation_samples")
                 evaluated = config.get("validation_selected")
                 if evaluated is None:
@@ -275,7 +302,7 @@ def update_active_record():
     registry, record, output, preexisting = _ACTIVE
     if not preexisting:
         record["result"] = collect_result(record["kind"], output, registry, record["id"], final=False)
-    save_record(registry, record)
+    save_record(registry, record, index=False)
 
 
 def run_logged(kind, function, default_output=None, *, argv=None, registry_root=None):
@@ -300,14 +327,15 @@ def run_logged(kind, function, default_output=None, *, argv=None, registry_root=
               "status": "running", "provenance": "automatic_invocation", "output": relative(output),
               "started_at": now(), "finished_at": None, "cwd": str(Path.cwd()),
               "command_argv": [sys.executable, sys.argv[0], *args],
-              "output_preexisted": preexisting, "source_snapshot": source_snapshot(registry),
+              "output_preexisted": preexisting, "source_snapshot": None,
               "environment": environment()}
-    save_record(registry, record)
+    save_record(registry, record, index=False)
     _ACTIVE = (registry, record, output, preexisting)
     failure = None
     try:
+        record["source_snapshot"] = source_snapshot(registry)
         record["data_sources"] = data_sources(args)
-        save_record(registry, record)
+        save_record(registry, record, index=False)
         value = function()
     except BaseException as error:
         failure = error

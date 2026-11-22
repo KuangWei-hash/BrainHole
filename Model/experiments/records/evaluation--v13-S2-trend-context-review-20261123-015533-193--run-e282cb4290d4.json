@@ -1,0 +1,2831 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v13-S2-trend-context-review-20261123-015533-193--run-e282cb4290d4",
+  "kind": "evaluation",
+  "name": "v13-S2-trend-context-review-20261123-015533-193",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v13-S2-trend-context-review-20261123-015533-193",
+  "started_at": "2026-11-23T01:55:38+08:00",
+  "finished_at": "2026-11-23T01:56:44+08:00",
+  "cwd": "Z:\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "evaluate_v13.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs/v11-q5-20261122-scene-plan.json",
+    "--cache",
+    "runs/v13-S2-cache-20261122-214759-647",
+    "--split",
+    "S2-dev",
+    "--checkpoint",
+    "runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+    "runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+    "runs/v13-S2-trend-context-20261123-012023-210/epoch-5.pt",
+    "runs/v13-S2-trend-context-20261123-012023-210/epoch-10.pt",
+    "runs/v13-S2-trend-context-20261123-012023-210/epoch-20.pt",
+    "runs/v13-S2-trend-context-20261123-012023-210/best-mae.pt",
+    "--alpha",
+    "0.5",
+    "1",
+    "--out",
+    "runs/v13-S2-trend-context-review-20261123-015533-193"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "046f3ae9579cad9262c5c0415cba759ac91e32c52a518d1e954f3a013eef2930",
+    "directory": "Model/experiments/source_snapshots/046f3ae9579cad9262c5c0415cba759ac91e32c52a518d1e954f3a013eef2930",
+    "sha256": {
+      "AGENTS.md": "587c9c84434625f399fe8a8f079e4d1bd89bbaffd6e8cdb47ff29b77a8fbc4d9",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "build_v13_fades.py": "b89aa8dd577e1a27f162acb9e0448ca532469ace212962683d1bd9ab93ee964a",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "check_v13.py": "b6e8fb4ce6c07d6467eae39c14288b5793bc2854a898ddf5189e6d97c986b3e4",
+      "compare_v10_v12_existing.py": "59e285b0531a42369449c567e423647cda309aee6b8c105a0ceaaa0a223afe56",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "026ac00d93572ad8357898ec742ce0ebbe8c08b372d95e5f22cea2f562b422dc",
+      "diagnose_v13_correction.py": "b13c4c984b691864525889b76ac1e5a733a7ebf7418a0d8dc7c54c4f6922533f",
+      "diagnose_v13_history.py": "51a8d56f1b7c0230cf7ffb4822bf991c284281fc0bb3dfb0773b95a31e61a70b",
+      "diagnose_v13_weights.py": "82353004fae24b1e8751cc67cb898b6f6e498a4a03bd76700224bea27c511e74",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "da8316cac3c2cd6d1e31fcd87289ff0e30c07209a5d39b68b0a6b87042004892",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "evaluate_v13.py": "ca23bd37fe2648bf05b3a7460835479df08b93ad902c9d623ffdb01dd05d540e",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "5496aaeddf4afb01fc8f2c5dccaa129b1e4d1b4b349de1a81bca01447e436dbb",
+      "predict_v13.py": "fd257600b99e587168a803e048039e0cd14691d0b49f5a4565c6363ca78271b6",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "0583c182cb87a461ff3b69336a4e0550af1d54bd9142bf5fa114ae6d4ff6ba26",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "run_v13_search.py": "252a910c92dd044c21f66ab8becb031effe11b82d17593ce3130f2ba444b26d0",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "test_v13.py": "a425d74ed81210b6d004bbc57afc458f705d4a67ec4ee6d1c5006324cee2c7e9",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "ccd7ff38c910054d52cc9d1c76846443560c98459a135f169f6abe656e2d0f70",
+      "train_v13.py": "22fbfbcbb0960fdb78c0b246e7631acc574fa5eadd51636e319f64653e4b6894",
+      "train_v13_samples.py": "e296d1e8cc645a1dc48649197f393f7c33e7ab8e7ded63f7600773255018fa6b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "bf475e02c2d7f4de39c83ebe55a87ba30f9a5b91e21d6f02ccbe766b3f3949a0",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+      "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+      "v13/fusion.py": "39775f2df47471b170f1b7844332d7d3cdcc08941d71406c33912d7e51777c2c",
+      "v13/model.py": "0cfb7aaee54b753aeb7031ac844bcadd32b51fc722d99f9268bbb04263678f40",
+      "v13/native.py": "9b94a88c44eff3e2afeea2349269ffac88571a87b21553d1efe9e64b29e75f7c",
+      "v13/pairs.py": "20abeea0a22925ac483b1c4f179ce864060810f8c639cf95232e22a70f82486a",
+      "v13/README.md": "409362237a05f556c0703255f352a78fa7a2d8350b315e4a2baf6e2d35735bb4",
+      "v13/roi-bbb-q5.json": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "v13/s2-bbb-q5-audit-freeze.json": "4265a9f3e5a9bc2e02445f675ebd7f6daeebeab44c7b56598d5c2f0b2f3ba3da",
+      "v13/執行前檢查.md": "1670dc9ce111c5d0b6a2fb0df506a94b18f16497bc8a01c4df459f91fd82bb75",
+      "v13/實作清單.md": "b90f07ce145b19a81803733eff76c0bb75855e0d67717e44a268d150e6f4c888",
+      "v13/實驗與驗收計畫.md": "a64d1dd6ae3e6147ed27fbd622831d06dc49de9d4297abc5e134047181c5136d",
+      "v13/文獻對照.md": "864c005922841e0d430d16c391c81fd1d856dd70dc9e7298b80248fbf9763f1c",
+      "v13/設計決策.md": "f82174edda7bcf76377993997bff0e2881ae5424da188e9c0f43ef94d2d19d17",
+      "v13/設計規格.md": "f9f0dd8860436074e9a2e013c8e5c1774aad2d7f1f5566795e2383584746170e",
+      "v13/逐幀融合試驗.md": "7afcd6ebe0399fa4324f6047cdc849bc46c8fbe682519bf29defd701a15458b0",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "recorded_at": "2026-11-23T01:56:46+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+        "bytes": 322217,
+        "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03"
+      },
+      {
+        "path": "Model/runs/v13-S2-R2-frames-trend-20261123-005305-380/best-mae.pt",
+        "bytes": 480089,
+        "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-20261123-012023-210/epoch-5.pt",
+        "bytes": 480103,
+        "sha256": "3d0914895c0541d664c3b5fd1ba3e915874b9b1c636025c23cd96626a06c5d42"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-20261123-012023-210/epoch-10.pt",
+        "bytes": 480153,
+        "sha256": "e17f8674bec8bdccbcef7962e3281b9dca63a2c44944d3098de9a53200ff33bd"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-20261123-012023-210/epoch-20.pt",
+        "bytes": 480153,
+        "sha256": "57d766220cdbefb2b672fb1cbca6629cb63132c2ac796887844fe981531c2bbc"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-20261123-012023-210/best-mae.pt",
+        "bytes": 480153,
+        "sha256": "e2b2b508d2c41d516ec3ecd193b5f5c4e04289bca37d6b8b2f460759c4fcc7a5"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/v11-q5-20261122-scene-plan.json",
+        "bytes": 14443,
+        "sha256": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "split": "S2-dev",
+      "source_range": [
+        721,
+        779
+      ],
+      "scored_range": [
+        736,
+        779
+      ],
+      "samples": 1320,
+      "start_frame": 736,
+      "scored_strips": 1320,
+      "warmup_strips": 450,
+      "provenance": {
+        "db": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb",
+        "scene": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7",
+        "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+        "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+        "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+        "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d"
+      },
+      "roi_sha256": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "audit_freeze_sha256": null,
+      "seam_cfa_rows": [
+        7,
+        15,
+        23,
+        31,
+        39,
+        47,
+        55,
+        63,
+        71,
+        79,
+        87,
+        95,
+        103,
+        111,
+        119,
+        127,
+        135,
+        143,
+        151,
+        159,
+        167,
+        175,
+        183,
+        191,
+        199,
+        207,
+        215,
+        223,
+        231
+      ],
+      "methods": {
+        "v12": {
+          "raw": {
+            "mae_8bit": 15.197977694598112,
+            "psnr": 21.65039812130614
+          },
+          "rgb": {
+            "mae_8bit": 12.843082630273067,
+            "psnr": 23.067337452936414
+          },
+          "exact_raw_fraction": 0.02415919490158558,
+          "pairs": 43,
+          "temporal": 3.90689754486084,
+          "gradient_x_mae": 15.471430778503418,
+          "gradient_y_mae": 15.929133415222168,
+          "low_frequency_mae": 9.116943729285039,
+          "high_frequency_mae": 11.70705196496212,
+          "boundary_mae": 16.31626319885254,
+          "inside_mae": 15.875672340393066,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 15.825976371765137,
+              "rgb_mae": 13.301733434200287,
+              "temporal": 5.219916343688965,
+              "gradient_mae": 17.04049301147461
+            },
+            "grass-sunlight": {
+              "raw_mae": 15.73558235168457,
+              "rgb_mae": 13.308794405311346,
+              "temporal": 6.169086933135986,
+              "gradient_mae": 15.185301780700684
+            },
+            "root-and-hole": {
+              "raw_mae": 16.906497955322266,
+              "rgb_mae": 14.531309455633163,
+              "temporal": 4.02274227142334,
+              "gradient_mae": 16.528024673461914
+            },
+            "root-strip-boundary": {
+              "raw_mae": 21.136024475097656,
+              "rgb_mae": 18.736969381570816,
+              "temporal": 5.339873313903809,
+              "gradient_mae": 20.060028076171875
+            },
+            "canopy": {
+              "raw_mae": 17.382762908935547,
+              "rgb_mae": 15.055174995213747,
+              "temporal": 4.250828266143799,
+              "gradient_mae": 16.700153350830078
+            },
+            "title-when-visible": {
+              "raw_mae": 23.158384323120117,
+              "rgb_mae": 20.761502645909786,
+              "temporal": 5.570156574249268,
+              "gradient_mae": 19.58187484741211
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 1,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 2,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 3,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 4,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 5,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 6,
+              "delta_mae_8bit": 0.0
+            },
+            {
+              "frame": 736,
+              "block": 7,
+              "delta_mae_8bit": 0.0
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                736,
+                737
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                738,
+                739
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                739,
+                740
+              ],
+              "delta": 0.0
+            },
+            {
+              "frames": [
+                740,
+                741
+              ],
+              "delta": 0.0
+            }
+          ]
+        },
+        "unsharp": {
+          "raw": {
+            "mae_8bit": 17.918686311895197,
+            "psnr": 20.31299922576602
+          },
+          "rgb": {
+            "mae_8bit": 14.284823787573611,
+            "psnr": 22.16429712363506
+          },
+          "exact_raw_fraction": 0.02038862742483616,
+          "pairs": 43,
+          "temporal": 4.692089080810547,
+          "gradient_x_mae": 20.17768096923828,
+          "gradient_y_mae": 21.078601837158203,
+          "low_frequency_mae": 9.219909150094697,
+          "high_frequency_mae": 15.033787582859848,
+          "boundary_mae": 20.1198673248291,
+          "inside_mae": 21.210996627807617,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 19.259689331054688,
+              "rgb_mae": 15.272492934018373,
+              "temporal": 5.855269432067871,
+              "gradient_mae": 22.926246643066406
+            },
+            "grass-sunlight": {
+              "raw_mae": 18.229705810546875,
+              "rgb_mae": 14.671931359916925,
+              "temporal": 6.81959342956543,
+              "gradient_mae": 19.60755157470703
+            },
+            "root-and-hole": {
+              "raw_mae": 19.715835571289062,
+              "rgb_mae": 15.87883684784174,
+              "temporal": 5.18060827255249,
+              "gradient_mae": 22.039875030517578
+            },
+            "root-strip-boundary": {
+              "raw_mae": 24.229101181030273,
+              "rgb_mae": 20.11049497872591,
+              "temporal": 6.9131293296813965,
+              "gradient_mae": 26.600757598876953
+            },
+            "canopy": {
+              "raw_mae": 20.241064071655273,
+              "rgb_mae": 16.546301431953907,
+              "temporal": 5.320375442504883,
+              "gradient_mae": 22.135929107666016
+            },
+            "title-when-visible": {
+              "raw_mae": 26.057836532592773,
+              "rgb_mae": 22.04549554735422,
+              "temporal": 7.287142753601074,
+              "gradient_mae": 25.966541290283203
+            }
+          },
+          "wins_vs_v12": 0,
+          "worst_keys": [
+            {
+              "frame": 737,
+              "block": 16,
+              "delta_mae_8bit": 3.714649323374033
+            },
+            {
+              "frame": 737,
+              "block": 0,
+              "delta_mae_8bit": 3.709571845829487
+            },
+            {
+              "frame": 736,
+              "block": 16,
+              "delta_mae_8bit": 3.6693358048796654
+            },
+            {
+              "frame": 753,
+              "block": 16,
+              "delta_mae_8bit": 3.6596672236919403
+            },
+            {
+              "frame": 754,
+              "block": 16,
+              "delta_mae_8bit": 3.652341216802597
+            },
+            {
+              "frame": 736,
+              "block": 0,
+              "delta_mae_8bit": 3.64550918340683
+            },
+            {
+              "frame": 738,
+              "block": 16,
+              "delta_mae_8bit": 3.6405276507139206
+            },
+            {
+              "frame": 738,
+              "block": 0,
+              "delta_mae_8bit": 3.64033006131649
+            }
+          ],
+          "temporal_pairs_better_than_v12": 0,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": 1.0123047828674316
+            },
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 0.9788153171539307
+            },
+            {
+              "frames": [
+                777,
+                778
+              ],
+              "delta": 0.9769270420074463
+            },
+            {
+              "frames": [
+                774,
+                775
+              ],
+              "delta": 0.9764776229858398
+            },
+            {
+              "frames": [
+                773,
+                774
+              ],
+              "delta": 0.9499316215515137
+            }
+          ]
+        },
+        "v13-S2-R2-20261122-215155-129-best-mae-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-20261122-215155-129\\best-mae.pt",
+          "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03",
+          "epoch": 17,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2",
+          "clipped": 8.766867897727272e-05,
+          "delta_rms": 7.055612311808877,
+          "delta_max": 72.1871337890625,
+          "raw": {
+            "mae_8bit": 12.606480715491553,
+            "psnr": 23.369401184427137
+          },
+          "rgb": {
+            "mae_8bit": 10.937549862717137,
+            "psnr": 24.654527406097067
+          },
+          "exact_raw_fraction": 0.028526796028017998,
+          "pairs": 43,
+          "temporal": 3.5485641956329346,
+          "gradient_x_mae": 12.337528228759766,
+          "gradient_y_mae": 12.039663314819336,
+          "low_frequency_mae": 7.722907492897727,
+          "high_frequency_mae": 9.352623401988636,
+          "boundary_mae": 13.795369148254395,
+          "inside_mae": 11.797208786010742,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.628332138061523,
+              "rgb_mae": 10.989533755928278,
+              "temporal": 4.882623672485352,
+              "gradient_mae": 12.588508605957031
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.480131149291992,
+              "rgb_mae": 11.79841535165906,
+              "temporal": 5.823015213012695,
+              "gradient_mae": 11.828113555908203
+            },
+            "root-and-hole": {
+              "raw_mae": 13.858467102050781,
+              "rgb_mae": 12.211183402687311,
+              "temporal": 3.3632547855377197,
+              "gradient_mae": 12.563054084777832
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.64837646484375,
+              "rgb_mae": 15.97921036183834,
+              "temporal": 4.33995246887207,
+              "gradient_mae": 15.307003021240234
+            },
+            "canopy": {
+              "raw_mae": 13.921438217163086,
+              "rgb_mae": 12.21103236079216,
+              "temporal": 3.689504623413086,
+              "gradient_mae": 12.554203033447266
+            },
+            "title-when-visible": {
+              "raw_mae": 18.3331356048584,
+              "rgb_mae": 16.45404428243637,
+              "temporal": 4.5655035972595215,
+              "gradient_mae": 14.50545883178711
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.3068372756242752
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.4886746183037758
+            },
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.5406244806945324
+            },
+            {
+              "frame": 777,
+              "block": 11,
+              "delta_mae_8bit": -1.5532255545258522
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.562989130616188
+            },
+            {
+              "frame": 745,
+              "block": 11,
+              "delta_mae_8bit": -1.5660156682133675
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.569237895309925
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.5696283243596554
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 0.2475261688232422
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.005618572235107422
+            },
+            {
+              "frames": [
+                759,
+                760
+              ],
+              "delta": -0.020104408264160156
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.03758120536804199
+            },
+            {
+              "frames": [
+                742,
+                743
+              ],
+              "delta": -0.04193687438964844
+            }
+          ]
+        },
+        "v13-S2-R2-20261122-215155-129-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-20261122-215155-129\\best-mae.pt",
+          "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03",
+          "epoch": 17,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2",
+          "clipped": 0.0004639411695075758,
+          "delta_rms": 14.111224634103309,
+          "delta_max": 144.37425231933594,
+          "raw": {
+            "mae_8bit": 11.626037740707398,
+            "psnr": 24.092244443723896
+          },
+          "rgb": {
+            "mae_8bit": 10.253519306760847,
+            "psnr": 25.293089625655792
+          },
+          "exact_raw_fraction": 0.030652521178126335,
+          "pairs": 43,
+          "temporal": 3.6659536361694336,
+          "gradient_x_mae": 10.975489616394043,
+          "gradient_y_mae": 10.176642417907715,
+          "low_frequency_mae": 7.201336447975852,
+          "high_frequency_mae": 8.408583762428977,
+          "boundary_mae": 13.049668312072754,
+          "inside_mae": 9.779890060424805,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 11.1231107711792,
+              "rgb_mae": 10.043131839483976,
+              "temporal": 4.807122230529785,
+              "gradient_mae": 9.866353988647461
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.281593322753906,
+              "rgb_mae": 10.97615847364068,
+              "temporal": 5.689014434814453,
+              "gradient_mae": 9.777751922607422
+            },
+            "root-and-hole": {
+              "raw_mae": 12.718964576721191,
+              "rgb_mae": 11.271374132484198,
+              "temporal": 3.4331247806549072,
+              "gradient_mae": 11.055267333984375
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.11907196044922,
+              "rgb_mae": 14.586350452154875,
+              "temporal": 4.289073467254639,
+              "gradient_mae": 13.462841033935547
+            },
+            "canopy": {
+              "raw_mae": 12.095107078552246,
+              "rgb_mae": 10.728708151727915,
+              "temporal": 3.830192804336548,
+              "gradient_mae": 10.256204605102539
+            },
+            "title-when-visible": {
+              "raw_mae": 15.447449684143066,
+              "rgb_mae": 13.71602425351739,
+              "temporal": 4.926239967346191,
+              "gradient_mae": 11.997476577758789
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.04365205764770508
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.4687485471367836
+            },
+            {
+              "frame": 777,
+              "block": 16,
+              "delta_mae_8bit": -0.896972268819809
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.046874225139618
+            },
+            {
+              "frame": 747,
+              "block": 16,
+              "delta_mae_8bit": -1.1283200047910213
+            },
+            {
+              "frame": 748,
+              "block": 16,
+              "delta_mae_8bit": -1.1602525413036346
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -1.1778322979807854
+            },
+            {
+              "frame": 765,
+              "block": 16,
+              "delta_mae_8bit": -1.2094732001423836
+            }
+          ],
+          "temporal_pairs_better_than_v12": 36,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                762,
+                763
+              ],
+              "delta": 1.0509116649627686
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": 0.43346357345581055
+            },
+            {
+              "frames": [
+                742,
+                743
+              ],
+              "delta": 0.38666653633117676
+            },
+            {
+              "frames": [
+                759,
+                760
+              ],
+              "delta": 0.3826007843017578
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.32245445251464844
+            }
+          ]
+        },
+        "v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+          "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+          "epoch": 16,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.0003306255918560606,
+          "delta_rms": 7.770349315668623,
+          "delta_max": 77.5225830078125,
+          "raw": {
+            "mae_8bit": 12.147230633822355,
+            "psnr": 23.69624941102366
+          },
+          "rgb": {
+            "mae_8bit": 10.434705179387873,
+            "psnr": 25.07084586347532
+          },
+          "exact_raw_fraction": 0.029777536168694496,
+          "pairs": 43,
+          "temporal": 3.3424110412597656,
+          "gradient_x_mae": 12.265519142150879,
+          "gradient_y_mae": 11.903535842895508,
+          "low_frequency_mae": 7.101502426609849,
+          "high_frequency_mae": 9.277038056344697,
+          "boundary_mae": 13.439371109008789,
+          "inside_mae": 11.691444396972656,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.165223121643066,
+              "rgb_mae": 10.496768597513437,
+              "temporal": 4.741049766540527,
+              "gradient_mae": 12.36778450012207
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.898690223693848,
+              "rgb_mae": 11.241850666701794,
+              "temporal": 5.71245813369751,
+              "gradient_mae": 11.699838638305664
+            },
+            "root-and-hole": {
+              "raw_mae": 13.283007621765137,
+              "rgb_mae": 11.643095836043358,
+              "temporal": 3.104597806930542,
+              "gradient_mae": 12.430184364318848
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.776952743530273,
+              "rgb_mae": 15.116585399955511,
+              "temporal": 4.060154438018799,
+              "gradient_mae": 15.15772819519043
+            },
+            "canopy": {
+              "raw_mae": 13.142477035522461,
+              "rgb_mae": 11.38119013980031,
+              "temporal": 3.4223313331604004,
+              "gradient_mae": 12.438858032226562
+            },
+            "title-when-visible": {
+              "raw_mae": 17.123510360717773,
+              "rgb_mae": 15.276287030428648,
+              "temporal": 4.131453990936279,
+              "gradient_mae": 14.324447631835938
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.6109368577599525
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.6626976802945137
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.6777344234287739
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.6830085404217243
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.686230767518282
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.6889647208154202
+            },
+            {
+              "frame": 746,
+              "block": 13,
+              "delta_mae_8bit": -1.7049789614975452
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.7155271954834461
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.2571256160736084
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.3026660680770874
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.30410802364349365
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.3471028804779053
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.37993478775024414
+            }
+          ]
+        },
+        "v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-R2-frames-trend-20261123-005305-380\\best-mae.pt",
+          "sha256": "517f48b7b009aecfb1c68b9062b119b9ba3ec4218c972f931a345b09fd690d1f",
+          "epoch": 16,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.0015742631392045455,
+          "delta_rms": 15.54069868846364,
+          "delta_max": 155.04518127441406,
+          "raw": {
+            "mae_8bit": 10.894310387698086,
+            "psnr": 24.492082363655804
+          },
+          "rgb": {
+            "mae_8bit": 9.451607094389018,
+            "psnr": 25.803662259607293
+          },
+          "exact_raw_fraction": 0.033907804638147354,
+          "pairs": 43,
+          "temporal": 3.286867618560791,
+          "gradient_x_mae": 10.907569885253906,
+          "gradient_y_mae": 9.993494033813477,
+          "low_frequency_mae": 6.23303603663589,
+          "high_frequency_mae": 8.343322310014205,
+          "boundary_mae": 12.715211868286133,
+          "inside_mae": 9.617637634277344,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.099658012390137,
+              "rgb_mae": 8.865134250372648,
+              "temporal": 4.592904567718506,
+              "gradient_mae": 9.562328338623047
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.691000938415527,
+              "rgb_mae": 10.406244155019522,
+              "temporal": 5.577648639678955,
+              "gradient_mae": 9.619121551513672
+            },
+            "root-and-hole": {
+              "raw_mae": 11.99382495880127,
+              "rgb_mae": 10.610474646091461,
+              "temporal": 3.0560314655303955,
+              "gradient_mae": 10.955013275146484
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.012642860412598,
+              "rgb_mae": 13.567685913294554,
+              "temporal": 3.898765802383423,
+              "gradient_mae": 13.439213752746582
+            },
+            "canopy": {
+              "raw_mae": 10.943778038024902,
+              "rgb_mae": 9.555124025791883,
+              "temporal": 3.264732837677002,
+              "gradient_mae": 10.127103805541992
+            },
+            "title-when-visible": {
+              "raw_mae": 13.855350494384766,
+              "rgb_mae": 12.332574538886547,
+              "temporal": 3.867436647415161,
+              "gradient_mae": 11.87191390991211
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.7605443894863129
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.8838838711380959
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.9809572622179985
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.9884770587086678
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.99101722240448
+            },
+            {
+              "frame": 744,
+              "block": 16,
+              "delta_mae_8bit": -1.2581058405339718
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.2809568643569946
+            },
+            {
+              "frame": 759,
+              "block": 16,
+              "delta_mae_8bit": -1.3669918477535248
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.07654619216918945
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.08873367309570312
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.11213207244873047
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.12334954738616943
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.15369462966918945
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\epoch-5.pt",
+          "sha256": "3d0914895c0541d664c3b5fd1ba3e915874b9b1c636025c23cd96626a06c5d42",
+          "epoch": 5,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.00048731948390151516,
+          "delta_rms": 6.942687363925799,
+          "delta_max": 66.77680206298828,
+          "raw": {
+            "mae_8bit": 12.62590015151284,
+            "psnr": 23.371223230683658
+          },
+          "rgb": {
+            "mae_8bit": 10.806158557082668,
+            "psnr": 24.766363221054704
+          },
+          "exact_raw_fraction": 0.02851836197078228,
+          "pairs": 43,
+          "temporal": 3.3982486724853516,
+          "gradient_x_mae": 12.786182403564453,
+          "gradient_y_mae": 12.503029823303223,
+          "low_frequency_mae": 7.4020768968986745,
+          "high_frequency_mae": 9.60327000473485,
+          "boundary_mae": 14.095789909362793,
+          "inside_mae": 12.283077239990234,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.631875038146973,
+              "rgb_mae": 10.84747837856412,
+              "temporal": 4.807335376739502,
+              "gradient_mae": 13.106351852416992
+            },
+            "grass-sunlight": {
+              "raw_mae": 13.065837860107422,
+              "rgb_mae": 11.335643883794546,
+              "temporal": 5.738278865814209,
+              "gradient_mae": 11.992471694946289
+            },
+            "root-and-hole": {
+              "raw_mae": 13.799816131591797,
+              "rgb_mae": 11.999088283628225,
+              "temporal": 3.164121150970459,
+              "gradient_mae": 13.024771690368652
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.328956604003906,
+              "rgb_mae": 15.457922033965588,
+              "temporal": 4.090552806854248,
+              "gradient_mae": 15.82638168334961
+            },
+            "canopy": {
+              "raw_mae": 13.850981712341309,
+              "rgb_mae": 11.940474528819323,
+              "temporal": 3.4717071056365967,
+              "gradient_mae": 13.13459587097168
+            },
+            "title-when-visible": {
+              "raw_mae": 18.19932746887207,
+              "rgb_mae": 16.220693103969097,
+              "temporal": 4.1587018966674805,
+              "gradient_mae": 14.977709770202637
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.2553699873387814
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.2940443120896816
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.301855742931366
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.3109372556209564
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.323632374405861
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.3400389440357685
+            },
+            {
+              "frame": 741,
+              "block": 13,
+              "delta_mae_8bit": -1.343947034329176
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.3462905585765839
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.2040233612060547
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.2160090208053589
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.25243818759918213
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.2802473306655884
+            },
+            {
+              "frames": [
+                736,
+                737
+              ],
+              "delta": -0.3277735710144043
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\epoch-5.pt",
+          "sha256": "3d0914895c0541d664c3b5fd1ba3e915874b9b1c636025c23cd96626a06c5d42",
+          "epoch": 5,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.0021272046638257575,
+          "delta_rms": 13.88537469055523,
+          "delta_max": 133.5535888671875,
+          "raw": {
+            "mae_8bit": 11.494378904862836,
+            "psnr": 24.15335080998745
+          },
+          "rgb": {
+            "mae_8bit": 9.942850188053015,
+            "psnr": 25.487413433318338
+          },
+          "exact_raw_fraction": 0.03153475746512413,
+          "pairs": 43,
+          "temporal": 3.4142346382141113,
+          "gradient_x_mae": 11.50759220123291,
+          "gradient_y_mae": 10.739123344421387,
+          "low_frequency_mae": 6.638388449928978,
+          "high_frequency_mae": 8.710492202296402,
+          "boundary_mae": 13.519204139709473,
+          "inside_mae": 10.355208396911621,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.801840782165527,
+              "rgb_mae": 9.457636456936598,
+              "temporal": 4.759101867675781,
+              "gradient_mae": 10.586423873901367
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.94823169708252,
+              "rgb_mae": 10.718218814581633,
+              "temporal": 5.6158246994018555,
+              "gradient_mae": 10.07094955444336
+            },
+            "root-and-hole": {
+              "raw_mae": 12.546049118041992,
+              "rgb_mae": 10.95296261832118,
+              "temporal": 3.1778147220611572,
+              "gradient_mae": 11.613241195678711
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.556292533874512,
+              "rgb_mae": 13.798325937241316,
+              "temporal": 3.9305193424224854,
+              "gradient_mae": 14.212099075317383
+            },
+            "canopy": {
+              "raw_mae": 11.844651222229004,
+              "rgb_mae": 10.222102236002684,
+              "temporal": 3.3445303440093994,
+              "gradient_mae": 11.111106872558594
+            },
+            "title-when-visible": {
+              "raw_mae": 15.133419036865234,
+              "rgb_mae": 13.33287751302123,
+              "temporal": 3.7900137901306152,
+              "gradient_mae": 12.629697799682617
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.15068281441926956
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.40390312671661377
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.5379903316497803
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.6923817470669746
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -0.7643555849790573
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.8242185227572918
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -0.8532233163714409
+            },
+            {
+              "frame": 739,
+              "block": 17,
+              "delta_mae_8bit": -0.9547852165997028
+            }
+          ],
+          "temporal_pairs_better_than_v12": 39,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.2427375316619873
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.11388349533081055
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": 0.0787498950958252
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": 0.025888681411743164
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.03991532325744629
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\epoch-10.pt",
+          "sha256": "e17f8674bec8bdccbcef7962e3281b9dca63a2c44944d3098de9a53200ff33bd",
+          "epoch": 10,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.00045876242897727274,
+          "delta_rms": 7.322960754338113,
+          "delta_max": 68.29258728027344,
+          "raw": {
+            "mae_8bit": 12.361384599859065,
+            "psnr": 23.529005975250605
+          },
+          "rgb": {
+            "mae_8bit": 10.634205338449188,
+            "psnr": 24.878509310011022
+          },
+          "exact_raw_fraction": 0.029370708391070366,
+          "pairs": 43,
+          "temporal": 3.3507673740386963,
+          "gradient_x_mae": 12.36270809173584,
+          "gradient_y_mae": 12.042898178100586,
+          "low_frequency_mae": 7.348899961529356,
+          "high_frequency_mae": 9.340553533380682,
+          "boundary_mae": 13.673932075500488,
+          "inside_mae": 11.817659378051758,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.275162696838379,
+              "rgb_mae": 10.600725319236517,
+              "temporal": 4.755537033081055,
+              "gradient_mae": 12.50871467590332
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.930133819580078,
+              "rgb_mae": 11.27969378605485,
+              "temporal": 5.699275970458984,
+              "gradient_mae": 11.718914031982422
+            },
+            "root-and-hole": {
+              "raw_mae": 13.593892097473145,
+              "rgb_mae": 11.932021882385015,
+              "temporal": 3.103705406188965,
+              "gradient_mae": 12.565742492675781
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.204463958740234,
+              "rgb_mae": 15.530543737113476,
+              "temporal": 4.021900653839111,
+              "gradient_mae": 15.315414428710938
+            },
+            "canopy": {
+              "raw_mae": 13.600410461425781,
+              "rgb_mae": 11.81368863210082,
+              "temporal": 3.418710708618164,
+              "gradient_mae": 12.595565795898438
+            },
+            "title-when-visible": {
+              "raw_mae": 17.90898323059082,
+              "rgb_mae": 16.08402393758297,
+              "temporal": 4.112267971038818,
+              "gradient_mae": 14.49044418334961
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.440917830914259
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.472169253975153
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.4792976714670658
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.5178694017231464
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.5250006690621376
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.5584968216717243
+            },
+            {
+              "frame": 741,
+              "block": 13,
+              "delta_mae_8bit": -1.5685558319091797
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.570409182459116
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.2564356327056885
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.26040029525756836
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.30922532081604004
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.34906232357025146
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.3716243505477905
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\epoch-10.pt",
+          "sha256": "e17f8674bec8bdccbcef7962e3281b9dca63a2c44944d3098de9a53200ff33bd",
+          "epoch": 10,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.002242838541666667,
+          "delta_rms": 14.645921549087207,
+          "delta_max": 136.58518981933594,
+          "raw": {
+            "mae_8bit": 11.186616017601708,
+            "psnr": 24.33956676082888
+          },
+          "rgb": {
+            "mae_8bit": 9.731057591871782,
+            "psnr": 25.634887519445876
+          },
+          "exact_raw_fraction": 0.032687246799468994,
+          "pairs": 43,
+          "temporal": 3.325328826904297,
+          "gradient_x_mae": 10.997359275817871,
+          "gradient_y_mae": 10.141672134399414,
+          "low_frequency_mae": 6.588201571377841,
+          "high_frequency_mae": 8.402786754261363,
+          "boundary_mae": 12.971250534057617,
+          "inside_mae": 9.750921249389648,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.36933708190918,
+              "rgb_mae": 9.152855761349201,
+              "temporal": 4.661670684814453,
+              "gradient_mae": 9.747917175292969
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.861098289489746,
+              "rgb_mae": 10.66191153600812,
+              "temporal": 5.540113925933838,
+              "gradient_mae": 9.66089916229248
+            },
+            "root-and-hole": {
+              "raw_mae": 12.327580451965332,
+              "rgb_mae": 10.8898451551795,
+              "temporal": 3.053661584854126,
+              "gradient_mae": 11.088021278381348
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.454479217529297,
+              "rgb_mae": 13.954128976911306,
+              "temporal": 3.7745556831359863,
+              "gradient_mae": 13.597175598144531
+            },
+            "canopy": {
+              "raw_mae": 11.574241638183594,
+              "rgb_mae": 10.13250494375825,
+              "temporal": 3.242264986038208,
+              "gradient_mae": 10.315196990966797
+            },
+            "title-when-visible": {
+              "raw_mae": 14.741049766540527,
+              "rgb_mae": 13.13802681863308,
+              "temporal": 3.7280824184417725,
+              "gradient_mae": 11.998102188110352
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -1.0616212338209152
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -1.1832033097743988
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.1861339025199413
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -1.2721660360693932
+            },
+            {
+              "frame": 750,
+              "block": 18,
+              "delta_mae_8bit": -1.2953115440905094
+            },
+            {
+              "frame": 751,
+              "block": 18,
+              "delta_mae_8bit": -1.312696561217308
+            },
+            {
+              "frame": 749,
+              "block": 18,
+              "delta_mae_8bit": -1.4275387488305569
+            },
+            {
+              "frame": 755,
+              "block": 17,
+              "delta_mae_8bit": -1.4392582699656487
+            }
+          ],
+          "temporal_pairs_better_than_v12": 41,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.13149738311767578
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": 0.02699875831604004
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.037539005279541016
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.11109709739685059
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.11296868324279785
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\epoch-20.pt",
+          "sha256": "57d766220cdbefb2b672fb1cbca6629cb63132c2ac796887844fe981531c2bbc",
+          "epoch": 20,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.00012369791666666668,
+          "delta_rms": 7.5109488298426506,
+          "delta_max": 74.94950866699219,
+          "raw": {
+            "mae_8bit": 12.258836863257669,
+            "psnr": 23.613415852320646
+          },
+          "rgb": {
+            "mae_8bit": 10.584658871275005,
+            "psnr": 24.944420410688952
+          },
+          "exact_raw_fraction": 0.02945408597588539,
+          "pairs": 43,
+          "temporal": 3.354844570159912,
+          "gradient_x_mae": 12.23678207397461,
+          "gradient_y_mae": 11.9036865234375,
+          "low_frequency_mae": 7.235829153349905,
+          "high_frequency_mae": 9.27049375591856,
+          "boundary_mae": 13.379558563232422,
+          "inside_mae": 11.699875831604004,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.166699409484863,
+              "rgb_mae": 10.515405647456646,
+              "temporal": 4.7409749031066895,
+              "gradient_mae": 12.340978622436523
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.783530235290527,
+              "rgb_mae": 11.107403431087732,
+              "temporal": 5.7121076583862305,
+              "gradient_mae": 11.703290939331055
+            },
+            "root-and-hole": {
+              "raw_mae": 13.452703475952148,
+              "rgb_mae": 11.804969999939203,
+              "temporal": 3.1266679763793945,
+              "gradient_mae": 12.43295669555664
+            },
+            "root-strip-boundary": {
+              "raw_mae": 17.053787231445312,
+              "rgb_mae": 15.376423057168722,
+              "temporal": 4.082886695861816,
+              "gradient_mae": 15.17264175415039
+            },
+            "canopy": {
+              "raw_mae": 13.353069305419922,
+              "rgb_mae": 11.659430209547281,
+              "temporal": 3.4426910877227783,
+              "gradient_mae": 12.436322212219238
+            },
+            "title-when-visible": {
+              "raw_mae": 17.641660690307617,
+              "rgb_mae": 15.831020213663578,
+              "temporal": 4.169620990753174,
+              "gradient_mae": 14.36929988861084
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.636816319078207
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.6905273869633675
+            },
+            {
+              "frame": 746,
+              "block": 13,
+              "delta_mae_8bit": -1.6992175206542015
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.7094750702381134
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.7146494425833225
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.7236331105232239
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.7265627533197403
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.7320306599140167
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.26331377029418945
+            },
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.2648794651031494
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.308635950088501
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.35383450984954834
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.3612011671066284
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\epoch-20.pt",
+          "sha256": "57d766220cdbefb2b672fb1cbca6629cb63132c2ac796887844fe981531c2bbc",
+          "epoch": 20,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.0010266483191287879,
+          "delta_rms": 15.021897639985523,
+          "delta_max": 149.89903259277344,
+          "raw": {
+            "mae_8bit": 11.018534261530096,
+            "psnr": 24.439363914828462
+          },
+          "rgb": {
+            "mae_8bit": 9.623655770041726,
+            "psnr": 25.69542230036275
+          },
+          "exact_raw_fraction": 0.033129364252090454,
+          "pairs": 43,
+          "temporal": 3.2625551223754883,
+          "gradient_x_mae": 10.856345176696777,
+          "gradient_y_mae": 9.933427810668945,
+          "low_frequency_mae": 6.396501686789772,
+          "high_frequency_mae": 8.300568551728219,
+          "boundary_mae": 12.506138801574707,
+          "inside_mae": 9.57814884185791,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.03781509399414,
+              "rgb_mae": 8.814293928444386,
+              "temporal": 4.55247688293457,
+              "gradient_mae": 9.506721496582031
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.64140510559082,
+              "rgb_mae": 10.421663727611303,
+              "temporal": 5.554990768432617,
+              "gradient_mae": 9.581666946411133
+            },
+            "root-and-hole": {
+              "raw_mae": 12.124131202697754,
+              "rgb_mae": 10.707704778760672,
+              "temporal": 3.0139825344085693,
+              "gradient_mae": 10.9149751663208
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.283186912536621,
+              "rgb_mae": 13.782760072499514,
+              "temporal": 3.8530824184417725,
+              "gradient_mae": 13.405787467956543
+            },
+            "canopy": {
+              "raw_mae": 11.092489242553711,
+              "rgb_mae": 9.739848263561726,
+              "temporal": 3.2419509887695312,
+              "gradient_mae": 10.086959838867188
+            },
+            "title-when-visible": {
+              "raw_mae": 14.38844108581543,
+              "rgb_mae": 12.876922879368067,
+              "temporal": 3.8263745307922363,
+              "gradient_mae": 11.838696479797363
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.6303728744387627
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.6956039741635323
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.9175785630941391
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.9514651447534561
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -1.0628913156688213
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.1744143813848495
+            },
+            {
+              "frame": 759,
+              "block": 17,
+              "delta_mae_8bit": -1.182032972574234
+            },
+            {
+              "frame": 776,
+              "block": 16,
+              "delta_mae_8bit": -1.197950318455696
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.01935553550720215
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.047106027603149414
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.18844389915466309
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.19631505012512207
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.27448880672454834
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\best-mae.pt",
+          "sha256": "e2b2b508d2c41d516ec3ecd193b5f5c4e04289bca37d6b8b2f460759c4fcc7a5",
+          "epoch": 16,
+          "alpha": 0.5,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.00021750710227272726,
+          "delta_rms": 7.842339319810327,
+          "delta_max": 77.32149505615234,
+          "raw": {
+            "mae_8bit": 12.139086081764916,
+            "psnr": 23.708999210910253
+          },
+          "rgb": {
+            "mae_8bit": 10.43210558457808,
+            "psnr": 25.08440695896582
+          },
+          "exact_raw_fraction": 0.029734330251812935,
+          "pairs": 43,
+          "temporal": 3.3531124591827393,
+          "gradient_x_mae": 12.260356903076172,
+          "gradient_y_mae": 11.924379348754883,
+          "low_frequency_mae": 7.067862511837121,
+          "high_frequency_mae": 9.276140802556819,
+          "boundary_mae": 13.471272468566895,
+          "inside_mae": 11.710762023925781,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 12.113678932189941,
+              "rgb_mae": 10.421490836888552,
+              "temporal": 4.743391990661621,
+              "gradient_mae": 12.366455078125
+            },
+            "grass-sunlight": {
+              "raw_mae": 12.804760932922363,
+              "rgb_mae": 11.135625466704369,
+              "temporal": 5.709539890289307,
+              "gradient_mae": 11.682624816894531
+            },
+            "root-and-hole": {
+              "raw_mae": 13.27303695678711,
+              "rgb_mae": 11.631329767405987,
+              "temporal": 3.1222329139709473,
+              "gradient_mae": 12.444873809814453
+            },
+            "root-strip-boundary": {
+              "raw_mae": 16.839763641357422,
+              "rgb_mae": 15.186740085482597,
+              "temporal": 4.073578834533691,
+              "gradient_mae": 15.18255615234375
+            },
+            "canopy": {
+              "raw_mae": 13.12726879119873,
+              "rgb_mae": 11.380502376705408,
+              "temporal": 3.4306142330169678,
+              "gradient_mae": 12.462045669555664
+            },
+            "title-when-visible": {
+              "raw_mae": 17.086610794067383,
+              "rgb_mae": 15.250137783586979,
+              "temporal": 4.150238037109375,
+              "gradient_mae": 14.372325897216797
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 738,
+              "block": 13,
+              "delta_mae_8bit": -1.6141590848565102
+            },
+            {
+              "frame": 744,
+              "block": 13,
+              "delta_mae_8bit": -1.6724622063338757
+            },
+            {
+              "frame": 739,
+              "block": 13,
+              "delta_mae_8bit": -1.679101400077343
+            },
+            {
+              "frame": 736,
+              "block": 13,
+              "delta_mae_8bit": -1.6821288876235485
+            },
+            {
+              "frame": 737,
+              "block": 13,
+              "delta_mae_8bit": -1.692285742610693
+            },
+            {
+              "frame": 745,
+              "block": 13,
+              "delta_mae_8bit": -1.7108401469886303
+            },
+            {
+              "frame": 743,
+              "block": 13,
+              "delta_mae_8bit": -1.7180654592812061
+            },
+            {
+              "frame": 741,
+              "block": 13,
+              "delta_mae_8bit": -1.730860322713852
+            }
+          ],
+          "temporal_pairs_better_than_v12": 43,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": -0.24482107162475586
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.27299487590789795
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.28545236587524414
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.33624351024627686
+            },
+            {
+              "frames": [
+                737,
+                738
+              ],
+              "delta": -0.35485994815826416
+            }
+          ]
+        },
+        "v13-S2-trend-context-20261123-012023-210-best-mae-alpha1": {
+          "checkpoint": "\\\\192.168.1.192\\share\\BrainHole\\Model\\runs\\v13-S2-trend-context-20261123-012023-210\\best-mae.pt",
+          "sha256": "e2b2b508d2c41d516ec3ecd193b5f5c4e04289bca37d6b8b2f460759c4fcc7a5",
+          "epoch": 16,
+          "alpha": 1.0,
+          "band_alpha": null,
+          "variant": "R2-frames-trend",
+          "clipped": 0.0012248461174242423,
+          "delta_rms": 15.68467860188599,
+          "delta_max": 154.64297485351562,
+          "raw": {
+            "mae_8bit": 10.922316681254994,
+            "psnr": 24.479974466951035
+          },
+          "rgb": {
+            "mae_8bit": 9.500629112937233,
+            "psnr": 25.767753225461
+          },
+          "exact_raw_fraction": 0.03364479914307594,
+          "pairs": 43,
+          "temporal": 3.303340435028076,
+          "gradient_x_mae": 10.885973930358887,
+          "gradient_y_mae": 9.993645668029785,
+          "low_frequency_mae": 6.294800766453599,
+          "high_frequency_mae": 8.32502744732481,
+          "boundary_mae": 12.754613876342773,
+          "inside_mae": 9.612370491027832,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 10.043615341186523,
+              "rgb_mae": 8.786680810153484,
+              "temporal": 4.595412731170654,
+              "gradient_mae": 9.55175495147705
+            },
+            "grass-sunlight": {
+              "raw_mae": 11.517200469970703,
+              "rgb_mae": 10.218355637043715,
+              "temporal": 5.573489189147949,
+              "gradient_mae": 9.581555366516113
+            },
+            "root-and-hole": {
+              "raw_mae": 12.025988578796387,
+              "rgb_mae": 10.664109718054533,
+              "temporal": 3.078822612762451,
+              "gradient_mae": 10.959410667419434
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.141542434692383,
+              "rgb_mae": 13.730276338756084,
+              "temporal": 3.9011073112487793,
+              "gradient_mae": 13.466251373291016
+            },
+            "canopy": {
+              "raw_mae": 10.975173950195312,
+              "rgb_mae": 9.62516376748681,
+              "temporal": 3.264505386352539,
+              "gradient_mae": 10.14686393737793
+            },
+            "title-when-visible": {
+              "raw_mae": 13.912245750427246,
+              "rgb_mae": 12.449032589793205,
+              "temporal": 3.8592944145202637,
+              "gradient_mae": 11.902544021606445
+            }
+          },
+          "wins_vs_v12": 1320,
+          "worst_keys": [
+            {
+              "frame": 775,
+              "block": 16,
+              "delta_mae_8bit": -0.6989230960607529
+            },
+            {
+              "frame": 774,
+              "block": 16,
+              "delta_mae_8bit": -0.7771456986665726
+            },
+            {
+              "frame": 743,
+              "block": 16,
+              "delta_mae_8bit": -0.9549799561500549
+            },
+            {
+              "frame": 773,
+              "block": 16,
+              "delta_mae_8bit": -0.9554682299494743
+            },
+            {
+              "frame": 779,
+              "block": 16,
+              "delta_mae_8bit": -0.9727554023265839
+            },
+            {
+              "frame": 778,
+              "block": 16,
+              "delta_mae_8bit": -1.2103528529405594
+            },
+            {
+              "frame": 758,
+              "block": 17,
+              "delta_mae_8bit": -1.2192396260797977
+            },
+            {
+              "frame": 759,
+              "block": 17,
+              "delta_mae_8bit": -1.225878819823265
+            }
+          ],
+          "temporal_pairs_better_than_v12": 42,
+          "temporal_worst_pairs": [
+            {
+              "frames": [
+                767,
+                768
+              ],
+              "delta": 0.10096359252929688
+            },
+            {
+              "frames": [
+                752,
+                753
+              ],
+              "delta": -0.024183034896850586
+            },
+            {
+              "frames": [
+                747,
+                748
+              ],
+              "delta": -0.08176755905151367
+            },
+            {
+              "frames": [
+                757,
+                758
+              ],
+              "delta": -0.0942838191986084
+            },
+            {
+              "frames": [
+                772,
+                773
+              ],
+              "delta": -0.17900705337524414
+            }
+          ]
+        }
+      }
+    },
+    "archived_blocks": {
+      "path": "Model/experiments/details/evaluation--v13-S2-trend-context-review-20261123-015533-193--run-e282cb4290d4.blocks.jsonl.gz",
+      "format": "gzip JSONL",
+      "uncompressed_sha256": "6aaff1bf6fcfad00e753f76ba5da9f35aa35d02ac075f71b2c717bc36cf46da2"
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/blocks.jsonl",
+        "bytes": 1486151,
+        "sha256": "6aaff1bf6fcfad00e753f76ba5da9f35aa35d02ac075f71b2c717bc36cf46da2"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/report.json",
+        "bytes": 58448,
+        "sha256": "004192f805d015316aa9ac2cb7eeec149e28deffd7eb6861ddc5cd16560c70e0"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-frame-736.png",
+        "bytes": 490143,
+        "sha256": "beb7b59272767b20c00c4c9725b78dd110748ee3b04a88cafd465a1ad97b6ac3"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-frame-750.png",
+        "bytes": 491556,
+        "sha256": "94c3b110f2f9f04d09a3378cfd8ce8dc615808c58ff35666b13cd874ff3689bf"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-frame-779.png",
+        "bytes": 497232,
+        "sha256": "4bc3f77655c3e55837d1c2a2b5ead6961b2b2a80139c27b6f2ff666a7544688e"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5-valid.mp4",
+        "bytes": 448129,
+        "sha256": "0c674a2b392d5030b211d333d855fce1dfcaf0274342c964cfa880ee1e312176"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha0.5.mp4",
+        "bytes": 765832,
+        "sha256": "f75f228088dc1a96152c6a0cbccebd5e321454a660f469fd0850291544716343"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-736.png",
+        "bytes": 408956,
+        "sha256": "1fe9aed8062c6c73fda5eec26a4cae46bfddb2bf47237c3b020168f94419c130"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-750.png",
+        "bytes": 408979,
+        "sha256": "a322a3fb643938673ccec396e5be46ebaee5c1dc7a8ec62bade488395e9d808a"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-frame-779.png",
+        "bytes": 416332,
+        "sha256": "cc28b37c01e7d932b0c771dadd6eb3bad4d4d8907629df345f81307f13531823"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1-valid.mp4",
+        "bytes": 387598,
+        "sha256": "98cef5ce0130c017faa46c2b1e2e0ebbb598b5a8b49162892120621cacc194da"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-R2-frames-trend-20261123-005305-380-best-mae-alpha1.mp4",
+        "bytes": 711923,
+        "sha256": "0096e53a56ef8ba423a5e991f29104a7ec2351d0a3956874a402c377ed378a0c"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5-frame-736.png",
+        "bytes": 490570,
+        "sha256": "ac62666d7fcd79c2d09949f175a8b89ca6e0a7d2ae601bef29adf1eddd7be356"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5-frame-750.png",
+        "bytes": 492300,
+        "sha256": "21e9578d2fcd6626306549fa38dd32cd2836b54431901e676720bb9c4c082619"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5-frame-779.png",
+        "bytes": 497673,
+        "sha256": "a6703a888263352953e78e2062b206508e7621c022ffca31654214e91f7d5141"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5-valid.mp4",
+        "bytes": 450314,
+        "sha256": "00bfbfb4301558a47bcb74f6999b4b03b378952cdd12361eb891f1d6d1bce444"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha0.5.mp4",
+        "bytes": 768830,
+        "sha256": "06b5d749a371ec0dd2b033e99145bb57f7f39ef3c1aee117014005252fe993d3"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha1-frame-736.png",
+        "bytes": 409591,
+        "sha256": "60fe9d3d127ca05949c9f75b44cc9a64c3da3b083b38b98f4bf2b6f54dbae9d6"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha1-frame-750.png",
+        "bytes": 410203,
+        "sha256": "51dd8af8b473450b23debabee02ef9305daffbd107e6726b662e1cc7b515a4b7"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha1-frame-779.png",
+        "bytes": 417957,
+        "sha256": "547753cad0d825699a23196438d28b7f62afcf4098326e5d161df09f9bd23f97"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha1-valid.mp4",
+        "bytes": 384737,
+        "sha256": "8d4eb815ddf0ddb73a1e47fe705a16d9a072ab133132042c7c866c7973d9479d"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-best-mae-alpha1.mp4",
+        "bytes": 709201,
+        "sha256": "fb09abd7e576a7839fdff7fed5d45e96aad03bcde16d318a3efc689c2bb2d1e7"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 493065,
+        "sha256": "6ed4cf8509134d6d7efddc2e2ca4d94a3543ed9369d892b930b7c6d25ac67e05"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 494631,
+        "sha256": "e11cac2c3de9ff3f69f0a05d24c449b5cc4979b40be40c7f205cbf6263a1b3ab"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 499921,
+        "sha256": "6ba53c32bec714f39e2232f226f86b2deac85b15515d4bddd1b4c999cf892758"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 451465,
+        "sha256": "819e05b7b765693cd7423914e0e71442dc6f3c329b819eeef1b40dce33db3a01"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha0.5.mp4",
+        "bytes": 770783,
+        "sha256": "18c16e76187590b01b17f4287587bf44f8e368fe6d3d2ebbc1a6170b8686da7f"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1-frame-736.png",
+        "bytes": 418148,
+        "sha256": "1b2e7372a4a20b4bc38fb9db4ebb2007ed924b252cd64d25d6e5d637da7caf9c"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1-frame-750.png",
+        "bytes": 418650,
+        "sha256": "ef13c7c79becf4d0e59f9e1b2d75289f7cc8d60f37814bd698152f5fa872113d"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1-frame-779.png",
+        "bytes": 426975,
+        "sha256": "29225b6ccf7ad752a490f6c36b6773d7169d4b3bd66b9c5326f18cdd065201d3"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1-valid.mp4",
+        "bytes": 404502,
+        "sha256": "abe137cd5880ddba64de603653818a02ccf88cd29416ce3f71fae40e3d8f1ff2"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-10-alpha1.mp4",
+        "bytes": 727520,
+        "sha256": "c740f418bb94e2e495f1ba4f044482a5d6eb2712735f5c9e8476bdc7a0ea38e4"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 489915,
+        "sha256": "c8304fd9cab5e39934a2c2548c0c7e83132ac9bc8ba92cc0d7032c8c6879e41a"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 491669,
+        "sha256": "0e62df78106f4a228190dd77db24f44be0a498f5ca84890155fe7d7576cdaa88"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 497197,
+        "sha256": "30dc2d724e8f66e8ca954e27aa9e72ea95472d0e9ccb2d2c971be030c855877c"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 451220,
+        "sha256": "f1cb0b0aaa32a758e3b53864e3e48eef7de0f518fb6f0d685207d7ffcfa1ce65"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha0.5.mp4",
+        "bytes": 769936,
+        "sha256": "c9ed57b2a79fd5ea7ba9262f96bb89f87befdb9c372aedbfd58a5ee8a5bab417"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1-frame-736.png",
+        "bytes": 408384,
+        "sha256": "d0c736426c7fbcc496faff3cd96708ac8a49d060a565cc6320c2731f7c269674"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1-frame-750.png",
+        "bytes": 409178,
+        "sha256": "3fe898b5c801db7a5db22441614db16de712d74a3c9b6bf02ae71c74fecd7383"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1-frame-779.png",
+        "bytes": 417046,
+        "sha256": "01d7ca353f4d1e952c279205a0acc71ea5e8d9cb447604cba090e1cb7f83df9d"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1-valid.mp4",
+        "bytes": 394483,
+        "sha256": "c5eb5ef1c6f22939be1b98b2596859f7a8eaa61bf3c569191dc9562d6fb2a81f"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-20-alpha1.mp4",
+        "bytes": 717164,
+        "sha256": "71b1a44e140251591dbf8dc6615f9fc09531cce4a3fa170652adf7958657bde4"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 503303,
+        "sha256": "ce48a6bb72f1f66597269ccda7a15039019037c92f9fdd6197fe7bdf2f4830ee"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 504251,
+        "sha256": "8f4f531be1efc68ee28f28b2fdd6596f485da6d07d1154f6849f8fdf68b587bc"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 508906,
+        "sha256": "3ec0dedfec402d505020f256013c03fc8dcbd97710adb467ad7c7755f02b4edc"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 468902,
+        "sha256": "40ec45cfa6871844bd55b4c66bb36b4a5b0eac9a5cba89fc4557ea9cce366054"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha0.5.mp4",
+        "bytes": 787365,
+        "sha256": "833be807ae2217c867bb5825a57afbedae2ccb868dc83c255453d18a9930942d"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1-frame-736.png",
+        "bytes": 450415,
+        "sha256": "99acd329145a895558d665a79c3ee329efb65224018168730c6d3d41f0e0f87a"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1-frame-750.png",
+        "bytes": 450596,
+        "sha256": "8570f0a7bce34c1c0e2f1c778fe00d6cc7205aa7c99ac862916090de52452388"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1-frame-779.png",
+        "bytes": 456615,
+        "sha256": "c6f14ec3b6ef99a0776b141c092fc959aec2d564ddee7321de20b41c58241184"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1-valid.mp4",
+        "bytes": 429559,
+        "sha256": "ba14db4dabd6871f1128da77bddc75431c9c4f8bd0dbb506466c41a3de104d05"
+      },
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/v13-S2-trend-context-20261123-012023-210-epoch-5-alpha1.mp4",
+        "bytes": 753136,
+        "sha256": "7f99e79085c454e6f328f17bb1fcc28bf956df11eb09c567347c6a1939021945"
+      }
+    ]
+  }
+}

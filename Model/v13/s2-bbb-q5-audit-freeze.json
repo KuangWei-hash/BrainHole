@@ -1,0 +1,24 @@
+{
+    "frozen_at":  "2026-11-22T22:04:53.5272508+08:00",
+    "stage":  "S2",
+    "variant":  "R2",
+    "seed":  42,
+    "epoch":  17,
+    "alpha":  0.5,
+    "quantization":  "round-ties-to-even-raw8",
+    "checkpoint":  "runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+    "checkpoint_sha256":  "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03",
+    "roi_sha256":  "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+    "development_report":  "runs/v13-S2-review-20261122-220336-704/report.json",
+    "development_report_sha256":  "861d3294344d7dfa4fe923c0db8035cf73690870af6ba8fce631de45c88af35d",
+    "development_raw_mae":  12.606480715491553,
+    "audit_source":  [
+                         780,
+                         899
+                     ],
+    "audit_scored":  [
+                         795,
+                         899
+                     ],
+    "rationale":  "Half strength preserves visible grass and contour detail better than full strength. At half strength, epochs 17 and 20 were visually close in the fixed development frames; epoch 17 had the lower RAW MAE."
+}

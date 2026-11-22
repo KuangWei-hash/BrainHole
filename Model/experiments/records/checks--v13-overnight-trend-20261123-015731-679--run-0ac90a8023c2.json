@@ -1,0 +1,3617 @@
+{
+  "schema_version": 1,
+  "id": "checks--v13-overnight-trend-20261123-015731-679--run-0ac90a8023c2",
+  "kind": "checks",
+  "name": "v13-overnight-trend-20261123-015731-679",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v13-overnight-trend-20261123-015731-679",
+  "started_at": "2026-11-23T01:57:32+08:00",
+  "finished_at": "2026-11-23T05:56:38+08:00",
+  "cwd": "Z:\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\.venv\\Scripts\\python.exe",
+    "run_v13_search.py",
+    "--db",
+    "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+    "--scene-plan",
+    "runs/v11-q5-20261122-scene-plan.json",
+    "--cache",
+    "runs/v13-S2-cache-20261122-214759-647",
+    "--initial-review",
+    "runs/v13-S2-trend-context-review-20261123-015533-193/report.json",
+    "--reference-checkpoint",
+    "runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+    "--stages",
+    "more-gradient",
+    "band-detail",
+    "lower-lr",
+    "lower-lr-detail",
+    "wider",
+    "more-width",
+    "seed-repeat",
+    "final-refinement",
+    "--deadline",
+    "2026-11-23T06:32:00+08:00",
+    "--out",
+    "runs/v13-overnight-trend-20261123-015731-679"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "046f3ae9579cad9262c5c0415cba759ac91e32c52a518d1e954f3a013eef2930",
+    "directory": "Model/experiments/source_snapshots/046f3ae9579cad9262c5c0415cba759ac91e32c52a518d1e954f3a013eef2930",
+    "sha256": {
+      "AGENTS.md": "587c9c84434625f399fe8a8f079e4d1bd89bbaffd6e8cdb47ff29b77a8fbc4d9",
+      "baseline.py": "cb0751a5539b0e55f174a502e29755644b174336c559a2b06d51c14a9eb5c449",
+      "benchmark.py": "6538796879fc986259b692f5c105daf563ec2569581627d085bff369038e0a6b",
+      "build_v13_fades.py": "b89aa8dd577e1a27f162acb9e0448ca532469ace212962683d1bd9ab93ee964a",
+      "check_bhxs_stream.py": "841a2bd53d8d53f907f4c36bdbbf4c2c7a204a2b5f7091926814b38fac900a89",
+      "check_dataset_consistency.py": "2d8c54af060772e995619a59cfa98cfd808fed3f926c7d0b9d3bb345ac0b6cd0",
+      "check_v13.py": "b6e8fb4ce6c07d6467eae39c14288b5793bc2854a898ddf5189e6d97c986b3e4",
+      "compare_v10_v12_existing.py": "59e285b0531a42369449c567e423647cda309aee6b8c105a0ceaaa0a223afe56",
+      "data.py": "bb84622b853efe25683fcf514b1eacb66cc5e8b35a9ba2e83f05b0a27d9a5f1e",
+      "diagnose_v10.py": "026ac00d93572ad8357898ec742ce0ebbe8c08b372d95e5f22cea2f562b422dc",
+      "diagnose_v13_correction.py": "b13c4c984b691864525889b76ac1e5a733a7ebf7418a0d8dc7c54c4f6922533f",
+      "diagnose_v13_history.py": "51a8d56f1b7c0230cf7ffb4822bf991c284281fc0bb3dfb0773b95a31e61a70b",
+      "diagnose_v13_weights.py": "82353004fae24b1e8751cc67cb898b6f6e498a4a03bd76700224bea27c511e74",
+      "echosr_adapter.py": "7e2d7996c8d917c4df8bafe6fa79518ac85c1d2467b07abec5f5a342396b2875",
+      "evaluate.py": "1c504d7405b9a84825b494d11179fae6fea7ab030632a0d4c4fbd4f105464ac6",
+      "evaluate_fsr.py": "6acccd963bcdec36377ccee387fa425d310c2700360983426b05c5588feeeb63",
+      "evaluate_v10.py": "da8316cac3c2cd6d1e31fcd87289ff0e30c07209a5d39b68b0a6b87042004892",
+      "evaluate_v11.py": "5aa895425056f2115f49c16f30b0e537128a1dcaed20f8bf710f36760f8fa332",
+      "evaluate_v12.py": "36a22179975a10fc458682b6713e61e7ad479c42deb49265a11e137603589af1",
+      "evaluate_v13.py": "ca23bd37fe2648bf05b3a7460835479df08b93ad902c9d623ffdb01dd05d540e",
+      "export_video_panel.py": "fa81727f69733549881ab67fdf5f5707980fe0e119ae2295eb2631208e75e27b",
+      "fsr_reference.py": "58d0cf3ee46d2beeb4d8fffbb0cc8f0fd4952c7214ea04f1e34ca02e271b25fe",
+      "make_dataset_summary.py": "a99da57b345ec3a7956c116940b75f36236e7bac70523cddfea4d17ac4a545a2",
+      "network.py": "a841443631e044ab50bfc720550c27f2c920b513c449642098a678b9e67de717",
+      "predict.py": "e0d3a3450fa8c2ebefbfedec7b39fa5dbf758a2e9aa61254e6e59ee639dda672",
+      "predict_v10.py": "5496aaeddf4afb01fc8f2c5dccaa129b1e4d1b4b349de1a81bca01447e436dbb",
+      "predict_v13.py": "fd257600b99e587168a803e048039e0cd14691d0b49f5a4565c6363ca78271b6",
+      "prepare_dataset.py": "326d30e4ec4ea29fd0fbc3d169405d7aee960c862c309bb4ecbffc9abb133f4e",
+      "record_experiment.py": "0583c182cb87a461ff3b69336a4e0550af1d54bd9142bf5fa114ae6d4ff6ba26",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "9eba9846c550915776624e2fda56d9ac389e806ea9c540493ec9d804b5449dd7",
+      "run_checks.py": "714fc7535f028731f204280cbdfb1f12c303073188b8dc8716a8d4ed17af25da",
+      "run_v13_search.py": "252a910c92dd044c21f66ab8becb031effe11b82d17593ce3130f2ba444b26d0",
+      "supervise_v10.py": "3c0bc361dffc6f39a9297000265c41a3e4625828c693d1d813996e23426e0119",
+      "test_fsr.py": "920975984fa336c89fb9f8301626a23909d77187b98500cd73128df9dc889691",
+      "test_model.py": "57e28f8d5a825bfed37618b3239431c692e0f24c7d00302916de26c5b18f4145",
+      "test_record_experiment.py": "c9ffde80df8547dbe016986189c604d25d7fff4dcc3cf8c6b5c2a8062a937da6",
+      "test_v10.py": "6f126951f1bc4a8a45f48b0546e075c3fdd148cdda5240dfbff6f0bb7b6c44fa",
+      "test_v11.py": "df1ad6536dba16bae075bd295023d110ba23712c26af0be1c768f86755e9d2d6",
+      "test_v12.py": "a79cdeea453808bc019ca639a5c3709af688787f29952241625c75f881b781a4",
+      "test_v13.py": "a425d74ed81210b6d004bbc57afc458f705d4a67ec4ee6d1c5006324cee2c7e9",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "912270c7b7b7234d4fdc20e771965ccb765e45d42b58e71fe872c6d1d8c3bc41",
+      "train_v11.py": "ccd7ff38c910054d52cc9d1c76846443560c98459a135f169f6abe656e2d0f70",
+      "train_v13.py": "22fbfbcbb0960fdb78c0b246e7631acc574fa5eadd51636e319f64653e4b6894",
+      "train_v13_samples.py": "e296d1e8cc645a1dc48649197f393f7c33e7ab8e7ded63f7600773255018fa6b",
+      "v10/__init__.py": "7c7af6c3d6875e0404dd6f7b874c6583d77fb66be49fccfb5c5a5a31cfea9ee2",
+      "v10/data.py": "58aee312a4e23905c718c06cc55f2523f7637d52bbe084f44bdc3c3883b28edc",
+      "v10/diffusion.py": "fe8c386cb64ca6e6269e7702c084fac2813dec90aa666a92c7dcc2f6ba784e75",
+      "v10/model.py": "5cbe74607a9d43f8163e903d1cdae657f3c2534473f5243ae3987911d9d62181",
+      "v10/README.md": "27f5be96c43e3471933b0ebef68efe1b64440549230aba3fd09c48dd1499a461",
+      "v10/估算成本.py": "c3c1e6a1587a3857c6f43d93fa33d1fd6d97f353eeaf856ffa080d807fd9aeae",
+      "v10/文獻對照.md": "bf475e02c2d7f4de39c83ebe55a87ba30f9a5b91e21d6f02ccbe766b3f3949a0",
+      "v10/生成方針.md": "ba0524e3d53d05a9fc1475fa91f14808c14fba6bb0c9a554c0f8993e3f4103f0",
+      "v10/監督紀錄.md": "b4c96af865cba82bbd98659cf41f616ea82400e82206c369a7a411b94e7e194d",
+      "v10/自動訓練計畫.md": "35e31ba9c53adcb5c3ca827e5ae700b46ab3f7ffad651fa7000147f8f4413f65",
+      "v10/設計草案-低解析度重建-已取代.md": "51ce23f4447cba9c094106937ae61439bcae2c4e46f560129f4afe8311d66075",
+      "v11/__init__.py": "0735d1b8d196c5795841d12153267051ff2240da673eff624a63b94183e4ead5",
+      "v11/data.py": "9a1395a16b30c2006748c611047c9ca381a8310f4bbf93e8a27f00b379fe110b",
+      "v11/model.py": "df94b31e9d2a3897f2dc4e79293b9a570873596ea3fc20f86d043b51f26ff9a3",
+      "v11/phase.py": "eaaaed3a39a8072b3503304c771f48ba55ebc5261650f814a1d938c6fed2cd5d",
+      "v11/README.md": "c32ccf0fdaa0691b472ebdea8c5c51500b0288682f50a52a3e3f7059933c25a3",
+      "v11/scenes.py": "aa06ba7a7e938d63bf46ca1029440e07fec4c448684c1f7ac1736d0e1bd3cde8",
+      "v11/tile_diagnostic.py": "74883939aba80cdae70bd30c9340a733941c5da8c0dbab1936b561ecd30a1745",
+      "v11/文獻對照.md": "e330d8b8f2d1eab8efb40a03f712d751997ba2e1e146e84360058a078a5ca88f",
+      "v11/閱讀筆記.md": "f314da631fcbce4dee6094306560ae94fd82da535f33154b724b07fc9079e9ae",
+      "v12/__init__.py": "49bec1ce2f3087c7e94ada13bbe3fde6d295f8e4a8b7f650be7e100a263bc612",
+      "v12/compare_source.py": "17e4b26e2583ce24b95d526f933c4616a318acefe31812920fb3be7927458905",
+      "v12/README.md": "fa99e087b4905921fed0ed7147909c01957e669ba22055f37b25d1981963cb72",
+      "v13/base.py": "7a417c2ade6c72cfa9130bed9374d1501ceaa161e9234a72109c1acda2cc131b",
+      "v13/data.py": "2b40083e10e473d9f4a9661179dad8cfb1c8add258d95866425043906394e2e5",
+      "v13/fusion.py": "39775f2df47471b170f1b7844332d7d3cdcc08941d71406c33912d7e51777c2c",
+      "v13/model.py": "0cfb7aaee54b753aeb7031ac844bcadd32b51fc722d99f9268bbb04263678f40",
+      "v13/native.py": "9b94a88c44eff3e2afeea2349269ffac88571a87b21553d1efe9e64b29e75f7c",
+      "v13/pairs.py": "20abeea0a22925ac483b1c4f179ce864060810f8c639cf95232e22a70f82486a",
+      "v13/README.md": "409362237a05f556c0703255f352a78fa7a2d8350b315e4a2baf6e2d35735bb4",
+      "v13/roi-bbb-q5.json": "21d2930167e21bb01c3883405a83bdd1ed85bb092e108504f448bfae92faa0d4",
+      "v13/s2-bbb-q5-audit-freeze.json": "4265a9f3e5a9bc2e02445f675ebd7f6daeebeab44c7b56598d5c2f0b2f3ba3da",
+      "v13/執行前檢查.md": "1670dc9ce111c5d0b6a2fb0df506a94b18f16497bc8a01c4df459f91fd82bb75",
+      "v13/實作清單.md": "b90f07ce145b19a81803733eff76c0bb75855e0d67717e44a268d150e6f4c888",
+      "v13/實驗與驗收計畫.md": "a64d1dd6ae3e6147ed27fbd622831d06dc49de9d4297abc5e134047181c5136d",
+      "v13/文獻對照.md": "864c005922841e0d430d16c391c81fd1d856dd70dc9e7298b80248fbf9763f1c",
+      "v13/設計決策.md": "f82174edda7bcf76377993997bff0e2881ae5424da188e9c0f43ef94d2d19d17",
+      "v13/設計規格.md": "f9f0dd8860436074e9a2e013c8e5c1774aad2d7f1f5566795e2383584746170e",
+      "v13/逐幀融合試驗.md": "7afcd6ebe0399fa4324f6047cdc849bc46c8fbe682519bf29defd701a15458b0",
+      "作法.MD": "90daf3ee56a2cf80562064b815b482174599e054405901d49ef594d01367b68a",
+      "驗收標準.md": "b8e9f8ba6bc29dfdc3af38147c3a5f26ea2a58285225bd814df162d362b3375f"
+    }
+  },
+  "environment": {
+    "python": "3.13.9 (main, Nov 19 2025, 22:41:40) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.7.1+cu128",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "recorded_at": "2026-11-23T05:56:52+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "C:\\Users\\dinos\\AppData\\Local\\BrainHole-v10-probe\\data\\big-buck-bunny-30s-q5-shared-v4-raw8.sqlite",
+        "bytes": 332431360,
+        "sha256": "11c05bdd430ba67fa84a986288c9e48786b92aded73fa38c51661acaac8975eb"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/v11-q5-20261122-scene-plan.json",
+        "bytes": 14443,
+        "sha256": "0b381327fafca98906f56c0bd5898bb6e7fdaa7a2fc61367c1cdd5138ab93bc7"
+      }
+    ],
+    "--reference-checkpoint": [
+      {
+        "path": "Model/runs/v13-S2-R2-20261122-215155-129/best-mae.pt",
+        "bytes": 322217,
+        "sha256": "41d58bc1e5551abaf912a5ac0c329d85a3a3f83ef74cc2ab45b615df1b75cf03"
+      }
+    ],
+    "--initial-review": [
+      {
+        "path": "Model/runs/v13-S2-trend-context-review-20261123-015533-193/report.json",
+        "bytes": 58448,
+        "sha256": "004192f805d015316aa9ac2cb7eeec149e28deffd7eb6861ddc5cd16560c70e0"
+      }
+    ]
+  },
+  "result": {
+    "artifacts": [
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha0.5-frame-736.png",
+        "bytes": 488984,
+        "sha256": "efb650bc301a5e77549b8f619117fefdd0f90d62d0e636fa27717488a107bf6f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha0.5-frame-750.png",
+        "bytes": 490512,
+        "sha256": "ab85ef14580fa3023f9d87a34d32a8414f2a89f576af8619d2fd3c34aa90c99d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha0.5-frame-779.png",
+        "bytes": 495912,
+        "sha256": "c3470e422d185325a91f525a8e67319bc07a245b346aecc22e8036f8491fee47"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha0.5-valid.mp4",
+        "bytes": 448471,
+        "sha256": "eec5df9da9ab3fcebb0788b45de6cbb73bdc02dcacde24ea7943a7d40f757cad"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha0.5.mp4",
+        "bytes": 767343,
+        "sha256": "90ded73654c2cfe74a4ec149fc7d3b13c46ffc142362c824644a8f67499f1b53"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha1-frame-736.png",
+        "bytes": 404152,
+        "sha256": "2b09cc5bf301588f30a7a56d8b6ff4bf9ee94a7d63a04b0452d84e1cce444b8d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha1-frame-750.png",
+        "bytes": 404482,
+        "sha256": "49bfe697c1e938f1626bc059743245d4dcc96bf75aa145c0a52562d1129ec87b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha1-frame-779.png",
+        "bytes": 411499,
+        "sha256": "413d7825d141b7f486fd5a53c591a5701304dfe209c1d15a75f266597bf9fb96"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha1-valid.mp4",
+        "bytes": 387999,
+        "sha256": "8aadb4ae8264b5038d7eef97e04d45d7acfa8fdee712c3a833dfaa1c00ff787b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-best-mae-alpha1.mp4",
+        "bytes": 712756,
+        "sha256": "f527d56de3886d1e7ef56c6c11cc94c64a145637e47cf56c09d48aa5461204a5"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 489913,
+        "sha256": "6047c83ddbe233d894fdf08e8e3d3a4eb915c115ecacdad22f360b3b42a7f6bb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 491648,
+        "sha256": "af506294cdd20116b980d5be2ecbbf9e1313be93e12eef30f36519fc191931be"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 496788,
+        "sha256": "225d7be9ffecabc4f2fd40d9e537b71fec699d1cfd42414ea74cdac379962cc8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 445035,
+        "sha256": "b4e42b79d43a2c0fbceab24bff1325fb19e150d3ba4d4add4e144c7f561d8f16"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 763895,
+        "sha256": "83265ef794c85899f07f9d669d9d01a2831b7b28125428cdf5e8dde8ed136a7e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 406482,
+        "sha256": "d7c21a67ef07429d2b637f91f1fc79992215a70738c416384483c2fbe1101c75"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 406859,
+        "sha256": "ec671ed71e2d0b15b490cf4cca2914322a1abc3174220a17e8b9921793cbf130"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 414464,
+        "sha256": "6efff8946dea830a3d82e05e23727dc5bfd9183bff5d257b809eb145f3782e01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 388584,
+        "sha256": "1e5fa6508efeebcc9ff786c746bd257e7c7b6b1fb3cee320f9f51ec44d12b66e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-10-alpha1.mp4",
+        "bytes": 712972,
+        "sha256": "af28f2f687f4302173612a55460b1c3e04d3f31567fac72740f877a5d2ca9066"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 489267,
+        "sha256": "f6425674fbdc05714eaccb84083817c96f9ede3c322fdeff2cbccd9b2de23b4d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 491095,
+        "sha256": "73f46882a6243735029336b269c97fb2aeb80531331e6ff770e7e698ff9c7931"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 496302,
+        "sha256": "3630df5faee7fc7688ade7c8852d62d2f589c33ef5aee0904f2ad85ee9e9ab59"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 452743,
+        "sha256": "0597b92999115a95b5248a50bbf5889f5cea668341798d3e22c61b0a540c91e7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 770822,
+        "sha256": "49ac69873b710ead99a74953a03daf6a9f385e7ed586642f2dc0176777b6d945"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 405076,
+        "sha256": "4f949297c5a35c7c9aaf36370117a3e1d09ca33fe019994677015fec9267dcc2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 405218,
+        "sha256": "098e09af83ad3aaaa99cb9109bc463366df9fd4d497e5dff7c66efeed8696048"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 412344,
+        "sha256": "a0b286cb86e2636de0102ce7ae5ac925eea3a68ecd93a9dfdb071e644656b8c8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 379103,
+        "sha256": "5b7d551a381ddfaecf62af73c38f534376af068c5219dd021efd485024ae3178"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-20-alpha1.mp4",
+        "bytes": 703492,
+        "sha256": "3673de90a8c2286aa37e914dae446369fd4d7a99a0fb901f07fa43182cd397cc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 496988,
+        "sha256": "17763d5147738c999e1b0213b9e68779827f19e57e24ac7040d6070ac10e6dd1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 498229,
+        "sha256": "5d7eb0bec1fd804f51ae832ba19cccdc80cc73fffcf67b175a78ef1d1681137f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 503113,
+        "sha256": "e2120fd53b210cf1fc6386de50f744c9595f77d6d26913eafb7d795cbdc9e842"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 456186,
+        "sha256": "fc093766e691cb6f1d10bd709d2b949c620efdc1bcb3d578c6e2aefd708060e0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 774733,
+        "sha256": "37a0b4a9927b06e6371cd9cc1a0d9bd0b3c304461ff67f3064451fa651399096"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 431819,
+        "sha256": "0b22040ade85e88d720df06b4cbcb319f9428c42f1015897b4b2b219e063d432"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 431574,
+        "sha256": "bf4704af0661daf953fe5bea10ebfa5bc1b63d02d3d185b60d93ef04a59f48d3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 438042,
+        "sha256": "198380cc5a8cb2e86ac7ba6491e6ec0eff8677cc8a6ee4c21d9a61350a5cf196"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 409446,
+        "sha256": "253677ad526eefcd87b551b16cd9e1183cd190126ffcb6ef891ac2d088aafa62"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/band-detail-weights-epoch-5-alpha1.mp4",
+        "bytes": 732732,
+        "sha256": "63ea0fd8f9648f2aec5572876f150ff6a9be05e1801f685b4869510a648d6918"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/blocks.jsonl",
+        "bytes": 1046196,
+        "sha256": "5157de1f1e598f021723a1558a5a568ecd71d4a68808f68334be34c7bec19aac"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/report.json",
+        "bytes": 50046,
+        "sha256": "43c063b95f09cfb8b2473c226b8a2832818402a1299a3c7badc11626dddb6121"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-review.log",
+        "bytes": 1092,
+        "sha256": "8a04991caddcdb0b58d70b59dd7e59ea39686125e5f923bee894a4b43d7f2899"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-train.log",
+        "bytes": 1323,
+        "sha256": "b44bf82ea39a6774b28ebfce71bbc22aea1f0c188670e575d9b54e7eb5f7587c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-weights/best-mae.pt",
+        "bytes": 480153,
+        "sha256": "a0d6626e43236cbe193e7be36e866c89fbbf157ab0e6c6c8d317f870dd43da72"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-weights/config.json",
+        "bytes": 1938,
+        "sha256": "0ed5495d82059c40c5e9ff99413ecc62f638a408c910f732bc578c8475be5b8d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-weights/epoch-10.pt",
+        "bytes": 480153,
+        "sha256": "5065f4278421e951e9ae2136c62991a52840ad801e51c4e808a4168ed20484d6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-weights/epoch-20.pt",
+        "bytes": 480153,
+        "sha256": "334887d01cee323519af7631447f46f91cd068aa18a51d3af72af87fe7caf4df"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-weights/epoch-5.pt",
+        "bytes": 480103,
+        "sha256": "0b65c812aeee6aad1c9d1c24b1440465ef06b27425ded0a5e94ebb12bfdc9776"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-weights/last.pt",
+        "bytes": 479953,
+        "sha256": "f2eb104640d4d283406113fc500bec5bcbdc6d963a3ae3c7b11728b34806b0c9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/band-detail-weights/metrics.jsonl",
+        "bytes": 63298,
+        "sha256": "f34fdb79622afc3eba75fdcb7c3b31edb9d510917873a54669f0e360e089e4cf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/blocks.jsonl",
+        "bytes": 1088218,
+        "sha256": "563d6efa3dba1a1c6fd413b97ad2c8c6b38d893b7546f8d464f11da9ebf9059e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha0.5-frame-736.png",
+        "bytes": 488246,
+        "sha256": "5b80e1f84682d8999893fc6e88d66521f8c849e7f992943c829e8a0f22aeb66c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha0.5-frame-750.png",
+        "bytes": 489927,
+        "sha256": "b4a1592c048ec7dcfa6231e3d7064f9439c836f3c475bd0f7dd4027cd6672fb9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha0.5-frame-779.png",
+        "bytes": 495363,
+        "sha256": "9b18b83f9ec2707d8ebf00cda49f9558b19d584f28d51f37f9ad1e1e50938924"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha0.5-valid.mp4",
+        "bytes": 456132,
+        "sha256": "21d539eeaaa8af394e07dc76828eb3a0f4c41c552ca2e30d04847cbcb240ca4d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha0.5.mp4",
+        "bytes": 774279,
+        "sha256": "56a0124512b86a4111d3108ff6e2303c4709e6db63d484162c637e5a28bf17d7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha1-frame-736.png",
+        "bytes": 401309,
+        "sha256": "266d2c9c173aaee6f516c1de35163bd4e18f390391c7514cfa4b72aa2f1aca55"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha1-frame-750.png",
+        "bytes": 401155,
+        "sha256": "0ea30fa49c2fa5f47bca6906926b8e1764644f5ca2ef659b0def851d78456bf8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha1-frame-779.png",
+        "bytes": 408800,
+        "sha256": "5db1ac6272ed915fb4ab1a9acd9f4fc81fa75841c12daf1c538166ea89377fa9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha1-valid.mp4",
+        "bytes": 380759,
+        "sha256": "dc5df754a99432ade63a936f092e614c7fc6dcdd6805ffb3bb2b925eaabdebfd"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-best-mae-alpha1.mp4",
+        "bytes": 705405,
+        "sha256": "3de2a290e88530061f4f2c39eb5b5748551cba37bac6b2e6dacde0d6745a9734"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 487685,
+        "sha256": "b89e29aeb10850a96ab7f9ba1f8ccb15a46d8f1d4559b14dcabf65cbbedc09dd"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 489361,
+        "sha256": "8669e9c922a3d3e2a8f8d78d44add09e926289c198ed65b2d2446d6bc7713fa3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 494893,
+        "sha256": "9e7ce5b9c27b37eca314ce42f13aece25825014974ee948aea4469a95e9e4aca"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 449823,
+        "sha256": "a6571372cab623f7d9d6d7d788253af8a3725831986d63985cb75745f82aa725"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 769159,
+        "sha256": "2965b870bcd1445b0c8f790684eed9eefc0d157449844fc898b44ba39408d96a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 400458,
+        "sha256": "36e3e92cf159833693a89d27c69e846578c9e4dcb9a23f97dc274cc766bf6221"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 400596,
+        "sha256": "47ad0be2ee4e5b8ad7e77f0eb41cb67f1ebef50dda6e3e54b382325fac75a6bc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 407865,
+        "sha256": "401f327c675addffc46c4c2567c046147c58619da2a65c9cd84c67408b52cb9f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 380944,
+        "sha256": "ee298dbe26abf64a5a4612739e634f917bf75d55c23cfc63ab4d58a6a93fa4d7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-10-alpha1.mp4",
+        "bytes": 704915,
+        "sha256": "bb0746acd122950e9dc4458313909d0ac8b53e51c5c4801949ce26d40a80f9ed"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 488183,
+        "sha256": "4a7975638295c5c3fb3c2ad2f6752ad5307659cb1f258d0899d0ff2114e25535"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 489838,
+        "sha256": "c2810e7819e1b65de5347c2f3402ec7b7e656312295ecca71f0a2b8e0c4136b1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 495675,
+        "sha256": "102b10ab4d1675d4ceb97411f3f19793ce26ef5381cce03aa48efb41dead06ec"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 456689,
+        "sha256": "36daa4be1cd7ead3059ef94658e712d7e5583bb2131987da4b6c3f474f2a91ed"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 775834,
+        "sha256": "2790493f16ddafa9dd0699221651088051ae35af834c15f31a5817e7ccd34c1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 401710,
+        "sha256": "f315a9510688ad474078e909afe998fdd876260efb417524358f96c618c07220"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 401180,
+        "sha256": "5affaa7e491860c7f487bd91cb8d76578f7633e8c23c79a812e4fce8e3b97e52"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 408778,
+        "sha256": "e519c25a622427c5a6dd7d658298bee777f81993d4aca6beb5b2052bb8351e2c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 378602,
+        "sha256": "112aabc65e74b972999b1ea6441e3f89cd60a3492da2f5804fabf853181bc615"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-20-alpha1.mp4",
+        "bytes": 702079,
+        "sha256": "8665e6208e788547e4f63f9b4c51690967dcdbe13e20cb0ea0e937467538271e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 487881,
+        "sha256": "b6e24b998e2f2ff0962f74ded717c0f34d5442372fb6ab439a742acbf5da2e90"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 489486,
+        "sha256": "08d833f71399e9ea9dee49b95c41b98b3b8cdd622b5b1f1016fb6d4854f8ce38"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 495141,
+        "sha256": "a81ae13cbe6c0ada5b37d35d98a7f2bcb3689974fb0bd2b24cad0bb31fb4bacb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 448054,
+        "sha256": "80b881811fde4d48dbbc8a2c8d1151a60f42a8688e9b20bd635006028dd6e4f4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 766527,
+        "sha256": "5c2a179753784d63c729696a861ca2a6476f33cab20a814152eb521d9736179e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 401542,
+        "sha256": "6106a2a160fd3e48de3f5710e462acd3a6ca22dd1357845169c068dc6e359202"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 401539,
+        "sha256": "f8be07d1d8f4f905d55f9e0574fdefa7f86b26ffa1227afb92d012a52164290f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 408760,
+        "sha256": "f2e957cb7438b551b376e725679b36bd1acb84e17ec122214c2751e3c49f5375"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 375983,
+        "sha256": "c8f74620ac4af6b990d625a5ae57573023e5f05b030581606d00db22a966656a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/lower-lr-detail-weights-epoch-5-alpha1.mp4",
+        "bytes": 700006,
+        "sha256": "b8516c55fd94537fd6754a7019c52db5e91291a68a47fedcd3df2a827ab486f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/report.json",
+        "bytes": 50114,
+        "sha256": "45203b4293bffd3bc25398b4d4731ebea2b80719e69df13f521d0c73d10a7cd5"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-review.log",
+        "bytes": 1124,
+        "sha256": "ab6f7cd02429404032ae6e2687ff1f362972a51d8c308c9cc135218576b0e0be"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-train.log",
+        "bytes": 1323,
+        "sha256": "19b98c645f9a99ebc972ab63e9639f0dc00457e9e737e0e2da51a4d76465b273"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-weights/best-mae.pt",
+        "bytes": 480409,
+        "sha256": "424583fc0c05dcb60bf83bfabc92265344ffda6b1a4dc2d3e0cb68e24167dfd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-weights/config.json",
+        "bytes": 2233,
+        "sha256": "5633b8e9fd9bf9e54493553cc0cef2014c863e7e77a3ea1778b081b815d1c221"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-weights/epoch-10.pt",
+        "bytes": 480409,
+        "sha256": "d8d0fe2a1ca2a18d023d1cd9d9653de22a4b5671850d208351581d8b3b207f60"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-weights/epoch-20.pt",
+        "bytes": 480409,
+        "sha256": "2d9ace797cca9cf53141dbfa269b1165c6188bec015f639944b3ef9bbda1f0cf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-weights/epoch-5.pt",
+        "bytes": 480359,
+        "sha256": "e4723736f17b40eec22f088ab46425eeea963f53ad4bb1ab25915ff31fb8c012"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-weights/last.pt",
+        "bytes": 480209,
+        "sha256": "b89698fab1be7b807cf9bd3260d16168dd025695094671543ec0c05b1aa02bf1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-detail-weights/metrics.jsonl",
+        "bytes": 63259,
+        "sha256": "4f63244de5e0f08ca16e911e4b3c5f1a30b8776fa2b283a82251d00bbbfb8c35"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/blocks.jsonl",
+        "bytes": 1014337,
+        "sha256": "078a2435daa6ee40a389718cfb7e9fafa3277e45dfcdfc107c7dc27c845ca0da"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha0.5-frame-736.png",
+        "bytes": 488694,
+        "sha256": "691e32589a765dcd735cbac504c9236bffab58de5f4576d9b66aee363a967764"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha0.5-frame-750.png",
+        "bytes": 490329,
+        "sha256": "7c3b4118941bdd1cfdbdfe4488a7a374e048e4c928f9b021aa0594951809d170"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha0.5-frame-779.png",
+        "bytes": 496188,
+        "sha256": "a5b7f6f9be1f9426711a90d4d900afee722a34ee64212a1dfa73ed018df245c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha0.5-valid.mp4",
+        "bytes": 458560,
+        "sha256": "d82db282f9eb28138830e92e1e5a4ebbf518afe2adb0b63900d02f7850b8be34"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha0.5.mp4",
+        "bytes": 776890,
+        "sha256": "fe12ea091f976ef2d0a18817bc5b65e54b7fcda8b8a23f613e232566551bb743"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha1-frame-736.png",
+        "bytes": 403803,
+        "sha256": "873c8498562aaa4651244207ff12809050a3132975c22013a767812e8a8fc2b5"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha1-frame-750.png",
+        "bytes": 403923,
+        "sha256": "0a9382e33e2573984891a257d0496ce0e954ba7b8ff584a2489b56c99e10762a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha1-frame-779.png",
+        "bytes": 411542,
+        "sha256": "a63b42d3964db12132a5b8145707bb2f6d47cde20e457259016658aa651da3ab"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha1-valid.mp4",
+        "bytes": 386767,
+        "sha256": "a44d9594479c4c17ea4c113464036333252924b84a7d596ae11eb070b3572cec"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-best-mae-alpha1.mp4",
+        "bytes": 710946,
+        "sha256": "dfdde66e0afac1c6a5a77b29fefc1d2045222508b5a0b1e619f313331effbffb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 488241,
+        "sha256": "d93d52d7f5716d21db4eb9fba2c82d756bd49ecaf49b20522131b2463a548742"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 489873,
+        "sha256": "01261700704137d797f7dc061c2e8b216615ca9cd9f9a7464e0341477e85c3c8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 495680,
+        "sha256": "be627b7d63fef787120c377a2b7d3413d77b634eefe63eabf0f2960f68ca27cb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 452145,
+        "sha256": "3645056e9323c2e3cfd398cdf9e1ecb74cf1c61bec0f6eb6582a209f99e5ad51"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 770953,
+        "sha256": "544ad3cab2f41111b09c40cbeb1cda8d0e49248ae09033990bb07a75e1fae13b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 403169,
+        "sha256": "0bb0e5b5e8a6dccf1ce8d2bbb40e56173d9e6ec93857f695f688b1cd5bf96e84"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 403148,
+        "sha256": "257ca1bbdb251c861d01d248a62df1c66869a156169f6c5491295fc031662abb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 410674,
+        "sha256": "c7a7466d9e5d2aec85bcee0ea1c30d3996f94b5d944ed9254feb618d3f319b7a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 385246,
+        "sha256": "d6fd1353fc354bd1f93f3d079aeb0e3a91fd7709ed7a89fe10d6050abc0790b7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-10-alpha1.mp4",
+        "bytes": 709079,
+        "sha256": "a57c3cd0e3cc71d963993de855e4cdf5b70589ce3bbf29fe991da8b15bd29671"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 488875,
+        "sha256": "5c2bfa37b53da013feeec5298104c373c0ac5aabf5eba4f2c93fc9ac38826d26"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 490276,
+        "sha256": "171c20c0d5249f27240fc87545cc3ba040c0100d9a09d4af5acc12012427342e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 496304,
+        "sha256": "b334de43ad12d640e5ced0ae9690db5ebf6cab4c077a43a5b45eac2728eea843"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 458400,
+        "sha256": "46a2361861254a825524c72a4217c0777bcc47b3203f50d985c617bd08a37625"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 776639,
+        "sha256": "9cdf6151c107d72886abd3d4da9604d921b3b3bbc1b361ffcae7a65d8cfabc72"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 404045,
+        "sha256": "720f59dfe601e739386e9607a638c40410ea1fca8bcac2dc0d64ee9a5b798fba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 403689,
+        "sha256": "01f1b7f263aa25fd1a86d8e26501d2e9944781446ed59bf440fb2c57ec6592db"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 410986,
+        "sha256": "58c0f7eccb939dca1f684e138fadcf54d92378590b3dd5f32e47bfac2aad7c3e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 381740,
+        "sha256": "ad816ee50c7478664a969ca98136ff9f41fb8299295c8b709365465eddfcf8d3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-20-alpha1.mp4",
+        "bytes": 705533,
+        "sha256": "d566ed130ff9821861aa3951a84baaaeae169e0552eda20e2947d7921cc40602"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 488421,
+        "sha256": "9e44027011018b2b133df7b7eb6e1909a2c27a7e18ebda9a4fbad4d03adea519"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 490083,
+        "sha256": "dc44069bd9e1eb5aa5f30b305c81a6d01313ae28dc0a401e7f4f753d17ebb80a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 495744,
+        "sha256": "b398cddcb2d5a6b10425bdb2ad36583b76df2ec12d83c7093045321710cc82fd"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 449962,
+        "sha256": "b1f074062dda13e1e40946a3588153a0073df395d5ca95be4a155e71ed0abab1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 767942,
+        "sha256": "6ad7a957c2ae6cc42fc4c5fc920c25f771ee093cfe3df499386a53dc39567c88"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 404012,
+        "sha256": "3abf2598815195379c93c3d8404d00a826ad76b20c661c4cc0a0748fe4f196dc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 403870,
+        "sha256": "629606f568313e29f0f42f9cd6eefa9f8382bae1480d66416395fe828bbee0ea"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 411512,
+        "sha256": "e4bec5747684bd08751bbe09d963ea80a96aeca96f13c336c56b26a24800ca71"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 378787,
+        "sha256": "a303d465c80c68f8c5fb33680bc54c28fe26be074ec10c01fd16389c4914294a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/lower-lr-weights-epoch-5-alpha1.mp4",
+        "bytes": 703613,
+        "sha256": "57d6937dcd3386916dde53d50ee666d2d79e9c0984043eced82a5800164c0d3c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/report.json",
+        "bytes": 50012,
+        "sha256": "2850ba07bc16d070e46b8cd3da4f5fa46ba4fad22e08f8180c468e65829176cc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-review.log",
+        "bytes": 1068,
+        "sha256": "f900e89eb55c1691b542c3264df74fe69aa8131e5e9f463d870ba22bc311175d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-train.log",
+        "bytes": 1323,
+        "sha256": "a8f6e7d00c12462bc9c105c991e56fa8b6d173c3e1cf2cb60902712f9fcdb519"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-weights/best-mae.pt",
+        "bytes": 480409,
+        "sha256": "dfe977e11dfadb1c047444fe766f9302f91050dd953fc798ea112817a214fc4f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-weights/config.json",
+        "bytes": 2233,
+        "sha256": "8452d07dbc9088bd1f0ccad3be40a6f9379dc8e174c1b0bc4b2839cd4a8f066f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-weights/epoch-10.pt",
+        "bytes": 480409,
+        "sha256": "6e92da63cc6cff12739ebf6b0e74100259a524e431726c61c106e7e2c9ec21c8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-weights/epoch-20.pt",
+        "bytes": 480409,
+        "sha256": "30d8baf7eb49eec57c9e02745577434f77ffdff3b3aad399a0b56935bb05f7cb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-weights/epoch-5.pt",
+        "bytes": 480359,
+        "sha256": "194238100b12a35abf0a332d4d5bc2b19c4abb3adacc80b34953b30bce08f827"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-weights/last.pt",
+        "bytes": 480209,
+        "sha256": "361e19a80a1e0d040947fcde2705f537895d35bc59a89924563232e9517ddedd"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/lower-lr-weights/metrics.jsonl",
+        "bytes": 63259,
+        "sha256": "f1c9a499eecbaa3c77c78cdd09dbddc597ac8e7b0a118ed22ac75a3f77a33492"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/blocks.jsonl",
+        "bytes": 1067327,
+        "sha256": "29724fe543329a204d3c461e79bda07215f8abb62d78220b0c70a11b711050be"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha0.5-frame-736.png",
+        "bytes": 488461,
+        "sha256": "f7e05beb2aabf6654198f6c2c11324b8b762760f8d5392b7b77670df80cae46f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha0.5-frame-750.png",
+        "bytes": 490347,
+        "sha256": "504096772026a652d39a0a1f337a1d89955dc18d7d7b4d61065c579ff1a1d33d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha0.5-frame-779.png",
+        "bytes": 495834,
+        "sha256": "58aa148f6a6a9ab7cbadf5ee1f83f24eb5b5bad94d643b41ec1a083af1caff49"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha0.5-valid.mp4",
+        "bytes": 447603,
+        "sha256": "7fe93567c7f59d47d77f9ca89de7702be0937affa8002f2fa862bd7087a36ea1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha0.5.mp4",
+        "bytes": 765256,
+        "sha256": "34fe477fd9d63b90bc612436c5bb4866fbb9f5ab427e80fd4ffd81ab57c9171e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha1-frame-736.png",
+        "bytes": 403630,
+        "sha256": "b65865ee7cd91edf351370535ae6c3bc48d3012c805d7322ba506ee979130291"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha1-frame-750.png",
+        "bytes": 403995,
+        "sha256": "93c9d40691633302c1af7a162c3f5869bbc34deaf75503e24d993c8ab5a3a7ed"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha1-frame-779.png",
+        "bytes": 411747,
+        "sha256": "94f0c7dca9a12186a951653cdb5b59306ba77f0b8cd1c80556b133163115e360"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha1-valid.mp4",
+        "bytes": 391121,
+        "sha256": "cbee4f0224d390266931afcaf6f2faced98ef415b9a486afc4a41efa06f1d4d5"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-best-mae-alpha1.mp4",
+        "bytes": 715569,
+        "sha256": "2c7355e37d3a1b0034d47e69154146a5b4d8ee25294ceb561bba2a80b2936ce4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 490015,
+        "sha256": "6b744d099fad738bc0e92137c33d617f25d5eb86e57797e594cc00af6468ffc7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 491933,
+        "sha256": "cc6422f595e720c8bfd594a7eb90e1f91dc276533ce165a8fbff76ef3b1fbf63"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 497095,
+        "sha256": "f75e3b58f5c4d13c8789f5f37b557bf372e73bcfc7b54059111bf153f9274685"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 445714,
+        "sha256": "3e9948f36aba516d5a3af220fd5f94dafca23d450221c29e5c058af4098042dd"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 765549,
+        "sha256": "3abe18d711a5fc530a95a18314936391ed1be35b9983d60633d79f007e75c231"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 407613,
+        "sha256": "ce4e5334680a78424b36fe3a60449f4737626c972dd7c10a3ef02c28ed283d10"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 407856,
+        "sha256": "6355403b453a2a0866bfa4a32f4ee279881f965dafb0a546996154a044173c3d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 415631,
+        "sha256": "9a94e969173eea96a5e3ceefa39132f645ea8dd6949dc140d25fa5e027f152f4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 390914,
+        "sha256": "06d54085faee511df0257f37d090eb0dae064c1e1cb9f991d35554ebf86c46c0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-10-alpha1.mp4",
+        "bytes": 713977,
+        "sha256": "34fea457828a1774f40fcdd1f5775d7507e39adc3bf139e86677649e9b09c88a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 488852,
+        "sha256": "1c2348125d8ad0983a22c0db0ce23bf89ca9a4a071fa721128a1154d2e2ff8b9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 490729,
+        "sha256": "c0980c093219cd002c83c450aa3fd151c53e80292d77d058b4ae09735f3fbc65"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 496155,
+        "sha256": "7e90176bd974fe64a15407960cbd9d06eb58fba902f3d907c49a217e5db66bf0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 449563,
+        "sha256": "7579f8bcba83c1bf0c590c8e462bdddfc78534fda3de03284d8a8ca7aebfc63a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 767856,
+        "sha256": "4769ec2843e871ca3c549b9a299e72fe4e36c075892bfb2813e2cb4b13b423eb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 404327,
+        "sha256": "febd77c28573eaaf0072e2172cf5bd68ddde70876339ffb442ce7abac5a920aa"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 404545,
+        "sha256": "bccc5fb64d85a3f317a727849a8966e530de30467a2adb2f9d61b01fc28223fd"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 411715,
+        "sha256": "4a7cbbbec1500bbb19db5245b17c41240b5676ca5682828155848db2f163d32d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 376940,
+        "sha256": "c0f6f3f7698dc4a65fe5eedadefa24fb5c829ada896851c2c62711379989292a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-20-alpha1.mp4",
+        "bytes": 700965,
+        "sha256": "aca24a2cceeb16d44d89caefbc8753019ed522cc0111d01a31289852b6af7821"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 498106,
+        "sha256": "47fd90cdced5069c99b9fd9d6c007b880ae7a07668332dc546148d0b57a310a4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 499301,
+        "sha256": "acb419220c56eb51f5c95778d9c83c438e1bfe2200e13f89714ec90a0704c1c6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 504091,
+        "sha256": "bd6a83a6edcbd31a8049bc0585bf2d45305a146b4df28bab8e371c2cff8a5b9f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 459411,
+        "sha256": "9595b7ae5738e10b84b179e9bc6e1c1e135f2bab041c2d9ff9f4a7be73ae2032"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 776886,
+        "sha256": "be85a35397e1cc8f14561abd5befe0a3c453f0e0d867700ecbf58478e28db924"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 435838,
+        "sha256": "945b3cdc1d336a9b44001e8da4b0ed6b883c720e6bf69a86a9d3f037ef411781"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 435496,
+        "sha256": "aeceb031df0395beda0ea0df787c75fec90f00bd1796a0e43978e001ec3f2e20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 441490,
+        "sha256": "cb219edf072ad547ef90be8c22d2661341e9e8a9044744ca5a134db39ad813a4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 414255,
+        "sha256": "04875aacd70af448abcfafc2d25e56d2b8c2acc770df7d150de2ce98727727d3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/more-gradient-weights-epoch-5-alpha1.mp4",
+        "bytes": 737879,
+        "sha256": "99be5a79cd3b00b9ea92001982a1315dc5d9aee7926f38166c621e205bc83657"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/report.json",
+        "bytes": 50104,
+        "sha256": "a6d5c49e6583edf6b1859b3e7341f20975647107a83fb67e1fa35cfe764602e4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-review.log",
+        "bytes": 1108,
+        "sha256": "5175117f1737430ad1b1add8ec29663c4a2589efe8802122aad6f87798e6a743"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-train.log",
+        "bytes": 1323,
+        "sha256": "bf6708c91f5fdddf74f81b9c28a789d4c79838b02d5f12ebbdb821caaa38ebc4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-weights/best-mae.pt",
+        "bytes": 480153,
+        "sha256": "92b5aa5c90b69eb06f3d0593d996ff4501608493532259aebc1eb88d7adb16d0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-weights/config.json",
+        "bytes": 1937,
+        "sha256": "9289c6a0692e6dbed7d5a924c98e2a3cce78510f6b4e730033edae93a41e77d3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-weights/epoch-10.pt",
+        "bytes": 480153,
+        "sha256": "8eaf17d855b91a6383f8aa4055e62551b87558cbc04c3acc9f074abb3aebb155"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-weights/epoch-20.pt",
+        "bytes": 480153,
+        "sha256": "3206192011df7214d441ff7e6ae104a070f513941f7972ddbaa7d09f36b176e1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-weights/epoch-5.pt",
+        "bytes": 480103,
+        "sha256": "dad9242b1238940c6eef6c40fe3371f5adbf2b6cd0b79273d4a0f97a6025833e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-weights/last.pt",
+        "bytes": 479953,
+        "sha256": "71ea03cbfe8a907daf2d8e85b380e0070c4a0c69342995f0671fae45c7089b97"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-gradient-weights/metrics.jsonl",
+        "bytes": 63294,
+        "sha256": "7959be1ef6709ad18cad96c07c83b482e1f138a79ebf48d3552a693a23dc5db8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/blocks.jsonl",
+        "bytes": 880602,
+        "sha256": "3558e1eb9faf575543f6a6928225aa2214a3f9507100cfc3c9bcfac10426325d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 488565,
+        "sha256": "46e17a2c61b4b60b248c0ecb6e43dce68b1399b564bc57fdfc1cdc25ef352d57"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 489859,
+        "sha256": "b9358db7832bb8171f281bbcb6c84366c2b8ff07646ea634e131cf0fc5aad1ca"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 495523,
+        "sha256": "70c17dfb4c8fc1096d2161134b11f4c9431d1cc33221ecd558fb2c56c0903985"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 454264,
+        "sha256": "928bbdd0827f7bfa62b70d94114219d93e3c55ac03cc9b8b189afe33d208c36a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 773500,
+        "sha256": "6a7af451c065d5a95b208d97fb8473e878202ba84cc81f981ed3fc4c847d5cab"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 404245,
+        "sha256": "68f762d8e69487c82b52b00392d354f511e1bde42f4a799d5626ddd4bcbd255b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 403403,
+        "sha256": "b266c23b00d0afe4b58ae417bf12f0d5e060a57504afee3ecef7216e8adf0f68"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 412023,
+        "sha256": "c14c19a70fe8407842a2d182d37e03fce437a13a9d0c6cab497adea3d82a14ab"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 391625,
+        "sha256": "27dbff76d23f0e15adc536d0e739216baba9081eea541b6a9e08ac17e4bef258"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-10-alpha1.mp4",
+        "bytes": 715112,
+        "sha256": "6471349c7406d4a11ac41440f54bde21b8eca16fd99b0e3d94419b68e620f696"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 490490,
+        "sha256": "611af30de5699aed5a6277d4031c814fe82c0164abb37cc147556b9123ec4897"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 491826,
+        "sha256": "36b8b74516a8c1cdbbe41c92e584587b4a8334372ddbd211cf4530da40f6b3be"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 497998,
+        "sha256": "496c1ff17ad36cd8e7c20e6f12235b73fd668b578ef204f816a32ecb9369041a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 461720,
+        "sha256": "6fb344ad99c92adf1403b4ae43cb6d6bbd8f7e337064042a4b76116ca7c210d8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 781751,
+        "sha256": "17edee21cceec91c9b110606f308deb8eeee2aa8d59527581a71496b6b300fcb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 409791,
+        "sha256": "cce8fa4c1f65746b0eb98047be1fa284fd214d77f6013040275ec79295b7f3b4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 408962,
+        "sha256": "40ea6bc490123102c7aff9e2481162d4e44310b013ad3dba8a92c325d2948705"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 420121,
+        "sha256": "7df321f97374c98b2f8a6cd6a4050973360da7974ac9fa29a00c11435931ee1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 395768,
+        "sha256": "bf4f408394d5b14435eb83c367f790830fcdd220d0be0f61391b8263a6be0069"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-20-alpha1.mp4",
+        "bytes": 719520,
+        "sha256": "13cbeb3342180d4bcf73350ae561c4b2cae071fa2e008ea92222770fef5c7c4b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 490190,
+        "sha256": "55d804a8b166be47a06f0cc7b9fb15bc930705684f785a925d923cbf91eb070d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 491572,
+        "sha256": "eb3f95a98154fd2b8acc1c695e41b7e5b5f0a02d21a3264fa4d1fc60de637a2e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 496973,
+        "sha256": "202d7e1270a38b6ed872ab3519c5e38c76e853e6581962738f8348a59f636107"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 449550,
+        "sha256": "be6038306ca75154ba81358ba84f3709c866633c50cace53d907f223ebbb9168"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 768939,
+        "sha256": "bd8b0094e988e94920dcbea9e72a67d459dfb478107470a458209c3525a757a7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 408089,
+        "sha256": "d7cae6a66a8f046596f358fe8c73ff6dcf334b24f79c5ff7a11c5971c51d0c04"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 408187,
+        "sha256": "1debb5b49961ae7618c715a4208263855ba1ebfb4cfc97f51fc001b988589e78"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 415882,
+        "sha256": "a0fc8ab216b7af3bec964378335eafc904d8007c7cc9bc20ac8327667d70a0e4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 398620,
+        "sha256": "042e8de2c00c9fb83c9fe993c457fd831d99663ee4cf14545d057697fa6287ab"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/more-width-weights-epoch-5-alpha1.mp4",
+        "bytes": 722622,
+        "sha256": "eea0c00a2241bec895b17548348e2e66cddc5745c460ca4c735f413b3ae6c90a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/report.json",
+        "bytes": 41705,
+        "sha256": "1afcae2e0f59df213cc63541411e8493b0f57e5cfb54e92fa793157166ab04a8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-review.log",
+        "bytes": 897,
+        "sha256": "6d2d5b0664e51792535bd42d4c7d980969ed3d460d203de7abbc435a13057b3a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-train.log",
+        "bytes": 1323,
+        "sha256": "c053b6574cc49733c6d61b3302c2ccde3ad1b3cde00fa401081df54d5179dfc6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-weights/best-mae.pt",
+        "bytes": 1393817,
+        "sha256": "106f3fd0d508ec07cb4476f57be59820820b672cec1585be7b57da8f059cfac3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-weights/config.json",
+        "bytes": 1972,
+        "sha256": "06fe94e1ba9d9bb954cd6bee0a62a4600dfa3db9c11455eb040961cd5e5bc45e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-weights/epoch-10.pt",
+        "bytes": 1393817,
+        "sha256": "c70e3f41d6ed56d843137632e2673bffa5c882c04128f5d547e51b235f71949f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-weights/epoch-20.pt",
+        "bytes": 1393817,
+        "sha256": "9400448e03a3ada766b8db95a34cde3efa3bf93b771d0492b2ab1e486f39cba3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-weights/epoch-5.pt",
+        "bytes": 1393767,
+        "sha256": "a43677c7ba1f54902de30472285e415e4c4e6ac5277eb7d6ffcb17f728eb0012"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-weights/last.pt",
+        "bytes": 1393617,
+        "sha256": "97e8da58890c4004fa232fc18e5a458ff2cc5f756555e3db58509f51b45a8d4c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/more-width-weights/metrics.jsonl",
+        "bytes": 63304,
+        "sha256": "a9886b25fdc7262bf36a59fd39cbcff38cc4f5c18ef473d5038445ce22328e96"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/report.json",
+        "bytes": 56601,
+        "sha256": "95878fcf1503627243b289e673518af8f009d29ff33136c03a5ed5c2eac8de99"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/blocks.jsonl",
+        "bytes": 1045879,
+        "sha256": "2bb52daa848d435106cf9a0288591c0985e45571b5a5081045e5e01b5ddff41e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/report.json",
+        "bytes": 50079,
+        "sha256": "ca9b9ad7815549465e032183e7cded21f364f73a0c3fb8e4cc72a00c85c480e8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha0.5-frame-736.png",
+        "bytes": 489620,
+        "sha256": "4fe27fa2a3e916008462dd27a4aa4bb38a83675d5e1f2bed3b9da467bfa84569"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha0.5-frame-750.png",
+        "bytes": 491007,
+        "sha256": "aec44b7241440304c2c3eeafd7fce190b40f2f27f6ff0271e65c32fd6e439960"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha0.5-frame-779.png",
+        "bytes": 496612,
+        "sha256": "2310fd6a073394360a35461ebf7dcee9024df14ed56e26d9d429f0f6c286c901"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha0.5-valid.mp4",
+        "bytes": 459509,
+        "sha256": "150c97ddc9a2331880727293eb6798ce159704dcf03a805b8fa0e45794e0be8e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha0.5.mp4",
+        "bytes": 778786,
+        "sha256": "3a6406418a893f97043e4d51a493c73532b3ffd7dfdb0df3bdfa1d9972624d7b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha1-frame-736.png",
+        "bytes": 407791,
+        "sha256": "3c496bf5dc7deb5566798302dc48d4c6e9ab4db3e9ff7a2bd2bcab0886c7becb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha1-frame-750.png",
+        "bytes": 407369,
+        "sha256": "00fffdb03749ce7e5945ac5362a34348039447abae0c9ecb5fcd2ea09ddac470"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha1-frame-779.png",
+        "bytes": 415519,
+        "sha256": "c52b8be745cb9de099f8f3699447f8c658aaa75709c84c470060295a473491ed"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha1-valid.mp4",
+        "bytes": 390385,
+        "sha256": "6f115f8a44e4fdde6b216a6a9fc2d1c4958c6a5c66d4b5947e92f307b1e9da7e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-best-mae-alpha1.mp4",
+        "bytes": 714407,
+        "sha256": "04a44f648faabdc68954a66ea0974acdc956769795673bc6e604298f30714327"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 489357,
+        "sha256": "4e9dc8e89a7429dbe452b11eadbb9c86384545973270c5ef4c4fc94d7d02a447"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 490929,
+        "sha256": "a53df4fd6a202e74109e747d7f69184c46445ac46667fa959e3ce58ab0b9bbc2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 496279,
+        "sha256": "fcdb42d5a54f381cc866e8481dc2ce474997a4deb7489a12a1f1130d9f175b92"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 452762,
+        "sha256": "0ff104af1b85d17fb3e665f1260db067f004269c7458ff09ca88ff133b00a3f7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 771634,
+        "sha256": "f8d6c0d30148dc6d92c99f8453b12b11dd7bd4089f605139c3c3b0fa8c9e6a4d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 406800,
+        "sha256": "ad48b7adf2c19dd860c07f7078c38e8f1e512568625286169caf099c5235a43e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 406251,
+        "sha256": "0bd5dc6287f36ef39405f3e2e1296037b175df1aa38dbdb3840c42637bb73000"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 414293,
+        "sha256": "c237964ac25dfc504b96bcc9331ca481da9171642632e150416d4632d0ccf168"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 379568,
+        "sha256": "9d32dde1c94ff9a9ca71d2f9884e390b2a945a12893bcb9cd24436744a3e3ca7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-10-alpha1.mp4",
+        "bytes": 703734,
+        "sha256": "7da0acc4ebec4dccfb67b731e4de28e9b063cdffe73e81527b44acce140493f2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 489033,
+        "sha256": "4f7be50e5914386a65cb23e33a5cbdbac1a080d1fcdf409748b17d07b6232c71"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 490444,
+        "sha256": "11708df267ad98c13ac2fd04ec3cbe8a3c78f6d4dbb4e45bf99ac4d50d599e16"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 496489,
+        "sha256": "e015e4624aee802042b07fef4615b916c7d1ddd0e63c6ca5983fa8b05d3d29da"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 459185,
+        "sha256": "2c57d43e9cab40752913be48edf468c538ceebd746d7c9b4c20065e4d3d98807"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 777051,
+        "sha256": "d88adea5ec005bb60aad5a4003d806a356c8fad48ca9c70dbe8cf315dceaa255"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 405039,
+        "sha256": "cc00d9edaa87809f8adb61601c44959a6749112d1b73dc3e3dd860a61467a1e0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 404677,
+        "sha256": "8cfa7b9552913917b634064dd62804bc01f42b388e29a09bc93cade2c1dbc9a6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 415473,
+        "sha256": "0beb60a1880e21bd8a5dd59dc413a952157a0cb0b7552894abed4f214cbdf18d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 387142,
+        "sha256": "e477b965aefe99f1f4f0dcccd2f8d617566f9165c61333691f276f22179a361f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-20-alpha1.mp4",
+        "bytes": 711899,
+        "sha256": "6004ef01fc7c24bccc62f6ada8a331cf06529a511e8b74fa1577773d2553b494"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 490817,
+        "sha256": "1e2c0a67c29896dd54d66c2cd4e8085eb3a59d70f8c0c312f2b329413f84fd0e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 492400,
+        "sha256": "7aaf50d6609af6a8c72000b932bc288bcf412d895d58624e590c2819ece9511d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 497538,
+        "sha256": "d1da76e7a1a932e884aec9ba8c46046aa600bfc0fbf1cd50da41826ca9e89286"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 445602,
+        "sha256": "25bc94d28114e2652bce1a96db181f0e072b5aad379c40374fee6f8088f07f45"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 765755,
+        "sha256": "4cf5f478dcc008064cc31215500f8865173abacec094bbf68d684bc92b49a730"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 411025,
+        "sha256": "d839be30c5b563183d1276572bd0634dde01e6e73f29e1bdc3868d840ca8bc73"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 411010,
+        "sha256": "90ddb25f3c4600cfa06ec54985403c43831e7a2ccd60f079f9784e011bbae170"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 418851,
+        "sha256": "d4346331c3cfef7abd3330a3a54b48137d264bd8ea391f96e539dd99a5f876c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 398351,
+        "sha256": "8dc96cb2f05c10dcaa8a965be6ade08857a235ead4c59b6edb31d8b7c9eb50e3"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/seed-repeat-weights-epoch-5-alpha1.mp4",
+        "bytes": 723388,
+        "sha256": "db51a1188ff483746f20ea47b93f0bf900e6175c753a1c4879d845e6a188cd28"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-review.log",
+        "bytes": 1092,
+        "sha256": "d04cc0b949e0b6e6328628933973846cc95d3d25ff96856d653199c568d9a41e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-train.log",
+        "bytes": 1323,
+        "sha256": "d1101f5ce8b48d56bc7416388b429531d3af24386cd72a38b261c9d44561de59"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-weights/best-mae.pt",
+        "bytes": 1393817,
+        "sha256": "0043e7838ac9b8aa8ccf3c61a8e369e9eca9d657e4084463833d7eb649c9f7d0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-weights/config.json",
+        "bytes": 1972,
+        "sha256": "6162b4c737c7c382d96ac251689ec03999c7af72d099f01ae4b70f8048b2b5fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-weights/epoch-10.pt",
+        "bytes": 1393817,
+        "sha256": "d519a3c33933d0c8045c89a7894a21e6ca1d5b2a26b78736372da0d394d609a8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-weights/epoch-20.pt",
+        "bytes": 1393817,
+        "sha256": "6c507140c0f758d996e28984745d0b8fa1e86659604b577618076434177942b0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-weights/epoch-5.pt",
+        "bytes": 1393767,
+        "sha256": "de9e2554c6018d9ee6fcd70ce612dada5c6dcdeede07c7e3a863389c879df667"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-weights/last.pt",
+        "bytes": 1393617,
+        "sha256": "96eb4fe6fa5102f2be846d7eff819b678bf7ec784e566d05776678561f70d93f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/seed-repeat-weights/metrics.jsonl",
+        "bytes": 63281,
+        "sha256": "292d0bae995cd9929eb209c471733df6e11ad66b0d96c59b8626fe24d3f4934a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/summary.md",
+        "bytes": 779,
+        "sha256": "d088c869ff66069c1b9c5c2dfdceb757844694a54295f762fcacc1460018f78a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/blocks.jsonl",
+        "bytes": 841151,
+        "sha256": "566a49c3a8c6512f4601635a31d10a321e351c630ab3cfa51050284e4022e8c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/report.json",
+        "bytes": 41633,
+        "sha256": "72e2c22e40555e6a41daa1a51e2f3cb23ecd3b30c67e8fd74696ffe14178233a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/target-frame-736.png",
+        "bytes": 506110,
+        "sha256": "8f5b27de57f5597b90b02e2f7ece6129437846e5d3fa65d194d36a7384b15b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/target-frame-750.png",
+        "bytes": 502374,
+        "sha256": "2e701ace11e9e8e0b8bea41a07a18ce33a42faf0ed02b335e9ee9f9c519361f0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/target-frame-779.png",
+        "bytes": 491268,
+        "sha256": "692728a714ac30dca07d79099138cd88acf1c73680d306b9649b6e115bc9019e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/target-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/target-valid.mp4",
+        "bytes": 264889,
+        "sha256": "96ac30b546e6f91e289d1a775549faed4ea39cf49e7a60c7a9835c152d018198"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/target.mp4",
+        "bytes": 330398,
+        "sha256": "750c49a92b9f4c59f1614c481309ca1dc6cf46a7948d4c4d941a012468d907ba"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/unsharp-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/unsharp-frame-736.png",
+        "bytes": 596792,
+        "sha256": "c0d844841f0eb4140b3ec8894c5ee160b3fa61adf63f73428adb39cae8f56022"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/unsharp-frame-750.png",
+        "bytes": 598911,
+        "sha256": "0a616c23aa61dd2500e9f89212e030348ba1511d82a922d7ae846ce699111ff7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/unsharp-frame-779.png",
+        "bytes": 601654,
+        "sha256": "6643ffae260f1340f07d159e80fe1b0e78895ff64e54c571543148e9d08becd0"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/unsharp-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/unsharp-valid.mp4",
+        "bytes": 803301,
+        "sha256": "46c1446f6b556dc2d002cde7012abc35a2f19dc263ad4afc1d7249b750301d20"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/unsharp.mp4",
+        "bytes": 1104777,
+        "sha256": "4c70ae3d1c3a5a3de49bf52523b2c79d21a348f9f3cf086c9bc8d22507da4a5a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v12-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v12-frame-736.png",
+        "bytes": 548464,
+        "sha256": "4210568a138284dee75c5c764bf39301593fc4d4a92d4f5218f78204d997647a"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v12-frame-750.png",
+        "bytes": 550643,
+        "sha256": "7c610f65605c14c7a10b5db662e395106aa0751f21ccb6993caed4273d3b4a1f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v12-frame-779.png",
+        "bytes": 554337,
+        "sha256": "cb018a9032f2050d9f0cd61df574ba35fc0e118508fcdb761bc5a1aa1f585b67"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v12-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v12-valid.mp4",
+        "bytes": 614316,
+        "sha256": "7bf9c62c7e98ea2b9a2387a1279c8bec376876e18d25919562c752f8c7a042f9"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v12.mp4",
+        "bytes": 923877,
+        "sha256": "b0e904bbed965128c77bfb88bb647efac733d973849068f94183512cd191de89"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-736.png",
+        "bytes": 491855,
+        "sha256": "5e54e12aa0a2d48110ab5339747956f7c1ba37b9b9d7b27f563ef904255c01fe"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-750.png",
+        "bytes": 493291,
+        "sha256": "ea205430585b192cb69e43e6857f79b5ab7f630c68f2c10ef514475315b04abf"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-frame-779.png",
+        "bytes": 498630,
+        "sha256": "08c25f9ea35336206a90196fe4b751c0e571014f7c5a7e75864d2e5cf8fabfb6"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5-valid.mp4",
+        "bytes": 468249,
+        "sha256": "8e0a838d9acfce19bb24b538f42d57bc83f93b5027561b94e9289d18e017d413"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha0.5.mp4",
+        "bytes": 787863,
+        "sha256": "2c6a665906e77b21132a81f1c27896a41914ed21659bc1c4cc04361940731bcc"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-736.png",
+        "bytes": 417373,
+        "sha256": "55f40efa5f1058873db742b77bcc1300e36d41820f02bdf6e063e2dd5c80ab01"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-750.png",
+        "bytes": 416668,
+        "sha256": "b1b31f3e3afd569f480723a15028f8e696f7e0c2039df0275dc266f712a6ebe2"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-frame-779.png",
+        "bytes": 424731,
+        "sha256": "d375343feeddbdda45ddb286cf86d735a9c176212d21d7ee2b9f2a2cf8ebc2c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1-valid.mp4",
+        "bytes": 467696,
+        "sha256": "bcc74ec7465a982b712d0793b7977f9d3994aa562db942df939d9604d7884716"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/v13-S2-R2-20261122-215155-129-best-mae-alpha1.mp4",
+        "bytes": 791591,
+        "sha256": "ac4b03c190d7537743d0ab01e891ea34c1faf210a06b9dceef9431cfdb65538d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha0.5-frame-736.png",
+        "bytes": 488996,
+        "sha256": "1ec5af1eced31274ad6d3bcc9390b86f3f96a44b0e8e7ac4a26b4986a453b53e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha0.5-frame-750.png",
+        "bytes": 490283,
+        "sha256": "05d1c8966f0eb8b1fdc4931df4d67f3a99ec49940d656494fcdfb6a5eeb01871"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha0.5-frame-779.png",
+        "bytes": 496056,
+        "sha256": "f797e9416d936fd9780479fed0a7aad2a4e91c06cb079910876e2377658dfc8d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha0.5-valid.mp4",
+        "bytes": 447272,
+        "sha256": "075c12784edc4b96c24d9762535c76501741fc4b7c57de7994598541d793ed8b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha0.5.mp4",
+        "bytes": 765976,
+        "sha256": "9da2f7eedaf734714e030bbfb48ccae88a6faeae88031bf65b0e3451844491b7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha1-frame-736.png",
+        "bytes": 405014,
+        "sha256": "42bb83acceefca20ed8736925648076ebb20b11a357f770cc860363a97fe1dd4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha1-frame-750.png",
+        "bytes": 404704,
+        "sha256": "f5c4f9a53f166e5301c8440b7f4ee273171a35e3b88afe3f1041ba45673fd8db"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha1-frame-779.png",
+        "bytes": 412435,
+        "sha256": "e8ef28d74d89138b1bc71853ed33caac35a7654a9836a61c10b2f5a41f23514c"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha1-valid.mp4",
+        "bytes": 378583,
+        "sha256": "218822863d63561a0169bef6045b04c25d52df99ae9eee6f0e9d3b5b89732c54"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-10-alpha1.mp4",
+        "bytes": 703099,
+        "sha256": "8216c39e0f93b24a8b8d8af76b3f0b3ad791e32491960346e192f066ec26f151"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha0.5-frame-736.png",
+        "bytes": 489426,
+        "sha256": "203265df0dc859d87c94a21e1a4ad70b5933eecea9a0fc23e447eb782164dcf8"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha0.5-frame-750.png",
+        "bytes": 490551,
+        "sha256": "3f75fd4c57cb0bae976d8c157dcb674184f7d9bed4c6282fb6f8c7b263e8fdce"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha0.5-frame-779.png",
+        "bytes": 496541,
+        "sha256": "e93f4590d2f16b8cc61cef01c9cb95d8b738fb695ab2270d2a5a35c59de1ff63"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha0.5-valid.mp4",
+        "bytes": 455306,
+        "sha256": "cb52a842ca3d0038831097c52aacd860555a708e9552668f219f2ba423f5b86f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha0.5.mp4",
+        "bytes": 774299,
+        "sha256": "74f43f5e176562a3c6009c04d29801c986948be65c0f1f283dd526568c41351e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha1-frame-736.png",
+        "bytes": 405808,
+        "sha256": "ad574d1bfa59b2c5b0346b3ae6fe649898ce8b10620c7de66bd4cb44112b61bd"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha1-frame-750.png",
+        "bytes": 405731,
+        "sha256": "9bec8f5ade7642721f5bb5445bb4681c0551a8f0634a416f2d83bf109bf39037"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha1-frame-779.png",
+        "bytes": 415323,
+        "sha256": "40d31cf5ce7b1d18d83306600bb7014ab1bf7cafd5121a749a6e7f2e08e09e99"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha1-valid.mp4",
+        "bytes": 379469,
+        "sha256": "add0b38526d0df0f89e61c3e24de7ebbcbdbfa63322c82e2baf931def8c099e7"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-20-alpha1.mp4",
+        "bytes": 703632,
+        "sha256": "1bf85f072d52f42ac10cd70fbfa24079ee90e48d2b4332b250448d4e3269f896"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha0.5-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha0.5-frame-736.png",
+        "bytes": 492117,
+        "sha256": "ab623ba6f9e7ccac417e2468979eee9fa8dea54919602b49aebdd08f6346a1a1"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha0.5-frame-750.png",
+        "bytes": 493579,
+        "sha256": "c9487521c54a50928f71c94e6d2a8762f3a6f63bc24f761aca6707c56014431e"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha0.5-frame-779.png",
+        "bytes": 498644,
+        "sha256": "278bbc00136f6827126ba2ca2a3ffa99e5806682b70e8964bd228b17b314b813"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha0.5-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha0.5-valid.mp4",
+        "bytes": 450685,
+        "sha256": "baff081c2cdfba542e4c8e6b7af10a5f64c6bfb13ac0f3c6dff7a0a28549ec6b"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha0.5.mp4",
+        "bytes": 770806,
+        "sha256": "b99f6cd92cd76a85330b386ae3af0ad99ef638364f8bf4539297df970e59bf8d"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha1-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha1-frame-736.png",
+        "bytes": 414060,
+        "sha256": "828e5ac2fe9ab5b45437f2dc1a6d6643be35778012061571d46587c44205fb8f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha1-frame-750.png",
+        "bytes": 413981,
+        "sha256": "e518a04e74026ebcad7916684b9777142cbd32b229f7cf752adc6e2ead893cdb"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha1-frame-779.png",
+        "bytes": 421239,
+        "sha256": "1f0cce40b6710a5aea4109d08ccf63427c1851a76fb5e7e5c4c12ca9333653c4"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha1-valid-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha1-valid.mp4",
+        "bytes": 397697,
+        "sha256": "46c566d9fc370376416d16ac38ce94d2866e65f1f895a5c77132150b642cf504"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review/wider-weights-epoch-5-alpha1.mp4",
+        "bytes": 721414,
+        "sha256": "b7e4302bed2d40158e366717b0435a7059c4bec6b42f03714ceedf34c3ee0442"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-review.log",
+        "bytes": 867,
+        "sha256": "d389ff2a10ddc7f00bee2d8535eb999217bca142b79bf34f84534dcbfdafca45"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-train.log",
+        "bytes": 1323,
+        "sha256": "9532a66ed93e550cfc72a9ffa94defb2e3feeb0eff8fae6373a25a3d3a09ca27"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-weights/best-mae.pt",
+        "bytes": 863257,
+        "sha256": "ec396c35df10c4511d2935b6ba98a905f10ef289bbaedf6ed036f304ab3c4f7f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-weights/config.json",
+        "bytes": 1972,
+        "sha256": "77d72a1f50abc021e980a1b039e29f107dc0f18de05f55834ce8c616d94ec766"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-weights/epoch-10.pt",
+        "bytes": 863257,
+        "sha256": "07ce6652e4fef6028a4e68fb50488a58674e0c3505104e881dc6cba4e9e85b4f"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-weights/epoch-20.pt",
+        "bytes": 863257,
+        "sha256": "e151a5331afb16323fba7bf29b16bd79a7d67182b1597422ab11952117f867ca"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-weights/epoch-5.pt",
+        "bytes": 863207,
+        "sha256": "9ff2eb3caed3bb5be8410f0f90bac4de48022bfe3dcd464b02ef7c81ad930110"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-weights/last.pt",
+        "bytes": 863057,
+        "sha256": "c6f4b24809cec6dd555ff2bdc9d35457282f8151f23d9a643caceb4901b3ee19"
+      },
+      {
+        "path": "Model/runs/v13-overnight-trend-20261123-015731-679/wider-weights/metrics.jsonl",
+        "bytes": 63316,
+        "sha256": "7b35beb2a534e614e1bf298f67b09a6b34f4cc3ca0b974364770b26a3cb9f490"
+      }
+    ]
+  }
+}

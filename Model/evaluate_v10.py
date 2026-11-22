@@ -55,13 +55,13 @@ class FsrReference:
 
 
 class SingleVideo:
-    def __init__(self, folder):
+    def __init__(self, folder, name="generated"):
         self.frames = 0
-        self.log = (folder/"generated-ffmpeg.log").open("wb")
+        self.log = (folder/f"{name}-ffmpeg.log").open("wb")
         self.process = subprocess.Popen(["ffmpeg", "-hide_banner", "-loglevel", "error", "-n",
             "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "640x480", "-r", "30", "-i", "pipe:0",
             "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
-            "-movflags", "+faststart", str(folder/"generated.mp4")], stdin=subprocess.PIPE,
+            "-movflags", "+faststart", str(folder/f"{name}.mp4")], stdin=subprocess.PIPE,
             stdout=subprocess.DEVNULL, stderr=self.log, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
 
     def write(self, strips):
