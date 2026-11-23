@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "id": "training--v14-demo-compact-codebook--run-b6b297cef2d6",
+  "kind": "training",
+  "name": "v14-demo-compact-codebook",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v14-demo-compact-codebook",
+  "started_at": "2026-11-23T16:08:34+08:00",
+  "finished_at": "2026-11-23T16:09:31+08:00",
+  "cwd": "C:\\Users\\dinosec\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinosec\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "train_v14_demo_compact_codebook.py",
+    "--db",
+    "../training-data-preparation/拆好的訓練資料/demo-q5-native.sqlite",
+    "--out",
+    "runs/v14-demo-compact-codebook"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "fc7596c6f355dc0e1f8dfbb4fb6e62973f585f9dfa7b7d72bb6c469e30e41481",
+    "directory": "Model/experiments/source_snapshots/fc7596c6f355dc0e1f8dfbb4fb6e62973f585f9dfa7b7d72bb6c469e30e41481",
+    "sha256": {
+      "AGENTS.md": "da849c076a32aa4742975190e130351c7553020a0b4b0ad6032a020f3d929209",
+      "baseline.py": "4064fcad6c52d51979e524f69a6cbd1c595fbfc2dac1f828be4d5ae0523dffc2",
+      "benchmark.py": "85f7414574751d38ec9b0fbd958ac273b736094a71e788341f400ab0b3a296f4",
+      "benchmark_v14_codebook_precision.py": "9cef236363d1430ba9c381b1a58e22d11672c93cd4671698374364a5219f893d",
+      "benchmark_v14_codebook_storage.py": "7e12a14531ed588bf1e6201a0ad11a36f7936dafa67fba8f174b55b58a3e95c3",
+      "build_v13_fades.py": "654a33307fe6a1d43d55ac394e26ed730f882b447d6d6e0f7740cd94a6cbfce0",
+      "check_bhxs_stream.py": "520c1037fe18c81d1f5fa21415ad92ceed179b9b0042638264caa1b73a678e8a",
+      "check_dataset_consistency.py": "1b4dd5c561cff1f760b720272df9ace524100312708b3f34a7cf1fa84d9118ea",
+      "check_v13.py": "a2eadb3ae3e70bd2f1b77750fb917089a311f1c17fcc5876a0f623b22ca147a4",
+      "check_v14_exact_video.py": "180dff1d634685a5597f3e994c8ae3cd816171e1aed3aaa3e98fb1a4852f7df7",
+      "compare_v10_v12_existing.py": "e5ed4027a5228a3c3c2d1061472207f1c2c75c029bb5ec0f533b7d85c6d53e7f",
+      "data.py": "878601b92eb4b63113d7daa147b339d649b1c689cd6d156111ef9a7c533ebc1f",
+      "diagnose_v10.py": "849f4a02c00399157696b4b913014a0c3a751824ea597ece4848de8856433ca5",
+      "diagnose_v13_correction.py": "75920b106202cc2464b6585eec82781c11845a790d070a8aa6043997b95dc1b6",
+      "diagnose_v13_history.py": "33df0dab0877bfaf0fac24c1b676e5bf785d9f21c674f5c7f75bada34a1b5826",
+      "diagnose_v13_weights.py": "dc9418ef1df90f3e44ebab11b0cdd3800dca47ed46498ed6da487602c2c7ec94",
+      "echosr_adapter.py": "780f4ab98dbb312f3a47b57a3cafafe4fb1ed36b9bc6fc5fd097695651ce239c",
+      "evaluate.py": "190c208010be4fa2efaedac030f8616ceb960330c7019c9412270bd3d8db95c7",
+      "evaluate_fsr.py": "6b9bd8376451d3837e45d5ca6804c395005005a4a9f09a72e2c71a821dac01ad",
+      "evaluate_v10.py": "10640f4d80c2b20502d4749f7cb2e340b7ed8012f22bf1281c8812b864ab6862",
+      "evaluate_v11.py": "dabf76a1084515e6e47e47ae2034669ca0288bf5c606feb0c525f28d884c8a50",
+      "evaluate_v12.py": "a88e67f5c8b10e6272ecad728b7dfccdd50664f780bb9701c7c5e53ef0917d1b",
+      "evaluate_v13.py": "e42b22708c074430d76f1c4d9032222a1f3f4b7811ad1ec6adb7f05eaf5f03a5",
+      "evaluate_v14.py": "da7ff1a2b3e61cc7667169ff7f4f625d11803b31de16c36dee46f57fa16c789b",
+      "evaluate_v14_current_phase.py": "dfbe23fafd03a3f9b180ece262e12d314189949b09ebfc6d00a4de0e53e8f157",
+      "evaluate_v14_current_phase_demo.py": "19adf9f8a8584f13781f825f117f96a688136feb644541b94080bbd0db966bc2",
+      "evaluate_v14_index_scale.py": "805220af8ab532fff0c3c0bcfb26ce1f73bcdd55c431f80e4a583f0a92d42d8e",
+      "evaluate_v14_raw.py": "b565de43e3b39b718e8331f835a13f3fc67f0d790d35983ac65adc9cf8560d2d",
+      "evaluate_v14_single_phase_detail.py": "37b812d405e52510e36e03b2395c3b8391b0f8822fe78047ab2c41480127b5da",
+      "evaluate_v14_strips.py": "49a3f0d5e5128ae790ee282745ec5ceff78b95aca943ac4e3cd307cc5ff80815",
+      "evaluate_v14_v12_index.py": "7085f3cbe636ae2bee93eb4bdf871959cc0ea6e6e50d807ae8656b5ca621db16",
+      "export_v12_demo_videos.py": "380b3eafdf932b6db4034b217caa5ad076bb2bbb242bccc7233642dbfb824b6b",
+      "export_v14_demo_video.py": "29aff4bc451f2ee2579759cdf59267e5f7b0863d12f20f3be4140c68294429f4",
+      "export_v14_exact_lookup_video.py": "707619e706480669d3f2327299031c26145ca7ecdc92491ae44c49ff1b7f5dfc",
+      "export_video_panel.py": "21b6d2c7f7bbd5c42209933c7a8395e94a75d8b2b3384d83f0797bf64e4f5fb6",
+      "fsr_reference.py": "f1db0e177c09d3799475e4bec70563678553f227d89c884aa31b879545c80e65",
+      "make_dataset_summary.py": "d9fe281571f715575acb84e2a1fd31441c186441e1bd78684152a49f5b80eec5",
+      "network.py": "07fc7a478483304c530a5db77af9d85fa3f6e37247568d4d65dace326e3197b9",
+      "predict.py": "70f37733ea42218bba71b3131d444f500c125873d47f65d6534fbebe75e050eb",
+      "predict_v10.py": "c2a996d074a747c3c797cc30bb4382f25c4b099c749338b6c092b7cbee80a790",
+      "predict_v13.py": "5ba995b73f9235881824575a4fc1332cda208757e89e2beab0f9822d47ed40a6",
+      "prepare_dataset.py": "fee970d352529a181480c9f9fff687e99bbb076f1ae811bb7bea533ce78038bd",
+      "record_experiment.py": "2ff53f8ff10aefc0e184c0f4379d773f9e795f9d7438c54a8a3b6e9ce88fe08b",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "f9ee35b31a1e016cb445bae4ec62c912d85c3ddee745c5bd269a9b0ea56e3123",
+      "run_checks.py": "bef5a7c920f23b6ad09bec856353107234d098d7674016b47b74dfd01a07bde7",
+      "run_v13_search.py": "01c5e94ac4016749c9a7f9b684a773e6a60993379c6f4bedf3206a516188132f",
+      "supervise_v10.py": "c3f47880d2c60cc719427c4eb6f0115fe94c966ec7b20310f513307d275aa559",
+      "test_fsr.py": "e394d6c38287fd189717cec50397d5825d2353fb835fb7ceee7ba697ddd2f98d",
+      "test_model.py": "52f23d3f16d1623a547ff732cdce877fdb09d4928dcb96485d0bdeb1781fbccc",
+      "test_record_experiment.py": "139517e18f997ffea3d09d6e4336583a01fc4f5ce0ea05985a59d2b50cd638cd",
+      "test_v10.py": "65c7e0ccf88372050c6565c465e9cbfbcec167703f9831d3150dcf211fc0ddd3",
+      "test_v11.py": "72d82cf46bf10810ccc968e9322d88112aacc3c762bf18325815824583a62285",
+      "test_v12.py": "9c4839a4e4855bb05ddb591796393f4686af0513aff374ee5e19329fbb538b3f",
+      "test_v13.py": "f2a761877fe8018bd050636a5b9c1f6c8aa019fa218dd6b7e5a4f92b94ddc3f6",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "9d5e8c76b59f3af7e26984874e5a5d4836e93ecc86970a6152610c57cda4a8ce",
+      "train_v11.py": "637a008d28a162dec867907ab07a26aa501e0ff240e2d896894c7fc600c7133e",
+      "train_v13.py": "618c73d52730cc6007f54715f5913041000ebc00fd9d82bc49c308d7dea2b85e",
+      "train_v13_gate.py": "08922ed12bbff7916df1bd341a6d48c0f04551a681942c40bbfe39ee48d40326",
+      "train_v13_samples.py": "ab8ac935bf07a3e9ef02740e8e65f8344d9091a3835c25d8c19087bf10cf2576",
+      "train_v14_codebook.py": "e1e5594cfd240be48d021885989c3028e92a00c4034dbc4f55bc056c194a0949",
+      "train_v14_compact_codebook.py": "016595a0c7f567ebac793ed7e8c68616f831515bf1b4157a4a88c97bca221e0b",
+      "train_v14_demo_codebook.py": "3e4aa3e94a91b7db26828de1438ec9ca000a6771f1866064ed3f468b18d976f4",
+      "train_v14_demo_compact_codebook.py": "18c81c9795c208a29d9d03f991e7f750e4b232d885553a570455801a298d2680",
+      "train_v14_feature_codebook.py": "cb5bbc286ea8e68fd675ba7894027547ac7498738d30e69ce40961d4988eb972",
+      "train_v14_lossy.py": "edcd8689b57f8dfeec6133bdbcea00e0f9142942a43b739cc2d6c9e0d88543a4",
+      "train_v14_quantized.py": "4cf59ebf52ba1d28c938fe1afda81740fa56cff7f1d1a5f4d31fb813c972e7c8",
+      "v10/__init__.py": "fd5ee644ec193a6dcb073d1fd69cd381f3e30f8844852ee768172d132e75b6bb",
+      "v10/data.py": "2f1839d779eada03d5661675b26d8e9d55ee3883daa44dc6c2efa3966c4e0ea2",
+      "v10/diffusion.py": "e714fca61af7014ea57cbdde7c9f1a0ae853f4a2b51e0fb7c57593c6f8633f30",
+      "v10/model.py": "573a70e73c87dc26eda3c56cf1892e8a973b47962dc9943d0a3a21cdadb80bbc",
+      "v10/README.md": "ca97ef8301bc527f060c7570eff648a99125b327eb53d7bf6c1e4991a59e177d",
+      "v10/估算成本.py": "54f7c76fcaf0c0e881add5b9e4c786982e560643bcfeead6eda04334be5ae084",
+      "v10/文獻對照.md": "37a4e34c8f23d71af3b9c934267255d7ba2a0cbb04f1ac288344fdc298a05b71",
+      "v10/生成方針.md": "35da9e552be13deb6ef7640e0dc26b1f6d23d97a7db25917813a54248a91796f",
+      "v10/監督紀錄.md": "2d0b4426eacca63c6e5cfb0e731d53f3d46d95f4c3ab31d9a63bb29035827016",
+      "v10/自動訓練計畫.md": "82acac8b818b6bd02a3690e4d6922cbed1a85c02fb2f97e926a8e1659b846ac9",
+      "v10/設計草案-低解析度重建-已取代.md": "7f823e6126e67ee5e374bad0a2b4920ed1cffcddc2eab2f5ad24e9d0c05612b9",
+      "v11/__init__.py": "39ad9c24362caa72a5567a347cb079144c05773203e8e2c3d251aeb3b779a86f",
+      "v11/data.py": "0720dccffdc86cfde5b67ae6f142cbdfd323f469c1805b370122e2f7411f69c5",
+      "v11/model.py": "1d82e7b84660a85c25ef5f87bf3f94f2f54b9928dbb93a3a720691188e8d21a4",
+      "v11/phase.py": "c6c7fc352d58995e22af8f84012a9c46e8d01b4a8d07ddcd3c9c7c6d4c833ba6",
+      "v11/README.md": "9df6d7b4567e6feebb6d71147ec50973833e381077076505f78dcd1c963b3fad",
+      "v11/scenes.py": "26c889a1fb51991df8f6672813d80a9db5a8bb4b0d2590c6412cf53d3dabbb15",
+      "v11/tile_diagnostic.py": "a83abd906aba8930dd95fa48600a8d60d82aae7cf4a9e270109bb5d63dcecf41",
+      "v11/文獻對照.md": "2ffd1d1d79715941702830dc111e73bb8ec838d59f485a33d66835b6042b0828",
+      "v11/閱讀筆記.md": "f8d9bd102f94921608d638de6024be186c27ccb3bd22cfb8fb244831b64e7435",
+      "v12/__init__.py": "d8e819b0100f9a2fd4058dbeb4683d1c9951299535cfb50c515d11c174b9ede8",
+      "v12/compare_source.py": "51eeb9b4f1d7c57ecdf43608e923b06fd071ffec8b5728f60b6db60a54b4ad8f",
+      "v12/README.md": "832c6694f47a741d82d12c9d6ab6177bb6fd9ba177f65ccfabf1fb032a5a431f",
+      "v13/base.py": "76ab6cf5515d14387c5f5110ee140c00b09c05dfdaebc81ed39352b463f6807b",
+      "v13/data.py": "57fb35cfbdb382fc750cdd18ee1521db478854beca02196fb6bc3725b6bac671",
+      "v13/ensemble.py": "84cdba52137f609ad4e2e6580b59653ad4fc7d4243acc8067ba28752027c9919",
+      "v13/fusion.py": "78880f0a184cb69c26432b7bc016437d58eba7b340c8993290402b65aa1307a2",
+      "v13/model.py": "e361331ad45fd54eaae7673846356504b8b7daee76c1403df562fac98e0f8809",
+      "v13/native.py": "f80353565e92472de98ee1d740bdb67f78526c86c85848908dd3c5d24223c154",
+      "v13/overnight-recheck-20261123.json": "67084b7de4a967bcf01b8b2eff7ee7bcd6eaf0768e2b188f82f217207b73cf3f",
+      "v13/pairs.py": "e87900e54dd353aea40b27537b03e6f5dc0ad27aa0a5b0acd09eb847b35465a8",
+      "v13/README.md": "f7a88b30076c257dfeaae8ff921910b1e9aafa51f5b3fd6115a86e189376225e",
+      "v13/roi-bbb-q5.json": "9b1b92cb39bcfad4ffd0b4998775573b44f6d82cd8b4cd199c9985c8be60cea2",
+      "v13/s2-bbb-q5-audit-freeze.json": "4265a9f3e5a9bc2e02445f675ebd7f6daeebeab44c7b56598d5c2f0b2f3ba3da",
+      "v13/執行前檢查.md": "dd10c5b7967304c57b98994aaf76e222387ddf382553ff285aa26543da045e27",
+      "v13/實作清單.md": "ee1567100e187c3bd03d064345f96c85172f1776ea0624039af4f96b3000ec31",
+      "v13/實驗與驗收計畫.md": "d582329cfe271e7b7360f73c0da91a623f8bc4a18495dd7064b6401594018121",
+      "v13/文獻對照.md": "3758ad06c1d225cc5eeef4838d41cf7f1a603bb92d20755d86700ac66387f164",
+      "v13/設計決策.md": "e8d71c218da57160a2a4d875d785b3d4fddd20c2dbfd23ab679e9b67296d1820",
+      "v13/設計規格.md": "cb23894d87fa4447a873dbef59c2d8e99888829866fc3b514a8f56e62046d44b",
+      "v13/逐幀融合試驗.md": "e40118c07f6d3e7a853af446314e3d6f761d744698c52441cbedb06f44ad13d3",
+      "作法.MD": "4ff26b67c99410893806a6b24f64bece803631de023d512bff2e5f457157ad04",
+      "驗收標準.md": "ede433163b83cad733749b5c8fa1d0540db63cb912dce37badaa6146ce14c5d6"
+    }
+  },
+  "environment": {
+    "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "torch": "2.15.0+cpu",
+      "numpy": "2.5.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "recorded_at": "2026-11-23T16:09:31+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/demo-q5-native.sqlite",
+        "bytes": 684453888,
+        "sha256": "58996070fa05888a4cb5e19992cb5db703421c8e1e8e7390fb15e0bc7b75ff75"
+      }
+    ]
+  },
+  "result": {
+    "config": {
+      "architecture": "v14-demo-compact-codebook",
+      "patch_width": 40,
+      "train_range": [
+        0,
+        1389
+      ],
+      "test_range": [
+        1748,
+        1852
+      ],
+      "descriptor_dimensions": 16,
+      "residual_coefficients_per_patch": 32,
+      "entries_per_tile_options": [
+        1,
+        4,
+        8
+      ],
+      "rounds_per_capacity": 5,
+      "baseline_raw_mae": 7.882842261904762
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "entries_per_tile": 1,
+        "validation": {
+          "mae_8bit": 7.219048177083334
+        },
+        "gate": {
+          "limit": 24,
+          "strength": 1.0
+        },
+        "codebook_bytes": 371649
+      },
+      {
+        "epoch": 2,
+        "entries_per_tile": 4,
+        "validation": {
+          "mae_8bit": 7.116849919394841
+        },
+        "gate": {
+          "limit": 16,
+          "strength": 1.0
+        },
+        "codebook_bytes": 1477569
+      },
+      {
+        "epoch": 3,
+        "entries_per_tile": 8,
+        "validation": {
+          "mae_8bit": 7.1143881138392855
+        },
+        "gate": {
+          "limit": 12,
+          "strength": 1.0
+        },
+        "codebook_bytes": 2952129
+      }
+    ],
+    "best_epoch_by_validation_mae": 3,
+    "best_validation": {
+      "mae_8bit": 7.1143881138392855
+    },
+    "coverage": "full_epochs",
+    "missing_expected_artifacts": [],
+    "artifacts": [
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/best-mae.pt",
+        "bytes": 2952174,
+        "sha256": "4e1e393eeebc91b141180e441cebfcfd2127e4a0304d90b5e47dce65c98c073f"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/bilinear-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/bilinear.mp4",
+        "bytes": 735269,
+        "sha256": "182b635d52e85ccf6889605b6433b68a2c59e6c04317060305ae94779c463efc"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/compact-k08-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/compact-k08.mp4",
+        "bytes": 779006,
+        "sha256": "50c296a49899aa8b725452e06d21185f9528d1dab4cbc6eee8b4c2f6b7496c05"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/config.json",
+        "bytes": 372,
+        "sha256": "433b4c94f2141cb113a308caa6c7a2a0f29e9a56b25a2dbe96f5039228283cb0"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/k01.pt",
+        "bytes": 371649,
+        "sha256": "45b9eed67b713ee829bcf468a6b1480950936eb09d0eca1239d07b475d6a2730"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/k04.pt",
+        "bytes": 1477569,
+        "sha256": "d1436dc140a62b5647eea4f13eb48b834c17d45cd4583dab9cb3fad5614a89f2"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/k08.pt",
+        "bytes": 2952129,
+        "sha256": "a6896fa4b7b381bb539586e46a912a31af537a62fad64e9b757b9d44542208fe"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/last.pt",
+        "bytes": 2952138,
+        "sha256": "f9a430c31a5e97adf81caa0c334a39150aee1aec9f0f112920602d50f4428c9a"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/metrics.jsonl",
+        "bytes": 453,
+        "sha256": "8790dbe253eda3879295bea1f46d5da7c4f30cbb591462eeaec897c6c00fc4fe"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/report.json",
+        "bytes": 959,
+        "sha256": "81f830cb4ec1bc609dee763db70b6fd33b33aa79ea11ae8c287061e07e9b1438"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/target-ffmpeg.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Model/runs/v14-demo-compact-codebook/target.mp4",
+        "bytes": 108408,
+        "sha256": "9e5334b3abc222a1331cc638e6b9c71dc6dcbe624ac2e4e06b5d03fcdcb34516"
+      }
+    ]
+  }
+}
