@@ -71,9 +71,14 @@ def dct_axis(length):
     return basis
 
 
-def dct_basis(width):
+def dct_basis(width, rank=None):
+    """Low-frequency DCT modes for one patch, ordered by (y+x) then (y, x).
+
+    `rank` defaults to the module-level RANK. Callers that work with a
+    codebook whose own dct_rank differs must pass it explicitly (or set the
+    module RANK first, which is what the training scripts do)."""
     rows, cols = dct_axis(8), dct_axis(width // 2)
-    modes = sorted(((y + x, y, x) for y in range(len(rows)) for x in range(len(cols))))[:RANK]
+    modes = sorted(((y + x, y, x) for y in range(len(rows)) for x in range(len(cols))))[:rank or RANK]
     return torch.stack([(rows[y, :, None] * cols[x, None, :]).flatten() for _, y, x in modes])
 
 
@@ -149,14 +154,20 @@ def reconstruct(base, patches, distance, phases, limit, strength):
 def load_book(path):
     """Shape/dtype sanity check only -- does not enforce a specific `architecture`
     string, so both BBB's "v14-patch-cfa-dct-v1[-wN]" and the demo scripts'
-    differently-named codebooks load through the same check."""
+    differently-named codebooks load through the same check.
+
+    The coefficient count is taken from the codebook's own `dct_rank`, not
+    from the module-level RANK, so codebooks built with a different rank
+    (the demo scripts use 64/160) load without the caller having to mutate
+    the global first."""
     book = torch.load(path, map_location="cpu", weights_only=True)
     config = book["config"]
     width = config.get("patch_width", DEFAULT_WIDTH)
     tiles = tiles_for(width)
+    rank = config.get("dct_rank", RANK)
     shape = (16, 30, tiles, config["entries_per_tile"])
     if (book["descriptor_keys"].shape != (*shape, 16) or
-            book["residual_codes"].shape != (*shape, 4 * RANK) or book["scales"].shape != (4 * RANK,) or
+            book["residual_codes"].shape != (*shape, 4 * rank) or book["scales"].shape != (4 * rank,) or
             book["descriptor_keys"].dtype != torch.int8 or book["residual_codes"].dtype != torch.int8):
         raise ValueError("invalid compact v14 codebook")
     return book

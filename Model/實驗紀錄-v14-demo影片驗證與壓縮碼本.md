@@ -28,7 +28,7 @@ v12 勝率 93.04%（2,700 條中贏 2,513 條），改善 **41.1%**。對照既�
 | recorded_phase_keys（每條只用它實際拍到的那個相位當 key，BBB 對應的零誤差規則） | 1,166/1,853（62.9%） | 54,404/55,590（97.87%） | 0.000159 |
 | all_reference_phases（展開成全部16相位當 key） | 505/1,853（27.2%） | 52,708/55,590（94.82%） | 0.000408 |
 
-BBB 用同一套 recorded_phase_keys 規則可達**完全**零誤差（900/900 幀、27,000/27,000 條）；demo.mp4 **沒有**達到零誤差，recorded_phase_keys 仍有 1,186 條（2.13%）因「同一相位、同一位置，160×4 樣本逐 byte 相同，但完整 640×16 畫面不同」而誤判。用 [export_v14_exact_lookup_video.py](export_v14_exact_lookup_video.py) 把全片 1,853 幀的 target／查表還原／誤差放大 10 倍三支影片都輸出後確認，這 1,186 條錯誤高度集中在 **frame 1500–1570（約第 50 秒）、block 22–23** 這一小段時空窗，不是隨機雜訊，應是真實發生的局部內容變化。影片見 `runs/v14-exact-lookup-video/{target,recorded-phase-lookup,error-x10}.mp4`（此腳本與下方 `probe_v14_compact_frequency.py` 目前未接入 `run_logged`，無自動紀錄 JSON）。
+BBB 用同一套 recorded_phase_keys 規則可達**完全**零誤差（900/900 幀、27,000/27,000 條）；demo.mp4 **沒有**達到零誤差，recorded_phase_keys 仍有 1,186 條（2.13%）因「同一相位、同一位置，160×4 樣本逐 byte 相同，但完整 640×16 畫面不同」而誤判。用 [export_v14_exact_lookup_video.py](export_v14_exact_lookup_video.py) 把全片 1,853 幀的 target／查表還原／誤差放大 10 倍三支影片都輸出後確認，這 1,186 條錯誤高度集中在 **frame 1500–1570（約第 50 秒）、block 22–23** 這一小段時空窗，不是隨機雜訊，應是真實發生的局部內容變化。影片見 `runs/v14-exact-lookup-video/{target,recorded-phase-lookup,error-x10}.mp4`（此腳本目前未接入 `run_logged`，無自動紀錄 JSON；下方的 `diagnose_v14_codebook.py` 已接上）。
 
 ### 單相 160×4 索引查表：驗證為不可行路線
 
@@ -63,7 +63,7 @@ BBB 用同一套 recorded_phase_keys 規則可達**完全**零誤差（900/900 �
 | 128 | 4.0437 | +48.7% | 32.45 MB |
 | 160（滿，無截斷） | 3.9544 | +49.8% | 40.31 MB |
 
-### 低／高頻拆解（[probe_v14_compact_frequency.py](probe_v14_compact_frequency.py)，未接入自動紀錄）
+### 低／高頻拆解（[diagnose_v14_codebook.py](diagnose_v14_codebook.py)，已接入自動紀錄）
 
 | RANK | 低頻 MAE | 高頻 MAE | 梯度X／Y MAE | 精確命中率 | 門檻覆蓋率 |
 | ---: | ---: | ---: | --- | ---: | ---: |
@@ -75,6 +75,8 @@ BBB 用同一套 recorded_phase_keys 規則可達**完全**零誤差（900/900 �
 | 160 | 2.5430 | 3.0384（-49.7%） | 3.39／3.22 | 53.24% | 96.89% |
 
 RANK=8 的改善幾乎全部來自低頻修正，高頻與水平梯度反而不變或變差，精確命中率明顯低於基準——是數值上過關、視覺上不及格的假改善。RANK 提高後各項指標同步改善，128 起精確命中率開始贏過零成本基準，顯示紋理細節是真的被找回來，不再是用平滑換 MAE。
+
+上表原先由 `probe_v14_compact_frequency.py` 產出，該腳本已與 [碼本誤差分解](實驗紀錄-v14-碼本誤差分解.md) 的 `diagnose_v14_matching_limit.py` 合併為單一入口 `diagnose_v14_codebook.py`，數值不變（一致性驗證見該紀錄）。
 
 ### width 對照（width=16／40，各自吃滿理論最大 RANK）
 
@@ -142,12 +144,38 @@ v12 的衰減保護機制會把過去 15 幀「各自量到的相位位置」都
 
 v15（[v15/README.md](v15/README.md)）：v12、v14 各自獨立計算完整畫面，再 50/50 平均。結果：RAW MAE 5.9858，介於 v12（7.5194）與 v14（5.5386）之間，比 v14 單獨差——符合「平均一準一不準，不會超越較準者」的預期。**但使用者目視後確認 v15 是肉眼最舒服的版本，即使分數沒有超越 v14**，目前是示範片段上實際採用的候選。影片見 `runs/v15-v12-v14-blend/`。
 
+## 統一診斷入口：低／高頻拆解與誤差分解合併
+
+原先分屬兩支腳本的兩個問題——「改善是來自高頻紋理找回，還是只是低頻平滑」與「誤差由匹配、覆蓋還是表示能力造成」——都作用在同一個數字（compact codebook 的 RAW MAE）上，因此合併為單一入口 [diagnose_v14_codebook.py](diagnose_v14_codebook.py)，一次跑完兩種分解。`--signal ideal` 用乾淨 RAW 反推的理想化樣本，`--signal real` 用接收端實際會拿到的 `decoded` 欄位。
+
+### demo.mp4 的誤差分解：瓶頸已從「表示能力」轉為「表項覆蓋」
+
+在 demo.mp4 上重跑同一套分解（測試窗 1748–1852，105 幀、3,150 條）：
+
+| 設定 | 描述／匹配 | 表項覆蓋 | 殘差表示 | 合計 | DCT 保留能量 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| BBB，width=40／RANK=8 | 0.168 | 2.180 | **11.507** | 13.8551 | 37.6% |
+| demo，width=40／RANK=160 | 0.147 | **3.648** | 0.159 | 3.9544 | 100% |
+| demo，width=16／RANK=64 | 0.094 | **3.630** | 0.167 | 3.8908 | 100% |
+| demo，width=40／RANK=160（真實訊號） | 0.253 | **5.500** | 0.606 | 6.3597 | 100% |
+
+**BBB 的結論不能直接搬到 demo.mp4。** BBB 診斷時用的是 RANK=8 的碼本，每塊只留 8 個最低頻 DCT 模式，只保留 37.6% 的殘差能量，所以表示能力佔了 83.1% 的誤差。demo.mp4 的碼本已吃滿理論最大 RANK（64／160），DCT 保留能量 100%，表示能力只剩 4–9.5%——**這條路徑在 demo 上已經沒有表示能力的餘裕了**。
+
+**剩下的誤差幾乎全是表項覆蓋。** demo 上三組設定的覆蓋項都佔 92.2%／93.3%／86.5%。這可以獨立驗證：若把查詢換成「真實殘差挑出的最佳表項」（`oracle-entry`），MAE 只改善 0.09–0.25；但若把「儲存值」換成理想值（`oracle-dct`），MAE 改善 3.7–5.8。也就是說**碼本存了什麼內容，比能不能找到對的表項重要得多**。
+
+真實訊號版本更嚴重：覆蓋項從 3.648 升到 5.500，相對佔比 86.5%，而門檻覆蓋率仍是 97.1%——多數小塊「找得到表項」，但找到的表項內容與當下內容幾乎無關。這與先前 demo 紀錄裡「整條 RAW 查表真實重用率僅 0.80%」是同一個現象的兩種量測。
+
+### 一致性驗證
+
+合併後逐一比對兩支舊腳本留下的每一個數字，29 項全數通過：probe 腳本的 demo 低／高頻表 12 項（bilinear 7.8828／5.4797／6.0450／5.8934／5.4547／0.5051，compact 3.8908／2.5125／3.0089／3.3657／3.0921／0.5361，門檻覆蓋率 93.22%）、demo 兩份碼本的 bilinear／actual／覆蓋率、BBB 紀錄中的 7 個方法 MAE 與能量比例，以及用 MAE 值反推的 BBB 三項分解（0.168／2.180／11.507）。BBB 資料庫與碼本已不在本機（該輪在另一台機器執行），故 BBB 數字取自保存的實驗紀錄。
+
 ## 限制與下一步
 
 - 本輪所有訓練／測試切分（訓練 0–1389、測試 1748–1852）都在同一支 61.75 秒的 demo.mp4 內，尚未在真正長時間、多場景的固定監視器錄影上驗證。
-- `export_v12_demo_videos.py`、`export_v14_demo_video.py`、`export_v14_exact_lookup_video.py`、`export_v14_exact_lookup_video_real.py`、`probe_v14_compact_frequency.py`、`export_v14_compact_plus_v12_blend.py`、`export_v14_simple_phase_blend.py` 目前未接入 `run_logged`，僅有本檔案與對話紀錄留存，不在 `experiments/records/` 自動索引內；之後若要正式留存應補上包裝。`check_v14_exact_video_encoded.py`、`train_v14_demo_encoded_key_compact.py`、`train_v14_demo_compact_codebook_real.py` 已接上。
+- `export_v12_demo_videos.py`、`export_v14_demo_video.py`、`export_v14_exact_lookup_video.py`、`export_v14_exact_lookup_video_real.py`、`export_v14_compact_plus_v12_blend.py`、`export_v14_simple_phase_blend.py` 目前未接入 `run_logged`，僅有本檔案與對話紀錄留存，不在 `experiments/records/` 自動索引內；之後若要正式留存應補上包裝。`check_v14_exact_video_encoded.py`、`train_v14_demo_encoded_key_compact.py`、`train_v14_demo_compact_codebook_real.py`、`diagnose_v14_codebook.py` 已接上。
 - k 目前只測過 1／4／8；16 維描述子只是粗略的亮度＋梯度統計。兩者都還沒探過上限，是目前最可能繼續榨出改善的方向，待下一輪驗證。
 - **混合比例掃描只做到 10% 一格的粗網格**（50/40/30/20/10%），30% 是目前網格內的最佳點，還沒在 25%／35% 附近細搜確認是否有更精確的甜蜜點。
 - 即時串流效能（真正流式建表、查表延遲、記憶體隨時間成長）完全未測，目前都是離線、一次性建表後評估；「30/70 上一幀混合」的遞迴狀態量（每個位置都要存上一幀的最終輸出）在串流部署時的記憶體與延遲成本也未評估。
 - 全片零誤差驗收找到的 1,186 條失敗集中在 frame 1500–1570、block 22–23，初步判定為真實內容變化而非雜訊，但未實際目視確認（已有 `error-x10.mp4` 可供檢視，尚待人工看過)。
 - compact codebook 的訓練／測試訊號已修正為真實 `decoded`，但 `describe()` 描述子本身、DCT 殘差計算都還是沿用 BBB 既有數學，沒有針對真實雜訊特性重新設計。
+- **統一診斷顯示 demo.mp4 的瓶頸是表項覆蓋（佔誤差 86.5–93.3%），不是表示能力也不是匹配。** 既然匹配只值 0.09–0.25 MAE，改描述子維度或匹配距離幾乎不會有幫助；真正要解的是「每個相位×位置×小塊只有 k=8 個原型不足以代表該場景會出現的內容」。k 只測過 1／4／8，16 維描述子只是粗略的亮度＋梯度統計，兩者都還沒探過上限，是目前最可能繼續榨出改善的方向，待下一輪驗證。

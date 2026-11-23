@@ -1,0 +1,724 @@
+{
+  "schema_version": 1,
+  "id": "evaluation--v14-diagnose-w40-rank160--run-e33f3bcfa9fa",
+  "kind": "evaluation",
+  "name": "v14-diagnose-w40-rank160",
+  "status": "completed",
+  "provenance": "automatic_invocation",
+  "output": "Model/runs/v14-diagnose-w40-rank160",
+  "started_at": "2026-11-23T18:37:09+08:00",
+  "finished_at": "2026-11-23T18:37:36+08:00",
+  "cwd": "C:\\Users\\dinosec\\BrainHole\\Model",
+  "command_argv": [
+    "C:\\Users\\dinosec\\BrainHole\\Model\\.venv\\Scripts\\python.exe",
+    "diagnose_v14_codebook.py",
+    "--db",
+    "../training-data-preparation/拆好的訓練資料/demo-q5-native.sqlite",
+    "--scene-plan",
+    "runs/demo-scene-plan.json",
+    "--checkpoint",
+    "runs/v14-demo-compact-codebook-rank160/best-mae.pt",
+    "--out",
+    "runs/v14-diagnose-w40-rank160",
+    "--signal",
+    "ideal",
+    "--no-video"
+  ],
+  "output_preexisted": false,
+  "source_snapshot": {
+    "id": "74b758cbda732cdcfa6416855644e437cd9f1a0c73c4a6b8e7baf650f597f278",
+    "directory": "Model/experiments/source_snapshots/74b758cbda732cdcfa6416855644e437cd9f1a0c73c4a6b8e7baf650f597f278",
+    "sha256": {
+      "_check_imports.py": "754f095da64027961cfe720efa5c1b84b4c50f1f66de8cce61313b461a12fdff",
+      "_check_rank.py": "3eab8cf12d251523a8ef640ba820d718617be76dbfc470d521d2ac2e0e1d6f0b",
+      "_check_rank2.py": "0c1a5797405ca1deca9b0e232d6e701a7e0303af25d6c042c07fe6ecc4e5cfcb",
+      "AGENTS.md": "da849c076a32aa4742975190e130351c7553020a0b4b0ad6032a020f3d929209",
+      "baseline.py": "4064fcad6c52d51979e524f69a6cbd1c595fbfc2dac1f828be4d5ae0523dffc2",
+      "benchmark.py": "85f7414574751d38ec9b0fbd958ac273b736094a71e788341f400ab0b3a296f4",
+      "benchmark_v14_codebook_precision.py": "9cef236363d1430ba9c381b1a58e22d11672c93cd4671698374364a5219f893d",
+      "benchmark_v14_codebook_storage.py": "7e12a14531ed588bf1e6201a0ad11a36f7936dafa67fba8f174b55b58a3e95c3",
+      "build_v13_fades.py": "654a33307fe6a1d43d55ac394e26ed730f882b447d6d6e0f7740cd94a6cbfce0",
+      "check_bhxs_stream.py": "520c1037fe18c81d1f5fa21415ad92ceed179b9b0042638264caa1b73a678e8a",
+      "check_dataset_consistency.py": "1b4dd5c561cff1f760b720272df9ace524100312708b3f34a7cf1fa84d9118ea",
+      "check_v13.py": "a2eadb3ae3e70bd2f1b77750fb917089a311f1c17fcc5876a0f623b22ca147a4",
+      "check_v13_demo.py": "091ba7fdcab1bbd1a8e24f42a92a5317558939ddf13dd0263f8753fea74b0def",
+      "check_v13_demo_video.py": "d0e9e115f1345f4d625028f82920164a581316703f8646fd40be63aeb068a4ef",
+      "check_v14_exact_video.py": "180dff1d634685a5597f3e994c8ae3cd816171e1aed3aaa3e98fb1a4852f7df7",
+      "check_v14_exact_video_encoded.py": "f953637f944908ec13b3952b5d4b9260fd74652022b348e9e973c6265a6199ab",
+      "compare_v10_v12_existing.py": "e5ed4027a5228a3c3c2d1061472207f1c2c75c029bb5ec0f533b7d85c6d53e7f",
+      "data.py": "878601b92eb4b63113d7daa147b339d649b1c689cd6d156111ef9a7c533ebc1f",
+      "diagnose_v10.py": "849f4a02c00399157696b4b913014a0c3a751824ea597ece4848de8856433ca5",
+      "diagnose_v13_correction.py": "75920b106202cc2464b6585eec82781c11845a790d070a8aa6043997b95dc1b6",
+      "diagnose_v13_history.py": "33df0dab0877bfaf0fac24c1b676e5bf785d9f21c674f5c7f75bada34a1b5826",
+      "diagnose_v13_weights.py": "dc9418ef1df90f3e44ebab11b0cdd3800dca47ed46498ed6da487602c2c7ec94",
+      "diagnose_v14_codebook.py": "1085c1dc404304e41d6454f4a8e957a8dfbc60b5f24a487285fc0f397ef19fc3",
+      "diagnose_v14_matching_limit.py": "c2da79f4929fffd039f7327939e5a3efdb47dfe4a4bfd6d7afb816815a2feed0",
+      "echosr_adapter.py": "780f4ab98dbb312f3a47b57a3cafafe4fb1ed36b9bc6fc5fd097695651ce239c",
+      "evaluate.py": "190c208010be4fa2efaedac030f8616ceb960330c7019c9412270bd3d8db95c7",
+      "evaluate_fsr.py": "6b9bd8376451d3837e45d5ca6804c395005005a4a9f09a72e2c71a821dac01ad",
+      "evaluate_v10.py": "10640f4d80c2b20502d4749f7cb2e340b7ed8012f22bf1281c8812b864ab6862",
+      "evaluate_v11.py": "dabf76a1084515e6e47e47ae2034669ca0288bf5c606feb0c525f28d884c8a50",
+      "evaluate_v12.py": "a88e67f5c8b10e6272ecad728b7dfccdd50664f780bb9701c7c5e53ef0917d1b",
+      "evaluate_v13.py": "e42b22708c074430d76f1c4d9032222a1f3f4b7811ad1ec6adb7f05eaf5f03a5",
+      "evaluate_v14.py": "da7ff1a2b3e61cc7667169ff7f4f625d11803b31de16c36dee46f57fa16c789b",
+      "evaluate_v14_current_phase.py": "dfbe23fafd03a3f9b180ece262e12d314189949b09ebfc6d00a4de0e53e8f157",
+      "evaluate_v14_current_phase_demo.py": "19adf9f8a8584f13781f825f117f96a688136feb644541b94080bbd0db966bc2",
+      "evaluate_v14_index_scale.py": "805220af8ab532fff0c3c0bcfb26ce1f73bcdd55c431f80e4a583f0a92d42d8e",
+      "evaluate_v14_raw.py": "b565de43e3b39b718e8331f835a13f3fc67f0d790d35983ac65adc9cf8560d2d",
+      "evaluate_v14_single_phase_detail.py": "37b812d405e52510e36e03b2395c3b8391b0f8822fe78047ab2c41480127b5da",
+      "evaluate_v14_strips.py": "49a3f0d5e5128ae790ee282745ec5ceff78b95aca943ac4e3cd307cc5ff80815",
+      "evaluate_v14_v12_index.py": "7085f3cbe636ae2bee93eb4bdf871959cc0ea6e6e50d807ae8656b5ca621db16",
+      "export_v12_demo_videos.py": "380b3eafdf932b6db4034b217caa5ad076bb2bbb242bccc7233642dbfb824b6b",
+      "export_v13_demo_video.py": "737558c6ab0d7d0d65893c147a864f6a814b93dada6850ab412ea906673dd98c",
+      "export_v14_compact_plus_v12_blend.py": "b8ea890ef2315f9864daef13ad937697425733b50ba152995263a2c79cd82c74",
+      "export_v14_demo_video.py": "29aff4bc451f2ee2579759cdf59267e5f7b0863d12f20f3be4140c68294429f4",
+      "export_v14_exact_lookup_video.py": "707619e706480669d3f2327299031c26145ca7ecdc92491ae44c49ff1b7f5dfc",
+      "export_v14_exact_lookup_video_real.py": "421482285d5fde59b5a6375a11341df78416abe338e720b166746a26cb63d843",
+      "export_v14_simple_phase_blend.py": "59d33429a2bb1729711780ceafb7a1365d73d974e863b1cb3705e22e76fab969",
+      "export_v15_v12_v14_blend.py": "04df894aee051575665dc867d37670560e8aa746f5e0fa8840b8f6074121764e",
+      "export_video_panel.py": "21b6d2c7f7bbd5c42209933c7a8395e94a75d8b2b3384d83f0797bf64e4f5fb6",
+      "fsr_reference.py": "f1db0e177c09d3799475e4bec70563678553f227d89c884aa31b879545c80e65",
+      "make_dataset_summary.py": "d9fe281571f715575acb84e2a1fd31441c186441e1bd78684152a49f5b80eec5",
+      "network.py": "07fc7a478483304c530a5db77af9d85fa3f6e37247568d4d65dace326e3197b9",
+      "predict.py": "70f37733ea42218bba71b3131d444f500c125873d47f65d6534fbebe75e050eb",
+      "predict_v10.py": "c2a996d074a747c3c797cc30bb4382f25c4b099c749338b6c092b7cbee80a790",
+      "predict_v13.py": "5ba995b73f9235881824575a4fc1332cda208757e89e2beab0f9822d47ed40a6",
+      "prepare_dataset.py": "fee970d352529a181480c9f9fff687e99bbb076f1ae811bb7bea533ce78038bd",
+      "probe_v14_compact_frequency.py": "e08761309d1896c901d62f367505e09b108e868652b23cfcc658f86c2d35ca16",
+      "record_experiment.py": "2ff53f8ff10aefc0e184c0f4379d773f9e795f9d7438c54a8a3b6e9ce88fe08b",
+      "requirements-lock.txt": "6a886c94301209fafdda56dcae8c903656619de83c87805e3b787a3197ef60e6",
+      "requirements.txt": "f9ee35b31a1e016cb445bae4ec62c912d85c3ddee745c5bd269a9b0ea56e3123",
+      "run_checks.py": "bef5a7c920f23b6ad09bec856353107234d098d7674016b47b74dfd01a07bde7",
+      "run_v13_search.py": "01c5e94ac4016749c9a7f9b684a773e6a60993379c6f4bedf3206a516188132f",
+      "supervise_v10.py": "c3f47880d2c60cc719427c4eb6f0115fe94c966ec7b20310f513307d275aa559",
+      "test_fsr.py": "e394d6c38287fd189717cec50397d5825d2353fb835fb7ceee7ba697ddd2f98d",
+      "test_model.py": "52f23d3f16d1623a547ff732cdce877fdb09d4928dcb96485d0bdeb1781fbccc",
+      "test_record_experiment.py": "139517e18f997ffea3d09d6e4336583a01fc4f5ce0ea05985a59d2b50cd638cd",
+      "test_v10.py": "65c7e0ccf88372050c6565c465e9cbfbcec167703f9831d3150dcf211fc0ddd3",
+      "test_v11.py": "72d82cf46bf10810ccc968e9322d88112aacc3c762bf18325815824583a62285",
+      "test_v12.py": "9c4839a4e4855bb05ddb591796393f4686af0513aff374ee5e19329fbb538b3f",
+      "test_v13.py": "f2a761877fe8018bd050636a5b9c1f6c8aa019fa218dd6b7e5a4f92b94ddc3f6",
+      "train.py": "6385e0b17cde82b63aa72290f757936a96a1ca5ea3ddb4954c5e5a9f21a8527a",
+      "train_v10.py": "9d5e8c76b59f3af7e26984874e5a5d4836e93ecc86970a6152610c57cda4a8ce",
+      "train_v11.py": "637a008d28a162dec867907ab07a26aa501e0ff240e2d896894c7fc600c7133e",
+      "train_v13.py": "618c73d52730cc6007f54715f5913041000ebc00fd9d82bc49c308d7dea2b85e",
+      "train_v13_gate.py": "08922ed12bbff7916df1bd341a6d48c0f04551a681942c40bbfe39ee48d40326",
+      "train_v13_samples.py": "ab8ac935bf07a3e9ef02740e8e65f8344d9091a3835c25d8c19087bf10cf2576",
+      "train_v14_codebook.py": "e1e5594cfd240be48d021885989c3028e92a00c4034dbc4f55bc056c194a0949",
+      "train_v14_compact_codebook.py": "8748d6e66f60682be7717ff843d203fe2992563e2b8f05a5fd7bdade4c88aa02",
+      "train_v14_demo_codebook.py": "3e4aa3e94a91b7db26828de1438ec9ca000a6771f1866064ed3f468b18d976f4",
+      "train_v14_demo_codebook_real.py": "22eea56ad98e9fac6d97de541120bff24c9495e85ba55245918d797c5b4fb455",
+      "train_v14_demo_compact_codebook.py": "b6e48e55ce5dcf55405f29ea8e197ad215e800d5bfd5c7f1c7bbdc9c6d106b83",
+      "train_v14_demo_compact_codebook_real.py": "d12972e33b177c871491047ace69cdda3155e0626a91ca4770b2f486fbd7640e",
+      "train_v14_demo_encoded_key_compact.py": "89362e5726f26f4f145537cfbd901bd04a0f14de94851f0591a0b047fb89d8e0",
+      "train_v14_feature_codebook.py": "cb5bbc286ea8e68fd675ba7894027547ac7498738d30e69ce40961d4988eb972",
+      "train_v14_lossy.py": "edcd8689b57f8dfeec6133bdbcea00e0f9142942a43b739cc2d6c9e0d88543a4",
+      "train_v14_quantized.py": "4cf59ebf52ba1d28c938fe1afda81740fa56cff7f1d1a5f4d31fb813c972e7c8",
+      "v10/__init__.py": "fd5ee644ec193a6dcb073d1fd69cd381f3e30f8844852ee768172d132e75b6bb",
+      "v10/data.py": "2f1839d779eada03d5661675b26d8e9d55ee3883daa44dc6c2efa3966c4e0ea2",
+      "v10/diffusion.py": "e714fca61af7014ea57cbdde7c9f1a0ae853f4a2b51e0fb7c57593c6f8633f30",
+      "v10/model.py": "573a70e73c87dc26eda3c56cf1892e8a973b47962dc9943d0a3a21cdadb80bbc",
+      "v10/README.md": "ca97ef8301bc527f060c7570eff648a99125b327eb53d7bf6c1e4991a59e177d",
+      "v10/估算成本.py": "54f7c76fcaf0c0e881add5b9e4c786982e560643bcfeead6eda04334be5ae084",
+      "v10/文獻對照.md": "37a4e34c8f23d71af3b9c934267255d7ba2a0cbb04f1ac288344fdc298a05b71",
+      "v10/生成方針.md": "35da9e552be13deb6ef7640e0dc26b1f6d23d97a7db25917813a54248a91796f",
+      "v10/監督紀錄.md": "2d0b4426eacca63c6e5cfb0e731d53f3d46d95f4c3ab31d9a63bb29035827016",
+      "v10/自動訓練計畫.md": "82acac8b818b6bd02a3690e4d6922cbed1a85c02fb2f97e926a8e1659b846ac9",
+      "v10/設計草案-低解析度重建-已取代.md": "7f823e6126e67ee5e374bad0a2b4920ed1cffcddc2eab2f5ad24e9d0c05612b9",
+      "v11/__init__.py": "39ad9c24362caa72a5567a347cb079144c05773203e8e2c3d251aeb3b779a86f",
+      "v11/data.py": "0720dccffdc86cfde5b67ae6f142cbdfd323f469c1805b370122e2f7411f69c5",
+      "v11/model.py": "1d82e7b84660a85c25ef5f87bf3f94f2f54b9928dbb93a3a720691188e8d21a4",
+      "v11/phase.py": "c6c7fc352d58995e22af8f84012a9c46e8d01b4a8d07ddcd3c9c7c6d4c833ba6",
+      "v11/README.md": "9df6d7b4567e6feebb6d71147ec50973833e381077076505f78dcd1c963b3fad",
+      "v11/scenes.py": "26c889a1fb51991df8f6672813d80a9db5a8bb4b0d2590c6412cf53d3dabbb15",
+      "v11/tile_diagnostic.py": "a83abd906aba8930dd95fa48600a8d60d82aae7cf4a9e270109bb5d63dcecf41",
+      "v11/文獻對照.md": "2ffd1d1d79715941702830dc111e73bb8ec838d59f485a33d66835b6042b0828",
+      "v11/閱讀筆記.md": "f8d9bd102f94921608d638de6024be186c27ccb3bd22cfb8fb244831b64e7435",
+      "v12/__init__.py": "d8e819b0100f9a2fd4058dbeb4683d1c9951299535cfb50c515d11c174b9ede8",
+      "v12/compare_source.py": "51eeb9b4f1d7c57ecdf43608e923b06fd071ffec8b5728f60b6db60a54b4ad8f",
+      "v12/README.md": "832c6694f47a741d82d12c9d6ab6177bb6fd9ba177f65ccfabf1fb032a5a431f",
+      "v13/base.py": "76ab6cf5515d14387c5f5110ee140c00b09c05dfdaebc81ed39352b463f6807b",
+      "v13/data.py": "57fb35cfbdb382fc750cdd18ee1521db478854beca02196fb6bc3725b6bac671",
+      "v13/demo_data.py": "03072e091163df8d9f4d931963205f48e310b8beabfcef7df4121e4f2929a621",
+      "v13/ensemble.py": "84cdba52137f609ad4e2e6580b59653ad4fc7d4243acc8067ba28752027c9919",
+      "v13/fusion.py": "78880f0a184cb69c26432b7bc016437d58eba7b340c8993290402b65aa1307a2",
+      "v13/model.py": "e361331ad45fd54eaae7673846356504b8b7daee76c1403df562fac98e0f8809",
+      "v13/native.py": "f80353565e92472de98ee1d740bdb67f78526c86c85848908dd3c5d24223c154",
+      "v13/overnight-recheck-20261123.json": "67084b7de4a967bcf01b8b2eff7ee7bcd6eaf0768e2b188f82f217207b73cf3f",
+      "v13/pairs.py": "e87900e54dd353aea40b27537b03e6f5dc0ad27aa0a5b0acd09eb847b35465a8",
+      "v13/README.md": "f7a88b30076c257dfeaae8ff921910b1e9aafa51f5b3fd6115a86e189376225e",
+      "v13/roi-bbb-q5.json": "9b1b92cb39bcfad4ffd0b4998775573b44f6d82cd8b4cd199c9985c8be60cea2",
+      "v13/s2-bbb-q5-audit-freeze.json": "4265a9f3e5a9bc2e02445f675ebd7f6daeebeab44c7b56598d5c2f0b2f3ba3da",
+      "v13/執行前檢查.md": "dd10c5b7967304c57b98994aaf76e222387ddf382553ff285aa26543da045e27",
+      "v13/實作清單.md": "ee1567100e187c3bd03d064345f96c85172f1776ea0624039af4f96b3000ec31",
+      "v13/實驗與驗收計畫.md": "d582329cfe271e7b7360f73c0da91a623f8bc4a18495dd7064b6401594018121",
+      "v13/文獻對照.md": "3758ad06c1d225cc5eeef4838d41cf7f1a603bb92d20755d86700ac66387f164",
+      "v13/設計決策.md": "e8d71c218da57160a2a4d875d785b3d4fddd20c2dbfd23ab679e9b67296d1820",
+      "v13/設計規格.md": "cb23894d87fa4447a873dbef59c2d8e99888829866fc3b514a8f56e62046d44b",
+      "v13/逐幀融合試驗.md": "e40118c07f6d3e7a853af446314e3d6f761d744698c52441cbedb06f44ad13d3",
+      "作法.MD": "4ff26b67c99410893806a6b24f64bece803631de023d512bff2e5f457157ad04",
+      "驗收標準.md": "ede433163b83cad733749b5c8fa1d0540db63cb912dce37badaa6146ce14c5d6"
+    }
+  },
+  "environment": {
+    "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "numpy": "2.5.5",
+      "Pillow": "12.3.0"
+    },
+    "available_gpu": "NVIDIA GeForce RTX 3050"
+  },
+  "recorded_at": "2026-11-23T18:37:36+08:00",
+  "data_sources": {
+    "--db": [
+      {
+        "path": "training-data-preparation/拆好的訓練資料/demo-q5-native.sqlite",
+        "bytes": 684453888,
+        "sha256": "58996070fa05888a4cb5e19992cb5db703421c8e1e8e7390fb15e0bc7b75ff75"
+      }
+    ],
+    "--checkpoint": [
+      {
+        "path": "Model/runs/v14-demo-compact-codebook-rank160/best-mae.pt",
+        "bytes": 40310126,
+        "sha256": "5783e177766d1554b89a925e11d3346a028af936b9d3b2cd21d7f8fe8d5330f7"
+      }
+    ],
+    "--scene-plan": [
+      {
+        "path": "Model/runs/demo-scene-plan.json",
+        "bytes": 73505,
+        "sha256": "0c484ea836f5d51cf1469cc69d42caa518780dd26424f6eb8f8f4d29e7fbb6a9"
+      }
+    ]
+  },
+  "result": {
+    "report": {
+      "start_frame": 1748,
+      "last_evaluated_frame": 1852,
+      "samples": 3150,
+      "provenance": {
+        "db": "58996070fa05888a4cb5e19992cb5db703421c8e1e8e7390fb15e0bc7b75ff75",
+        "scene": "0c484ea836f5d51cf1469cc69d42caa518780dd26424f6eb8f8f4d29e7fbb6a9",
+        "v13/base.py": "76ab6cf5515d14387c5f5110ee140c00b09c05dfdaebc81ed39352b463f6807b",
+        "v13/data.py": "57fb35cfbdb382fc750cdd18ee1521db478854beca02196fb6bc3725b6bac671",
+        "v12/__init__.py": "d8e819b0100f9a2fd4058dbeb4683d1c9951299535cfb50c515d11c174b9ede8",
+        "v11/phase.py": "c6c7fc352d58995e22af8f84012a9c46e8d01b4a8d07ddcd3c9c7c6d4c833ba6"
+      },
+      "patch_width": 40,
+      "dct_rank": 160,
+      "entries_per_tile": 8,
+      "gate": {
+        "limit": 24,
+        "strength": 1.0
+      },
+      "signal": "ideal",
+      "codebook_sha256": "5783e177766d1554b89a925e11d3346a028af936b9d3b2cd21d7f8fe8d5330f7",
+      "methods": {
+        "bilinear": {
+          "raw": {
+            "mae_8bit": 7.882842287336077,
+            "psnr": 21.709763298161626
+          },
+          "rgb": {
+            "mae_8bit": 7.503650865100679,
+            "psnr": 22.31308130787972
+          },
+          "exact_raw_fraction": 0.5051140785217285,
+          "pairs": 104,
+          "temporal": 6.153552532196045,
+          "gradient_x_mae": 5.893427848815918,
+          "gradient_y_mae": 5.454742908477783,
+          "low_frequency_mae": 5.479748480902778,
+          "high_frequency_mae": 6.044963084387401,
+          "boundary_mae": 10.630170822143555,
+          "inside_mae": 4.740041255950928,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 2.410856246948242,
+              "rgb_mae": 2.1904185879975557,
+              "temporal": 2.0235962867736816,
+              "gradient_mae": 1.9545376300811768
+            },
+            "grass-sunlight": {
+              "raw_mae": 5.061913967132568,
+              "rgb_mae": 4.88861532881856,
+              "temporal": 2.4776933193206787,
+              "gradient_mae": 2.9400718212127686
+            },
+            "root-and-hole": {
+              "raw_mae": 14.914700508117676,
+              "rgb_mae": 14.348354022949934,
+              "temporal": 11.006147384643555,
+              "gradient_mae": 11.699346542358398
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.910046577453613,
+              "rgb_mae": 15.574599523097277,
+              "temporal": 11.74121379852295,
+              "gradient_mae": 11.72019100189209
+            },
+            "canopy": {
+              "raw_mae": 12.391786575317383,
+              "rgb_mae": 11.415038723498583,
+              "temporal": 10.187560081481934,
+              "gradient_mae": 10.355648040771484
+            },
+            "title-when-visible": {
+              "raw_mae": 10.346070289611816,
+              "rgb_mae": 9.840274974703789,
+              "temporal": 8.490851402282715,
+              "gradient_mae": 8.033618927001953
+            }
+          },
+          "raw_mae": 7.882842063903809,
+          "title_raw_mae": 10.346070289611816,
+          "title_temporal": 8.490851402282715
+        },
+        "actual": {
+          "raw": {
+            "mae_8bit": 3.9544484408696494,
+            "psnr": 26.344285045060406
+          },
+          "rgb": {
+            "mae_8bit": 3.707317987320915,
+            "psnr": 26.997296234941498
+          },
+          "exact_raw_fraction": 0.5323789715766907,
+          "pairs": 104,
+          "temporal": 3.5687317848205566,
+          "gradient_x_mae": 3.3860929012298584,
+          "gradient_y_mae": 3.224553346633911,
+          "low_frequency_mae": 2.542953597780258,
+          "high_frequency_mae": 3.0384476996527776,
+          "boundary_mae": 6.134879112243652,
+          "inside_mae": 2.8226511478424072,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 0.43988096714019775,
+              "rgb_mae": 0.4133050987729803,
+              "temporal": 0.6215046048164368,
+              "gradient_mae": 0.47388455271720886
+            },
+            "grass-sunlight": {
+              "raw_mae": 0.5829774737358093,
+              "rgb_mae": 0.5463128350675106,
+              "temporal": 0.5549872517585754,
+              "gradient_mae": 0.4940127730369568
+            },
+            "root-and-hole": {
+              "raw_mae": 13.697206497192383,
+              "rgb_mae": 13.059777617454529,
+              "temporal": 10.878274917602539,
+              "gradient_mae": 11.337223052978516
+            },
+            "root-strip-boundary": {
+              "raw_mae": 14.780601501464844,
+              "rgb_mae": 14.433949179947376,
+              "temporal": 11.56688404083252,
+              "gradient_mae": 11.135614395141602
+            },
+            "canopy": {
+              "raw_mae": 4.425114631652832,
+              "rgb_mae": 3.8798357220366597,
+              "temporal": 4.458602428436279,
+              "gradient_mae": 4.541134834289551
+            },
+            "title-when-visible": {
+              "raw_mae": 5.468734264373779,
+              "rgb_mae": 5.152143063023686,
+              "temporal": 4.952857971191406,
+              "gradient_mae": 4.759228229522705
+            }
+          },
+          "raw_mae": 3.9544484615325928,
+          "title_raw_mae": 5.468734264373779,
+          "title_temporal": 4.952857971191406
+        },
+        "oracle-entry": {
+          "raw": {
+            "mae_8bit": 3.807153459276472,
+            "psnr": 26.649839328399885
+          },
+          "rgb": {
+            "mae_8bit": 3.5760251381283714,
+            "psnr": 27.30487550662818
+          },
+          "exact_raw_fraction": 0.5370470285415649,
+          "pairs": 104,
+          "temporal": 3.3663761615753174,
+          "gradient_x_mae": 3.277719020843506,
+          "gradient_y_mae": 3.0703318119049072,
+          "low_frequency_mae": 2.434823484390501,
+          "high_frequency_mae": 2.945603717137897,
+          "boundary_mae": 5.8363494873046875,
+          "inside_mae": 2.688357353210449,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 0.3131932318210602,
+              "rgb_mae": 0.29650022741407156,
+              "temporal": 0.4199059009552002,
+              "gradient_mae": 0.33581477403640747
+            },
+            "grass-sunlight": {
+              "raw_mae": 0.5355395078659058,
+              "rgb_mae": 0.5018897750414908,
+              "temporal": 0.4970121383666992,
+              "gradient_mae": 0.4626879394054413
+            },
+            "root-and-hole": {
+              "raw_mae": 13.262213706970215,
+              "rgb_mae": 12.675880417227745,
+              "temporal": 10.469279289245605,
+              "gradient_mae": 10.9544038772583
+            },
+            "root-strip-boundary": {
+              "raw_mae": 14.583331108093262,
+              "rgb_mae": 14.282805640250444,
+              "temporal": 11.392511367797852,
+              "gradient_mae": 10.947690963745117
+            },
+            "canopy": {
+              "raw_mae": 4.510593414306641,
+              "rgb_mae": 3.9916231110692024,
+              "temporal": 4.3303937911987305,
+              "gradient_mae": 4.461408615112305
+            },
+            "title-when-visible": {
+              "raw_mae": 5.364331245422363,
+              "rgb_mae": 5.075204791501164,
+              "temporal": 4.653143882751465,
+              "gradient_mae": 4.593987941741943
+            }
+          },
+          "raw_mae": 3.8071532249450684,
+          "title_raw_mae": 5.364331245422363,
+          "title_temporal": 4.653143882751465
+        },
+        "oracle-entry-full": {
+          "raw": {
+            "mae_8bit": 3.7210157187779744,
+            "psnr": 26.42499795547719
+          },
+          "rgb": {
+            "mae_8bit": 3.4839532410152376,
+            "psnr": 27.095512929636683
+          },
+          "exact_raw_fraction": 0.5424194931983948,
+          "pairs": 104,
+          "temporal": 3.39815354347229,
+          "gradient_x_mae": 3.273939847946167,
+          "gradient_y_mae": 3.0858352184295654,
+          "low_frequency_mae": 2.3402372000558036,
+          "high_frequency_mae": 2.883471363854787,
+          "boundary_mae": 5.706460475921631,
+          "inside_mae": 2.723939895629883,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 0.3072541654109955,
+              "rgb_mae": 0.29170399415306747,
+              "temporal": 0.4152287542819977,
+              "gradient_mae": 0.33002984523773193
+            },
+            "grass-sunlight": {
+              "raw_mae": 0.39486801624298096,
+              "rgb_mae": 0.3671841829782352,
+              "temporal": 0.41986948251724243,
+              "gradient_mae": 0.3750290870666504
+            },
+            "root-and-hole": {
+              "raw_mae": 14.700225830078125,
+              "rgb_mae": 13.89247253537178,
+              "temporal": 12.04347038269043,
+              "gradient_mae": 12.556806564331055
+            },
+            "root-strip-boundary": {
+              "raw_mae": 15.601971626281738,
+              "rgb_mae": 15.09931342676282,
+              "temporal": 12.372465133666992,
+              "gradient_mae": 12.20211410522461
+            },
+            "canopy": {
+              "raw_mae": 3.5051674842834473,
+              "rgb_mae": 3.0705152498558164,
+              "temporal": 3.6273953914642334,
+              "gradient_mae": 3.7026209831237793
+            },
+            "title-when-visible": {
+              "raw_mae": 5.222259521484375,
+              "rgb_mae": 4.9437926430255175,
+              "temporal": 4.757425785064697,
+              "gradient_mae": 4.609213829040527
+            }
+          },
+          "raw_mae": 3.7210159301757812,
+          "title_raw_mae": 5.222259521484375,
+          "title_temporal": 4.757425785064697
+        },
+        "oracle-dct": {
+          "raw": {
+            "mae_8bit": 0.15944791277959233,
+            "psnr": 54.08047271418829
+          },
+          "rgb": {
+            "mae_8bit": 0.15312860678112697,
+            "psnr": 55.76487924896374
+          },
+          "exact_raw_fraction": 0.8553374409675598,
+          "pairs": 104,
+          "temporal": 0.26289647817611694,
+          "gradient_x_mae": 0.16522382199764252,
+          "gradient_y_mae": 0.1863260567188263,
+          "low_frequency_mae": 0.12869278644380117,
+          "high_frequency_mae": 0.17920920792836992,
+          "boundary_mae": 0.36853986978530884,
+          "inside_mae": 0.16116319596767426,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 0.14239655435085297,
+              "rgb_mae": 0.13980534888105467,
+              "temporal": 0.2398051917552948,
+              "gradient_mae": 0.1667037010192871
+            },
+            "grass-sunlight": {
+              "raw_mae": 0.07948634773492813,
+              "rgb_mae": 0.07823144158464856,
+              "temporal": 0.13103720545768738,
+              "gradient_mae": 0.09157253801822662
+            },
+            "root-and-hole": {
+              "raw_mae": 0.21433360874652863,
+              "rgb_mae": 0.20525438769254833,
+              "temporal": 0.36726295948028564,
+              "gradient_mae": 0.2502412796020508
+            },
+            "root-strip-boundary": {
+              "raw_mae": 0.20864573121070862,
+              "rgb_mae": 0.20214011339703575,
+              "temporal": 0.36698272824287415,
+              "gradient_mae": 0.24230843782424927
+            },
+            "canopy": {
+              "raw_mae": 0.21120686829090118,
+              "rgb_mae": 0.20472685428103432,
+              "temporal": 0.36987394094467163,
+              "gradient_mae": 0.24363383650779724
+            },
+            "title-when-visible": {
+              "raw_mae": 0.20655612647533417,
+              "rgb_mae": 0.20160527725238353,
+              "temporal": 0.3648548424243927,
+              "gradient_mae": 0.23748943209648132
+            }
+          },
+          "raw_mae": 0.15944792330265045,
+          "title_raw_mae": 0.20655612647533417,
+          "title_temporal": 0.3648548424243927
+        },
+        "oracle-dct-gated": {
+          "raw": {
+            "mae_8bit": 0.15944791277959233,
+            "psnr": 54.08047271418829
+          },
+          "rgb": {
+            "mae_8bit": 0.15312860678112697,
+            "psnr": 55.76487924896374
+          },
+          "exact_raw_fraction": 0.8553374409675598,
+          "pairs": 104,
+          "temporal": 0.26289647817611694,
+          "gradient_x_mae": 0.16522382199764252,
+          "gradient_y_mae": 0.1863260567188263,
+          "low_frequency_mae": 0.12869278644380117,
+          "high_frequency_mae": 0.17920920792836992,
+          "boundary_mae": 0.36853986978530884,
+          "inside_mae": 0.16116319596767426,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 0.14239655435085297,
+              "rgb_mae": 0.13980534888105467,
+              "temporal": 0.2398051917552948,
+              "gradient_mae": 0.1667037010192871
+            },
+            "grass-sunlight": {
+              "raw_mae": 0.07948634773492813,
+              "rgb_mae": 0.07823144158464856,
+              "temporal": 0.13103720545768738,
+              "gradient_mae": 0.09157253801822662
+            },
+            "root-and-hole": {
+              "raw_mae": 0.21433360874652863,
+              "rgb_mae": 0.20525438769254833,
+              "temporal": 0.36726295948028564,
+              "gradient_mae": 0.2502412796020508
+            },
+            "root-strip-boundary": {
+              "raw_mae": 0.20864573121070862,
+              "rgb_mae": 0.20214011339703575,
+              "temporal": 0.36698272824287415,
+              "gradient_mae": 0.24230843782424927
+            },
+            "canopy": {
+              "raw_mae": 0.21120686829090118,
+              "rgb_mae": 0.20472685428103432,
+              "temporal": 0.36987394094467163,
+              "gradient_mae": 0.24363383650779724
+            },
+            "title-when-visible": {
+              "raw_mae": 0.20655612647533417,
+              "rgb_mae": 0.20160527725238353,
+              "temporal": 0.3648548424243927,
+              "gradient_mae": 0.23748943209648132
+            }
+          },
+          "raw_mae": 0.15944792330265045,
+          "title_raw_mae": 0.20655612647533417,
+          "title_temporal": 0.3648548424243927
+        },
+        "oracle-exact": {
+          "raw": {
+            "mae_8bit": 0.0,
+            "psnr": 120.0
+          },
+          "rgb": {
+            "mae_8bit": 0.0,
+            "psnr": 120.0
+          },
+          "exact_raw_fraction": 1.0,
+          "pairs": 104,
+          "temporal": 0.0,
+          "gradient_x_mae": 0.0,
+          "gradient_y_mae": 0.0,
+          "low_frequency_mae": 0.0,
+          "high_frequency_mae": 0.0,
+          "boundary_mae": 0.0,
+          "inside_mae": 0.0,
+          "roi": {
+            "grass-shadow": {
+              "raw_mae": 0.0,
+              "rgb_mae": 0.0,
+              "temporal": 0.0,
+              "gradient_mae": 0.0
+            },
+            "grass-sunlight": {
+              "raw_mae": 0.0,
+              "rgb_mae": 0.0,
+              "temporal": 0.0,
+              "gradient_mae": 0.0
+            },
+            "root-and-hole": {
+              "raw_mae": 0.0,
+              "rgb_mae": 0.0,
+              "temporal": 0.0,
+              "gradient_mae": 0.0
+            },
+            "root-strip-boundary": {
+              "raw_mae": 0.0,
+              "rgb_mae": 0.0,
+              "temporal": 0.0,
+              "gradient_mae": 0.0
+            },
+            "canopy": {
+              "raw_mae": 0.0,
+              "rgb_mae": 0.0,
+              "temporal": 0.0,
+              "gradient_mae": 0.0
+            },
+            "title-when-visible": {
+              "raw_mae": 0.0,
+              "rgb_mae": 0.0,
+              "temporal": 0.0,
+              "gradient_mae": 0.0
+            }
+          },
+          "raw_mae": 0.0,
+          "title_raw_mae": 0.0,
+          "title_temporal": 0.0
+        }
+      },
+      "residual": {
+        "amplitude": 7.882842261904762,
+        "actual_residual_mae": 4.333527033730158,
+        "oracle_residual_mae": 3.866040364583333,
+        "dct_residual_mae": 0.2747020980592758,
+        "dct_float_residual_mae": 7.739245891571044e-06,
+        "energy_kept_ratio": 1.0000000023892628,
+        "energy_kept_int8_ratio": 0.9953105452451656,
+        "gate_coverage": 0.9689087301587301
+      },
+      "frequency": {
+        "bilinear": {
+          "raw_mae": 7.882842287336077,
+          "low_frequency_mae": 5.479748480902778,
+          "high_frequency_mae": 6.044963084387401,
+          "gradient_x_mae": 5.893427848815918,
+          "gradient_y_mae": 5.454742908477783,
+          "exact_raw_fraction": 0.5051140785217285
+        },
+        "actual": {
+          "raw_mae": 3.9544484408696494,
+          "low_frequency_mae": 2.542953597780258,
+          "high_frequency_mae": 3.0384476996527776,
+          "gradient_x_mae": 3.3860929012298584,
+          "gradient_y_mae": 3.224553346633911,
+          "exact_raw_fraction": 0.5323789715766907
+        },
+        "oracle-entry": {
+          "raw_mae": 3.807153459276472,
+          "low_frequency_mae": 2.434823484390501,
+          "high_frequency_mae": 2.945603717137897,
+          "gradient_x_mae": 3.277719020843506,
+          "gradient_y_mae": 3.0703318119049072,
+          "exact_raw_fraction": 0.5370470285415649
+        },
+        "oracle-entry-full": {
+          "raw_mae": 3.7210157187779744,
+          "low_frequency_mae": 2.3402372000558036,
+          "high_frequency_mae": 2.883471363854787,
+          "gradient_x_mae": 3.273939847946167,
+          "gradient_y_mae": 3.0858352184295654,
+          "exact_raw_fraction": 0.5424194931983948
+        },
+        "oracle-dct": {
+          "raw_mae": 0.15944791277959233,
+          "low_frequency_mae": 0.12869278644380117,
+          "high_frequency_mae": 0.17920920792836992,
+          "gradient_x_mae": 0.16522382199764252,
+          "gradient_y_mae": 0.1863260567188263,
+          "exact_raw_fraction": 0.8553374409675598
+        },
+        "oracle-dct-gated": {
+          "raw_mae": 0.15944791277959233,
+          "low_frequency_mae": 0.12869278644380117,
+          "high_frequency_mae": 0.17920920792836992,
+          "gradient_x_mae": 0.16522382199764252,
+          "gradient_y_mae": 0.1863260567188263,
+          "exact_raw_fraction": 0.8553374409675598
+        },
+        "oracle-exact": {
+          "raw_mae": 0.0,
+          "low_frequency_mae": 0.0,
+          "high_frequency_mae": 0.0,
+          "gradient_x_mae": 0.0,
+          "gradient_y_mae": 0.0,
+          "exact_raw_fraction": 1.0
+        }
+      },
+      "decomposition": {
+        "matching": 0.14729498159317744,
+        "coverage": 3.6477055464968795,
+        "representation": 0.15944791277959233,
+        "total": 3.9544484408696494
+      }
+    },
+    "artifacts": [
+      {
+        "path": "Model/runs/v14-diagnose-w40-rank160/report.json",
+        "bytes": 17271,
+        "sha256": "84332d344017a48634c2fac9715df902f3c74a88332db05926f2ac4d9968b0ac"
+      }
+    ]
+  }
+}
