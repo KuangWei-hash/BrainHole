@@ -2,14 +2,11 @@
 import argparse
 from contextlib import ExitStack, closing
 import json
-import math
 from pathlib import Path
 import sys
 
 import torch
-from torch.nn import functional as F
 
-from baseline import upscale
 from evaluate_v10 import SingleVideo
 from evaluate_v13 import ROI, display, scores, verify_video
 from evaluate_v14 import export
@@ -20,122 +17,10 @@ from evaluate_v14_v12_index import compare
 from record_experiment import digest, run_logged, update_active_record, write_json
 from train_v14_feature_codebook import DEV, observations
 from v11.data import connect
-from v11.phase import scatter_indices
 from v13.data import atomic_save, fingerprints, labels
-
-
-DEFAULT_WIDTH = 40
-RANK = 8
-CAPACITIES = (1, 4)
-ROUNDS = 5
-FORMAT = "v14-patch-cfa-dct-v1"
-GATES = [(0, 0.)] + [(limit, strength) for limit in (4, 8, 12, 16, 24) for strength in (0.5, 1.)]
-
-
-def architecture(width):
-    return FORMAT if width == DEFAULT_WIDTH else f"{FORMAT}-w{width}"
-
-
-def tiles_for(width):
-    return 640 // width
-
-
-def check_width(width):
-    if width % 8 or width < 16 or 640 % width:
-        raise ValueError("patch width must divide 640, be a multiple of 8 and at least 16")
-    return width
-
-
-def split_strips(tensor, width, tiles):
-    return tensor.reshape(*tensor.shape[:-2], tensor.shape[-2], tiles, width).transpose(-3, -2)
-
-
-def describe(samples, width, tiles):
-    patches = split_strips(samples, width // 4, tiles)
-    planes = F.pixel_unshuffle(patches.reshape(-1, 1, 4, width // 4).float(), 2)
-    dx = planes.diff(dim=-1)
-    dy = planes.diff(dim=-2)
-    features = torch.cat((planes.mean(dim=(-2, -1)) - 128, dx.mean(dim=(-2, -1)) * 0.5,
-                          dy.mean(dim=(-2, -1)) * 0.5, dx.abs().mean(dim=(-2, -1)) * 0.5), dim=-1)
-    return features.reshape(*patches.shape[:-2], 16)
-
-
-def dct_axis(length):
-    freq = torch.arange(length, dtype=torch.float32)[:, None]
-    coordinate = torch.arange(length, dtype=torch.float32) + 0.5
-    basis = (freq * coordinate * (math.pi / length)).cos() * math.sqrt(2 / length)
-    basis[0] /= math.sqrt(2)
-    return basis
-
-
-def dct_basis(width):
-    rows, cols = dct_axis(8), dct_axis(width // 2)
-    modes = sorted(((y + x, y, x) for y in range(len(rows)) for x in range(len(cols))))[:RANK]
-    return torch.stack([(rows[y, :, None] * cols[x, None, :]).flatten() for _, y, x in modes])
-
-
-def bilinear(samples, phases):
-    return upscale(samples[:, None].float(), phases).round().byte()
-
-
-def phase_data(raw, phase, basis, width, tiles):
-    current = sample(raw, phase)
-    low = current.reshape(-1, 4, 160)
-    base = bilinear(low, torch.full((len(low),), phase)).reshape_as(raw)
-    residual = split_strips(raw.float() - base.float(), width, tiles)
-    planes = F.pixel_unshuffle(residual.reshape(-1, 1, 16, width), 2).flatten(-2)
-    features = describe(current, width, tiles).reshape(len(raw), 30 * tiles, 16).transpose(0, 1)
-    projected = (planes @ basis.T).reshape(len(raw), 30 * tiles, 4 * RANK).transpose(0, 1)
-    return features, projected
-
-
-def fit_round(features, residuals, keys, codes):
-    nearest = torch.cdist(features, keys, compute_mode="donot_use_mm_for_euclid_dist").argmin(dim=-1)
-    counts = torch.zeros(keys.shape[:2], dtype=torch.int32)
-    counts.scatter_add_(1, nearest, torch.ones_like(nearest, dtype=torch.int32))
-    return (average_groups(features, nearest, counts[..., None], keys),
-            average_groups(residuals, nearest, counts[..., None], codes), counts)
-
-
-def average_groups(data, groups, counts, fallback):
-    index = groups[..., None].expand(-1, -1, data.shape[-1])
-    totals = torch.zeros_like(fallback).scatter_add_(1, index, data)
-    return torch.where(counts > 0, totals / counts.clamp_min(1), fallback)
-
-
-def pack(phases, config):
-    scale = torch.stack([codes.abs().amax(dim=(0, 1)) for _, codes in phases]).amax(dim=0).clamp_min(1e-6) / 127
-    tiles = phases[0][0].shape[0] // 30
-    keys = torch.cat([keys for keys, _ in phases]).reshape(16, 30, tiles, -1, 16)
-    codes = torch.cat([codes for _, codes in phases]).reshape(16, 30, tiles, -1, 4 * RANK)
-    return {"descriptor_keys": keys.round().clamp(-128, 127).char(),
-            "residual_codes": (codes / scale).round().clamp(-127, 127).char(),
-            "scales": scale, "config": config}
-
-
-def retrieve(book, samples, positions, phases, basis):
-    width = book["config"].get("patch_width", DEFAULT_WIDTH)
-    tiles = tiles_for(width)
-    query = describe(samples, width, tiles)
-    keys = book["descriptor_keys"][phases, positions].float()
-    values = book["residual_codes"][phases, positions]
-    distance, index = (keys - query[:, :, None]).square().mean(dim=-1).sqrt().min(dim=-1)
-    selected = values.gather(2, index[..., None, None].expand(-1, -1, 1, 4 * RANK)).squeeze(2)
-    decoded = (selected.float() * book["scales"]).reshape(-1, 4, RANK) @ basis
-    patches = F.pixel_shuffle(decoded.reshape(-1, 4, 8, width // 2), 2).reshape(-1, tiles, 16, width)
-    return patches, distance
-
-
-def reconstruct(base, patches, distance, phases, limit, strength):
-    if strength == 0:
-        return base
-    weight = (1 - distance / limit).clamp_min(0) * strength
-    delta = (patches * weight[..., None, None]).transpose(1, 2).reshape_as(base)
-    for phase in phases.unique().tolist():
-        rows, cols = scatter_indices(phase)
-        indices = (phases == phase).nonzero().flatten()
-        delta[indices[:, None, None], 0, rows[:, None], cols[None, :]] = 0
-    return (base + delta).round().clamp(0, 255).byte()
+from v14 import (CAPACITIES, DEFAULT_WIDTH, GATES, RANK, ROUNDS, architecture, bilinear,
+                 check_width, describe, dct_axis, dct_basis, fit_round, load_book, pack,
+                 phase_data, reconstruct, retrieve, split_strips, tiles_for)
 
 
 def evaluation_inputs(db, frame_range):
@@ -196,7 +81,7 @@ def train(args):
                 # time and rebuilt per round to keep the working set inside memory.
                 phase_keys, phase_codes, phase_counts = [], [], []
                 for phase in range(16):
-                    features, residuals = phase_data(reference, phase, basis, width, tiles)
+                    features, residuals = phase_data(reference, sample(reference, phase), phase, basis, width, tiles)
                     if iteration == 1:
                         seed_keys, seed_codes = features[:, start], residuals[:, start]
                     else:
@@ -226,19 +111,6 @@ def train(args):
                     atomic_save(book, args.out / "best-mae.pt")
             print(f"K={k}: development best RAW MAE {best:.4f}", flush=True)
     atomic_save(book, args.out / "last.pt")
-
-
-def load_book(path):
-    book = torch.load(path, map_location="cpu", weights_only=True)
-    config = book["config"]
-    width = config.get("patch_width", DEFAULT_WIDTH)
-    tiles = tiles_for(width)
-    shape = (16, 30, tiles, config["entries_per_tile"])
-    if (config["architecture"] != architecture(width) or book["descriptor_keys"].shape != (*shape, 16) or
-            book["residual_codes"].shape != (*shape, 4 * RANK) or book["scales"].shape != (4 * RANK,) or
-            book["descriptor_keys"].dtype != torch.int8 or book["residual_codes"].dtype != torch.int8):
-        raise ValueError("invalid compact v14 codebook")
-    return book
 
 
 def observe_batch(raw, frame_phases):
@@ -311,7 +183,7 @@ def whole_video(args):
         present = raw[phases == phase]
         if len(present) < k:
             raise ValueError("full clip lacks sufficient examples at one phase")
-        key, code = phase_data(present, phase, basis, width, tiles)
+        key, code = phase_data(present, sample(present, phase), phase, basis, width, tiles)
         features.append(key)
         residuals.append(code)
         start = torch.linspace(0, len(present) - 1, k).round().long()
